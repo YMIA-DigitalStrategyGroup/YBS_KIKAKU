@@ -151,7 +151,17 @@
   },
   {
     "ModuleName": "PCPage/YBS文書一覧　申請中",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-02T13:34:27.1089183+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS文書一覧　申請中.json",
+      "Pages\\YBS文書一覧　申請中.rd"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
