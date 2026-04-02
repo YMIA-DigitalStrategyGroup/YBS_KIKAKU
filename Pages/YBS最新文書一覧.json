@@ -248,7 +248,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "f926c363-bc60-48db-864c-c36bd7890288"
+        "GUID": "10e6720c-9059-45e5-8efc-f77b98c0114c"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -356,7 +356,7 @@
                     "MessageFormula": "承認中の文章があるため改正できません。"
                   }
                 ],
-                "ID": "582dc3be-5180-4ef6-a8ab-51aa753e2f0d"
+                "ID": "70f779fa-d72f-4c0d-9f37-33316d97280f"
               },
               {
                 "CommandList": [
@@ -380,7 +380,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "2f6900d8-c72c-4164-bc54-4daf05205b8f"
+                "ID": "eb9f543f-324d-4b05-8c45-757912721815"
               }
             ]
           }
@@ -414,7 +414,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "YBS文書過去一覧",
+            "PageName": "YBS文書一覧_履歴",
             "PassValues": [
               {
                 "Source": {
@@ -422,7 +422,7 @@
                   "SerializeProperty": "=YBS最新文書一覧!C7"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=YBS文書過去一覧!G2"
+                  "SerializeProperty": "=YBS文書一覧_履歴!G2"
                 }
               },
               {
@@ -431,7 +431,7 @@
                   "SerializeProperty": "=YBS最新文書一覧!K7"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=YBS文書過去一覧!T2"
+                  "SerializeProperty": "=YBS文書一覧_履歴!T2"
                 }
               }
             ]
@@ -657,20 +657,20 @@
     "20,8,2,5",
     "20,15,2,5",
     "6,2,1,5",
-    "5,2,1,5",
     "6,7,1,3",
-    "5,7,1,3",
     "6,10,1,14",
-    "5,10,1,14",
     "6,24,1,5",
-    "5,24,1,5",
     "6,29,1,5",
-    "5,29,1,5",
     "6,34,1,6",
-    "5,34,1,6",
     "6,40,1,5",
-    "5,40,1,5",
     "6,45,1,6",
+    "5,2,1,5",
+    "5,7,1,3",
+    "5,10,1,14",
+    "5,24,1,5",
+    "5,29,1,5",
+    "5,34,1,6",
+    "5,40,1,5",
     "5,45,1,6"
   ],
   "PageInfo": {
@@ -697,4 +697,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//4n4AM/wa4CHV1SLdpKC47uwOoOxRPA/tHKgW8VLOJcNjFbXbuWpGYgUOmiUXPepM4j2Uw7UdufyoK2M65dPkJlfhnM7VlQXx3MT7w0hb7UfajcPVRAnFEPmcbFIwK3tDs+qsU21/eAhozVJop5JEq7l/QLS6TuKll9N/0cHwiFAl5DAPT7chYktLrsc6Nm3RtxFb4ffmWS27OMojRRi6XNMrYQjGAct+9ha7WAE9d4ZIoGc+gFGlqMV4ODZYgQlHo7JWHxJiwA2PcU5/78AYPuntOEkyMUcN9i/61VFLzEOtYlsf2Q+vv045izjNa2+FMwaqIYWrY0jCbNpdTdJDK44wgG2UCxD5fmvrDB/kTZ/fxHtpxYutxrUyquhw772B2SlzniGtE9v25sfezVBcNlzZ4iyAhr6PntD6c9xRs7+x0Uivxvxy6ECK2juaCZgVeNcsJ7rJSwiU/PTvpgNj8/BaQLVxC+MKmAgQy5D9GV6HpxCRQL/pYwWi9cbA7p1XfefdYeAuzXWuHhNMgVz80LftHP1wbMI0C+7UYeLCVxhX3q9KDC5pykrFRiRtwHMugqMbXY4Soyo8lijYGN5ZlHdxyTq4r4N9MNkW/ZvEtKo9ke/kROWZ1B7xdgvI3c8R9hlcYItSjyc+ssuskRReZIpcCbyY3y124ZJ2n0hnCPlBprdMIPjQDQl2MTx/MZVx4yaxyIld6qHd0V56lfUWHieubSkhDqDMBiKRDOByFoOE8/6CISX2VQVAweCwENRkdxIzZXymitk/t+dV8uYxg+T+oIyzXwXGF6oLHQm8OqvNvcWtB21/bDx1/UuyFGloKz4k0ByPngA+naNzAJyVyAZUvU0DAzJ+Cxv30T6rVZjZLDGlO0b2oZM1kQcRwKHexUu5w9Y5X/OITnMxezdKcQ==|920
+}//iwi3OPwVu5fC9aRKtHgfCpb303ZojKif4D47MMnCF0XQ/7DDwSC/qUHyorpqUoS8qW7V8Q2UZnXA7AMu9JXWEIF6tDPJujZ0uN40AreG3DfQvxK+alr5G0cJjRNd7zc/6KvOwrdPyAOmy+pRdmukjRq2FpoItytHVDgdMqpQHVBHBwXVuZSOzUDDH3zmjDhrpDxCfcex/ymqbyun7xC8Wc3ITVkSQA8rj806DICDg4k1yEpGuQEGG+t7YSP2iD0I1fgevdLBiKfhjX6h6gO3t8Dzx3YWoR0UWht+Ai7FprF9FUa/cOL+W8GkuTlthDA3sOciGDdplXAsUaZ5K1FGwurKNIMhDil4O0AtKNTPzqR+49EXbAZCvr13nXMwii/7sQrWuMMwMQlgt3GuXHIWt/WkJL9QFW6iOSCXH1EdylnVwjqWtLWbOjW4R4pnmnah9kSoxcK/NjOTPFEuXoPIyVOpHqvh6h/0gFYbcmO1/xiGlsB1HGAdMdazCWbkJp5gnW91mgBeOiiwmmnnsC2C5/6kO/XxSaPUcJfI4XiXJnEjpsa6abLPbaYvcZMKR2RDvSPU+Zp20U6EFuF7U1JJKaU4XMhh2KU9F8rVEa2PY4nq8BB2fDbEFQQw6HfVo65b1cQgrxnRklGSTYyiyHDLhhrLTty0DNPOWIu2wmBlgk2g6G/MUoGRzmhnMK4DWoaXNG5LtNSFLQkd0eV8ei5ACBezbINJ1uVrF4w9X3meOjvA/kVtsEwAzfVYsLv8Y3kN6TLJyCTs9b7ixtFd9RbTCPPk3GjGaGa1ncy/CAKBsWYP+wHklst0giF4sK4rdOEF4F63zidCmP5o4UlVzj0u189uYdY6rqLxX68N1krMfd+Fy0/1YecR5Wc5sRs8447Az/zM4bX3d7ozkiQhP4/DJA==|920
