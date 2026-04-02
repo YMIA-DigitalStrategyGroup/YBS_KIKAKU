@@ -1,0 +1,207 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 36
+  },
+  "Cols": {
+    "Count": 64
+  },
+  "Values": {
+    "1,1": "YBS規格"
+  },
+  "AttachInfos": {
+    "2,54": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "7,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "_RS_Dark_ThemeStyle2",
+        "Items": [
+          {
+            "Text": "YBS最新文書一覧",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColor": null,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "YBS最新文書一覧"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "申請中一覧",
+                "Text": "申請中一覧",
+                "IconPath": "Application/040_broom_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "YBS文書一覧　申請中"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Text": "マスタメンテ",
+            "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Text": "YBS分類コード",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "YBS分類コードマスタ"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Text": "YBS細分化コード",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "YBS細分化コードマスタ"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 17.3333333333333,
+            "Height": 45.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "FontSize": 16.0,
+            "Height": 32.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "9,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 37.33333333333333,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "UD デジタル 教科書体 NK",
+        "Bold",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "9,0,27,64",
+    "2,54,3,10",
+    "7,0,2,64",
+    "1,1,5,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "d7fb6181-e71a-4167-8b3d-6a2865f62b2a",
+      "DisplayName": "背景画像2",
+      "ForguncyPictureName": "Banner/Sources/06.png",
+      "ForguncyPictureSourceType": 3,
+      "Stretch": 3,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Size": "1280,113"
+    }
+  ]
+}//LjBrHcsgYNkBCn4jfzez0UrA9YIhZvEEXs1J8Q1s3tOxojE6rcCW+xp5BhgsrKQrVr7tkQyW8UuqTk45sUeE5CG+q20IMZpLGiN10SIc8bw3p8v+l0dZt0iucB+UGrDY5R/qyPN5Ch/bXXROlD2vRa/SFP/9Pb0De0mpiB3oec2vN72t4ZpUYiILYHPqJtlysjSE8vs8mxJyoIDKyLAwOUj+EP7rLvETt42/vtMGgZJZhhz9rZCfcP3Pu7YiznBKVb1JwaIfxPLhkh+qPDj/rgxcBiT0MfE1QSW/xe+cqnwsa2YDNmw1TX8y+eNq2WvbHhDAuYWRbBgYUx61NsFms2p4iuyAmFoBzHQCvh7gVi6dPzqUXJTxOvaI+gTKil2Lih+LkWpWwyUaTva2nyk3/JTx191aCK1vpdZxbkZY/oEWzPz+OMlwRZbBtr8OJEKThD8vCQauxjWHyvm+T4kMCGhaGI1wV8d3o6MA9EFBM1f3jDbLimuZK979/dZw7BumV+JImC/B/ju1FMg3SJ0gvmgly4AhZuX/xxukfmxwZZYqAV30I8coJRHWQfQZcLupT4Lbdy0DlreZDdSHz9FPSU7WUPfzYlzzIb/klt3B2LCQZKFFxVmMzObJELEgaei3JIXPaSXSTmkui/IRUH7QDPc07raaFceyTqnQA++v6bFM57Wz4LZ5GeRQodkbarUBvL/vwoluhjN8h3ap/xOi+Glb5CYkAW6AOyb8I4mXpaQ4OKPJSdSbnwYUoRk25aFxMvPcXrRHbi8N6OGoQ82xCrBCyRhVus0o5ZVdCuO6AXmhsoxfY3iw/NomTSZqhMuReeHTzc9jJ9aATvK401CHmyQyPMS16cKscvgh4gTl1/PJgCT9leYvaFB4GFTJwdKYYmJYn2DAuDaVXwLO8PcbTw==|920

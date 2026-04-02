@@ -1,0 +1,195 @@
+{
+  "Rows": {
+    "Count": 26
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      31,
+      32,
+      33,
+      34
+    ],
+    "Count": 37
+  },
+  "Values": {
+    "1,1": "分類コード",
+    "23,1": "選択",
+    "23,8": "キャンセル"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "YBS細分化コード",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 21,
+        "ColumnCount": 35,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "分類コード2",
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "分類コード2",
+        "GUID": "c774ec08-059d-4bc2-9f30-a97768df7bad"
+      }
+    },
+    "2,5": {
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "分類コード2",
+        "GUID": "6fb08de8-114b-459d-bc3a-a32110265384",
+        "RelationBinding": {
+          "RelatedTable": "YBS分類コード",
+          "RelatedColumn": "分類コード",
+          "DisplayColumn": "分類名称"
+        }
+      }
+    },
+    "2,16": {
+      "NameUsedInJavaScript": "細分化コード",
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "細分化コード",
+        "GUID": "8db0663d-0dd7-4775-b918-b98d870eae45"
+      }
+    },
+    "2,22": {
+      "NameUsedInJavaScript": "細分化分類",
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "細分化分類",
+        "GUID": "23b391fe-be86-49a7-b551-aa2ffdeac380"
+      }
+    },
+    "2,31": {
+      "NameUsedInJavaScript": "結合コード",
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "結合コード",
+        "GUID": "3778947f-ae48-41a3-b79d-5220196a2254"
+      }
+    },
+    "23,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "23,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,34": 0,
+      "23,8": 1,
+      "23,9": 0,
+      "23,10": 0,
+      "23,11": 0,
+      "23,12": 0,
+      "24,8": 0,
+      "24,9": 0,
+      "24,10": 0,
+      "24,11": 0,
+      "24,12": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,1,1,4",
+    "2,16,1,6",
+    "2,22,1,9",
+    "2,31,1,4",
+    "2,5,1,11",
+    "23,1,2,5",
+    "23,8,2,5",
+    "3,1,19,35",
+    "1,1,1,4",
+    "1,5,1,11",
+    "1,16,1,6",
+    "1,22,1,9",
+    "1,31,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//bPqDcOUuFP5KidGoUM4WDwVP2tPk7g8U5Ie7IdGo5XfOyg8m0aj3uKoZW1xrs4nmoyoUXWUN9OzyCBZSMQupE7rjgAUxOEd1OlItgiwE6qH5FT68j4VlQLdBKdwZiZiLCFNCcqL+8D3pxyZitZa/TPVRwCTh7CExSiV4Pqth5RUF8+hB0eD+CIWMlL9S1SN5kkK4WF11PXmKqIFKIgGuVkS08a6Tgl8MGlw1izVetKocLQlEHnun2oDn0AXV3wIbcOGskMBFXZ1PN6p0PpKdPhLXuI29MUtcqmNcCThDnYJvDbjJRGdZ05hc9KWXEwBbFZId10Uv70FGcG0OxcyAPv7AXMXm9g8u9JxyjONh3Sj1k7AEc4LdWWiB+Gb9qOsWZE+RgeDT2cdhroJUib27vUFu4b6Fsf2AProh/yR5Gs8hQPYp2vfnP3nA3vBvzclNHXMs0FLP+VBznH+w/hjG5HiTtvxWz0Eg0DVlai2bmDuRHefKVpI0G7De8MPr3g3qH63uSCQCraGZsFO3Q7xoIBo+KHBYMwMQUlAfEH6YdBRHAG4z2hAchxhf9G3ypIYZDxkfhUPHpw+r69TwRIkg+9IBbR1bctnYuWRgZQv39ly1szTDdF35NFoHkoIW/LXSkxFIYjeX/9w+FHiX9d9PZvGoZ97KqCFDhXewPb6GpNnmKv0w8ldTviy40xeVUK1lAntNHsBZQji66dvaJ3q7MDqYfmCsAfE4iLgzfuPAuTiBeJy47VuXypLCaK8RNF6RUIXvI80bQG6uyt8hzgyTTkf0C1Voy3cCKd9CUeIfRh1auZvKACK0OPYaP5e2yhS0LRmxEml7gF0Ldq+7cKCxk8TJVXsna7RHOfGc0PtAIJ0MOLp5LzAqMp+Xs/R7BRW8t9USCLbWq6oj6pzqJIG+8A==|920

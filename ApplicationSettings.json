@@ -1,0 +1,38 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "YKb7YqpuWZ83"
+  },
+  "ShareCommandContainers": [],
+  "ListviewLoadingIndicatorSettings": {},
+  "GlobalProperties": [],
+  "WebSitePort": 37450,
+  "UserServicePort": 62521,
+  "StartPage": "YBS最新文書一覧",
+  "StartDateFiscalYear": 4,
+  "BaseOnStartingMonth": true,
+  "MultipleLanguageSettings": {
+    "Languages": [
+      {
+        "Name": "ja",
+        "IsDefault": true,
+        "Description": "組み込みの日本語は削除できません。",
+        "IsBuildIn": true,
+        "LanguageAttribute": "ja",
+        "FontFamily": "Body"
+      },
+      {
+        "Name": "en",
+        "Description": "組み込みの英語は削除できません。",
+        "IsBuildIn": true,
+        "LanguageAttribute": "en",
+        "FontFamily": "Calibri"
+      }
+    ],
+    "PublicResource": {},
+    "RuntimeBuiltInResource": {
+      "FrontEndResources": {},
+      "ServerResources": {}
+    },
+    "PluginResource": {}
+  }
+}

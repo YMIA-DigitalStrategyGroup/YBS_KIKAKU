@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "サーバーへ発行1",
+    "ApplicationUrl": "http://YMIADIGITALSV01/YBS文書規格管理",
+    "PublishSettings": {
+      "IsPrivateServer": true,
+      "ServerName": "YMIADIGITALSV01",
+      "UserName": "AA121806",
+      "SitePort": 80,
+      "AppName": "YBS文書規格管理",
+      "AppStartPage": "",
+      "TakeServeronline": true,
+      "PublishRolesToServer": true
+    }
+  }
+]

@@ -1,0 +1,220 @@
+{
+  "Rows": {
+    "Count": 42
+  },
+  "Cols": {
+    "Count": 48
+  },
+  "Values": {
+    "1,7": "分類名称（自動）",
+    "1,37": "結合コード（自動）",
+    "39,2": "更新"
+  },
+  "Formulas": {
+    "2,37": "C3&W3"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "YBS細分化コード",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 37,
+        "ColumnCount": 46,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "2,2": {
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "分類コード2",
+        "GUID": "1a0443dc-8093-4e7e-925e-93b1e9426d1e"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "YBS分類コード",
+        "ValueColumnBindingInfo": {
+          "TableName": "YBS分類コード",
+          "ColumnName": "分類コード",
+          "GUID": "f7ebff90-66d9-426c-9e2a-bafc215bc109"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "YBS分類コード",
+          "ColumnName": "分類コード",
+          "GUID": "c5858ced-28c0-43e0-b0ca-e166079e17d6"
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "a1a56f4f3bb5453c98213c0cc2a76b8d",
+            "BindingInfo": {
+              "TableName": "YBS分類コード",
+              "ColumnName": "分類コード",
+              "GUID": "9576eb5b-209e-48e9-b245-9be9caf1f71a"
+            },
+            "ColumnName": "分類コード"
+          },
+          {
+            "GUID": "2ca58d75a04147eaa04477712265948a",
+            "BindingInfo": {
+              "TableName": "YBS分類コード",
+              "ColumnName": "分類名称",
+              "GUID": "c0780e10-23d4-4aa2-a793-d826d84c1e51"
+            },
+            "ColumnName": "分類名称"
+          }
+        ]
+      }
+    },
+    "2,7": {
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "分類コード2",
+        "GUID": "91c88fb8-b420-408e-822f-09edb09675c3",
+        "RelationBinding": {
+          "RelatedTable": "YBS分類コード",
+          "RelatedColumn": "分類コード",
+          "DisplayColumn": "分類名称"
+        }
+      }
+    },
+    "2,22": {
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "細分化コード",
+        "GUID": "73c40854-c355-42ce-94b4-9c1bee0bb493"
+      }
+    },
+    "2,28": {
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "細分化分類",
+        "GUID": "d38c4794-7410-424c-99db-feda9be2216e"
+      }
+    },
+    "2,37": {
+      "BindingInfo": {
+        "TableName": "YBS細分化コード",
+        "ColumnName": "結合コード",
+        "GUID": "755fda5e-478e-437d-89ba-68afb7793176"
+      }
+    },
+    "39,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "マスタを更新しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "aa54983a-cacb-4476-ba04-073c5f1c047d"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 4 -50",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,7": 0,
+      "1,37": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,22,1,6",
+    "2,28,1,9",
+    "2,37,1,9",
+    "2,7,1,15",
+    "39,2,2,7",
+    "3,1,35,46",
+    "2,2,1,5",
+    "1,2,1,5",
+    "1,7,1,15",
+    "1,22,1,6",
+    "1,28,1,9",
+    "1,37,1,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "YBSメニュー",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//qFVyOzblb+3MSbk6CSbV/mFzPHDIcOy5hqLhmhG7JOXmZLh7+73rLg2yUjAtLc2ztQqN8fI735Ljdz85cMatDCrdoyXmhAj1ZAGWU7Xv9GdWCpi8jr0iqDtIXiSpIPPR9GB3Za6otv+jyZQkG1yBl/AL/MUTeeKKAztlLMgQbzxBa4GRRGiAp/s0qXCcKBv0DomWyNeies42hWn1F8qEIA1qXsXSI3s8zjQrDTj3ieHt4eiZUrR4o2Q7NT0iknglt5OEyWmWcmc+7NYL2c2yF7PQ6LP5997NxF2JMXSjGpBS55t4QjWA4ab1Be4Xh5TbXziTaqLgpECGnFGOrnQN77WtzEsCxoApyzpOupgLhg6uD69wBKlQpRK9AlphrpbQkJ4rJcx25r7uAgx5/6gDPGf5CwqU+8xH9Tqy8FsjjOhZ+UmtINe/PoMlaFjO/StfLOVtXcz4Lhx5YaCJBajq1QyzqJMS2L8tIS3y0sR37bEuXZSFf5XYmp47EBtpAYhW82tXjueTpWrSyS+G0XOv0cmc4XSPm4jVenlnUQWxN/ZA63ta6WJ15cwkJkCkJBlLe1x5bLr1hLe+K8onTX4PE/I6yqubS6ogF3zEmmlIB9HnWqJkEqqkCnFpMwMQFjQCeL8qL9ayK8cVNEkDQBTi6I711G6ve1nO9BUsSjiNIKnMAApVdcr2D1iyygr0S3zx00umha5OS9tmBnOy0dXLwyKumzbi2lkReZtkD3FnpG9qTbUaRioNFTfh6ESJpotwADikeMurpGSoR0gdcz1wlBQA7h6spTLA9APpjV5IMED0cpLakZqfLJjKcLGpmWUn1npqFWcJ8TFyL7X3FhxcJaLkPx8xJuj/1d4sWmWE1fbk9/q9oAZx+uN7D0xhrKGnHf/S1O7kpFMBTct6qJpZOg==|920

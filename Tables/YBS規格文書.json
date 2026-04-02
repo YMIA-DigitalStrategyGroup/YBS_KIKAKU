@@ -1,0 +1,233 @@
+{
+  "Name": "YBS規格文書",
+  "FlowProcess": {
+    "IsEnabled": true,
+    "FlowStates": [
+      {
+        "Id": "2d950e40-a389-4fe7-b065-8825eaa07d35",
+        "StateName": "一時保存"
+      },
+      {
+        "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
+        "StateName": "申請中"
+      },
+      {
+        "Id": "900404a7-b0a2-4eb0-aba6-6c8cd2d87edc",
+        "StateName": "承認済み"
+      }
+    ],
+    "FlowPaths": [
+      {
+        "StartState": {
+          "Id": "2d950e40-a389-4fe7-b065-8825eaa07d35",
+          "StateName": "一時保存"
+        },
+        "Action": {
+          "ActionName": "提出",
+          "GUID": "d026efc5-a4ba-42a2-a7a8-e4256eb17452"
+        },
+        "ToState": {
+          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
+          "StateName": "申請中"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": ""
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
+          "StateName": "申請中"
+        },
+        "Action": {
+          "ActionName": "承認",
+          "GUID": "a14ed9d9-094c-43d5-9c1b-52ad0e3e6e1b"
+        },
+        "ToState": {
+          "Id": "900404a7-b0a2-4eb0-aba6-6c8cd2d87edc",
+          "StateName": "承認済み"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": ""
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
+          "StateName": "申請中"
+        },
+        "Action": {
+          "ActionName": "却下",
+          "GUID": "804e119e-3311-41fd-85cd-fd0b2a413b16"
+        },
+        "ToState": {
+          "Id": "2d950e40-a389-4fe7-b065-8825eaa07d35",
+          "StateName": "一時保存"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": ""
+          }
+        ],
+        "Errors": []
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "選択",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "申請者",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "申請日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "分類コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "細分化コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "追番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "改正コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "YBSコード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "規格名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "理由",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "添付ファイル",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "現行_旧版",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "FGC_AssignTo",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "FGC_State",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "AllowModifySchema": true,
+    "ConnectionId": "SqlServer1",
+    "SourceTableName": "YBS規格文書",
+    "SourceTableSchema": "dbo"
+  },
+  "PrimaryKey": [
+    "改正コード",
+    "YBSコード"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "YBS分類コード",
+      "PrimaryColumn": "分類コード",
+      "ForeignTable": "YBS規格文書",
+      "ForeignColumn": "分類コード"
+    },
+    {
+      "PrimaryTable": "YBS細分化コード",
+      "PrimaryColumn": "細分化コード",
+      "ForeignTable": "YBS規格文書",
+      "ForeignColumn": "細分化コード"
+    }
+  ],
+  "Indexes": []
+}
