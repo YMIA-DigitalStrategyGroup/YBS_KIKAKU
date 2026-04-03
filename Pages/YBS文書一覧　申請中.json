@@ -134,6 +134,15 @@
                 "GUID": "c1cd4de1-fb55-4c5e-b48b-4ecf2983a9be"
               },
               "Value": "旧版"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "YBS規格文書",
+                "ColumnName": "FGC_Creator",
+                "GUID": "51a94a78-ddbc-4465-b65c-6affea7fc200"
+              },
+              "Value": "%CurrentUser.UserName%"
             }
           ]
         },
@@ -227,7 +236,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "c1d59ff9-8683-4e32-a2b4-5eee3970f77a"
+        "GUID": "042ea5ee-38ed-4b8b-b05b-28bd2cd4de7e"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -292,7 +301,7 @@
                           }
                         ],
                         "Comments": "対象文書が　「新規」　の場合　→　承認後に現行にする",
-                        "ID": "28e48108-081f-454e-9656-be96ae2dac31"
+                        "ID": "b2d63b17-0ab6-4bba-b531-938a835c6b9d"
                       },
                       {
                         "Condition": {
@@ -366,7 +375,7 @@
                             ]
                           }
                         ],
-                        "ID": "bf8b69aa-e3fc-4f0f-8b79-747d9f9cef53"
+                        "ID": "28daa4d9-f086-4557-8436-ce7d5d1f1be0"
                       }
                     ]
                   },
@@ -381,7 +390,7 @@
                     "ActionName": "承認"
                   }
                 ],
-                "ID": "d0570ef9-c316-4625-8134-566e94a7c66c"
+                "ID": "aca08c48-0fa4-48e8-821b-4e1aac7dcbbd"
               },
               {
                 "CommandList": [
@@ -390,7 +399,7 @@
                     "MessageFormula": "承認者ではないため、承認ができません！！"
                   }
                 ],
-                "ID": "b89e81eb-653c-47ee-9e15-4cbf21423c9e"
+                "ID": "e85cfd37-7b19-4d6a-918b-6a9f98307ad2"
               }
             ]
           }
@@ -618,4 +627,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//LXZ9QF+SyuL4NiaOwBLoLmSCfPXdbCBoonqFekXV/ai1pQyRNCJpJh8IvcUN3Mgmn9FHv6pxSzP0VMAD6LBKTEriVEf99OXFawBzp87FJxpdzmU/FQXVMWQDQ7dGLachkdIqlnrABVKyxV1G4laYdiSLRt1K8VOtWFfufMYSyFfHFeIpubNjdcQhTpQoyLYpLYfc8rkzM9h3D89AGCfAwXwGFs7tUXm4EoYkEump4pJP/Dg/7J7LEqMeR7lLnn8eIRSR4bOFY5SXI0UwrA7k0PXMpbv0P1iRSTOs6miIlaJ8im0/b2KESsc1HKTA9mjN/e++BeZKM6svziOsmUvIBIhgGWv1756WIrBEHyCeQnbyRsMKNk5DBrAD9nCCmDujO+OYlPjMx5NMjqf7tdSf/3tXmzbY70mkLtRnk+OHKKDIhKIXxcBDCy/j7f0h9kdnRTVSa2/nWFhzGuf/9zhFf6YhHtSjRaC51CbYO7GrrO3ajUec7pIhvBK7cKhbK03fFJfXPqB6zue12uaXjRb/h7OGfRT9TMrIiNpWAWrof1QFm8JBXTNURMbNo4KjRD7apLtnBk/u71rbHvnfGZmWW9S1dVIJnr2YbjvMntQmblTaZrert+iNAvsrGuenokZh4cJ98E8ZGmtjwXEXQbPuHfh/P2jKVFgQQTECZxcfA4RkLccFOXxxQJLwA9nNIIwOwOId6cRzN+q15teUBGIswvAUpnDmqlkMtIjyQFrnT5RzgsiWmz73AXZYONcIh6mhfff83pyiL7SyZAqm2I2kZPzOoa2bNwp0eeWvZ+Va0n140FW3T3jGrpnzO2JQroEJW9D39M0n6SrEONWf7ZLVxAkB26WP4yFQ96JTYGtvd91ACKGDvnvEQKU3x7AKz5oWvVRGS8F4iLclK8ixrfiFMA==|920
+}//BG/pXNr0bctssV50Y46tD1D4t6T1vcgkYih+kx0xEzIAr//YK7ypg8GlASZfjgN+GaxQc8GxXYj0xvxcSsdtKl8pUamhUaGMHJ1SKOJ3/vVsvS9RTEpx+ADxmX7aWse62fHUpq3KsL5NlykAJUOio+u2O6vMAY2jqtBfu/Pm/pWfAhk0FB9evLZWSHm4opATFeKb6F/77sGqnXE05nugfjB2V2jEB+RcgWuY1BW4n2vbBDOxbyiQLS2vRJ5SOJqxbhRhgC4dBjz7g96UF6UfZy9uLXyolacqPrnM2VvzNIesZoNoZmtiXHVea4ATLo0pz2LT9LcVat+C9DBKcxYASHAulC3OWKglcA0AmAH1RwBV+NXHdvhV8QYXzmJyCN8Au7WRpkGQpFKh2mrtp06ChqPTSBbYHLjcLIepk/dGITWfRurwO4pB06lPb55cs50g1WjTKInbxGaNCS4/vVg5NwG/73QOSWWsNzu/2Z3RxMNbuRaAbpzc1wk2SCZYWDbshbQ1olRsI8fKG+pfNms/P6dJ2gE0SVxHiSme5Q7WfdOcFCc62Iwy3x/5dMMe0gGLtJq3mszVipmSQV+Xg2S/Rdv7pEKdXsFeoQWbIfryyoByP2ipr3ZQA8+sl5af2QV3aSZA9xpXHReWErx88fLR/3yLIOmOdPlOxzgZxAMtaSvgNZs6DiIUfSZjlbYV2mOH5EeiWpRnzWMEyUWAZ9aIHRNh+b0oh1DtcjHU0xF8Rs9AtkDYGKBfLwXzgknUIqyuSKPzlEdYDmORUT8XZRQKucktQj3gp/+iRSBTJVKBCPX8H+lDkZMwc9tGwUNGXayO2FpKiDecUmrGTx7Cgjn9RD3mbKH9N8g7Ka5ucKR/GTYDuc/ck5Gqznvr17yIf/Umw7mXvL/ye1ZdHEggNLhPRA==|920
