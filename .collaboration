@@ -147,7 +147,17 @@
   },
   {
     "ModuleName": "PCPage/YBS文書一覧　申請中",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-03T16:17:24.7339269+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS文書一覧　申請中.json",
+      "Pages\\YBS文書一覧　申請中.rd"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
