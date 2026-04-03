@@ -137,7 +137,17 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-03T17:21:24.7269067+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\YBSメニュー.json",
+      "MasterPages\\YBSメニュー.rd"
+    ]
   },
   {
     "ModuleName": "MasterPages/新しいフォルダー1",
@@ -145,7 +155,17 @@
   },
   {
     "ModuleName": "ApplicationSetting",
-    "ModuleType": 8
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-03T17:21:24.7269088+09:00",
+    "ModuleType": 8,
+    "ToRemoveFiles": [
+      "ApplicationSettings.json",
+      "favicon.ico"
+    ]
   },
   {
     "ModuleName": "Theme",
@@ -227,12 +247,12 @@
   },
   {
     "ModuleName": "PCPage/YBS文書一覧（最新",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-04-03T17:21:08.8836151+09:00",
+    "LockDateTime": "2026-04-03T17:21:24.7268598+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\YBS文書一覧（最新.json",
@@ -251,6 +271,16 @@
       "Email": "hiroshi_ogata@yanmar.com"
     },
     "LockDateTime": "2026-04-03T17:21:08.8833459+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/YBS一覧（最新",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-03T17:21:24.7268678+09:00",
     "ModuleType": 1
   }
 ]
