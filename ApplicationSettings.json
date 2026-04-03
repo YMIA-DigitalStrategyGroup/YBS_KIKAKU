@@ -7,7 +7,7 @@
   "GlobalProperties": [],
   "WebSitePort": 37450,
   "UserServicePort": 62521,
-  "StartPage": "YBS最新文書一覧",
+  "StartPage": "YBS文書一覧（最新",
   "StartDateFiscalYear": 4,
   "BaseOnStartingMonth": true,
   "MultipleLanguageSettings": {

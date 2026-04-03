@@ -239,7 +239,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "e31d979f-0e7f-49d3-a3d3-6bfd26863801"
+                "ID": "3085bb9e-4a8c-434f-9b69-aed7b982c4e4"
               },
               {
                 "CommandList": [
@@ -374,7 +374,7 @@
                             ]
                           }
                         ],
-                        "ID": "616db88e-c2ba-48bd-a63e-6858a8d94d46"
+                        "ID": "44898883-ac7b-4f68-a9e0-5e76ce7c5def"
                       },
                       {
                         "CommandList": [
@@ -394,12 +394,12 @@
                             ]
                           }
                         ],
-                        "ID": "33d9909b-49b3-4a94-838f-bd194cf54c85"
+                        "ID": "7a928497-1a0e-473d-85d9-3670f305701b"
                       }
                     ]
                   }
                 ],
-                "ID": "119faafe-b7b4-4346-8557-c7946005c2ae"
+                "ID": "bdff034d-f75b-4cd6-bb13-8a2f881c947c"
               }
             ]
           }
@@ -506,7 +506,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "41cf05a7-e5f4-4edc-b2a1-c202380f9a81"
+                "ID": "e0bcd363-35bb-405e-86d3-944c11de2055"
               },
               {
                 "CommandList": [
@@ -515,7 +515,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "04df2b2d-8ecd-4ebe-9de2-8e08133ee236"
+                "ID": "05d0f731-a926-466f-8353-9d6268ded5ea"
               }
             ]
           },
@@ -685,10 +685,10 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "未入力の項目があります。"
+                    "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・ＹＢＳコード\r\n・規格名称\r\n・理由\r\n・規格本文の添付"
                   }
                 ],
-                "ID": "b5989504-1832-4e2e-9b91-e6b587ee2b1f"
+                "ID": "635ddc13-335e-46d4-ba12-f258a8416a44"
               },
               {
                 "CommandList": [
@@ -717,7 +717,7 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "7ad3bcfd-e2fc-4a45-b11e-0d460d7d320a"
+                        "ID": "c9e0d58a-fbb5-4b8b-b74f-31eea19a1f97"
                       },
                       {
                         "Condition": {
@@ -741,7 +741,7 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "76b6f995-7631-434a-bd7e-1a9771642c2f"
+                        "ID": "032f0ad6-8b08-462b-a3c4-60ccab0c1c1d"
                       }
                     ]
                   },
@@ -761,7 +761,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "5e71bcbd-ace3-408f-8f86-e68cf20a53b9"
+                "ID": "6b959bb7-3308-48e8-8e8a-3441d9dcddb8"
               }
             ]
           }
@@ -799,7 +799,7 @@
                     "ConfirmText": "本当に追加してもよろしいですか？"
                   }
                 ],
-                "ID": "43503c8e-3a9c-497c-87c3-991738b23b50"
+                "ID": "3d0f7165-e93d-4a01-a04e-710a4cb11be7"
               },
               {
                 "Condition": {
@@ -823,7 +823,7 @@
                     "ConfirmText": "本当に追加してもよろしいですか？"
                   }
                 ],
-                "ID": "55e24c60-fcbc-458a-b6d5-eda39368e997"
+                "ID": "bdd4c5ad-41e4-42e6-a270-df2906ea46ea"
               }
             ]
           },
@@ -1869,7 +1869,7 @@
                 ]
               }
             ],
-            "ID": "0784b07e-ee41-4ed1-8d35-bc117f22f287"
+            "ID": "3eb628ee-25d4-4ad8-8c10-8a31ffa33089"
           }
         ]
       }
@@ -1914,4 +1914,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//0F0wDkgz+Fxl3HUfQHaGvhxRcFXems5iKGtRXbPKTXZjq74iBv+VT//iO5Za1aL64qnoZzTVoxXbDddz/N2aHEuPBcMGRJKmNXTn0kbuwgat1uKE4AX83zOai9TA2WR1PYiA2xAyeQghzDrKAF5taAP4wC2LPgjeaXx3OO5zCOEtEGiYa3jIrGyNBMVlVF7Ir66b4u5WnbpoMpKUhIEVhUGmJndnbfN+FndWEkzXAJLFHMYW6+KusELaxBgr4drHfAHZscaN/zpz7/Jc4J08j52GsiytpXG6AXp4X2S7UEkKs4BqEjgzlH57WgGmnQnzFUjIxvM2firg416Qze15hdhvkSQzGrzRTVN83TDIpzeYtU9bBLY7Jc4di8dACL6VUCgJs2Oo8rbC19GGPLYbxpvETeo7Gk6KJpEHxa97lyU6vTBB1tR6T86SM6J6IyYeHTRDpAOGLHmSNcKuzWA4KTzrc++EWbz/MSuH/LqA3/IqN8OpjLXwMF6HANi0XfC7oRdnWchRDeqtVxHSN2vj3J+a6Z3PU6KvGtJV0VOrAFY2p7iIuIaLAIXASMCButRbC+hpt5ypiJmeCqL5fUx+yhTW/NJGzb0vsHeKjPiQ+7FSAYJRmWhxmAmj8LpcauRXRj6SiPYLdCT7Z+nzEWwiu/Msei3LougQsaNo7HFDfJcqivEeGn3Q1bXzNGhAPn1ybePsE/dwhis9JUZrI2YPW/HUg5z8E5LGkN8NdDxIscEXkb5UgqZC7iZHg8DFrFjKmTgUywoycBPoUSOMTCXkhOknMoRhu+1qJczBuQcBoJw7ulsYrUPX9C6jBJKob44Muj+//qdSTUt40tn40NUOS/V0pCH5ZBAbNrsajV28I3VMkY+mqhGtxuhZ1GT1qcDb+G45+Hi3ZDReXcFtHayJDw==|920
+}//2dXn/ITGIHCCLu+cgE80LAp0pEpU/V5A42R4aukyyrdaFTPep8C0lLntpDyj7PIwNOWL4QdXMCqkCTg62eB+mJJvypRl2d91V7mOSxOAmDHDZFR378Ouiuqb1nAT3UOslSM8AOcLvwJksSTlnDs3Xvky9dI3ertcnQbCsa94IF1RPB2acrmHisH8bo14cW1eINNkLXB5fwSCJJIvqLz7n85IZidAvwt1n0DXqFrXn3mK/j/fBvhLqYNbb9dOyjuJQF9K9gPM79cYbQObz/S+6GuKLa+vP07E+yQ+G7NZoSJx9+Zq8zAosLg8YNSUpQVNq3lUqL2kTkMIT3FIK/sqrOqraol2QYv2KPPRcAfMXW6rxHuSxy6gvzfiZnHUuSn3PDGUnwX/K5KDZ1aOQUsXJEM284TBQMUXzxDt7pPyzxHozhBXbKJxK3jHaRxTauaiEu/m/Q6rWXBtSv+rCMz1s+dCNxHMZF1I9ML2j6v0L8Sr2D772+aQ4PYTKSUENE1Wl+vHvwM0Hh5P6JRniWIOrRFgOC6KbfzrvYk5PjLDWLw6sF/RMJQ1CEH2vQwZnuTIigkbs6Y/MZEm0vabMzTEDxLn7MAZ70wm6MVLj6l6RKZja4M9xjRp/smjMnJunQichbIYcPFwifUeEzJkQvSvuWpTBA7UTmKL+9aB7XAl8P+EjcTex1mRlZJ7Wx1jsDmlmFsj0hv/eE+VbOrWmLLewFC49lEWiv2jo/WpL0EGOOsWcsbS8VVhJYIvpmfF8uBCyf8cT/ulbVPK2AXU/oeRj7sFc3dn9bs4h18S4zdGYT8cpVTtH/yXONanPyOT4YUAppziMuMQBh7Lcdj1Szf+mPW++b4u8dSFVx56KYaVer1kW2pqsqcT1lOMr9z5HurNZ9YhTghP57SByvc8ZUF0+g==|920

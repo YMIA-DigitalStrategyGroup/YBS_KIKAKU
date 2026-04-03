@@ -58,7 +58,7 @@
             "CommandList": [
               {
                 "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                "PageName": "YBS最新文書一覧"
+                "PageName": "YBS文書一覧（最新"
               }
             ],
             "CanVisitRoleList": [
@@ -377,4 +377,4 @@
       "Size": "1280,124"
     }
   ]
-}//upVxqdEV4qJpLymkZtlvRcxr2sKmMF+W5XnFRMxufbEk++/FFY7ayTk0Z1qbMdWSHg7bNHzPO3hIxZJJHlVaGkFnLUlhFvzpQtS0sPHV2u+TqLbogjyONt6zlkhWTdBIQsXxj5TBCZ5IXXbP2qZ+xgLG2xmq7fibDmgMHiGsKSZUcmCc4mXes0a9AqzqjrOLhStq0qfkllLEy08tha3DiBH5kA3SW/3LzCje1BItf9DU0IOYIkhf7Yfd03GbYytwljs4vwkDhDg0NXMoOHT11eWwd7+hAzemEgtUREdOUSOFq49VTUS50fb++/sigh4w3r9ks/23FA1rQI3quOH4hXXH6aIibLqustVU8Q65QqePgi+nLmUugqR1iwmB9tD8JM+l8tXI4omFC6EGXvx6So9Qhn17tk79LV0boJKjR5ZloXIUZNNvcDi508rdCotm8pz9ZJr1CntgSfxEHbC7aG3aAeIXWcFH2hcnajjDLThJyfdnMf5yQz9tBaH4f4EDfDeXtIsT0eZNZGPx52lrgQsolDuuYxS42cArpVfSRi2Umlkiwb0EiQ2G4HCk6aIQHkRKE+6KV/DhGkq4iHhhDqgD89FWdPBaCPCCPvuUwjRvuP45nP2gcz42zxEDqjvr/fuxMrBX711PNv+NvcxgRws2APxW/1L550Qxy7vfTZURSARdVKx+fnyM0CvD2WbF9XGjZBWYOs3KKIqdFoAM8H/I6o+YbcfpEpCMJi0H7VyUFNdASYtjcr736QiELGNtXesya1I07VuqCA/uxBkYwJQAzot72cTqeD0vCRqzwb13ykeEp/PPboG5g3unoqFVT+VvFBfRBzE0bS2rCGBjcWUu2DjJlswhFAKOzSb+O1vQzGolIkEoaRuHbA4UfSpwvAHAgYwX+KL7Hqdobs8wYw==|920
+}//rxUXyDo82ZQF0Am3GAWJbbmNevFHeATz4oaoZqpzsOw06yKNHjBgRFhir135Lzci/S6ygfr3cpouUNvN6RWnou2SPez+Mwx8qAkhitiRStNiQIem0tshA1+vUUW4aLL5X1FOpfZKA3z3QthGMDYBkl2Hk6Tgjq04dzwJwosktY2yr3dhvlOJtLRHq5F3z2GDBUjXj9sFQ622qGJuq6ijhKJ7GXD5JVEKaT4dVrBq8L+m5wChdgLerfSDM9MP8/OIaH7AxH72blCzjs2zSLi37FycYX+mNnFaPHYpL6vOAGgg+Gfek01l1f561LXa0/lj/6GwFWAOiYlR1WnT3jWGjuly+/neXSjNUIqcqM64xtGkAbpYLYJNCs3iDY6LejPXkJyIQEzXW/T2ct5dxD6ZRGuvCNC5zct57aypICYxy8Uiz8EQxAM0LHH09vZOyyn3KtlwLy16JJ6sRg6m09wVdUTIXSlizHrpXNrxgnthqV/ojccwFjTDBpKBk4/HV2iEBHpBcXSQT68LQ5I1HGSvK10qmGyaaiGw00U2YtxFTSHlbTY349RTq1eZsGJOxdDrMDDVUX/7I7hOzNUwylOhvFAPi3OqbPWWxfWDTl2nqUUzMiK9DLY9G6UbgSkl5cPKNgvVSWRIZZi2YeMO2p2/bI+tvtHDJeZqcYRKoctsUkkh5pXjvKUcXU+MeWyVRcP5E05OItRk67x9c+kK0kj0VyYuynAGXiBACl7QCgla6i0q3jCzeO/DzN4Msuu+IvtzwtVatGhYBAGeI9D/0ZeQkvItCLwvqKgy0AF91vJMFE9JEqjBXMc5qr06qPSAdHTQdPzfgasBvHN5vTZTJsAGkvEw6aivo9zNodZATCqNFDvS6ucjuPob52mqicf8Rk+FDWcw/sJJOFuIepkhvIB2pQ==|920
