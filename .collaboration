@@ -137,17 +137,7 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-03T17:21:24.7269067+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\YBSメニュー.json",
-      "MasterPages\\YBSメニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPages/新しいフォルダー1",
@@ -155,17 +145,7 @@
   },
   {
     "ModuleName": "ApplicationSetting",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-03T17:21:24.7269088+09:00",
-    "ModuleType": 8,
-    "ToRemoveFiles": [
-      "ApplicationSettings.json",
-      "favicon.ico"
-    ]
+    "ModuleType": 8
   },
   {
     "ModuleName": "Theme",
@@ -232,55 +212,15 @@
     "ModuleType": 41
   },
   {
-    "ModuleName": "PCPage/YBS文書一覧_詳細",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-03T17:21:08.8833375+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS文書一覧_詳細.json",
-      "Pages\\YBS文書一覧_詳細.rd"
-    ]
-  },
-  {
-    "ModuleName": "PCPage/YBS文書一覧（最新",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-03T17:21:24.7268598+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS文書一覧（最新.json",
-      "Pages\\YBS文書一覧（最新.rd"
-    ]
-  },
-  {
     "ModuleName": "PCPage/YBS一覧（申請中",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（詳細",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-03T17:21:08.8833459+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-03T17:21:24.7268678+09:00",
     "ModuleType": 1
   }
 ]
