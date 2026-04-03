@@ -117,7 +117,17 @@
   },
   {
     "ModuleName": "PCPage/YBS最新文書一覧",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-03T16:15:26.5342151+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS最新文書一覧.json",
+      "Pages\\YBS最新文書一覧.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS文書新規申請",
