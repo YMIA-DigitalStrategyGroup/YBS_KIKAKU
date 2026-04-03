@@ -25,7 +25,7 @@
     "20,1": "新規作成",
     "20,8": "改正申請",
     "20,15": "廃止申請",
-    "20,22": "履歴確認",
+    "20,22": "詳細確認",
     "22,14": "↑",
     "23,14": "これまで未作成"
   },
@@ -248,7 +248,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "10e6720c-9059-45e5-8efc-f77b98c0114c"
+        "GUID": "377f928e-19b0-4d02-8a0d-a32dd9f46693"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -356,7 +356,7 @@
                     "MessageFormula": "承認中の文章があるため改正できません。"
                   }
                 ],
-                "ID": "70f779fa-d72f-4c0d-9f37-33316d97280f"
+                "ID": "4bccb5b1-bc51-45c6-b1ca-57fc515b06c6"
               },
               {
                 "CommandList": [
@@ -380,7 +380,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "eb9f543f-324d-4b05-8c45-757912721815"
+                "ID": "3e5dc264-813a-4d7d-85ec-50762932f501"
               }
             ]
           }
@@ -414,7 +414,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "YBS文書一覧_履歴",
+            "PageName": "YBS文書一覧_詳細",
             "PassValues": [
               {
                 "Source": {
@@ -422,7 +422,7 @@
                   "SerializeProperty": "=YBS最新文書一覧!C7"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=YBS文書一覧_履歴!G2"
+                  "SerializeProperty": "=YBS文書一覧_詳細!G2"
                 }
               },
               {
@@ -431,13 +431,13 @@
                   "SerializeProperty": "=YBS最新文書一覧!K7"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=YBS文書一覧_履歴!T2"
+                  "SerializeProperty": "=YBS文書一覧_詳細!T2"
                 }
               }
             ]
           }
         ],
-        "Text": "履歴確認",
+        "Text": "詳細確認",
         "TemplateKey": "_RS_Normal_Style2"
       }
     }
@@ -697,4 +697,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//iwi3OPwVu5fC9aRKtHgfCpb303ZojKif4D47MMnCF0XQ/7DDwSC/qUHyorpqUoS8qW7V8Q2UZnXA7AMu9JXWEIF6tDPJujZ0uN40AreG3DfQvxK+alr5G0cJjRNd7zc/6KvOwrdPyAOmy+pRdmukjRq2FpoItytHVDgdMqpQHVBHBwXVuZSOzUDDH3zmjDhrpDxCfcex/ymqbyun7xC8Wc3ITVkSQA8rj806DICDg4k1yEpGuQEGG+t7YSP2iD0I1fgevdLBiKfhjX6h6gO3t8Dzx3YWoR0UWht+Ai7FprF9FUa/cOL+W8GkuTlthDA3sOciGDdplXAsUaZ5K1FGwurKNIMhDil4O0AtKNTPzqR+49EXbAZCvr13nXMwii/7sQrWuMMwMQlgt3GuXHIWt/WkJL9QFW6iOSCXH1EdylnVwjqWtLWbOjW4R4pnmnah9kSoxcK/NjOTPFEuXoPIyVOpHqvh6h/0gFYbcmO1/xiGlsB1HGAdMdazCWbkJp5gnW91mgBeOiiwmmnnsC2C5/6kO/XxSaPUcJfI4XiXJnEjpsa6abLPbaYvcZMKR2RDvSPU+Zp20U6EFuF7U1JJKaU4XMhh2KU9F8rVEa2PY4nq8BB2fDbEFQQw6HfVo65b1cQgrxnRklGSTYyiyHDLhhrLTty0DNPOWIu2wmBlgk2g6G/MUoGRzmhnMK4DWoaXNG5LtNSFLQkd0eV8ei5ACBezbINJ1uVrF4w9X3meOjvA/kVtsEwAzfVYsLv8Y3kN6TLJyCTs9b7ixtFd9RbTCPPk3GjGaGa1ncy/CAKBsWYP+wHklst0giF4sK4rdOEF4F63zidCmP5o4UlVzj0u189uYdY6rqLxX68N1krMfd+Fy0/1YecR5Wc5sRs8447Az/zM4bX3d7ozkiQhP4/DJA==|920
+}//vecSREsnD/SWxKj5oOng301wP4kfRANqO0QG3yRhX60JIJo6XNLi0Dq5AW6xgvfZT+Z1Zs///FywQYAQ+AvIXTRLGyUCYMVaNzWOHlW30ToRo1iIdUk/sihvjfGy6NjdCUTP1jDqx2UhPZWju1Qk7ZYW/Jgp3+KrBFxU4npdo1PUHit9yfPm0DeutmweAIPbkVnTimm47mOeIB+EonS54wJQW8bRqD44aGLvUGfvJzGLyUl2mXrc9y7FRHjuAz0Xbc64eD8wE+XQ2yf+u+RwJ+CseXFFBSvEBfVIzFUD1OjYGCu+I0KZ6ueJWeVPb6XefLW5bo+UG29UuxkT4f+GDtVTGExcNt86+wNmWYLtaDM0KejpQKqKCyTo/pj4rGsdSeizadRbE5ypnctu7TmIbfrwqvl7mnIrjKUKOkSrDOdU1wMCiV+T6AWmQCnGvJEmtz1u0z9XCJG9eJ+KYEG+h5Umkkd8FFX8qq2cZ2PPRLn2wDNrR1yMsuBmAyVDjyh4sJjXMSarAQ1SHQEgXkU7yWPgY6DvKoz72+1ujDH2c5fHTn9U0MfHxw7euZy+Q5PDOqCvyfywox4DD1wPla+1joPWnXwGhndQM9ghbhwEqynyEUGGVeMhUZpIXv2jInfftc0kd0ODqjsuT64GsGyB3N9ehUD7AkEGuGX6z2Ev4mLKDSPWsxG7E4XUJtdVRy7LSkA9ploGnobwFIAudWEsdUvv+dfJVZm9EEjlrYPJws/anzbs3C1sjgfJ3n7u6x4ws7RPqMV5mhgt5GAPRjwAAOoPJFvJzc6E1IZ7e3Hy83adIuBSa4JIqOGAao4WLodF50gyF9Rn9mOOzy0uCpBrRveM0TYZMyQGHXeVnC91viugafD1SY/TZOoo3U9jTf5rk1xmAtnVbHd2/pEMtlkx2Q==|920
