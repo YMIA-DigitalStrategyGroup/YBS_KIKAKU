@@ -121,7 +121,17 @@
   },
   {
     "ModuleName": "PCPage/YBS文書新規申請",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-03T15:13:41.4875339+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS文書新規申請.json",
+      "Pages\\YBS文書新規申請.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/細分化コード選択",
