@@ -155,6 +155,15 @@
                 "GUID": "282de9b3-100f-4c03-8bd6-a5e85e6a7199"
               },
               "Value": "新規"
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "YBS規格文書",
+                "ColumnName": "FGC_Creator",
+                "GUID": "134b1eb3-ff09-4771-968d-a6f28a03f265"
+              },
+              "Value": "%CurrentUser.UserName%"
             }
           ]
         },
@@ -248,7 +257,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "377f928e-19b0-4d02-8a0d-a32dd9f46693"
+        "GUID": "92014f27-9104-4870-8701-a9df14371180"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -356,7 +365,7 @@
                     "MessageFormula": "承認中の文章があるため改正できません。"
                   }
                 ],
-                "ID": "4bccb5b1-bc51-45c6-b1ca-57fc515b06c6"
+                "ID": "97096439-6eb2-4653-a24d-0af380eb2f34"
               },
               {
                 "CommandList": [
@@ -380,7 +389,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "3e5dc264-813a-4d7d-85ec-50762932f501"
+                "ID": "3d9a85c1-1494-4de6-91ba-de8c9af8e177"
               }
             ]
           }
@@ -697,4 +706,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//vecSREsnD/SWxKj5oOng301wP4kfRANqO0QG3yRhX60JIJo6XNLi0Dq5AW6xgvfZT+Z1Zs///FywQYAQ+AvIXTRLGyUCYMVaNzWOHlW30ToRo1iIdUk/sihvjfGy6NjdCUTP1jDqx2UhPZWju1Qk7ZYW/Jgp3+KrBFxU4npdo1PUHit9yfPm0DeutmweAIPbkVnTimm47mOeIB+EonS54wJQW8bRqD44aGLvUGfvJzGLyUl2mXrc9y7FRHjuAz0Xbc64eD8wE+XQ2yf+u+RwJ+CseXFFBSvEBfVIzFUD1OjYGCu+I0KZ6ueJWeVPb6XefLW5bo+UG29UuxkT4f+GDtVTGExcNt86+wNmWYLtaDM0KejpQKqKCyTo/pj4rGsdSeizadRbE5ypnctu7TmIbfrwqvl7mnIrjKUKOkSrDOdU1wMCiV+T6AWmQCnGvJEmtz1u0z9XCJG9eJ+KYEG+h5Umkkd8FFX8qq2cZ2PPRLn2wDNrR1yMsuBmAyVDjyh4sJjXMSarAQ1SHQEgXkU7yWPgY6DvKoz72+1ujDH2c5fHTn9U0MfHxw7euZy+Q5PDOqCvyfywox4DD1wPla+1joPWnXwGhndQM9ghbhwEqynyEUGGVeMhUZpIXv2jInfftc0kd0ODqjsuT64GsGyB3N9ehUD7AkEGuGX6z2Ev4mLKDSPWsxG7E4XUJtdVRy7LSkA9ploGnobwFIAudWEsdUvv+dfJVZm9EEjlrYPJws/anzbs3C1sjgfJ3n7u6x4ws7RPqMV5mhgt5GAPRjwAAOoPJFvJzc6E1IZ7e3Hy83adIuBSa4JIqOGAao4WLodF50gyF9Rn9mOOzy0uCpBrRveM0TYZMyQGHXeVnC91viugafD1SY/TZOoo3U9jTf5rk1xmAtnVbHd2/pEMtlkx2Q==|920
+}//VGRzg0Y4Q9KRPLskqduJASFLmq/y6S5d0SFZWVVZqkCc7Q6B8FiKwfxKelxKjdYnqwJOs1dZfR+bmjXt0PRPg2KnaxDtKcVt3dFL4ujJHq0Cpje3PDW1Du7Db+qMw149H2jSajEkmlOx4zhB7ElOjNCfCTYg4YcapEbn13gVCEqHjb452qPievYSDU4gfOmMTHaeJ7xzyv+Ip+FGkVeT05NahstBtPCpsZ5UbdrmY50d9zEsDQSF0yUCXgQMWliXBGcEXj9Aljo6KvsP1UTBT/xTToXORHs2Lrd75NVWhiIIoxU/mFfltcct7b8GKzXk2IjdG5mUorF2FR4vD2pvgEezW2rXuTxRbO2jMoKdDXAVqAVPVmcCwVa5YKn0RgA13qAAnsAoEw1H6hVgjs59Vp29/MHEzGVB7HWTqH5Zva/nsAqLB/QCgtj31Cbzs/3Gkp3g60DqHU61u4iYGWsBUpxEbqubrYZmqUxTFjQUOgca9j0cTTKvRsMQvAXTUwy6SmxvpsZpWPElZH+6mPDnNz+PBsoCbJaBUDUCloQzlL9OWEnHbpWk+uH25P3m2DkIV8Q/EX5LyLI2QPwLGDaOCTboiFsi0+2zd3/CbCfY4eIXROCfJyLpM0eOA7odGnYWwVWQimPORL78fTEcowgkE7cqx3JNdC8nCyEBtELUED8FuKLV6mP5Wyiw5e8QQ9hUx+EeA69vMY1iglhPjuAJJHQUv1zpUjTfbS4QkaPw14XHP+wNzCsguZxmLNGY8Hc7sFnzaxEvT3Ex+nLi7mgJ1Qor/q/5FZG29gMZnY2NnGxbKsUwxaFLZVgKq/UynI7vfkZrH0dFey0iQ8T+kvIJ/w3lbqjQVs/NNt5shgHFw9XWMsUXuVcq7NEv7LpZwcHstXNK8LxZZJQJjNnCsHMz1Q==|920

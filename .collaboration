@@ -117,31 +117,11 @@
   },
   {
     "ModuleName": "PCPage/YBS最新文書一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-03T15:55:52.5880296+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS最新文書一覧.json",
-      "Pages\\YBS最新文書一覧.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS文書新規申請",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-03T15:13:41.4875339+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS文書新規申請.json",
-      "Pages\\YBS文書新規申請.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/細分化コード選択",
@@ -209,18 +189,7 @@
   },
   {
     "ModuleName": "UserService",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-03T15:50:21.1484302+09:00",
-    "ModuleType": 11,
-    "ToRemoveFiles": [
-      "UserServiceDB.sqlite3",
-      "CloudStorageProvider\\data.json",
-      "SecurityProviderV2\\data.json"
-    ]
+    "ModuleType": 11
   },
   {
     "ModuleName": "CustomLibrary",
