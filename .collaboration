@@ -117,7 +117,17 @@
   },
   {
     "ModuleName": "PCPage/YBS文書新規申請",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-07T08:44:42.9062778+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS文書新規申請.json",
+      "Pages\\YBS文書新規申請.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/細分化コード選択",
