@@ -245,7 +245,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "6cf7b413-7f89-4019-a89c-07201c4a75a4"
+                "ID": "bd4c40f0-2e8a-4aed-b493-319befd80bdf"
               },
               {
                 "CommandList": [
@@ -380,7 +380,7 @@
                             ]
                           }
                         ],
-                        "ID": "2e37f631-e6b4-4f04-b6e1-0297337aa438"
+                        "ID": "ce4ad3d1-aaab-43ef-932a-1be7b6c3ef74"
                       },
                       {
                         "CommandList": [
@@ -400,12 +400,12 @@
                             ]
                           }
                         ],
-                        "ID": "21b10efa-45be-43de-a5e1-3ba5ef0f6e2b"
+                        "ID": "c553b8d6-fee0-4937-95c5-de9d92171864"
                       }
                     ]
                   }
                 ],
-                "ID": "da89232e-42ee-43ec-96c1-e7a0d7eb43e4"
+                "ID": "774a2f30-2c23-40ea-bcaa-99da68b7ed9c"
               }
             ]
           },
@@ -524,7 +524,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "01bf1cd8-b3f9-40f0-a3af-f0cf7f21fb52"
+                "ID": "3d3c8e62-67ca-4e82-8ce5-07725fc2e937"
               },
               {
                 "CommandList": [
@@ -533,7 +533,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "c5a7a1f0-eb3a-41be-9dce-10dfe7ff49d3"
+                "ID": "b3f8ce13-a0bd-4063-bf17-e998b2aacacc"
               }
             ]
           },
@@ -725,7 +725,7 @@
                     "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・ＹＢＳコード\r\n・規格名称\r\n・理由\r\n・規格本文の添付"
                   }
                 ],
-                "ID": "c59014f9-b8f5-4338-9109-23f34f6ca735"
+                "ID": "558b06ed-2b19-4a92-a1d9-12b53c95d99a"
               },
               {
                 "CommandList": [
@@ -754,7 +754,7 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "024ad7e3-0f15-4a02-85f6-c7921d8f21f0"
+                        "ID": "b7c41827-4faf-46d8-b0b2-8a3db500d9b2"
                       },
                       {
                         "Condition": {
@@ -778,7 +778,7 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "cf6572b9-3156-4e79-9b1e-df5e9f06e97c"
+                        "ID": "6574dac9-2afb-4642-98f6-ed1f60b697b1"
                       }
                     ]
                   },
@@ -798,7 +798,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "5a87a631-3838-439f-9182-4c0fe0da7bbf"
+                "ID": "45646f3e-efa2-42c1-b7d0-1a8965dfe21e"
               }
             ]
           }
@@ -833,7 +833,7 @@
                     "MessageFormula": "一時保存でも、ＹＢＳコードの取得は必須です。\r\nコード取得してから保存願います。"
                   }
                 ],
-                "ID": "5deb04b2-6974-41ed-83d2-afdd0233423e"
+                "ID": "25c39a8a-4583-41f6-99c1-11992e5a5034"
               },
               {
                 "CommandList": [
@@ -862,7 +862,7 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "65416bcc-2419-4d62-97ac-ea2496c90e9b"
+                        "ID": "9eb5d700-978d-4b19-ad8b-7a54d02f6f3a"
                       },
                       {
                         "Condition": {
@@ -886,12 +886,12 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "3faeabee-9b3a-44a4-a3c5-6c07f5440e42"
+                        "ID": "7c6d57be-c980-465a-984d-0865ec827fb3"
                       }
                     ]
                   }
                 ],
-                "ID": "b1c4b55e-d87c-4b58-9b6f-05a7885ce78d"
+                "ID": "52ac312d-30af-4726-bbf9-113dc17b2014"
               }
             ]
           },
@@ -1277,16 +1277,15 @@
       {
         "Background": 5,
         "FontFamily": 1,
-        "FontWeight": 10,
-        "Foreground": 13,
-        "Formatter": 14,
+        "Foreground": 3,
+        "Formatter": 13,
         "BorderTop": null,
         "BorderLeft": 0
       },
       {
         "Background": 5,
         "FontFamily": 1,
-        "Formatter": 14,
+        "Formatter": 13,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": 0
@@ -1294,13 +1293,13 @@
       {
         "Background": 5,
         "FontFamily": 1,
-        "Formatter": 14,
+        "Formatter": 13,
         "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderTop": null
       },
       {
-        "Background": 15,
+        "Background": 14,
         "FontFamily": 1,
         "Formatter": 6,
         "HorizontalAlignment": 2,
@@ -1320,12 +1319,12 @@
         "BorderLeft": 0
       },
       {
-        "Background": 16,
+        "Background": 15,
         "FontFamily": 1,
         "WordWrap": true
       },
       {
-        "Background": 17,
+        "Background": 16,
         "FontFamily": 1,
         "Foreground": 3,
         "WordWrap": true
@@ -1346,7 +1345,6 @@
         "Bold",
         "Right",
         "Top",
-        "#FFFF0000",
         "General",
         "Accent 2 80",
         "#FF00B050",
@@ -1996,7 +1994,7 @@
                 ]
               }
             ],
-            "ID": "7e005d48-f80d-4164-bc84-0684dc6c7316"
+            "ID": "4aaa07e3-db46-4b0d-a1f9-87b702154e8f"
           }
         ]
       }
@@ -2040,5 +2038,33 @@
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
-  }
-}//tLmIVVq2q9cf4KGM99zfimfYKho8raXJRsRGxoeyEfVB37hwS+peGMg2OEUlYuyPCUMH9dkSYewF80wQ1cF3HB5eIke26UmqKkIm+nvaryRZ7H08RGkSg3deNGrKg+C0yLVQa1G1HfyePcnbq4ztgQNUoqaJVFkraR36GZ9iGC10ZuZBRtK0ijY3TfT+s+HcOg8D6nafDYl/2/61+ra9DS05RoJN9fGdKj1aX+nFltaqhtP7Tb2FdGMbZRd0mrsYFZG6w12z/m8NrSDsF7cONmbt9BSRxxDYGelSMoXaCGlzJK6GcreXQMEZTrVvoCUFF+N7kIy0UX6CkOfKzWL0lk3R0iTKSOfHscQUGYd6UO8XgPY6t2U4+i7Ahjd1qs/Nt71/nnXlpGzg0ysWmTgxPlfiO2xIBOsSSTd/9QWruPT8pndWCxOUMBIVn0F5Bq02lPPc3wDAz9qnjivmYQ0XxRKhdaoldmTZ8HvUZ0g1e8mcC171Tom28cYDdas7V2l6qGJyJAYL5ejcuXSzPj3/vsuRs5gb47yD1E0yFgWVbJ/clEAezAdWR1cZweNXO5vw17aL3gbXu5lHyk0jjgpZPMeEleqH9/n5Ip3naFZqp/XORD9NCx38IdfWxmG6xliui1bhv2hSfIuLnMOGTQyHt47zG4vqvcbbVDVWhrd8AnVyiXnc0XWZ2rh4Cvtyw2Ad8o1jsCSGjqzSojB5iuZdQpeGjqYZfX//B62LGKIHupptGr+QERtqWVB5ueGUPiDwR4+buqQ8q1ka7IilOR5crzKjlQughrFOhqYpIwdEPOAlQNwi0MeSgGbAa3RDM33LA+MZddF7DTkevVADDabckw+zzWIQvt1ws2Q7chvqms020Ix+659dzUjtpAOuBmfxu05LCoKIfNg1jP5KosJwcg==|920
+  },
+  "Pictures": [
+    {
+      "Name": "4947ccd7-fca8-49d5-803e-db05dd26d966.svg",
+      "ForguncyPictureName": "File/358_pdf_file_1.svg",
+      "Stretch": 2,
+      "Transparency": 0.6999999999999997,
+      "StyleInfo": {
+        "Fill": null,
+        "StrokeDashType": 8,
+        "Stroke": null,
+        "StrokeThickness": 1.0
+      },
+      "ForegroundFill": "#FFFF0000",
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "490,500",
+      "Size": "50,60"
+    },
+    {
+      "Name": "582d3d2f-b895-4c06-b316-842fdd45796e.svg",
+      "ForguncyPictureName": "File/351_word_file_2.svg",
+      "Stretch": 2,
+      "Transparency": 0.6999999999999997,
+      "ForegroundFill": "#FF0070C0",
+      "Location": "488,399",
+      "Size": "51,55"
+    }
+  ]
+}//FaWSM8I9PZ+SY+w+5883mI4ggTQNchWIfFH42hwgVTXzIMqSNhCd2vThT9UEdBc7JKKo/t7Qzpxyucipzv3Zy0VbVjkBeXcjf0eXyFQ0dmizkxu9NKezhAE248S2k6X+e5RJ7SBPIJfU2ZY8TGVNG++eMDyneNpzBKeiESH8k3RFx5SynZv1LH/WUL0h8+CZ9nKhWqUhdeS6TqDG8RLxVHWzajyT6/rAx9/O74cWIxiZLSrpDSvFtsQMcbijH+/fbAYjTcbbdeGr9ZgdfTXKm0Hn6yHuHKaCdvDt3i/QeLFvErEnHXw0uGu9us3P7DNNYb1X1YQkLIliui07N55TlBEPFeJ6/JA6zWkm+KypURzP0rfGnbosdLDDIXnmqWnM4VG/FAhlcjjy+ffbwzaX+sZSKLWicqyZieb7IsR+HEHEoLFGNnJrGMvIfFgTVeEFDX1ulkAsnC21ptCUwZKGToskgnV/B6D8N2GICg+mcBTV/ACoEfVcCw3DL8JCOGBHrHCG6IoDXeGFXby/w/bvKraGDpLnqdol9CRcHXOBM5kCgN9gYJMs9gPrF4dilTsP6AdxlSfmo7YKCcwDSSF6/2OUkUu9R+nHHwZY6zijZeota6sTtUy8IMHxjesphv5vKPXFNfyGBgmLcHEgJ3yqvPTzod0CRD8ttJ5FOrG+1bFdNakSL3qLWPvFxHf7X09blkTnzATcgRJS3dP8+kMKjmrvnQC1suNUyn3gT0/QrhpZeNw8LVAeWgSd6FBGR4pTNePXRlk6xdG0xBFqGN6XsTzvdDszK0cEZPZzvNtele6VEm+hO5w1Vl27woqMkKhVRFatDjNCjAg6sWpb2IzYV3MH+0lph2pzeNP987E4Xf5i+8RnV+OwpaLQnGMJhWahOeRIvljGc+KwjHmuU/yELw==|920
