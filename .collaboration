@@ -121,7 +121,17 @@
   },
   {
     "ModuleName": "PCPage/細分化コード選択",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-07T10:44:06.0203847+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\細分化コード選択.json",
+      "Pages\\細分化コード選択.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS細分化コードマスタ",
