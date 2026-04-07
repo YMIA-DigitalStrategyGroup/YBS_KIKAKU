@@ -30,11 +30,15 @@
         "ShowColumnHeaderInDesigner": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
+        "SelectionMode": 1,
+        "DisableAutoSelectRow": true,
+        "IsSingleSelection": true,
         "ColumnOperation": 2
       }
     },
     "2,1": {
       "NameUsedInJavaScript": "分類コード2",
+      "IsAutoMergeInListview": true,
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "分類コード2",
@@ -42,6 +46,7 @@
       }
     },
     "2,5": {
+      "IsAutoMergeInListview": true,
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "分類コード2",
@@ -55,6 +60,7 @@
     },
     "2,16": {
       "NameUsedInJavaScript": "細分化コード",
+      "IsAutoMergeInListview": true,
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "細分化コード",
@@ -63,6 +69,7 @@
     },
     "2,22": {
       "NameUsedInJavaScript": "細分化分類",
+      "IsAutoMergeInListview": true,
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "細分化分類",
@@ -71,11 +78,15 @@
     },
     "2,31": {
       "NameUsedInJavaScript": "結合コード",
+      "IsAutoMergeInListview": true,
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "結合コード",
         "GUID": "3778947f-ae48-41a3-b79d-5220196a2254"
       }
+    },
+    "2,35": {
+      "IsAutoMergeInListview": true
     },
     "23,1": {
       "CellType": {
@@ -192,4 +203,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//bPqDcOUuFP5KidGoUM4WDwVP2tPk7g8U5Ie7IdGo5XfOyg8m0aj3uKoZW1xrs4nmoyoUXWUN9OzyCBZSMQupE7rjgAUxOEd1OlItgiwE6qH5FT68j4VlQLdBKdwZiZiLCFNCcqL+8D3pxyZitZa/TPVRwCTh7CExSiV4Pqth5RUF8+hB0eD+CIWMlL9S1SN5kkK4WF11PXmKqIFKIgGuVkS08a6Tgl8MGlw1izVetKocLQlEHnun2oDn0AXV3wIbcOGskMBFXZ1PN6p0PpKdPhLXuI29MUtcqmNcCThDnYJvDbjJRGdZ05hc9KWXEwBbFZId10Uv70FGcG0OxcyAPv7AXMXm9g8u9JxyjONh3Sj1k7AEc4LdWWiB+Gb9qOsWZE+RgeDT2cdhroJUib27vUFu4b6Fsf2AProh/yR5Gs8hQPYp2vfnP3nA3vBvzclNHXMs0FLP+VBznH+w/hjG5HiTtvxWz0Eg0DVlai2bmDuRHefKVpI0G7De8MPr3g3qH63uSCQCraGZsFO3Q7xoIBo+KHBYMwMQUlAfEH6YdBRHAG4z2hAchxhf9G3ypIYZDxkfhUPHpw+r69TwRIkg+9IBbR1bctnYuWRgZQv39ly1szTDdF35NFoHkoIW/LXSkxFIYjeX/9w+FHiX9d9PZvGoZ97KqCFDhXewPb6GpNnmKv0w8ldTviy40xeVUK1lAntNHsBZQji66dvaJ3q7MDqYfmCsAfE4iLgzfuPAuTiBeJy47VuXypLCaK8RNF6RUIXvI80bQG6uyt8hzgyTTkf0C1Voy3cCKd9CUeIfRh1auZvKACK0OPYaP5e2yhS0LRmxEml7gF0Ldq+7cKCxk8TJVXsna7RHOfGc0PtAIJ0MOLp5LzAqMp+Xs/R7BRW8t9USCLbWq6oj6pzqJIG+8A==|920
+}//oe4WdvsZ1oA7DGw0uwUijMKPZ0xGWaEIWczqB+7wbUCtFTcqKcs46VPbOAiTvHBD2RWzao7C5k6+MNHXwJWrWxfPpUQZ/C4+BWoT1nZf4M+vE7H7ymEeo4xAOGJK2vLu/Fqj9yfIniUKxdC3kQNuxFmYJddbgbd/f2KWp1SeNpE8/Ic4tWv7JCk/bbJo9rCxs7PLqCixGgXuk4t6CE6WOAajIUBhjZpwiOxcMe1tC3jnM+q0g/XswH4e69Y5LyDqYM5evBy7pk8+yMNp+D/cVY+bReH7FzhCs2PO4NeKC3XiSXMSJ6PixwvtSnZExvwEWmyeQJahUR5Mskg0L2ZiemTfQxM6qts93aq8acgNiFruiFtKyCuGRJ4EkTAuRcFWfAmPI0avZi3xw9S/ksgFztAZh2msiCwfj6ddrD9LzdNwXM45CJrhudw2N3kOx6oiieNFDK7M0a6+ydFmh4GMVJACuFIp5E+CDN4idw3j2cETinEXNm7vQK5NRmtf5PYPbMPuiCKKpo8DZccoS5Y7VQTHRWQ1dpGAP/EyVMHHDn3trWGvweEo6G/Wx2vWeEGr90bRwm+pApQZUOh+yQfkoAlyBijoJRixXuawY6TPSoQMYuaFU6Oi2D1MA+m7OJ/2pc3o7dXG+GYQS75jahZX0zti4T/gjhbmwdY5IqPXB8ZfCJxZBt6TJ+MoASxr2LNxRmKIDlg7GhBjaOFdYJp9K54zJk+2sQxEI4Pa43/NZzrDdoL2AoFzjwkHsyPIMSeSi2ghIg4cMN5eIgVmqKt7DXf2T6V9wSUwQw2wy/PdAaG7m6d2xVUxBYYXyCXyMnSRqQD0Bv9aOCPJO01rAYXiktGxXTy7IQTbu173qhdxMs5yQh9frRe2JpYfWJz8ytnXygYGnZ7eKHTYottHaAL11Q==|920
