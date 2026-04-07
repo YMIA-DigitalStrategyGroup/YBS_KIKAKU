@@ -238,7 +238,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "60cdccc6-6018-46f4-9179-8430851bfad8"
+        "GUID": "9dc33e61-093b-416a-be9e-1640ae5d834c"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -303,7 +303,7 @@
                           }
                         ],
                         "Comments": "対象文書が　「新規」　の場合　→　承認後に現行にする",
-                        "ID": "f569219e-393c-4c27-90c3-f9917ab3792e"
+                        "ID": "6830be18-bf28-41d8-961d-2a69863b048f"
                       },
                       {
                         "Condition": {
@@ -377,7 +377,7 @@
                             ]
                           }
                         ],
-                        "ID": "fa610f2f-94c3-4957-98c2-77e251d57589"
+                        "ID": "aed8d24f-e873-445f-b923-e6dfd032b69a"
                       }
                     ]
                   },
@@ -392,7 +392,7 @@
                     "ActionName": "承認"
                   }
                 ],
-                "ID": "dc1f2c18-c3b3-4775-9037-27d6ec0e2d40"
+                "ID": "da79071b-3ee1-454c-8382-9bd95cf2051d"
               },
               {
                 "CommandList": [
@@ -401,7 +401,7 @@
                     "MessageFormula": "承認者ではないため、承認ができません！！"
                   }
                 ],
-                "ID": "90336460-e60c-4cb4-acba-b978bacda258"
+                "ID": "38e9c19d-f4e5-46f9-a0c9-f50411c9e8b6"
               }
             ]
           }
@@ -437,17 +437,86 @@
                     "MessageFormula": "「一時保存」のデータではないため、再開できません。"
                   }
                 ],
-                "ID": "b69fc5c6-af29-42c7-aaaf-0de485e1efe5"
+                "ID": "d4fe4c30-cac5-4faa-95a6-5263929ba6ac"
               },
               {
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-                    "PageName": "YBS文書新規申請",
-                    "LoadBindingDataOption": 1
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                            "tableData": {
+                              "TableName": "YBS規格文書",
+                              "ColumnName": "現行_旧版",
+                              "GUID": "a40a7bc9-1acc-4235-b242-e94c38924449"
+                            }
+                          },
+                          "value": "新規"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                            "PageName": "YBS文書（新規申請",
+                            "PassValues": [
+                              {
+                                "Source": "新規申請",
+                                "TargetCell": {
+                                  "SerializeProperty": "=YBS文書（新規申請!G6"
+                                }
+                              }
+                            ],
+                            "LoadBindingDataOption": 1
+                          }
+                        ],
+                        "ID": "6a2f893a-a4f5-4bbe-892d-637a509284d2"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                            "tableData": {
+                              "TableName": "YBS規格文書",
+                              "ColumnName": "現行_旧版",
+                              "GUID": "98f0dc14-4ea9-4dac-8271-be2d2aefe9a6"
+                            }
+                          },
+                          "value": "改正"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                            "PageName": "YBS文書（改正申請",
+                            "PassValues": [
+                              {
+                                "Source": "改正",
+                                "TargetCell": {
+                                  "SerializeProperty": "=YBS文書（改正申請!G6"
+                                }
+                              },
+                              {
+                                "Source": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=YBS一覧（申請中!H7"
+                                },
+                                "TargetCell": {
+                                  "SerializeProperty": "=YBS文書（改正申請!T6"
+                                }
+                              }
+                            ],
+                            "LoadBindingDataOption": 1
+                          }
+                        ],
+                        "ID": "221ffe3d-e9d3-4984-b83c-744561bda4f6"
+                      }
+                    ]
                   }
                 ],
-                "ID": "7f99d7ac-f157-4fff-9e87-a9b094004824"
+                "ID": "5a6ded3c-de57-42d3-b0e0-eb0fff5cea60"
               }
             ]
           }
@@ -634,6 +703,7 @@
     "6,40,1,5",
     "6,45,1,6",
     "6,51,1,4",
+    "21,4,2,6",
     "5,2,1,5",
     "5,7,1,3",
     "5,10,1,14",
@@ -642,8 +712,7 @@
     "5,34,1,6",
     "5,40,1,5",
     "5,45,1,6",
-    "5,51,1,4",
-    "21,4,2,6"
+    "5,51,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -669,4 +738,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//A5qAurPfIi5M78NTz/MggNQWC+zAcxQCckx3X12NA+iVvt5FS5NbO3SLD5dL4p08UQWP70NKk9Iiyz2NO+ltk7qD10etrQMqQ2Fhv/yXURHHICOpSMmKmt/QsXMglJD20WlZLysM3un4E+1L9KYp7LnUQXxTwgp/oa7XfsrSylQyi1gDklM3Z2YhsSFqrJBaMemxgtbLRobpGwnyg67dzK9kvYzg1OGGbOnyg2wACNzjHWMnDq0TBRE1E1YNaqof3I0vEKYMswjGA+wNGIRuHfb8upbykFBCDKP3lb3cr+wIJPuQh1BvbvKB+uXn0n68xvrravGPnFwu00sJQAOxG5mckhbjrgob0Vbm0VOiX+zlwEvOh+y+iHveJXnwCFu9K+y5yQvBqOPDmUf2XcGlEXyXxuyRH+CK1xGRDdtwXTNHbpZy+j+vh7Al/nUHV6Zt9i8CHwXGZ7QXtnv+nJG8XNLxsXsfQCT/jtoVZINBQ1xH9/pnkRqKofAenHDTrLpgkFREP9z1KUWhDOcweHFQRScei2d/23eDRtLdR+v2KRbn21c7gVVp+e5Ks+ZqcxwyZ1wOGiO93OJgeI29fYmGJDeOylZX1cVEJZmBOhB8WD8qk9rphArdDkewdlt8VYRabdjWxG3Qd2D/Hg9vxWWk+yfYWFr99ZIuEfBadllXUkb7v8igFDjmlzuB9sU32XEZbiZz6KSj6dyQvMkFAEpJUjAZYflbqhqd5g/AI2u/ET0QfVKR/XJjUcT2ttugwpf6n0esjEUp2wWGpABDLiizX3wWq9w3L5nQlbaciV9K+3TJhvqbYo3EdnP/4YKEUY+bcM8/crBbDrHKQkquO1na347ekonGE7Gewl0gUx0Pw6rgteT99xo/l25s6CnYU50rLsJkInJfZzhx0I0bGeJdxA==|920
+}//9AP0ViORWe/yTQoKUfuTzAcl3KMF3iwG53+y196p0qmLA/PJ295wRwrzUi1K2jYx9wvQeenVbglTWoTX2Ey3049BACL84i2oOw0ehK7ziRNbCs9GoQxs1PqQvLNVRncGc3Dfy7khWJcPL/FXQoMbFzsLGEq7CV9XK1YzouZ58K3tZClkeDpuTK0MvcIpiQkaPffwpnxflTljWSXkQq61q3Js/iBV7zoJwjtNMBt4UO6SjyPk65+LnawDPtN2h7snm/5e112IVAFPSPBL6OdPDu4BeqtPoD+1s/rv+SMM4DiZwzw9HpiRKh3zDw+1KXQcEngLZaK9A/WKure8FaT3IIcHCUsKMIP0DieC4tz1Rq8a75EQWM8ZXwxVVaFD747mThTr/VaF+Y66XYzRAb2U4/XBRCHNenGbkAo8vkWf4BJfbRYrMaQlX1hmszZELCa/5/kHn8X0No4DLPDjsFxiQHAU7OhI2bNXeWq03DvX+QPm3+csBTSfK+19HKJI/6dxvV4z9vKgR17N5hKydzBnwqldHafp6E1JBdA3EzkN+cea+7o8b62my4grSnKFBWG/78TuV/DfuwWv1k/1yItJEn3PW3Tiaq5+gtX4Avf5j5vVpNQwli7j16u01RhUXPJ8EIs2r7NKAO3dXOv7o9+Foc7nbIsFyrKXfECpeUilHwDT6h95E/IyImLplyIlZ48aDF3so8rfrvt7MYhPIBdefL/bKOwZ9ZSP885Yc96dIWztzHJNlbDMhOij2XO3tCG6HwZug7h23u+Y749XgwEFGCzwle1X5cvsu3hFhT7ON4ZjshrCPbLK3kUdd1VeuEfqO3OB1SAQT+LydkH5ofc60PYCG18rmd9EMiWtTdhCMVFu1ICfv/q5shtvgB8CtAwHMWak9pUGWZZEAWz62LKIlw==|920

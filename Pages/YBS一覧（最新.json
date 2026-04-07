@@ -236,7 +236,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "288eeca4-e868-4667-a720-1e9717dbbf7a"
+        "GUID": "c105b20a-dbf9-4eb7-bd1e-72a1f8a77503"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -249,24 +249,24 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "YBS文書新規申請",
+            "PageName": "YBS文書（新規申請",
             "PassValues": [
               {
                 "Source": "新規作成",
                 "TargetCell": {
-                  "SerializeProperty": "=YBS文書新規申請!G6"
+                  "SerializeProperty": "=YBS文書（新規申請!G6"
                 }
               },
               {
                 "Source": "0",
                 "TargetCell": {
-                  "SerializeProperty": "=YBS文書新規申請!T6"
+                  "SerializeProperty": "=YBS文書（新規申請!T6"
                 }
               },
               {
                 "Source": "新規",
                 "TargetCell": {
-                  "SerializeProperty": "=YBS文書新規申請!AP16"
+                  "SerializeProperty": "=YBS文書（新規申請!AP16"
                 }
               }
             ],
@@ -320,7 +320,62 @@
                 ]
               }
             },
-            "ID": "5d9210632e5b45b68e7a5488928f6eab"
+            "ID": "440b3740ca004bd2b4bbe13ad7cb111f"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "改正回数",
+            "TableValue": {
+              "TableName": "YBS規格文書",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "d1b2dd5b-2a72-4a7b-86c8-651b142dee3f",
+                  "BindingInfo": {
+                    "TableName": "YBS規格文書",
+                    "ColumnName": "改正コード",
+                    "GUID": "2b6e0de3-fcb7-424c-9bed-7b5b70113ec7"
+                  },
+                  "ColumnName": "改正コード"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "YBS規格文書",
+                  "ColumnName": "YBSコード",
+                  "GUID": "052b26bb-4c26-4021-a5b8-c753108f2ea4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧（最新!C7"
+                }
+              },
+              "TopCount": "1",
+              "OrderBySqlCondition": {
+                "OrderByColumns": [
+                  {
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "改正コード",
+                      "GUID": "35ab5966-9ad4-4f04-8949-248714271ffe"
+                    },
+                    "Order": 1
+                  }
+                ]
+              }
+            },
+            "ID": "36ff3fa5fd1b447ea3ac97d075a77647"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "改正回数最大",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=YBS一覧（最新!改正回数+1"
+            },
+            "ID": "7937fe5045594c3f9f68f5cc4b89a0c2"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -344,31 +399,40 @@
                     "MessageFormula": "承認中の文章があるため改正できません。"
                   }
                 ],
-                "ID": "d287ef9d-e17b-424f-aeda-bc3061b43d6a"
+                "ID": "de05b313-8283-4c4f-a1b5-bef4e1cc70ee"
               },
               {
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-                    "PageName": "YBS文書新規申請",
+                    "PageName": "YBS文書（新規申請",
                     "PassValues": [
                       {
                         "Source": "改正",
                         "TargetCell": {
-                          "SerializeProperty": "=YBS文書新規申請!G6"
+                          "SerializeProperty": "=YBS文書（新規申請!G6"
                         }
                       },
                       {
                         "Source": "改正",
                         "TargetCell": {
-                          "SerializeProperty": "=YBS文書新規申請!AP16"
+                          "SerializeProperty": "=YBS文書（新規申請!AP16"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=YBS一覧（最新!改正回数最大"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=YBS文書（新規申請!T6"
                         }
                       }
                     ],
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "c5b845af-8459-4855-9ef5-43e32585262d"
+                "ID": "aad4f85b-1c91-42e4-92d7-7235e0275f6a"
               }
             ]
           }
@@ -685,4 +749,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//LPu/+WtpOyNbYFOpSKWE8oyTJRpgY8h8joIPpaE4dX2CamPDlyA4mX75MyhfqBPYRPVmy0CInpFsu5qjYpPfxtmC+z/udlHeQopm+8nupmnuV4WQ1+nFepkGlnjZC/l74NhWj7Ov9Jnw4Fem73UVPbgHqxIyBCRv8AZLOhikfGgrgfpQI7+1a8QFw8b1CQwFl2oGyceNe32VH7QH0mrIBxdSBwW90EWO7fSXI6j3raRsNTPjU1Uoaqetk6IK0htGxi+4vFNeqQmHd+z30IAz+EdKSzxQoPTb/nxNMUgtgtZDhW1RKMysxV+whW+ibVcFYD2G7NO6CcUYYFkBnT8gObbK1+1InPFOdjjg02sN2sBNRRDSdDQ/5zRbliF7+KHwAub16vGJ+yyMgeTz3Xf2xnRxygh/dc47Y+KHzg7cngX1Nk1QDtS2sw+FMm3WD4Xr43lO8THQpuqqRyXGEHvZznIupZMnQ5Yoh1egadK8/8zF61fTYCyPbzQDu9ori2u9uRzdA/tZRep9NygZ/nUmx01PofcEQ87kG0ZmPCYpKGfemxcKhoIM2lksA5eNXKun6RspoHHYrdeEY7NKxUbXG85rjdH3cTEi7/KIpzMnj812tF1yGcxzDZWHq/XN9jV0DtSdAnwaUoyjw96pt+D8oFZM4HVQ2LodgThHfgdnoB7kuC8nhm9ACbFgk/prxDaOdZ8KOaASsphYRC5wTc/Qz9cKiqou2tZkaBWpXTNdgbQxkKLvFeWcmqp9AFqpNae54SZQYqDgFDJBIgoykXm6c6Ow8MlbweOP6mH18YKtSRJsYFoPKytjDjlj1UTrHSyoRGU52BX9C7tUxpF2H7/IJNNleiwDs4aU/xfEQVtPjcThiATZXVAgMSvmRzAAMC1pjKHVY4xYXgtgM8n8tjs+ag==|920
+}//T5R2XFyyCMD5yqF5qIRbcrlu8TdHXPR+XN4ux0zk5t46oThGiQKeafon39V/7vgldzuh+WKkhzTAYrUOvpSuKROhpuy5EvBaQts2NtBZHegBEfSFo9ioNwkBe7aVwqrBL6P1JrkKh9qQy2sgZUe8kvOVP9wenbpLVNI9M7FYY0zvw/9PYodb3VQLWnsUJUemQ1qJe26rojbFVKPHAzNItqte1cbkARp42Lryk08Q93DjdfqwLCdow+VAQEwnn1sZYpIV3VzTJz/+hR+bZHcKXPojhubasq2XHMJBLEK1fNMaJCNrtBhcRwjbvUI88o+F7nZUHvz8cVTuIBy0wp2LdLzaNRoYUX1K2mcgrZihjW9tUX5iiitFP/eo8Z320JFYV9+jVj4psNwhwE4agdNBepULOG4UyquBY/sPD/n/Tlq1SfTJZ22hhLqhh9C6DDjyWxSQNjRdhWfVgFsl0YXhSplJ+9veckaKnw/nFB46sdBhl6PGb4hBbeREeRV1RbaMFE8/fV4Q/wbTct9hZ/4DDCJgNosjrRt4aEVByYfAVvX+PBSLkSvoc0ejsRhrzqRFELHqtgpSJ8rhho0gUCNqNoVK49c2zXEydNxFBLv8zxbkoOJq9DE6WRmxR0aSAargNnbukfqhnNDHMsan5mdA6LJOpJuCuN7+Ybkt737N56A2Dg9/nmzyD25lS17jbGhmO6pcKBlOOPfWCPutY240MfrLttpMd+ql4pOIyEz37kNMeoiwPQM4ukPpK4LBpjQ7o+ALn/yYvrHfUcwMPL6lggtbnNSe4eA0puQVkQ7VLLect6qHBcH6SGCH8qojFxczgE5yL45cxO6O0C1VqHr+h8+D24EYcL+MV7LXifiXw3foc5IPkTIzXce7Mpo07VppwgfgY0dFrjARnxqyn34d/g==|920
