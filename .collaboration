@@ -133,7 +133,17 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-13T13:38:18.3127278+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\YBSメニュー.json",
+      "MasterPages\\YBSメニュー.rd"
+    ]
   },
   {
     "ModuleName": "MasterPages/新しいフォルダー1",
