@@ -1,6 +1,6 @@
 {
   "Rows": {
-    "Count": 32
+    "Count": 29
   },
   "Cols": {
     "Count": 63
@@ -17,8 +17,8 @@
     "5,45": "承認者",
     "5,51": "ー",
     "6,51": "承認",
-    "21,4": "一時保存再開",
-    "21,10": "設定途中です。"
+    "18,4": "一時保存再開",
+    "18,10": "「一時保存」のみ再開（再編集）できます。"
   },
   "AttachInfos": {
     "2,16": {
@@ -65,7 +65,7 @@
         "Text": "検索",
         "TemplateKey": "_RS_Normal_Style2",
         "Icon": {
-          "Name": "Application/046_search_7.svg",
+          "Name": "Application/047_search_8.svg",
           "BuiltIn": true,
           "Color": "Background 1",
           "UseCellTypeForeColor": true
@@ -112,7 +112,7 @@
         "TableName": "YBS規格文書",
         "RowIndex": 5,
         "ColumnIndex": 1,
-        "RowCount": 15,
+        "RowCount": 12,
         "ColumnCount": 58,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
@@ -136,15 +136,6 @@
                 "GUID": "c1cd4de1-fb55-4c5e-b48b-4ecf2983a9be"
               },
               "Value": "旧版"
-            },
-            {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "YBS規格文書",
-                "ColumnName": "FGC_Creator",
-                "GUID": "51a94a78-ddbc-4465-b65c-6affea7fc200"
-              },
-              "Value": "%CurrentUser.UserName%"
             }
           ]
         },
@@ -238,7 +229,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "9dc33e61-093b-416a-be9e-1640ae5d834c"
+        "GUID": "2c135e50-1d70-4751-953a-dcde3f0d4423"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -303,7 +294,7 @@
                           }
                         ],
                         "Comments": "対象文書が　「新規」　の場合　→　承認後に現行にする",
-                        "ID": "6830be18-bf28-41d8-961d-2a69863b048f"
+                        "ID": "1b37c11e-0c0e-468c-9c5f-a6dc80769868"
                       },
                       {
                         "Condition": {
@@ -377,7 +368,7 @@
                             ]
                           }
                         ],
-                        "ID": "aed8d24f-e873-445f-b923-e6dfd032b69a"
+                        "ID": "1eb40ffa-77a3-4447-882d-3ecf93882a9c"
                       }
                     ]
                   },
@@ -392,7 +383,7 @@
                     "ActionName": "承認"
                   }
                 ],
-                "ID": "da79071b-3ee1-454c-8382-9bd95cf2051d"
+                "ID": "9b9a46fb-d2cf-4ad1-9b0f-0b5e8cda07ff"
               },
               {
                 "CommandList": [
@@ -401,7 +392,7 @@
                     "MessageFormula": "承認者ではないため、承認ができません！！"
                   }
                 ],
-                "ID": "38e9c19d-f4e5-46f9-a0c9-f50411c9e8b6"
+                "ID": "ccf2b15b-6178-45fd-aaf1-a9de8c429521"
               }
             ]
           }
@@ -410,7 +401,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "21,4": {
+    "18,4": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -437,7 +428,7 @@
                     "MessageFormula": "「一時保存」のデータではないため、再開できません。"
                   }
                 ],
-                "ID": "d4fe4c30-cac5-4faa-95a6-5263929ba6ac"
+                "ID": "35301b71-eaea-4907-9102-2c07832fbdf8"
               },
               {
                 "CommandList": [
@@ -472,7 +463,7 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "6a2f893a-a4f5-4bbe-892d-637a509284d2"
+                        "ID": "6e1f84e9-5cb9-40e0-b508-db9cea7ad7cd"
                       },
                       {
                         "Condition": {
@@ -511,12 +502,12 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "221ffe3d-e9d3-4984-b83c-744561bda4f6"
+                        "ID": "68d7f4fd-8dd4-4c19-9648-a5cdf44d7d84"
                       }
                     ]
                   }
                 ],
-                "ID": "5a6ded3c-de57-42d3-b0e0-eb0fff5cea60"
+                "ID": "90f527ea-ff10-4fd0-828a-ac05a75d90ec"
               }
             ]
           }
@@ -566,6 +557,10 @@
         "FontFamily": 0,
         "Formatter": 7,
         "HorizontalAlignment": 8
+      },
+      {
+        "Background": 9,
+        "FontFamily": 0
       }
     ],
     "Types": {
@@ -578,7 +573,8 @@
         "black",
         "@",
         "yyyy/m/d",
-        "Right"
+        "Right",
+        "#FFFFC000"
       ],
       "Borders": [
         {
@@ -652,35 +648,35 @@
       "6,43": 4,
       "6,44": 4,
       "6,45": 4,
-      "21,2": 3,
-      "21,3": 4,
-      "21,4": 4,
-      "21,10": 4,
-      "21,11": 4,
-      "21,14": 3,
-      "21,15": 4,
-      "21,16": 4,
-      "21,17": 4,
-      "21,18": 4,
-      "21,22": 3,
-      "21,23": 4,
-      "21,24": 4,
-      "21,25": 4,
-      "21,26": 4,
-      "22,2": 4,
-      "22,3": 4,
-      "22,10": 4,
-      "22,11": 4,
-      "22,14": 4,
-      "22,15": 4,
-      "22,16": 4,
-      "22,17": 4,
-      "22,18": 4,
-      "22,22": 4,
-      "22,23": 4,
-      "22,24": 4,
-      "22,25": 4,
-      "22,26": 4
+      "18,2": 3,
+      "18,3": 4,
+      "18,4": 7,
+      "18,10": 4,
+      "18,11": 4,
+      "18,14": 3,
+      "18,15": 4,
+      "18,16": 4,
+      "18,17": 4,
+      "18,18": 4,
+      "18,22": 3,
+      "18,23": 4,
+      "18,24": 4,
+      "18,25": 4,
+      "18,26": 4,
+      "19,2": 4,
+      "19,3": 4,
+      "19,10": 4,
+      "19,11": 4,
+      "19,14": 4,
+      "19,15": 4,
+      "19,16": 4,
+      "19,17": 4,
+      "19,18": 4,
+      "19,22": 4,
+      "19,23": 4,
+      "19,24": 4,
+      "19,25": 4,
+      "19,26": 4
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -693,7 +689,6 @@
     "3,7,1,8",
     "2,16,2,5",
     "2,42,2,17",
-    "7,1,13,58",
     "6,2,1,5",
     "6,7,1,3",
     "6,10,1,14",
@@ -703,7 +698,8 @@
     "6,40,1,5",
     "6,45,1,6",
     "6,51,1,4",
-    "21,4,2,6",
+    "18,4,2,6",
+    "7,1,10,58",
     "5,2,1,5",
     "5,7,1,3",
     "5,10,1,14",
@@ -738,4 +734,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//9AP0ViORWe/yTQoKUfuTzAcl3KMF3iwG53+y196p0qmLA/PJ295wRwrzUi1K2jYx9wvQeenVbglTWoTX2Ey3049BACL84i2oOw0ehK7ziRNbCs9GoQxs1PqQvLNVRncGc3Dfy7khWJcPL/FXQoMbFzsLGEq7CV9XK1YzouZ58K3tZClkeDpuTK0MvcIpiQkaPffwpnxflTljWSXkQq61q3Js/iBV7zoJwjtNMBt4UO6SjyPk65+LnawDPtN2h7snm/5e112IVAFPSPBL6OdPDu4BeqtPoD+1s/rv+SMM4DiZwzw9HpiRKh3zDw+1KXQcEngLZaK9A/WKure8FaT3IIcHCUsKMIP0DieC4tz1Rq8a75EQWM8ZXwxVVaFD747mThTr/VaF+Y66XYzRAb2U4/XBRCHNenGbkAo8vkWf4BJfbRYrMaQlX1hmszZELCa/5/kHn8X0No4DLPDjsFxiQHAU7OhI2bNXeWq03DvX+QPm3+csBTSfK+19HKJI/6dxvV4z9vKgR17N5hKydzBnwqldHafp6E1JBdA3EzkN+cea+7o8b62my4grSnKFBWG/78TuV/DfuwWv1k/1yItJEn3PW3Tiaq5+gtX4Avf5j5vVpNQwli7j16u01RhUXPJ8EIs2r7NKAO3dXOv7o9+Foc7nbIsFyrKXfECpeUilHwDT6h95E/IyImLplyIlZ48aDF3so8rfrvt7MYhPIBdefL/bKOwZ9ZSP885Yc96dIWztzHJNlbDMhOij2XO3tCG6HwZug7h23u+Y749XgwEFGCzwle1X5cvsu3hFhT7ON4ZjshrCPbLK3kUdd1VeuEfqO3OB1SAQT+LydkH5ofc60PYCG18rmd9EMiWtTdhCMVFu1ICfv/q5shtvgB8CtAwHMWak9pUGWZZEAWz62LKIlw==|920
+}//l7X2zz5GdCow9r1m0gWDzXjIKtpMWYnzilBjeD/VJX1Epv4+8PdgtgfSgHFH/Lq06oiIKER1hA4/FnoFzPMwMmzJVvf1+9Mg307G2aA1L/HbUh/XfJl6PwQlYN7mGJ9jwydqngNzude9KnD1IlIKslF2EslSCYJstriQ2FvIc1cI3pBxlqCvsv9FDakezQaBMvvNFZ22n6btXQ26T+sTbHROofCwQXFT7Lo1kIwZzxb9fvXUKWhLrs/zPz8TanNyPRFuApm78YVOcB6HlMBtmpnkv1GjWjNZFLDFU8/gSMSo2lFtYo/XPHmGOKZ1Q5gihMiNPoO1jW6Xp5oZDldOn11rm+Pyg3Y4lXXB5GYKcOqe3ne4fABq7Ddlnc+YiKw1XSaKCqVnd+Wsgy+SFx8MuzatxUtj6E9XgiOedR7mXmxAXiOHcDCniBMmba2E6OEwOHmZuMaaQeIP9uVKW0AlTxKqCNlAMJWzJuaPB6AbPQ9mUZVdt8vgN+LzfYltrrNS3nKIZKvghl+OmFJrIT7/b3Dmtzx/dEnneEVJmYRZV0vqXZPkBARyc/wOsUxnRCLxP4E1YvyvyQG4CZShpFZWvhnR/9N1PqDLPr7TSfLKbH96bqxZaSo9s+n3pVeRRKs4kjed3JkzG263tVuISXPx0jF9+trFXAYglzqTjEsYp3KpTDyrB+cpLjqisXJvajvgpyq97+xaHv1qVbvr4gP+RrqzFvGJ/toM7oMKZcWu/Jp7ho0sTXkHyH/msd8huiNv7L4jUnEBQQk9LlSvknfxnteYiL+C6whdjouY94Bx3ODrcn67DxHhC+w3uI9qvM3JBPUQor8nTlYfaAsueHC7br5+boAjhRr/iR1272tGQ9wrt0twGeqJVO19HgmeYKyOflYsSKfycbZCf4Fm4mETNg==|920
