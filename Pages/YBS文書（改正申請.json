@@ -51,6 +51,7 @@
     "28,15": "一時保存",
     "28,22": "キャンセル",
     "30,1": "申請テスト",
+    "30,7": "申請テスト2",
     "30,15": "一時保存テスト"
   },
   "Formulas": {
@@ -351,7 +352,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "73b9e421-eaee-4c57-bfe3-fe6a10af41d8"
+                "ID": "e643c8ea-281e-4e44-8710-58f90bec92db"
               },
               {
                 "CommandList": [
@@ -486,7 +487,7 @@
                             ]
                           }
                         ],
-                        "ID": "91c09ab4-f624-48a2-b7b0-09164d218ef4"
+                        "ID": "fd46b683-a1c8-4a8f-9383-c4a99494003d"
                       },
                       {
                         "CommandList": [
@@ -506,12 +507,12 @@
                             ]
                           }
                         ],
-                        "ID": "9ddc9468-010d-4230-ab99-0e57cee936d2"
+                        "ID": "59a53731-6df8-4227-9ca3-c190e9c23898"
                       }
                     ]
                   }
                 ],
-                "ID": "a0ff8f5b-5623-4f80-b9c9-28265f570e2d"
+                "ID": "7934b09b-aff6-4345-96f0-39c126d87ad1"
               }
             ]
           },
@@ -611,7 +612,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "1fd9efc5-fbb3-4108-82d8-50eb9ce21dac"
+                "ID": "b2c2c052-6196-492d-84f4-ccf3f616e584"
               },
               {
                 "CommandList": [
@@ -620,7 +621,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "7e2dd9d3-cb60-4d29-9e6e-a70197052160"
+                "ID": "8690cfb0-f746-4554-8304-209184d063cf"
               }
             ]
           },
@@ -732,7 +733,7 @@
                     "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・ＹＢＳコード\r\n・規格名称\r\n・理由\r\n・規格本文の添付"
                   }
                 ],
-                "ID": "f113329b-4de8-46c0-870f-9e6f4936b18a"
+                "ID": "b9f6dde3-0f2d-4c19-ae09-8d4ee3d31795"
               },
               {
                 "CommandList": [
@@ -783,7 +784,7 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "3cba3429-cf47-4f8d-be16-b0221bf8dbb6"
+                        "ID": "e44ba8f3-038e-4b50-a8c1-d4b355f98c61"
                       },
                       {
                         "Condition": {
@@ -799,13 +800,13 @@
                           "value": "改正"
                         },
                         "CommandList": [],
-                        "ID": "904e853f-ebd0-4f3b-95d9-68f5d3dd2bc0"
+                        "ID": "967bc9b4-6ed3-40b5-bf8f-06d0112fff94"
                       }
                     ],
                     "Disabled": true
                   }
                 ],
-                "ID": "acf770f5-c824-4e6d-9f8d-f8eb99ecae6c"
+                "ID": "2c528da0-4add-4740-9154-717d0d7dbc1f"
               }
             ]
           }
@@ -840,7 +841,7 @@
                     "MessageFormula": "一時保存でも、ＹＢＳコードの取得は必須です。\r\nコード取得してから保存願います。"
                   }
                 ],
-                "ID": "442624aa-3be9-43da-88fa-f148eeed6b64"
+                "ID": "a3771472-ffba-44ee-ac5f-1d4818c8aa90"
               },
               {
                 "CommandList": [
@@ -879,7 +880,7 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "ef0b3fae-2824-42c2-be36-a00212f537f8"
+                        "ID": "47452366-ac17-410a-b7b9-c3c331ac0169"
                       },
                       {
                         "Condition": {
@@ -895,13 +896,13 @@
                           "value": "改正"
                         },
                         "CommandList": [],
-                        "ID": "8c1c46f6-c238-4045-ab5a-07945354ad3b"
+                        "ID": "94f800d8-d006-419b-ae56-ce149830e92f"
                       }
                     ],
                     "Disabled": true
                   }
                 ],
-                "ID": "f8531df8-0900-4809-99cf-7f5c02d4445c"
+                "ID": "d28fb4d7-12ef-4f20-9aa8-3d25fe8a9630"
               }
             ]
           },
@@ -972,12 +973,122 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "b7c66ace-0088-439e-95f0-dbb93fa2aab3"
+                "ID": "c9101908-cbac-45f5-a658-66eeab12c9a9"
               }
             ]
           }
         ],
         "Text": "申請テスト",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "30,7": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "YBSコード改正レコード数",
+            "TableValue": {
+              "TableName": "YBS規格文書",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "YBSコード",
+                      "GUID": "cfc08df8-f148-49a1-b4c1-57fa645398e4"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=YBS文書（改正申請!F9"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "改正コード",
+                      "GUID": "fa9d1820-7a1e-4f9b-b181-36cac8ad6e54"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=YBS文書（改正申請!K9"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "e64242d8aca04fb19f550154f3afd281"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=YBS文書（改正申請!YBSコード改正レコード数"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "YBS規格文書",
+                    "UpdateType": "add",
+                    "ShowConfirm": true,
+                    "ConfirmText": "本当に追加してもよろしいですか？"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "レコードを追加しました。"
+                  }
+                ],
+                "ID": "f0d4feed-d688-4a26-b942-3c512e727818"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "YBS規格文書",
+                    "ShowConfirm": true,
+                    "ConfirmText": "本当に更新してもよろしいですか？"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "レコードを更新しました。"
+                  }
+                ],
+                "ID": "bb627a69-00c9-4988-9331-40a6bc0fce87"
+              }
+            ]
+          },
+          {
+            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+            "TableName": "YBS規格文書",
+            "NextState": "申請中",
+            "AssignTo": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=YBS文書（改正申請!G26"
+            },
+            "ActionName": "提出"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ReloadData": true
+          }
+        ],
+        "Text": "申請テスト2",
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -1052,7 +1163,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "d1ca5571-7ce7-49ca-94e9-00663a10accd"
+                "ID": "061657c3-1366-409b-9d5a-91729cb685bc"
               },
               {
                 "CommandList": [
@@ -1067,7 +1178,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "4c7d6f92-413d-4395-ac6e-92a210dc9cd1"
+                "ID": "172274fc-0b7f-409b-8438-1b8c7900dcd8"
               }
             ]
           },
@@ -1980,7 +2091,11 @@
       "30,3": 11,
       "30,4": 11,
       "30,5": 11,
+      "30,7": 65,
+      "30,8": 11,
       "30,9": 11,
+      "30,10": 11,
+      "30,11": 11,
       "30,15": 65,
       "30,16": 11,
       "30,17": 11,
@@ -1991,6 +2106,11 @@
       "31,3": 11,
       "31,4": 11,
       "31,5": 11,
+      "31,7": 11,
+      "31,8": 11,
+      "31,9": 11,
+      "31,10": 11,
+      "31,11": 11,
       "31,15": 11,
       "31,16": 11,
       "31,17": 11,
@@ -2044,7 +2164,8 @@
     "18,41,1,3",
     "19,41,1,3",
     "30,15,2,5",
-    "30,1,2,5"
+    "30,1,2,5",
+    "30,7,2,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2192,7 +2313,7 @@
                 ]
               }
             ],
-            "ID": "e14ed147-608f-4b79-84e0-9495c1e49859"
+            "ID": "e9bc32b4-a0d7-4d8a-821e-1ab1ad36a312"
           }
         ],
         "Disabled": true
@@ -2266,4 +2387,4 @@
       "Size": "51,55"
     }
   ]
-}//3uXLxjrnJTeTWfnHiDDqVf1WmBlxjtNk+PaAG00+nfPfLdvYNYk4Y3Sk3YO3fSmzucMMaQb0IMu6gSC5B+UlrREm1tA+wmP9VRvvKLC2Jjh7568zoxtYMdKeF7jFRkW4WgHX23w1WoAT21xqu6FBe3Kkgolsq5/vj5Uklx/Z/IrYP/HUImwIj35/gb4+6X/ZJAWuxnuqc5jYsMQeIqlnVlbVMse3PVi+ibDcwZglVUjLPsMvpp7GA5ez/BX5W5Hlrh3y7Wlph++RWmoSj+Zdv+RlifKEQE6ZBTOKSGWC5D/+P0EXPhT1x8/F43h4wBjgLdqzdpnXzZUUronVVYvmMfZjKLQTEha3S6Or8ufwmWFXl8uOKGYkF/3/TC1ZXnqt72rMeA6CWjiU/PZIQgPDbOOo08JV+oGubOU1x4retH6upd0q0b+LvOazCe2+JNi4/VxFS7okAwzprq5pBsRKYZ0uxTqTuASUM4Em+vvaExGmRuiFNJmxQvUTUIb+Wl7RNGfYCnuFpphRqJ9nU6KAdV0oxfS1Pn/C6ulcDQTkQq8Gma2rOZd3Dt4RcpA1SGih+mXpVtWutI0WPXIzikI7sOj5vuCMamgCoRVR0tG6G3l0w9KGorgfAqU04PbTAoi8BYYmfK4FJd596um4gDLXaNNO2OYWu7E8aFqxRIr+3bZbzknEs8/m2Tpd+N0118K3yHCblDN4NC4FVnIYTolJ0xRX0twf6MZaunKsypQ4Rs+OnArPOlbVLME64rhYjBwsa6SGLOKIKZZw36cY3/BG9iFk3k2SEqyYo9YKTa14vk9bIK4T5hHyuZfhpbvVYzEQYSHf+FCwVNUNGgyv2g2kOcKlFTC5iiGaEzBWrrQGnSLC8zneP1pHBl7p4sin+h7In/3ZItqzg4+63AZV25mVsw==|920
+}//ul3cDfZ2765UNmbrWYCPylLyW00HLIuUYJa5V+lTsMH8wnUq2pMQ6bXrqYPyoQijbmzbsHy4ww2F/8fvKpQq5oRWHaOr+FKxFLE66gMMfk5BSp4oq3CGSeqm3jnRyKkvI+T4Dc77TLvqREKxqrNJnwC9lVDeneyk6nrslcnCd/4XjQ3+DmzhxvN4oMKIT9OH/7Ae4doTy8uHe+SzFChDV8mXGfUohF/s14Gia2yMFkoI55ddJ8a7kVX6GNwKbaovGTcdDQijFh/MLWkDmVkA/i//DwQbAsMatBlNaMipiZ1lFdVQspTSnExb1BgJzWEmk+cKBzwNjA60jpDWQEGYqX6e24z/+Q0irlT66vOorg6XaPZ4tHss1qYnPTh8NPiEFYBoUUxzYUmxL0HriKPMWi9pP7DVXZs8byLrseEdh6HN1YcTQFj2CivSK40VyIh6W3UKaxQ21Uy7di4w4kauZVZRm1f1ymOvB5kSB6Y6CrB7VbX4QW7Zo9hIY1Vo9TybjuqxaRwe9AzqaEFzL0jiaLpnsPAcHao6/5YmRWt4ltmyUXH21R/xVqlzKdQef6gxIAmAE3N7U5pjOWlTaOZRI7+FK119/UqUJcITmFZoe3ZI2Ou5dx9Iiv3nWMKB6SG9tpUhmkpuIYBP8wo0oXhKAbDthOwH+SXEvd+9KkNz7XI6MUy8ODDT2pAeL2MIt5XiuDZjToZaFbwOEa73TNWyEFUwV+TzKZSVpr3fQP2t3DXbqApJCYn7dRafv+bJ2o26ln8b3epBTyjur5Qu8HfRov0777ROAXroN8OrcBxCEyaICO5HRNS16iH/m21uSGKBfVMflgxE+G9u5PUdtNmuggi7tFldjwhLtT+/EigFwHRxpSBnOJyYb+hlyEGbgc0omY2uYQCEQuOI+kQRE3DR+w==|920

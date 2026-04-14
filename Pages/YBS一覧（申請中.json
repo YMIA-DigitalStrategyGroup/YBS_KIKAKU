@@ -229,7 +229,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "2c135e50-1d70-4751-953a-dcde3f0d4423"
+        "GUID": "e4f949ac-a740-496c-97fc-b427fac7c4a0"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -294,7 +294,7 @@
                           }
                         ],
                         "Comments": "対象文書が　「新規」　の場合　→　承認後に現行にする",
-                        "ID": "1b37c11e-0c0e-468c-9c5f-a6dc80769868"
+                        "ID": "48be337f-29eb-41c5-bf6c-52ceed0d2123"
                       },
                       {
                         "Condition": {
@@ -368,7 +368,7 @@
                             ]
                           }
                         ],
-                        "ID": "1eb40ffa-77a3-4447-882d-3ecf93882a9c"
+                        "ID": "ac952db2-62c8-48b5-a2f4-e40c43aacf98"
                       }
                     ]
                   },
@@ -383,7 +383,7 @@
                     "ActionName": "承認"
                   }
                 ],
-                "ID": "9b9a46fb-d2cf-4ad1-9b0f-0b5e8cda07ff"
+                "ID": "3276c7de-9894-48ff-85b5-ac48b626de29"
               },
               {
                 "CommandList": [
@@ -392,7 +392,7 @@
                     "MessageFormula": "承認者ではないため、承認ができません！！"
                   }
                 ],
-                "ID": "ccf2b15b-6178-45fd-aaf1-a9de8c429521"
+                "ID": "551f1ea1-a63b-42b2-855f-963dc48a291b"
               }
             ]
           }
@@ -428,7 +428,7 @@
                     "MessageFormula": "「一時保存」のデータではないため、再開できません。"
                   }
                 ],
-                "ID": "35301b71-eaea-4907-9102-2c07832fbdf8"
+                "ID": "264059cd-fff8-4de9-9b12-794af1ed471c"
               },
               {
                 "CommandList": [
@@ -463,7 +463,7 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "6e1f84e9-5cb9-40e0-b508-db9cea7ad7cd"
+                        "ID": "046118b4-567f-4b95-a06b-e016342953d8"
                       },
                       {
                         "Condition": {
@@ -502,12 +502,12 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "68d7f4fd-8dd4-4c19-9648-a5cdf44d7d84"
+                        "ID": "7ddd7bd6-19a9-4e98-a99b-a8e9ed83335c"
                       }
                     ]
                   }
                 ],
-                "ID": "90f527ea-ff10-4fd0-828a-ac05a75d90ec"
+                "ID": "c0287186-9780-446c-9477-1c5b3849578f"
               }
             ]
           }
@@ -708,7 +708,9 @@
     "5,34,1,6",
     "5,40,1,5",
     "5,45,1,6",
-    "5,51,1,4"
+    "5,51,1,4",
+    "6,55,1,4",
+    "5,55,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -734,4 +736,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//l7X2zz5GdCow9r1m0gWDzXjIKtpMWYnzilBjeD/VJX1Epv4+8PdgtgfSgHFH/Lq06oiIKER1hA4/FnoFzPMwMmzJVvf1+9Mg307G2aA1L/HbUh/XfJl6PwQlYN7mGJ9jwydqngNzude9KnD1IlIKslF2EslSCYJstriQ2FvIc1cI3pBxlqCvsv9FDakezQaBMvvNFZ22n6btXQ26T+sTbHROofCwQXFT7Lo1kIwZzxb9fvXUKWhLrs/zPz8TanNyPRFuApm78YVOcB6HlMBtmpnkv1GjWjNZFLDFU8/gSMSo2lFtYo/XPHmGOKZ1Q5gihMiNPoO1jW6Xp5oZDldOn11rm+Pyg3Y4lXXB5GYKcOqe3ne4fABq7Ddlnc+YiKw1XSaKCqVnd+Wsgy+SFx8MuzatxUtj6E9XgiOedR7mXmxAXiOHcDCniBMmba2E6OEwOHmZuMaaQeIP9uVKW0AlTxKqCNlAMJWzJuaPB6AbPQ9mUZVdt8vgN+LzfYltrrNS3nKIZKvghl+OmFJrIT7/b3Dmtzx/dEnneEVJmYRZV0vqXZPkBARyc/wOsUxnRCLxP4E1YvyvyQG4CZShpFZWvhnR/9N1PqDLPr7TSfLKbH96bqxZaSo9s+n3pVeRRKs4kjed3JkzG263tVuISXPx0jF9+trFXAYglzqTjEsYp3KpTDyrB+cpLjqisXJvajvgpyq97+xaHv1qVbvr4gP+RrqzFvGJ/toM7oMKZcWu/Jp7ho0sTXkHyH/msd8huiNv7L4jUnEBQQk9LlSvknfxnteYiL+C6whdjouY94Bx3ODrcn67DxHhC+w3uI9qvM3JBPUQor8nTlYfaAsueHC7br5+boAjhRr/iR1272tGQ9wrt0twGeqJVO19HgmeYKyOflYsSKfycbZCf4Fm4mETNg==|920
+}//YpXWSmeYkeLDye7WVKzC6bvIDDXdckHsiqnwsC37i8bWiIYUwuLKdHCZ21N+5vwNTMlkGgNgffV3MQqEFbMz18mMjgIuXTrDZi4KXin7mmUAAMPkLV6QUhVkacf8ibcK2DrUE2eJJzp1f9vpFyYua6LqiBvdtiRO69OJx7EdcHtZ7NdoPXLQdgyIQd0kFAGjvLQFXAucnpcW+YaNo/eNQ3UOUJCkIM4ZYnfEU1URD3ZqV2D4fvxidIulo2ZkaIwsv8uIwqonNw2CwZwKSfG76ZBksEQyCg4eYJ92vlT04eTGQEeqr1GsJgWeggkAb4iUZWt2/fcW98ARsTKvHnzXEG0l2RVpZHiUWFSFSjvZphZ9HDyzuly48y7HdQFUD7raqU6Eq6r5T/msTDfLx+uCBkYoqkBx8yyh7mvPQdiLq09wzkCXXfTJU5NLXiXR4k0EnWQzx3BwdtBPSGdfMNq0ihJntYWtpA7BxjZ1DdDUNWUPEgRJwxvbakKxzFiH6lb/J45TdheZ44pl+GQ+3Pj4tocrw5yOlFVT100ZRxn5vA6T/25/EI5s0EroRbhU/t1oFx4fbu9P5d3IhVp5gQvkrlhC36E+D5R/l3Gy8W4QcFtbcbiksJEJruK6QoAlfDuPechXJiDa5FXwcJn/9EoHb+dEfl3IrdI32ZtREsC4tNNAKUNl9Z5to4qo/+2vqByzwHyi++NsPh6wf9h0R8V09ZW3/lKVD86fj9RkmvIiii0huGSfS5wdACPNRiWhr4KpyoTrCPqDO/wnJ21mCGK2rAq7ps513aZXI90EFlSu2vM+YPtrQ5XJBdUagPCcmJ62aF0KkNxpwuZ3p1S/6dHrfW4O60HtDShwhJnEgv2a9IyhmdbnATMTS7QWo1dDhRXhad7AK2cKjjZUXyOzFJppHQ==|920
