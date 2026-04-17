@@ -217,7 +217,17 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T16:03:39.0137505+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS一覧（最新.json",
+      "Pages\\YBS一覧（最新.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/文書申請（新規",
@@ -229,6 +239,26 @@
   },
   {
     "ModuleName": "PCPage/文章申請 (廃止)",
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T16:03:39.0136202+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\文章申請 (廃止).json",
+      "Pages\\文章申請 (廃止).rd"
+    ]
+  },
+  {
+    "ModuleName": "PCPage/文章申請 (廃止",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T16:03:39.0136375+09:00",
     "ModuleType": 1
   }
 ]
