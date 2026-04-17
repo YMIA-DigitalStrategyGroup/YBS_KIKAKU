@@ -118,7 +118,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "CellDefaultValue": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "='文章申請 (廃止)'!AP6"
+          "SerializeProperty": "='文章申請 (廃止'!AP6"
         }
       }
     },
@@ -132,7 +132,7 @@
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
         "CellDefaultValue": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "='文章申請 (廃止)'!AP8"
+          "SerializeProperty": "='文章申請 (廃止'!AP8"
         },
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
@@ -265,7 +265,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!O10"
+                  "SerializeProperty": "='文章申請 (廃止'!O10"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=細分化コード選択!Q3"
@@ -274,7 +274,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!O9"
+                  "SerializeProperty": "='文章申請 (廃止'!O9"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=細分化コード選択!B3"
@@ -283,7 +283,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!Q9"
+                  "SerializeProperty": "='文章申請 (廃止'!Q9"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=細分化コード選択!F3"
@@ -292,7 +292,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!Q10"
+                  "SerializeProperty": "='文章申請 (廃止'!Q10"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=細分化コード選択!W3"
@@ -322,7 +322,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "='文章申請 (廃止)'!O9"
+                            "SerializeProperty": "='文章申請 (廃止'!O9"
                           }
                         ]
                       },
@@ -334,7 +334,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "='文章申請 (廃止)'!O10"
+                            "SerializeProperty": "='文章申請 (廃止'!O10"
                           }
                         ]
                       },
@@ -349,7 +349,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "a0357336-d0fe-444b-8d88-a05fb42f2c03"
+                "ID": "6cce644d-b9d0-4f0d-937f-40f89cc79b58"
               },
               {
                 "CommandList": [
@@ -383,7 +383,7 @@
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='文章申請 (廃止)'!O9"
+                              "SerializeProperty": "='文章申請 (廃止'!O9"
                             }
                           },
                           {
@@ -395,7 +395,7 @@
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='文章申請 (廃止)'!O10"
+                              "SerializeProperty": "='文章申請 (廃止'!O10"
                             }
                           }
                         ]
@@ -434,7 +434,7 @@
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='文章申請 (廃止)'!O9"
+                              "SerializeProperty": "='文章申請 (廃止'!O9"
                             }
                           },
                           {
@@ -446,7 +446,7 @@
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='文章申請 (廃止)'!O10"
+                              "SerializeProperty": "='文章申請 (廃止'!O10"
                             }
                           }
                         ]
@@ -477,14 +477,14 @@
                               {
                                 "TargetCells": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "='文章申請 (廃止)'!AP20"
+                                  "SerializeProperty": "='文章申請 (廃止'!AP20"
                                 },
                                 "Value": "0"
                               }
                             ]
                           }
                         ],
-                        "ID": "69f72e9b-c6b9-4a5b-bc79-9ec243d730e7"
+                        "ID": "5aa0ae31-00a4-44a7-bb59-57097a854d03"
                       },
                       {
                         "CommandList": [
@@ -494,22 +494,22 @@
                               {
                                 "TargetCells": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "='文章申請 (廃止)'!AP20"
+                                  "SerializeProperty": "='文章申請 (廃止'!AP20"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "='文章申請 (廃止)'!最大追番+1"
+                                  "SerializeProperty": "='文章申請 (廃止'!最大追番+1"
                                 }
                               }
                             ]
                           }
                         ],
-                        "ID": "836c5ed8-a60a-4d28-94a3-6b5b64f10fc6"
+                        "ID": "10d2bb7b-a446-4ab9-8ae1-aed0a279771c"
                       }
                     ]
                   }
                 ],
-                "ID": "a6c7a064-50aa-42da-a922-3d1c1cfccc31"
+                "ID": "e95cabab-98a3-4247-b107-69ee58ebc854"
               }
             ]
           },
@@ -519,7 +519,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!AP20"
+                  "SerializeProperty": "='文章申請 (廃止'!AP20"
                 },
                 "PropertyType": 5,
                 "Value": true
@@ -561,7 +561,7 @@
             "ParameterName": "YBSコード",
             "ParameterValue": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='文章申請 (廃止)'!O9&\"-\"&'文章申請 (廃止)'!O10&TEXT('文章申請 (廃止)'!AP20,\"000\")"
+              "SerializeProperty": "='文章申請 (廃止'!O9&\"-\"&'文章申請 (廃止'!O10&TEXT('文章申請 (廃止'!AP20,\"000\")"
             },
             "ID": "c335609030fe4b1ea5d053f89d88188b"
           },
@@ -580,7 +580,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!YBSコード"
+                  "SerializeProperty": "='文章申請 (廃止'!YBSコード"
                 }
               }
             },
@@ -609,7 +609,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "129fca07-3444-4991-b027-6df4185cacd1"
+                "ID": "e1e5a1fc-2a3d-4212-8051-55fc03c4285d"
               },
               {
                 "CommandList": [
@@ -618,7 +618,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "1cb3e5dd-5836-47cb-bbef-0dc0157447dd"
+                "ID": "ae81566e-5235-4045-b049-29c62ecdc093"
               }
             ]
           },
@@ -628,17 +628,17 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!F9"
+                  "SerializeProperty": "='文章申請 (廃止'!F9"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!YBSコード"
+                  "SerializeProperty": "='文章申請 (廃止'!YBSコード"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!F9"
+                  "SerializeProperty": "='文章申請 (廃止'!F9"
                 },
                 "PropertyType": 5,
                 "Value": true
@@ -691,7 +691,7 @@
             "NextState": "申請中",
             "AssignTo": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='文章申請 (廃止)'!G26"
+              "SerializeProperty": "='文章申請 (廃止'!G26"
             },
             "ActionName": "提出"
           },
@@ -725,7 +725,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!F9"
+                      "SerializeProperty": "='文章申請 (廃止'!F9"
                     }
                   },
                   {
@@ -737,7 +737,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!K9"
+                      "SerializeProperty": "='文章申請 (廃止'!K9"
                     }
                   }
                 ]
@@ -774,7 +774,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "ef4367df-d6f2-4651-b4fe-52eb32e62e45"
+                "ID": "2357a329-fe09-4103-8ea8-ecfabb049807"
               },
               {
                 "CommandList": [
@@ -789,7 +789,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "a777c6d6-f471-4adc-929a-886e7338b994"
+                "ID": "90476d9a-c870-4b61-be26-a1cc1eb9674b"
               }
             ]
           },
@@ -804,7 +804,7 @@
             "NextState": "申請中",
             "AssignTo": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='文章申請 (廃止)'!O28"
+              "SerializeProperty": "='文章申請 (廃止'!O28"
             },
             "ActionName": "提出",
             "Disabled": true
@@ -1780,7 +1780,7 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "='文章申請 (廃止)'!G6"
+                    "SerializeProperty": "='文章申請 (廃止'!G6"
                   }
                 ]
               },
@@ -1814,7 +1814,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!F9"
+                      "SerializeProperty": "='文章申請 (廃止'!F9"
                     }
                   },
                   "TopCount": "1",
@@ -1838,7 +1838,7 @@
                 "ParameterName": "改正回数最大値",
                 "ParameterValue": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!改正回数+1"
+                  "SerializeProperty": "='文章申請 (廃止'!改正回数+1"
                 },
                 "ID": "b540961646f6441883b996b1aea31c37"
               },
@@ -1846,14 +1846,14 @@
                 "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                 "MessageFormula": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!改正回数"
+                  "SerializeProperty": "='文章申請 (廃止'!改正回数"
                 }
               },
               {
                 "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                 "MessageFormula": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='文章申請 (廃止)'!改正回数最大値"
+                  "SerializeProperty": "='文章申請 (廃止'!改正回数最大値"
                 }
               },
               {
@@ -1862,7 +1862,7 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!O10"
+                      "SerializeProperty": "='文章申請 (廃止'!O10"
                     },
                     "PropertyType": 5,
                     "Value": true
@@ -1870,7 +1870,7 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!O9"
+                      "SerializeProperty": "='文章申請 (廃止'!O9"
                     },
                     "PropertyType": 5,
                     "Value": true
@@ -1878,7 +1878,7 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!AP20"
+                      "SerializeProperty": "='文章申請 (廃止'!AP20"
                     },
                     "PropertyType": 5,
                     "Value": true
@@ -1886,7 +1886,7 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!F9"
+                      "SerializeProperty": "='文章申請 (廃止'!F9"
                     },
                     "PropertyType": 5,
                     "Value": true
@@ -1894,7 +1894,7 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!G11"
+                      "SerializeProperty": "='文章申請 (廃止'!G11"
                     },
                     "PropertyType": 5,
                     "Value": true
@@ -1902,17 +1902,17 @@
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!T6"
+                      "SerializeProperty": "='文章申請 (廃止'!T6"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='文章申請 (廃止)'!改正回数最大値"
+                      "SerializeProperty": "='文章申請 (廃止'!改正回数最大値"
                     }
                   }
                 ]
               }
             ],
-            "ID": "3fd75dad-2d9d-4c6b-850f-336b7679c0c9"
+            "ID": "418e4513-0c42-4eb2-b5fc-fe6ab37d8d0f"
           }
         ],
         "Disabled": true
@@ -1941,7 +1941,7 @@
           "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
           "Formula": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=ISBLANK('文章申請 (廃止)'!$AP$20)"
+            "SerializeProperty": "=ISBLANK('文章申請 (廃止'!$AP$20)"
           },
           "GUID": "febd8e44-a101-44c7-9d95-7f5eb2c5cb35",
           "StyleInfo": {
@@ -1986,4 +1986,4 @@
       "Size": "51,55"
     }
   ]
-}//+BgG5n+jwmeuQmfTvfNlZzHLrBC+G2FZ5Io613uRsDQpT64mImS9Q9Jg81UTtZ8msLg10YXYkmTMbINqZSTNyV8NTnUvaB+Aujg84HRh/uvLOMVlJMCYGTLTx8XqhCxKnAez9769CILzPZyncEVqiGXGuuPOjvSrFMZysyWyENPge5A2UykIQQ7ASA+68noUNML1+5ZoZxUecYeyBddF7pJn3Mv16My4QQ1m6TxbaDYTzh9MpkI+CsR+knij4K71kVMZTe0SE3XbGGoWHA6Vj6lp0a0wnlgnnUi619Apm7B8BKQ5ezmn9yQpzHXRWLNFT/OFtCtNtM+ctBHW6F1smRYNuQpy0AOCBC/PY7p3htKzpmhb6O36LdbSuWFMROQfR7hF5yNc77AmP7YywmFbdazqNplafYRXh5d1aOPyDxufg3crqqC97KZkKQkfatfRALo0MHENZNuvGTTGJGU7FhnzQO+8OA3iwdTuKwiz56ptMpSnN0LfCrVmp0icfU5/keMFHBORpOHaf/ZHsIggfRCSa0izEljaAYB+btGUrGSV+ILpUDDiHkTqcfCJu38y4ghKQMtHAwkavUNJRr6D8MJ0FuF9FHhbt5L0KJ2wIFDgx5Jat1BS7h1WY2ttJireeJEyi6o26vI/OG7yK1/IzfRjo9g+wFiCdiLmkF1iflZmIiNsU+TbbNaPvbsPHDQNfxIDItZJsZzP2TWqkNJzHE/C+/FlXdnpeF+5iph0lisJA7YP7KIqYcUVEsBFecmFRfb5JO3jkruH3+Ad46nhNnbQVc6jP4G6bh38/HErhutfbfLgPNgzWxxg+QCEA6/AYrS40rYTobbvlGuLiZcqOAkP6/b1n4+D2GjE5g6MmDGW3uacyrjUaKQHmJ15Yh4WABJQxmbR9yYHPFrMPIYMjg==|920
+}//AqX9DopHgyuStrG7BiDMGLvgdRk+vfrQ6I2Zeh0tu/jng6+H8ldRa7RRB5HiCcECbidVZtXBuo3kwiH/8TYfZuooKTty8u2fFnyElXEskrnFI0Uavjcf6wkNdSNhgnXMhuAc4mH98Hn1rp1Bpaap0Lc7xuILoH76sqANZqibeRiochYAx3o6FJIYDb9juOQtuU6Ytm7/NlVAtpvCtkHf0wEoBP4Xaw4x67DAolENqi7HyAOA7ILniNkMu/Se7MER2IAXgqVu/Vu294hf4qrmbP7mJC8Jgk42fGOdnXrmqOoTG/U+7c8wDCD9L30L14IeOz9GZKb2jTiaGB8owkTodfzqMBUCuYUApWHUfpvEouYWlIAVZZGBag0iMWu0FU0Nl4YxDpU+JkGkEFRimiFqXjD1Oi4RdUSxfy0cpozR1mmrYJ0EYWOXewack7fN8BmT/itFVgCwLIWspZ11leMeLf7VV2Su3lJfuOVBpSg6YRnJgB8xaGpPbpTDYlYVZW3laPL9gt3yJISFU1MDcmHzAvm9zEKtgON1k9M7AbbYNVWTIHcEuz2q4mqnZWg7++F6MR1ClrpyV47Rt82sbWPO8f8XZYTVgmD2xch7FGwSVBK9Xf30Tb9wS2p1OjSBKS3BWNiEzTF8pjADscojUzIrUMqejSbcxdCnn8n1D5Z+jyKmxdiFgIgxkv7W/pQa7EzeCiVNujcTLL9ICwLdkcGulbrbGX57ByvT4IvJR4DC7tQVBflt49/gdJJBbg5ytW0BrPTtR/J2jiU3vScuxs8KR5zHhhI2LrqPnUROL1spNjiJrgPMbSFekUeTL2pIsZXj7WDesNgRl4Roxce/uC7ziOtAeSpTY+6EW5ejIKqmSoAgiU5yScuZomZEWEhWIod5WBlS1cIiniDTQdAnf6KI9A==|920
