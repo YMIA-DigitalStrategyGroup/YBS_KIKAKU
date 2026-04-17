@@ -232,7 +232,7 @@
       "UserName": "UNITY\\ME041319",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-04-17T15:15:04.7648569+09:00",
+    "LockDateTime": "2026-04-17T16:01:44.6482869+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\YBS一覧（最新.json",
@@ -248,13 +248,13 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/廃止申請",
+    "ModuleName": "PCPage/文章申請 (廃止)",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME041319",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-04-17T15:33:30.5706229+09:00",
+    "LockDateTime": "2026-04-17T16:01:44.648168+09:00",
     "ModuleType": 1
   }
 ]
