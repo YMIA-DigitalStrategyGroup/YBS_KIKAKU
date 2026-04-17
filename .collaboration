@@ -246,5 +246,15 @@
   {
     "ModuleName": "PCPage/文書申請（改正",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/廃止申請",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-17T15:33:30.5706229+09:00",
+    "ModuleType": 1
   }
 ]
