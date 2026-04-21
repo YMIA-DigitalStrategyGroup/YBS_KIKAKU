@@ -2,15 +2,15 @@
 <Theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Colors>
     <Dark1>#000000</Dark1>
-    <Dark2>#B13F9A</Dark2>
+    <Dark2>#666666</Dark2>
     <Light1>#FFFFFF</Light1>
-    <Light2>#F4E7ED</Light2>
-    <Accent1>#B83D68</Accent1>
-    <Accent2>#AC66BB</Accent2>
-    <Accent3>#DE6C36</Accent3>
-    <Accent4>#F9B639</Accent4>
-    <Accent5>#CF6DA4</Accent5>
-    <Accent6>#FA8D3D</Accent6>
+    <Light2>#D2D2D2</Light2>
+    <Accent1>#FF388C</Accent1>
+    <Accent2>#E40059</Accent2>
+    <Accent3>#9C007F</Accent3>
+    <Accent4>#68007F</Accent4>
+    <Accent5>#005BD3</Accent5>
+    <Accent6>#00349E</Accent6>
     <Hyperlink>#FFFFFF</Hyperlink>
     <HyperlinkFollowed>#FFFFFF</HyperlinkFollowed>
   </Colors>

@@ -20,7 +20,7 @@
   },
   "Values": {
     "2,1": "作成手順",
-    "2,6": "改正回数確認→規格情報編集→申請",
+    "2,6": "改正回数確認→廃止理由入力→申請",
     "5,1": "申請区分",
     "5,14": "改正回数",
     "5,37": "申請者",
@@ -31,7 +31,7 @@
     "8,11": "分類",
     "9,11": "細分化",
     "10,1": "規格名称",
-    "12,1": "制定・改正・\r\n廃止理由",
+    "12,1": "\r\n廃止理由",
     "12,37": "現行区分",
     "13,37": "※ 新規のときは新規",
     "14,37": "　",
@@ -47,8 +47,9 @@
     "22,42": "ないことを確認してください。",
     "23,1": "閲覧用ＰＤＦ",
     "25,1": "承認者",
-    "28,1": "申請",
-    "28,15": "一時保存",
+    "25,39": "一時保存",
+    "27,40": "削除予定",
+    "28,1": "廃止申請",
     "28,22": "キャンセル"
   },
   "Formulas": {
@@ -59,7 +60,7 @@
     "2,6": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "CellDefaultValue": "改正回数確認→規格情報編集→申請",
+        "CellDefaultValue": "改正回数確認→廃止理由入力→申請",
         "SavedValidators": [
           {
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
@@ -207,7 +208,8 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "WaterMark": "必須"
+        "WaterMark": "必須",
+        "ReadOnly": true
       },
       "DataValidationInfo": {}
     },
@@ -251,6 +253,7 @@
         "UploadLimit": {
           "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
         },
+        "ReadOnly": true,
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -349,7 +352,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "6cce644d-b9d0-4f0d-937f-40f89cc79b58"
+                "ID": "c74a1f26-05fa-4eae-a1c4-b6deac82cc1b"
               },
               {
                 "CommandList": [
@@ -484,7 +487,7 @@
                             ]
                           }
                         ],
-                        "ID": "5aa0ae31-00a4-44a7-bb59-57097a854d03"
+                        "ID": "9df97ce8-e206-4b48-80ec-ce47f34737d9"
                       },
                       {
                         "CommandList": [
@@ -504,12 +507,12 @@
                             ]
                           }
                         ],
-                        "ID": "10d2bb7b-a446-4ab9-8ae1-aed0a279771c"
+                        "ID": "8a5b9ec8-fab5-453c-b392-cbf94d157529"
                       }
                     ]
                   }
                 ],
-                "ID": "e95cabab-98a3-4247-b107-69ee58ebc854"
+                "ID": "59c79e80-8b7b-46e6-b641-e230dd38c079"
               }
             ]
           },
@@ -609,7 +612,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "e1e5a1fc-2a3d-4212-8051-55fc03c4285d"
+                "ID": "300bb719-6481-4092-86c3-ee8063dded4a"
               },
               {
                 "CommandList": [
@@ -618,7 +621,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "ae81566e-5235-4045-b049-29c62ecdc093"
+                "ID": "f2173958-1795-4df1-ad11-771562dba63c"
               }
             ]
           },
@@ -659,6 +662,7 @@
         "UploadLimit": {
           "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
         },
+        "ReadOnly": true,
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -674,36 +678,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
-    "28,1": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "YBS規格文書",
-            "UpdateType": "add",
-            "ShowConfirm": true,
-            "ConfirmText": "本当に追加してもよろしいですか？"
-          },
-          {
-            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
-            "TableName": "YBS規格文書",
-            "NextState": "申請中",
-            "AssignTo": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "='文章申請 (廃止'!G26"
-            },
-            "ActionName": "提出"
-          },
-          {
-            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
-          }
-        ],
-        "Text": "申請",
-        "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
-    "28,15": {
+    "25,39": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -774,7 +749,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "2357a329-fe09-4103-8ea8-ecfabb049807"
+                "ID": "837158cf-ab9d-41f4-a137-d21068ad2e32"
               },
               {
                 "CommandList": [
@@ -789,7 +764,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "90476d9a-c870-4b61-be26-a1cc1eb9674b"
+                "ID": "64f88e69-2b45-48a2-b433-fd74d7b5faf2"
               }
             ]
           },
@@ -811,6 +786,35 @@
           }
         ],
         "Text": "一時保存",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "28,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "YBS規格文書",
+            "UpdateType": "add",
+            "ShowConfirm": true,
+            "ConfirmText": "本当に追加してもよろしいですか？"
+          },
+          {
+            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+            "TableName": "YBS規格文書",
+            "NextState": "申請中",
+            "AssignTo": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='文章申請 (廃止'!G26"
+            },
+            "ActionName": "提出"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "廃止申請",
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -1210,13 +1214,13 @@
       {
         "Background": 15,
         "FontFamily": 1,
-        "Foreground": 16,
+        "Foreground": 3,
         "WordWrap": true
       },
       {
-        "Background": 17,
+        "Background": 16,
         "FontFamily": 1,
-        "Foreground": 3,
+        "Foreground": 17,
         "WordWrap": true
       }
     ],
@@ -1237,9 +1241,9 @@
         "Accent 1 0",
         "General",
         "Accent 2 80",
-        "#FF00B050",
-        "Background 1 0",
-        "#FFFFFAD7"
+        "#FFFFFAD7",
+        "Background 2 0",
+        "Background 1 0"
       ],
       "Borders": [
         {
@@ -1652,6 +1656,11 @@
       "25,5": 17,
       "25,6": 61,
       "25,26": 42,
+      "25,39": 62,
+      "25,40": 11,
+      "25,41": 11,
+      "25,42": 11,
+      "25,43": 11,
       "26,1": 1,
       "26,2": 1,
       "26,3": 1,
@@ -1678,16 +1687,16 @@
       "26,24": 30,
       "26,25": 30,
       "26,26": 39,
-      "28,1": 62,
+      "26,39": 11,
+      "26,40": 11,
+      "26,41": 11,
+      "26,42": 11,
+      "26,43": 11,
+      "28,1": 63,
       "28,2": 11,
       "28,3": 11,
       "28,4": 11,
       "28,5": 11,
-      "28,15": 63,
-      "28,16": 11,
-      "28,17": 11,
-      "28,18": 11,
-      "28,19": 11,
       "28,22": 10,
       "28,23": 11,
       "28,24": 11,
@@ -1698,11 +1707,6 @@
       "29,3": 11,
       "29,4": 11,
       "29,5": 11,
-      "29,15": 11,
-      "29,16": 11,
-      "29,17": 11,
-      "29,18": 11,
-      "29,19": 11,
       "29,22": 11,
       "29,23": 11,
       "29,24": 11,
@@ -1763,12 +1767,12 @@
     "18,38,2,3",
     "18,41,1,3",
     "19,41,1,3",
-    "28,15,2,5",
-    "28,1,2,5"
+    "28,1,2,5",
+    "25,39,2,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "ＹＢＳ改正申請",
+    "Title": "ＹＢＳ廃止申請",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1912,7 +1916,7 @@
                 ]
               }
             ],
-            "ID": "418e4513-0c42-4eb2-b5fc-fe6ab37d8d0f"
+            "ID": "2bfa0cd3-fc07-4e0e-9d56-a1b9d049bca9"
           }
         ],
         "Disabled": true
@@ -1986,4 +1990,4 @@
       "Size": "51,55"
     }
   ]
-}//AqX9DopHgyuStrG7BiDMGLvgdRk+vfrQ6I2Zeh0tu/jng6+H8ldRa7RRB5HiCcECbidVZtXBuo3kwiH/8TYfZuooKTty8u2fFnyElXEskrnFI0Uavjcf6wkNdSNhgnXMhuAc4mH98Hn1rp1Bpaap0Lc7xuILoH76sqANZqibeRiochYAx3o6FJIYDb9juOQtuU6Ytm7/NlVAtpvCtkHf0wEoBP4Xaw4x67DAolENqi7HyAOA7ILniNkMu/Se7MER2IAXgqVu/Vu294hf4qrmbP7mJC8Jgk42fGOdnXrmqOoTG/U+7c8wDCD9L30L14IeOz9GZKb2jTiaGB8owkTodfzqMBUCuYUApWHUfpvEouYWlIAVZZGBag0iMWu0FU0Nl4YxDpU+JkGkEFRimiFqXjD1Oi4RdUSxfy0cpozR1mmrYJ0EYWOXewack7fN8BmT/itFVgCwLIWspZ11leMeLf7VV2Su3lJfuOVBpSg6YRnJgB8xaGpPbpTDYlYVZW3laPL9gt3yJISFU1MDcmHzAvm9zEKtgON1k9M7AbbYNVWTIHcEuz2q4mqnZWg7++F6MR1ClrpyV47Rt82sbWPO8f8XZYTVgmD2xch7FGwSVBK9Xf30Tb9wS2p1OjSBKS3BWNiEzTF8pjADscojUzIrUMqejSbcxdCnn8n1D5Z+jyKmxdiFgIgxkv7W/pQa7EzeCiVNujcTLL9ICwLdkcGulbrbGX57ByvT4IvJR4DC7tQVBflt49/gdJJBbg5ytW0BrPTtR/J2jiU3vScuxs8KR5zHhhI2LrqPnUROL1spNjiJrgPMbSFekUeTL2pIsZXj7WDesNgRl4Roxce/uC7ziOtAeSpTY+6EW5ejIKqmSoAgiU5yScuZomZEWEhWIod5WBlS1cIiniDTQdAnf6KI9A==|920
+}//JAl0ey6KWtgc0cr+/LpFsuImqkflBdbraYxKPpCCKehQyrlmMnJBCNHUR4vk1MCPKBTjTFZEMyko2vRHMF3dX1o0HQEwDaFyv9pzm/iQ5P/dM/m4z9Bic8VmX9/awBGl2A61Y5GD+vdnmsYXjXAq5m1qKAXIRzmGhASJLpccr31Rm1CFgugLkt6ukgV+16LPy2IWTLdkpv9O6EkDFP1ZJXDlFpJkg4anv3cyW/WLtM32tHu8Z1GySQL1fi9erFoF8e+T0lKFqzL9GZmbeZgKpz+3ZCS5R/aVugXSb+pmFm90XYFt3Fr6E6xU8iB6u/ZgzThVZdbZvd2bZDWlgXyDMfi2j4usLrCIC1+f4L5A4IuKLrdf7fjiE1j5pltGcDuPYTAkkTuyvs9kandUzvGIIFam6ftiFfv3BkiEf25cQv/UFIPFPlw8xWikVeiK1UA3NhLjNt1LYoqKlGV3zaHQ0YPFZso1Fyslm4FlX5Ta2r21klwucvvWE/9/xOspPQB5h8EQWsC3MCVt5MMoK+K2E8qEieakmRipLZBYGZnaLypci+Ie5dmCx6/sS6ZSvmZwJI0r8H4BIyYfu7a05yT+0qP1ZRh7DJ+dIVn3mK2/Xou0s1saFo13YbhhUa1UVL30KvMT2kK1mUiaEYPEg/w4GpY8SFux4KHq0cfzhvXiM+sMNS2TS7hi42Aj7UkDX+UDciJ5rH2DW5B/NElXJXS4PNd97A7PF9H1T6GM3QPWSLbDGdy1BE2/5t7LFSbRKx2O7R6J02uM6BEzUuEh42uOB86itd6w2A+Y7jgb2xOffs3tZaBP+m2CtUdic8rvdgcbETsoLCidl5aBwOkklp57ANned2KzE/zZKMSf+7Rs/5tDKlQK9FB/eFdvc4Mk84dmGVGoANU9soDWMJfE+OBaYw==|920
