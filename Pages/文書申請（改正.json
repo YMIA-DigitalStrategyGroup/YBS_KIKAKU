@@ -349,7 +349,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "06f2a864-0256-430a-b754-6af212f34cc7"
+                "ID": "a19c6ed3-2f15-4402-9efd-f373781c332f"
               },
               {
                 "CommandList": [
@@ -484,7 +484,7 @@
                             ]
                           }
                         ],
-                        "ID": "b22aa2e6-2f86-44db-80c0-b2da076d9740"
+                        "ID": "97a55bd1-2ebf-4291-a767-f94a90058622"
                       },
                       {
                         "CommandList": [
@@ -504,12 +504,12 @@
                             ]
                           }
                         ],
-                        "ID": "a2ca1db7-1e01-4f8b-b94e-e33f0097db1a"
+                        "ID": "1b29ec5b-ff69-4d94-87fe-724830300e0b"
                       }
                     ]
                   }
                 ],
-                "ID": "79534826-45f0-4922-882d-a6eb5a915265"
+                "ID": "ea231259-97af-4a56-a037-9633776305f3"
               }
             ]
           },
@@ -609,7 +609,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "3b0670de-0905-4370-8c6b-8fe6beef4c7d"
+                "ID": "1ba275cf-e1f4-4274-ac37-c92a40f8c36f"
               },
               {
                 "CommandList": [
@@ -618,7 +618,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "41f0ad3b-fcef-4475-a026-26caf03bfb73"
+                "ID": "23b282ad-4fdc-48f4-a3d1-0f75b2eb5da4"
               }
             ]
           },
@@ -745,7 +745,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "bbe25d24-14a2-41e3-88a7-59c9c1e73dc7"
+                "ID": "391c3160-239f-453f-b272-3be35c0935ee"
               },
               {
                 "CommandList": [
@@ -760,7 +760,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "01b0fc1e-d712-4290-b414-291165125192"
+                "ID": "c303a03d-3b61-4b55-a21f-1dbed4d97c52"
               }
             ]
           },
@@ -855,7 +855,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "aa2524be-9cc3-44ec-94a3-9ed53739a4f2"
+                "ID": "d9430aee-e02d-4e8a-93e6-a69f4b75b742"
               },
               {
                 "CommandList": [
@@ -870,7 +870,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "742dc755-9730-42b1-ade3-f0fe9923e333"
+                "ID": "d6723608-7a54-4b74-bb95-2e1e463b126d"
               }
             ]
           },
@@ -1016,7 +1016,7 @@
         "BorderLeft": 0
       },
       {
-        "Background": 0,
+        "Background": 7,
         "FontFamily": 1,
         "HorizontalAlignment": 2,
         "BorderTop": 0,
@@ -1032,12 +1032,12 @@
         "BorderRight": 0
       },
       {
-        "Background": 0,
+        "Background": 7,
         "FontFamily": 1,
         "FontSize": 16.0,
-        "FontWeight": 7,
+        "FontWeight": 8,
         "Formatter": 4,
-        "HorizontalAlignment": 8,
+        "HorizontalAlignment": 9,
         "BorderTop": 0,
         "BorderLeft": 0
       },
@@ -1045,10 +1045,10 @@
         "BorderTop": 0
       },
       {
-        "Background": 0,
+        "Background": 7,
         "FontFamily": 1,
         "FontSize": 16.0,
-        "FontWeight": 7,
+        "FontWeight": 8,
         "BorderTop": 0,
         "BorderRight": 0
       },
@@ -1160,7 +1160,7 @@
       {
         "FontFamily": 1,
         "Formatter": 4,
-        "VerticalAlignment": 9,
+        "VerticalAlignment": 10,
         "WordWrap": true,
         "BorderLeft": 0
       },
@@ -1216,14 +1216,14 @@
       },
       {
         "FontFamily": 1,
-        "Formatter": 10,
+        "Formatter": 11,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 1,
         "WordWrap": true
       },
@@ -1248,14 +1248,14 @@
         "Background": 5,
         "FontFamily": 1,
         "Foreground": 3,
-        "Formatter": 12,
+        "Formatter": 13,
         "BorderTop": null,
         "BorderLeft": 0
       },
       {
         "Background": 5,
         "FontFamily": 1,
-        "Formatter": 12,
+        "Formatter": 13,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": 0
@@ -1263,13 +1263,13 @@
       {
         "Background": 5,
         "FontFamily": 1,
-        "Formatter": 12,
+        "Formatter": 13,
         "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderTop": null
       },
       {
-        "Background": 13,
+        "Background": 7,
         "FontFamily": 1,
         "Formatter": 6,
         "HorizontalAlignment": 2,
@@ -1308,15 +1308,15 @@
         "Center",
         "black",
         "@",
-        "Accent 5 60",
+        "Accent 1 80",
         "[AUTO]General",
+        "Accent 1 40",
         "Bold",
         "Right",
         "Top",
         "000",
         "Accent 1 0",
         "General",
-        "Accent 5 80",
         "#FFFFC000",
         "Background 1 0",
         "#FFFFFAD7"
@@ -1992,7 +1992,7 @@
                 ]
               }
             ],
-            "ID": "978c9349-abcf-4dfb-8b3b-b9f4bdbbad0b"
+            "ID": "65e3729a-eb9d-4d3c-bf78-90ab69be02eb"
           }
         ],
         "Disabled": true
@@ -2066,4 +2066,4 @@
       "Size": "51,55"
     }
   ]
-}//p6iT6r1pCOny+tIp41SXs6wY9vslg0hJ30r+Lncf2mNRPEonbKehG9ryn1ThFMmeN/hgSR5y203AkI367J0DvYcvdpwBSzjuJgGBpGU/g18ypYbD0yrtzJrfDh/XkeO4nTnA8J/LQOXz/83dffhgF+/z1ryQf5sLvxUCG7VAPqZnodXaYAIAmTlbem6yboOOPONtZfRlmn9wG36C0r6I/uJHPKTqEwuT0QiQZ6UNrwgvAe5pwwcmYhSjWt2PDWGPGTq+aunIwTgF/jTZk2M180GCmIX5TswG8VbPS8RPvEzpwWS43j3nAbyeXn6IEl6jeV6/vgnYy0cxfqINUrFByRUyE0TOrX0OdodtzTqMfxo5+9dgpfP7wcGaaq9I6iygSIVjkCWL/viVOFoo+uamfkVC731UPtBWSFaiKUWrGZ3X3MgreKcrwVAcda8YYjR5gWy3PS9aA9zt1WLPnfLgVR7Be7zQyz/HY6PRWm7cK4hWV15oVOHVM9+2rWeeJgwFKp72nEWgc0GvLUYdMrAUJLrPxatS60tZkzmok2syG4rcfOyQQcdX7kdhsm3omHOk17Dx1pm9w/vvnb02awA9jYm/zoYlw5viB7Wc+LX0fsgO4VPLqEym54iYl6O+JOPRAzUmcTQgDyzywSV/ULkSP2Vikli1Cw73mvjy3VYr5VGpR7I/8ZNdxeypyhwvHqoROyKgmnWtHxDFS+ian3Uy6beScC75HCHc0mWuTdFE8aMmxrJ8CMooa+CKuXUuiRqoLpc9r2RYr3H47IFlizaN82xAW9luUYqZtMeNub3onYgatzIOD9k3xskbKch15evXJTQomUkFLyoeVUj8q8Y/LCZPpCS+pCJ7g6lAM+obuRaLueUxkgXqvE7xWcnzBL1lkd3iSzr0K7RCEMWpq+TgLA==|920
+}//f/MOoLG7hvYPcFFSL9x03ArHNFboHN3Xix1Z0NvgxRWu8Fke5D269DmeUvrkIJmrJwYD5FPghFxm8xp4w5uq5N63asQe6eN1kVHkuUueeHfIIizCMF6OLUjOJ/MLBaVCyfU+1/YSe5zB6/QBO3OFUXBnQAnmvN6sSn77uPN7s9n9jWusRJ6nz9GVFiZHKCOFu7aBqksedBqnZslbyEYeqTRGqHVrutvegt2gPYn5UMqx2kCU6PgNAT57jm6Z5cpibh2kEGBnSNlK/quAfH7iJHYvHL+LAKO4daQ3A7CoWusrItXr5jJvqxbCgN8VZ5iw2Zb1mAB2oWpSrLP70C6UPR3ZaR2movm5P7T9D/CHVMP0dLuyBkxzKorFKRIFKY6MD1X+/vEg0pmT1PUnKxtqzOfPEuZKRjeylStcBRiQFvzSm1/p1bnRvH017T4Tgbxu2nkrbFxy+epYTTOKRiwAmgfs8S+MD6k70AK4Su1Kz59IWEN3nMTz0wowE0SOonq5dKA4BZDikuaKX9RgtVZr0BcAEdpKm4HXvzAfOjI67B1oePsatjY2MFwnZpVfovAIfq1D1GSFeiyOauQe3B8GNZPD6z5BnlaZUfz3xalPDB5j75xIQVsPsbPWg9wWA7aQgZyQXTmaeptcefT28FE4kBEMv8g2TQTkslct1UsGs1zFzFlfMWgYJFfRmmQJVrBPd080KZSB7BNKwEHwirDu4ngm9PtVX6r3OLVOYT2tiCayqLUp2J/8uyX16nWF0KXdLJMoHPBy8JdaRW+IP419C8bd3XIeNeri5PBNo2RNBf54wEd7AuUbZ5baejKMCyMzkSoMdpFlc80p+JP/O7eFYTxY2Z36TSAzA2D0Nzj8MQEScx2VRR2kwchf4//WeKlTEBzhLyHa0VmaXcZnXRVpdg==|920
