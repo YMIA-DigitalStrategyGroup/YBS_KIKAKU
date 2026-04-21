@@ -349,7 +349,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "9ce628b2-e89a-4ffb-98eb-089c3a54fe91"
+                "ID": "06f2a864-0256-430a-b754-6af212f34cc7"
               },
               {
                 "CommandList": [
@@ -484,7 +484,7 @@
                             ]
                           }
                         ],
-                        "ID": "4483fdcb-5102-4d5a-88f2-c5cd2d42dbe0"
+                        "ID": "b22aa2e6-2f86-44db-80c0-b2da076d9740"
                       },
                       {
                         "CommandList": [
@@ -504,12 +504,12 @@
                             ]
                           }
                         ],
-                        "ID": "738025dc-a3cd-4934-a430-d73f878e3741"
+                        "ID": "a2ca1db7-1e01-4f8b-b94e-e33f0097db1a"
                       }
                     ]
                   }
                 ],
-                "ID": "fa8d56b2-1be8-4f36-9eae-8d585644af51"
+                "ID": "79534826-45f0-4922-882d-a6eb5a915265"
               }
             ]
           },
@@ -609,7 +609,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "c50fa8d5-3f7a-42df-b3a7-0407c674a677"
+                "ID": "3b0670de-0905-4370-8c6b-8fe6beef4c7d"
               },
               {
                 "CommandList": [
@@ -618,7 +618,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "b4eb45d6-0882-4f95-9be5-ad4db919d738"
+                "ID": "41f0ad3b-fcef-4475-a026-26caf03bfb73"
               }
             ]
           },
@@ -745,7 +745,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "88c71736-49b2-48cf-a569-374f7597f15a"
+                "ID": "bbe25d24-14a2-41e3-88a7-59c9c1e73dc7"
               },
               {
                 "CommandList": [
@@ -760,7 +760,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "13031b1d-d16b-4701-826a-a2861da75d27"
+                "ID": "01b0fc1e-d712-4290-b414-291165125192"
               }
             ]
           },
@@ -855,7 +855,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "92b48398-febf-40c9-a1e4-9875b4f2799e"
+                "ID": "aa2524be-9cc3-44ec-94a3-9ed53739a4f2"
               },
               {
                 "CommandList": [
@@ -870,7 +870,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "3360c6a5-017d-42ed-913e-e256568184a5"
+                "ID": "742dc755-9730-42b1-ade3-f0fe9923e333"
               }
             ]
           },
@@ -1016,7 +1016,7 @@
         "BorderLeft": 0
       },
       {
-        "Background": 7,
+        "Background": 0,
         "FontFamily": 1,
         "HorizontalAlignment": 2,
         "BorderTop": 0,
@@ -1032,12 +1032,12 @@
         "BorderRight": 0
       },
       {
-        "Background": 7,
+        "Background": 0,
         "FontFamily": 1,
         "FontSize": 16.0,
-        "FontWeight": 8,
+        "FontWeight": 7,
         "Formatter": 4,
-        "HorizontalAlignment": 9,
+        "HorizontalAlignment": 8,
         "BorderTop": 0,
         "BorderLeft": 0
       },
@@ -1045,10 +1045,10 @@
         "BorderTop": 0
       },
       {
-        "Background": 7,
+        "Background": 0,
         "FontFamily": 1,
         "FontSize": 16.0,
-        "FontWeight": 8,
+        "FontWeight": 7,
         "BorderTop": 0,
         "BorderRight": 0
       },
@@ -1160,7 +1160,7 @@
       {
         "FontFamily": 1,
         "Formatter": 4,
-        "VerticalAlignment": 10,
+        "VerticalAlignment": 9,
         "WordWrap": true,
         "BorderLeft": 0
       },
@@ -1216,14 +1216,14 @@
       },
       {
         "FontFamily": 1,
-        "Formatter": 11,
+        "Formatter": 10,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0,
         "BorderRight": null
       },
       {
-        "Background": 12,
+        "Background": 11,
         "FontFamily": 1,
         "WordWrap": true
       },
@@ -1248,14 +1248,14 @@
         "Background": 5,
         "FontFamily": 1,
         "Foreground": 3,
-        "Formatter": 13,
+        "Formatter": 12,
         "BorderTop": null,
         "BorderLeft": 0
       },
       {
         "Background": 5,
         "FontFamily": 1,
-        "Formatter": 13,
+        "Formatter": 12,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": 0
@@ -1263,13 +1263,13 @@
       {
         "Background": 5,
         "FontFamily": 1,
-        "Formatter": 13,
+        "Formatter": 12,
         "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderTop": null
       },
       {
-        "Background": 14,
+        "Background": 13,
         "FontFamily": 1,
         "Formatter": 6,
         "HorizontalAlignment": 2,
@@ -1289,13 +1289,13 @@
         "BorderLeft": 0
       },
       {
-        "Background": 15,
+        "Background": 14,
         "FontFamily": 1,
-        "Foreground": 16,
+        "Foreground": 15,
         "WordWrap": true
       },
       {
-        "Background": 17,
+        "Background": 16,
         "FontFamily": 1,
         "Foreground": 3,
         "WordWrap": true
@@ -1303,21 +1303,20 @@
     ],
     "Types": {
       "Strs": [
-        "Accent 4 80",
+        "Accent 6 80",
         "Body",
         "Center",
         "black",
         "@",
-        "Accent 1 80",
+        "Accent 5 60",
         "[AUTO]General",
-        "Accent 6 80",
         "Bold",
         "Right",
         "Top",
         "000",
         "Accent 1 0",
         "General",
-        "Accent 2 80",
+        "Accent 5 80",
         "#FFFFC000",
         "Background 1 0",
         "#FFFFFAD7"
@@ -1993,7 +1992,7 @@
                 ]
               }
             ],
-            "ID": "049b2899-0482-4151-ac22-25cd35ead924"
+            "ID": "978c9349-abcf-4dfb-8b3b-b9f4bdbbad0b"
           }
         ],
         "Disabled": true
@@ -2067,4 +2066,4 @@
       "Size": "51,55"
     }
   ]
-}//C9XuUuEQZmX6LnnBmAttCMkC1/MrhD6F+T/auRXwQxP0g/SMIqffasFhyvEleKwVPS/V44l1zqbCshliYysjl9oRiaHXVt7CTipMozCc6e/Tn7mi0m/dfmXCmKUSu/vQb88FOS0NmErOz5fxNbXZXt3GgLhkAEwF4d6AExA/Ieg3sivH4JiP/0BlRK8pZQZpk+q5nr+PFPf++yVMHuI82lPnxOI7dNrF++e38kRfGK6uFqrs40RNLdde7SMSET+bFdNFbMMKndgF7YOATzTjR9+mER1EJGL5WSBR+5HlCj0Y19u6m/CFmhAsHeGX5pjN3UeG3uK6uTDL0XfErxeQ4jpqsW35jcpb2dixqQ+hAwPOb1I+iFVUeniLhkaHpoW8HWG9rs8zw4zFhvd64cdfYQISQy9Ar5s/3NDtEzRyrb2bokAGslM38W24z6+W+5tOiGNWAom5zKWpIQc0pG9OQPERy2FLLaCXURDWiWtA42n92AGnJVzimqFztBDaa7ApLoa28Sp08SQMaJNwXkwszU84GgV9rI2TeEyPmhxonFBER5bzkGxqUtNxmvEB8IobaW/gRll0FH/Y54L0Cgi5wU0GM+lNcTyDivpHn4i8d8ZSUfKhAVCQGuDqykh5Bldzq231pxo1Zhrb/CeJSSU3q3xKO1dwspHpJXG0AjvsXMBygeOIJyH5a9tGZF1Nm7HJ460UhDfKCQhVBG6D/9V2fohmx5L6Ph6OVt8+EQDfoM0q2o5NhVM7WLestUDoo0xA5PA2QAyyi9fCYX6AJ1JAtE0QlIf/PaXEg1bGk1KJVAG06UM4b4KVT9Z7K6Nn+8UZj1Mb4zkqOHKdSlhJz+y5rd7LbvdusWN1qj2VYyCw5yTFfDuwGFRjNUOamk6nGq0vNzlZTM4B73WkLc8qFHKzdQ==|920
+}//p6iT6r1pCOny+tIp41SXs6wY9vslg0hJ30r+Lncf2mNRPEonbKehG9ryn1ThFMmeN/hgSR5y203AkI367J0DvYcvdpwBSzjuJgGBpGU/g18ypYbD0yrtzJrfDh/XkeO4nTnA8J/LQOXz/83dffhgF+/z1ryQf5sLvxUCG7VAPqZnodXaYAIAmTlbem6yboOOPONtZfRlmn9wG36C0r6I/uJHPKTqEwuT0QiQZ6UNrwgvAe5pwwcmYhSjWt2PDWGPGTq+aunIwTgF/jTZk2M180GCmIX5TswG8VbPS8RPvEzpwWS43j3nAbyeXn6IEl6jeV6/vgnYy0cxfqINUrFByRUyE0TOrX0OdodtzTqMfxo5+9dgpfP7wcGaaq9I6iygSIVjkCWL/viVOFoo+uamfkVC731UPtBWSFaiKUWrGZ3X3MgreKcrwVAcda8YYjR5gWy3PS9aA9zt1WLPnfLgVR7Be7zQyz/HY6PRWm7cK4hWV15oVOHVM9+2rWeeJgwFKp72nEWgc0GvLUYdMrAUJLrPxatS60tZkzmok2syG4rcfOyQQcdX7kdhsm3omHOk17Dx1pm9w/vvnb02awA9jYm/zoYlw5viB7Wc+LX0fsgO4VPLqEym54iYl6O+JOPRAzUmcTQgDyzywSV/ULkSP2Vikli1Cw73mvjy3VYr5VGpR7I/8ZNdxeypyhwvHqoROyKgmnWtHxDFS+ian3Uy6beScC75HCHc0mWuTdFE8aMmxrJ8CMooa+CKuXUuiRqoLpc9r2RYr3H47IFlizaN82xAW9luUYqZtMeNub3onYgatzIOD9k3xskbKch15evXJTQomUkFLyoeVUj8q8Y/LCZPpCS+pCJ7g6lAM+obuRaLueUxkgXqvE7xWcnzBL1lkd3iSzr0K7RCEMWpq+TgLA==|920
