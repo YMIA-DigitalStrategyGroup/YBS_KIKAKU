@@ -239,6 +239,16 @@
   },
   {
     "ModuleName": "PCPage/文章申請 (廃止",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-21T14:48:15.5492707+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\文章申請 (廃止.json",
+      "Pages\\文章申請 (廃止.rd"
+    ]
   }
 ]
