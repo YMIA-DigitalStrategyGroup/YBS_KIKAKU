@@ -231,7 +231,17 @@
   },
   {
     "ModuleName": "PCPage/文書申請（新規",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-21T14:50:09.1165057+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\文書申請（新規.json",
+      "Pages\\文書申請（新規.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/文書申請（改正",
