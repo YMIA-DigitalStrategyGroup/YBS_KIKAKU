@@ -209,17 +209,7 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（申請中",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-21T14:44:30.3272026+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（申請中.json",
-      "Pages\\YBS一覧（申請中.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（詳細",
