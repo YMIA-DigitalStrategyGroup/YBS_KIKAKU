@@ -254,7 +254,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "94aa3cac-ddc1-489a-b007-c6e7067cd741"
+        "GUID": "d75e2ce1-ca19-43f4-b314-f21d6e0788b8"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -508,7 +508,7 @@
                     "MessageFormula": "承認中または一時保存の文章があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "bb519e45-ccf8-410b-9fe8-d232937dd684"
+                "ID": "a7b25e88-7a73-4b24-b981-d5c932f4c014"
               },
               {
                 "CommandList": [
@@ -541,7 +541,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "f84b9e04-fd9a-4944-b6ab-607544fd424c"
+                "ID": "bbe1ac66-a842-46ce-ae0c-f4ed1bbe844b"
               }
             ]
           }
@@ -763,7 +763,7 @@
                     "MessageFormula": "「申請中」または「一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "28607007-f7fe-436f-a794-f482d8958ad5"
+                "ID": "2187c53f-355b-48c4-b349-d123f8a2b586"
               },
               {
                 "CommandList": [
@@ -796,7 +796,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "7c1b1572-2e13-4735-8825-dcf96d31a846"
+                "ID": "5a34c5ec-88ac-4629-aac1-c7d7ef59293d"
               }
             ]
           }
@@ -893,6 +893,7 @@
       {
         "FontFamily": 2,
         "Formatter": 7,
+        "HorizontalAlignment": 4,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0,
@@ -910,6 +911,7 @@
       {
         "FontFamily": 2,
         "Formatter": 7,
+        "HorizontalAlignment": 4,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderRight": 0
@@ -934,6 +936,12 @@
         "Background": 13,
         "FontFamily": 2,
         "Formatter": 1
+      },
+      {
+        "Background": 14,
+        "FontFamily": 2,
+        "Foreground": 15,
+        "Formatter": 1
       }
     ],
     "Types": {
@@ -951,7 +959,9 @@
         "#FF00B050",
         "#FFFFC000",
         "Background 1 0",
-        "Background 1 -25"
+        "Background 1 -25",
+        "Accent 3 60",
+        "Text 1 0"
       ],
       "Borders": [
         {
@@ -1098,7 +1108,7 @@
       "20,17": 1,
       "20,18": 1,
       "20,19": 1,
-      "20,22": 8,
+      "20,22": 17,
       "20,23": 1,
       "20,24": 1,
       "20,25": 1,
@@ -1198,4 +1208,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//ZkP5hpuE50V4+/xL+E+BOrhNGE+S7VKircA8ljKQ6NK3TWspgFcFJ8M2VuVdy3kyG2cjtcHf6373nnrXTGem9zFMrAaBIlTsCeQDjYeEXefVSb83d7HNBVQELPzoGku/jIbYJKKt3OdFQ+K+RhZ4N/Kj58IVwgQzEhg4H7/0gGDapRXoV402X2lBFPwe4f7U6WRbI80SWBJcfSuArAuI1ZtpwmgTMkb0KHqheguBWOOJTKonV3gFYgyMOzSBpqYDYWwZiEtjOvTt+I/oP67r9zEU/WO/gOnjVU391/ijjbyl/xIR/hHy/1nsyWIncKGksYl+jobJh6uft/gm+jNFFo2C2hhRE+/XB5sqMn8aLBtEy/LVY3zxIKtEsvnZ1LstLDykrObnyhdwcUmRvay734XwSuIam57yCIzzLu4v7Yai0bSyC5fNsqZx9gjECMAB1buRaR2T4A5xug8oQp4vmTqPsvzVAd8hOJUdbebEa8U4qnDeZLMqPmAS+GpYN5ZYYklHKYWhs9Z9BB0arlgYeC0VSeogmDlPuqW/DALEmPlXzJ8Hcr2AI66G/pyfaxRz3svHuorITuK4xHeDyPQoY0nNNrCTuS29XVbjBrScYGj9pK/cTWbzu3MmeTHAxkvZodtaTODxawGLd8jZPp/m50MOECCdhDZKeHMY59ZCB7NF3zcFSpiJMl90Q9uvZV0qJ8yMUEygbhQi4sZr5gbn51kDM0EoHaSfupQhYAH1hRpW2u/TIqF9DIiY/IZ+kHPXXq4bCGnzfAoy5L0uXhTO+AHwwGl7ObhL/2uwfXTHG8ruofxBgV2K9QKoGIbY9NFixA/+dULF4nPIQRVhKs/O5Y7vbvmgLcF38Px42YW9Np96TYfIe85afJye8NTGnQc2RS588e7BB7eq/D76r1q32A==|920
+}//b6tp8L7eMZuu1gn3Jz79ZSx9LpaJw95sQm9gnmYp7B7EGpLb1X+p3heizb1YqnfUCKpv568jvb3+UFnRhpf2kO22CVUcVVAuujmh6+a8H6IvcjYvN6pFjzzoarXKKWG313Je9TAU9vI4fZfnJAdjt7RQIpm7OFU1hKlAZGnOgUaKwyg1LqMYOrL9NnYDhrMbBgo1axFg7fLcYLBZM30YDDv62DIF2kkthb2nmqwdxConXv3uVlGUvKS9w4tYrHokuJVwHvzPG9Nr3WMO0QZHRXYycyWSd1U9wSQDfitVZen3CEm8KHHtG5OH27SqwAFPIkUbFQJ8ELXRF4bDQRxndvsnLvBB0rNBj/415DR1yvhe5VSBHzBoZ8Nv7bFIqSXQlm/Jd5t+r+uF/yLtxXIWEp8O/enQVSusPlg4op4DqLy2bfxJKWKiwVRfYzjVUMgf6QJTXtyVV4AWVrDkTyI3wqKpj0ZLDWlBZUOitg/XwJ9/O32Jndu7KkiJhudGIuY7remeaO3M15xvXg2wpAkX0DUR0Vvd3LvLMdb7bC+X8pozrIf1bUJvxWhPAJe/WkBV9S++Uo7mRzErXYI4fOE7C3ydsnEfJ0nrtsiSuti9SZZ3O8YsKT7GjKbVxT6z0rD/HqItNVzlzzT7/cvJnUvw2EHbkaG8QI5gYrs99LDTDu5BsNpt0hDM/dj15Cm+Mw8BfJFCXdm8s7Y5TnOlttKUG+21ytJVUqOlYvWdygbilZO4Yg1Va450oNKRy8mudIDycq2zBxSCZzP9iWzl1Gb6lNPiRFhz9LBpaFCdPSk2JHLwA4Qkd9dK/Q2CO5/2wKmJ9ug1f/rIieLEvMzAV81P4YD+qMoRM9f7n92eq64/bhiuXunNuXNnkqRbqucFw5NRcSf6XYudxaK08rDqFwtdLg==|920
