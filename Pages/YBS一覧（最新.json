@@ -22,10 +22,14 @@
     "5,7": "改正",
     "5,24": "現行/旧版",
     "5,45": "承認者",
+    "5,51": "見直し必要",
     "20,1": "新規作成",
     "20,8": "改正申請",
     "20,15": "廃止申請",
     "20,22": "詳細確認"
+  },
+  "Formulas": {
+    "6,51": "ROUND((TODAY()-AD7)/365,2)"
   },
   "AttachInfos": {
     "2,18": {
@@ -254,12 +258,17 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "d75e2ce1-ca19-43f4-b314-f21d6e0788b8"
+        "GUID": "b8f3bb8f-9110-445b-81dc-12dcc5fbdf7e"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
         "Columns": 2
       }
+    },
+    "6,51": {
+      "RulesGuidList": [
+        "2409001a-a408-4850-8a54-45b6e45cbe67"
+      ]
     },
     "20,1": {
       "CellType": {
@@ -508,7 +517,7 @@
                     "MessageFormula": "承認中または一時保存の文章があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "a7b25e88-7a73-4b24-b981-d5c932f4c014"
+                "ID": "c61bc7e7-fcf1-485e-bdf7-ed1ee2da7021"
               },
               {
                 "CommandList": [
@@ -541,7 +550,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "bbe1ac66-a842-46ce-ae0c-f4ed1bbe844b"
+                "ID": "ff664b9d-253c-4eaf-aac1-c7c0b8ef8d01"
               }
             ]
           }
@@ -763,7 +772,7 @@
                     "MessageFormula": "「申請中」または「一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "2187c53f-355b-48c4-b349-d123f8a2b586"
+                "ID": "edafcb1e-3f21-4525-adbe-a85be52b3d95"
               },
               {
                 "CommandList": [
@@ -796,7 +805,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "5a34c5ec-88ac-4629-aac1-c7d7ef59293d"
+                "ID": "e8b28dd7-da5e-4ebd-84d3-bf99024515f4"
               }
             ]
           }
@@ -922,25 +931,28 @@
         "HorizontalAlignment": 9
       },
       {
-        "Background": 10,
-        "FontFamily": 2,
-        "Formatter": 1
+        "Formatter": 10
       },
       {
         "Background": 11,
         "FontFamily": 2,
-        "Foreground": 12,
         "Formatter": 1
       },
       {
-        "Background": 13,
+        "Background": 12,
         "FontFamily": 2,
+        "Foreground": 13,
         "Formatter": 1
       },
       {
         "Background": 14,
         "FontFamily": 2,
-        "Foreground": 15,
+        "Formatter": 1
+      },
+      {
+        "Background": 15,
+        "FontFamily": 2,
+        "Foreground": 16,
         "Formatter": 1
       }
     ],
@@ -956,6 +968,7 @@
         "@",
         "yyyy/m/d",
         "Right",
+        "0.00_);[Red](0.00)",
         "#FF00B050",
         "#FFFFC000",
         "Background 1 0",
@@ -1093,22 +1106,23 @@
       "6,43": 1,
       "6,44": 1,
       "6,45": 1,
-      "20,1": 14,
+      "6,51": 14,
+      "20,1": 15,
       "20,2": 1,
       "20,3": 1,
       "20,4": 1,
       "20,5": 1,
-      "20,8": 15,
+      "20,8": 16,
       "20,9": 1,
       "20,10": 1,
       "20,11": 1,
       "20,12": 1,
-      "20,15": 16,
+      "20,15": 17,
       "20,16": 1,
       "20,17": 1,
       "20,18": 1,
       "20,19": 1,
-      "20,22": 17,
+      "20,22": 18,
       "20,23": 1,
       "20,24": 1,
       "20,25": 1,
@@ -1165,7 +1179,9 @@
     "5,29,1,5",
     "5,34,1,6",
     "5,40,1,5",
-    "5,45,1,6"
+    "5,45,1,6",
+    "6,51,1,3",
+    "5,51,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1190,6 +1206,18 @@
       "Rules": [
         {
           "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 7,
+          "Value1": "=0.05",
+          "Priority": 1,
+          "GUID": "2409001a-a408-4850-8a54-45b6e45cbe67",
+          "StyleInfo": {
+            "Background": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
           "Operator": 3,
           "Value1": "=\"廃止\"",
           "GUID": "a727c80e-c79a-46fa-b45d-d61fa4c911f2",
@@ -1208,4 +1236,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//b6tp8L7eMZuu1gn3Jz79ZSx9LpaJw95sQm9gnmYp7B7EGpLb1X+p3heizb1YqnfUCKpv568jvb3+UFnRhpf2kO22CVUcVVAuujmh6+a8H6IvcjYvN6pFjzzoarXKKWG313Je9TAU9vI4fZfnJAdjt7RQIpm7OFU1hKlAZGnOgUaKwyg1LqMYOrL9NnYDhrMbBgo1axFg7fLcYLBZM30YDDv62DIF2kkthb2nmqwdxConXv3uVlGUvKS9w4tYrHokuJVwHvzPG9Nr3WMO0QZHRXYycyWSd1U9wSQDfitVZen3CEm8KHHtG5OH27SqwAFPIkUbFQJ8ELXRF4bDQRxndvsnLvBB0rNBj/415DR1yvhe5VSBHzBoZ8Nv7bFIqSXQlm/Jd5t+r+uF/yLtxXIWEp8O/enQVSusPlg4op4DqLy2bfxJKWKiwVRfYzjVUMgf6QJTXtyVV4AWVrDkTyI3wqKpj0ZLDWlBZUOitg/XwJ9/O32Jndu7KkiJhudGIuY7remeaO3M15xvXg2wpAkX0DUR0Vvd3LvLMdb7bC+X8pozrIf1bUJvxWhPAJe/WkBV9S++Uo7mRzErXYI4fOE7C3ydsnEfJ0nrtsiSuti9SZZ3O8YsKT7GjKbVxT6z0rD/HqItNVzlzzT7/cvJnUvw2EHbkaG8QI5gYrs99LDTDu5BsNpt0hDM/dj15Cm+Mw8BfJFCXdm8s7Y5TnOlttKUG+21ytJVUqOlYvWdygbilZO4Yg1Va450oNKRy8mudIDycq2zBxSCZzP9iWzl1Gb6lNPiRFhz9LBpaFCdPSk2JHLwA4Qkd9dK/Q2CO5/2wKmJ9ug1f/rIieLEvMzAV81P4YD+qMoRM9f7n92eq64/bhiuXunNuXNnkqRbqucFw5NRcSf6XYudxaK08rDqFwtdLg==|920
+}//E4NWKGo2ELHYbEQOZObV3+YwhA9GESC9NCKE0euXLJdLZwQNi5u7qn36xnK7wFd9yu/jCAE+OBXLN8UUhOr8+0/vw/wyOMGRIha0KNu7I6fnUYw6YagKXJxlVmgff9by+hMtgP1Zb5YdRMWxeSfVd1Da+D2EvFjt9W12Xa4juiATrxc2R91+/RJDaMiQOYOaptobo7JQTVg/gc1/s7wzzfvhuOkR9mVfH3KwbMKrjeHOxYPIxTTbBDk1N1fFb9KZ50y6XpMUgXkL1uZyPas5fPhaVVAEyYpXeLvdDdVDKB1conynf3gzH4EOfW90GDDYOgzO5/ufIQtXHLqbzVfMJhxl7EvHhe0BUOZ2wU03H/okBHGqQc+YsR94D6mdVz4HWTjl/fWw54GRtdKqeRxuz4vT8hNjqJab89AnF4jjvY+XPAkGgNWIBI5MM81SdHxzL8yN9WhwBc7VJlXxn7dXwopc8DXKyjFlBq1o/ieU66x6ztNizoJwY0a2AzzSupZ4LKAFLcWK5WC3R1Iz7+PZFpoIgkJHFj3DvyRTu9nAX7w3E3OYROT95qNGAc0QdaUssD6yPocrBx3qUZ4xvoYE5RaatCVp++yfSdGokfZLaHW7Ihaaf02aP1nZ+UbydDFoU8YCgqIZUNxG8Ze5eOjlZ/awakWB8srjSv/Wmgln3o5W4SXNKFpBadqQgjXIDNkq/m6XC0vVbR/B4a2ld+6ShNob8FBoWI6KONIbAmTz4eMxpmY7oNPzNWO6toLMJDse9nuG8cZpH4xH3lx78eSz2SnH5sskBVX92NTn+29MX/jwLBruzKg875Fe9I/g4eg8r/s2H5Id7VXcOEjFzKEANcnMDvh9tORnygOryXXP6oH04riV4nbLYIFMueRyUrTrwu4i4bQsA330hstiAQJg4A==|920
