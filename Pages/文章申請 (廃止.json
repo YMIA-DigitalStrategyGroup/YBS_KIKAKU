@@ -352,7 +352,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "3dc4e5bd-a37f-4c5d-9ed9-c171a029a580"
+                "ID": "758c1399-69c0-4374-bf4a-e49637fc8f33"
               },
               {
                 "CommandList": [
@@ -487,7 +487,7 @@
                             ]
                           }
                         ],
-                        "ID": "85b6f404-fa54-41ae-b61d-48e971d4a00b"
+                        "ID": "7d8c2aa7-f01a-46cc-bbdf-f05785ff85fb"
                       },
                       {
                         "CommandList": [
@@ -507,12 +507,12 @@
                             ]
                           }
                         ],
-                        "ID": "30fb9106-589f-4ce3-9ea1-ad332dd06fd2"
+                        "ID": "a141d7fd-99d9-4360-9b13-b06f1f676438"
                       }
                     ]
                   }
                 ],
-                "ID": "130d269a-5170-417f-9fbd-734575b0dc57"
+                "ID": "70346467-006c-4259-99df-00cca34985b6"
               }
             ]
           },
@@ -612,7 +612,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "d2352003-19c7-4636-a627-94d3577002d6"
+                "ID": "aa9884cc-5fff-4849-8a5e-c02503e71926"
               },
               {
                 "CommandList": [
@@ -621,7 +621,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "2317b6fe-4d6d-4607-8066-dc58090ca148"
+                "ID": "45612215-873f-4bb5-94f1-b0385cc42a2b"
               }
             ]
           },
@@ -749,7 +749,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "e128b4e4-e834-4147-ac2e-46e44ed27d51"
+                "ID": "4d005208-3cbc-4f14-b371-d25d0ed46e60"
               },
               {
                 "CommandList": [
@@ -764,7 +764,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "a81abaa8-f0a7-43bb-9f56-5cdb303815c0"
+                "ID": "1c9aa2e3-b1fb-4a72-8cdf-9f2addea0f30"
               }
             ]
           },
@@ -1928,7 +1928,7 @@
                 ]
               }
             ],
-            "ID": "1385cd76-f2f9-442a-be4c-b6bd153ebed9"
+            "ID": "d94582de-81ce-4578-b939-c1ff67dac8f4"
           }
         ],
         "Disabled": true
@@ -2002,4 +2002,4 @@
       "Size": "51,55"
     }
   ]
-}//WNsw4ESI82r1Hua5Fo/vg7hLAFu9lX33A3WGR2Z/2XRCCViTtEQxTd1gt3EQlJMkHHoPqxp3gJ2akxbQ9Q/tP0dvvu2Pet6cGoxxBLQRsOYa9eGUqWy1BYGG5/s8iAb6npILanTIT9dsJ2KqFnHZRpC+E0Qfd06fPpyW+aizEQsD4l6N33e0Vczt5Lsu2nbT6XORkdBMVaZ/NXjcuPgZGQ2uuueLSxaokFdb38SrVXR3dsKBk3voGIQSa1xFHsMsei+5CKIwpQ5/1Q5acTE/74G5+C3H3oR0lB095bBboO9GUY9bHjSWzXxengYmPelOCgS77KGiDQbbTGhXjnShlWtnMCZyLZTvK6X1gt7x3Mbd3Rzlo83IdRjviKgO0O/augbBcaGOBGfA/XcIkoW9jCi+dINl3d4BLhEjg4irorG9/YLeO4wviN7doOhBfuDxxyHceV3YJLE8WsyC9TrdDIOINQw/e3eg7iclOmUiNt2p9LaN/cv8tOey1rVTMMi/uVWTk261GkpG11Vyd38iL1MMzTfg7/Oa2Ro2T4CZCj6t7ixlMsXfrPCE41qm4SS1q5JDG5XtXJrdKQqz/RHqpJJCRZ9vnyJdAIqct9/N+h95NAQFPG8DleM0gYlFizAHBeqDo4fpILaDyTHsvQ2Kp1SdfiIhQtw3RBhxD/JWN5jVtjpaYKJGrOP7b+5DflduecExvfN03e5/XO70WsIHLaSKS4YyUZewKo7skmtNcKjkvczmwf4KHOihPg+8g/wwhlmK1x4ZFQPkjXwDxczmIxpKkWa6gXvtWDa+lZpn0VIuShcsIWdaTv3GwUrAbVzhhqPTs4WkfDm6BTrc2U40Gp/IqwFwGSLnJh4ulgCNeDHK8X50HkfJrI2QIv/OL4s3nAMoW10Ycu+xKABo28D+aQ==|920
+}//C3p9rlgxXr6RzcpjueXsN+9Ge0z3LCvMo8TFqk/KPB6EWZx4dqF2MnYm4ubytSkem9opSiUkApyFXQ8WE5Y/hl0iZeVLH2g2Dik2aVp4e9rCjiyQgB2SxzJG/X3f8+O2bX9+BvbbIFEHjIdiIOHj2emV1oqPVAyjViuomHZuAsdhcqAJa/2OMMJB2YOmysX+ZM0mPQSh+NJ167OqK0JLoH2XxB5aYNnUGkVQ2Hjje8g3rFsSK8VJy6mVrbNyxFapkxlvAAAaTvhjBhJ6LYuMkLwf8XR2XYYswLNJLB1mIbX4PvOB6AMevd7R4P5GyhvRmwklkCuwTq5OfonIMSRCks0mkoFH62EFE5/70Tid2Ww1GIIEeH4OQRH1t/5GzwAgcD5I5bYFHIhfYx70zH/cmp2jqQKLpEjPNcJsLdoDdvt6HZZrirlEAnuCrmMpC1wowUxIDoy48vB/gOWQxnZkcBCu8VxaLMxfn9d6FQSovqzXCk1+Xqt8p2pWRrLmoV5kfEwkgFsPYQCRgN/wwi3gAiQxx6HqZqou44ZNpmt+93eaA+7ha1MDOy43svad9EngsQd8IHAkdeivou1wL5Nbn4vt0JxPvtvTpsX4dkBsUxhamdu3/Xuapyp7JqcBrWmzNZ2ZDKLKT/Wt5h9dsJGSgXzbMjioOonz00Fc07OFCf+WEe57sO1vqF4EucAQNTwwix2bnBRVA17y8NoATVi0lQtWyC8oeC6hNR9MmgIns+cZuOBPzWpfwGV3yhtjQWJSBz2TNz0voNJqgAqAtZXbrJvykLFgMo9D39865UJTxheR/oIvsZofE2I2aTOwC4+L2YkqbC1+udKjJClnfSZ3F59Vil1NitaDwY4MIyopCx7hyFlKi6M0+GirgtjNJCvpjPaUxQrwxWMhpaoe0QPBhA==|920

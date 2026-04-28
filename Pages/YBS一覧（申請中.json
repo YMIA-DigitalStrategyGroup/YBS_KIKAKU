@@ -51,7 +51,7 @@
                     "MessageFormula": "「一時保存」のデータではないため、再開できません。"
                   }
                 ],
-                "ID": "2d819459-7112-44ec-8f99-8c8e45fdc139"
+                "ID": "e2486e4f-d7e5-48db-b71c-ad321d1a6c8b"
               },
               {
                 "CommandList": [
@@ -86,7 +86,7 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "c8c18080-5900-4815-96fa-c47583886b55"
+                        "ID": "8969ffac-d41d-4fe3-ad9a-ff0dd8261451"
                       },
                       {
                         "Condition": {
@@ -125,12 +125,12 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "2c1832b4-073b-45f4-a729-b8f950ee83a4"
+                        "ID": "a9f07eee-6f82-4029-85ae-ee741603980b"
                       }
                     ]
                   }
                 ],
-                "ID": "9b84f29c-faca-435c-8515-d89cb9ca498c"
+                "ID": "222b140f-6b3d-40f2-94f0-12393ebd339a"
               }
             ]
           }
@@ -211,7 +211,7 @@
                     ]
                   }
                 ],
-                "ID": "85645c25-fd59-4d04-aed0-f46da06e3468"
+                "ID": "2f199719-8a65-4be0-86f8-fbd44d897d9b"
               },
               {
                 "Condition": {
@@ -240,7 +240,7 @@
                     ]
                   }
                 ],
-                "ID": "74e9acfa-fc9d-4bf7-a8bb-b12ccba49455"
+                "ID": "4e5ec8bf-d8b1-42e2-8ccc-163e05d15271"
               }
             ]
           }
@@ -437,7 +437,7 @@
                           }
                         ],
                         "Comments": "対象文書が　「新規」　の場合　→　承認後に現行にする",
-                        "ID": "42603fa9-91fb-4c6b-b679-716702131445"
+                        "ID": "b3a233ed-933b-4249-818a-24d5940c767b"
                       },
                       {
                         "Condition": {
@@ -511,7 +511,7 @@
                             ]
                           }
                         ],
-                        "ID": "d0646de2-829d-401a-a2e0-58f2e7f815c0"
+                        "ID": "7c05dc99-07d4-4385-9dff-1af26dd70ef8"
                       },
                       {
                         "Condition": {
@@ -570,7 +570,7 @@
                             ]
                           }
                         ],
-                        "ID": "26b2b9eb-eaf4-49a7-bde1-7cc7084e1054"
+                        "ID": "2127b7de-bf6d-4b1f-aed1-c9796e7c0a34"
                       }
                     ]
                   },
@@ -585,7 +585,7 @@
                     "ActionName": "承認"
                   }
                 ],
-                "ID": "e3a48971-0336-47cc-b825-bbd308ddf3dc"
+                "ID": "26eecb11-f44f-4461-b66f-cdf04c1f849d"
               },
               {
                 "CommandList": [
@@ -594,7 +594,7 @@
                     "MessageFormula": "承認者ではないため、承認ができません！！"
                   }
                 ],
-                "ID": "ceeba4bf-724d-46ef-95b5-e00c8451782f"
+                "ID": "137484ee-0e3f-4a21-821d-b5a26b62c478"
               }
             ]
           }
@@ -1089,4 +1089,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//qTuEivy4qpC3BpQsCWqTt2UXuX5b3DU0TwssReWxxY0kBKGXKpWnCnf17o+Uc0+Fmej8fIaNWZHab21vSXO2DlCyHTId7HWrP1fDulebqRi0eUphIILC/8kMlO/ylM+daRnpar5hjCXF4Q9vG2vLr1Y90/qtMtUoAFjPKImquShv8xluX+oyyx15JwxI7oT9M50JsNyAj0UzkqFq+1xRxhBNkn7p6OxDjdhTYvuS+aDZFJ/dW0he7Z0EZ2sVoWtTOxuIgf+C+/L9kOVXErXIBv4z/o/FVOYEPDp7Wf+ivMvaaZI6pq6mqfgFe/TvJ5a1dMtfcU0VzEqPybx+Zb/kNrww0NTH1x9RfHFLCVG7NCVvkiDJKT9psLShXpgRkp788FGdLby7gL2Cry2sfHfeP46UHDrQdQVdXwU2a6cJgKGjzc8DA+r4bzBBMW42+MShLw2JyDKiVBJNOlUgRg3XabekB1j3O8olAM2SQ2he//q7DKvHsuwwwX2aq5S3rdxiqLp9QHg/b33XOZfnC8RSujk8ULEBx3+r9yoqcnqvYjOHuX/XsX0kxf/1tguzvnRpQxGHcYqehCnBHRN5U/jbFG/unhIhQaM/QGAYGIilqN1jx6WIjfHTIA7C1JlBoaQZs07zRIVE+dR5SK0tiJ1Tb6QTLYyaMpCbcd9mptCCnzP6++DMv1V0wdICECs+3y59rqmZWDvsmnahdxKLD0xC8nTs2gnkpoABcpZiSwl4DwCsHb/2LwSjudQsHx6j17OEvbb1MXQdLQqOVkwUTM9K2jlXbeMi9Wnlkpr7r6LClXZfFwnDbqwtRcCE0MRte8EX3qhHGMzEGibrGmGsIeO7KpR9NHdr3lPCjept1MN4RwQIkzJ4InT9xoAPX3tJKD7rrABTthL13cR0KElihA4uPw==|920
+}//qAh+Grx3dWUEED5V2DI2rmVz8Rn6kGXGQ2zlLlzNB8z9e6nhIZJqo5uaS4U6MzrwkvzTf9iYpJ0yd2kTAqvUUjchVgJmHPYmMfXkm1aPuS0s94PirBI2ZEWCMFRzNyVBHUZLVgA0imnnB67cbb7Nyhh87xtizkMkbob1nrzrFoIDs99FWKgjWCaMs6dvagFhXJyMeEkCPNgw8+y2R4RyvdNuuMt4HiZzlWzCjoVJqzkdE9DsXkI8pRSFITdyj2NTdO3AByoOC32EpImk9eXAZMYHhAtj9vEbPYlE1YyrgwnFZeevSxN3N0zQhRc5jU2lbtIEBS0TSoHMlT9cSo4gOOAPrbzaaxgh0Fl6uKmULMaoupY9Dh+NTpMDyCz/PxAOIOoNePLf1VeyIh5QQxKyz6ekY1DKJdiXcjuwEErtBusE3t2h2h6fmQ24ykYUPCf/su+KXa798uJ6mn0BuChw3qA9Nm0LrWMJx1Kre3mLDahAKRgWYRg/3XC9wUriLWxPTW66GnKYAfqjO05fZetkCbeOXahoNFyXhhI7TvCBu8ckduWeLBIhRx7YEkKZdCn+KK/MY5COdsJXOb/99k2P1J1QJb55FykWXZ/RP7he4kWqF/EuTuVMIND45FZNx+36mwD1fGFQbvmf4UhOUBU67K2xHP/7oRWO08Gcfon//NQVRfA98nZC0hgfCRW+nbKmUuQd/INbKiNHb38ps5cq1ZlesOMEk2EYcqosb+aS6mZuzEVvzYpmEw5thn/kJbVTxw/FNQM4q8dX144dahDMoYmFYwgihkmUPQoly6eqshayb8D0FtT8bJhMfeumGEz4AzIQAoE3lijZGJpzYbWlhzkooM/O1XsJEN0Wf0TED+XMZ2C+J4x1tPfiFjCPzekYhuX/bSActlpeO3q+crGD+w==|920

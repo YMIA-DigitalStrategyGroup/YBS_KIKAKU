@@ -1,6 +1,6 @@
 [
   {
-    "ConnectionString": "Data Source=YMIADIGITALSV01;Initial Catalog=開発部;Persist Security Info=True;User ID=ymia_reader;Password=ymia_reader!",
+    "ConnectionString": "d4mpsqaKu9ZBdUh8KEaFavyAN86HHMr7D8fUK1Rd6STvbJSqGcTuQ4ZQUWCKfGG5ICDS36ty0xabMl5t277J83bWhXYYuw/sw6abMQ1IEQp1z4R8KV1Lew6HINoJHJDTzI2ld3WHmR23NB17vn/Jh/q2LlUgcz5mLMFNZDuk2pM=",
     "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
     "ID": "SqlServer1"
   }
