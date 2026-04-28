@@ -27,7 +27,8 @@
     "20,1": "新規作成",
     "20,8": "改正申請",
     "20,15": "廃止申請",
-    "20,22": "詳細確認"
+    "20,22": "詳細確認",
+    "20,29": "情報表示"
   },
   "Formulas": {
     "6,54": "ROUND((TODAY()-AI7)/365,2)"
@@ -273,7 +274,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "1d9fbb45-25c0-437e-9e09-58e0879ac9cc"
+        "GUID": "98315b08-8e16-4454-bcd2-fa644fc7aaa9"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -532,7 +533,7 @@
                     "MessageFormula": "承認中または一時保存の文章があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "6debc4b7-33fb-41d1-aae7-d6937bd10875"
+                "ID": "7ebbfcb4-f82f-4c26-9ce5-915143903d33"
               },
               {
                 "CommandList": [
@@ -565,7 +566,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "2943d476-dfc1-4327-bde5-365330c7ba06"
+                "ID": "361b6e22-b526-4dfe-9f5b-cb3d1476b89e"
               }
             ]
           }
@@ -787,7 +788,7 @@
                     "MessageFormula": "「申請中」または「一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "4c4c64e4-540b-479f-ac8c-94d4c02d9ff5"
+                "ID": "d673f7cb-f50d-4a2e-8142-7fee6f77eb9b"
               },
               {
                 "CommandList": [
@@ -820,7 +821,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "b62eb302-274d-461c-85ef-10d6c213f586"
+                "ID": "a4687f39-87a6-417b-ae14-bce9bb6d1f48"
               }
             ]
           }
@@ -865,6 +866,20 @@
           }
         ],
         "Text": "詳細確認",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "20,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "文書（情報",
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "情報表示",
         "TemplateKey": "_RS_Normal_Style2"
       }
     }
@@ -1207,7 +1222,8 @@
     "6,54,1,4",
     "5,54,1,4",
     "6,24,1,5",
-    "5,24,1,5"
+    "5,24,1,5",
+    "20,29,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1262,4 +1278,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//knuxRyIEOw1q6y+UVD7fj8rY98S8naRa0XfWQBbhpgYLTviXnIjsew7sADMgimaBSNRvOXwstAsE6a71bUGdNeBceEmtLg3oRqOLnBPe2JfoI9v12dAXB5Fs5HgNLjQrv1WuHgrzFw5XrLWpuocrSkGWxJ1BzRRtNkSX5UYSOR4jMugHbhVfjNFgwoq8CLOziHcqre2jDcxlsSsxIDx0tjknYEwCm1YqHN+8WPpdT3pJmJpcdsljz91DFmH3ZkY04HKTbA/obRjt1zkvjnEAlmDSSbFTLPe25GA4rUB1W2phCtXgwcACgHghUHpp99BcSjPCX4JOxuS0Ts1RwCE3p34u69ULGL9IfuTO6iRRjj0hMe6lgItLijquY19EdC1hiYr+E2RJSBR1ruTEeYeWTROcKwaAq6heGB8qqOrJbShu6JLci957BDTXNFCNMDJXa2PkzShI3qUpRUlUAR2iATtr/HlR0gVCMlwxtAz5lQGR53gHpxokcq6dI/L27zC8O22L9zxlgXFzng+Ug2aXRBUId9THe0+u0h47sqs+PCgJRKwJrgbkDSTGVGeovCGk/MowcCjBUrS6GZqhRj3HwnIzL869e4+1n09lXEXIx2ZD6+244Vqer8dED5aXvbE8Mb1jfe4xAoTwhXkWQoohPNoiCcZkZO9Awf8zQ/UWTFoGbze1jA6AetaO33MfU3GbJqCuEb/94XByTODkqYQNzCbxj+y4jrXywWJj37K+j4JaYcP15egRX6n09hJYOz+9197HR9ktAVedt13xIzUPVW2qEWxiSwNycxqf1w3pozuMhepkK7VKWMUV2SlLM6raKufSCLjZ9hkv6G4x/ZtkXXdLynqnsEJ2FMk1LOCNC9eaWRPozfjgl4W+A2a357g5KNmGjjgouXj3+srIi/IA6g==|920
+}///XVG1E0dy5FkYMBSjWWpn8MLvdiPWpqtoyVbrkeUQsLwWonpkXkpXUbtDWDpyl0TbhBVfUIJQ1k0vhd5SrjmWJbMn1+inKUv+TS0alMC6vxEnTi89ebI4dWumyI3/nf5BISum0b+lKH5PBg0Ijc7THXgPu9uN5kHXm1x28R51VkYPNi6EvpDWBdC39zPRdTME+fgIkQQ8wQuMhjWx06zATugPxNFB3p+gL1Ni2AqyJEW3n/EHjVxi0PHHSdjnr1e7hwd70p7lo6eP2eAfl6oakK06CfcFasP6Aw87sNkBMy+9l6Gt3S8oxRfbVqdJz8qzLnfTURwb8WIH6D2HQPOBb5QNoDPfhzZxHSAaGmRn+m0dC8MGh4WF/06h9DXcJurEAd4o9QKL5gAjeEXUJugGJCbqQ6/+6F1ALjYVtvzArvKogLma0sVGD5khOMUQYJMXHahea7bljO4HPYucG5p0CNYKtPneGXp/s9kzUXUCfgThf+v78ap4eUoWlxfvQIde+lhOT09+aeAwEN/48f+oBQgYWqmmTAdFUMPK1H9w78fRQFY6+R7ApinTQIoxIKZXDnmwnZcMCpeUjxCUjA55ZQNf34PSG10wE11UFl4zI0Lh3+H2MNnP5+kEoGb6w0KuxezYvS0gH+Dy5YCT0NEne13y2SBzzFewYVomB36YH7AGiXsfhn5eySbRTVzIBA32dxqu4iz069dnJmWLa4Dv4X6badYFC8LxaxIkmgEf8Z+TUAjqF/7oyZzngN6ryVEzercUHmisnhsYfm5Odzb6yhHLoDUZ6CYAkFktCWxx6AR/TFQK7NfaH+5Hn8ejv4L7bgiqYe6L5yPsVVE1ondzgI6NyxJQcwkFfHAytMhztNBzuCPcEaT8oF+bMMs5P25dJrM2krAc9Sr11hF/blooQ==|920
