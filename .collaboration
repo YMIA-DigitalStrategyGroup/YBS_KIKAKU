@@ -229,6 +229,16 @@
   },
   {
     "ModuleName": "PCPage/文書（情報",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-28T13:38:54.7165852+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\文書（情報.json",
+      "Pages\\文書（情報.rd"
+    ]
   }
 ]
