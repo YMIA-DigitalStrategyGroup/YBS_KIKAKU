@@ -129,31 +129,11 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（詳細",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-28T14:25:26.0110095+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（詳細.json",
-      "Pages\\YBS一覧（詳細.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-28T14:26:43.5214581+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（最新.json",
-      "Pages\\YBS一覧（最新.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（申請中",
@@ -185,20 +165,7 @@
   },
   {
     "ModuleName": "Theme",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-28T14:01:33.9180602+09:00",
-    "ModuleType": 9,
-    "ToRemoveFiles": [
-      "Theme\\CellTypeStyles",
-      "Theme\\ListViewStyles",
-      "Theme\\StyleDefaultNames",
-      "Theme\\ThemeConfig",
-      "Reports\\DefaultTheme.rdlx-theme"
-    ]
+    "ModuleType": 9
   },
   {
     "ModuleName": "image/組み込み画像",
@@ -262,16 +229,6 @@
   },
   {
     "ModuleName": "PCPage/文書（情報",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-04-28T14:01:33.9184465+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書（情報.json",
-      "Pages\\文書（情報.rd"
-    ]
+    "ModuleType": 1
   }
 ]
