@@ -20,16 +20,17 @@
     "2,23": "検索値をクリアしてボタンを押すと",
     "3,23": "「全表示」に戻ります。",
     "5,7": "改正",
-    "5,24": "現行/旧版",
-    "5,45": "承認者",
-    "5,51": "見直し必要",
+    "5,24": "規格本文",
+    "5,29": "現行/旧版",
+    "5,51": "承認者",
+    "5,54": "見直し必要",
     "20,1": "新規作成",
     "20,8": "改正申請",
     "20,15": "廃止申請",
     "20,22": "詳細確認"
   },
   "Formulas": {
-    "6,51": "ROUND((TODAY()-AD7)/365,2)"
+    "6,54": "ROUND((TODAY()-AI7)/365,2)"
   },
   "AttachInfos": {
     "2,18": {
@@ -224,6 +225,20 @@
       }
     },
     "6,24": {
+      "NameUsedInJavaScript": "規格本文",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "添付ファイル",
+        "GUID": "bd0c0ebb-fef7-4821-9622-d1ef6ef2bb9e"
+      },
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
+        }
+      }
+    },
+    "6,29": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "現行_旧版",
@@ -233,39 +248,39 @@
         "a727c80e-c79a-46fa-b45d-d61fa4c911f2"
       ]
     },
-    "6,29": {
+    "6,34": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請日",
         "GUID": "7f6a05d7-b14d-40a3-8524-753fb1bc7170"
       }
     },
-    "6,34": {
+    "6,40": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請者",
         "GUID": "25385dcc-9616-4ffa-8c19-3f558cf9a7f5"
       }
     },
-    "6,40": {
+    "6,45": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_State",
         "GUID": "0245c345-dd8b-476e-8436-168896132436"
       }
     },
-    "6,45": {
+    "6,51": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "b8f3bb8f-9110-445b-81dc-12dcc5fbdf7e"
+        "GUID": "1d9fbb45-25c0-437e-9e09-58e0879ac9cc"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
         "Columns": 2
       }
     },
-    "6,51": {
+    "6,54": {
       "RulesGuidList": [
         "2409001a-a408-4850-8a54-45b6e45cbe67"
       ]
@@ -517,7 +532,7 @@
                     "MessageFormula": "承認中または一時保存の文章があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "c61bc7e7-fcf1-485e-bdf7-ed1ee2da7021"
+                "ID": "3bc38673-99b2-40da-b9ee-89615e7f22e2"
               },
               {
                 "CommandList": [
@@ -550,7 +565,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "ff664b9d-253c-4eaf-aac1-c7c0b8ef8d01"
+                "ID": "bc2d2998-ce52-47a2-8287-8ee4d151d913"
               }
             ]
           }
@@ -772,7 +787,7 @@
                     "MessageFormula": "「申請中」または「一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "edafcb1e-3f21-4525-adbe-a85be52b3d95"
+                "ID": "97829e4d-642a-498e-aacf-a571384888af"
               },
               {
                 "CommandList": [
@@ -805,7 +820,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "e8b28dd7-da5e-4ebd-84d3-bf99024515f4"
+                "ID": "54ee3006-978a-44cf-bc5d-2a7740cff52e"
               }
             ]
           }
@@ -926,33 +941,38 @@
         "BorderRight": 0
       },
       {
-        "FontFamily": 2,
-        "Formatter": 8,
-        "HorizontalAlignment": 9
+        "Foreground": 8,
+        "Underline": true
       },
       {
-        "Formatter": 10
+        "FontFamily": 2,
+        "Formatter": 9,
+        "HorizontalAlignment": 10
       },
       {
-        "Background": 11,
         "FontFamily": 2,
-        "Formatter": 1
+        "Formatter": 11
       },
       {
         "Background": 12,
         "FontFamily": 2,
-        "Foreground": 13,
         "Formatter": 1
       },
       {
-        "Background": 14,
+        "Background": 13,
         "FontFamily": 2,
+        "Foreground": 14,
         "Formatter": 1
       },
       {
         "Background": 15,
         "FontFamily": 2,
-        "Foreground": 16,
+        "Formatter": 1
+      },
+      {
+        "Background": 16,
+        "FontFamily": 2,
+        "Foreground": 17,
         "Formatter": 1
       }
     ],
@@ -966,6 +986,7 @@
         "black",
         "#FF0070C0",
         "@",
+        "Blue",
         "yyyy/m/d",
         "Right",
         "0.00_);[Red](0.00)",
@@ -1071,7 +1092,6 @@
       "3,30": 1,
       "3,31": 1,
       "3,32": 1,
-      "5,24": 1,
       "5,29": 1,
       "5,30": 1,
       "5,31": 1,
@@ -1088,13 +1108,16 @@
       "5,42": 1,
       "5,43": 1,
       "5,44": 1,
-      "5,45": 8,
-      "6,29": 13,
+      "5,45": 1,
+      "5,51": 8,
+      "5,54": 1,
+      "6,24": 13,
+      "6,29": 1,
       "6,30": 1,
       "6,31": 1,
       "6,32": 1,
       "6,33": 1,
-      "6,34": 1,
+      "6,34": 14,
       "6,35": 1,
       "6,36": 1,
       "6,37": 1,
@@ -1106,23 +1129,24 @@
       "6,43": 1,
       "6,44": 1,
       "6,45": 1,
-      "6,51": 14,
-      "20,1": 15,
+      "6,51": 1,
+      "6,54": 15,
+      "20,1": 16,
       "20,2": 1,
       "20,3": 1,
       "20,4": 1,
       "20,5": 1,
-      "20,8": 16,
+      "20,8": 17,
       "20,9": 1,
       "20,10": 1,
       "20,11": 1,
       "20,12": 1,
-      "20,15": 17,
+      "20,15": 18,
       "20,16": 1,
       "20,17": 1,
       "20,18": 1,
       "20,19": 1,
-      "20,22": 18,
+      "20,22": 19,
       "20,23": 1,
       "20,24": 1,
       "20,25": 1,
@@ -1159,29 +1183,31 @@
     "7,1,12,58",
     "20,8,2,5",
     "20,15,2,5",
-    "6,2,1,5",
-    "6,7,1,3",
-    "6,10,1,14",
-    "6,24,1,5",
-    "6,29,1,5",
-    "6,34,1,6",
-    "6,40,1,5",
-    "6,45,1,6",
     "2,9,1,8",
     "3,9,1,8",
     "2,18,2,5",
     "3,2,1,7",
     "2,2,1,7",
+    "6,2,1,5",
     "5,2,1,5",
+    "6,7,1,3",
     "5,7,1,3",
+    "6,10,1,14",
     "5,10,1,14",
-    "5,24,1,5",
+    "6,29,1,5",
     "5,29,1,5",
+    "6,34,1,6",
     "5,34,1,6",
+    "6,40,1,5",
     "5,40,1,5",
+    "6,45,1,6",
     "5,45,1,6",
     "6,51,1,3",
-    "5,51,1,3"
+    "5,51,1,3",
+    "6,54,1,4",
+    "5,54,1,4",
+    "6,24,1,5",
+    "5,24,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1236,4 +1262,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//E4NWKGo2ELHYbEQOZObV3+YwhA9GESC9NCKE0euXLJdLZwQNi5u7qn36xnK7wFd9yu/jCAE+OBXLN8UUhOr8+0/vw/wyOMGRIha0KNu7I6fnUYw6YagKXJxlVmgff9by+hMtgP1Zb5YdRMWxeSfVd1Da+D2EvFjt9W12Xa4juiATrxc2R91+/RJDaMiQOYOaptobo7JQTVg/gc1/s7wzzfvhuOkR9mVfH3KwbMKrjeHOxYPIxTTbBDk1N1fFb9KZ50y6XpMUgXkL1uZyPas5fPhaVVAEyYpXeLvdDdVDKB1conynf3gzH4EOfW90GDDYOgzO5/ufIQtXHLqbzVfMJhxl7EvHhe0BUOZ2wU03H/okBHGqQc+YsR94D6mdVz4HWTjl/fWw54GRtdKqeRxuz4vT8hNjqJab89AnF4jjvY+XPAkGgNWIBI5MM81SdHxzL8yN9WhwBc7VJlXxn7dXwopc8DXKyjFlBq1o/ieU66x6ztNizoJwY0a2AzzSupZ4LKAFLcWK5WC3R1Iz7+PZFpoIgkJHFj3DvyRTu9nAX7w3E3OYROT95qNGAc0QdaUssD6yPocrBx3qUZ4xvoYE5RaatCVp++yfSdGokfZLaHW7Ihaaf02aP1nZ+UbydDFoU8YCgqIZUNxG8Ze5eOjlZ/awakWB8srjSv/Wmgln3o5W4SXNKFpBadqQgjXIDNkq/m6XC0vVbR/B4a2ld+6ShNob8FBoWI6KONIbAmTz4eMxpmY7oNPzNWO6toLMJDse9nuG8cZpH4xH3lx78eSz2SnH5sskBVX92NTn+29MX/jwLBruzKg875Fe9I/g4eg8r/s2H5Id7VXcOEjFzKEANcnMDvh9tORnygOryXXP6oH04riV4nbLYIFMueRyUrTrwu4i4bQsA330hstiAQJg4A==|920
+}//LWDwvr52OnA9f/YkrH7ncGk62xMMXKwBcogE2aLVlvJa6jwiE0tyB5+1M2QucJ7NGaup95RnzeDqiGKvMQOolrpA9guL2hHjLWniyi1oJngzGKQbLW/CTu3k6chxOSQxmTFiBBeqI8wH+OhRdDmk3hv9HPg7YarCh45RnLvevRiPf8CQWJN+Di+h+hz+6P/ZxT2AW8Dbc0wLDoZJuWfd1jiXBNloE9OkI2QGUx7HU45FWYSTH08wTFgByTb6ONcaAeckorj5OU9L6CijDzvktP9k7MZLZouV6aHDMTm6HaRqLcHmcaZDU8GrFRzZ2jO2pXQ7aXqIeE1YRAZrvwgpWy6+4YDxNrGke3BnFsrjot0jJqP4Ts+OfjL17jh0HBC+vHqL4kRwVkkH10gONekf+iJvF90NhomK4T8hI+bqA015vPrIPt9CNG8LMCWDEdrRoHBJNbh3WRDi2Xz8/6P6KrwtuB0ZhBz//Wv2DsTuI0Ted0LoCQgKKQcJrFiKUP5KTUs0MnavHs9481D07yMJSIgXKcOalsJEX6eI5kE2BJ8VMw04YNyIznXbqTNUeQRf1aQDHOh705XR/wHQ090TviqVsdpkDpn1pwvECFH7kZ9ShVg2JPdZ1bGCYUfUASRR6xFQn98r44nEz1AbnZ8jNxZ1lcUipOl+uey8YpLG98G57ZqAiJMyrniahcwN/HV55xD7xzAhB79btp2lwmOSnKxu4f0GTb3W3I9FkWfTG16S9hTWJF5+RnMnbOIQucFvkMqrgnHyO1SB6UCQ+Bq8N2oh+9ucAJs/fcJOjZyyH+tcxwJe/tBbWM/pl4T/nQWqAR7BPbbQt4jmD4evw7RY/PXSOu9SD2Zss764wFjfdLICpRlqlc886Zyn9C4A43ATr5LHpvvIbNrhXP3XNT1dIA==|920
