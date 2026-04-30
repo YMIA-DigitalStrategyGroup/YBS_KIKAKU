@@ -133,7 +133,17 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-30T12:31:52.7175189+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS一覧（最新.json",
+      "Pages\\YBS一覧（最新.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS一覧（申請中",
@@ -145,7 +155,17 @@
   },
   {
     "ModuleName": "PCPage/文書申請（新規",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-04-30T12:31:52.7173526+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\文書申請（新規.json",
+      "Pages\\文書申請（新規.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/文章申請 (廃止",
