@@ -24,12 +24,11 @@
     "5,29": "現行/旧版",
     "5,51": "承認者",
     "5,54": "見直し必要",
-    "20,1": "新規作成",
-    "20,8": "改正申請",
-    "20,15": "廃止申請",
-    "20,22": "詳細確認",
-    "24,29": "↓詳細一覧に移動",
-    "25,29": "情報表示"
+    "20,2": "詳細表示",
+    "20,14": "申請",
+    "20,19": "新規",
+    "20,24": "改正",
+    "20,29": "廃止"
   },
   "Formulas": {
     "6,54": "ROUND((TODAY()-AI7)/365,2)"
@@ -275,7 +274,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "0a41cd55-028e-4fe6-9e27-25c42e3d6fc2"
+        "GUID": "1e1d7e5f-8b00-458e-8099-ba4bb4678c2a"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -287,7 +286,40 @@
         "2409001a-a408-4850-8a54-45b6e45cbe67"
       ]
     },
-    "20,1": {
+    "20,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "YBS一覧（詳細",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧（最新!C7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=YBS一覧（詳細!G2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧（最新!K7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=YBS一覧（詳細!R2"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "詳細表示",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "20,19": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -317,8 +349,8 @@
             "LoadBindingDataOption": 2
           }
         ],
-        "Text": "新規作成",
-        "TemplateKey": "_RS_Normal_Style2",
+        "Text": "新規",
+        "TemplateKey": "_RS_RoundCorner_Style5",
         "Icon": {
           "Name": "Application/005_add_5.svg",
           "BuiltIn": true,
@@ -327,7 +359,7 @@
         }
       }
     },
-    "20,8": {
+    "20,24": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -534,7 +566,7 @@
                     "MessageFormula": "承認中または一時保存の文章があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "532be6bb-7b84-4708-8302-7219ab848a1c"
+                "ID": "b1a88466-37b1-4388-943a-3a5402df9a86"
               },
               {
                 "CommandList": [
@@ -567,13 +599,13 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "83941cc6-dca7-46e8-8afd-4efe1f19fcc9"
+                "ID": "6cec5026-72ff-4177-9414-072795006a2b"
               }
             ]
           }
         ],
-        "Text": "改正申請",
-        "TemplateKey": "_RS_Normal_Style2",
+        "Text": "改正",
+        "TemplateKey": "_RS_RoundCorner_Style2",
         "Icon": {
           "Name": "Application/028_edit_8.svg",
           "BuiltIn": true,
@@ -582,7 +614,7 @@
         }
       }
     },
-    "20,15": {
+    "20,29": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -789,7 +821,7 @@
                     "MessageFormula": "「申請中」または「一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "4bbd9235-98c5-453c-b479-29b9a1decc71"
+                "ID": "67ecfdf1-b798-4447-905e-1b65cef8beb4"
               },
               {
                 "CommandList": [
@@ -822,66 +854,19 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "4d9c60e7-c0f7-4f3b-82be-a39437f8b33e"
+                "ID": "47af6fac-2ede-4fba-a89a-498d9097f85c"
               }
             ]
           }
         ],
-        "Text": "廃止申請",
-        "TemplateKey": "_RS_Normal_Style2",
+        "Text": "廃止",
+        "TemplateKey": "_RS_RoundCorner_Style1",
         "Icon": {
           "Name": "Application/042_brush_1.svg",
           "BuiltIn": true,
           "Color": "Background 1",
           "UseCellTypeForeColor": true
         }
-      }
-    },
-    "20,22": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "YBS一覧（詳細",
-            "PassValues": [
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS一覧（最新!C7"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=YBS一覧（詳細!G2"
-                }
-              },
-              {
-                "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS一覧（最新!K7"
-                },
-                "TargetCell": {
-                  "SerializeProperty": "=YBS一覧（詳細!R2"
-                }
-              }
-            ]
-          }
-        ],
-        "Text": "詳細確認",
-        "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
-    "25,29": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "文書（情報",
-            "LoadBindingDataOption": 1
-          }
-        ],
-        "Text": "情報表示",
-        "TemplateKey": "_RS_Normal_Style2"
       }
     }
   },
@@ -972,24 +957,12 @@
       {
         "Background": 12,
         "FontFamily": 2,
+        "Foreground": 13,
         "Formatter": 1
       },
       {
-        "Background": 13,
         "FontFamily": 2,
-        "Foreground": 14,
-        "Formatter": 1
-      },
-      {
-        "Background": 15,
-        "FontFamily": 2,
-        "Formatter": 1
-      },
-      {
-        "Background": 16,
-        "FontFamily": 2,
-        "Foreground": 17,
-        "Formatter": 1
+        "HorizontalAlignment": 10
       }
     ],
     "Types": {
@@ -1006,10 +979,6 @@
         "yyyy/m/d",
         "Right",
         "0.00_);[Red](0.00)",
-        "#FF00B050",
-        "#FFFFC000",
-        "Background 1 0",
-        "Background 1 -25",
         "Accent 3 60",
         "Text 1 0"
       ],
@@ -1147,46 +1116,45 @@
       "6,45": 1,
       "6,51": 1,
       "6,54": 15,
-      "20,1": 16,
-      "20,2": 1,
+      "20,2": 16,
       "20,3": 1,
       "20,4": 1,
       "20,5": 1,
-      "20,8": 17,
-      "20,9": 1,
-      "20,10": 1,
-      "20,11": 1,
-      "20,12": 1,
-      "20,15": 18,
+      "20,6": 1,
+      "20,14": 17,
+      "20,15": 1,
       "20,16": 1,
-      "20,17": 1,
-      "20,18": 1,
-      "20,19": 1,
-      "20,22": 19,
+      "20,19": 8,
+      "20,20": 1,
+      "20,21": 1,
+      "20,22": 1,
       "20,23": 1,
-      "20,24": 1,
+      "20,24": 8,
       "20,25": 1,
       "20,26": 1,
-      "21,1": 1,
+      "20,27": 1,
+      "20,28": 1,
+      "20,29": 8,
+      "20,33": 1,
       "21,2": 1,
       "21,3": 1,
       "21,4": 1,
       "21,5": 1,
-      "21,8": 1,
-      "21,9": 1,
-      "21,10": 1,
-      "21,11": 1,
-      "21,12": 1,
+      "21,6": 1,
+      "21,14": 1,
       "21,15": 1,
       "21,16": 1,
-      "21,17": 1,
-      "21,18": 1,
       "21,19": 1,
+      "21,20": 1,
+      "21,21": 1,
       "21,22": 1,
       "21,23": 1,
       "21,24": 1,
       "21,25": 1,
       "21,26": 1,
+      "21,27": 1,
+      "21,28": 1,
+      "21,33": 1,
       "25,29": 1,
       "25,30": 1,
       "25,31": 1,
@@ -1201,12 +1169,8 @@
     }
   },
   "Spans": [
-    "20,22,2,5",
     "2,42,2,17",
-    "20,1,2,5",
     "7,1,12,58",
-    "20,8,2,5",
-    "20,15,2,5",
     "2,9,1,8",
     "3,9,1,8",
     "2,18,2,5",
@@ -1232,7 +1196,11 @@
     "5,54,1,4",
     "6,24,1,5",
     "5,24,1,5",
-    "25,29,2,4"
+    "20,2,2,5",
+    "20,14,2,3",
+    "20,29,2,4",
+    "20,24,2,4",
+    "20,19,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1286,5 +1254,15 @@
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
-  }
-}//zibtR6uxYlY4+2kTmn/hqHy0AZqjChURNGYAFn/viHmg3LS0fJ4enVy6G9nVRTwrbZ0BakCcSNxK3NvnBQnVJui3GAlGQFlKjHGKYEFoD88ZSXQdH8NpzOiygLhiZbd0VZKcTs9RAU6NGw3k9V/Y1MZZnTqP5BQFSKoSX5DqAvcFsMIkaSEyHS67LbPdAjSI3kiDLDZGmUEf3uKWIYeAwiAESvKJTbB4sTA5KJIIuh1kh/oSgzv5F/UKmkkTDN+Jbi7xP3nh4XJbR2QFHQsyDvPIfCQbBcQt6eaeROf/AN41iYYz2hTO4ueN3n0YzdGMgZLPWUORfhaRXo9kdhdKvTVJKw4DicCtD7uplENpTyLASbBM3+KO/e0TinLSjYGVh03bejB2vvv2cZpm0LtzK73LdzURUtAbJTd1Bo9+KUEqLi16gm7ECEijVq3uf9XvC4XrhIAQnktFiew/v853YCfT/l37YQ/ZpDCQqO9yN6iNOXMn8W0nWbPv2a1AKvG99s/4zZ+ZwFs0e/yprMBN+OWlb85Y+QfMXu6WPyZ1n2gIZJv1Rxjnq7qQ+GYlX39woBhI3ksKPjL055gqT4UXQpNfVwnBRjLxx8/HYvMEK6JBh3btPovbTOGPHbO1gdDLsnZbx9SGhzg8tta1aZJNpkZ+6Rkq7aK82/FEFvVjQgxAB83ZFeIDCk/f4mp6UKvC6jPvXpYad+hoy+m8mgP5lVti1P1zjU+oHhFwNU/T6k5URho1YJR6FTfgZzZEZkbAqUnV0nZ1jFUMrydk1iL7rrVQlJk7EnmW7Va5EJ1sU4dCQs1vx4IkAqrPY4uVerWVoXCCflzTTtecdP9ADChbconxRbMDtYsaOc0RiehKls/livCwI4Em9JRFktn3jI9PSniu54MolQB/WsB+ST7D+w==|920
+  },
+  "Pictures": [
+    {
+      "Name": "b2278ca7-b0fb-47c7-80e9-c8aeaf1b2d17.svg",
+      "ForguncyPictureName": "Arrow/292_move_next_3.svg",
+      "Stretch": 2,
+      "ForegroundFill": "Accent 1",
+      "Location": "346.4,399.4",
+      "Size": "26.80940055847168,46.000099182128906"
+    }
+  ]
+}//TYRbbijZ3VLmK2V/xMbocEWP8Bq9dCN229ZPUxhhXCFCaGn9X2XUIcpKwHzC3HHbnc73mBDYFAzViAXt1lyDJ1yaG8BLkgnchFgxS3cMZWvShMqIlhex3oAkaJRR/s3fbI8ENaG7kJuoOmDpKVH623u9+Ta/aJxcVf0TnPZfc4HE4ONFXGeD8CKMGifVob1IWHCmiUr63+5kZA3qbBSTKvtsCI79OBqwl+ZkoP8hlMbAKgZkZPz7F4zc5gqhxBuwGMIWchbJXsvDRGchD3rHKfXtJgEjwjUm9joPsKT8mU6jTD7JtY4kyOtgZg8LA+feS7wey5i2TTtDjU22DH9/h35gogr7KrzzKQnUUdhxbciDZvrCyirbDW5XQ4SOp/Ub3AcoXFYMqqGdcN01y29X9IhNCVrH8xGddrNVxzkKGif9TNSNZ7sUkDUrpBKNnhRwfOOoL656sGIKZaKHz2Anftv89SB29J8qj0fm1CfSAxe7GSfcub3DgqOJfl+03P420xXHsC+yLcFUBfKFu6YT3p9w4zi4CthjirOEY/UKcsWHzJHZ98kJ5Y5YVc7tZ4Qnf5Z2wJbbrQy2dGWqRwV8KNN4f0GX35XtnmbSWEIQj3XdUBSPCPS1BEZyIXtYoxj4YoyjrhLQaw5H4tJJLwmFmH7mquY75i+ekzaNuvV+D0r+FZKt7XoeiN3m6TE0HyYHSNj9DIAG9jRPMz8u6sW9v97k2HePpL2p/mN8NG44VV1kqb8yctq3ZvU3GH8nQ2D7aj29dqWUszU7LVkAn87WDPFE3tZGmWfVwKX6C+l+evZg639bVE4nybayKWTFpnDJyghCsB+CohN2YYmOK4g/Zg/RZ6fbV72c9vJ8joNLmLyQrZ43FX0zgvBRCvFOgrCAzWNpbUQIEiU445bQqwfspw==|920
