@@ -1,24 +1,9 @@
 {
   "Rows": {
-    "RowColumnAttachedInfos": {
-      "5": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 39.0
-        }
-      }
-    },
-    "InLogicalVisibleIndexes": [
-      2,
-      3,
-      4
-    ],
     "Count": 32
   },
   "Cols": {
     "InLogicalVisibleIndexes": [
-      31,
-      32,
-      33,
       34,
       35,
       36,
@@ -34,10 +19,9 @@
     "Count": 45
   },
   "Values": {
-    "0,1": "＜ＹＢＳ規格情報＞",
     "2,1": "作成手順",
-    "2,6": "改正回数確認→規格情報編集→申請",
-    "5,1": "文書区分",
+    "2,6": "改正回数確認→廃止理由入力→申請",
+    "5,1": "申請区分",
     "5,14": "改正回数",
     "5,37": "申請者",
     "6,1": "申請者",
@@ -47,38 +31,37 @@
     "8,11": "分類",
     "9,11": "細分化",
     "10,1": "規格名称",
-    "12,1": "理由",
+    "12,1": "\r\n廃止理由",
     "12,37": "現行区分",
     "13,37": "※ 新規のときは新規",
     "14,37": "　",
     "14,38": "改正の時は改正",
     "15,38": "で、OKなら現行にする",
-    "17,1": "規格本文、付表\nWORD,EXCEL\n",
+    "17,1": "規格本文添付\nWORD,EXCEL\n（必須）",
     "18,34": "分類\r\n取得",
     "18,38": "追番\n取得",
     "18,41": "追番３桁",
     "21,36": "ＹＢＳ\nコード採番",
     "21,42": "コード（特に分類）に間違いが",
-    "22,1": "規格",
+    "22,1": "規格本文添付",
     "22,42": "ないことを確認してください。",
     "23,1": "閲覧用ＰＤＦ",
-    "24,33": "廃止文書",
     "25,1": "承認者",
-    "28,22": "閉じる",
-    "28,34": "改正申請",
-    "28,40": "一時保存"
+    "25,39": "一時保存",
+    "27,40": "削除予定",
+    "28,1": "廃止申請",
+    "28,22": "キャンセル"
   },
   "Formulas": {
     "7,41": "TODAY()",
     "8,10": "T6",
-    "9,16": "ODATA(\"YBS細分化コード?$select=細分化分類&$filter=分類コード2 eq \"&IF(ISBLANK(O9),\"null\",\"'\"&O9&\"'\")&\" and 細分化コード eq \"&IF(ISBLANK(O10),\"null\",\"'\"&O10&\"'\"))",
-    "24,40": "G6"
+    "9,16": "ODATA(\"YBS細分化コード?$select=細分化分類&$filter=分類コード2 eq \"&IF(ISBLANK(O9),\"null\",\"'\"&O9&\"'\")&\" and 細分化コード eq \"&IF(ISBLANK(O10),\"null\",\"'\"&O10&\"'\"))"
   },
   "AttachInfos": {
     "2,6": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "CellDefaultValue": "改正回数確認→規格情報編集→申請",
+        "CellDefaultValue": "改正回数確認→廃止理由入力→申請",
         "SavedValidators": [
           {
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
@@ -89,17 +72,30 @@
       }
     },
     "5,6": {
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "現行_旧版",
-        "GUID": "d94e96af-1b22-4482-b577-297f726ecb39"
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ReadOnly": true
       }
     },
     "5,19": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "改正コード",
-        "GUID": "d05f8273-281e-4b6c-bbfb-b136436acf39"
+        "GUID": "e6912c48-3409-4c49-a923-cf944d678178"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ReadOnly": true
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "5,41": {
@@ -116,21 +112,38 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請者",
-        "GUID": "4f2593c5-74dd-4c81-9600-39a7e5e39c36"
+        "GUID": "9e5a910f-f7a8-4ac8-8fbd-3d382d7561a5"
+      },
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "Columns": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='文書申請 (廃止'!AP6"
+        }
       }
     },
     "6,19": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請日",
-        "GUID": "db2b95a6-ef5d-45c8-a9e9-587cfa3f0ea6"
+        "GUID": "3aedef2e-79b0-403e-99bc-9bec9c81d800"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='文書申請 (廃止'!AP8"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
     "8,5": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "YBSコード",
-        "GUID": "6697008a-8d21-485c-8de2-b734d2c66098"
+        "GUID": "238d52d0-bcdc-49fe-8156-971702d0038c"
       },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
@@ -148,14 +161,14 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "分類コード",
-        "GUID": "0e75ba9a-7731-4165-9bf1-658b3129cf64"
+        "GUID": "a7621bde-c528-4e78-b563-8c9a4746385a"
       }
     },
     "8,16": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "分類コード",
-        "GUID": "ae01021d-b436-4b88-bc33-2354b8c63f0b",
+        "GUID": "ead585eb-9971-43eb-826c-cfc1ca539597",
         "RelationBinding": {
           "RelatedTable": "YBS分類コード",
           "RelatedColumn": "分類コード",
@@ -167,26 +180,14 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "細分化コード",
-        "GUID": "cf68fa72-5df3-4b3e-9a34-8a6de7581240"
-      }
-    },
-    "9,34": {
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "細分化コード",
-        "GUID": "7901a080-cc2c-41ef-a017-2bd5dfd58e3a",
-        "RelationBinding": {
-          "RelatedTable": "YBS細分化コード",
-          "RelatedColumn": "細分化コード",
-          "DisplayColumn": "細分化分類"
-        }
+        "GUID": "51b6d912-e101-4e1c-95cd-5e14f0fbcd05"
       }
     },
     "10,6": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "規格名称",
-        "GUID": "7620d93a-ebd2-4c2b-aa11-b93194df402a"
+        "GUID": "8c8ad383-1b4d-4f35-8993-fbef9bf54368"
       },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
@@ -205,13 +206,12 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "理由",
-        "GUID": "15a99df2-2f44-469f-85be-1d174a01c2bc"
+        "GUID": "674e7d38-f439-4974-924d-2fb41a07a6d0"
       },
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "WaterMark": "必須：目的、理由を簡潔に記載してください。",
-        "ReadOnly": true
+        "WaterMark": "必須：目的、理由を簡潔に記載してください。"
       },
       "DataValidationInfo": {}
     },
@@ -219,7 +219,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "現行_旧版",
-        "GUID": "f2ab5a49-9f94-460a-bbe0-3bd9b90a22c7"
+        "GUID": "52a40e7f-4dd8-4893-bb63-c7230edc7815"
       },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
@@ -235,7 +235,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "添付ファイル",
-        "GUID": "6f9e37bb-0763-4254-aaca-a953b48e12cb"
+        "GUID": "5c752de9-a9e3-47d1-8c83-341497d61d1f"
       },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
@@ -257,7 +257,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!O10"
+                  "SerializeProperty": "='文書申請 (廃止'!O10"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=細分化コード選択!Q3"
@@ -266,7 +266,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!O9"
+                  "SerializeProperty": "='文書申請 (廃止'!O9"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=細分化コード選択!B3"
@@ -275,7 +275,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!Q9"
+                  "SerializeProperty": "='文書申請 (廃止'!Q9"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=細分化コード選択!F3"
@@ -284,7 +284,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!AI10"
+                  "SerializeProperty": "='文書申請 (廃止'!Q10"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=細分化コード選択!W3"
@@ -314,7 +314,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=文書（情報!O9"
+                            "SerializeProperty": "='文書申請 (廃止'!O9"
                           }
                         ]
                       },
@@ -326,7 +326,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=文書（情報!O10"
+                            "SerializeProperty": "='文書申請 (廃止'!O10"
                           }
                         ]
                       },
@@ -341,7 +341,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "713cf3c4-8f70-431e-934f-db381afea976"
+                "ID": "0a74ecca-bba6-4674-8a1a-ad2027844b38"
               },
               {
                 "CommandList": [
@@ -358,7 +358,7 @@
                           "BindingInfo": {
                             "TableName": "YBS規格文書",
                             "ColumnName": "追番",
-                            "GUID": "c04c980f-3ec2-435c-a9e0-4c2b010510f0"
+                            "GUID": "50291f7b-4ba6-453c-8e2e-a9f7b008d453"
                           },
                           "ColumnName": "追番"
                         }
@@ -371,11 +371,11 @@
                             "ColumnBindingInfo": {
                               "TableName": "YBS規格文書",
                               "ColumnName": "分類コード",
-                              "GUID": "73f70347-4e5f-4fd7-9966-e161766152e5"
+                              "GUID": "7715dfaa-0352-4bb8-b10a-1d1903f3faf4"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=文書（情報!O9"
+                              "SerializeProperty": "='文書申請 (廃止'!O9"
                             }
                           },
                           {
@@ -383,11 +383,11 @@
                             "ColumnBindingInfo": {
                               "TableName": "YBS規格文書",
                               "ColumnName": "細分化コード",
-                              "GUID": "5b0d2cab-281c-4c4e-b6ca-6aaded83e8ce"
+                              "GUID": "56330891-ecf0-41f5-a548-dff55d7dd9e6"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=文書（情報!O10"
+                              "SerializeProperty": "='文書申請 (廃止'!O10"
                             }
                           }
                         ]
@@ -399,14 +399,14 @@
                             "ColumnBindingInfo": {
                               "TableName": "YBS規格文書",
                               "ColumnName": "追番",
-                              "GUID": "ebf78d7a-e083-48e8-b7a0-8891e5317db8"
+                              "GUID": "595c243b-167c-4f83-b5fc-a2c85ad52ec6"
                             },
                             "Order": 1
                           }
                         ]
                       }
                     },
-                    "ID": "168b8bb23b81487ca8d5971f1a4a47b5"
+                    "ID": "0444b06d86be4c59bd4774a491750ff6"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -422,11 +422,11 @@
                             "ColumnBindingInfo": {
                               "TableName": "YBS規格文書",
                               "ColumnName": "分類コード",
-                              "GUID": "057a046d-adcc-44bb-9744-5fe2f6a54098"
+                              "GUID": "1f375ae8-4187-48ba-854a-aa15fb115c76"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=文書（情報!O9"
+                              "SerializeProperty": "='文書申請 (廃止'!O9"
                             }
                           },
                           {
@@ -434,17 +434,17 @@
                             "ColumnBindingInfo": {
                               "TableName": "YBS規格文書",
                               "ColumnName": "細分化コード",
-                              "GUID": "803aac06-f800-4a5d-afa8-0e7bfd8a613f"
+                              "GUID": "ba296dda-9e23-498b-92c3-5d60ee08be15"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=文書（情報!O10"
+                              "SerializeProperty": "='文書申請 (廃止'!O10"
                             }
                           }
                         ]
                       }
                     },
-                    "ID": "e6a9396538444b79a69e47368b52f5f8"
+                    "ID": "5adfac90f8bc4c808f83e72e718404d1"
                   },
                   {
                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -469,14 +469,14 @@
                               {
                                 "TargetCells": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=文書（情報!AP20"
+                                  "SerializeProperty": "='文書申請 (廃止'!AP20"
                                 },
                                 "Value": "0"
                               }
                             ]
                           }
                         ],
-                        "ID": "e6fbc5cb-aacf-44f1-8284-b7ac6c9971ff"
+                        "ID": "800bc2cc-d100-4f2f-a85e-86e85e4ff44d"
                       },
                       {
                         "CommandList": [
@@ -486,22 +486,22 @@
                               {
                                 "TargetCells": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=文書（情報!AP20"
+                                  "SerializeProperty": "='文書申請 (廃止'!AP20"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=文書（情報!最大追番+1"
+                                  "SerializeProperty": "='文書申請 (廃止'!最大追番+1"
                                 }
                               }
                             ]
                           }
                         ],
-                        "ID": "7045477a-9092-4aad-a4c0-a5e65529107f"
+                        "ID": "c0e77692-c2d9-47e5-be1a-677c7ca7d796"
                       }
                     ]
                   }
                 ],
-                "ID": "00d1968a-d053-4867-b8f3-5ed94d5253cb"
+                "ID": "45aebaa1-a054-4709-a253-374b640c13b7"
               }
             ]
           },
@@ -511,7 +511,7 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!AP20"
+                  "SerializeProperty": "='文書申請 (廃止'!AP20"
                 },
                 "PropertyType": 5,
                 "Value": true
@@ -527,7 +527,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "追番",
-        "GUID": "4909598f-22ee-4e35-ade7-eafedf9b1769"
+        "GUID": "0cfc6997-8afd-4b67-b46a-6f3699ca5e9c"
       },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
@@ -553,9 +553,9 @@
             "ParameterName": "YBSコード",
             "ParameterValue": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=文書（情報!O9&\"-\"&文書（情報!O10&TEXT(文書（情報!AP20,\"000\")"
+              "SerializeProperty": "='文書申請 (廃止'!O9&\"-\"&'文書申請 (廃止'!O10&TEXT('文書申請 (廃止'!AP20,\"000\")"
             },
-            "ID": "ce4f2a79858a4f81b1ef98b67b43a9fd"
+            "ID": "c335609030fe4b1ea5d053f89d88188b"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -568,15 +568,15 @@
                 "ColumnBindingInfo": {
                   "TableName": "YBS規格文書",
                   "ColumnName": "YBSコード",
-                  "GUID": "38f42eb8-9607-446c-8fb0-99e000cff7d4"
+                  "GUID": "54d3aac2-1f10-47a5-a6ba-e035deeb24bb"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!YBSコード"
+                  "SerializeProperty": "='文書申請 (廃止'!YBSコード"
                 }
               }
             },
-            "ID": "3a66acbe98e84446a25bd512f2763aca"
+            "ID": "2c6503ea6ac544a898c2b0b77215d08b"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -601,7 +601,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "cd77194e-4e9f-4d4b-8325-a1a7f8b1895b"
+                "ID": "9431286d-6694-43aa-8f1c-f3003f85933f"
               },
               {
                 "CommandList": [
@@ -610,7 +610,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "572c3809-ae69-4f2f-b7d5-04cf724d3b88"
+                "ID": "41dbfbb7-36c7-4be7-945b-f0c710f87234"
               }
             ]
           },
@@ -620,17 +620,17 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!F9"
+                  "SerializeProperty": "='文書申請 (廃止'!F9"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!YBSコード"
+                  "SerializeProperty": "='文書申請 (廃止'!YBSコード"
                 }
               },
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書（情報!F9"
+                  "SerializeProperty": "='文書申請 (廃止'!F9"
                 },
                 "PropertyType": 5,
                 "Value": true
@@ -642,7 +642,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       },
       "RulesGuidList": [
-        "4a3c681c-84e3-44c7-a4c2-828b73634103"
+        "febd8e44-a101-44c7-9d95-7f5eb2c5cb35"
       ]
     },
     "22,6": {
@@ -655,79 +655,19 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "24,33": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=文書（情報!G6"
-                      }
-                    ]
-                  },
-                  "value": "廃止"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-                    "PropertyItemsList": [
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=文書（情報!AH25"
-                        },
-                        "PropertyType": 1,
-                        "Value": true
-                      }
-                    ]
-                  }
-                ],
-                "ID": "7afd56bc-4301-4e46-b68c-86313eeedac5"
-              }
-            ],
-            "Disabled": true
-          }
-        ],
-        "Text": "廃止文書",
-        "IsDisabled": true,
-        "IsInvisible": true,
-        "TemplateKey": "スタイル2"
-      }
-    },
     "25,6": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "0d15a735-3b50-4974-9c3c-7afbb00ed811"
+        "GUID": "b37a31c8-d0fd-4f10-829c-196ef9823d8b"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
         "Columns": 1,
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "ReadOnly": true
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
-    "28,22": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
-          }
-        ],
-        "Text": "閉じる",
-        "TemplateKey": "_RS_Normal_Style4"
-      }
-    },
-    "28,34": {
+    "25,39": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -745,11 +685,11 @@
                     "ColumnBindingInfo": {
                       "TableName": "YBS規格文書",
                       "ColumnName": "YBSコード",
-                      "GUID": "5c7f008a-fc78-4a6f-a39c-dec41f156b30"
+                      "GUID": "d85794ba-aabb-4203-9df1-a68cf505c025"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=文書（情報!F9"
+                      "SerializeProperty": "='文書申請 (廃止'!F9"
                     }
                   },
                   {
@@ -757,127 +697,17 @@
                     "ColumnBindingInfo": {
                       "TableName": "YBS規格文書",
                       "ColumnName": "改正コード",
-                      "GUID": "2c32803e-e36e-4caf-95c8-edc6b800171a"
+                      "GUID": "c52ebd35-f8c7-410b-9377-768340f85531"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=文書（情報!K9"
+                      "SerializeProperty": "='文書申請 (廃止'!K9"
                     }
                   }
                 ]
               }
             },
-            "ID": "0b5ca489fe5f40e18eabfa439cfdddec"
-          },
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=文書（情報!YBSコード改正レコード数"
-                      }
-                    ]
-                  },
-                  "value": "0"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "YBS規格文書",
-                    "UpdateType": "add",
-                    "ShowConfirm": true,
-                    "ConfirmText": "本当に追加してもよろしいですか？"
-                  },
-                  {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "レコードを追加しました。"
-                  }
-                ],
-                "ID": "4c4ebb5f-b68c-46ca-b6f7-0ae399cee694"
-              },
-              {
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "YBS規格文書",
-                    "ShowConfirm": true,
-                    "ConfirmText": "本当に更新してもよろしいですか？"
-                  },
-                  {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "レコードを更新しました。"
-                  }
-                ],
-                "ID": "789171ca-e667-4f74-8bec-2834f7f2ffcb"
-              }
-            ]
-          },
-          {
-            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
-            "TableName": "YBS規格文書",
-            "NextState": "申請中",
-            "AssignTo": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=文書（情報!G26"
-            },
-            "ActionName": "提出"
-          },
-          {
-            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
-            "PassValueBack": true,
-            "ReloadData": true
-          }
-        ],
-        "Text": "改正申請",
-        "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
-    "28,40": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-            "ParameterName": "YBSコード改正レコード数",
-            "TableValue": {
-              "TableName": "YBS規格文書",
-              "TableValueType": 3,
-              "SqlCondition": {
-                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                "SubConditions": [
-                  {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "YBS規格文書",
-                      "ColumnName": "YBSコード",
-                      "GUID": "5b612831-d21a-44ec-ac74-372fcfcbc334"
-                    },
-                    "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=文書（情報!F9"
-                    }
-                  },
-                  {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "YBS規格文書",
-                      "ColumnName": "改正コード",
-                      "GUID": "a422b449-ad44-4e74-9911-3166b4226a3c"
-                    },
-                    "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=文書（情報!K9"
-                    }
-                  }
-                ]
-              }
-            },
-            "ID": "4320988a38fc4b1b9c03ba4cc7878d05"
+            "ID": "b0af8fa113a647389f39108f7e8598b0"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -908,7 +738,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "af47508d-0632-45a5-a726-c74ae88ed92c"
+                "ID": "2287c8cb-352f-4917-b654-3dcad9b2db93"
               },
               {
                 "CommandList": [
@@ -923,7 +753,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "c951979f-cb76-4b47-b095-e5f766c8f75c"
+                "ID": "4a6755ce-eeac-4402-89a3-8a2f115db6b8"
               }
             ]
           },
@@ -938,7 +768,7 @@
             "NextState": "申請中",
             "AssignTo": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=文書（情報!O28"
+              "SerializeProperty": "='文書申請 (廃止'!O28"
             },
             "ActionName": "提出",
             "Disabled": true
@@ -947,1054 +777,952 @@
         "Text": "一時保存",
         "TemplateKey": "_RS_Normal_Style2"
       }
+    },
+    "28,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "YBS規格文書",
+            "UpdateType": "add",
+            "ShowConfirm": true,
+            "ConfirmText": "本当に追加してもよろしいですか？"
+          },
+          {
+            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+            "TableName": "YBS規格文書",
+            "NextState": "申請中",
+            "AssignTo": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='文書申請 (廃止'!G26"
+            },
+            "ActionName": "提出"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "廃止申請",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "28,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
     }
   },
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
-      },
-      {
-        "Background": 1,
-        "FontFamily": 2,
-        "HorizontalAlignment": 3,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 2,
+        "Background": 0,
+        "FontFamily": 1,
+        "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0,
         "BorderRight": 0
       },
       {
-        "FontFamily": 2,
-        "Formatter": 5,
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 5,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
+        "BorderBottom": 0,
         "BorderTop": 0
       },
       {
-        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 5,
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "HorizontalAlignment": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
         "BorderTop": 0,
         "BorderRight": 0
       },
       {
         "Background": 0,
-        "FontFamily": 2
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 8,
+        "Formatter": 4,
+        "HorizontalAlignment": 9,
+        "BorderTop": 0,
+        "BorderLeft": 0
       },
       {
-        "FontFamily": 2
+        "BorderTop": 0
       },
       {
-        "FontFamily": 2,
-        "BorderBottom": 0,
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 8,
         "BorderTop": 0,
         "BorderRight": 0
       },
       {
-        "FontFamily": 2,
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
+        "WordWrap": true,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0,
+        "ShrinkToFit": false
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderLeft": 1,
+        "BorderRight": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
         "BorderBottom": 0,
         "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
         "BorderBottom": 0
       },
       {
-        "FontFamily": 2,
-        "BorderBottom": 0,
+        "FontFamily": 1,
         "BorderRight": 0
       },
       {
-        "Background": 6,
-        "HorizontalAlignment": 3,
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0
       },
       {
+        "FontFamily": 1,
+        "HorizontalAlignment": 2,
         "BorderBottom": 0,
-        "BorderTop": 0
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0,
+        "ShrinkToFit": false
       },
       {
-        "BorderBottom": 0,
+        "Background": 6,
+        "FontFamily": 1,
+        "FontSize": 14.67,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.67,
+        "Formatter": 4,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
         "BorderTop": 0,
         "BorderRight": 0
       },
       {
-        "FontSize": 26.666666666666664,
-        "FontStyle": 7,
-        "FontWeight": 8,
-        "Foreground": 9,
-        "HorizontalAlignment": 3,
-        "BorderBottom": 0,
-        "BorderTop": 0
-      },
-      {
-        "Background": 6,
-        "FontFamily": 2,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "HorizontalAlignment": 3,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
         "WordWrap": true
       },
       {
-        "Background": 6,
-        "FontFamily": 2,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
         "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1,
+        "HorizontalAlignment": 2,
+        "WordWrap": true,
         "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
-        "BorderBottom": 0,
-        "BorderTop": 0
+        "FontFamily": 1,
+        "Formatter": 4,
+        "VerticalAlignment": 10,
+        "WordWrap": true,
+        "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 4
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "Underline": true,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
         "Formatter": 11,
-        "HorizontalAlignment": 3,
-        "BorderBottom": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "HorizontalAlignment": 3,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "FontSize": 16.0,
-        "FontWeight": 8,
-        "Formatter": 5,
-        "HorizontalAlignment": 12,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "BorderTop": 0
-      },
-      {
-        "FontFamily": 2,
-        "FontSize": 16.0,
-        "FontWeight": 8,
-        "BorderTop": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
-        "WordWrap": true,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "HorizontalAlignment": 3,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 0,
-        "ShrinkToFit": false
-      },
-      {
-        "FontFamily": 2,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "BorderTop": 0,
-        "BorderLeft": 1,
-        "BorderRight": 0,
-        "ShrinkToFit": true
-      },
-      {
-        "FontFamily": 2,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "BorderBottom": 0,
-        "BorderLeft": 0
-      },
-      {
-        "BorderBottom": 0
-      },
-      {
-        "FontFamily": 2,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "HorizontalAlignment": 3,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0,
-        "BorderRight": 0,
-        "ShrinkToFit": false
+        "BorderRight": null
       },
       {
-        "FontFamily": 2,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 1,
-        "BorderRight": 0,
-        "ShrinkToFit": true
-      },
-      {
-        "FontFamily": 2,
-        "FontSize": 14.67,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "FontSize": 14.67,
-        "Formatter": 5,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "BorderRight": 0
-      },
-      {
+        "Background": 12,
+        "FontFamily": 1,
         "WordWrap": true
       },
       {
-        "BorderBottom": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 2,
-        "HorizontalAlignment": 3,
-        "WordWrap": true,
+        "Background": 6,
+        "FontFamily": 1,
+        "Formatter": 7,
         "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
-        "Formatter": 5,
-        "VerticalAlignment": 13,
-        "WordWrap": true,
-        "BorderLeft": 0
+        "Background": 6,
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2
       },
       {
-        "Formatter": 5
-      },
-      {
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "Underline": true,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "BorderTop": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 10
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 2,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 2,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": null,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 14,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": null
-      },
-      {
-        "Background": 15,
-        "FontFamily": 2,
-        "WordWrap": true
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 10,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 10,
-        "HorizontalAlignment": 3
-      },
-      {
-        "FontFamily": 2,
+        "FontFamily": 1,
         "Underline": true,
         "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
-        "Foreground": 4,
-        "Formatter": 16,
+        "Background": 6,
+        "FontFamily": 1,
+        "Foreground": 3,
+        "Formatter": 13,
         "BorderTop": null,
         "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
-        "Formatter": 16,
+        "Background": 6,
+        "FontFamily": 1,
+        "Formatter": 13,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
-        "Formatter": 16,
-        "HorizontalAlignment": 3,
+        "Background": 6,
+        "FontFamily": 1,
+        "Formatter": 13,
+        "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderTop": null
       },
       {
-        "FontFamily": 2,
-        "FontSize": 26.666666666666664,
-        "HorizontalAlignment": 3
-      },
-      {
-        "FontFamily": 2,
-        "FontSize": 26.666666666666664,
-        "FontWeight": 8,
-        "Foreground": 9,
-        "HorizontalAlignment": 3,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 2,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
+        "Background": 0,
+        "FontFamily": 1,
+        "Formatter": 7,
+        "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderLeft": 0,
         "BorderRight": 0
       },
       {
-        "FontFamily": 2,
+        "FontFamily": 1,
         "BorderBottom": 0,
         "BorderLeft": 0,
         "BorderRight": 0
       },
       {
-        "FontFamily": 2,
-        "Formatter": 5,
+        "FontFamily": 1,
+        "Formatter": 4,
         "BorderLeft": 0
       },
       {
-        "FontFamily": 2,
-        "BorderLeft": 0
-      },
-      {
-        "Background": 17,
-        "FontFamily": 2,
-        "Foreground": 18,
+        "Background": 14,
+        "FontFamily": 1,
+        "Foreground": 3,
         "WordWrap": true
       },
       {
-        "Background": 19,
-        "FontFamily": 2,
-        "Foreground": 4,
+        "Background": 6,
+        "FontFamily": 1,
+        "Foreground": 15,
+        "WordWrap": true
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Foreground": 15,
         "WordWrap": true
       }
     ],
     "Types": {
       "Strs": [
-        "#FFD7FFDB",
         "Accent 6 80",
         "Body",
         "Center",
         "black",
         "@",
-        "Accent 1 80",
-        "Normal",
-        "Bold",
-        "#FFFF0000",
+        "Background 1 -15",
+        "Background 2 0",
         "[AUTO]General",
-        "yyyy/m/d",
+        "Bold",
         "Right",
         "Top",
         "000",
         "Accent 1 0",
         "General",
-        "#FFFFC000",
-        "Background 1 0",
-        "#FFFFFAD7"
+        "#FFFFFAD7",
+        "Text 1 0"
       ],
       "Borders": [
         {
-          "Color": 4
+          "Color": 3
         },
         {
           "Style": 4,
-          "Color": 4
+          "Color": 3
         }
       ]
     },
     "CellStyles": {
-      "0,0": 0,
-      "0,1": 0,
-      "0,2": 0,
-      "0,3": 0,
-      "0,4": 0,
-      "0,5": 0,
-      "0,6": 0,
-      "0,7": 0,
-      "0,8": 0,
-      "0,9": 0,
-      "0,10": 0,
-      "0,11": 0,
-      "0,12": 0,
-      "0,13": 0,
-      "0,14": 0,
-      "0,15": 0,
-      "0,16": 0,
-      "0,17": 0,
-      "0,18": 0,
-      "0,19": 0,
-      "0,20": 0,
-      "0,21": 0,
-      "0,22": 0,
-      "0,23": 0,
-      "0,24": 0,
-      "0,25": 0,
-      "0,26": 0,
-      "0,27": 0,
-      "0,28": 0,
-      "1,0": 0,
-      "1,28": 0,
-      "2,0": 0,
-      "2,1": 1,
-      "2,2": 2,
-      "2,3": 2,
-      "2,4": 2,
-      "2,5": 2,
-      "2,6": 3,
-      "2,7": 4,
-      "2,8": 4,
-      "2,9": 5,
-      "2,28": 6,
-      "2,29": 7,
-      "2,30": 7,
-      "2,31": 7,
-      "2,32": 7,
-      "2,33": 7,
-      "2,34": 7,
-      "2,35": 7,
-      "3,0": 0,
-      "3,1": 8,
-      "3,2": 2,
-      "3,3": 2,
-      "3,4": 2,
-      "3,5": 2,
-      "3,6": 9,
-      "3,7": 10,
-      "3,8": 10,
-      "3,9": 11,
-      "3,28": 6,
-      "3,29": 7,
-      "3,30": 7,
-      "3,31": 7,
-      "3,32": 7,
-      "3,33": 7,
-      "3,34": 7,
-      "3,35": 7,
-      "4,0": 0,
-      "4,28": 0,
-      "5,0": 0,
-      "5,1": 12,
-      "5,2": 13,
-      "5,3": 13,
-      "5,4": 13,
-      "5,5": 14,
-      "5,6": 15,
-      "5,7": 13,
-      "5,8": 13,
-      "5,9": 13,
-      "5,10": 13,
-      "5,11": 13,
-      "5,12": 13,
-      "5,13": 13,
-      "5,14": 16,
-      "5,15": 13,
-      "5,16": 13,
-      "5,17": 13,
-      "5,18": 13,
-      "5,19": 17,
-      "5,20": 13,
-      "5,21": 13,
-      "5,22": 13,
-      "5,23": 13,
-      "5,24": 13,
-      "5,25": 13,
-      "5,26": 14,
-      "5,28": 0,
-      "5,37": 18,
-      "5,38": 7,
-      "5,39": 7,
-      "5,40": 7,
-      "5,41": 18,
-      "6,0": 0,
-      "6,1": 19,
-      "6,2": 10,
-      "6,3": 10,
-      "6,4": 10,
-      "6,5": 11,
-      "6,6": 17,
-      "6,7": 20,
-      "6,8": 20,
-      "6,9": 20,
-      "6,10": 20,
-      "6,11": 20,
-      "6,12": 20,
-      "6,13": 8,
-      "6,14": 19,
-      "6,15": 10,
-      "6,16": 10,
-      "6,17": 10,
-      "6,18": 11,
-      "6,19": 21,
-      "6,20": 10,
-      "6,21": 10,
-      "6,22": 10,
-      "6,23": 10,
-      "6,24": 10,
-      "6,25": 10,
-      "6,26": 11,
-      "6,28": 0,
-      "6,32": 18,
-      "6,33": 7,
-      "6,34": 7,
-      "6,35": 7,
-      "7,0": 0,
-      "7,28": 0,
-      "7,32": 7,
-      "7,33": 7,
-      "7,34": 7,
-      "7,35": 7,
-      "7,37": 18,
-      "7,38": 7,
-      "7,39": 7,
-      "7,40": 7,
-      "8,0": 0,
-      "8,1": 22,
-      "8,2": 4,
-      "8,3": 4,
-      "8,4": 5,
-      "8,5": 23,
-      "8,6": 24,
-      "8,7": 24,
-      "8,8": 24,
-      "8,9": 24,
-      "8,10": 25,
-      "8,11": 26,
-      "8,12": 20,
-      "8,13": 20,
-      "8,14": 27,
-      "8,15": 28,
-      "8,16": 29,
-      "8,17": 30,
-      "8,18": 30,
-      "8,19": 30,
-      "8,20": 30,
-      "8,21": 30,
-      "8,22": 30,
-      "8,23": 30,
-      "8,24": 30,
-      "8,25": 30,
-      "8,26": 30,
-      "8,28": 0,
-      "9,0": 0,
-      "9,1": 9,
-      "9,2": 10,
-      "9,3": 10,
-      "9,4": 11,
-      "9,5": 31,
-      "9,6": 32,
-      "9,7": 32,
-      "9,8": 32,
-      "9,9": 32,
-      "9,10": 33,
-      "9,11": 34,
-      "9,12": 20,
-      "9,13": 20,
-      "9,14": 35,
-      "9,15": 36,
-      "9,16": 36,
-      "9,17": 13,
-      "9,18": 13,
-      "9,19": 13,
-      "9,20": 13,
-      "9,21": 13,
-      "9,22": 13,
-      "9,23": 13,
-      "9,24": 13,
-      "9,25": 13,
-      "9,26": 14,
-      "9,28": 0,
-      "9,34": 37,
-      "9,35": 2,
-      "9,36": 2,
-      "9,37": 2,
-      "9,38": 2,
-      "9,39": 2,
-      "9,40": 2,
-      "9,41": 2,
-      "9,42": 2,
-      "9,43": 2,
-      "9,44": 2,
-      "10,0": 0,
-      "10,1": 38,
-      "10,2": 24,
-      "10,3": 24,
-      "10,4": 24,
-      "10,5": 24,
-      "10,6": 39,
-      "10,7": 24,
-      "10,8": 24,
-      "10,9": 24,
-      "10,10": 24,
-      "10,11": 24,
-      "10,12": 24,
-      "10,13": 24,
-      "10,14": 24,
-      "10,15": 24,
-      "10,26": 40,
-      "10,27": 7,
-      "10,28": 6,
-      "10,29": 7,
-      "10,30": 7,
-      "10,31": 7,
-      "10,32": 7,
-      "10,33": 7,
-      "10,34": 7,
-      "10,37": 41,
-      "10,38": 41,
-      "10,39": 41,
-      "10,40": 41,
-      "10,41": 41,
-      "10,42": 41,
-      "10,43": 41,
-      "11,0": 0,
-      "11,1": 31,
-      "11,2": 32,
-      "11,3": 32,
-      "11,4": 32,
-      "11,5": 32,
-      "11,6": 31,
-      "11,7": 32,
-      "11,8": 32,
-      "11,9": 32,
-      "11,10": 32,
-      "11,11": 32,
-      "11,12": 32,
-      "11,13": 32,
-      "11,14": 32,
-      "11,15": 32,
-      "11,16": 32,
-      "11,17": 32,
-      "11,18": 32,
-      "11,19": 32,
-      "11,20": 32,
-      "11,21": 32,
-      "11,22": 32,
-      "11,23": 32,
-      "11,24": 32,
-      "11,25": 32,
-      "11,26": 42,
-      "11,28": 0,
-      "12,0": 0,
-      "12,1": 43,
-      "12,6": 44,
-      "12,26": 40,
-      "12,28": 0,
-      "12,41": 45,
-      "13,0": 0,
-      "13,1": 46,
-      "13,6": 46,
-      "13,26": 40,
-      "13,28": 0,
-      "14,0": 0,
-      "14,1": 46,
-      "14,6": 46,
-      "14,26": 40,
-      "14,28": 0,
-      "15,0": 0,
-      "15,1": 46,
-      "15,6": 46,
-      "15,26": 40,
-      "15,28": 0,
-      "16,0": 0,
-      "16,1": 46,
-      "16,6": 46,
-      "16,26": 40,
-      "16,28": 0,
-      "17,0": 0,
-      "17,1": 47,
-      "17,2": 24,
-      "17,3": 24,
-      "17,4": 24,
-      "17,5": 24,
-      "17,6": 48,
-      "17,7": 24,
-      "17,8": 24,
-      "17,9": 24,
-      "17,10": 24,
-      "17,11": 24,
-      "17,12": 24,
-      "17,13": 24,
-      "17,14": 24,
-      "17,15": 24,
-      "17,16": 24,
-      "17,17": 24,
-      "17,18": 24,
-      "17,19": 24,
-      "17,20": 24,
-      "17,21": 24,
-      "17,22": 24,
-      "17,23": 24,
-      "17,24": 24,
-      "17,25": 24,
-      "17,26": 49,
-      "17,28": 0,
-      "18,0": 0,
-      "18,1": 46,
-      "18,6": 46,
-      "18,26": 40,
-      "18,28": 0,
-      "18,34": 18,
-      "18,35": 7,
-      "18,36": 7,
-      "18,37": 7,
-      "18,38": 50,
-      "18,39": 7,
-      "18,40": 7,
-      "18,41": 51,
-      "18,42": 52,
-      "18,43": 53,
-      "18,44": 7,
-      "19,0": 0,
-      "19,1": 46,
-      "19,6": 46,
-      "19,26": 40,
-      "19,28": 0,
-      "19,34": 7,
-      "19,35": 7,
-      "19,36": 7,
-      "19,37": 7,
-      "19,38": 7,
-      "19,39": 7,
-      "19,40": 7,
-      "19,41": 54,
-      "19,42": 52,
-      "19,43": 53,
-      "19,44": 7,
-      "20,0": 0,
-      "20,1": 46,
-      "20,6": 46,
-      "20,26": 40,
-      "20,28": 0,
-      "20,34": 7,
-      "20,35": 7,
-      "20,36": 7,
-      "20,37": 7,
-      "20,38": 7,
-      "20,39": 7,
-      "20,40": 7,
-      "20,41": 7,
-      "20,42": 7,
-      "20,43": 7,
-      "20,44": 7,
-      "21,0": 0,
-      "21,1": 31,
-      "21,2": 32,
-      "21,3": 32,
-      "21,4": 32,
-      "21,5": 32,
-      "21,6": 31,
-      "21,7": 32,
-      "21,8": 32,
-      "21,9": 32,
-      "21,10": 32,
-      "21,11": 32,
-      "21,12": 32,
-      "21,13": 32,
-      "21,14": 32,
-      "21,15": 32,
-      "21,16": 32,
-      "21,17": 32,
-      "21,18": 32,
-      "21,19": 32,
-      "21,20": 32,
-      "21,21": 32,
-      "21,22": 32,
-      "21,23": 32,
-      "21,24": 32,
-      "21,25": 32,
-      "21,26": 42,
-      "21,28": 0,
-      "21,34": 7,
-      "21,35": 18,
-      "21,36": 55,
-      "21,37": 7,
-      "21,38": 7,
-      "21,39": 7,
-      "21,40": 7,
-      "21,41": 18,
-      "21,42": 7,
-      "21,43": 18,
-      "21,44": 7,
-      "22,0": 0,
-      "22,1": 56,
-      "22,2": 57,
-      "22,3": 57,
-      "22,4": 57,
-      "22,5": 57,
-      "22,6": 58,
-      "22,26": 40,
-      "22,28": 0,
-      "22,34": 7,
-      "22,35": 7,
-      "22,36": 7,
-      "22,37": 7,
-      "22,38": 7,
-      "22,39": 7,
-      "22,40": 7,
-      "22,41": 18,
-      "22,42": 7,
-      "22,43": 18,
-      "22,44": 7,
-      "23,0": 0,
-      "23,1": 59,
-      "23,2": 57,
-      "23,3": 57,
-      "23,4": 57,
-      "23,5": 57,
-      "23,6": 46,
-      "23,26": 40,
-      "23,28": 0,
-      "24,0": 0,
-      "24,1": 60,
-      "24,2": 61,
-      "24,3": 61,
-      "24,4": 61,
-      "24,5": 61,
-      "24,6": 46,
-      "24,26": 40,
-      "24,28": 0,
-      "24,33": 62,
-      "24,34": 7,
-      "24,35": 7,
-      "24,36": 7,
-      "24,37": 7,
-      "24,38": 7,
-      "24,40": 63,
-      "24,41": 4,
-      "24,42": 4,
-      "24,43": 4,
-      "24,44": 5,
-      "25,0": 0,
-      "25,1": 64,
-      "25,2": 65,
-      "25,3": 65,
-      "25,4": 65,
-      "25,5": 9,
-      "25,6": 66,
-      "25,26": 40,
-      "25,28": 0,
-      "25,33": 7,
-      "25,34": 7,
-      "25,35": 7,
-      "25,36": 7,
-      "25,37": 7,
-      "25,38": 7,
-      "25,40": 67,
-      "25,41": 7,
-      "25,42": 7,
-      "25,43": 7,
-      "25,44": 33,
-      "26,0": 0,
-      "26,1": 2,
-      "26,2": 2,
-      "26,3": 2,
-      "26,4": 2,
-      "26,5": 36,
-      "26,6": 31,
-      "26,7": 32,
-      "26,8": 32,
-      "26,9": 32,
-      "26,10": 32,
-      "26,11": 32,
-      "26,12": 32,
-      "26,13": 32,
-      "26,14": 32,
-      "26,15": 32,
-      "26,16": 32,
-      "26,17": 32,
-      "26,18": 32,
-      "26,19": 32,
-      "26,20": 32,
-      "26,21": 32,
-      "26,22": 32,
-      "26,23": 32,
-      "26,24": 32,
-      "26,25": 32,
-      "26,26": 42,
-      "26,28": 0,
-      "26,33": 7,
-      "26,34": 7,
-      "26,35": 7,
-      "26,36": 7,
-      "26,37": 7,
-      "26,38": 7,
-      "26,40": 9,
-      "26,41": 10,
-      "26,42": 10,
-      "26,43": 10,
-      "26,44": 11,
-      "27,0": 0,
-      "27,28": 0,
-      "28,0": 0,
-      "28,22": 18,
-      "28,23": 7,
-      "28,24": 7,
-      "28,25": 7,
-      "28,26": 7,
-      "28,28": 0,
-      "28,34": 68,
-      "28,35": 7,
-      "28,36": 7,
-      "28,37": 7,
-      "28,38": 7,
-      "28,40": 69,
-      "28,41": 7,
-      "28,42": 7,
-      "28,43": 7,
-      "28,44": 7,
-      "29,0": 0,
-      "29,22": 7,
-      "29,23": 7,
-      "29,24": 7,
-      "29,25": 7,
-      "29,26": 7,
-      "29,28": 0,
-      "29,34": 7,
-      "29,35": 7,
-      "29,36": 7,
-      "29,37": 7,
-      "29,38": 7,
-      "29,40": 7,
-      "29,41": 7,
-      "29,42": 7,
-      "29,43": 7,
-      "29,44": 7,
-      "30,0": 0,
-      "30,1": 18,
-      "30,2": 7,
-      "30,3": 7,
-      "30,28": 0,
-      "31,0": 0,
-      "31,1": 6,
-      "31,2": 6,
-      "31,3": 6,
-      "31,4": 6,
-      "31,5": 6,
-      "31,6": 0,
-      "31,7": 0,
-      "31,8": 0,
-      "31,9": 0,
-      "31,10": 0,
-      "31,11": 0,
-      "31,12": 0,
-      "31,13": 0,
-      "31,14": 0,
-      "31,15": 0,
-      "31,16": 0,
-      "31,17": 0,
-      "31,18": 0,
-      "31,19": 0,
-      "31,20": 0,
-      "31,21": 0,
-      "31,22": 0,
-      "31,23": 0,
-      "31,24": 0,
-      "31,25": 0,
-      "31,26": 0,
-      "31,27": 0,
-      "31,28": 0
+      "2,1": 0,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 2,
+      "2,7": 3,
+      "2,8": 3,
+      "2,9": 3,
+      "2,10": 3,
+      "2,11": 3,
+      "2,12": 3,
+      "2,13": 3,
+      "2,14": 3,
+      "2,15": 3,
+      "2,16": 3,
+      "2,17": 3,
+      "2,18": 3,
+      "2,19": 3,
+      "2,20": 3,
+      "2,21": 3,
+      "2,22": 3,
+      "2,23": 3,
+      "2,24": 3,
+      "2,25": 3,
+      "2,26": 3,
+      "3,1": 1,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 3,
+      "3,7": 3,
+      "3,8": 3,
+      "3,9": 3,
+      "3,10": 3,
+      "3,11": 3,
+      "3,12": 3,
+      "3,13": 3,
+      "3,14": 3,
+      "3,15": 3,
+      "3,16": 3,
+      "3,17": 3,
+      "3,18": 3,
+      "3,19": 3,
+      "3,20": 3,
+      "3,21": 3,
+      "3,22": 3,
+      "3,23": 3,
+      "3,24": 3,
+      "3,25": 3,
+      "3,26": 3,
+      "5,1": 4,
+      "5,2": 5,
+      "5,3": 5,
+      "5,4": 5,
+      "5,5": 6,
+      "5,6": 7,
+      "5,7": 5,
+      "5,8": 5,
+      "5,9": 5,
+      "5,10": 5,
+      "5,11": 5,
+      "5,12": 5,
+      "5,13": 5,
+      "5,14": 8,
+      "5,15": 5,
+      "5,16": 5,
+      "5,17": 5,
+      "5,18": 5,
+      "5,19": 9,
+      "5,20": 5,
+      "5,21": 5,
+      "5,22": 5,
+      "5,23": 5,
+      "5,24": 5,
+      "5,25": 5,
+      "5,26": 6,
+      "5,37": 10,
+      "5,38": 11,
+      "5,39": 11,
+      "5,40": 11,
+      "5,41": 10,
+      "6,1": 12,
+      "6,2": 13,
+      "6,3": 13,
+      "6,4": 13,
+      "6,5": 14,
+      "6,6": 9,
+      "6,7": 15,
+      "6,8": 15,
+      "6,9": 15,
+      "6,10": 15,
+      "6,11": 15,
+      "6,12": 15,
+      "6,13": 16,
+      "6,14": 17,
+      "6,15": 13,
+      "6,16": 13,
+      "6,17": 13,
+      "6,18": 14,
+      "6,19": 18,
+      "6,20": 13,
+      "6,21": 13,
+      "6,22": 13,
+      "6,23": 13,
+      "6,24": 13,
+      "6,25": 13,
+      "6,26": 14,
+      "6,32": 10,
+      "6,33": 11,
+      "6,34": 11,
+      "6,35": 11,
+      "7,32": 11,
+      "7,33": 11,
+      "7,34": 11,
+      "7,35": 11,
+      "7,37": 10,
+      "7,38": 11,
+      "7,39": 11,
+      "7,40": 11,
+      "8,1": 19,
+      "8,2": 20,
+      "8,3": 20,
+      "8,4": 21,
+      "8,5": 22,
+      "8,6": 23,
+      "8,7": 23,
+      "8,8": 23,
+      "8,9": 23,
+      "8,10": 24,
+      "8,11": 25,
+      "8,12": 15,
+      "8,13": 15,
+      "8,14": 26,
+      "8,15": 27,
+      "8,16": 28,
+      "8,17": 29,
+      "8,18": 29,
+      "8,19": 29,
+      "8,20": 29,
+      "8,21": 29,
+      "8,22": 29,
+      "8,23": 29,
+      "8,24": 29,
+      "8,25": 29,
+      "8,26": 29,
+      "9,1": 18,
+      "9,2": 13,
+      "9,3": 13,
+      "9,4": 14,
+      "9,5": 30,
+      "9,6": 31,
+      "9,7": 31,
+      "9,8": 31,
+      "9,9": 31,
+      "9,10": 32,
+      "9,11": 33,
+      "9,12": 15,
+      "9,13": 15,
+      "9,14": 34,
+      "9,15": 9,
+      "9,16": 9,
+      "9,17": 15,
+      "9,18": 15,
+      "9,19": 15,
+      "9,20": 15,
+      "9,21": 15,
+      "9,22": 15,
+      "9,23": 15,
+      "9,24": 15,
+      "9,25": 15,
+      "9,26": 16,
+      "10,1": 35,
+      "10,2": 23,
+      "10,3": 23,
+      "10,4": 23,
+      "10,5": 23,
+      "10,6": 36,
+      "10,7": 23,
+      "10,8": 23,
+      "10,9": 23,
+      "10,10": 23,
+      "10,11": 23,
+      "10,12": 23,
+      "10,13": 23,
+      "10,14": 23,
+      "10,15": 23,
+      "10,16": 23,
+      "10,17": 23,
+      "10,18": 23,
+      "10,19": 23,
+      "10,20": 23,
+      "10,21": 23,
+      "10,22": 23,
+      "10,23": 23,
+      "10,24": 23,
+      "10,25": 23,
+      "10,26": 37,
+      "10,27": 11,
+      "10,28": 11,
+      "10,29": 11,
+      "10,30": 11,
+      "10,31": 11,
+      "10,32": 11,
+      "10,33": 11,
+      "10,34": 11,
+      "10,37": 38,
+      "10,38": 38,
+      "10,39": 38,
+      "10,40": 38,
+      "10,41": 38,
+      "10,42": 38,
+      "10,43": 38,
+      "11,1": 30,
+      "11,2": 31,
+      "11,3": 31,
+      "11,4": 31,
+      "11,5": 31,
+      "11,6": 30,
+      "11,7": 31,
+      "11,8": 31,
+      "11,9": 31,
+      "11,10": 31,
+      "11,11": 31,
+      "11,12": 31,
+      "11,13": 31,
+      "11,14": 31,
+      "11,15": 31,
+      "11,16": 31,
+      "11,17": 31,
+      "11,18": 31,
+      "11,19": 31,
+      "11,20": 31,
+      "11,21": 31,
+      "11,22": 31,
+      "11,23": 31,
+      "11,24": 31,
+      "11,25": 31,
+      "11,26": 39,
+      "12,1": 40,
+      "12,6": 41,
+      "12,26": 42,
+      "12,41": 43,
+      "13,1": 44,
+      "13,6": 44,
+      "13,26": 42,
+      "14,1": 44,
+      "14,6": 44,
+      "14,26": 42,
+      "15,1": 44,
+      "15,6": 44,
+      "15,26": 42,
+      "16,1": 44,
+      "16,6": 44,
+      "16,26": 42,
+      "17,1": 45,
+      "17,2": 23,
+      "17,3": 23,
+      "17,4": 23,
+      "17,5": 23,
+      "17,6": 46,
+      "17,7": 23,
+      "17,8": 23,
+      "17,9": 23,
+      "17,10": 23,
+      "17,11": 23,
+      "17,12": 23,
+      "17,13": 23,
+      "17,14": 23,
+      "17,15": 23,
+      "17,16": 23,
+      "17,17": 23,
+      "17,18": 23,
+      "17,19": 23,
+      "17,20": 23,
+      "17,21": 23,
+      "17,22": 23,
+      "17,23": 23,
+      "17,24": 23,
+      "17,25": 23,
+      "17,26": 37,
+      "18,1": 44,
+      "18,6": 44,
+      "18,26": 42,
+      "18,34": 10,
+      "18,35": 11,
+      "18,36": 11,
+      "18,37": 11,
+      "18,38": 47,
+      "18,39": 11,
+      "18,40": 11,
+      "18,41": 48,
+      "18,42": 49,
+      "18,43": 50,
+      "18,44": 11,
+      "19,1": 44,
+      "19,6": 44,
+      "19,26": 42,
+      "19,34": 11,
+      "19,35": 11,
+      "19,36": 11,
+      "19,37": 11,
+      "19,38": 11,
+      "19,39": 11,
+      "19,40": 11,
+      "19,41": 51,
+      "19,42": 49,
+      "19,43": 50,
+      "19,44": 11,
+      "20,1": 44,
+      "20,6": 44,
+      "20,26": 42,
+      "20,34": 11,
+      "20,35": 11,
+      "20,36": 11,
+      "20,37": 11,
+      "20,38": 11,
+      "20,39": 11,
+      "20,40": 11,
+      "20,41": 11,
+      "20,42": 11,
+      "20,43": 11,
+      "20,44": 11,
+      "21,1": 30,
+      "21,2": 31,
+      "21,3": 31,
+      "21,4": 31,
+      "21,5": 31,
+      "21,6": 30,
+      "21,7": 31,
+      "21,8": 31,
+      "21,9": 31,
+      "21,10": 31,
+      "21,11": 31,
+      "21,12": 31,
+      "21,13": 31,
+      "21,14": 31,
+      "21,15": 31,
+      "21,16": 31,
+      "21,17": 31,
+      "21,18": 31,
+      "21,19": 31,
+      "21,20": 31,
+      "21,21": 31,
+      "21,22": 31,
+      "21,23": 31,
+      "21,24": 31,
+      "21,25": 31,
+      "21,26": 39,
+      "21,34": 11,
+      "21,35": 10,
+      "21,36": 52,
+      "21,37": 11,
+      "21,38": 11,
+      "21,39": 11,
+      "21,40": 11,
+      "21,41": 10,
+      "21,42": 11,
+      "21,43": 10,
+      "21,44": 11,
+      "22,1": 53,
+      "22,2": 54,
+      "22,3": 54,
+      "22,4": 54,
+      "22,5": 54,
+      "22,6": 55,
+      "22,26": 42,
+      "22,34": 11,
+      "22,35": 11,
+      "22,36": 11,
+      "22,37": 11,
+      "22,38": 11,
+      "22,39": 11,
+      "22,40": 11,
+      "22,41": 10,
+      "22,42": 11,
+      "22,43": 10,
+      "22,44": 11,
+      "23,1": 56,
+      "23,2": 54,
+      "23,3": 54,
+      "23,4": 54,
+      "23,5": 54,
+      "23,6": 44,
+      "23,26": 42,
+      "24,1": 57,
+      "24,2": 58,
+      "24,3": 58,
+      "24,4": 58,
+      "24,5": 58,
+      "24,6": 44,
+      "24,26": 42,
+      "25,1": 59,
+      "25,2": 60,
+      "25,3": 60,
+      "25,4": 60,
+      "25,5": 18,
+      "25,6": 61,
+      "25,26": 42,
+      "25,39": 62,
+      "25,40": 11,
+      "25,41": 11,
+      "25,42": 11,
+      "25,43": 11,
+      "26,1": 1,
+      "26,2": 1,
+      "26,3": 1,
+      "26,4": 1,
+      "26,5": 9,
+      "26,6": 30,
+      "26,7": 31,
+      "26,8": 31,
+      "26,9": 31,
+      "26,10": 31,
+      "26,11": 31,
+      "26,12": 31,
+      "26,13": 31,
+      "26,14": 31,
+      "26,15": 31,
+      "26,16": 31,
+      "26,17": 31,
+      "26,18": 31,
+      "26,19": 31,
+      "26,20": 31,
+      "26,21": 31,
+      "26,22": 31,
+      "26,23": 31,
+      "26,24": 31,
+      "26,25": 31,
+      "26,26": 39,
+      "26,39": 11,
+      "26,40": 11,
+      "26,41": 11,
+      "26,42": 11,
+      "26,43": 11,
+      "28,1": 63,
+      "28,2": 11,
+      "28,3": 11,
+      "28,4": 11,
+      "28,5": 11,
+      "28,22": 64,
+      "28,23": 11,
+      "28,24": 11,
+      "28,25": 11,
+      "28,26": 11,
+      "29,1": 11,
+      "29,2": 11,
+      "29,3": 11,
+      "29,4": 11,
+      "29,5": 11,
+      "29,22": 11,
+      "29,23": 11,
+      "29,24": 11,
+      "29,25": 11,
+      "29,26": 11,
+      "30,1": 10,
+      "30,2": 11,
+      "30,3": 11,
+      "30,4": 11,
+      "30,5": 11,
+      "31,1": 11,
+      "31,2": 11,
+      "31,3": 11,
+      "31,4": 11,
+      "31,5": 11
     },
     "SheetStyle": {
-      "FontFamily": 2
+      "FontFamily": 1
     }
   },
   "Spans": [
+    "2,1,2,5",
+    "2,6,2,21",
     "5,37,1,4",
     "5,41,1,4",
     "7,37,1,4",
@@ -2002,8 +1730,11 @@
     "12,41,1,4",
     "25,1,2,5",
     "25,6,2,21",
+    "28,22,2,5",
+    "5,6,1,8",
     "5,1,1,5",
     "5,14,1,5",
+    "5,19,1,8",
     "6,1,1,5",
     "6,6,1,8",
     "6,14,1,5",
@@ -2028,36 +1759,14 @@
     "18,38,2,3",
     "18,41,1,3",
     "19,41,1,3",
-    "9,16,1,11",
-    "9,34,1,11",
-    "28,34,2,5",
-    "28,40,2,5",
-    "5,6,1,8",
-    "24,40,3,5",
-    "24,33,3,6",
-    "28,22,2,5",
-    "5,19,1,8",
-    "2,1,2,5",
-    "2,6,2,4"
+    "28,1,2,5",
+    "25,39,2,5",
+    "9,16,1,11"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "ＹＢＳ情報表示",
+    "Title": "ＹＢＳ廃止申請",
     "PageLoadedCommandList": [
-      {
-        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-        "PropertyItemsList": [
-          {
-            "TargetCells": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=文書（情報!G6"
-            },
-            "PropertyType": 2,
-            "Value": "Accent 6 0"
-          }
-        ],
-        "Disabled": true
-      },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
         "ConditionAndCommandPairList": [
@@ -2068,30 +1777,142 @@
                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                 "cellLocations": [
                   {
-                    "SerializeProperty": "=文書（情報!G6"
+                    "SerializeProperty": "='文書申請 (廃止'!G6"
                   }
                 ]
               },
-              "value": "廃止"
+              "value": "改正"
             },
             "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "改正回数",
+                "TableValue": {
+                  "TableName": "YBS規格文書",
+                  "OnlyGetValue": true,
+                  "TableValueType": 0,
+                  "BindingInfos": [
+                    {
+                      "GUID": "84e06ab7-0cac-4863-b71a-c6233fe5be14",
+                      "BindingInfo": {
+                        "TableName": "YBS規格文書",
+                        "ColumnName": "改正コード",
+                        "GUID": "d30a8c5b-d90a-4a86-b5e8-385e1426168a"
+                      },
+                      "ColumnName": "改正コード"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "YBSコード",
+                      "GUID": "322f37d3-d394-4a5e-b177-a674cdacc559"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!F9"
+                    }
+                  },
+                  "TopCount": "1",
+                  "OrderBySqlCondition": {
+                    "OrderByColumns": [
+                      {
+                        "ColumnBindingInfo": {
+                          "TableName": "YBS規格文書",
+                          "ColumnName": "改正コード",
+                          "GUID": "7f2bfbfd-c35d-496c-acec-0b61fa69cdf1"
+                        },
+                        "Order": 1
+                      }
+                    ]
+                  }
+                },
+                "ID": "5a23297042734aea9f0e69e2725b2c8e"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "改正回数最大値",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='文書申請 (廃止'!改正回数+1"
+                },
+                "ID": "b540961646f6441883b996b1aea31c37"
+              },
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='文書申請 (廃止'!改正回数"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='文書申請 (廃止'!改正回数最大値"
+                }
+              },
               {
                 "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
                 "PropertyItemsList": [
                   {
                     "TargetCells": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=文書（情報!AH25"
+                      "SerializeProperty": "='文書申請 (廃止'!O10"
                     },
-                    "PropertyType": 1,
+                    "PropertyType": 5,
                     "Value": true
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!O9"
+                    },
+                    "PropertyType": 5,
+                    "Value": true
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!AP20"
+                    },
+                    "PropertyType": 5,
+                    "Value": true
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!F9"
+                    },
+                    "PropertyType": 5,
+                    "Value": true
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!G11"
+                    },
+                    "PropertyType": 5,
+                    "Value": true
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!T6"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!改正回数最大値"
+                    }
                   }
                 ]
               }
             ],
-            "ID": "68000f58-acdd-469b-8fe8-c376a066f6d2"
+            "ID": "52100cf0-e2db-4ff7-8e49-0a614f759329"
           }
-        ]
+        ],
+        "Disabled": true
       }
     ],
     "PermissionData": {
@@ -2117,9 +1938,9 @@
           "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
           "Formula": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=ISBLANK(文書（情報!$AP$20)"
+            "SerializeProperty": "=ISBLANK('文書申請 (廃止'!$AP$20)"
           },
-          "GUID": "4a3c681c-84e3-44c7-a4c2-828b73634103",
+          "GUID": "febd8e44-a101-44c7-9d95-7f5eb2c5cb35",
           "StyleInfo": {
             "Background": "Background 1 -15",
             "Underline": null,
@@ -2149,7 +1970,7 @@
       "ForegroundFill": "#FFFF0000",
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Location": "490,459",
+      "Location": "490,440",
       "Size": "50,60"
     },
     {
@@ -2158,8 +1979,8 @@
       "Stretch": 2,
       "Transparency": 0.6999999999999997,
       "ForegroundFill": "#FF0070C0",
-      "Location": "488,358",
+      "Location": "488,339",
       "Size": "51,55"
     }
   ]
-}//Yl9AdWRPZYfgjvkRu2M9jyqCRvKUTKO13o3zKNwIme/5KWn5KrCBhyDsDfKXvU+C0OsLoSeAcx+iP7CQiEF/3DMl7Ibn/Sls4oXUcoyq8IpX05OJmXfm9dLLVsh5MjZZZ3oT/5ojzIZryHZOlKOSL9+WVrpSNujqQvXqlcjQaLyB6ww+Tqi2RQ7tpr4Vd3ulw++rPL53SGkbczvzw3y0YgQtfGOhDPMRveHM76N+oOARZ5ZrfNeVNkO9fF+Sl4ecZHoE+kPhoIw/URtwwN4qjFjSRSgmEGcHIBSlTXYuSwpupDSMEVqeenjBQjwlK1rugjqs6RVSDBgZ/9+e4J7ae20ULa5MGD1zpTV3i3BtNQyEe4JI3yOwtoig+NtXUQnJ2IW3pMRTYig0uSn1E/FP0vta3qWEDFU9nwwJ4wO+yOvDFxwORDO5ZBi8sBFtYas+02vJQClDtobtN1dxWRpDIMYSaULN1nCAqBj1LBG+OLyJCYMJDhDjp27flA6V8KcUuudYq01uA9u8ZjKbK79F7FR14u/JyuVWUjgjxIFMYprdSUqGb7lD8bio9XWanP47iinOePB3/5SeQwOiC2SuZRASqgq2rBcDNTtAGIsYEtepqzIARoblHw3M+yy93EUqfdYRD5z+PrabBCxMn92kERs4Tgb5ARIghbVX96YCvdXDX2gp6c9Md3wm1e2JRweQcCqF16/63g3TM2y2u/6VB2Z5pQBO1wq2qIK2uuSF93UMaUajCKNi4fj10HEFPoaTpBH5ysj4QWNXjHmXUWBGCAAv6QxCREwumBxymQiHQNZzq/1sRZ9r3J5PZM1zu64kmvpH6daJcIRyBTMlbM7omEqp+mziCfLunNqzINQef9HiPViaWvtnWNxYXCD+Xl11oFSh7QTGpOJi4fMUtnA0eQ==|920
+}//Gi7mZr4DG1cwemkXB+Fi9DLytPkuCTXf4FS7QCei1GBIPBPq9cqihMamsfBlNXG+SYCZ0VtwqgkbAsdGIXC5qaMxA0XFluHrlOPxV3rn8dQczjZonr3D3OdXDjq4iUtprMagyH//7UdvPW4Uwwqdo6Bz3wk6NZzx44ycri/+6mHNHJGQczOZWfZ6IYwBqxck2EXoyqbf1jY061vcnfHaXXDiw6K9rYdbW40fYfH4BVXLSnqJUpeF3MmzH52tkoBqbhSAh/l+XpiyCuUy6HYgsf9cGLtYt9Yf3H/gd4oZjZ/jV2woOXXZ7C0fWijGdmZVMOHJ0XxeHkuJY2kkLz19VfnHe0/jAxLklm5kxPIFQyvBhJqKXsA2H/5TN+tO6K9Q984c9qJgWaRCdU1ihsw7BazM0kKvhNivRjckj7m0DdqT0kuJ7yF7ak6VyIO7zFcPcavzmPocR0bAZ3Vw0lRVEkjIVVJHAeBD5DViXwKFrLpBSuWwlLVr8iG1j6NhJ82kRSxJZVNtyQ6Ttysb8xglmiA28w0WREfYPM3YYdGyRJY+ZaHAT9agyqBIApk61b4ad9pURs7aguq8qmVDrS1ND8HNOH9cNu8s+iks3kjtl9fp2OYQLCU4RhcFKwlcgOe5jVdTT1skNRK1sg5vTeJ786Z6Jb6x1fOjHI1I9rXqo8BrFeSFL4OHeAEl5dORlMGgVdF+jtVEqP+ulNQ+qCP2vcKf0V9lmTKQOgWhEMDJZHcdjc71YPI0Z/0pqDE+YBIEsEWESb4F7vtC5oZE3RxBNG9d95V3EdY79cwuUprGtHjVw6wo+wXDSaZi3DSxq0F3Ea4TsvP7G7XPhnZ5MeGIKRiSMf//6kO805JtS6R5V5EWycHKvLrESChAvvGpzL9hfXYZpJqwzapv+5Skmt9jZg==|920
