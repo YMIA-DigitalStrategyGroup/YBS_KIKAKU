@@ -230,5 +230,15 @@
   {
     "ModuleName": "PCPage/文書（情報",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/文書申請（JYOUHOU",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-05-01T10:16:29.4713813+09:00",
+    "ModuleType": 1
   }
 ]
