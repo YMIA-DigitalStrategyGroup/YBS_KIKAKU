@@ -5,16 +5,7 @@
   },
   {
     "ModuleName": "Table/YBS規格文書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-01T14:34:20.356047+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS規格文書.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/YBS細分化コード",
