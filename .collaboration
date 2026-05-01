@@ -259,12 +259,12 @@
   },
   {
     "ModuleName": "PCPage/文書（情報",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-05-01T10:39:27.9920353+09:00",
+    "LockDateTime": "2026-05-01T10:46:19.7568806+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\文書（情報.json",
@@ -289,6 +289,16 @@
       "Email": "hiroshi_ogata@yanmar.com"
     },
     "LockDateTime": "2026-05-01T10:41:05.1426328+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/0LD文書（情報",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-05-01T10:46:19.7568961+09:00",
     "ModuleType": 1
   }
 ]
