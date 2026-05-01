@@ -134,7 +134,7 @@
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-05-01T10:34:51.6004264+09:00",
+    "LockDateTime": "2026-05-01T10:40:36.208987+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\YBS一覧（詳細.json",
@@ -262,13 +262,13 @@
     ]
   },
   {
-    "ModuleName": "PCPage/文書申請（JYOUHOU",
+    "ModuleName": "PCPage/文書_情報",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-05-01T10:16:29.4713813+09:00",
+    "LockDateTime": "2026-05-01T10:40:36.2089397+09:00",
     "ModuleType": 1
   }
 ]
