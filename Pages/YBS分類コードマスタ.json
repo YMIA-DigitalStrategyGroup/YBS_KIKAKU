@@ -3,7 +3,7 @@
     "Count": 42
   },
   "Cols": {
-    "Count": 30
+    "Count": 37
   },
   "Values": {
     "39,2": "更新"
@@ -16,7 +16,7 @@
         "RowIndex": 1,
         "ColumnIndex": 1,
         "RowCount": 37,
-        "ColumnCount": 28,
+        "ColumnCount": 35,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
         "ShowColumnHeaderInDesigner": true,
@@ -25,6 +25,7 @@
         "UseSimpleBar": true,
         "AllowEditInListview": true,
         "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
         "RowHeaderContextMenu": {
           "ContextMenuItems": [
             {
@@ -63,6 +64,51 @@
         "GUID": "eb06784b-dbc4-4a8f-a5cd-69f3a983ed9e"
       }
     },
+    "2,28": {
+      "NameUsedInJavaScript": "主管部門",
+      "BindingInfo": {
+        "TableName": "YBS分類コード",
+        "ColumnName": "主管部門",
+        "GUID": "07fe9f24-cebd-4ea1-94b8-b77cd5234855"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "YBS分類コード",
+        "ValueColumnBindingInfo": {
+          "TableName": "YBS分類コード",
+          "ColumnName": "主管部門",
+          "GUID": "70a13075-1f10-4e82-97f0-177e54f559af"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "YBS分類コード",
+          "ColumnName": "主管部門",
+          "GUID": "c16901d4-cead-4f2a-8e6a-7d5b01e0495a"
+        }
+      }
+    },
+    "2,32": {
+      "BindingInfo": {
+        "TableName": "YBS分類コード",
+        "ColumnName": "審議形態",
+        "GUID": "5c615365-f674-4f42-8bac-c4630f15e2b4"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "YBS分類コード",
+        "ValueColumnBindingInfo": {
+          "TableName": "YBS分類コード",
+          "ColumnName": "審議形態",
+          "GUID": "01788aaf-3ae4-4a8c-8251-c3a27451e64e"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "YBS分類コード",
+          "ColumnName": "審議形態",
+          "GUID": "8db2edbb-d0d6-4945-af34-ac2f67751a46"
+        }
+      }
+    },
     "39,2": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
@@ -85,7 +131,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "e6730b29-7b70-4246-a9eb-3ebe9ce0b4c1"
+                "ID": "8476d9e1-9408-4d46-9bd2-757a1ec5e728"
               }
             ]
           }
@@ -107,7 +153,9 @@
       ]
     },
     "CellStyles": {
-      "2,2": 0
+      "1,28": 0,
+      "2,2": 0,
+      "2,28": 0
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -115,11 +163,15 @@
   },
   "Spans": [
     "39,2,2,7",
-    "3,1,35,28",
+    "3,1,35,35",
     "2,2,1,6",
-    "2,8,1,20",
     "1,2,1,6",
-    "1,8,1,20"
+    "2,8,1,20",
+    "1,8,1,20",
+    "2,28,1,4",
+    "1,28,1,4",
+    "2,32,1,4",
+    "1,32,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -139,10 +191,11 @@
       ]
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": []
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "YBS分類コード"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//smtwVwtQx8/F53eXkgnwL8k/wu6hmdskdX4RisHvZMa/pHhlTv6usrEOhIYHExgHkAOuFrOD49KwvbrlYauaPuH5FeJs5ENtzvg6cq0vQfi2WgoaYRRgpS8CvQvv/HK6CqGKXdQmEUrLmrbnlxOjOafrjx8iKxyRgsr1KBzORwJbTZ1wLGrblqqOJVGUEJsPivQvzjaPq0wqeVeEgsBjiQxgTR0zuK4dQFVUO17LKRPGJAK4TfTGwJmSrRahWppZml8KuBc7ZFwh9hxZ77OfiUeWO+N2MqUOMW4YUJ9R2wFSWreyfO9XCwE6sqz19+Gi7yOCnEp4x6ihdcWUc7UndSQPSujznauFA3Ce3viKpHSXMTQog18+foVDoik2a9ixC2HcG336FbtMjP7QQtpbppB859o7KVAFZ25EuVhsDavRL9tuUbniGiP0mrdX4P1mfrOMjuAQUJQ8JuBQM95iIeaMcafQfU3BRETPzvhm3mXQMIuAnj5rbLI07glkXAc8KZ6vA/DlrRJjCBrskl20TMLwYe17sEaFoiep6FmVKHAm93/e67r689sUGTKobO0CLpj+3lGmLLinx14Cj5sP7ZWgN8HIila80Kt91M1LgjDq2tQZ+NZbf887SRkFMq7II/7Dx4qZgzh9t5sUi+twalSQhOXT8hneSmnoAVAvQJZtY/TIHjc9BSd1ymtG35x3y7xllqKB+jxR4sAgEWN9t7VgPr/LIo2txqJOXunrPgdz5KnpNjLZv+es+afxjfwXDBiE+78/0FVboewQOirwPVnZO7RXk3VezMhjIMDlZItTeF0GBMhWUm06+4q9rsI0n3hDWnO9NWl9QttNCKeYBbLEf3iAlgZEl1i1C9FYKe90n3wU01INbwI8To97IU3RHDQMjEYNbmQKJvHrAfWjWA==|920
+}//+tToeyyIXNdzOSMzHSxcauhWf/vcVxKpVtQ7THf/eRc2PwuCXbh2AKcjqIcTXlN2RusLQIeIqKvst/RrbkMSpBiyR/g2067ihDTAJ8W+2lKT8Fb+Mlt+M3mXfXTXEXFGDU4rYBhdOTjFZEzX1Jz40Vah0vuqcGreaEth0a7/5znvi2dt0yv2oNDP+npCW+cs//KM9frkUmqk3gVBmx6IsiwJsKgXaeQeAwGMAk0u/hglYdfmsLBeqHBi+INgCri96mVUCxxRlmbvzquwDgiNmZ+a56VgYDcOZc4dGpbqp0S2Gz0mczS/joZvu9B5n6QY5GyzfopkyYt42qAXtbOBeQFTSPuHPTIPMgmz4lOdl5ZqUr33s6Eg+4YI0k+oIPt+/WWeGJPEHh57Bcg3Dxq1EFVkM7B/6S67SFE0Jik0GP7ZyXkOFi+HFjY5cHr4Ux+gGMbT17D2ERNO+Cd+GNm/VNSO27HtWwebP27oeQuKl1uI8xII4ABqs4JL9RavnOW1QurArH3PyhwGRWZaVcySUyYX/DxGZ5oVFssOkKRcOM9cW5WAuujjAFblPbBxhkRE0fxgTNsz/Zkc9vcUCHSi3PHPo8AYNJRsHU58HPuKt2k700mw/313JOiEe1rcI/w6wUx9Ic3/UEaBXgnKweehUdocRI5pkz7QZpul39oF1EKwg2MMuiWFvR9qJCX7a60PmV6PQNDWxNlomu8B6N/17QSSTw4MOtlWVX4bS/QsF+/Ka49ym9zxpekWdfcAP+dOnWYKRkFlzZYeOU18m7w9hoPpCYUpZKAR+6z0qBM1WKdGtfWgok560CTADrJgLNERV59RtGQm+gFUM/uNi9+O6IHqhCAJGP0c/KbSlp9aB7+UNBZT0K1smVIT2S/2Me27ixfL0BvpmumNPhW5jiKQvg==|920

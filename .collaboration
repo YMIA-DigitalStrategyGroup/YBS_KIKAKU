@@ -1,29 +1,11 @@
 [
   {
     "ModuleName": "Table/YBS分類コード",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041351",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-01T15:10:11.9167694+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS分類コード.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/YBS規格文書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041351",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-01T15:01:57.5111088+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS規格文書.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/YBS細分化コード",
@@ -143,17 +125,7 @@
   },
   {
     "ModuleName": "PCPage/YBS分類コードマスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041351",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-01T15:14:57.9314418+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS分類コードマスタ.json",
-      "Pages\\YBS分類コードマスタ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（詳細",
