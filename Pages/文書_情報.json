@@ -217,31 +217,34 @@
       }
     },
     "16,6": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "適用範囲",
+        "GUID": "bb65cb63-232c-48fe-b29f-7ee130c60662"
+      },
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "WaterMark": "適用される商品",
-        "Items": [
-          {
-            "Value": "全商品",
-            "DisplayValue": "全商品"
-          },
-          {
-            "Value": "舟艇",
-            "DisplayValue": "舟艇"
-          },
-          {
-            "Value": "海洋",
-            "DisplayValue": "海洋"
-          }
-        ]
-      },
-      "DataValidationInfo": {}
+        "ReadOnly": true
+      }
     },
     "17,6": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "施行日",
+        "GUID": "5bc76fa4-a102-425d-84d1-a79489804a48"
+      },
       "CellType": {
         "$type": "Forguncy.DateCellType, ServerDesignerCommon",
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+        "DropDownButtonvisibility": 1,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ReadOnly": true
       },
       "DataValidationInfo": {}
     },
@@ -682,6 +685,7 @@
       },
       {
         "FontFamily": 3,
+        "Formatter": 7,
         "VerticalAlignment": 12,
         "WordWrap": true,
         "BorderBottom": 0,
@@ -1595,8 +1599,6 @@
     "17,1,1,5",
     "17,13,1,14",
     "16,13,1,14",
-    "17,6,1,7",
-    "16,6,1,7",
     "8,1,2,3",
     "9,11,1,3",
     "8,11,1,3",
@@ -1623,7 +1625,9 @@
     "5,22,1,5",
     "6,12,1,3",
     "6,15,1,4",
-    "6,22,1,5"
+    "6,22,1,5",
+    "17,6,1,7",
+    "16,6,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1681,4 +1685,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//iaQ4FegJOkY4u1JGzb1g/x1sFnJtQoxx0SLb4W8VFxI6isGmqmgfSBx8N6CEwlgyZQphEZh0HaFfoW04Cfr9r08P0IlgyITkqNnPmyScUrCAc3m0pMp1kO+j4EiHDv9Ve4BJ1JPHcth0MabHUHnA5CTVBEgSDyEurwmWFjpWFZ/Xi/RgkTBEfawizG4vZ+KsPvsZ4WSv+7c8XThyS5H+oQ6IRlMWVPH/Ps8A9whB6iPzLOTj2wBimLbDXhynHDdOtV3rjKvW3EqOyMVpZfFtmqfkCTz4eoa9T1XeAuyrBQ2qtYvW/G9ysf0OZwu8fXSmbjvqN3x2K5otOT5MmFSzCjQ8cbtzscPKkjCoLLwHJcSGH7YJ6UkHuQ2QWOzR+4zVYew2U73ON8oRbkfrHxS31nxoZDXI3njL/Xepbbr/lvQKDErg1KScCbv0qRA9WQGM6zq2sb3el8rUrhau/0iDoVRS1agMTib+voGgxx0peKLgPiGO6hNVLztuqtNVx6PYPrGrj2G7HfUVSP8MXv8M1AEFDklerbw+bPAqIUTL1LSX82i1/QJlmTH57gZJpWu55SfBl2poeszKP1qZjoimyh5wmjdjzv2M3ax7T0SnoHZwlBVBNh6eWdQSXkEqXmrWBZcUMYl/Rt/NpEbJ3dnv80tmsgg7ylgXOWV2DjEEvFg3CNGYK0d/oUA0vKt2UmlVqZqPUIwlY47hyZG+7GtJyaTRYIoqszgPIClfKMeL4FdUCkIHyOKYn20Kne8qqKc2Sqy3g+JcSSVJuRiFMFQOWkiyANUVLUmFK5B4ZLrSwZY738LsU+ielASBDvDXC+JOLD813ZXxpzCycuzCJ5JNA2KY6FnIqKjE+w3Nn6AAOQsoy/zBe8BfhAYnjhkRiPzM+3E7ZD3xLy4cNXOYry32Ag==|920
+}//RggjAhg95w59m92cMogxO8HcjBzbxksabClTo8lDK332fOSPhpM90SvDeENBooxzpcVpgtBQYXeLlCfYfPe8uWHBYUhXi11ie2fd30WZu87jgoV13QtpA5BxUragBhIzibbpp58KM9AsVUtpSzswHZ01GWSZjiwLM69kgBL/XaX/aC2VE6ulEvvodKO2LjpALJNkp7RJAXe4XG2CBVwHlg1fZsW0/GgQuJ1k70u76O0nrOdnMajwQtO89/C69ctl5hccZJzAOni7I5XLcRioOUzh9vlD+7whQKozEOKtIx3LeXfuXwVxAqVHe+DuUOyUpDvDX7+k4xUK5LQjPO/T+apu3LCCoUteccgJ7bBApJhSoCx0QnxAM4bWBW7lcuzzuw5KdKk+3JVYgnYaqERvuGaATrxw7YBvwFKog+W6TUr4LuylrNuP2oUXOrMsCK9GNWvm+hMeS+pxq3FDJJpCwP6ryOxUUsJiboqIwn60vcsXVJNJJLArOPQ8B0lJ0a729ed4hW9ScBBpcARppZamA4VZ6A4/5Uks2yleTCRpinWNJceraf2GQxTQ+m8HR0HgZQZblAZw6JuXH2pYr8fq/Y9DO1Amcsbc22lR2eYX8quKKfE7GTuj9tpVo9HWmdNkAje3J3RJQKSkMCxZbQ2CyoHuqToqB7flGf3/80fS7pb8eccRIiLHhWgCJAbs74fjlvps47C7lSPhbHAKaUh4wpbUZRmgANz3qRY+5w1hmacFKtfysRbehJyRZUWL9fK73ObBND0QHda6r5kT7KHZ6Xjpgwq5AkSkb07gW6XX5bFlYsp/TOi6k+NchT4Gxyj7TEeCq26/yJ7lQ5xjGEXku7eYuPXf5ZcORZO041w0xEMlnYo/SigNzyc9wJ2gMCWwGdePsmCBn1vZmzfqeflFWg==|920

@@ -133,17 +133,7 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-08T15:27:12.1848414+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（最新.json",
-      "Pages\\YBS一覧（最新.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（申請中",
@@ -151,31 +141,11 @@
   },
   {
     "ModuleName": "PCPage/文書申請（改正",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-08T15:27:12.1846637+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書申請（改正.json",
-      "Pages\\文書申請（改正.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/文書申請（新規",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-08T15:09:23.4247635+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書申請（新規.json",
-      "Pages\\文書申請（新規.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
@@ -239,14 +209,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-08T15:19:58.404195+09:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": []
+    "ModuleType": 26
   },
   {
     "ModuleName": "PublishConfiguration",
@@ -262,17 +225,7 @@
   },
   {
     "ModuleName": "PCPage/文書_情報",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-08T15:14:36.9541963+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書_情報.json",
-      "Pages\\文書_情報.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/文書申請 (廃止",
