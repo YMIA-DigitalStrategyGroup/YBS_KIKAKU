@@ -1,22 +1,23 @@
 {
   "Rows": {
-    "Count": 42
+    "Count": 43
   },
   "Cols": {
-    "Count": 38
+    "Count": 37
   },
   "Values": {
-    "39,2": "更新"
+    "1,1": "＜分類コードマスタメンテ＞",
+    "40,2": "更新"
   },
   "AttachInfos": {
-    "1,1": {
+    "2,1": {
       "ListViewInfo": {
         "Name": "リストビュー1",
         "TableName": "YBS分類コード",
-        "RowIndex": 1,
+        "RowIndex": 2,
         "ColumnIndex": 1,
         "RowCount": 37,
-        "ColumnCount": 36,
+        "ColumnCount": 35,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
         "ShowColumnHeaderInDesigner": true,
@@ -47,7 +48,7 @@
         "CommitType": 1
       }
     },
-    "2,2": {
+    "3,2": {
       "NameUsedInJavaScript": "分類コード",
       "BindingInfo": {
         "TableName": "YBS分類コード",
@@ -55,7 +56,7 @@
         "GUID": "fb50ad69-4448-460e-97f6-711950e5d8e7"
       }
     },
-    "2,6": {
+    "3,6": {
       "NameUsedInJavaScript": "分類名称",
       "BindingInfo": {
         "TableName": "YBS分類コード",
@@ -63,7 +64,7 @@
         "GUID": "eb06784b-dbc4-4a8f-a5cd-69f3a983ed9e"
       }
     },
-    "2,26": {
+    "3,24": {
       "NameUsedInJavaScript": "主管部門",
       "BindingInfo": {
         "TableName": "YBS分類コード",
@@ -86,7 +87,7 @@
         }
       }
     },
-    "2,31": {
+    "3,30": {
       "BindingInfo": {
         "TableName": "YBS分類コード",
         "ColumnName": "審議形態",
@@ -108,7 +109,7 @@
         }
       }
     },
-    "39,2": {
+    "40,2": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -127,7 +128,7 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS分類コードマスタ!C3"
+                  "SerializeProperty": "=YBS分類コードマスタ!C4"
                 }
               }
             },
@@ -156,7 +157,7 @@
                     "MessageFormula": "分類コードが重複しています。"
                   }
                 ],
-                "ID": "11344d74-c0f4-410f-bf3f-ba61c1e38a1e"
+                "ID": "82399dc4-233e-4236-9bf8-a5e9861b4c5f"
               },
               {
                 "CommandList": [
@@ -178,12 +179,12 @@
                             "UpdateType": 3
                           }
                         ],
-                        "ID": "101c1421-6d16-480c-8f13-81a7f14635a9"
+                        "ID": "cf395111-6ac6-4020-b3f1-6946d7ce57db"
                       }
                     ]
                   }
                 ],
-                "ID": "7ddd8e63-8889-4ed2-b016-c960f0cb94fb"
+                "ID": "e96f05d1-59d1-4bff-a2b2-9de5f80ddeef"
               }
             ],
             "Disabled": true
@@ -206,7 +207,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "fffe6cbb-27a8-4c3a-bc8c-7c92fff50f35"
+                "ID": "e4ba16c0-6c2d-47e0-83ed-d441612d7985"
               }
             ]
           }
@@ -219,39 +220,46 @@
   "StyleDatas": {
     "Styles": [
       {
-        "FontFamily": 0
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1
       }
     ],
     "Types": {
       "Strs": [
+        "[AUTO]General",
         "Body"
       ]
     },
     "CellStyles": {
-      "1,26": 0,
-      "2,2": 0,
-      "2,26": 0,
-      "2,27": 0
+      "1,1": 0,
+      "2,24": 1,
+      "3,2": 1,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1
     },
     "SheetStyle": {
-      "FontFamily": 0
+      "FontFamily": 1
     }
   },
   "Spans": [
-    "39,2,2,5",
-    "3,1,35,36",
+    "40,2,2,5",
+    "3,2,1,4",
     "2,2,1,4",
-    "1,2,1,4",
-    "2,6,1,20",
-    "1,6,1,20",
-    "2,26,1,5",
-    "1,26,1,5",
-    "2,31,1,6",
-    "1,31,1,6"
+    "3,6,1,18",
+    "2,6,1,18",
+    "3,24,1,6",
+    "2,24,1,6",
+    "3,30,1,6",
+    "2,30,1,6",
+    "4,1,35,35"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "YBSメニュー",
+    "Title": "分類コードマスタメンテ",
     "PermissionData": {
       "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
       "permissionResource": {
@@ -274,4 +282,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//d81r1bWw03nu8bXdyvNlF0sI9X/WqMlFNNbJmLBU+ctXY0vbi+vVYMheYkR6kNM/GvSd/IRzkjznA7oTGm6Q0VdaDu6EDnkY1DGuFyl+jxijUU7Ds/6supMbihNCHaltNYzJog72KG7tKnyRB8ijOsM86jJPFBJewlYjKoV7BHnlFNg+g7I91KYmOjj9KWjg1/YQXJqMfYbfpBsoFpk9+TJUvJh4aZJtrN6gLUEV2h/CezkfbU+uZWBiK0O6Rrl5ln2WwyoWprprSW6XrfzBh3llLSQo6r4akpk9bKVUYyVAJs8iNwP2iG0M17g8xmWTPTUkeGFVOUpabnaiRkg5dbbDGskmXbfcyCiX2t591CLH1ggUgCkpPzT+HyH6Y/lmC6g+QdO0u9zEFWGtdhMK8Uz27QS9SBPDRORYuPdCitV9oADiPAnOn16HPLRggssiFDfq8xqY+51fkmmv7XKAsxFkR1cgHYKtmzpUI/pLiZ6q8SXcjZ2R2gcxHhmYQlt/7QhLwKwI5EasmjhjdYKnE+c8AwCtoouPqRtGwLR0E6zaJv7eX4jymXy9pNnaZ54eXAs+5eKTA7PKcCZVmeS5gcciCDAZwrIbPPqKaUp5yIiWlFULHfkm2MHtgaAy6EIGdmQHHH7r/gT221SRE6ddw9xWcOlwpZA9mg7lO65zC+ylKHpkjKNJjwEEk6sUcgl0u4NiduwoG9wn97uK88Rbeln4JLyR+cHm+z6hD69amZ/3u1GUdhZZRCd7f6oXJynWRchkdN+kmoJFJVom/sK6HzEuVguAj9aP/u82l7MRkC5Ese24mnFjqtSOPFTf+rMt9bNS3yGuxoK8+walknUmgcGyq+2vHHIFK9nUPz4YKUdKsKTXOGOHONobv4wqAOwIXypeLQ9WB24uoZiI/A2RTQ==|920
+}//umAWnFT1/1N+BvUxq2PgB2dt0PBU6WD3C1NmMkWeCCxtAYAkHtN7uqGTwBsSm5Vm/XCyzbbVmPc7ua4+EkHcjOxMlJM24gffStRqxxPuRvo1ArjlOV6ukihteCd1qaY1kjt4KAs814Fd4Os38/alfYkeCXEFblSAag7yYbl2nC/V+oDz9/OlxLwjxlx1jm8cg3MOzSmyP+7VyomTLZAaVA5y/b4cUjq4CdeoM7MTlObtDDazs3SBQoPHVXJgfKN8DeV6/m3T6fC00v3ba1M0EonSWU+vxShEPX5nN5zkIH3D2TQE+wP4u4ChD3K/eQqI0tAPHSNUIdKG3g1vaflz6fHCgGG0y754IoqRC10cgyWG9CvArj398DOQd69GWmKMcT2yUpRSXRbmbrGiW7WzmVr8yLDDrJaUvzT0507wR7p7hS5XaaB4yPtyIta4Rwtk3AdS/bm1JK4dmAP3dxzyALPWdtIgU8lkWkoPZ/hZnRMlQsTYuKMoy/CsY3ru4ibBQfiTKZWPCii56zWafVkkUV3Oo+E6dt96Dp5SUpUsalZnry9qD3msbzbXjZxBo9KDDZmcjXSdsjcgsq6kDWzyyX0Rw+I9XQQMCKaOVURaKGQBngXo5DcTsMw8a42N9woIfp7SVOAw2tPdjmlgReY/dq6awjhviRN0Yvmpmv5zcGiBlJLy+4xnhM7OQKPOFiT9FcsTO2S4zlQdXIkf9zYqehFMRmpxdKstk9+BF5sIhSReqYHd5hjN0ZI4LIDhaKRwgSfSRHkz1WQ7CRHpWL0BkO9RtxbSHSgCeOGtjvue8ABuPl35T6ht7u2l7NOAJxDM9zywVDGal22YDaSSw/P8h1GSFwVmgH52O8AZuBWULnjk8bwfOUXdQRD4z1v6Min5NPBmsoMMjyq9QrjsKWxTAA==|920
