@@ -209,7 +209,20 @@
   },
   {
     "ModuleName": "Upload",
-    "ModuleType": 26
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-12T08:59:49.1664939+09:00",
+    "ModuleType": 26,
+    "ToRemoveFiles": [
+      "Upload\\04331e4b-b135-438d-9844-ccbc39e2c3fe_バーコードリーダーマニュアル.pdf",
+      "Upload\\39e899b3-b013-41b5-a01f-bf68c86d1357_YMIA　2026年度カレンダー.pdf",
+      "Upload\\445659b9-af53-4aff-bc27-44ae78358c9a_Forguncyライセンス決裁.xlsx",
+      "Upload\\85125d0b-0ae1-4101-be07-27880902f9b1_Forguncyライセンス決裁.xlsx",
+      "Upload\\dd7387de-ab6a-46c6-93b4-0f7985147e34_Forguncyライセンス決裁.xlsx"
+    ]
   },
   {
     "ModuleName": "PublishConfiguration",
