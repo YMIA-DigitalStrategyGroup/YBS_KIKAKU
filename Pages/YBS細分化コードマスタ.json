@@ -1,6 +1,10 @@
 {
   "Rows": {
-    "Count": 42
+    "InLogicalVisibleIndexes": [
+      41,
+      42
+    ],
+    "Count": 44
   },
   "Cols": {
     "Count": 48
@@ -8,7 +12,8 @@
   "Values": {
     "1,7": "分類名称（自動）",
     "1,37": "結合コード（自動）",
-    "39,2": "更新"
+    "39,2": "更新",
+    "41,15": "Excelインポート"
   },
   "Formulas": {
     "2,37": "C3&W3"
@@ -56,7 +61,7 @@
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "分類コード2",
-        "GUID": "1a0443dc-8093-4e7e-925e-93b1e9426d1e"
+        "GUID": "7e73fe0a-0052-49f5-bfe5-c672cd84d1bb"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -149,7 +154,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "172aacb1-88d1-4292-8a82-fd351be2981f"
+                "ID": "f1ee3a53-230e-443f-95c2-a38f11b71f2d"
               }
             ]
           }
@@ -157,12 +162,57 @@
         "Text": "更新",
         "TemplateKey": "_RS_Normal_Style2"
       }
+    },
+    "41,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "リストビュー1",
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS細分化コードマスタ!C3"
+                },
+                "ColumnName": "コード2"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS細分化コードマスタ!W3"
+                },
+                "ColumnName": "細分化コード"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS細分化コードマスタ!AC3"
+                },
+                "ColumnName": "細分化分類"
+              }
+            ]
+          }
+        ],
+        "Text": "Excelインポート",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "File/348_excel_file_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
     }
   },
   "StyleDatas": {
     "Styles": [
       {
         "Background": 0
+      },
+      {
+        "FontFamily": 1
       }
     ],
     "Types": {
@@ -173,7 +223,21 @@
     },
     "CellStyles": {
       "1,7": 0,
-      "1,37": 0
+      "1,37": 0,
+      "39,2": 1,
+      "39,3": 1,
+      "39,4": 1,
+      "39,5": 1,
+      "39,6": 1,
+      "39,7": 1,
+      "39,8": 1,
+      "40,2": 1,
+      "40,3": 1,
+      "40,4": 1,
+      "40,5": 1,
+      "40,6": 1,
+      "40,7": 1,
+      "40,8": 1
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -184,14 +248,15 @@
     "2,28,1,9",
     "2,37,1,9",
     "2,7,1,15",
-    "39,2,2,7",
-    "3,1,35,46",
     "2,2,1,5",
     "1,2,1,5",
     "1,7,1,15",
     "1,22,1,6",
     "1,28,1,9",
-    "1,37,1,9"
+    "1,37,1,9",
+    "41,15,2,7",
+    "3,1,35,46",
+    "39,2,2,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -217,4 +282,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//MdS9uI7qiWnIX0xgLnVzUkBQm93PwdSPK/eDb2b46GPUuOeUK96Sjx+FNzl8xf9d1tcgufL5Z46WUUr+uQrdFNXLu0KRRpHpZ7qhiie0QX72aEgGmcl6kOvadb+8WRYjaT6SglpFdYcCVVujAcX2RUelvYIfas9Xkq9hsU/PAy8Cz0+lxbXUZbn/a7hdTClUr4G40vS5LdNN8Tuj5eb7cCX4VaTTpNg3fG6OwNm8Ku/hLOtFSV51L3jWngdJEqYYscYr8KLTewxGetuUtUg8vK0Lj7Lj+M2d9nk7zZ4XQeqRYI7iT/W+kbg3fbXbchoBhwRwTavUKDsD2Pkk1x8Z9trVklGCsvg5kqaNSmOQpUgLWnCnAILm38nCKRHDUpfJ/YeWPmZ765hxcZ5+3+BGGr/RKmFjokWmVS4CXZjWBcneKA7BHpvPvnvWJeepp0noBaXXxGCABs48UAi2vxEJ3fzbH+Tprp3ePmImGuoaxjL56/Zf9b6oKJpUxg3jmITfyzupELCQCmuVsNQCIKdKVofwC+f9fIIV5B3RH4/2VWmQnlDqbkWyNNdu41dtyIANPwHoURAoFzwOmRZtwYwlLfMJGxdJ/zkBqSODAPa7dBGbo00duxfGpiMzjqGREy0Sgg96bb1OSreJVr6LWjzJAgX3ecKwMf8uHz4XIGeRn79QV1Cif2oOse/1c6n52eWBh3y/hI9Ka17pdh6z/S2mLhszzUWUlQbkY3452d0aygH6iM2Rr7bu9VgaOVSrKn8e1PZ+E9vPJi2jYvdAjybuvnbAQPf5VunUXvp/WjtBAvdqmg5osjRk+cUd/lXvTP/BK5boEpwwicZxFHyeQwez5oEt75Bnloy9+9A+XXcgVGch4iZDSWncKt8WDLM203pKDPUAF2AsLCfXe8zeRCaiuA==|920
+}//V2D7+2CkVJrefPuu2W3DTXaIr+Ls+GPP1vgqWmpGwzTwK01wPDX1kI/TR0N2Uj4tHX3VagjQ9K5ZA4zXcV1utQFHmksLLHhlGoNIIBb+ixvt/nuNDNwvGDccOM3o8VeTypg1pgnjvW7dqpYNuYOTCr7FQ8DwA14jl9pcezT9Mf81tyZKfQfBB72EfmFW7kls6RM8gk7LkzdAv208D2cbhOWYMc1gdaGikjD113u33zbvmfScZc9J8CNjzOH9OBvGFXXe2IuvEemvziJTR7xD5NZP1/NDvHVTpUay4rqwkfYQfRFMYzju8pYhGkQR6H0dnvBnNinwrt6fIR2eD1E7QDxML5xGzUu9sA+YV/NdxZzemeBH59ctEzL/HnqwUBzFixyLUJ8t6qpG6I0HfkJaTlkrB+mMlj/f7Kd+IdHkEuTGIAfow37BBahMgMDj9R0i/8tT/1HE2/JkQTf8PJyGVr+QFvktBHsTGdTO0PyUgzEt9QWTaPblaGHGvWBe9in0NJp9C6FcR6/1QQyooBtECuFF059MK0bxZVex8dovK9pKkugo0pczaQqUScRkrzKi1zkICyfTcnbUBrwQg1lqms3T7Dr/dbauQFJiFuojjApyzpRnREo+JkSg8e55/qKr5CrB1HXVagtqMS6oqsJoXeRIC6/1TQJE+9dyE8Ep0yDvh+Q9RDHMgznOh1LAGRmIPYHERCi3xVXHTxbSr9KvC0UloajViatuIfzMx/0hcHZwXFqkQtWaRVgHvGjEG9tev0q/7AcwTrnflSUegRhqPbhq74oRzEW4Rw1Ya4nxR+vmLECa5chBNNulDZIrK49FYTrvgK/B41iTG2+JbfgmmVC9p2cG3crTUzjQ3G+10PKXeENvmSNGxPDTqGrr/pikKCCVaKWytvIsx6DNtwWERw==|920
