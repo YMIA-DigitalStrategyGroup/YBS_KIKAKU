@@ -3,6 +3,7 @@
   "Columns": [
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
       "DatabaseColumnType": "varchar",
       "MaxLength": -1,
       "Name": "分類コード2",
@@ -10,6 +11,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
       "DatabaseColumnType": "varchar",
       "MaxLength": -1,
       "Name": "細分化コード",
@@ -57,6 +59,10 @@
     "SourceTableName": "YBS細分化コード",
     "SourceTableSchema": "dbo"
   },
+  "PrimaryKey": [
+    "分類コード2",
+    "細分化コード"
+  ],
   "Relations": [
     {
       "PrimaryTable": "YBS分類コード",
