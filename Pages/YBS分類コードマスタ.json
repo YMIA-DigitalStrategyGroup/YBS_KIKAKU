@@ -3,7 +3,7 @@
     "Count": 42
   },
   "Cols": {
-    "Count": 37
+    "Count": 38
   },
   "Values": {
     "39,2": "更新"
@@ -16,7 +16,7 @@
         "RowIndex": 1,
         "ColumnIndex": 1,
         "RowCount": 37,
-        "ColumnCount": 35,
+        "ColumnCount": 36,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
         "ShowColumnHeaderInDesigner": true,
@@ -25,7 +25,6 @@
         "UseSimpleBar": true,
         "AllowEditInListview": true,
         "AllowAddNewRow": true,
-        "ShowDeleteButton": true,
         "RowHeaderContextMenu": {
           "ContextMenuItems": [
             {
@@ -56,7 +55,7 @@
         "GUID": "fb50ad69-4448-460e-97f6-711950e5d8e7"
       }
     },
-    "2,8": {
+    "2,6": {
       "NameUsedInJavaScript": "分類名称",
       "BindingInfo": {
         "TableName": "YBS分類コード",
@@ -64,7 +63,7 @@
         "GUID": "eb06784b-dbc4-4a8f-a5cd-69f3a983ed9e"
       }
     },
-    "2,28": {
+    "2,26": {
       "NameUsedInJavaScript": "主管部門",
       "BindingInfo": {
         "TableName": "YBS分類コード",
@@ -87,7 +86,7 @@
         }
       }
     },
-    "2,32": {
+    "2,31": {
       "BindingInfo": {
         "TableName": "YBS分類コード",
         "ColumnName": "審議形態",
@@ -114,12 +113,88 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "分類コード数",
+            "TableValue": {
+              "TableName": "YBS分類コード",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "YBS分類コード",
+                  "ColumnName": "分類コード",
+                  "GUID": "354c762d-3900-4308-a039-1b13fb5d30bd"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS分類コードマスタ!C3"
+                }
+              }
+            },
+            "ID": "96c3cd3ddc0a4eb5aad945edf56dd3c5"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=分類コード数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 2
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "分類コードが重複しています。"
+                  }
+                ],
+                "ID": "11344d74-c0f4-410f-bf3f-ba61c1e38a1e"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "確認",
+                          "FormulaText": "マスタを更新しますか？",
+                          "YesButtonText": "はい",
+                          "NoButtonText": "いいえ",
+                          "ConfirmIcon": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                            "ListviewName": "リストビュー1",
+                            "UpdateType": 3
+                          }
+                        ],
+                        "ID": "101c1421-6d16-480c-8f13-81a7f14635a9"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "7ddd8e63-8889-4ed2-b016-c960f0cb94fb"
+              }
+            ],
+            "Disabled": true
+          },
+          {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
             "ConditionAndCommandPairList": [
               {
                 "ConfirmDialogSettings": {
                   "Title": "確認",
-                  "FormulaText": "マスタを更新しますか？",
+                  "FormulaText": "マスタを更新しても良いですか。",
                   "YesButtonText": "はい",
                   "NoButtonText": "いいえ",
                   "ConfirmIcon": 1
@@ -131,7 +206,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "8476d9e1-9408-4d46-9bd2-757a1ec5e728"
+                "ID": "fffe6cbb-27a8-4c3a-bc8c-7c92fff50f35"
               }
             ]
           }
@@ -153,25 +228,26 @@
       ]
     },
     "CellStyles": {
-      "1,28": 0,
+      "1,26": 0,
       "2,2": 0,
-      "2,28": 0
+      "2,26": 0,
+      "2,27": 0
     },
     "SheetStyle": {
       "FontFamily": 0
     }
   },
   "Spans": [
-    "39,2,2,7",
-    "3,1,35,35",
-    "2,2,1,6",
-    "1,2,1,6",
-    "2,8,1,20",
-    "1,8,1,20",
-    "2,28,1,4",
-    "1,28,1,4",
-    "2,32,1,4",
-    "1,32,1,4"
+    "39,2,2,5",
+    "3,1,35,36",
+    "2,2,1,4",
+    "1,2,1,4",
+    "2,6,1,20",
+    "1,6,1,20",
+    "2,26,1,5",
+    "1,26,1,5",
+    "2,31,1,6",
+    "1,31,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -198,4 +274,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//+tToeyyIXNdzOSMzHSxcauhWf/vcVxKpVtQ7THf/eRc2PwuCXbh2AKcjqIcTXlN2RusLQIeIqKvst/RrbkMSpBiyR/g2067ihDTAJ8W+2lKT8Fb+Mlt+M3mXfXTXEXFGDU4rYBhdOTjFZEzX1Jz40Vah0vuqcGreaEth0a7/5znvi2dt0yv2oNDP+npCW+cs//KM9frkUmqk3gVBmx6IsiwJsKgXaeQeAwGMAk0u/hglYdfmsLBeqHBi+INgCri96mVUCxxRlmbvzquwDgiNmZ+a56VgYDcOZc4dGpbqp0S2Gz0mczS/joZvu9B5n6QY5GyzfopkyYt42qAXtbOBeQFTSPuHPTIPMgmz4lOdl5ZqUr33s6Eg+4YI0k+oIPt+/WWeGJPEHh57Bcg3Dxq1EFVkM7B/6S67SFE0Jik0GP7ZyXkOFi+HFjY5cHr4Ux+gGMbT17D2ERNO+Cd+GNm/VNSO27HtWwebP27oeQuKl1uI8xII4ABqs4JL9RavnOW1QurArH3PyhwGRWZaVcySUyYX/DxGZ5oVFssOkKRcOM9cW5WAuujjAFblPbBxhkRE0fxgTNsz/Zkc9vcUCHSi3PHPo8AYNJRsHU58HPuKt2k700mw/313JOiEe1rcI/w6wUx9Ic3/UEaBXgnKweehUdocRI5pkz7QZpul39oF1EKwg2MMuiWFvR9qJCX7a60PmV6PQNDWxNlomu8B6N/17QSSTw4MOtlWVX4bS/QsF+/Ka49ym9zxpekWdfcAP+dOnWYKRkFlzZYeOU18m7w9hoPpCYUpZKAR+6z0qBM1WKdGtfWgok560CTADrJgLNERV59RtGQm+gFUM/uNi9+O6IHqhCAJGP0c/KbSlp9aB7+UNBZT0K1smVIT2S/2Me27ixfL0BvpmumNPhW5jiKQvg==|920
+}//d81r1bWw03nu8bXdyvNlF0sI9X/WqMlFNNbJmLBU+ctXY0vbi+vVYMheYkR6kNM/GvSd/IRzkjznA7oTGm6Q0VdaDu6EDnkY1DGuFyl+jxijUU7Ds/6supMbihNCHaltNYzJog72KG7tKnyRB8ijOsM86jJPFBJewlYjKoV7BHnlFNg+g7I91KYmOjj9KWjg1/YQXJqMfYbfpBsoFpk9+TJUvJh4aZJtrN6gLUEV2h/CezkfbU+uZWBiK0O6Rrl5ln2WwyoWprprSW6XrfzBh3llLSQo6r4akpk9bKVUYyVAJs8iNwP2iG0M17g8xmWTPTUkeGFVOUpabnaiRkg5dbbDGskmXbfcyCiX2t591CLH1ggUgCkpPzT+HyH6Y/lmC6g+QdO0u9zEFWGtdhMK8Uz27QS9SBPDRORYuPdCitV9oADiPAnOn16HPLRggssiFDfq8xqY+51fkmmv7XKAsxFkR1cgHYKtmzpUI/pLiZ6q8SXcjZ2R2gcxHhmYQlt/7QhLwKwI5EasmjhjdYKnE+c8AwCtoouPqRtGwLR0E6zaJv7eX4jymXy9pNnaZ54eXAs+5eKTA7PKcCZVmeS5gcciCDAZwrIbPPqKaUp5yIiWlFULHfkm2MHtgaAy6EIGdmQHHH7r/gT221SRE6ddw9xWcOlwpZA9mg7lO65zC+ylKHpkjKNJjwEEk6sUcgl0u4NiduwoG9wn97uK88Rbeln4JLyR+cHm+z6hD69amZ/3u1GUdhZZRCd7f6oXJynWRchkdN+kmoJFJVom/sK6HzEuVguAj9aP/u82l7MRkC5Ese24mnFjqtSOPFTf+rMt9bNS3yGuxoK8+walknUmgcGyq+2vHHIFK9nUPz4YKUdKsKTXOGOHONobv4wqAOwIXypeLQ9WB24uoZiI/A2RTQ==|920
