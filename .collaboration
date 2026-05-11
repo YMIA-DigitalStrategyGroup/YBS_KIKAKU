@@ -134,7 +134,17 @@
   },
   {
     "ModuleName": "PCPage/YBS分類コードマスタ",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-05-11T16:41:56.5284885+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS分類コードマスタ.json",
+      "Pages\\YBS分類コードマスタ.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS一覧（詳細",
