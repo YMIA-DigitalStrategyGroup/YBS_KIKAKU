@@ -3,6 +3,8 @@
   "Columns": [
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
       "DatabaseColumnType": "varchar",
       "MaxLength": -1,
       "Name": "分類コード",
@@ -57,5 +59,8 @@
     "SourceTableName": "YBS分類コード",
     "SourceTableSchema": "dbo"
   },
+  "PrimaryKey": [
+    "分類コード"
+  ],
   "Indexes": []
 }
