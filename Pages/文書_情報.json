@@ -94,6 +94,30 @@
         "ReadOnly": true
       }
     },
+    "5,15": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "分類コード",
+        "GUID": "cf007058-2764-4c5d-9ca6-2c7e5f188520",
+        "RelationBinding": {
+          "RelatedTable": "YBS分類コード",
+          "RelatedColumn": "分類コード",
+          "DisplayColumn": "主管部門"
+        }
+      }
+    },
+    "5,22": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "分類コード",
+        "GUID": "69b520a5-1a7d-47d2-9800-c39748dfbb7e",
+        "RelationBinding": {
+          "RelatedTable": "YBS分類コード",
+          "RelatedColumn": "分類コード",
+          "DisplayColumn": "審議形態"
+        }
+      }
+    },
     "5,38": {
       "CellType": {
         "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
@@ -109,6 +133,13 @@
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
         "GUID": "7c7b1c4d-d5e2-47a6-a802-1276483ab21e"
+      }
+    },
+    "6,22": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "5b6d0189-d042-46d2-9848-f44d0f5ed737"
       }
     },
     "8,4": {
@@ -264,6 +295,11 @@
       }
     },
     "21,6": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "付表添付",
+        "GUID": "6c7bfd5c-7708-425a-acd7-105059bd23c8"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
@@ -275,6 +311,11 @@
       }
     },
     "27,6": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "規格PDF",
+        "GUID": "beaef9f5-256c-43fe-9b0f-ad61bdbc06d0"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
@@ -520,7 +561,8 @@
         "FontFamily": 3,
         "HorizontalAlignment": 6,
         "BorderTop": 2,
-        "BorderLeft": 2
+        "BorderLeft": 2,
+        "ShrinkToFit": true
       },
       {
         "BorderTop": 2
@@ -708,6 +750,7 @@
       {
         "FontFamily": 3,
         "Formatter": 14,
+        "HorizontalAlignment": 11,
         "VerticalAlignment": 12,
         "WordWrap": false,
         "BorderLeft": 0,
@@ -1016,9 +1059,9 @@
       "5,13": 22,
       "5,14": 22,
       "5,15": 23,
-      "5,16": 22,
-      "5,17": 22,
-      "5,18": 22,
+      "5,16": 17,
+      "5,17": 17,
+      "5,18": 17,
       "5,19": 3,
       "5,20": 4,
       "5,21": 24,
@@ -1585,18 +1628,9 @@
     "5,38,1,4",
     "12,38,1,4",
     "32,22,2,5",
-    "12,1,4,5",
     "12,6,4,21",
     "18,6,2,21",
-    "10,1,2,5",
     "10,6,2,21",
-    "27,6,2,21",
-    "21,1,5,5",
-    "21,6,5,21",
-    "27,1,2,5",
-    "18,1,2,5",
-    "16,1,1,5",
-    "17,1,1,5",
     "17,13,1,14",
     "16,13,1,14",
     "8,1,2,3",
@@ -1620,14 +1654,23 @@
     "5,1,2,4",
     "5,5,2,4",
     "5,12,1,3",
-    "5,15,1,4",
     "5,19,1,3",
-    "5,22,1,5",
     "6,12,1,3",
     "6,15,1,4",
-    "6,22,1,5",
     "17,6,1,7",
-    "16,6,1,7"
+    "16,6,1,7",
+    "21,6,5,21",
+    "27,6,2,21",
+    "10,1,2,5",
+    "12,1,4,5",
+    "16,1,1,5",
+    "17,1,1,5",
+    "18,1,2,5",
+    "21,1,5,5",
+    "27,1,2,5",
+    "5,15,1,4",
+    "5,22,1,5",
+    "6,22,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1685,4 +1728,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//RggjAhg95w59m92cMogxO8HcjBzbxksabClTo8lDK332fOSPhpM90SvDeENBooxzpcVpgtBQYXeLlCfYfPe8uWHBYUhXi11ie2fd30WZu87jgoV13QtpA5BxUragBhIzibbpp58KM9AsVUtpSzswHZ01GWSZjiwLM69kgBL/XaX/aC2VE6ulEvvodKO2LjpALJNkp7RJAXe4XG2CBVwHlg1fZsW0/GgQuJ1k70u76O0nrOdnMajwQtO89/C69ctl5hccZJzAOni7I5XLcRioOUzh9vlD+7whQKozEOKtIx3LeXfuXwVxAqVHe+DuUOyUpDvDX7+k4xUK5LQjPO/T+apu3LCCoUteccgJ7bBApJhSoCx0QnxAM4bWBW7lcuzzuw5KdKk+3JVYgnYaqERvuGaATrxw7YBvwFKog+W6TUr4LuylrNuP2oUXOrMsCK9GNWvm+hMeS+pxq3FDJJpCwP6ryOxUUsJiboqIwn60vcsXVJNJJLArOPQ8B0lJ0a729ed4hW9ScBBpcARppZamA4VZ6A4/5Uks2yleTCRpinWNJceraf2GQxTQ+m8HR0HgZQZblAZw6JuXH2pYr8fq/Y9DO1Amcsbc22lR2eYX8quKKfE7GTuj9tpVo9HWmdNkAje3J3RJQKSkMCxZbQ2CyoHuqToqB7flGf3/80fS7pb8eccRIiLHhWgCJAbs74fjlvps47C7lSPhbHAKaUh4wpbUZRmgANz3qRY+5w1hmacFKtfysRbehJyRZUWL9fK73ObBND0QHda6r5kT7KHZ6Xjpgwq5AkSkb07gW6XX5bFlYsp/TOi6k+NchT4Gxyj7TEeCq26/yJ7lQ5xjGEXku7eYuPXf5ZcORZO041w0xEMlnYo/SigNzyc9wJ2gMCWwGdePsmCBn1vZmzfqeflFWg==|920
+}//u/lraIflx/2T1Ap4myH6CwbPJEdoUHvc9shhlhtJ+cPWzmDeT6G/O3Hfl99r2J+kk4ZuCMxtEhuUSz+czmr+hqA8jlJht0i1lRn34zBIff89HJJ55ww7E3JFWL8D04vk+v7cQiYchCyCVb60ky8aFlRVxQ9RMQ42UpU0x2C/57BrtdAB9IlwNF0kIhx/aR3vDq6RWRU87oTch3/nna6SK0RuxGY3LsthekYqG3/ysbqAj+X7041H2fQZLTDje/0k4g9DV6XHgIbxzd35lYs60MnSpYn0EIO6cDcmtcLTwYJgWY+W95JjbogsR+EJU40rRAMs+Pc4rO3W4g+9i+QRzSyPtknZ/+dJQSQDLrVqLSjW83NOqJrOj3hHywSAredBFpO6sT9Kzjs1gMeIMrnrNnaV8B3mw8d1z429faqMkCxU9Em+Gn58uwUtIe70OLhdEg4OWd30DETnjBPEc0zSggMcFiQ8Q1DXF/hOC8gvRg7IvSzFSmxwIeVKbUIvckbYuZ3QqNw9HHfzaWumtQI42B0KW5VECRzkHSvpxQl5VTXjlKpCOEHDHejHrOXZjzTpg42kBQcKPsW7+Uswcj/JDAXsKkBEaCi6nJ029Qd/vVnkRew1VjvSh/fUOVN42JLsybt0DfwKpHYUYl4xaL3GxwGnBi/ioyb8aeQ3ZuHrNXabAJZvGqF7sHwEnFAOZ9Q+rZOmVzBQ0OnZ6VYPCzlmGTByOfcgEBoN7BqCz4ciOcSQhQUGP8rTIsbOO2Q5IXxqNwS2Ro/l3HwiZ0sfqPC/m4E5HHyzKBi9Er0cBf9kTILYUcCJUguK3QHL35VC8bRIAoveNrYiQK+NaMODSjT7A44+cObuPqXfXYlb9o8yAtPGxxcB+svdToWPU7sm/DljvDFCOCQgIJPyGs3vzIApug==|920
