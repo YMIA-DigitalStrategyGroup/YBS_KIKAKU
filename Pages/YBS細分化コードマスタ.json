@@ -1,32 +1,33 @@
 {
   "Rows": {
     "InLogicalVisibleIndexes": [
-      41,
-      42
+      42,
+      43
     ],
-    "Count": 44
+    "Count": 45
   },
   "Cols": {
-    "Count": 48
+    "Count": 47
   },
   "Values": {
-    "1,7": "分類名称（自動）",
-    "1,37": "結合コード（自動）",
-    "39,2": "更新",
-    "41,15": "Excelインポート"
+    "1,1": "＜細分化分類コードマスタ＞",
+    "2,7": "分類名称（自動）",
+    "2,37": "結合コード（自動）",
+    "40,2": "更新",
+    "42,15": "Excelインポート"
   },
   "Formulas": {
-    "2,37": "C3&W3"
+    "3,37": "C4&W4"
   },
   "AttachInfos": {
-    "1,1": {
+    "2,1": {
       "ListViewInfo": {
         "Name": "リストビュー1",
         "TableName": "YBS細分化コード",
-        "RowIndex": 1,
+        "RowIndex": 2,
         "ColumnIndex": 1,
         "RowCount": 37,
-        "ColumnCount": 46,
+        "ColumnCount": 45,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
         "ShowColumnHeaderInDesigner": true,
@@ -57,11 +58,11 @@
         "CommitType": 1
       }
     },
-    "2,2": {
+    "3,2": {
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "分類コード2",
-        "GUID": "0b40f8f1-eae4-40b2-8062-dbbdb6f17bb4"
+        "GUID": "3ca12b81-03a4-46b1-83d1-9439b782c079"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -99,7 +100,7 @@
         ]
       }
     },
-    "2,7": {
+    "3,7": {
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "分類コード2",
@@ -111,28 +112,44 @@
         }
       }
     },
-    "2,22": {
+    "3,22": {
+      "CellComment": {
+        "Comments": "入力規則：半角英字（大文字）を1文字のみ許可"
+      },
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "細分化コード",
         "GUID": "73c40854-c355-42ce-94b4-9c1bee0bb493"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "NumberType": 8,
+        "FirstParamValue": "^[A-Z]$",
+        "IgnoreBlank": false
       }
     },
-    "2,28": {
+    "3,28": {
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "細分化分類名称",
         "GUID": "d38c4794-7410-424c-99db-feda9be2216e"
       }
     },
-    "2,37": {
+    "3,37": {
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "結合コード",
         "GUID": "755fda5e-478e-437d-89ba-68afb7793176"
       }
     },
-    "39,2": {
+    "40,2": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -154,7 +171,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "14855f77-6beb-4d18-9542-2dc44f971c8f"
+                "ID": "5a6284bb-ecb2-4065-8145-8701d81de3bf"
               }
             ]
           }
@@ -163,7 +180,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "41,15": {
+    "42,15": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -174,21 +191,21 @@
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS細分化コードマスタ!C3"
+                  "SerializeProperty": "=YBS細分化コードマスタ!C4"
                 },
                 "ColumnName": "コード2"
               },
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS細分化コードマスタ!W3"
+                  "SerializeProperty": "=YBS細分化コードマスタ!W4"
                 },
                 "ColumnName": "細分化コード"
               },
               {
                 "Column": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS細分化コードマスタ!AC3"
+                  "SerializeProperty": "=YBS細分化コードマスタ!AC4"
                 },
                 "ColumnName": "細分化分類"
               }
@@ -209,7 +226,14 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Background": 0
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "Background": 3
       },
       {
         "FontFamily": 1
@@ -217,46 +241,51 @@
     ],
     "Types": {
       "Strs": [
-        "Accent 4 -50",
-        "Body"
+        "@",
+        "Body",
+        "[AUTO]General",
+        "Accent 4 -50"
       ]
     },
     "CellStyles": {
-      "1,7": 0,
-      "1,37": 0,
-      "39,2": 1,
-      "39,3": 1,
-      "39,4": 1,
-      "39,5": 1,
-      "39,6": 1,
-      "39,7": 1,
-      "39,8": 1,
-      "40,2": 1,
-      "40,3": 1,
-      "40,4": 1,
-      "40,5": 1,
-      "40,6": 1,
-      "40,7": 1,
-      "40,8": 1
+      "0,30": 0,
+      "1,1": 1,
+      "2,7": 2,
+      "2,37": 2,
+      "3,22": 0,
+      "40,2": 3,
+      "40,3": 3,
+      "40,4": 3,
+      "40,5": 3,
+      "40,6": 3,
+      "40,7": 3,
+      "40,8": 3,
+      "41,2": 3,
+      "41,3": 3,
+      "41,4": 3,
+      "41,5": 3,
+      "41,6": 3,
+      "41,7": 3,
+      "41,8": 3
     },
     "SheetStyle": {
       "FontFamily": 1
     }
   },
   "Spans": [
-    "2,22,1,6",
-    "2,28,1,9",
-    "2,37,1,9",
-    "2,7,1,15",
+    "3,28,1,9",
+    "3,37,1,8",
+    "3,7,1,15",
+    "3,2,1,5",
     "2,2,1,5",
-    "1,2,1,5",
-    "1,7,1,15",
-    "1,22,1,6",
-    "1,28,1,9",
-    "1,37,1,9",
-    "41,15,2,7",
-    "3,1,35,46",
-    "39,2,2,7"
+    "2,7,1,15",
+    "2,28,1,9",
+    "2,37,1,8",
+    "42,15,2,7",
+    "40,2,2,7",
+    "4,1,35,45",
+    "3,22,1,6",
+    "2,22,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -282,4 +311,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//4lGxdQCeNyUSM7beZObyWhGmi6+0HjidCgzEXitIXlKeqmZS6TtbnGOrgxBEwL5SaKykMlAIoW4wL3tvsmCpphTNGQ0M8akpWzZ7i+atl+LdTiV6M5JTVclyg+3Pz36I8QjyZxlpyXw+o6G6GvEaEjpjFkr59iuQWVsoI2K6tElq5b0evoQf/+H9CkV8eNji6YhuOrCVwZz5xPzyWeIcKAFBc9IYxt/eEsQIH7zk3SgAxq6tVQkAsBvq7Y50BTNE9g5Zwmt7d6XZTTVK+s388o0yPsMcpJCpdpaXFMGN0ar+TbUKXNX/MbLJzyYGDT7L540G6iSv6Mv6kVTl/WmdUdkbnaTV98JEf/HpITEFUBnTLdxBGaGSKO8TeYAghxbai/hkZHxlOr3YiS/yybrlU/zC8tINe4iwKBAHIqyJVU5AW+bCvR21Vv0xzWLV9OGQtpR3xTuwmfQs8JwTKRDcSSTDkNo4ahvCw9Ubm5Ohs/gbV+v0EqE1//uuN5ASweWEqmGHb9Bt7+BBAUg8ISAZFU6RjhKjDvDNPB/0UK6oG7+txRFrUDh20IILvXNAB3Ams/fyq6VtMXiHZdNyHLgajKJc9zmODqnmo6Xmo3ltifmmfuHcnaX4BhcetUHbdtJVC3QUZJnDEVfL/OQpb9fvdHYER0yPxcV3YwXIJBtSzbF4oPW114dGl3EbL78mNelnfYA5rxENokwU/IOz8WpMz/Yo9SF3kfU7DAWBijI3jQpGp5kpZ+98lnUK1qHjkyZrdHzVwHbpjXRDuovCzchQz780T08Oral7STRnnpXy1nCDbjDKXPLlBmGrmgoEtPGrCJ0wazUu7s3IQk1wiruJUvvQQ8RIhzmidytFvEVSZVpwbXfUO2e/e9WAR/g6sISec9SHSAN+fRr8tM9qRI72Rw==|920
+}//htbA4cPnnZoxOvmZl7PkDIkC2lC2w71HpMdqtc2TgCJb868WRjFJDkBpiFddCfpXF2aRnpHHzYGaUxQ868vj4wBvT9I1/GDaP6irQU2JqfPzIMRdUgrZU8OWBGWkNCpWWqsUneR9RxhMYa7lY8t6qix6kipErK1Wwets93cHyU05K4LJ7YBzhEGZFvQnbs+Yw+X/FVeYb2FVvZe7pb8YP4aEW5zpI5sTKFrxrI+vEUNfv+szaF8NQ8iJW4MACG/HjWbzEtD6pS6DiHVZESKfc+m4r0h5k17Cq022MXIJFuSjIw5iASsSPfMnk6cdoaP+8kCSvq+ezz98R2veB8rOO/kbu4GknHpX6vbauOsFXKt4iHlgAiYq7exqENp4ORwsR4yBYbs3g5CM7Mz7m2s2rkYLiHlPOiPdyMJLwenmspQ27sR27Pd1vL5u2J0OS+w3X2Ikh/FlIzseWlBVBahX0qtOKMjYjdp+JSeu/3kliLbFabjZ6FafSLzMm+ZTy0m8dLXuTcaPrb1B/BJcsKPGWAoKUop4aiYvQPyaAFzWXfjxPU6QYwuHdo4/Dc3LNCyYnCq7WCkdvx2L3acNJdYHcs4sE82eZVTUhCJ8Eu+cS9t+wB1wlfg+fIj3KhmbdLrvJ60TBEc7qBaFe9xiwLpvkdA07eASVnjjYJPM5V1A/UEKAprOdsG3g+9tNrzSwoudd82tZIJr4HnqL3j20rhi37Gk41HTxvlqps6M6v250EAKeJ8k6YRoS6ys1ZdKHprM/Uv2Ql9o/uQ55EUu2q2t3DFtmVhR/yuT1Ba2nyCOvO22kUdPgJVoNkeS4TKhPliVdnlzq8b7WPpeC5Ehb+SCOaRB16aoBINZGAYINHJBrbIhOu3Lugdv9XWFUFGTCZbIkIK7nRRpZdKV723m1d+duA==|920
