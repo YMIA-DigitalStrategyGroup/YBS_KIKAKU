@@ -19,6 +19,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
       "DatabaseColumnType": "nvarchar",
       "MaxLength": -1,
       "Name": "主管部門",
@@ -26,6 +27,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
       "DatabaseColumnType": "nvarchar",
       "MaxLength": -1,
       "Name": "審議形態",
