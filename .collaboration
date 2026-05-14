@@ -239,16 +239,5 @@
   {
     "ModuleName": "PCPage/文書申請 (廃止",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-05-14T13:45:50.2761824+09:00",
-    "ModuleType": 23,
-    "ExclusiveType": 0
   }
 ]
