@@ -133,17 +133,7 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-05-15T08:54:14.1441253+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（最新.json",
-      "Pages\\YBS一覧（最新.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（申請中",
@@ -219,27 +209,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-05-14T17:23:09.2210084+09:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": [
-      "Upload\\04331e4b-b135-438d-9844-ccbc39e2c3fe_バーコードリーダーマニュアル.pdf",
-      "Upload\\39e899b3-b013-41b5-a01f-bf68c86d1357_YMIA　2026年度カレンダー.pdf",
-      "Upload\\445659b9-af53-4aff-bc27-44ae78358c9a_Forguncyライセンス決裁.xlsx",
-      "Upload\\85125d0b-0ae1-4101-be07-27880902f9b1_Forguncyライセンス決裁.xlsx",
-      "Upload\\8683fd2d-1231-426b-971c-5ee1fc0570e5_書類送付案内_原紙.doc",
-      "Upload\\8db343ab-02ff-4a07-ae2a-33a0fbcb04f4_傾斜試験計測用紙.pdf",
-      "Upload\\999bc70a-9ce2-45af-ae02-a547240ab74e_会議案内（社内）原紙.doc",
-      "Upload\\dd7387de-ab6a-46c6-93b4-0f7985147e34_Forguncyライセンス決裁.xlsx",
-      "Upload\\dda6bdb4-3950-49b0-9ca7-d4d5665f3310_20251211写真1_緒方.jpg",
-      "Upload\\dda6bdb4-3950-49b0-9ca7-d4d5665f3310_20251211写真1_緒方.medium.jpg",
-      "Upload\\dda6bdb4-3950-49b0-9ca7-d4d5665f3310_20251211写真1_緒方.small.jpg",
-      "Upload\\ffee235a-405c-46d6-a854-3b11d01529d1_YMIA　2026年度カレンダー.pdf"
-    ]
+    "ModuleType": 26
   },
   {
     "ModuleName": "PublishConfiguration",
