@@ -213,16 +213,7 @@
   },
   {
     "ModuleName": "PublishConfiguration",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-05-15T09:52:55.2778015+09:00",
-    "ModuleType": 39,
-    "ToRemoveFiles": [
-      "PublishSettingsConfig.json"
-    ]
+    "ModuleType": 39
   },
   {
     "ModuleName": "Plugin",
