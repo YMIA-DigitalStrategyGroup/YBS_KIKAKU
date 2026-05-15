@@ -370,5 +370,15 @@
     },
     "LockDateTime": "2026-05-15T14:01:47.1447587+09:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/画像リソース11",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-15T14:01:52.014308+09:00",
+    "ModuleType": 38
   }
 ]
