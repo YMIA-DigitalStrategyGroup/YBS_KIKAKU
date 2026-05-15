@@ -112,7 +112,7 @@
                     "Disabled": true
                   }
                 ],
-                "ID": "abb16197-c883-4e36-b599-8ae63408d2da"
+                "ID": "7e5f2398-4dea-4700-99d7-4b3345796c25"
               },
               {
                 "Condition": {
@@ -155,7 +155,7 @@
                     "Disabled": true
                   }
                 ],
-                "ID": "30f255e6-b4d7-4f65-8993-313d35bca9c6"
+                "ID": "84e6c738-d3e9-4f04-bd8d-f4ac6b2671a1"
               }
             ]
           }
@@ -287,7 +287,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "0299a0d3-00b9-4c5d-94c7-9a6a38cd5332"
+        "GUID": "2818e1fd-60f4-4f95-afff-c5b5acd2ac34"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -352,7 +352,7 @@
                           }
                         ],
                         "Comments": "対象文書が　「新規」　の場合　→　承認後に現行にする",
-                        "ID": "7edc4161-872e-433e-a59c-b07112c1853b"
+                        "ID": "89305715-7e96-4db3-ad1f-e3a907cb857d"
                       },
                       {
                         "Condition": {
@@ -426,7 +426,7 @@
                             ]
                           }
                         ],
-                        "ID": "3973cbeb-1df5-4758-b297-9d49c726048d"
+                        "ID": "43dcd8ad-0119-44ac-b09b-2a658bd67819"
                       },
                       {
                         "Condition": {
@@ -485,7 +485,7 @@
                             ]
                           }
                         ],
-                        "ID": "3d7f4846-5ded-4281-be6d-f00e80949c29"
+                        "ID": "194562d2-f21c-4d89-9da6-bdfec6f00d6c"
                       }
                     ]
                   },
@@ -500,7 +500,7 @@
                     "ActionName": "承認"
                   }
                 ],
-                "ID": "99456da4-2f50-4bc4-8cf5-312402761125"
+                "ID": "81ac33de-c5b6-447c-8e91-8dcc51cdc1de"
               },
               {
                 "CommandList": [
@@ -509,7 +509,7 @@
                     "MessageFormula": "承認者ではないため、承認ができません！！"
                   }
                 ],
-                "ID": "4f4bb8f7-3c75-4883-bd58-f180caf607d9"
+                "ID": "06240107-e54d-447c-8bf8-4fa6d6ce41d9"
               }
             ]
           }
@@ -545,7 +545,7 @@
                     "MessageFormula": "一時保存のデータは、表示できません。\r\n再開ボタンから再開してください。"
                   }
                 ],
-                "ID": "fb939bd5-6b74-42b1-9b74-681ee814267a"
+                "ID": "acd71f29-9baf-4c5b-91a6-e644d4ea6be3"
               },
               {
                 "CommandList": [
@@ -555,7 +555,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "12dc880e-8129-4922-852a-47d38fadc172"
+                "ID": "9c8d07b7-2ae7-4bb3-8e5b-2121ef91f992"
               }
             ]
           }
@@ -591,7 +591,7 @@
                     "MessageFormula": "「一時保存」のデータではないため、再開できません。"
                   }
                 ],
-                "ID": "5ff70b50-7c1b-49cc-8dca-d3859701f53d"
+                "ID": "27f55196-e02a-4884-b699-32efba8e9a92"
               },
               {
                 "CommandList": [
@@ -621,12 +621,21 @@
                                 "TargetCell": {
                                   "SerializeProperty": "=文書申請（新規!G6"
                                 }
+                              },
+                              {
+                                "Source": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=TODAY()"
+                                },
+                                "TargetCell": {
+                                  "SerializeProperty": "=文書申請（新規!T7"
+                                }
                               }
                             ],
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "5ffd0078-fe8c-4a19-b4d9-9af5b27ba102"
+                        "ID": "8db757c3-35e9-4dd7-b797-527dbe2de971"
                       },
                       {
                         "Condition": {
@@ -660,17 +669,26 @@
                                 "TargetCell": {
                                   "SerializeProperty": "=文書申請（改正!T6"
                                 }
+                              },
+                              {
+                                "Source": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=TODAY()"
+                                },
+                                "TargetCell": {
+                                  "SerializeProperty": "=文書申請（改正!T7"
+                                }
                               }
                             ],
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "b65a889b-78e3-46a7-b4d7-b5770cf79860"
+                        "ID": "8f44a257-28ec-4eff-b429-bf33a709fd85"
                       }
                     ]
                   }
                 ],
-                "ID": "160483e5-2ee3-479a-af82-54d96e899740"
+                "ID": "21af20f0-829e-4d56-83d6-704e22699098"
               }
             ]
           }
@@ -1239,4 +1257,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//7Fg1KhCoRwKGvJ8zb5lHJNM+1UcuXGQqhLIss6wKYrwiWlKhhw3wZIjouQwIsCiER8BqjNvkbpV5qwe4Vy5SxSDQJ83952JMlzenUrD9cYhQNKRGKl9mMDd+Q+XVsk18jLOdojbAjPq+fIc560HnUFsa63N64bJHJbcN/aTlx/UH0xvTxgTzZRgYjWRAjGnzEbK+tqnEEhkVjBi3ycoSPVJvDCXa7coWC1+xg1ykdMRqoqC0EbRK4My9c0krzA6CFSeiqmoHVHYy0SYzmRk6wSJR9q2XTCUHkA4iaYsjYmXM1C08jDIQ2gkY6cpN1ELibzgyvc3/fEpOo9fPXqSXaKfMQ/w4PbxWJFG+oIHf/OgNLYiFq7DPD7+9nWqWundwT52stwNM9qf4P+o278a/QqBEscu6g+ah/jhrWmtQrSF8M8sEvlxsukZerwYA0KySOP7OU25h0m4YsdpvAXZ2xZQ6CvZrHsoDpZIifYVM9oujRzossGjFwfS3K3gRf/8RmtE3NvnC+WdfZygPzwQDZuHAVQ/s4t44u4FpD0byEJH0vFj1T2biEDfEXoAECMDbSFjJhDJefL2wQekKSR9V5zwlC1hRavMtig5WL7bxK8JwkswagHN6Y4Trfb89YmJANtAPCk0YTAz/GI1vM2n9kAGjGSgZtfN6i/7ODkaOeD9kuBEumtyQYmytJ9fsThSm7pxPwzZkskltfdymvPmtpwJeAeHxas9yxvFHPE1UUAUPTLLX653hmjSG4+WFoMRy3AdYezJyqFqALb973BYQb2rMg53qPJ7RCDS4KoF3gXSRYnTExmI6fVfr5/1SyprUyAYI9HTXearLNHSR1lWp/jwbZi8SYEixs5jdKhO1dUQceUYM25kd4ZKg2V6YGGawAK1+GxTpFNXONaKgaWK3EA==|920
+}//2JukuBHB1KR9oFPOfrTe9x4FAgs1othD9aVBaD8CdqLHOb9m9/46+RrdklYU3Hj+YRkhJUKzrFJzCQwhMFep29hVoA/SfzFQUyeuVIYpmGE7T51ik/H8GA8KxIzCKvBclw4GgBhSO9Y5dAdaw155502PWAIUNKJ/+F13at+c8sMkvSgZWcDN9anxBjQBljMVGYh6iSPgLTKq3h/d8FkuWTx1sQ6Q/rtBt6bGw6mwcy8V0PaZIAif5fzqi3usGLMsVVq1kVwv8+ZJafyzND1pzJZR7NZ4naqvH0dBpuyexxKmZ3THoivgRj5ETFGquQa7z9tpbkpvZyYOmwDu4lyHAJNcw5c8w2zcprZn2SPdhAgNKztjwSZb1bSArhUCRUEOe91zT/9bi3FhLDb2nDNxMqXo/8+rQNBk0UK+oAGV5kTtONg79+t298rV/C7HyeVAzhXQS53OvHyJq5IES+8acITQWu5MtKTZ59mq57SF+3DiLTjTZ8aTxqiIMhWmxhkn0MV5hFRQkdSupzxNqgh5dJOwD2E49InKOvTf4y2So71hSeuE6BpZUiGLK9a8+RLBXLF8A05W5GfOYBbJvmwNlqHZnjDDQfcyBZyRk5NGQF+se1XVXNP5MsKgSyi+uDEZ2Hqm+QDwJOhPtGe0G/es7nB8Xfr5oV53hFRApCBx9uVne1Of/9UDfnD9nB7XHg7zZQQKZeid6ZOP6ytTFsLEYGp6eAmS6/iSFopET61rm68LZpQXzAFNh3n84TPPUyQjD0EPKsk6okxlJJMqLmfk3MOY4uAZqJqnmqDthNx3y+IDLbSQ8KLHrW8koB9i4Fj0g23L/feUR+p/DmLIorzuajqqYi1iTPovuZNuxJIXsEpii+o7bY7ZAM1srHA4o+7s04KOcro3UCJ73J03dfFQHQ==|920

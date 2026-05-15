@@ -1,14 +1,14 @@
 {
   "Rows": {
     "RowColumnAttachedInfos": {
-      "15": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 21.0
-        }
-      },
       "5": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 41.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 21.0
         }
       }
     },
@@ -279,7 +279,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "2e61cd8d-ed70-49f8-9807-fbd7fb7ede28"
+        "GUID": "670b60d8-65ce-4360-8458-f9c18e03153e"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -401,7 +401,7 @@
                 ]
               }
             },
-            "ID": "e5571348d62849efa2bd13a9d09bad79"
+            "ID": "67f731bcf2424bcb8723a452badad923"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -571,7 +571,7 @@
                     "MessageFormula": "承認中または一時保存の文章があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "bac42cb2-d201-4a47-b8b0-a46c576b72f1"
+                "ID": "fc08419f-d76f-4316-b740-041827cd42f3"
               },
               {
                 "CommandList": [
@@ -599,12 +599,21 @@
                         "TargetCell": {
                           "SerializeProperty": "=文書申請（改正!AP14"
                         }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=文書申請（改正!T7"
+                        }
                       }
                     ],
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "ab52a3cf-fd9d-437d-a758-542052f057ef"
+                "ID": "54892853-714e-429b-a4c4-e0f27ba5ab54"
               }
             ]
           }
@@ -632,7 +641,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "3a494a73-31c6-455d-bf52-2c6e85462657",
+                  "GUID": "d93cc33a-7599-4289-99a4-92226d1ec62b",
                   "BindingInfo": {
                     "TableName": "YBS規格文書",
                     "ColumnName": "改正コード",
@@ -667,7 +676,7 @@
                 ]
               }
             },
-            "ID": "966f750293664587a0292773fe841706"
+            "ID": "70237ffbfbe74297885d8e9d4e0b008e"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -826,7 +835,7 @@
                     "MessageFormula": "「申請中」または「一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "058b7484-b2a1-4f1f-aeef-e93718c6252b"
+                "ID": "f6288721-65ef-4c15-a7b7-8fa8054945a4"
               },
               {
                 "CommandList": [
@@ -854,12 +863,21 @@
                         "TargetCell": {
                           "SerializeProperty": "='文書申請 (廃止'!T6"
                         }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "='文書申請 (廃止'!T7"
+                        }
                       }
                     ],
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "322d380f-286f-44b4-8051-9bfb82a80e63"
+                "ID": "f98de4d5-91ff-4ce3-bf21-14658b9be386"
               }
             ]
           }
@@ -1282,4 +1300,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//yJzNuJIJLkuPbrEau3Si3iRhpdd4FvjbS16fXOPHcNvUmCUOsQVbcdWClhAux/g+zMAbHMSfQKxTqLI7KwFOeSjXWBmfZi4fET9r7KUx4vivi7Y3QWEatfIbzS9sraWelkS9MX1/NiiAlESAL38cx9nqw1UwGizODRACdaEdhQPUNxie1xnVTCOLr8LXC6WsZOh+d4YzFMsNlw1otHS5iXjyEwQJfUyiXB5aTBp7dIvJ7fPq8bxvusrX7y9Me8cukoGz9MncDmWa0HHIVtxLzdF7deyGQBDKSM+UxW6HSUUmabuZ7TVhv6S7o/sACYrgizZYvbX34qzOT7xZ2Vc2Un3i3q30G8knK9e/f2jzHNKZbDOQmefRED+0+UQktfS/9m+4Mtr12O5JzTeHjoZPonegPwgG2wyl0lOVQGsNV8x4gtXVyhUz2sn4t3L9D0eli+5SO2Kj+kDzMRbgV2kvcS+iqd/V9hGTTXmEMNeB4ghi9IM+bWH0xvFD5U3jIbAHJ1nOyX+/cu/rQKWHM6WXM5vNlCgEyQixt+cGz7D4M8rNG8nE4PG0LkdtqpOwUAwauMHHtUcG64hDHCNO0w8hXXV68FxsNAxXvJEQS4YM/9f92BnJVvIGnCvFarDzjIXazX/zQgpBEU6acAGDdFOWQzIuaCrrZG30GBzFFG2RdXNgXCUhpGvJKeB5hxhwTpkpUsjS7254Z63ZxEiEIBcE9I3M278cAs7w1DhChanmYmCbYN+9UQtqXn9Tr9Bys9dWrJMcEp4PG1rQp5q4YC0Foo7ZhQFMYsQXgLAznvT88pjyD+fznoxzgiEXKxAXngZy2WkV6sPBzYqTh8KNACvVW2ke37cg5yF6OpUWyfmMZSMTa1Rfc3jtTkffZtUuTO5WrZea5TlkpMQ+FGteVYtA8A==|920
+}//z+r8st9nhb0U5x1lxSEPhvXxnyPVlAhJqTZUBg+09x1PtWV5LfqX+6jW7KkgWr60G085Pral/hvrfuTQlX9Vd/QGGgTrx7qR3tAUIoVxZwwfuSNm8WdQFRFRZpn/+OhQzYRwUW7Ihutkbh3aEhm9WBqNC8qoRDbzW6uOl+ucCRcGq1vbykPxrg4RqjLy8HAhQaoqokB/2CsUtPmrF1MQQd5UBdTk2Qu8li5VicYyHwFv2w+rj6amJHKIqzbCbXsFvhts00KzJi3h0HKX0xkLQPM9PD5nJZmAHd0n6HJSeYKSVEfeLkeWTvCl/NTtrNvqQclkTzATWob1IGBcg1eJhBz3ID5Apur3ovgozcoQjoghigyZzcDXzs/cT3+oyP05HCmMjZRpC0Hj/cgMFdwWNf50uS3rSfthE+AzMdgjfpxRUWlXII4yh99iMxsaUXHgEKzHhtHRKrtr6fUbu6WKA1ovc9koclHDQ9tpKaa5N74JH5Vo0lt+3zmwi/bKxeIp+6RTKAcHSf4zwrTMWEjYLgBk4D/kkkCjwM63lnYQ7owa1jkCxaUwJsJCjgbWNT3T+myltIRyTSQUICpe1VXjvb0R7g7Gvh2a2Pv4q1bPXpLbuBWlWvPq6Z+RbvR7Ib36t4YZk1thjRrKjTL0NX5vhREseujpa9Ah4Urj/EKyem+ufbnC42NhJsQULAaeaAER8yt4h6pjjBUbQ9Hn9DqYoIPynKuSwAHqi4vBtBHwP279EYjjoSnbCNhubh0wrgpTilPEB4am+nqnABeILdyMtqcSDqJQtT+gpPbjkw9qYdINL1LlbJIvuX+uXwka+qkyYsC7PKLqcazZVkg+lued7ocpDRjwY7qXk8TNrurbGQfVazppRcV1MZbrvsS/4R6lcrKFzdPx8BSG8+TjAIeSCQ==|920
