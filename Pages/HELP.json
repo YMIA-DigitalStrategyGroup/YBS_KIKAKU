@@ -219,6 +219,8 @@
     "17,12": "パスワード：",
     "17,13": 123456.0,
     "34,1": "(メインページ)",
+    "34,3": "・申請は下のボタンから申請(新規、改正、廃止)",
+    "35,3": "・改正申請、廃止申請、または来歴/詳細表示の際はYBSコード左横の枠を選択してから各ボタンをクリック",
     "47,19": "注)他のページに飛んだ後、メインページに戻ると一覧データが表示されないことがあります。",
     "48,19": "その場合は、🔍検索ボタンを一度クリックしてみてください。データが再表示されます。",
     "71,1": "■タイトル下のYBS最新文章一覧のvをクリックで現在申請中の規格が確認できる",
@@ -3952,7 +3954,7 @@
       },
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Location": "73.24997375328087,1554.6608923884514",
+      "Location": "69.24997375328087,1559.6608923884514",
       "Size": "667.6320209973753,384.33910761154857"
     },
     {
@@ -3992,8 +3994,8 @@
       "ForguncyPictureName": "画像リソース5",
       "ForguncyPictureSourceType": 0,
       "Stretch": 2,
-      "Location": "74.99989501312336,650.5279790026246",
-      "Size": "1347.999895013123,634.990656167979"
+      "Location": "63,663",
+      "Size": "1348,615"
     },
     {
       "Name": "529c6298-bff5-4b03-85f9-6ae050e634af",
@@ -4044,4 +4046,4 @@
       "Size": "396.86047244094493,558.7500262467192"
     }
   ]
-}//3gEnFozxwr7Z7SZQDUOnux37LDVzt2ebeUvPDzqg+rDSlRlgH1jViMGtplaGw0pd/GSWWmRgbXsssNm6OAnXKM8FNT/SyQpsPQy8/6PEPOE01v4HeFQjthR+CMURja06siHG2wiAD45IZmEX/X/J2Wr4mLfm5xRNaLSQvc4E/5PtStcAPjXTtcIGewM0GGQIUA+mB8S/29DWeYM6b8igKhG+3SsKHgKZup4fi5m3mLmxixwXbODEYCVFGoisHnPxLegWJw+hSTZg6V6cZWQexJCUWhoI5pR6XauyHvoiyb4MLKQU3Smzz5N5gtS4ADBsmgV/jUMYcCSQ3OAlk6iODE9C/weo8eREwRU610USGfY07H9kKPaEwNq7/iwT2wMzVx32m9R+r3mzAljoGdRbl9uQpuG9K9KDHFPTJsSpZAGRZ8X7KGkRXEqzj5P8nr4004ppHbdl0G/uRhZG118OU5JNlsJ82Qt8sDspLSI1/HNR+YFh58CLi3nrqSxaSTGtwTiTNiDYClzS5JcAmo0REIECZCh4jFjsuardd57ImwlbgohFdIQUBjAc1PVKxTJTkdbGEoq42hLxY6IoIeQ1nAvx1BOzIyCFtMeJqDUq0OautSCF+0EimG+bkvsV/6v4bYa21SljEzq/gxnCL+XeSx2ze5NUfgU6KPy1CyTJ+i8UUon+T8igCBtwxhMSop3MwWF9X1sBWROp+nPGsKndKp3gKStTRcpmEa6+cfrxuTiMgIhGijgMI+cckL4jUh6PDIO9q+wjKEBtj7GV47k90lPaX+OBG4rjwhToO8n19m6fqK6SqguhLqC769R3488YQOD9pMQA+ItJhkFeF8Iqu4WDdqhrGLi0sm9XLOMw9tplwWWB8h9l2ZGboZXMdu3kK16/dfHotv2PXxzzjN50Gg==|920
+}//MTSNYSIAZRvkX0vG+NQcm0kvAc+BrvsHgxPdib8QJezvxySYEyCtLP0nnT2lOK9wk5ouEroDGNHcvtJbZfAClPFgzyJZD9WeibT8T7e58fv65vGm9MRoMD6M8u20XTSs4d+NTKSWB/QjoeymScQo79JB6aYdLWMwui1qKarXg4sKLdEUGkJfqYwRJEUyxCP1Og2It4StZeNlzP3i5y2xQ07I4C2Bvfc+QEFtU2o0y6X/dL3VM5Jc3qDtWmHvtA7naY/+NvMMl18H4hm+x1XBO5Hz7APHn1r7xDNJnsej8LhbTc5N2/vaOeEr3YU/PRG3Fl8iNr1sNUXl+GIZDrQqycgSMBm+WVmm65tJsw2CwxJDeOVMv8XXBPJOpqBuNawvOyKc9u+WAcxPjPwsjIH16IBFVNNqYzPvIKxKcSmBvHbwy2GVlNX3kSgue/ojwfe6gXpqnvF5HkEALj34ffxLlUbngfcQRk8oewbNcAWE2fTsLKk/IHIvZ87Mwb5jjxYv8sgTpmfFQ5ynTg9VgmslsuFa3lyEKFvturCu1Etu7YULdfTe8kuThDy75A8QoTG2zENeLbVXpD+gpRJBr3djBxINacDqM6RgzA7EuNWHSsvA40OnZou07kYUQmmAduJOIf9KBITo7k1Up/uPkKyOUmSgiSt8qGBiAUvnuxg7r2y2KYd+RgGyIT3SlcCrz60kLzbHAqNBep9oaUox30aa3wHqKuyh4yhw5fda8w+rNdVsiDjSTMbsJeX6deUMt8PkPUnNVx2BCvURGevKskF7OUiAXov8fiA7Z9RRQgXRg29ow0Gfap1kjYsY+x1yJMtPdUSbHVqUF8IMhrhtNh6Auxu3rmAy24yyuqiK65eT5dkTKKnhg2/A9R9b4qSnC66xog8+DXgvKSIUvXC8MQfnqA==|920
