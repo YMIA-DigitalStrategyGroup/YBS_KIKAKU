@@ -237,7 +237,17 @@
   },
   {
     "ModuleName": "PCPage/HELP",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-15T14:21:55.4625609+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\HELP.json",
+      "Pages\\HELP.rd"
+    ]
   },
   {
     "ModuleName": "Image/画像リソース",
