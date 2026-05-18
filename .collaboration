@@ -233,7 +233,17 @@
   },
   {
     "ModuleName": "PCPage/ヘルプ",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-05-18T14:43:14.636957+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\ヘルプ.json",
+      "Pages\\ヘルプ.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/HELP",
