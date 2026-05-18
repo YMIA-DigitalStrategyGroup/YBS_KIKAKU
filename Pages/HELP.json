@@ -219,6 +219,16 @@
   },
   "Cols": {
     "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
       "12": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 90.0
@@ -237,16 +247,6 @@
       "16": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 115.0
-        }
-      },
-      "0": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 33.0
-        }
-      },
-      "1": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 33.0
         }
       }
     },
@@ -268,7 +268,6 @@
     "49,18": "注)他のページに飛んだ後、メインページに戻ると一覧データが表示されないことがあります。",
     "50,18": "その場合は、🔍検索ボタンを一度クリックしてみてください。データが再表示されます。",
     "73,1": "■タイトル下のYBS最新文書一覧のvをクリック（申請中一覧）で現在申請中の規格が確認できる",
-    "73,14": "■タイトル下のマスタメンテのvをクリックで分類コードと細分化コードが確認できる",
     "86,1": "(申請中一覧)",
     "87,1": "「申請中/一時保存」を切り替えて表示させます。",
     "120,2": "②新規申請の場合",
@@ -3871,38 +3870,6 @@
       "Size": "589.6320209973753,384.33910761154857"
     },
     {
-      "Name": "6ae54c84-4d92-4127-9927-e71c371e3850",
-      "ForguncyPictureName": "画像リソース3",
-      "ForguncyPictureSourceType": 0,
-      "Stretch": 2,
-      "StyleInfo": {
-        "Fill": "#FFFFFFFF",
-        "StrokeDashType": 8,
-        "Stroke": "#FFFFFFFF",
-        "StrokeThickness": 9.333333333333332
-      },
-      "IsAutomaticStroke": false,
-      "IsAutomaticFill": false,
-      "Location": "921.2278215223098,1604.5164304461941",
-      "Size": "637.4166929133858,535.0897637795274"
-    },
-    {
-      "Name": "5fb17a20-93b6-4fec-9938-96663d844c1e",
-      "ForguncyPictureName": "画像リソース4",
-      "ForguncyPictureSourceType": 0,
-      "Stretch": 2,
-      "StyleInfo": {
-        "Fill": "#FFFFFFFF",
-        "StrokeDashType": 8,
-        "Stroke": "#FFFFFFFF",
-        "StrokeThickness": 9.333333333333332
-      },
-      "IsAutomaticStroke": false,
-      "IsAutomaticFill": false,
-      "Location": "1573.2001049868768,1600.988976377953",
-      "Size": "693.4896587926505,553.0110236220471"
-    },
-    {
       "Name": "8cadffd3-39c1-4d41-ab9c-557856b766cc",
       "ForguncyPictureName": "画像リソース5",
       "ForguncyPictureSourceType": 0,
@@ -3917,14 +3884,6 @@
       "Stretch": 2,
       "Location": "70.49973753280841,1371.250183727034",
       "Size": "445.7500262467191,183.91496062992132"
-    },
-    {
-      "Name": "709b34f0-b14b-4548-aa41-a61ccc70fe85",
-      "ForguncyPictureName": "画像リソース7",
-      "ForguncyPictureSourceType": 0,
-      "Stretch": 2,
-      "Location": "955.6001049868767,1374.4002099737534",
-      "Size": "552.7499212598425,173.08955380577436"
     },
     {
       "Name": "ccc25676-9c26-4059-90ef-124adfadd9bd",
@@ -3959,4 +3918,4 @@
       "Size": "396.86047244094493,558.7500262467192"
     }
   ]
-}//zXwY3rO6h3dqs4a9HINTiMJJS0Ro/pqb9OSUm+bYL4wbTgI3hX8MgJiUWcZdmZrMC9vpMMSy3PxDRpAGJN0eVn+cnkXwMjDlGXXFJ4yZKL359mGUAhXpg+v0Iwvvl6v5Jhh0gIQv4dHC1TX7ogjFmPiW1/aOkvWuOiwHIpFQeeQ6I3ats7cvV5CmeXiZrBto2QBpmPM0jqROjoeaoSKWylwB+YbONb4LkTm50YlX8fmzvwpLKJt0ydEnloXutT0PMQs7satq8ac1eUAkPBz9k9y4xDE/6+6ComSOXDVlSPRThK+vzb6u9zIthVpOdtAUmbr5rJAE8ln4VNqxSfDoNp0hkyG6eBzE47uEtKGAg0xOP+moSWIm148ZEDxaM4DYFwndQfnA9DUWlGCGhUyo4wNMZzRhaTPZkqg58RQUbVR5aRUP1jW26gpgyUk/EYX1o8Q3eaIVRpkzHLH/WjuS/tPPuahAG2Hs/3756VJR7KbC93csw/TpseFMaeK+qhg9iHtLT0x2Wg8yM6EDiwIDKP+2J8IrHOo3+C5xsJHmAPWou+5GEBYfJfiwMDR/NbWUCCTgbfSxxhB3eXIYSkQtrrvC00zRNawkPOaDjaosZrCebvIVoLMbuhgYSVdou7lmzFrHCgd0RtukOSOpRwLjPWUthpMbU892pDt0vsUG6bxiT/qIbRh9Nc8cc7k4cGV2HBZ5CPfJm4MgxTNZ+Z8IbSpg95KuFADW4RIuCyVi2aiJ5fN51dcmw8XIXJ5nC/s+fbN6cW8RxOlEMLvUBjBNdieSpwm34Vcki8deOjUNsI9IuTdDP70GCQ2NCPPsxOOdEofMFkZIg4lpGpddvYcLxnZqhNLAe+UYUX4Hu++inYVgzVa0ab/9YqGmOleu022wo1f22RKw1kZ6V223HtJNVg==|920
+}//BO2lK+gYuQTZs8BeIC9KY8C71EwUpV+ZZf+pjYVQvTxwu88c8Vzz1UHUa4CG0AtXKYhoPUVZghxCumvZz+TDULBDTepq7maBYyM6Q9ZzUyXFQDWuxV1taLHCPQPpgCHewp6q/Nc0dYFHse8Rq/M6zMioOnrqhIQVodf7p18JQdw7AoDvacbhDGKttqUo4Nqbwc3Ia4QvBgCZiZFjyG1ZjrcbYHzokZwEaW/sua/ZBcqG7aJh+ciwPLVKF9zYz+Ibv7izl2UoOgRH6WWW6CjIXhloc3QFXJx2Y8VhbaxQ/riCMCU7HJTVrWNUWf1pSX5APMFYgxWmmv7yJ7qAnumx63uyReTUN/uYNBKhW1LOLefYv3nxtAiTScsSlsgRZybXpE9Fn4WGwpeGN3cNxyr69Ye1zkOjgh2lFFjPUa/1ztPG6s2sPoptiJMPqXNnbabC1+qgjGSbQN8SFKzljmUBxhD+pEmJ+C6rSHtbsXs0eazQyOy/93mf1SjtKw4tvL/lYNQnnwEbBd6DeR0jjWzzc9qvOU6PAgI2gZ4FuY/BNjHwrIbEmBkcyqlnj3I5RBlI7Bzz3JkCU2ynhjaPBsCJsGQ2CFrV46qkDv9x+AuBRQGcDu6JQ9TLlVn1lj531/j23koZnyFKaHUx3grVjf/uzKJW1PAiPNsixZoByMSUYau1wUisGI2ckpQA81LxfN6PGt4RBiBTotUFQTWcf9So1Gbwd8O9BmCQj6R5z2bN5ump+4BQjMfupivQXHCplEk6jQjZPK5Ss/65UDWgGEgYXODazmY7qnKyIBJgrw+/gt2dbsVlgbARr3QIKvvj65wcVERO23qs+ctp30TNRWgI3PRj3Lta8s7X8fjucajxj4EgByigpD1zIC3q0/k1pS32QvHqpub00TCBI0l9eEtk7w==|920
