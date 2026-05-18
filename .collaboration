@@ -149,17 +149,7 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-18T09:03:36.6991893+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\YBSメニュー.json",
-      "MasterPages\\YBSメニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -203,18 +193,7 @@
   },
   {
     "ModuleName": "UserService",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-18T09:00:20.6987724+09:00",
-    "ModuleType": 11,
-    "ToRemoveFiles": [
-      "UserServiceDB.sqlite3",
-      "CloudStorageProvider\\data.json",
-      "SecurityProviderV2\\data.json"
-    ]
+    "ModuleType": 11
   },
   {
     "ModuleName": "CustomLibrary",
