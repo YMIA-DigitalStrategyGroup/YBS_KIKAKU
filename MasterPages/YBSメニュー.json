@@ -30,7 +30,8 @@
   "Values": {
     "1,1": "YMIA規格(YBS)",
     "3,45": "ヤンマーマリンインターナショナルアジア株式会社",
-    "5,55": "運営：YBS事務局"
+    "5,55": "運営：YBS事務局",
+    "6,2": "ＹＢＳは、「ＳＬ２」となっています。社外への配布は基本できません。"
   },
   "AttachInfos": {
     "3,22": {
@@ -195,6 +196,10 @@
       {
         "FontFamily": 0,
         "FontWeight": 1
+      },
+      {
+        "FontWeight": 1,
+        "Foreground": 4
       }
     ],
     "Types": {
@@ -202,7 +207,8 @@
         "UD デジタル 教科書体 NK",
         "Bold",
         "Center",
-        "Body"
+        "Body",
+        "#FFFF0000"
       ]
     },
     "CellStyles": {
@@ -274,7 +280,8 @@
       "5,57": 1,
       "5,58": 1,
       "5,59": 1,
-      "5,60": 1
+      "5,60": 1,
+      "6,2": 4
     },
     "SheetStyle": {
       "FontFamily": 3
@@ -310,4 +317,4 @@
       "Size": "1280,124"
     }
   ]
-}//Dx95Bn4rOHrVrCLP0Fs8S6iE0xaec6OOXavB9auF1oeDnR23z8whx4PT1wy3N548Sxfwtg76nC/LvnzQrK3sr4jziGhJhpefFQHpxMPDPmoSNXnkZqk/dFrTmpmIAmgcW/M9aecjsarzkPJ0JF8t9zZYOR1CV31o1I7UVKUWi6MP6leF4gRwz9lY3/Qk6YlG9VpJbfjmRxpGWDy+2IyarrKI2PR0aGmGMN176pCTEUnrFsQORxnGsV6/ZUl2dEtZIT8W4RzBi/dGSW/jIaJSi7WuwHMx57gs4FfYuBCqIKJJgMJV1BThhiawj+1S72Mnd4ok+E2WaLFAleylgoMhhQtOAbLSEtlIBDJWBM33x/wCCR6c19F9Fe9bfF7zcKAXNu0YyIMy34jv6E3QhO3H+MAr9DU3C6MLfzsqNR48LOyFFoAmiK1v1tlex51qp91qENCEP+Y2CzA2zcblCWEAikgTw9O9Ab5Gy4q5Q7GOUvC2LTlqmW8IijDi32OyAkdyVtvW8d+ldAdFV6DMRvTQYRjg8N2D3KVGwoCbIx8YgpIKSNuiiOB1Wtl3coo8Xb8ljwJuUpOWn7sQmqcT6JfdB31ZrYSiemga7i89pfQnDRCbjozLAQXZtYPHQgycnVxxfXj8ptuC8Brve7++aUySXQFX2kyMk5hubcp3DRn9ULBqjdcFwX0xEaIWHYGD7BvofLywyKBt+vjf/4LZIxI6r66OlzlgSSftByD2QXRsiHZAZH1h4CiymD+lKmj9M/8Eyk069TysvWd2+3kUz0rHrDG1CTBA0Y9nvFyRIMH33Ga29y3hv6rKCytO7ks2QimjX62pYwAHnQ/DXvA2UfbdhQE//O5G6qwfjYBJpYtPJtKux25nhtbpOclb9ajZN5w3QbOEOIFIyBj1kBw4VVEI7g==|920
+}//DNjT+e8S4cMBz8QfujlYhypAN5t2uiSEO7ESnGHMKiHs+5yJKcl+/E+n2v/l88uzMMo9vT5ObUHna71QHjoGE05UxazH296nSiWBefiBloGrHl4Sqn7mERpc7kM5QC2UaLCzaeoGsupVN0NDJsdlR3e63CbfXz61OKhXxBwRcjrqdEyUiWS3wab5ak+l8/Z7colalu+LLo5NN1F8QBXucsPqKeYZ4JpDzAnupIy1eXgJmsJc9wbDp2imHAEWCxTr2Sh31RNPpSstSzYvMtft8EZTXYfKDO/6D5kl+YWg9ZCvbDMODx96HBPsgT4V9Rqh2qf4samY6C6H0nmeNHBxsIjSFZ6Z6ZG47DfnGdVegzetVWeMsMiYkMr/wdhExGrKNk81EVDJ8BfXYaYjYJrLkdH9ddcqhHN2hetA7PIs/GKZDziTzdxW09qe9XcwU3vgkr2golpuT2QgHTNDOFPpX7c6nKEIXNO5+f1yJbHsA0X9dIlmLGIXB7GvCTnGXb0Bt6U+W6da34vJ440CuaVdVkJ1/b+QRViimU5QnpjgnRs6Ju9QlpGOrm9ilsTIKToGS+bQB6tgzLg9IR8zYqEJy7HVRcXazwkJ6aF8+GiPpHeglYWhPkOZC0MApnueqqsZd1SQVXqD8pkK7j3W+pV49aEDLh42M2vVTN3Hu+zvHCP5m9WnTZLPCU9UTGTL6jb1bf7ls+gerQtoluNCrevqXMTNu0kNYzdYrvr2yS1Ty9PKgrq1Er834v7nxsKjuAqdn1rjrSwYhoG+wd3uPhIzjg4wHkLzQMG7RxI4F7OCXE/34vy6Lfs7btwWMYsCDxng7nZFHL2paalY/xqPs5x41IJAQZEqI4dBJAePu9WOweOPwSJO7wAAsUxAuImL/7R8hdCS0swMmIyv3eodFP3Rmw==|920
