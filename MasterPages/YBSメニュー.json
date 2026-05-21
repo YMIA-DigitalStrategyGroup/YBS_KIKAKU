@@ -64,7 +64,10 @@
               }
             ],
             "CanVisitRoleList": [
-              "FGC_Anonymous"
+              "FGC_Anonymous",
+              "FGC_LoginUser",
+              "Administrator",
+              "YBS管理者"
             ],
             "SubItems": [
               {
@@ -317,4 +320,4 @@
       "Size": "1280,124"
     }
   ]
-}//DNjT+e8S4cMBz8QfujlYhypAN5t2uiSEO7ESnGHMKiHs+5yJKcl+/E+n2v/l88uzMMo9vT5ObUHna71QHjoGE05UxazH296nSiWBefiBloGrHl4Sqn7mERpc7kM5QC2UaLCzaeoGsupVN0NDJsdlR3e63CbfXz61OKhXxBwRcjrqdEyUiWS3wab5ak+l8/Z7colalu+LLo5NN1F8QBXucsPqKeYZ4JpDzAnupIy1eXgJmsJc9wbDp2imHAEWCxTr2Sh31RNPpSstSzYvMtft8EZTXYfKDO/6D5kl+YWg9ZCvbDMODx96HBPsgT4V9Rqh2qf4samY6C6H0nmeNHBxsIjSFZ6Z6ZG47DfnGdVegzetVWeMsMiYkMr/wdhExGrKNk81EVDJ8BfXYaYjYJrLkdH9ddcqhHN2hetA7PIs/GKZDziTzdxW09qe9XcwU3vgkr2golpuT2QgHTNDOFPpX7c6nKEIXNO5+f1yJbHsA0X9dIlmLGIXB7GvCTnGXb0Bt6U+W6da34vJ440CuaVdVkJ1/b+QRViimU5QnpjgnRs6Ju9QlpGOrm9ilsTIKToGS+bQB6tgzLg9IR8zYqEJy7HVRcXazwkJ6aF8+GiPpHeglYWhPkOZC0MApnueqqsZd1SQVXqD8pkK7j3W+pV49aEDLh42M2vVTN3Hu+zvHCP5m9WnTZLPCU9UTGTL6jb1bf7ls+gerQtoluNCrevqXMTNu0kNYzdYrvr2yS1Ty9PKgrq1Er834v7nxsKjuAqdn1rjrSwYhoG+wd3uPhIzjg4wHkLzQMG7RxI4F7OCXE/34vy6Lfs7btwWMYsCDxng7nZFHL2paalY/xqPs5x41IJAQZEqI4dBJAePu9WOweOPwSJO7wAAsUxAuImL/7R8hdCS0swMmIyv3eodFP3Rmw==|920
+}///lh+k3fosEtOe+vCb4YZD+dhEO+qMM5yJOgRXSKciiFh10vL7M+yEZhNjdd97tRmQ1QAXDorNd+sc5480uB+oa5VoweRAPxKPcKQVWVZ9xzfLXIRQVjdsJHIAakZCNDnKotpiR0k6luzLyJThNfBF5VS5wt5rq5JhuHpmQNriVZ7g353+EqIVKC8wJd3F9N6k9ZZqeiQXDLziyIRJKN4RU++Mv0Vq8xuvPqsVA8U81/2zQInNnQHV/bBAa3QKfReeEO6slEmY0bbaLeOnJ13uDpEHauKuP+OTL12a+74ThPHn5ONPlSS6eKxz3CYAnaFDPHCaTb1zwzAbhCsc/pKh1fY497FzcB9nI81vPkKPbLR5Qcx6PHkxyQU8e47b26x5I2v31dZDwF7qa4cCorWHS2WW5/Ajb9J0RmAXz2dX4/osF0t0Z8lCeY2AMvlCqKFLjSkcptLUrpkxdcAnNQDnY9MCNJE++RRmXR7smLXjfST9f8pJy+S2UObGymKUpJlHdNkb7bu752qXz7CNpjPd4cv4ZRxzdvlW4i6d6uOxmHckH43gIze5uPOWR9WG0bPOwogsJlGVRfxjrt3Z6zbRmoMnYvS3rvJHjpqzEPJ0B8sNCtOn4MdMPvpQrY6K3RFHYgEBS9nPCWHokx3+j8xdlenmBm0DJo94VnqjzKWnx9E4/VBDROdgT8asYw6j0RBgdJAYfatV6AZ2YpD1MLigcIT9lOJF6GIrc2oWIogLJFy1BEjORGI4QkX0m/kdBy76xKtpcZj0nWolKcFc1lerOeMrlMUMW8W/L6qOXebWX5yfS2qcw2SGrgy6CfgElkB3ttk55FfVmKBTSMlpAOecPhCkUHMxK8D6rt1MyAPlolx3FiqiGF/Jpq84rFJjEIZG55vhEFT6J8sbQlaCyQn5g==|920

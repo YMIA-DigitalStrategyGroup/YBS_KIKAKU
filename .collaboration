@@ -1,16 +1,7 @@
 [
   {
     "ModuleName": "Table/YBS分類コード",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-21T13:22:24.926636+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS分類コード.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/YBS規格文書",
@@ -158,17 +149,7 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-21T13:25:47.6310094+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\YBSメニュー.json",
-      "MasterPages\\YBSメニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
