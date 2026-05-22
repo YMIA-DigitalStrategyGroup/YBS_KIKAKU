@@ -193,7 +193,18 @@
   },
   {
     "ModuleName": "UserService",
-    "ModuleType": 11
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-05-22T15:08:53.0598326+09:00",
+    "ModuleType": 11,
+    "ToRemoveFiles": [
+      "UserServiceDB.sqlite3",
+      "CloudStorageProvider\\data.json",
+      "SecurityProviderV2\\data.json"
+    ]
   },
   {
     "ModuleName": "CustomLibrary",
