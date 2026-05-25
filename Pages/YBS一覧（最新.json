@@ -36,7 +36,7 @@
     "21,29": "廃止"
   },
   "Formulas": {
-    "6,54": "ROUND((TODAY()-AI7)/365,2)"
+    "6,54": "IFS(AE7=\"廃止\",\"\",ROUND((TODAY()-AI7)/365,2)>=0.1,\"★\",TRUE,\"\")"
   },
   "AttachInfos": {
     "2,17": {
@@ -279,7 +279,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "94c5250c-7de0-4258-afec-4232589f4c5c"
+        "GUID": "254ac488-9a75-4b9d-a923-f22e4cdec17d"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -571,7 +571,7 @@
                     "MessageFormula": "承認中または一時保存の文章があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "8be9b704-893c-4479-8f06-136bdbbec8cb"
+                "ID": "450c853d-369a-4217-8821-34fc39793149"
               },
               {
                 "CommandList": [
@@ -622,7 +622,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "5ed596c0-5f7a-4b72-a40e-78e1a86f4361"
+                "ID": "500a2f9f-cefd-4f7b-85a0-95eb740f03eb"
               }
             ]
           }
@@ -844,7 +844,7 @@
                     "MessageFormula": "「申請中」または「一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "33349929-4447-43c2-ab29-17d23b535aa2"
+                "ID": "a6bd2b9f-4250-425d-ae5b-4a4dc1aca3b0"
               },
               {
                 "CommandList": [
@@ -895,7 +895,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "7e458677-1d78-4bd2-9355-119af8803424"
+                "ID": "b2de8cae-3b11-4dfa-b648-cec5491b8fe5"
               }
             ]
           }
@@ -1273,10 +1273,10 @@
       "Rules": [
         {
           "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
-          "Operator": 7,
+          "Operator": 3,
           "Value1": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=0.1"
+            "SerializeProperty": "=\"★\""
           },
           "Priority": 1,
           "GUID": "2409001a-a408-4850-8a54-45b6e45cbe67",
@@ -1316,4 +1316,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//VpupT7TKNOYXwCl6rMm3e6sEhwhh03vHHFzTWicsKA9lmeRVhqfQW0pyih4TE7Dm7xOqUFuInjtGJOCj/ogO6FACKP82kYH2lklnsYt3pqr7gWxfHjELwrQ9Rgzh/wII8BOJW/fek62N8OVJwoz+2vhYmGwBiIkL7Da9nstuV+EJopqu2AFvGibmvqPWKTzKoXdFtg21pwBERS5YEkqrpy9Zf+YpjDZs+Y9XEurZP7cGZZSo73yXPOfJLmtQ8Zg4268bfYq7Aauxv6dSNO/p6tJHd1dCWST9xKkbAiPFhEG93ekxcTw2oQnGoMgMrdUZT+79Q1vqRod/HMjO1Pg2Zz+qMvQQknPohtZPtA4bfNpYgjcjRetPBmtmM1tn2Jd+8odgjvozXAGMIwMS+rEdM6918xGteeNub+606d1yHl23TYF2KdcV79kr7USrjjwdIV+qA8AkNkHw+TF04r52bH6xvkqAfbGY32THLy4eXYabssgXGYpw05rBP2Uze8PTACQCUn7L7GbYcvPlunMaOZ6ZVpbU4DvWYPRQnqvy1KumuLSnpJ8d+yJf469j8O2CFErh/4EDaYZbKHL6tNBfyozcE1GGOWcnnhQoayn5eNxTGnhRkfwFc9qgFCpq1nVz+GdiHbeJ4SqX2EBkdB8/zbArmnz0ZFk1JLFLfRia5eKMUYfuQJNp2QlMWmJ+FX77Os3Pl7QwJNWQ/VjKijB5GIJpRVTU+aYkde2T/A1CAMPIGC2SYDZnlB171oSPRUKNQW6w6dzihwi/f9STKyuK0J9Q1fTPnwH4SXO0Lbq4WtDjNL2aL6Cq9r828tl7k1FITXqmy4NKeG9qyDQdgWZqNgfqkY3w33NwHjgw2Ed6wdAdOEqp3kB0ORkxsHAH8lOyxleX5oUWiMYtZX2gCRoS7g==|920
+}//u7wA2gBTlPOqJ9XfD7ffLCadxHsTATDJBP3/W8VTmuYjfrrHnu/8GL6Ve6vDGiCvGQoYZCOmJBf2Y5u6/i03ctzmaOaAv2AKihGnktLAEFuHQZyvJIWY7DgpfaAejArBeJcdxMgs8lAL49GvMWlt8sRkoeH2Y09c8hnyQhGXE35bmjFidCpcveVGtFZXBXv8cK8RNUlj8BfNdpxrJ4ONEN7FeEjgwWC95vPzoZ6d4sfR7qGjBdGI1eaiivDDat4iHDDTrguNVHYEvsxymcbEFDHt4VMA8C5u6ah77pAYYQR6Y+NUOuKethcyu1QDhyoYX8475dnm5GnpxkSVurF7ZCAC6W6LHZh1x+kJQQFMcsTWiQF3RF1wjGBs0Rgy5Cq3XLIDhHUIG1NK8v9skVmS1qf7tInaCIoo5lH2vQECS/8nwk7x3TSaewFFe5zmKvOo7Xtnn3PMjj1zfJQPmBo+eFuxLH7hatR/QrdBhmfCbEQGxNe2QokqfbhrpFSC7eTp0pz7Wg5Z2k/M168trKJoK30kHliyTJ3AExD3GJHZZi4OivASKJzbA/qhtCbspwiyEKwN/GPlFJjNS7h6I9HeQEdcfBumJUdc/TWGaQPBp4HMbnKUvgf9gRYtpBB4xIQMBxJQNkejWrUHixY7urE5TsbbX/zVGhWhr+Lg0j4fnbLeuUAgDI86IFvtbKaEd9GnkQeZGSRmEzmw2+TmVVM+ZBELr6E28/fqn4BUVUtEevdyv3ms/TqtyyMTXxuM39vxzv6Nc3WwcUqIsTSiIhcfQeVf83TcMwmpOrE3XAAINSH5eVStLNi/vBA1hnAvu0FjCX50OUqMB2Gpk+lDBDtZOT9Nr3AVoWB2Gss9AeaHwz9ilSR/2EWB41p8WszQXtBhxKg6sKI785r96g56fHtrrg==|920
