@@ -92,6 +92,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
       "DatabaseColumnType": "nvarchar",
       "MaxLength": -1,
       "Name": "申請者",
