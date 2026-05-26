@@ -55,7 +55,7 @@
     "30,6": "付表や付図がある場合、添付してください。（最大6ファイル）",
     "31,1": "規格本文\nＰＤＦ",
     "33,6": "必須です。閲覧用に規格本文のPDFを添付してください。",
-    "34,1": "承認者",
+    "34,1": "部門承認者",
     "37,1": "新規申請",
     "37,15": "一時保存",
     "37,22": "キャンセル",
@@ -125,6 +125,7 @@
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "DisplayColumnName": "FullName",
         "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "CellDefaultValue": {
@@ -250,7 +251,7 @@
                     "MessageFormula": "分類コードを取得してください"
                   }
                 ],
-                "ID": "5c2d010e-74ed-4ebc-bdbb-e7bc7a3c54e8"
+                "ID": "862104e6-7d8c-43b4-9f1b-833eab7cedb0"
               },
               {
                 "CommandList": [
@@ -385,7 +386,7 @@
                             ]
                           }
                         ],
-                        "ID": "23b58925-f6a7-439c-8454-3f10b61ae83e"
+                        "ID": "cfffc725-47ae-4420-ba7b-f8e9cda47481"
                       },
                       {
                         "CommandList": [
@@ -405,7 +406,7 @@
                             ]
                           }
                         ],
-                        "ID": "21126900-45dc-4e91-97f4-59e6ff4ca41f"
+                        "ID": "0a54deb3-1733-454d-87d1-e0126721b71c"
                       }
                     ]
                   },
@@ -453,7 +454,7 @@
                     ]
                   }
                 ],
-                "ID": "6d51e9de-8e93-4caf-8fa8-979944117b8a"
+                "ID": "a187cd1f-14bc-4705-9b2d-095f514494aa"
               }
             ]
           }
@@ -574,7 +575,7 @@
                     "MessageFormula": "指定のYBSコードは既に登録済です。　別のコードを指定してください。"
                   }
                 ],
-                "ID": "ccc588f2-60ef-4513-bdd3-f328a0726c7c"
+                "ID": "59a5ed50-c530-400c-9307-fdb37fb2ec93"
               },
               {
                 "CommandList": [
@@ -583,7 +584,7 @@
                     "MessageFormula": "指定のYBSコードは無いので登録可能です！"
                   }
                 ],
-                "ID": "83dca39d-a563-4748-85c9-3530ec8ff842"
+                "ID": "4eea7fad-091b-47e2-be12-03001c82325e"
               }
             ]
           },
@@ -768,6 +769,7 @@
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "DisplayColumnName": "FullName",
         "Columns": 3,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
@@ -876,7 +878,7 @@
                     "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・ＹＢＳコード\r\n・規格名称\r\n・理由\r\n・適用範囲\r\n・施行日\r\n・規格本文の添付\r\n・規格本文閲覧用ＰＤＦの添付"
                   }
                 ],
-                "ID": "4a74d087-063b-4369-9458-be0247c69c91"
+                "ID": "0e602f0c-083d-4c79-8e70-ca708ce34964"
               },
               {
                 "CommandList": [
@@ -930,7 +932,7 @@
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "9de99ede-a53b-40da-a83d-c03b1ad151de"
+                        "ID": "8f2623ed-bcbe-40ff-ab2e-1de5c78183d2"
                       },
                       {
                         "CommandList": [
@@ -944,7 +946,7 @@
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "78607650-5ed1-408e-a52b-eda41c4e3bce"
+                        "ID": "56f8740a-7394-49ad-96d4-76f462438c29"
                       }
                     ]
                   },
@@ -980,7 +982,7 @@
                           "value": "新規作成"
                         },
                         "CommandList": [],
-                        "ID": "d75a71ed-ef0d-4bb6-ac6e-549bf2c76cb0"
+                        "ID": "7ffc0f9c-8762-409c-82a5-cd89d94250e6"
                       },
                       {
                         "Condition": {
@@ -1004,13 +1006,13 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "1322f868-fef6-4ff2-b646-bf2b5302508a"
+                        "ID": "15d95cd2-3eba-451b-a2b6-2ef1b83767ad"
                       }
                     ],
                     "Disabled": true
                   }
                 ],
-                "ID": "22835553-7c0a-4a30-a956-c478f82cedb7"
+                "ID": "9b83e1af-dfa2-459b-9398-6547f273f22e"
               }
             ]
           }
@@ -1045,7 +1047,7 @@
                     "MessageFormula": "一時保存でも、ＹＢＳコードの取得は必須です。\r\nコード取得してから保存願います。"
                   }
                 ],
-                "ID": "1259c514-0b84-4d3e-8e86-19cec83a7c74"
+                "ID": "c072b956-34a0-4729-aa7f-146e88f8f266"
               },
               {
                 "CommandList": [
@@ -1099,7 +1101,7 @@
                             "MessageFormula": "データを追加しました。"
                           }
                         ],
-                        "ID": "c84f4719-4faf-401e-8f41-9d34dd1b18d1"
+                        "ID": "277aa585-7b2d-4218-9898-5a02ea8f4820"
                       },
                       {
                         "CommandList": [
@@ -1114,7 +1116,7 @@
                             "MessageFormula": "データを更新しました。"
                           }
                         ],
-                        "ID": "edb7621d-5d15-415f-ab75-c098f3fbaa05"
+                        "ID": "df00d8b1-acaf-4715-9ec3-f519d09d5186"
                       }
                     ]
                   },
@@ -1140,7 +1142,7 @@
                           "value": "新規作成"
                         },
                         "CommandList": [],
-                        "ID": "52a55fdb-70f8-459a-b037-c7b6526d6aa4"
+                        "ID": "9e63d485-2524-482b-baa5-15c86c933d97"
                       },
                       {
                         "Condition": {
@@ -1164,13 +1166,13 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "f15267db-8007-4303-98d2-773a0e1e9aff"
+                        "ID": "8d94b9c0-10f8-4da8-8b5f-ee1c1051fcb9"
                       }
                     ],
                     "Disabled": true
                   }
                 ],
-                "ID": "eb47d70a-e167-4cab-b1ee-b9cd591b22f9"
+                "ID": "345fc962-9e70-4494-bc61-9d06f7d5ea50"
               }
             ]
           },
@@ -1228,7 +1230,7 @@
                     "MessageFormula": "一時保存でも、ＹＢＳコードの取得は必須です。\r\nコード取得してから保存願います。"
                   }
                 ],
-                "ID": "8e903351-8be1-4d98-8197-f9b64ae26c85"
+                "ID": "0a14e697-ecd4-4a02-9ca0-87c9f3ad22d3"
               },
               {
                 "CommandList": [
@@ -1282,7 +1284,7 @@
                             "MessageFormula": "データを追加しました。"
                           }
                         ],
-                        "ID": "4c532f0c-b69b-46d0-83ba-8bdfedc07931"
+                        "ID": "51b704fa-1a18-4be5-8ca3-cf0eb9ba68da"
                       },
                       {
                         "CommandList": [
@@ -1297,7 +1299,7 @@
                             "MessageFormula": "データを更新しました。"
                           }
                         ],
-                        "ID": "e85a5449-bd50-4d3c-9a4f-9a49392b40c8"
+                        "ID": "d86e68c2-c827-4487-bc35-cf48460989a7"
                       }
                     ]
                   },
@@ -1333,7 +1335,7 @@
                           "value": "新規作成"
                         },
                         "CommandList": [],
-                        "ID": "9f23f249-28c7-4316-8e06-24f5bd486211"
+                        "ID": "3ab89363-09a6-42b0-925b-aff69db420a4"
                       },
                       {
                         "Condition": {
@@ -1357,13 +1359,13 @@
                             "ConfirmText": "本当に追加してもよろしいですか？"
                           }
                         ],
-                        "ID": "66e23345-6d03-4c9a-be86-f7a2fd4612e6"
+                        "ID": "688ddf52-f7da-4cdd-bda4-a675a83cf117"
                       }
                     ],
                     "Disabled": true
                   }
                 ],
-                "ID": "2c120362-c63e-45e1-9221-6f22d5492ce4"
+                "ID": "60a91770-6d90-4928-8cdb-bd45d22a4570"
               }
             ]
           }
@@ -2849,7 +2851,7 @@
                 ]
               }
             ],
-            "ID": "89353d8d-1b18-46ae-9949-201629eafec0"
+            "ID": "5d68dcb2-d0f4-4160-95a6-53d5be3b37cb"
           }
         ],
         "Disabled": true
@@ -2922,4 +2924,4 @@
       "Size": "36,40"
     }
   ]
-}//njFN1PBsPqop7COTlabkaB9gtCiyQOc2CVUBg9xRawWAmzYhuNU9voExCRjWTAnieIhhTlBk0wrhKB6GHoOSOe1T0S46pp6d22iFIQVj3FvbsP1MLk1EMGMaQisREeUMjTqnsTA1h87/57CNVXbGK3Yphmh+LEwolzTse/uVzJ42jJa+r/YmbzYT4tHdu2phgK38v/BSiZIs+mO/9nsdgdG0ewLYyuI+nuYFZHvo6TN3RiSIrhQCsYImsB/2oSkmfm0LoQ1RtMTupXAKTQd2Rl/bs0iTb8RofL/pbKCQiO6eiTcUJxXaNkyMkekpzQEmFvAB/+Tg6vSbNZgTQbs4a2/G10FOf2FGardPlx6GZYL3xe4HA6L8XvhBg4fEGQqoPPAJXa9s/gViL7gOfVW5idQnzsxJFzTZ8DpanUqQZeay0KhGhIvWSD7cKzbrN/8eXbhhBy6Gvg9W8Tu497Eifi1H07gtaUNM42fxbpPnBb5RWs2rFtTLhbejQJfFdfohLdcYaP9JD+RCiPANurxNYr8o6wRC6fFB8DRpkB0PwGC9wrZSP+x+b6YRJxfUzHadWMVIaKuCS5N61uwY7f2mDvx6fGmaJFnCiRY7SsfLyfOeFgwKbcLEAgfcnhohhLC8rdzHj8ybcVSTrmt6vzCDXgmKOaV+oSrWaKXj3QK/BWpsBJWaNdDzQ8IzPwuJRyvM93jlKKYuLOtnwvhgcyQ3L4hsksiPBwtobtbQoGeiNCMTQCva59gGc/p9JewsLEkiLudQRQCBZpJZqSjY96tDondrFge0nBsLZ6IUi129T/9vOHgpJ5uUILFKYXYpdODOW+VTVJBjnDcNEI8EwV6ZGpuS7zgn84kGUb9vKXUBPDrqqxoUir1svcFOqufBTeXdnIckN59cLBt067lot9yJvg==|920
+}//C+AfsdFDkK+TF903qVuA8V2K2rUaMr5Q6juum9SHNQv9u8UeRJQM0zSpBhfR/huiz+Q9wx7gd28LeBahW3HsYKnkVCOxLxWSiGvYWblG5wV0hPhbWM0DswBv0swKn0xqZmGlu/k9fUoqrjuTmY03BjphJTwzAeRaswo+NURcunDW4WXX3qiThfOMJ3OVZ9RgmejqVtXezF+EaB/GSdR7wZ/WhBkrm0MojQXzhXld/ivBkhMNt2CpdP2ztHY5MY1OGqf25EM+m28yMGlGQOuhwQkgszFUVqBG/1HsH7KYT46dVJ5O4t3T2uBMXUt+Tbhs+7AeZnxzZgP/iSjQljuVQ/s0V69R77BwzywnwuKTQ6VQrMaNgiBV86OQLNabi+fdKChdZBXrouHGU0TeW8VK5YdLp5W3+20d+5mdb8wm+6ND+mmPYe1aZROhQPURqmlr0Nk/QvwpYDqLajAS0N0LEZw0qIEm72nw8yfIv9T91dwpbQaY/7pqcdgSvQ3HpRHr035gzVMGNbEqd98l+BxcHkSFG9z97R9Xo5fv4HJSjBHtL5pfJOai5yJN47x7NvljidK+WUpWhvmbVeTe8pX8RQThYUeIC+PpA0KelOLtUkw6H4NYvVQVK6QSRl1x354LvKVVDSGId9IVkmT5wQ2zZl2lDG8aLEeDCHUFkzbs9p+5H7z9rhq0QEfP8GJ3KgZJEJTeXp9rFodQd8dmMItVv/+GHkZbCAN5ktl9JrTBx7d5BDrkiMN3MPH/iuozyP5AxGiEDOWnmMW3lSznoofhhavcsGYNZfVxmnW7DiGRul2KL7jvli/Jr1Z7RiIg7uyNArY3HRu82gSQe54OxncVDEYqaMLDhpzJYTlnDZPxC1bblzkv7EpJ2PEQTYUWqPmaeQc8LKD/CGOx5bhRzrUwFw==|920
