@@ -279,7 +279,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "85138bb7-6775-417e-bf59-8de9306ddb08"
+        "GUID": "8d490989-73aa-4141-bab0-2a0eaf1344b8"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -401,7 +401,7 @@
                 ]
               }
             },
-            "ID": "9653284c4cc04f7492b43c6054049dad"
+            "ID": "d085e82e82d04d5789bf895455f25c98"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -571,7 +571,7 @@
                     "MessageFormula": "承認中または一時保存の文章があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "babe0f49-29cd-461d-9971-c446329085d7"
+                "ID": "081129e9-dc34-426a-8c40-9535c2cdcd87"
               },
               {
                 "CommandList": [
@@ -615,6 +615,24 @@
                           "SerializeProperty": "=\"\""
                         },
                         "TargetCell": {
+                          "SerializeProperty": "=文書申請（改正!G14"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=\"\""
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=文書申請（改正!G19"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=\"\""
+                        },
+                        "TargetCell": {
                           "SerializeProperty": "=文書申請（改正!G32"
                         }
                       }
@@ -622,7 +640,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "dadb36cf-6eed-43c2-af4e-299a2b49426b"
+                "ID": "9a97b708-f8c9-4827-ab3e-53e506dc4f9a"
               }
             ]
           }
@@ -650,7 +668,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "50ff7fec-0949-43c7-954a-719ed493a251",
+                  "GUID": "96895a4f-2556-4794-a6a8-8a6c1216e3cf",
                   "BindingInfo": {
                     "TableName": "YBS規格文書",
                     "ColumnName": "改正コード",
@@ -685,7 +703,7 @@
                 ]
               }
             },
-            "ID": "250fe52d8c2d45bfbbb75dfd9b3ba609"
+            "ID": "56a70374a45a4c52acee1e78b9fb0629"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -844,7 +862,7 @@
                     "MessageFormula": "「申請中」または「一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "528b9818-616f-4daf-a787-a0db441c37f2"
+                "ID": "65b35b97-6ddf-4f52-95ac-87b1dc281d4a"
               },
               {
                 "CommandList": [
@@ -888,6 +906,24 @@
                           "SerializeProperty": "=\"\""
                         },
                         "TargetCell": {
+                          "SerializeProperty": "='文書申請 (廃止'!G14"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=\"\""
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "='文書申請 (廃止'!G19"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=\"\""
+                        },
+                        "TargetCell": {
                           "SerializeProperty": "='文書申請 (廃止'!G29"
                         }
                       }
@@ -895,7 +931,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "f7a64f00-b47d-4be7-ab3c-98f75069ab22"
+                "ID": "9ebb79cb-c08d-4b01-9a4b-846f81ce669d"
               }
             ]
           }
@@ -1317,4 +1353,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//ILPboGP7/6nRDzwNSCC8Y4hUn7o6QFTbeVam4EPPjAzkgq4SS9Z5U34nZgemdk/YusWKF1Z4yjNNwY7Qzkj8G/NQPzNdjF7Xid1lmq1hrO7MQzVVob9JOzrZxQbpFdFAF6NAIs2NLAQsBy5VGkF39hU+rtqGu+oH34UH7adtTh/kUMQowXwi8TMtOC9xINg4skUl/HEje0Zgiw4H+VcOBlv3oyEAaF9+z6C2QJf8+ovyobLRUbrT9u1cUHD4Ue8yW9h5SxZQar7o7d/8JeJ005KBtyA4TJ/zYrteuE46U6TWnG3KprpwicJmyhOkZRQjKrrnIk8aZ/CSfwrRQR5LzlmKSqD5/NZ+uGOc1mKvtSkvjVv9r3qXlx7MGYX/K7P6CWKkh6BHt2ZaJMIFPKMs1a+3120Un+3VIIpZ5+XNbRftKA4luIsO77/QRhiahHZU/ou8A/6awf8+DRPWwweKO5dlfILgSt7UPTRp6752uQiT/jf7gtQX1ulN9GXQmYdMRImW0pc8EwD+ch9pRKHotMJcyb6eq2WMxGoVN/POFTPLlJuw6dX1RZHvkqJ+q+x+xeL5o2N4uL0A5wclq4QyKT04fdD1NhERsGAAQATlxTpglqnkgQrMeXIU4GYKUQ+L5CRIHeApPsgwzeWOxZwGJ/bLl4l65jQKC4GJr4Pzqg6h1w8zIvxQ5z8ahMzw13mjKDs9O6GzRxvlEfMC2SLOsZcQLSp2zatHEOnVquhRZNTlndHMjajOp11RVweQXWHUNjD+MKinCzrYT9KKlm0Pl0q3wzdB7NV3DPheGlSDLx/6xDGCXnj1oen+dGTLQz8juqqNbrx1vjKpFSGx9SMTHlZbeK1w4hpB/0f9lMvGuxCrjAU9wPTbv5GliNxxgWi3YMky/U9cwmkwKcwcCbjAkA==|920
+}//nTRMzuC6L4/srO1v0+/nWaWR7y2PTazf34SENhlHXelS0pyWqVEKQGA3O5qbYdNecUf7Ao1xEkKfqPxFmRzW44a1yixmbhUXeprv4+0pQGcKbqcy95uAniKm0DDwklCTRpjIvtIzgeSb5+O0sguFtAshuLXymEyfr/KNKOniX8tvnRQlVvMnyZEFXdYHjG5PRloHeYgloWT1TxkItdTn85UV5MieybfagMNxG/Jqk0gk2saq2zF2G3anoWWZG67oQnYFmoUQv42hiEvW8ZXZMt0SinVPE6pHUNqtNhompQqYa/SFAl7lIlllT+++FEapUdCA+RJ/Zhpu86gXZBwDmmdfNJ9tHEUmoCqMX4K7OaalUz1evFJUrEVM46pykohknTFEEMpiv5/KPI9yeso+5akI1AJgdM1PcSsPtBWQbJ1zS3TJar7D6nwAhaYF1saAX/b+VRdULtTjRlQ5djLb74boVePu0j7mWqwikYsFNwyb/nXZTkqDth58PiMeC00KPrs+DzJM6znVgVdvWnYSviq/59sy76NvTvDdyFmc7PGesIcPMo3X0Pnkmnt6EpCbIIceGpF920budjY1CGk3Bke2S/RiT1i2eRiutfs1i2SFv/Lm4cgp8ERAuMxTa1eGW1rLs+w/NVnbgOEM5v6AMj96/2OHpft2KeFRFKl9J84+qtjR8TPfQO8j+0gn1x6JlCX9VKxiFwCzf9xeCzWnQMF8F8iziQnoBevoxowa2tc0N6R2VN7wS8aksdgWQ7tC3EqswqHYtwt5foPj9FnWHDggMdkAvEsAwhqr/gsMXkXMs1gE0r/nkfDURW/YjKK9MuEiTrxHcgqQdbdXG3wuECxVmjrgqHDD6igRyLArH7z66olQ8YT1g7CmZsJnMW4dC/YXTbti/IzWH1+phk7+BQ==|920
