@@ -6,35 +6,25 @@
           "DesignLengthInPixel": 10.0
         }
       },
-      "2": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "4": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 10.0
-        }
-      },
-      "5": {
+      "3": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 21.0
         }
       }
     },
-    "Count": 36
+    "Count": 34
   },
   "Cols": {
     "Count": 64
   },
   "Values": {
     "1,1": "YMIA規格(YBS)",
-    "3,45": "ヤンマーマリンインターナショナルアジア株式会社",
-    "5,55": "運営：YBS事務局",
-    "6,2": "ＹＢＳは、「ＳＬ２」となっています。社外への配布は基本できません。"
+    "2,45": "ヤンマーマリンインターナショナルアジア株式会社",
+    "3,54": "管理者：YBS事務局",
+    "4,2": "ＹＢＳは、「ＳＬ２」となっています。社外への配布は基本できません。"
   },
   "AttachInfos": {
-    "3,22": {
+    "2,22": {
       "CellType": {
         "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
         "CellCustomValue": "%CurrentUser%",
@@ -44,7 +34,7 @@
         }
       }
     },
-    "7,0": {
+    "5,0": {
       "CellType": {
         "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
         "TemplateKey": "_RS_Dark_ThemeStyle2",
@@ -176,7 +166,7 @@
         ]
       }
     },
-    "9,0": {
+    "7,0": {
       "IsPlaceHolderCell": true
     }
   },
@@ -194,15 +184,18 @@
       {
         "FontFamily": 0,
         "FontSize": 16.0,
-        "FontWeight": 1
+        "FontWeight": 1,
+        "HorizontalAlignment": 4
       },
       {
         "FontFamily": 0,
-        "FontWeight": 1
+        "FontWeight": 1,
+        "Formatter": 5,
+        "HorizontalAlignment": 4
       },
       {
         "FontWeight": 1,
-        "Foreground": 4
+        "Foreground": 6
       }
     ],
     "Types": {
@@ -211,19 +204,42 @@
         "Bold",
         "Center",
         "Body",
+        "Right",
+        "[AUTO]General",
         "#FFFF0000"
       ]
     },
     "CellStyles": {
       "1,1": 0,
-      "1,19": 1,
-      "1,20": 1,
       "1,21": 1,
-      "2,19": 1,
-      "2,20": 1,
       "2,21": 1,
-      "3,19": 1,
-      "3,20": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,27": 1,
+      "2,28": 1,
+      "2,29": 1,
+      "2,30": 1,
+      "2,31": 1,
+      "2,45": 2,
+      "2,46": 1,
+      "2,47": 1,
+      "2,48": 1,
+      "2,49": 1,
+      "2,50": 1,
+      "2,51": 1,
+      "2,52": 1,
+      "2,53": 1,
+      "2,54": 1,
+      "2,55": 1,
+      "2,56": 1,
+      "2,57": 1,
+      "2,58": 1,
+      "2,59": 1,
+      "2,60": 1,
+      "2,61": 1,
       "3,21": 1,
       "3,22": 1,
       "3,23": 1,
@@ -235,68 +251,20 @@
       "3,29": 1,
       "3,30": 1,
       "3,31": 1,
-      "3,45": 2,
-      "3,46": 1,
-      "3,47": 1,
-      "3,48": 1,
-      "3,49": 1,
-      "3,50": 1,
-      "3,51": 1,
-      "3,52": 1,
-      "3,53": 1,
-      "3,54": 1,
-      "3,55": 1,
-      "3,56": 1,
-      "3,57": 1,
-      "3,58": 1,
-      "3,59": 1,
-      "3,60": 1,
-      "3,61": 1,
-      "4,19": 1,
-      "4,20": 1,
-      "4,21": 1,
-      "4,22": 1,
-      "4,23": 1,
-      "4,24": 1,
-      "4,25": 1,
-      "4,26": 1,
-      "4,27": 1,
-      "4,28": 1,
-      "4,29": 1,
-      "4,30": 1,
-      "4,31": 1,
-      "5,19": 1,
-      "5,20": 1,
-      "5,21": 1,
-      "5,22": 1,
-      "5,23": 1,
-      "5,24": 1,
-      "5,25": 1,
-      "5,26": 1,
-      "5,27": 1,
-      "5,28": 1,
-      "5,29": 1,
-      "5,30": 1,
-      "5,31": 1,
-      "5,55": 3,
-      "5,56": 1,
-      "5,57": 1,
-      "5,58": 1,
-      "5,59": 1,
-      "5,60": 1,
-      "6,2": 4
+      "3,54": 3,
+      "4,2": 4
     },
     "SheetStyle": {
       "FontFamily": 3
     }
   },
   "Spans": [
-    "9,0,27,64",
-    "3,22,3,10",
-    "3,45,1,17",
-    "5,55,1,6",
-    "1,1,5,18",
-    "7,0,2,64"
+    "2,22,2,10",
+    "2,45,1,17",
+    "3,54,1,8",
+    "5,0,2,64",
+    "7,0,27,64",
+    "1,1,3,20"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
@@ -317,7 +285,7 @@
         "Fill": null
       },
       "IsAutomaticFill": false,
-      "Size": "1280,124"
+      "Size": "1280,104"
     }
   ]
-}///lh+k3fosEtOe+vCb4YZD+dhEO+qMM5yJOgRXSKciiFh10vL7M+yEZhNjdd97tRmQ1QAXDorNd+sc5480uB+oa5VoweRAPxKPcKQVWVZ9xzfLXIRQVjdsJHIAakZCNDnKotpiR0k6luzLyJThNfBF5VS5wt5rq5JhuHpmQNriVZ7g353+EqIVKC8wJd3F9N6k9ZZqeiQXDLziyIRJKN4RU++Mv0Vq8xuvPqsVA8U81/2zQInNnQHV/bBAa3QKfReeEO6slEmY0bbaLeOnJ13uDpEHauKuP+OTL12a+74ThPHn5ONPlSS6eKxz3CYAnaFDPHCaTb1zwzAbhCsc/pKh1fY497FzcB9nI81vPkKPbLR5Qcx6PHkxyQU8e47b26x5I2v31dZDwF7qa4cCorWHS2WW5/Ajb9J0RmAXz2dX4/osF0t0Z8lCeY2AMvlCqKFLjSkcptLUrpkxdcAnNQDnY9MCNJE++RRmXR7smLXjfST9f8pJy+S2UObGymKUpJlHdNkb7bu752qXz7CNpjPd4cv4ZRxzdvlW4i6d6uOxmHckH43gIze5uPOWR9WG0bPOwogsJlGVRfxjrt3Z6zbRmoMnYvS3rvJHjpqzEPJ0B8sNCtOn4MdMPvpQrY6K3RFHYgEBS9nPCWHokx3+j8xdlenmBm0DJo94VnqjzKWnx9E4/VBDROdgT8asYw6j0RBgdJAYfatV6AZ2YpD1MLigcIT9lOJF6GIrc2oWIogLJFy1BEjORGI4QkX0m/kdBy76xKtpcZj0nWolKcFc1lerOeMrlMUMW8W/L6qOXebWX5yfS2qcw2SGrgy6CfgElkB3ttk55FfVmKBTSMlpAOecPhCkUHMxK8D6rt1MyAPlolx3FiqiGF/Jpq84rFJjEIZG55vhEFT6J8sbQlaCyQn5g==|920
+}//k5lXjDKqe7+qLHBf0EBI1lFlFhOKiOL01yfqzMEMaTHSNn1e2TXzRWdjCi9PwvxyqTygAVpDhmVKY7+rC6AMOr7LG4srDQZoJhaiusapNCleh29LrGYyYr2EGYv+B7hzK6ma/s23mBSBWe2LaCmKTfTYRyLrDWpQ/CYijG6veqB6fzo8d0L0Vpk21jWRiYQSlirK71haerckgI0uwxulHT2OObfMUI5EIpzEnboMDYnzgQt6JbP0kmxIFc9BvMQP++tdGjHylL2I9L4OGLtS/BPmHjS4WXDcX85dqV+eiv66Wk/+kAVw6DfIJowhLqf157zcAxQkd5o+ucSqnbUbLwd53mY4mgSDP+4R5Tf38BCsK8bklzdkfo1O8pmlhHob9+pNyaT+e2V40xZ+vlLykI3R2MXIW/VzjNS+10w+qt9/zHC1wR/EJqcvx8frvpkd7LArhpokitOHLPbp8eXIM0B4UHIws+u4RCtsQwoO+MKIQy4a7yIHKo7YKSOc/SKBX++FEmVu7b/cqBHa9lBM8ndaiOgYd6dv78OQvRFdDTV2gTXtnhNhZbnaqa+xsOaGr7bbOxiI+FCkjb4TqYoRw7V0JHAlXBOx2aBa5NQTnW8+nu7uTmq/usANK2+Kjyyo9JPS+hT5qft/0hnFJzjmdFmibh8E9LSdgROOZK11SgGmzoTMjojHhOW8/axiQrLXPLmLN2FjKXAgrJPf0KLre9zirVd00Wc4uo4x99c5wtQxyhMcuYri/4hGLdldUOtjmBLgTZOO1oxsVNUmovFyChh/UXtTUrlHLaAYBcJHoMaeoj1Dv4oMDyg+omHIi+8wNFSx4DUcZiU3xQMtKgSiPLNbf0ryautDutx8g/cbfFBZFl83EW4+XLKIT0K5VghsaQmtsiEbYbSN4j7cIrGA0g==|920
