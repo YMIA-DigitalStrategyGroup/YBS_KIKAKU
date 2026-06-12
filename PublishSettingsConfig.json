@@ -1,13 +1,13 @@
 [
   {
     "Name": "サーバーへ発行1",
-    "ApplicationUrl": "http://YMIADIGITALSV01/YBS文書規格管理",
+    "ApplicationUrl": "http://YMIADIGITALSV01/YBS規格管理アプリ",
     "PublishSettings": {
       "IsPrivateServer": true,
       "ServerName": "YMIADIGITALSV01",
       "UserName": "hiroshi_ogata@yanmar.com",
       "SitePort": 80,
-      "AppName": "YBS文書規格管理",
+      "AppName": "YBS規格管理アプリ",
       "AppStartPage": "",
       "TakeServeronline": true,
       "PublishRolesToServer": true
