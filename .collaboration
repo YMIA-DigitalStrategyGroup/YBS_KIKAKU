@@ -379,5 +379,15 @@
   {
     "ModuleName": "MasterPCPage/YBSメニュー (テスト用)",
     "ModuleType": 3
+  },
+  {
+    "ModuleName": "Table/YBS規格文書1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-15T15:33:23.7073111+09:00",
+    "ModuleType": 7
   }
 ]
