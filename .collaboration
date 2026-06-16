@@ -209,39 +209,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-16T09:38:12.3331386+09:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": [
-      "Upload\\04331e4b-b135-438d-9844-ccbc39e2c3fe_バーコードリーダーマニュアル.pdf",
-      "Upload\\39e899b3-b013-41b5-a01f-bf68c86d1357_YMIA　2026年度カレンダー.pdf",
-      "Upload\\3d0180ab-cf5e-43ea-98c3-755c91dbb626_アスカニア整理表.doc",
-      "Upload\\445659b9-af53-4aff-bc27-44ae78358c9a_Forguncyライセンス決裁.xlsx",
-      "Upload\\470795d7-9c08-4adf-b388-b94af4a8d598_分力試験計測用紙.pdf",
-      "Upload\\69ff6173-5e1a-4b54-9438-e515e47369ee_振動測定用紙.pdf",
-      "Upload\\7548fabe-8de5-42fb-bf02-2acf86b77793_ＦＡＸ送付歪ゲージ.doc",
-      "Upload\\85125d0b-0ae1-4101-be07-27880902f9b1_Forguncyライセンス決裁.xlsx",
-      "Upload\\8683fd2d-1231-426b-971c-5ee1fc0570e5_書類送付案内_原紙.doc",
-      "Upload\\8b911d54-faf8-4d2e-9755-a253e79bcb20_アスカニア整理表.doc",
-      "Upload\\8db343ab-02ff-4a07-ae2a-33a0fbcb04f4_傾斜試験計測用紙.pdf",
-      "Upload\\999bc70a-9ce2-45af-ae02-a547240ab74e_会議案内（社内）原紙.doc",
-      "Upload\\9c860fab-39ef-416a-8741-ff8dd0437f7d_歪み撓み計測用紙.pdf",
-      "Upload\\ab43b8cd-4b67-496c-8a09-2406960abd02_歪み撓み計測用紙.pdf",
-      "Upload\\b82380eb-120b-4e59-87a0-ffdbb9694101_書類送付案内YZ_原紙.doc",
-      "Upload\\d16587a1-c359-42f9-8f59-98c685413a1a_ﾋﾞｭｰﾌｫｰﾄ・ｽｹｰﾙ.xls",
-      "Upload\\d777224c-0cff-4fbd-bb11-36b3d4551f38_振動計測ﾃﾞｰﾀ.xls",
-      "Upload\\dd7387de-ab6a-46c6-93b4-0f7985147e34_Forguncyライセンス決裁.xlsx",
-      "Upload\\dda6bdb4-3950-49b0-9ca7-d4d5665f3310_20251211写真1_緒方.jpg",
-      "Upload\\dda6bdb4-3950-49b0-9ca7-d4d5665f3310_20251211写真1_緒方.medium.jpg",
-      "Upload\\dda6bdb4-3950-49b0-9ca7-d4d5665f3310_20251211写真1_緒方.small.jpg",
-      "Upload\\dfa1f0ea-eb59-420f-854b-c30084164877_操舵力換算表.xls",
-      "Upload\\eab1e895-b456-4a3c-b0dc-87a86215add2_振動測定用紙.pdf",
-      "Upload\\ffee235a-405c-46d6-a854-3b11d01529d1_YMIA　2026年度カレンダー.pdf"
-    ]
+    "ModuleType": 26
   },
   {
     "ModuleName": "PublishConfiguration",
