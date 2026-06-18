@@ -8,8 +8,20 @@
         "StateName": "一時保存"
       },
       {
+        "Id": "2b3fbad4-a4e8-4587-b943-1409755fbf4b",
+        "StateName": "差戻"
+      },
+      {
+        "Id": "2b7eb6ac-8e41-472d-8465-d3bc60bb8d75",
+        "StateName": "部門長承認待ち"
+      },
+      {
+        "Id": "4b52684f-e8b1-40a9-9b8f-a9ca496bb433",
+        "StateName": "委員会承認待ち"
+      },
+      {
         "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-        "StateName": "申請中"
+        "StateName": "最終承認待ち"
       },
       {
         "Id": "900404a7-b0a2-4eb0-aba6-6c8cd2d87edc",
@@ -28,7 +40,7 @@
         },
         "ToState": {
           "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-          "StateName": "申請中"
+          "StateName": "最終承認待ち"
         },
         "Assignees": [
           {
@@ -40,12 +52,26 @@
       },
       {
         "StartState": {
-          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-          "StateName": "申請中"
+          "Id": "2b7eb6ac-8e41-472d-8465-d3bc60bb8d75",
+          "StateName": "部門長承認待ち"
         },
         "Action": {
-          "ActionName": "承認",
+          "ActionName": "部門長承認",
           "GUID": "a14ed9d9-094c-43d5-9c1b-52ad0e3e6e1b"
+        },
+        "Condition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "YBS規格文書",
+            "ColumnName": "分類コード",
+            "GUID": "aecf38e7-5e45-419a-8374-04f5c98e8468",
+            "RelationBinding": {
+              "RelatedTable": "YBS分類コード",
+              "RelatedColumn": "分類コード",
+              "DisplayColumn": "審議形態"
+            }
+          },
+          "Value": "部内審議"
         },
         "ToState": {
           "Id": "900404a7-b0a2-4eb0-aba6-6c8cd2d87edc",
@@ -61,21 +87,141 @@
       },
       {
         "StartState": {
-          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-          "StateName": "申請中"
+          "Id": "2b7eb6ac-8e41-472d-8465-d3bc60bb8d75",
+          "StateName": "部門長承認待ち"
         },
         "Action": {
-          "ActionName": "却下",
+          "ActionName": "部門長承認",
+          "GUID": "a14ed9d9-094c-43d5-9c1b-52ad0e3e6e1b"
+        },
+        "Condition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 1,
+          "ColumnBindingInfo": {
+            "TableName": "YBS規格文書",
+            "ColumnName": "分類コード",
+            "GUID": "ed20f3aa-1d89-4c14-8090-8d4e3a2ae07d",
+            "RelationBinding": {
+              "RelatedTable": "YBS分類コード",
+              "RelatedColumn": "分類コード",
+              "DisplayColumn": "審議形態"
+            }
+          },
+          "Value": "部内審議"
+        },
+        "ToState": {
+          "Id": "4b52684f-e8b1-40a9-9b8f-a9ca496bb433",
+          "StateName": "委員会承認待ち"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "2b7eb6ac-8e41-472d-8465-d3bc60bb8d75",
+          "StateName": "部門長承認待ち"
+        },
+        "Action": {
+          "ActionName": "部門長差戻",
           "GUID": "804e119e-3311-41fd-85cd-fd0b2a413b16"
         },
         "ToState": {
-          "Id": "2d950e40-a389-4fe7-b065-8825eaa07d35",
-          "StateName": "一時保存"
+          "Id": "2b3fbad4-a4e8-4587-b943-1409755fbf4b",
+          "StateName": "差戻"
         },
         "Assignees": [
           {
             "FlowProcessRoleType": 5,
             "Name": ""
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "4b52684f-e8b1-40a9-9b8f-a9ca496bb433",
+          "StateName": "委員会承認待ち"
+        },
+        "Action": {
+          "ActionName": "委員会承認",
+          "GUID": "15af7653-14c2-41a6-88a0-f278a658876b"
+        },
+        "ToState": {
+          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
+          "StateName": "最終承認待ち"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "4b52684f-e8b1-40a9-9b8f-a9ca496bb433",
+          "StateName": "委員会承認待ち"
+        },
+        "Action": {
+          "ActionName": "委員会差戻",
+          "GUID": "61081808-621b-4ee8-9c34-996faf7524e8"
+        },
+        "ToState": {
+          "Id": "2b3fbad4-a4e8-4587-b943-1409755fbf4b",
+          "StateName": "差戻"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
+          "StateName": "最終承認待ち"
+        },
+        "Action": {
+          "ActionName": "委員長承認",
+          "GUID": "fa47f438-5bae-444f-8e0d-8e312823f010"
+        },
+        "ToState": {
+          "Id": "900404a7-b0a2-4eb0-aba6-6c8cd2d87edc",
+          "StateName": "承認済み"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
+          "StateName": "最終承認待ち"
+        },
+        "Action": {
+          "ActionName": "委員長差戻",
+          "GUID": "7303145f-f6ca-4983-bb74-6a5b98328ff3"
+        },
+        "ToState": {
+          "Id": "2b3fbad4-a4e8-4587-b943-1409755fbf4b",
+          "StateName": "差戻"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
           }
         ],
         "Errors": []
