@@ -304,5 +304,15 @@
   {
     "ModuleName": "TableView/v_YBS規格文書_ワークフロー",
     "ModuleType": 23
+  },
+  {
+    "ModuleName": "PCPage/承認_差戻所作",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041351",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-18T10:13:16.3224441+09:00",
+    "ModuleType": 1
   }
 ]
