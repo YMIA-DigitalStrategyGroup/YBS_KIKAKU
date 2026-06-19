@@ -17,11 +17,11 @@
       },
       {
         "Id": "4b52684f-e8b1-40a9-9b8f-a9ca496bb433",
-        "StateName": "委員会承認待ち"
+        "StateName": "審議会承認待ち"
       },
       {
         "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-        "StateName": "最終承認待ち"
+        "StateName": "委員長承認待ち"
       },
       {
         "Id": "900404a7-b0a2-4eb0-aba6-6c8cd2d87edc",
@@ -40,7 +40,7 @@
         },
         "ToState": {
           "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-          "StateName": "最終承認待ち"
+          "StateName": "委員長承認待ち"
         },
         "Assignees": [
           {
@@ -111,7 +111,7 @@
         },
         "ToState": {
           "Id": "4b52684f-e8b1-40a9-9b8f-a9ca496bb433",
-          "StateName": "委員会承認待ち"
+          "StateName": "審議会承認待ち"
         },
         "Assignees": [
           {
@@ -145,15 +145,15 @@
       {
         "StartState": {
           "Id": "4b52684f-e8b1-40a9-9b8f-a9ca496bb433",
-          "StateName": "委員会承認待ち"
+          "StateName": "審議会承認待ち"
         },
         "Action": {
-          "ActionName": "委員会承認",
+          "ActionName": "審議会承認",
           "GUID": "15af7653-14c2-41a6-88a0-f278a658876b"
         },
         "ToState": {
           "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-          "StateName": "最終承認待ち"
+          "StateName": "委員長承認待ち"
         },
         "Assignees": [
           {
@@ -166,10 +166,10 @@
       {
         "StartState": {
           "Id": "4b52684f-e8b1-40a9-9b8f-a9ca496bb433",
-          "StateName": "委員会承認待ち"
+          "StateName": "審議会承認待ち"
         },
         "Action": {
-          "ActionName": "委員会差戻",
+          "ActionName": "審議会差戻",
           "GUID": "61081808-621b-4ee8-9c34-996faf7524e8"
         },
         "ToState": {
@@ -187,7 +187,7 @@
       {
         "StartState": {
           "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-          "StateName": "最終承認待ち"
+          "StateName": "委員長承認待ち"
         },
         "Action": {
           "ActionName": "委員長承認",
@@ -208,7 +208,7 @@
       {
         "StartState": {
           "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-          "StateName": "最終承認待ち"
+          "StateName": "委員長承認待ち"
         },
         "Action": {
           "ActionName": "委員長差戻",

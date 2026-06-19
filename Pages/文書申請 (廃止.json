@@ -431,7 +431,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "8e563c4e-0d14-4fed-9e22-b24b2877bd4b"
+                "ID": "68ef9fbd-74c6-43fb-8945-67f18d3140e4"
               },
               {
                 "CommandList": [
@@ -446,7 +446,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "09bc0967-4299-4fe9-bc41-dfe04c7219ee"
+                "ID": "89fb8fc2-151d-4187-96f6-1f23ba3ee0eb"
               }
             ]
           },
@@ -527,7 +527,7 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "04fe3430-e57c-42d1-bb60-00171f00d1bf"
+                "ID": "f955768b-8c16-46b2-9e6f-a960d43709ca"
               },
               {
                 "CommandList": [
@@ -541,7 +541,7 @@
                   {
                     "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
                     "TableName": "YBS規格文書",
-                    "NextState": "申請中",
+                    "NextState": "部門長承認待ち",
                     "AssignTo": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "='文書申請 (廃止'!G29"
@@ -552,7 +552,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "baa36564-97d6-4fd4-b120-87ca16dca5ae"
+                "ID": "4a71f97f-3dd2-458c-b0c6-ae39364c753e"
               }
             ]
           }
@@ -2060,7 +2060,7 @@
                 ]
               }
             ],
-            "ID": "76ad0cb6-d813-4315-9f1f-02d1dca0c170"
+            "ID": "55eacc9a-133a-47d7-88c4-0852ff1f5854"
           }
         ],
         "Disabled": true
@@ -2119,4 +2119,4 @@
       "Size": "51,41"
     }
   ]
-}//iavSFJNFxBxzY2XRwjaHfQHEB/txY4WaSN0el4KWxZjBO+h7ffKYffBYOv7mbWfSqArQFpPPso7V84oTuo311hbFnryqFXqqtr1LbNVz6T6WzRxPJOhX3Onde6DZ+Mo98A03SVYZj8U6wJ8ObzqQ7ldbB5putSzHQ9HjhpK6UcW3bPNZ3g85QiCqYWMBTUyhD4lZNtBPRXZRo12W1xY0XQfLMu7JOwSgBvceC2yiC8rrptx30BzQcbFgmsjKp58j2rz50BmWkb1xDmtFBEXmhbhGaFMSCChhlfyjYakIv6piLjWBQ9YGsWOpwdRB00mmQ0N2+I3Bc1JsFkOnTrEJbrFkzCVTt7+/nkISD3rfwzazkAfEugnX7mKPCeb17NR13Di+N6eM+7Nxrkiq/qOA4PjIskqipMiXGh8zPOJmSOx/42H6SphPDC/yzbGPY2LgpHROgjCRITCEhe+IZ1brGsZt/VLHpmC1b2roMwI3u7R6dSTmNnLUwpRYD3PM+gN/kti0Mkq9L965GL/45nPT8Da5/miIyE7QyQw0ksfOLZK/hxT5KzP5HL4GDQ6XbIXc1JQj1Z0wVKEyAMcKm2V8YeWoRJ10hUc9kU+S+aekvijz13dzgOj1vqGb5MQ3CuG9ukkRLmrD8syeC/aunIsf/9qS6DdJb75JK+l+ki2b6QdnprFXxn0NwgBrl6eqbjJCXv5xtTO2dcQlj06POpLkugSEht5DYDpMYJRk3QLfUfFn8aFvnfkJndZTbZBkoGj6wAUZMrkS3oM+9bSKwoO83iUOXtthAmFd5EXJTRyqyRS+aZ33SZzFFO1znSopDUQZTn1T7eFqzXqbZ+zTvh1/P0TmdgykhssJB0rPxeq8B51XpUTSBZMXa06wpyDLgabLzcLYiDlBSoKKBcASq/Ugcg==|920
+}//0M2Wo+98cqpzfG5uNVPSejup7GDBJA25iYhut9vQ9KVBerN3gbWne8/SDyTmZUWQFcEY7xsMitZIlon+oCcZvtg1NfOTR2rzJSCzOV4LW97sfKz5TQ1Yrpy+Ad73O9efPnmV5C6E07uDo284Mmr6VHnCw5S3qzL3p+Zsaq21vicpFgozZWjCYqlITxgfXYQQ/2XMMptHvMWhEGDPlPB9ndqPxfAl1Lquoka+8DV7I/Hhfyvcoq0NhXXx8v7BXhTnpnjNKII60ZzyElIt8+2CYuISBiRkW+KOb8KU79+bnmyFkTEDlVBUdEpiVesUsTyxUhZTG0MvlF04Q+NDF3uf2aGE3BNj35tE/S71fzQlQwODnK1ofyZI+0RQSsB7aPaRf36YxofPJ+3F6Bk2hDAOnpU8jLjzXpTxs03IFM1G91ZcLX+4Sc6fbYm9iscgWJk0wpL1vx7oaTCAfD8SIS+zybC9Di2k1ON8JjMrZTNK3NvLTFsEs9xYOlzOnnZQfq49DwSr1N3NacML40gFMebUXrInglnaWfvKoqG+uODyKmGsKxAVedmPr9yf12ghNUVnf6hI2jflULdmL+7GbnQcIww9ULYNVGNZ7YBt60lFy66d4PI1lyYGhS47jovOlRWQQ1nfCKyqjMjF8xJ7FjyrKzqVVq/2li8OzR3IVIjja0kx+9JbS28+tlHyAKp0azjqJKmBiNPvTGpKt7c5XhlxKyEY+ABXuOk6EVISbOKr/tnFjdLomtWw9FSAx4p6/f7/ACsZMyxK1psJS8lch8H2mn6svR0uWaGAE2VMPHpNDsNFrbVTsmembXOxtkUMUPRpLmQNVxXl7bw9G0veu5nencWp3XlNRD32Wf6ZlavflBX/qwqiMBf5qM2ofv0nXrDP5/Cavc+X41nen0WOjE7uKw==|920
