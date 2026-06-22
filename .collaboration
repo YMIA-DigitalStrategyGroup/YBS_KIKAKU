@@ -343,17 +343,7 @@
   },
   {
     "ModuleName": "PCPage/文書_情報 (承認処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-22T16:25:28.8014999+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書_情報 (承認処理.json",
-      "Pages\\文書_情報 (承認処理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Table/YBS_審議会ワークフロー",
