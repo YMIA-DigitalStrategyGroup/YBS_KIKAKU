@@ -355,5 +355,15 @@
   {
     "ModuleName": "PCPage/文書_情報 (承認処理",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Table/YBS_審議会ワークフロー",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-22T16:04:12.1149836+09:00",
+    "ModuleType": 7
   }
 ]
