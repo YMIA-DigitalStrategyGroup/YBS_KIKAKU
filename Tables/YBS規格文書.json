@@ -39,13 +39,34 @@
           "GUID": "d026efc5-a4ba-42a2-a7a8-e4256eb17452"
         },
         "ToState": {
-          "Id": "abfd8fd6-1a81-43fa-af38-ce91b03ebb1a",
-          "StateName": "委員長承認待ち"
+          "Id": "2b7eb6ac-8e41-472d-8465-d3bc60bb8d75",
+          "StateName": "部門長承認待ち"
         },
         "Assignees": [
           {
             "FlowProcessRoleType": 5,
             "Name": ""
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "2b3fbad4-a4e8-4587-b943-1409755fbf4b",
+          "StateName": "差戻"
+        },
+        "Action": {
+          "ActionName": "再提出",
+          "GUID": "1e9e081c-659f-4fec-aa10-ac7f1c552538"
+        },
+        "ToState": {
+          "Id": "2b7eb6ac-8e41-472d-8465-d3bc60bb8d75",
+          "StateName": "部門長承認待ち"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
           }
         ],
         "Errors": []
@@ -353,6 +374,15 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DatabaseColumnType": "nvarchar",
       "MaxLength": -1,
       "Name": "FGC_AssignTo",
@@ -364,15 +394,6 @@
       "MaxLength": -1,
       "Name": "FGC_State",
       "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "Required": true,
-      "AutoIncrement": true,
-      "DatabaseColumnType": "int",
-      "MaxLength": -1,
-      "Name": "ID",
-      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {
       "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
