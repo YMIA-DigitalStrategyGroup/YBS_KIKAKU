@@ -311,7 +311,17 @@
   },
   {
     "ModuleName": "PCPage/文書_情報 (承認処理",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-06-23T08:48:15.6511077+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\文書_情報 (承認処理.json",
+      "Pages\\文書_情報 (承認処理.rd"
+    ]
   },
   {
     "ModuleName": "Table/YBS_審議会ワークフロー",
