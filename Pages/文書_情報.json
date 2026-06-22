@@ -3,7 +3,10 @@
     "InLogicalVisibleIndexes": [
       2,
       3,
-      4
+      4,
+      32,
+      33,
+      34
     ],
     "Count": 36
   },
@@ -55,8 +58,8 @@
     "26,6": "閲覧後はダウンロードファイルを確実に消去願います。",
     "27,1": "規格本文\nＰＤＦ",
     "30,1": "申請者",
-    "31,1": "申請日",
-    "32,22": "閉じる"
+    "30,22": "閉じる",
+    "31,1": "申請日"
   },
   "Formulas": {
     "9,16": "ODATA(\"YBS細分化コード?$select=細分化分類名称&$filter=分類コード2 eq \"&IF(ISBLANK(O9),\"null\",\"'\"&O9&\"'\")&\" and 細分化コード eq \"&IF(ISBLANK(O10),\"null\",\"'\"&O10&\"'\"))",
@@ -332,14 +335,7 @@
         "GUID": "a1795f8f-09c2-4efd-9f75-731b64c987e3"
       }
     },
-    "31,6": {
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "申請日",
-        "GUID": "fda09597-9b11-421c-b352-cc0f41e60e04"
-      }
-    },
-    "32,22": {
+    "30,22": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -349,6 +345,13 @@
         ],
         "Text": "閉じる",
         "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "31,6": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "申請日",
+        "GUID": "fda09597-9b11-421c-b352-cc0f41e60e04"
       }
     }
   },
@@ -433,7 +436,6 @@
       {
         "FontFamily": 3,
         "FontSize": 26.666666666666664,
-        "FontWeight": 1,
         "Foreground": 2,
         "Formatter": 7,
         "HorizontalAlignment": 5,
@@ -483,6 +485,7 @@
       },
       {
         "FontFamily": 3,
+        "HorizontalAlignment": 5,
         "BorderBottom": 0,
         "BorderTop": 0,
         "ShrinkToFit": true
@@ -867,6 +870,12 @@
         "ShrinkToFit": true
       },
       {
+        "Background": 17,
+        "FontFamily": 3,
+        "Foreground": 18,
+        "WordWrap": true
+      },
+      {
         "FontFamily": 3,
         "BorderBottom": 0,
         "BorderRight": 0
@@ -876,12 +885,6 @@
         "Formatter": 15,
         "BorderBottom": 0,
         "BorderLeft": 0
-      },
-      {
-        "Background": 17,
-        "FontFamily": 3,
-        "Foreground": 18,
-        "WordWrap": true
       },
       {
         "FontFamily": 3,
@@ -1526,30 +1529,31 @@
       "30,19": 4,
       "30,20": 4,
       "30,21": 4,
-      "30,22": 4,
+      "30,22": 92,
       "30,23": 4,
       "30,24": 4,
       "30,25": 4,
+      "30,26": 4,
       "30,30": 1,
       "31,1": 31,
       "31,2": 32,
       "31,3": 32,
       "31,4": 32,
-      "31,5": 92,
-      "31,6": 93,
+      "31,5": 93,
+      "31,6": 94,
       "31,7": 32,
       "31,8": 32,
       "31,9": 32,
       "31,10": 32,
       "31,11": 32,
       "31,12": 32,
-      "31,13": 92,
+      "31,13": 93,
+      "31,22": 4,
+      "31,23": 4,
+      "31,24": 4,
+      "31,25": 4,
+      "31,26": 4,
       "31,30": 1,
-      "32,22": 94,
-      "32,23": 4,
-      "32,24": 4,
-      "32,25": 4,
-      "32,26": 4,
       "32,30": 1,
       "32,31": 10,
       "32,32": 4,
@@ -1561,11 +1565,6 @@
       "32,39": 4,
       "32,40": 4,
       "32,41": 4,
-      "33,22": 4,
-      "33,23": 4,
-      "33,24": 4,
-      "33,25": 4,
-      "33,26": 4,
       "33,30": 1,
       "33,31": 4,
       "33,32": 4,
@@ -1633,7 +1632,6 @@
     "5,34,1,4",
     "5,38,1,4",
     "12,38,1,4",
-    "32,22,2,5",
     "12,6,4,21",
     "18,6,2,21",
     "10,6,2,21",
@@ -1674,7 +1672,8 @@
     "6,13,1,5",
     "5,21,1,6",
     "6,21,1,6",
-    "6,18,1,3"
+    "6,18,1,3",
+    "30,22,2,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1719,8 +1718,8 @@
       "ForegroundFill": "#FFFF0000",
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Location": "640.3999999999999,541.5999999999999",
-      "Size": "50,40"
+      "Location": "493,540",
+      "Size": "45,38"
     },
     {
       "Name": "582d3d2f-b895-4c06-b316-842fdd45796e.svg",
@@ -1728,8 +1727,8 @@
       "Stretch": 2,
       "Transparency": 0.6999999999999997,
       "ForegroundFill": "#FF0070C0",
-      "Location": "640,361.9999999999999",
+      "Location": "497.5999999999999,365.9999999999999",
       "Size": "36,38.80000000000007"
     }
   ]
-}//6HuDX6VQNao13IzzmDyAqzuO+sbI4jKVhzYTDBTu6C9xQCDA5dHmcwIw32oObJ1TGClAERmar/4F/vz4YvdFWHzXCiZhOAHnJ7X06ueFkpntFZw8vxH2X+53+wYzWuMcn3H8I1lX8QxG1XkILecGFLwV29vokmvPknYusfVw2ylYQ9pw7yHA8gVIgoNbS12lMngzIHusXGQOIC40DdcEUnmonPdL3Oox11Rwt/rJl4jhYi59XitjGR6l6WNDiVkG4V/7vpHKkmdAG4vXW9Q30qBgYVYKuQrC+ECS+NUjIIF0ItUGy6cYCz7KGiGXXQj4hDTnMMCSqUPdwfGGTpJ/Ws+0OtPwNFtdd1Br+MDkBPZNdTftMDNBR3DN12jwcRj2WIb0kt9dutKhCRxMjQwdFbSJsiPzxlb/nOxxu3C5DIxp13/guOyNeO96/hAx4ogVbf/xDHvzluSEpBhAz2zkP1MJLoLA83GtUhtaU/7uWW07rXsjwYlJjc5uFBpwbJJjPXDDYIU+ZlB1gq8ykmTYJLH0UeKoxEc+1CYNvoa41BYmJi0iNGxHkb6iKu6thVwYvStc56g5vLKqbx1PfBudXALfCEVrBcxs+JbZim2IpqVqD7Z1ieEvhKAzbJZMxhelf8WxHQx5CtgJs32oM5lK04q377a5h/eJfVtuxNMDYF0sjiTWKuV9E56gtPkfrm1dBSF5dB/WxM7Uy3JpOwGgdDiDTPZtTxxwUqRifWTQmI476z0fW4Y5Yljrle805iZjQCjhnERly0WQ9oSB6mmSkaB7GzedpNRMHBPjvWZpicwzdYauM7KKg76WF4S71z9wmF7yVJ5AerkOpJVTNOW8LISFp3079qFq3yRBx6batpvmhaphefqHKVk0uhKVW9gu7vcMVZb+RPXfku05grC5Zw==|920
+}//vsTB2sQX4ZVz79T8oMeqj2o+NtvqoQDTF9r7d99Lq+7A+JYHdtwruNA2BtEWFh+gHu2lWzD73FR4x7KV63P779baMXjtUVdC+s2VxM8A1AxS11meqEw0eBGE79TpelhobNYaBVFTTdD0Ffe+Wy5C9sUkdL19bR62G51nvuFiDKN4qY1BdUEko5hLWidOlTcWfyEDMDnmnMzl8hxDcgwojGcru4baUXBIUuGyZIXAvToqjkigcIS3+8Fi5XEj86nS++qL5QlK/RMmiy0YcCKxNNMFYIfAm8wAf5QVPAzeEdVMfQVoKOFbcScp93p7y5WwkvZrbz63vuO+0qaWHkysS2sStIxA7KV9pAnEzmjCb2IpKtO5RB9EveS89D4XstNZnsWWgocpisVOguQoCar6HIJJFcGe5RuP7QBG168/utCYWw7a00tDAJmx7XUeK+DejmX7U3ufJeBsDGFzxgJ3I9YOFYKkoAmJn6i9TnOzAE/c3IcbXMhKiBBOsQPmmpkJwYqWTl8pt2u5yl32/CvP+8i97PbRGHnO1h+pT21kSL51VUT6/c7qPY0JXYed3xla40BB+KDf91XWdE9k2igZrTQ60Xb8RSyXfItcawOFJK5kMxoZsczdqD/UuzUA5ncNldsPqLH2mbHFp7oVgTklBlD4avGep+wwz94ax24EMmQ3pd4uu3BUwRkjeWoP1mAFY0RuS1jY9F2xexAyIzaOj2SX/G28vZtaC659KzzSVkecB+b4bdmpc/J1CEUX9tmY3JTvZ8yhrxafKuTDWO/iGA0wvCHeOGVcUKTuJTNF/7tCs2IwNcThUJ9Ol9gG0Sh0qIpo+94GtIWUvxOod6VdF7MdAyVJHnoDQw5aA/u3ezv65NyeXFG4VUL0PHtoP6dkEnLwqOg4E26G6bx01deL6Q==|920
