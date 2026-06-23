@@ -295,7 +295,17 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー (テスト用)",
-    "ModuleType": 3
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-06-23T09:58:08.1052735+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\YBSメニュー (テスト用).json",
+      "MasterPages\\YBSメニュー (テスト用).rd"
+    ]
   },
   {
     "ModuleName": "TableView/v_YBS規格文書_ワークフロー",
