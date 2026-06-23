@@ -468,7 +468,7 @@
                     "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・規格名称\r\n・理由\r\n・適用範囲\r\n・施行日\r\n・規格本文の添付\r\n・規格本文閲覧用ＰＤＦの添付\r\n\r\n\r\n「部門承認者」の設定もお願いします。"
                   }
                 ],
-                "ID": "96ead378-a66b-447f-be4e-1558d2f676ac"
+                "ID": "8a6fef8c-0de3-430b-95a0-4dae1fa23319"
               },
               {
                 "CommandList": [
@@ -539,7 +539,7 @@
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "50a2bb37-c39f-43dc-80f7-3fba77aed9ae"
+                        "ID": "9b8602a9-1b43-4f1c-b4f5-f220887e926e"
                       },
                       {
                         "CommandList": [
@@ -554,7 +554,7 @@
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "3cd15f99-2898-4582-99b9-5d38b3e3fd76"
+                        "ID": "bbb7bcec-0985-4f45-8c85-81f21390324f"
                       }
                     ]
                   },
@@ -578,7 +578,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "e53272fd-34e5-4496-bfb5-fd8194ab1353"
+                "ID": "4d1baa29-9578-4230-aee8-08aebe5c73a8"
               }
             ]
           }
@@ -634,7 +634,7 @@
                 ]
               }
             },
-            "ID": "73fad16f8c074d6f81918811fc5f3649"
+            "ID": "fd3c6e5bbc8f44938c261ea3ce60886f"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -665,7 +665,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "a50ad1d6-c0fd-46fb-97c6-f588d689dbac"
+                "ID": "84e37292-ea62-42ea-aed7-3c661d97b541"
               },
               {
                 "CommandList": [
@@ -680,7 +680,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "c5b4dbfa-8caf-49f3-bc21-c049087077b4"
+                "ID": "396fb43d-2bfd-40cc-99cd-b8de9afc9eb4"
               }
             ]
           },
@@ -688,17 +688,6 @@
             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
             "PassValueBack": true,
             "ReloadData": true
-          },
-          {
-            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
-            "TableName": "YBS規格文書",
-            "NextState": "申請中",
-            "AssignTo": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=文書申請（改正!O34"
-            },
-            "ActionName": "提出",
-            "Disabled": true
           }
         ],
         "Text": "一時保存",
@@ -2425,7 +2414,7 @@
                 ]
               }
             ],
-            "ID": "7b4023ff-87f0-4f31-8fcf-4e62d25162c0"
+            "ID": "5497b108-804e-41d7-9f61-53ff2ed9855a"
           }
         ],
         "Disabled": true
@@ -2484,4 +2473,4 @@
       "Size": "48,51"
     }
   ]
-}//wKjWwLO9xukb0OEzAyZ3JE+xdMqGoTgAZkr+n/Sx4a5fuhQoszAdCtBFYpbEsne+LI29SXyWnx+pe+6m8Wb3fxKPz3KXv9nfM+kbN13rmYOO8/c5w+6rnSd7YDTjKyG6NsNItbkTUpUtWAkVDKUkwjoplJQ8JbYHA6v8DDo/mWomWH97xc6f34LYEoeeEIf5UY4r2IDew+WGPp2okZCZcKnHxcge7mHt15HhntmAFufWt2+0RqNoDFD41PwmTRWdpG2gTyyjErzqHflnTls1tcaY15G/94AstWHXDYX47kLer1XvMk///Zs9FmXaaLkC70A4zTfA6xDXZhMF0KUjv3GQ6NRJ47Cl/dCzLJ8O1VdexiSVEv8LPKDBnySUQuEaRnQ55DZRuBj+6u9AjLjWhfUBjXtSLGtZKTpwXWTgpq3pReYqQDaNgX/iBW+3trUA+9y8leHIK1DmSmkzZR4ZEzBhkKzDl58QdCr8oxA5btOk43rje1bIp+dRVXYMyqXl4uUt0pGX+URpJZIJB0EY1Wq/upu+RM0CRQpCCewITkTVkjbGCqzPLc/q9JxXZZ9UG7QevzVmCQ8Q9dpt5ipilA4BWSbDeT0D2s5XPuGx3/x3k+3PtPu2/GUkLfkTAq8jKHPl1RX2zCdPDEQwBeF90MvClMVfRlKTqmk/SDWxcTgF6ggimc6A5HIU4G50nVV4ph4Mt19pWlqNvsau7+qAXrm+5CyrVCe2GfvHeotcsRvs4Gf6lYT5ooiScsYZgt/Uyz2Ya2rF8+hOPjMBmo6+hVvSpjKqngej5sUk78M4V9GA1RiJtkVCiN/Qr0kclmNRjpVsyUeDP+TRof820js8LKAb1AbdzG6g7zr2djIRMrsvgbxt8ukKSBQUrWZxwcDGTsud4NgK89yrMJ7ndPohPw==|920
+}//enOd1FVdbQNNYNdEDZw6hPuLCB6xWor9eiSLzX4S5fZ30z5mrqzwMpdMlksoj9o4cRvdz/BwS9Hc3BFXD0D4dIjtf9aJsC/Trl5/+tmsqRVJ6nKy9YANXXUD+mrnhg44a1Zb/DlG15qGxRt9m8i1OBbfkpZBlLlEjB/9MQSeWiSEX1UMeVY2QB0sDt8FDgwV56hdBY1xSnYiew2X7suS04quybdUXkNQVkM/BYGRiXNyVp4So9MXefjeC7hNV5wcP32x/atQbf3VO/6twm/lJir5gUr4S7AhOAAFnd2rF+nA/57acQUKlTyHoGCUMdyyjT8fbxUmIIAkvRAsFcvA60TeeM+2COq484wftakbTuw+sJLWyrWkn9eSS5t3Bat6TjmFtk5G/uvcerBRd4pRX5akquVlPr6DuFeRCmR9Ujh/1ZEz8NjqhBYSz5M9lsbbzS+8FadzfCwXrDxLlzjJhRM7SegfRVHwtLW1o4GoA+qWtNEtjYBCyzxPGtmLHu2EtnlejNIddJOjZVHHlR6mIJWe1Q83vrfuI6IFIMbsBDEitsy7rJf7Zo4lh5w9ZskAfMKyJ08guA985aO7H7UF2ZsCdlmDRQW9eZol6G9V5BBZo+bAFjrFIfq1fmpv9GqTbQEMIc8uW6XJVEqqsX+AhHcBfb3HeGQEWrBM4JhZmO1vmm2ZXqnVh/Er/Zbj+bNIS2Z/26oEjrddiBh0xOc5cS4VL1TmzCB24CW3U4IhKyQUNa1gX+6mj4b/kpR/y1W5vMfKAjLhDzHyhKGXy/2QhsjTEjNxDuKYr2JormKKwR46LgVH30UlbQsgBkjdbIaMQD+odw9l+9iw5vEB0UBpx6WNiGuyEQp1+VHFYeljY8DgBgJ8dXUw7UGXupRa2EaNsy5sELoOskSZxDQyvumx/A==|920
