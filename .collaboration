@@ -307,7 +307,17 @@
   },
   {
     "ModuleName": "PCPage/コメント表示",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041351",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T16:38:13.3170765+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\コメント表示.json",
+      "Pages\\コメント表示.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS一覧（承認待ち",
