@@ -381,7 +381,17 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（承認待ち",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041351",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-23T16:56:55.6211187+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS一覧（承認待ち.json",
+      "Pages\\YBS一覧（承認待ち.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
