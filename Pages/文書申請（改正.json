@@ -33,7 +33,7 @@
     "8,1": "YBSコード",
     "8,11": "分類",
     "9,11": "細分化",
-    "10,1": "改正した規格を再添付ください。",
+    "10,1": "改正する規格を再添付ください。",
     "10,11": "主幹部門",
     "10,19": "審議形態",
     "11,1": "規格名称",
@@ -468,7 +468,7 @@
                     "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・規格名称\r\n・理由\r\n・適用範囲\r\n・施行日\r\n・規格本文の添付\r\n・規格本文閲覧用ＰＤＦの添付\r\n\r\n\r\n「部門承認者」の設定もお願いします。"
                   }
                 ],
-                "ID": "50683f0d-7a4b-4968-ad38-f266c60428fa"
+                "ID": "96ead378-a66b-447f-be4e-1558d2f676ac"
               },
               {
                 "CommandList": [
@@ -539,7 +539,7 @@
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "87c27889-258d-4e19-817c-e2dac9b25922"
+                        "ID": "50a2bb37-c39f-43dc-80f7-3fba77aed9ae"
                       },
                       {
                         "CommandList": [
@@ -554,7 +554,7 @@
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "7a48b37f-f671-4dbc-b6b7-b5ebfc72954c"
+                        "ID": "3cd15f99-2898-4582-99b9-5d38b3e3fd76"
                       }
                     ]
                   },
@@ -578,7 +578,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "9f07ec76-8b0a-4cba-bb40-baa26795b5ec"
+                "ID": "e53272fd-34e5-4496-bfb5-fd8194ab1353"
               }
             ]
           }
@@ -665,7 +665,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "e80013e7-9285-49ce-a5bc-e87ddf89115c"
+                "ID": "a50ad1d6-c0fd-46fb-97c6-f588d689dbac"
               },
               {
                 "CommandList": [
@@ -680,7 +680,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "4f050ee8-9aca-4ab2-bbf4-da62927a45af"
+                "ID": "c5b4dbfa-8caf-49f3-bc21-c049087077b4"
               }
             ]
           },
@@ -2425,7 +2425,7 @@
                 ]
               }
             ],
-            "ID": "5922e2f2-ab41-4c1b-a119-4adf3f39d479"
+            "ID": "7b4023ff-87f0-4f31-8fcf-4e62d25162c0"
           }
         ],
         "Disabled": true
@@ -2484,4 +2484,4 @@
       "Size": "48,51"
     }
   ]
-}//MsjkwlLs7jlNXdNdIRYuT4zS91gxluFYBnbNgF+q+zBbXCmcAeg7kjsGXrBpuC50iK9G4UolRysiTDxJNBFUcHzgXtpYMHPXxHbcrUY3HOLGbgGuN7aBMh61rCLMIk7KRNKY+HEgwx1Nea5lLNUm1QbXejG3gpTaaoNmSuFY9rx5rpSX7C08JxV0ZE2nYslqCOptoMP5oM523sAejobTygQ/p/Ghws8o3xW2IA7HyBbtw/HR0d0OdI0ZlxO+kaGMxwvJNDwqL24diN5OhZi+Ivf/pZzCrCqBemzzc9vJyngBqXoyoWRPNX8kDqFIhqW5/n6sAulW6gChEYYgsosQUgCFxyxtIg5KoP51mMCHBx77vuHRNdStFssNYTB2kXsQjWADd8Y+zhWPjTaLuSNnfaptdRxw7gmu2mrYxB7ejNNNA4b8jq5x7XjMFIx0YnhVjHjNpezWVD7Q2cjekvjCQSed39fc9GT4LOvtzK1qz/fDPiKp6Y8V2wfYOuwkZJsxPfPoDiaT/LeRF+B3K1AXwvpvzpSnkUK8fVNw5Pu3fDqqz9n1VcI54zswJPeK83ItnW3eRJLwdV3eWufcPerQ2m97Qsvv7mT17TAvMUPJDKyjU26Y3Bf3U2wUJ5bkMH/e57lHO05nJ+upR9DZTijWF37597STZ8mnPpIqPMMA14negRs9Mkcmwx7nblhlvPbBp9TwQnpwYnyXlLTCTJu14yPZPU+7YVwi0I+3NKbubpohIYGfuFxIwe6BF08UFmZFmADdlchkXc4uA0bNcX3d/C5HUhZj58M4E7mAi9njAOdNUQL5By2jjtNz49Xv4BqIg8s3BusMif2tk4XNehxsRH30HsuSUFk2n3tp14/HW2hF3V1OLoibvZG2Y9gxoEvdNjFRYF1JlmTysQfpm0SS8w==|920
+}//wKjWwLO9xukb0OEzAyZ3JE+xdMqGoTgAZkr+n/Sx4a5fuhQoszAdCtBFYpbEsne+LI29SXyWnx+pe+6m8Wb3fxKPz3KXv9nfM+kbN13rmYOO8/c5w+6rnSd7YDTjKyG6NsNItbkTUpUtWAkVDKUkwjoplJQ8JbYHA6v8DDo/mWomWH97xc6f34LYEoeeEIf5UY4r2IDew+WGPp2okZCZcKnHxcge7mHt15HhntmAFufWt2+0RqNoDFD41PwmTRWdpG2gTyyjErzqHflnTls1tcaY15G/94AstWHXDYX47kLer1XvMk///Zs9FmXaaLkC70A4zTfA6xDXZhMF0KUjv3GQ6NRJ47Cl/dCzLJ8O1VdexiSVEv8LPKDBnySUQuEaRnQ55DZRuBj+6u9AjLjWhfUBjXtSLGtZKTpwXWTgpq3pReYqQDaNgX/iBW+3trUA+9y8leHIK1DmSmkzZR4ZEzBhkKzDl58QdCr8oxA5btOk43rje1bIp+dRVXYMyqXl4uUt0pGX+URpJZIJB0EY1Wq/upu+RM0CRQpCCewITkTVkjbGCqzPLc/q9JxXZZ9UG7QevzVmCQ8Q9dpt5ipilA4BWSbDeT0D2s5XPuGx3/x3k+3PtPu2/GUkLfkTAq8jKHPl1RX2zCdPDEQwBeF90MvClMVfRlKTqmk/SDWxcTgF6ggimc6A5HIU4G50nVV4ph4Mt19pWlqNvsau7+qAXrm+5CyrVCe2GfvHeotcsRvs4Gf6lYT5ooiScsYZgt/Uyz2Ya2rF8+hOPjMBmo6+hVvSpjKqngej5sUk78M4V9GA1RiJtkVCiN/Qr0kclmNRjpVsyUeDP+TRof820js8LKAb1AbdzG6g7zr2djIRMrsvgbxt8ukKSBQUrWZxwcDGTsud4NgK89yrMJ7ndPohPw==|920
