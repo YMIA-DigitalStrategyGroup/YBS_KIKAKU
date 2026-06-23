@@ -58,7 +58,8 @@
     "21,1": "規格\n付表、付図",
     "26,6": "閲覧後はダウンロードファイルを確実に消去願います。",
     "27,1": "規格本文\nＰＤＦ",
-    "30,26": "承認/差戻",
+    "30,2": "(委員名)",
+    "30,24": "承認/差戻",
     "31,2": "コメント保存",
     "34,7": "コメント確認",
     "34,25": "閉じる"
@@ -405,7 +406,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "30,2": {
+    "30,5": {
       "CellType": {
         "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
         "CellCustomValue": "%CurrentUser%",
@@ -418,7 +419,7 @@
         }
       }
     },
-    "30,11": {
+    "30,12": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_State",
@@ -439,7 +440,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=フロー_委員コメント!AA32"
+                        "SerializeProperty": "=フロー_委員コメント!Y32"
                       }
                     ]
                   },
@@ -451,7 +452,7 @@
                     "MessageFormula": "「承認」または「差戻」を選択してください。"
                   }
                 ],
-                "ID": "a1679db1-d47b-4ddd-9bfd-006e65977e1d"
+                "ID": "1dad2816-c1c5-4be1-886e-94a49e615ea9"
               },
               {
                 "Condition": {
@@ -472,7 +473,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「コメント保存」ボタンを押してください。"
                   }
                 ],
-                "ID": "104463d7-672a-4313-94bc-c221c77f7517"
+                "ID": "8f280c3e-d496-43bb-b5ae-ceec66fb90dd"
               },
               {
                 "CommandList": [
@@ -503,7 +504,7 @@
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=フロー_委員コメント!AA32"
+                          "SerializeProperty": "=フロー_委員コメント!Y32"
                         }
                       },
                       {
@@ -525,7 +526,7 @@
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=フロー_委員コメント!C31"
+                          "SerializeProperty": "=フロー_委員コメント!F31"
                         }
                       },
                       {
@@ -545,13 +546,13 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "f18af5e5-79c6-43d8-9cd3-8fc828a4f084"
+                "ID": "4ccce44b-5d8c-42cc-ba07-202a86f41b82"
               }
             ]
           }
         ],
         "Text": "コメント保存",
-        "TemplateKey": "_RS_Normal_Style2"
+        "TemplateKey": "_RS_Normal_Style5"
       }
     },
     "31,6": {
@@ -563,10 +564,10 @@
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "WaterMark": "承認コメントを記載ください。"
+        "WaterMark": "「承認/差戻」選択して、委員のコメントを記載ください。"
       }
     },
-    "31,26": {
+    "31,24": {
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
         "ColumnName": "認定結果",
@@ -622,7 +623,8 @@
                   "SerializeProperty": "=コメント表示!H2"
                 }
               }
-            ]
+            ],
+            "LoadBindingDataOption": 1
           }
         ],
         "Text": "コメント確認",
@@ -1175,14 +1177,14 @@
       },
       {
         "FontFamily": 3,
-        "BorderTop": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 3,
         "Formatter": 8,
         "VerticalAlignment": 14,
         "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
         "BorderTop": 0,
         "BorderLeft": 0
       },
@@ -1829,8 +1831,13 @@
       "29,24": 12,
       "29,25": 92,
       "29,30": 1,
-      "30,11": 40,
-      "30,12": 12,
+      "30,5": 12,
+      "30,6": 12,
+      "30,7": 12,
+      "30,8": 12,
+      "30,9": 12,
+      "30,10": 12,
+      "30,12": 40,
       "30,13": 12,
       "30,14": 12,
       "30,15": 12,
@@ -1842,59 +1849,61 @@
       "30,21": 12,
       "30,22": 12,
       "30,23": 12,
-      "30,24": 12,
-      "30,25": 12,
+      "30,24": 13,
       "30,30": 1,
       "31,2": 23,
       "31,3": 93,
       "31,4": 93,
-      "31,5": 94,
-      "31,6": 95,
-      "31,7": 93,
-      "31,8": 93,
-      "31,9": 93,
-      "31,10": 93,
-      "31,11": 93,
-      "31,12": 93,
-      "31,13": 93,
-      "31,14": 93,
-      "31,15": 93,
-      "31,16": 93,
-      "31,17": 93,
-      "31,18": 93,
-      "31,19": 93,
-      "31,20": 93,
-      "31,21": 93,
-      "31,22": 93,
-      "31,23": 93,
-      "31,24": 93,
-      "31,25": 94,
-      "31,26": 12,
+      "31,5": 93,
+      "31,6": 94,
+      "31,7": 19,
+      "31,8": 19,
+      "31,9": 19,
+      "31,10": 19,
+      "31,11": 19,
+      "31,12": 19,
+      "31,13": 19,
+      "31,14": 19,
+      "31,15": 19,
+      "31,16": 19,
+      "31,17": 19,
+      "31,18": 19,
+      "31,19": 19,
+      "31,20": 19,
+      "31,21": 19,
+      "31,22": 19,
+      "31,23": 19,
+      "31,24": 95,
+      "31,25": 19,
+      "31,26": 19,
+      "31,27": 21,
       "31,30": 1,
       "32,2": 96,
       "32,3": 5,
       "32,4": 5,
-      "32,5": 17,
-      "32,6": 96,
-      "32,7": 5,
-      "32,8": 5,
-      "32,9": 5,
-      "32,10": 5,
-      "32,11": 5,
-      "32,12": 5,
-      "32,13": 5,
-      "32,14": 5,
-      "32,15": 5,
-      "32,16": 5,
-      "32,17": 5,
-      "32,18": 5,
-      "32,19": 5,
-      "32,20": 5,
-      "32,21": 5,
-      "32,22": 5,
-      "32,23": 5,
-      "32,24": 5,
-      "32,25": 17,
+      "32,5": 5,
+      "32,6": 28,
+      "32,7": 29,
+      "32,8": 29,
+      "32,9": 29,
+      "32,10": 29,
+      "32,11": 29,
+      "32,12": 29,
+      "32,13": 29,
+      "32,14": 29,
+      "32,15": 29,
+      "32,16": 29,
+      "32,17": 29,
+      "32,18": 29,
+      "32,19": 29,
+      "32,20": 29,
+      "32,21": 29,
+      "32,22": 29,
+      "32,23": 29,
+      "32,24": 28,
+      "32,25": 29,
+      "32,26": 29,
+      "32,27": 31,
       "32,30": 1,
       "33,2": 14,
       "33,3": 14,
@@ -2073,16 +2082,16 @@
     "24,35,1,4",
     "23,39,1,2",
     "24,39,1,2",
-    "31,6,2,20",
-    "31,26,2,3",
     "25,35,4,6",
-    "30,11,1,6",
-    "30,2,1,6",
-    "34,7,2,4"
+    "34,7,2,4",
+    "30,5,1,6",
+    "31,6,2,18",
+    "31,24,2,4",
+    "30,12,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "YBS承認処理",
+    "Title": "YBS委員コメント登録",
     "PermissionData": {
       "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
       "permissionResource": {
@@ -2136,4 +2145,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//Ii1YfgGMt0+cVM1SayxGQP08pcnUv76vGZDn6BkFISL1AnwS6UHyGhnSplpSW9PJ99hMpEeCWsIlMsTlMkmOsGTeaX0UpfR6U0XjV3xx+9ewB/p3RIf+bZ1/Uw1Zeho7pZRZCPUlAHVY7CfI2gGLvd5r9eKyuSYvWv/5hIck4NzaGlEITR40FVt8cMnMDzmyhrxLmLCdTyqS4/2B8JvNkVqoy65u1zR1IpVazeyDk5sGPZHUBlE9uMKBlNFBot203VUSrdt6ErDxgKjtqxeVs5BSAeG6qv06ysMYJ/D5bFM1hEMbI6O0cF5LjcpNzggHtQKXrcfDUp4iwxgAM4ejE3RFCHjgKvQ4QTzTpK9jhj1NBuiQdmgPyMruPU6DTCwo6jUZQphOoGMFHxavXwOknp7LWxsk0qgvjK8mOyScGeRG7EuDOtoI7t9ZVY6nzsQLhrMmkBtm2u2ZTcZnvvjdNdeIFFy91zIFiIGb0a4ul8oUpdjQkHzgZlQq9OoFO8pMrONO2GZ4d5hZz6cnmWdfl7xeFwzhMvS79ojdttw5KP4Z0UHLO2zQZFEspwfIncRAwqQuKV6RBmAE3BuOFzhMjJ+6BIpiPCTpbsdeFslK0i2w8DXRRLaxg6+0ysDKXWkmDzVMuN2kBaPVY6cSMd+B/YrO38jjcNfq3nhaId+WHv4daR0Te1bQL7WA+un5ctvsH/0Fm9koyCyFPitDuUms6r+rn5jqO3kkkBrDepL94DxDW63iX6/vk5GMe9Hn7f4fQcEntv61v9P75yiZ70gt4s6A+M/pIcQeiwLYSTiaH5/XwjHCbfz19/IhMRqw1TCq7oLvcO7tGVsW9WmFuewv7geR4MRfVBGkXc725PGLhUKdXvjQ1IAybLSIRuJMuwNtAZQjQ1h7nFux+wWTp77bKQ==|920
+}//+fgSgm2URKa4ynoEcPI8iBlbg5vvg+eTd6L5AMtr51kdSzPQx+ZdvtZ2oQqtrTcLL1Kg+YzErMr0i23r0ggXeQwFPULfxOZirrABXKDYMzv4z1CUz0NQ6quIhVVEE7apFSDr7uTgMaE4EXO5xy3YRdFhL31pSlNAHIt9pyRs/VLk6iKhVrh61sCsd7XumiKBBV6DWyzG04ACXlPj70hN8VRrxuIOQkUCoE09GovGmLqpAS4+ZBuVR9wnFJ43kuFX6w6VVoIUIYHawU1Nn2dAO926Rx1L3WjBJmMZv2/CVgPbEpysEyJgSMOq8YHMNcK/RRtkwTYrlMyO37x/SRbBagWamgWYegZTrcQ2VJKIHweLIkbCKedozMAOO+t9luxLahRR8eQXnAmbHRqw76++aDUthumLtDZzIryP9cIF+gNjzOnP/DpyXwm52PlfyxSzjagPhOeW8RyEA17Oxk8IhiEZCp5o6BFQbxSMMYxmZT/+ncco98qVGBNRc1xRghcqZzB2I/7g7LOSmaLpgbCdf2lPdV1XOyH4bQWzhJNNk2RMhi1p6UhykwW+N3/Qduf2FL+Y3y0TiNXALqRbfoCsjHNJWBmUXyYPR7Wte8FdleAur83PYir9NwK7rHem7AalHySPJif2fKXGaM3v+ZrubYEpMZcwro03zmsloOw6+ntjRbL8FSNI1F58QKk/nKHFSGMGVHQsdFS/uCwo4qf0RmW+/PY1KZXY28GlSb7NMIDFmncTk0RXtKfcmV6vCjdDnZOSbjuvTCBLbpeeoiLnvUj444p2ewQSV3gcsL4O5jneq19HHClrulDFF7+qO0zNzy50m/rDcRmbz521vMSvkr/08n9ih2mPz9OCRnS3FWriuyaB/iLlMScmYmn67yfOSIkQiDx5nbjerqetDjnxVA==|920
