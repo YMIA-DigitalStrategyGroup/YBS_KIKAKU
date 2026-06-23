@@ -325,7 +325,17 @@
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-06-23T11:11:22.7755192+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\フロー_承認処理.json",
+      "Pages\\フロー_承認処理.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
