@@ -406,17 +406,17 @@
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-06-23T09:27:56.4198577+09:00",
+    "LockDateTime": "2026-06-23T09:28:59.7144173+09:00",
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/文書_承認処理",
+    "ModuleName": "PCPage/フロー_承認処理",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-06-23T09:27:56.4197151+09:00",
+    "LockDateTime": "2026-06-23T09:28:59.714232+09:00",
     "ModuleType": 1
   }
 ]
