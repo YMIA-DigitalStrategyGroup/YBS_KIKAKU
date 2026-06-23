@@ -1,5 +1,8 @@
 {
   "Rows": {
+    "InLogicalVisibleIndexes": [
+      1
+    ],
     "Count": 35
   },
   "Cols": {
@@ -50,7 +53,7 @@
     "28,39": "一時保存",
     "30,40": "削除予定",
     "31,1": "廃止申請",
-    "31,22": "キャンセル"
+    "31,23": "キャンセル"
   },
   "Formulas": {
     "7,41": "TODAY()",
@@ -431,7 +434,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "612b1236-07f1-4c90-acbb-daeefc44d194"
+                "ID": "07ef9d87-8a18-4109-9630-46b07d02dead"
               },
               {
                 "CommandList": [
@@ -446,7 +449,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "73b7eb68-d422-4ac3-97d3-c76842181552"
+                "ID": "9b5ee06c-68bf-45eb-902d-0342375f83e8"
               }
             ]
           },
@@ -527,7 +530,7 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "819e08f5-6c30-42b7-a2e7-9371893d649e"
+                "ID": "a45dcfb0-f51f-4c71-8964-ef69afb08144"
               },
               {
                 "CommandList": [
@@ -546,13 +549,17 @@
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "='文書申請 (廃止'!G29"
                     },
-                    "ActionName": "提出"
+                    "ActionName": "提出",
+                    "WorkflowComments": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!F32"
+                    }
                   },
                   {
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "5d708bc0-c857-43f0-b882-c1c7b25133bf"
+                "ID": "1f980afd-992f-4f5d-9ebf-76856ba34fbc"
               }
             ]
           }
@@ -561,7 +568,14 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "31,22": {
+    "31,5": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "申請コメントを入力してください。"
+      }
+    },
+    "31,23": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -702,7 +716,8 @@
         "FontFamily": 2,
         "HorizontalAlignment": 3,
         "BorderTop": 0,
-        "BorderLeft": 0
+        "BorderLeft": 0,
+        "ShrinkToFit": true
       },
       {
         "BorderTop": 0
@@ -724,6 +739,7 @@
         "FontFamily": 2,
         "FontSize": 16.0,
         "FontWeight": 8,
+        "HorizontalAlignment": 10,
         "BorderTop": 0
       },
       {
@@ -810,7 +826,7 @@
       {
         "Background": 1,
         "FontFamily": 2,
-        "Formatter": 10,
+        "Formatter": 11,
         "BorderTop": 0,
         "BorderLeft": 0,
         "ShrinkToFit": true
@@ -880,7 +896,7 @@
       {
         "FontFamily": 2,
         "Formatter": 5,
-        "VerticalAlignment": 11,
+        "VerticalAlignment": 12,
         "WordWrap": true,
         "BorderLeft": 0
       },
@@ -907,7 +923,7 @@
       },
       {
         "FontFamily": 2,
-        "VerticalAlignment": 11,
+        "VerticalAlignment": 12,
         "WordWrap": true,
         "BorderBottom": 0,
         "BorderTop": 0,
@@ -915,8 +931,8 @@
       },
       {
         "FontFamily": 2,
-        "Foreground": 12,
-        "Formatter": 10,
+        "Foreground": 13,
+        "Formatter": 11,
         "BorderBottom": 0,
         "BorderTop": 0,
         "ShrinkToFit": true
@@ -929,17 +945,17 @@
       },
       {
         "FontFamily": 2,
-        "Formatter": 13,
-        "VerticalAlignment": 11,
+        "Formatter": 14,
+        "VerticalAlignment": 12,
         "WordWrap": false,
         "BorderLeft": 0,
         "ShrinkToFit": true
       },
       {
         "FontFamily": 2,
-        "Foreground": 12,
+        "Foreground": 13,
         "Formatter": 5,
-        "VerticalAlignment": 11,
+        "VerticalAlignment": 12,
         "WordWrap": false,
         "ShrinkToFit": true
       },
@@ -967,7 +983,7 @@
       },
       {
         "FontFamily": 2,
-        "Formatter": 14,
+        "Formatter": 15,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0,
@@ -1062,28 +1078,41 @@
         "BorderLeft": 0
       },
       {
-        "BorderRight": 0
+        "BorderRight": null
       },
       {
-        "Background": 15,
+        "Background": 16,
         "FontFamily": 2,
         "Foreground": 4,
         "WordWrap": true
       },
       {
-        "BorderBottom": 0,
-        "BorderRight": 0
+        "BorderBottom": null,
+        "BorderLeft": 0
       },
       {
-        "Background": 16,
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 17,
         "FontFamily": 2,
-        "Foreground": 17,
+        "Foreground": 18,
         "WordWrap": true
       },
       {
-        "Background": 18,
         "FontFamily": 2,
-        "Foreground": 17,
+        "Formatter": 5,
+        "VerticalAlignment": 12,
+        "WordWrap": true
+      },
+      {
+        "Background": 19,
+        "FontFamily": 2,
+        "Foreground": 18,
         "WordWrap": true
       }
     ],
@@ -1099,6 +1128,7 @@
         "[AUTO]General",
         "Bold",
         "Right",
+        "Left",
         "General",
         "Top",
         "Background 1 -35",
@@ -1751,6 +1781,7 @@
       "28,4": 83,
       "28,5": 19,
       "28,6": 84,
+      "28,14": 56,
       "28,26": 85,
       "28,33": 0,
       "28,39": 86,
@@ -1771,19 +1802,19 @@
       "29,11": 32,
       "29,12": 32,
       "29,13": 32,
-      "29,14": 32,
-      "29,15": 32,
-      "29,16": 32,
-      "29,17": 32,
-      "29,18": 32,
-      "29,19": 32,
-      "29,20": 32,
-      "29,21": 32,
-      "29,22": 32,
-      "29,23": 32,
-      "29,24": 32,
-      "29,25": 32,
-      "29,26": 87,
+      "29,14": 87,
+      "29,15": 88,
+      "29,16": 88,
+      "29,17": 88,
+      "29,18": 88,
+      "29,19": 88,
+      "29,20": 88,
+      "29,21": 88,
+      "29,22": 88,
+      "29,23": 88,
+      "29,24": 88,
+      "29,25": 88,
+      "29,26": 89,
       "29,33": 0,
       "29,39": 12,
       "29,40": 12,
@@ -1791,23 +1822,13 @@
       "29,42": 12,
       "29,43": 12,
       "30,33": 0,
-      "31,1": 88,
-      "31,2": 12,
-      "31,3": 12,
-      "31,4": 12,
-      "31,5": 12,
-      "31,22": 89,
-      "31,23": 12,
+      "31,1": 90,
+      "31,5": 91,
+      "31,23": 92,
       "31,24": 12,
       "31,25": 12,
       "31,26": 12,
       "31,33": 0,
-      "32,1": 12,
-      "32,2": 12,
-      "32,3": 12,
-      "32,4": 12,
-      "32,5": 12,
-      "32,22": 12,
       "32,23": 12,
       "32,24": 12,
       "32,25": 12,
@@ -1870,8 +1891,6 @@
     "7,41,1,4",
     "13,41,1,4",
     "28,1,2,5",
-    "28,6,2,21",
-    "31,22,2,5",
     "5,6,1,8",
     "5,1,1,5",
     "5,14,1,5",
@@ -1891,7 +1910,6 @@
     "9,14,1,2",
     "8,16,1,11",
     "20,41,1,3",
-    "31,1,2,5",
     "28,39,2,5",
     "9,16,1,11",
     "10,11,1,3",
@@ -1911,7 +1929,11 @@
     "26,6,2,21",
     "8,1,2,3",
     "8,4,2,5",
-    "8,9,2,2"
+    "8,9,2,2",
+    "31,1,2,4",
+    "31,5,2,11",
+    "31,23,2,4",
+    "28,6,2,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2059,7 +2081,7 @@
                 ]
               }
             ],
-            "ID": "7c636bd1-b858-4869-bae2-be1acb16a529"
+            "ID": "628c1369-2429-4f0b-83b1-031ea5883bd6"
           }
         ],
         "Disabled": true
@@ -2118,4 +2140,4 @@
       "Size": "51,41"
     }
   ]
-}//Hh1SYUPQAIXHJotaoHmvZowR7smtKDCIeVtb1lJG/XPK+cx/Wvy0eDu842LwRVvUf+qe+tq7PoddasX/mgYHWzOiZpiAz2XbwMswPGrJOeFlwczwkFy3UJ5nlw0WF85Fcr0N/+gIk7Gca2dGe4BAGvmLAvy3PsSm4JmfGzG6a1UqcJ73CPadh3R/FztXl956684xdsyfbINkh23r3vhYSbCo9cWG3yWDBMwBJJNTpIOZWPs9JoUgx84riDnkAVwwud9ReGwLFw5HCqxAU7a7LYwUfgoSYoFYLTbHMGHg0f6uoyMhvtKxgWG1bbFwVqxqAeROl3FF5SrYws0b5MEc7l65HbN937g/30a50PTLSj5AxdVYLZL6TyWK/L3RhG6+t5BOU1l4AVCORaxxSQ7R7cL/19ZUBQhbb/Zq096GbcstnQJ91s2T7I8PEMyNUg/J8IHGX9WlncXNaVR3Ndj9XVGLensBn8yqYzqEA4r0sbmJz1ojA/qun1ri2+bwAksilYCY1eGHNxGsBgYRNQQcToMqWL/YoP/KjxPPCpc+XLRt8hOowAaS8VsllSgHl6pv0MD/BejlW6sqkEIl4uCdULafjKlnN8up+awSYQ2sJo9LNGRQbVJx0mmXdlKethe3XGn1oPbg/qwtzNbnAsO6rXeWaAflkOBW2Ki9GnY9YRNov6VG4FkIkncrzWgPtx3VFhDheu8xqru1SmuskSXBaA6wdrfscrD+MWhMYftvglmNQEwY9JRFYuCPILwEVUmAlLXpVcOmge5AVHq8W88S/dhj9I5NAYylxxC3z5Sn5RiO9T0c47o80O32YTUzMCkrB6XLYI7kzNKcwJNWXL2J79c+ezTTEpaSXQgnvYTVOCI/aMETBsVcDvv2czs2FYwy5F8gHWp/4OEU+2PBVcO9Zg==|920
+}//d55MYvWmY3Bf2sktlStQRtSrkklyLh78mMDm12SR4HW2F1QA2R50ydeBW/104OlTcwQKU6AQHXrgVwnPK94lK6CcO+f45dAky4++P+JRUT2HpLSuL2Bv4tXNkcDMZ1BjIcHvkcySguumxqSdhxHKrFRm171K8LFUYEo0KFq6YX1G3pX9Nshtu3mmaqPpNPPXCnkz1WnAFR4wvlm/TNFigLvAxTSuym5cyxiGEcEkc3E1shNIolDeAe0XM4VZ02lweOG7zeI21vj43bb34JrfSjozkj6H6xGJ0S1XCkasc+MronZyWCgGon+FdVk6IbxHLdpB99E7tt32SVrBjiId7KXGx0oAFfRqHKC9UVDltY3GfIKPLIsRIZB8KeqIrb7MDYPy4260wxhatAvbGaAnnWZ8ajpiFk8Zf0JUFI9F92ZfvV62QxgPwQC9e7YkekGhnxkji6pCwlumSWUrLiA9a37utzEOLZFylpot8pRwYFcydm565cplT6pwAD8zX1GkWldP8/skQRxfrG/vUzW8tYCGwBaWlgQgmMDtgU9piebqo/jFnEo2KIHLfn47KLMe2mvaSlmoLDlbKpXNJsMLbxqnGgYHrat78bkPivb8NGHowFSNdUb+8lrl6J0e51kQ2KfE1RkJItbriah5jkk7vABu6ObRovRTEbeQoG4oMKuSavISJqXctfist1nTS7FwHqP8FJalnPeed2M+DQ88eJdVLsEI3DmXXU8KIZlbcZGCEs4Lj7DDLefAWEV5I3fe123LHXcjKP3bq1FsjlqNA3rPfgiyebX+e4U1Zk4ImJ8t8T86vymJzhCII2uvE7D3mwUkCzYLWLvG9JBDWr2exlR9aOycPxevQoHJa0YHrEU/SuwPpj0phcbyPZNJoQnaENZ9VpipR570MBzWHi01jQ==|920
