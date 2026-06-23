@@ -60,6 +60,7 @@
     "27,1": "規格本文\nＰＤＦ",
     "30,26": "承認/差戻",
     "31,2": "コメント保存",
+    "34,7": "コメント確認",
     "34,25": "閉じる"
   },
   "Formulas": {
@@ -342,7 +343,7 @@
               "ColumnBindingInfo": {
                 "TableName": "v_YBS規格文書_ワークフロー",
                 "ColumnName": "YBSコード",
-                "GUID": "6ce293b3-818a-4775-931c-d3e154f18ab0"
+                "GUID": "48b41a27-f7d1-4e93-9065-cd1eb31339b6"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -354,7 +355,7 @@
               "ColumnBindingInfo": {
                 "TableName": "v_YBS規格文書_ワークフロー",
                 "ColumnName": "改正コード",
-                "GUID": "8aa2ca92-c322-45fe-ac5c-fd5740174db4"
+                "GUID": "050a8032-4224-410c-b497-02c6e6127503"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -450,7 +451,7 @@
                     "MessageFormula": "「承認」または「差戻」を選択してください。"
                   }
                 ],
-                "ID": "cc68e978-4b7c-4263-92ee-1b4029546689"
+                "ID": "a1679db1-d47b-4ddd-9bfd-006e65977e1d"
               },
               {
                 "Condition": {
@@ -471,7 +472,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「コメント保存」ボタンを押してください。"
                   }
                 ],
-                "ID": "2541f756-ded4-494d-9bec-396794aeb247"
+                "ID": "104463d7-672a-4313-94bc-c221c77f7517"
               },
               {
                 "CommandList": [
@@ -544,7 +545,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "bc54415e-7d20-46e2-a0e4-7f3292a5ddb5"
+                "ID": "f18af5e5-79c6-43d8-9cd3-8fc828a4f084"
               }
             ]
           }
@@ -584,6 +585,48 @@
             "DisplayValue": "差戻"
           }
         ]
+      }
+    },
+    "34,7": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "コメント表示",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=フロー_委員コメント!F6"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=コメント表示!C2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=フロー_委員コメント!K6"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=コメント表示!G2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=フロー_委員コメント!H8"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=コメント表示!H2"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "コメント確認",
+        "TemplateKey": "_RS_Normal_Style2"
       }
     },
     "34,25": {
@@ -1883,10 +1926,10 @@
       "34,2": 14,
       "34,3": 14,
       "34,4": 14,
-      "34,7": 67,
-      "34,8": 67,
-      "34,9": 67,
-      "34,10": 67,
+      "34,7": 12,
+      "34,8": 12,
+      "34,9": 12,
+      "34,10": 12,
       "34,11": 67,
       "34,12": 67,
       "34,13": 67,
@@ -1918,6 +1961,10 @@
       "34,39": 12,
       "34,40": 12,
       "34,41": 12,
+      "35,7": 12,
+      "35,8": 12,
+      "35,9": 12,
+      "35,10": 12,
       "35,25": 12,
       "35,26": 12,
       "35,27": 12,
@@ -2030,7 +2077,8 @@
     "31,26,2,3",
     "25,35,4,6",
     "30,11,1,6",
-    "30,2,1,6"
+    "30,2,1,6",
+    "34,7,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2088,4 +2136,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//KF6rxRFvFLGXwFiGqDW7penqWOfwDReLT60gJK/uXA6aHD++wfQ3hvDB3B7uBawVEW9A5R0gjPAINHBBwMXw1w4l3FkyQUD6xarQaWw+FPA5/i6OAQBkST2tBEB4ibXN6eMkgN8jLgQbr5Maf/SpANUxWjCq11Aklpfd3Hqq8AmoAZtQJ2IZ6LAqr/r6TPWgB5W9+AyC2df6liLv24ifGMftLVfSQnJD9gmcy7QhH9Bd9nKj47jcuvmJJDwi8lV+6nziN2uqsto5iVpDexNfHWQrdvvWQ+oKR+n6/3/byUKBdk5RymGrD8DVmVBjFjwZUw72mbDUk9jjVsDJw2muIRQW+zBNpu+Zsov9PgekC4XzUc2NfC6ubG4BnOS6f1HqXPvqcnl8EPJb3p3Qc+lFBXvx0Gct4kG0LxamILB/NvEDqL9kcMQV+yzX5TiiA8pR1hkstYgI5kddg7PNlFYe4UgvfAcCC/fXjO70YyZq6Ojyyz742fwh6C/OCFtWev4h9qGGVEKHRf24Y06UTweG9V9vYdqciFoXJrc25pZX7AiJfxkZbT9BIB5W+MyQ8V5nswY9vM2uxILBiMCgVLvT4e/JFOyo2oPU59KT/u/35+UDa5h671ohrQ4YmX6MytGqRSZ3FnIwc3RFYYbyAn9f9yo8WeRZzcFLplOcy+gdnagpGNml8Q4rNa4eilu2I7YbvTeYb4QgcNEi1VZO6zKwVaVarzU2Rx4lTd1HegzMbFfVIzKlJLMVPbyz5ulwdkQaYq6268rImAVsKSVJ+eSD6sTAF4DuJ5WwOXLlSRqT0iPkC6TO0KU69ZKDOVK+44s3JSWrwpjsxRN6Eu1twybG+p2+UHmEszyaJ4WdgSGDShcOrSiJg5xI9rks08+97SWSjooOTMtYWFmc0sULJ7lP8Q==|920
+}//Ii1YfgGMt0+cVM1SayxGQP08pcnUv76vGZDn6BkFISL1AnwS6UHyGhnSplpSW9PJ99hMpEeCWsIlMsTlMkmOsGTeaX0UpfR6U0XjV3xx+9ewB/p3RIf+bZ1/Uw1Zeho7pZRZCPUlAHVY7CfI2gGLvd5r9eKyuSYvWv/5hIck4NzaGlEITR40FVt8cMnMDzmyhrxLmLCdTyqS4/2B8JvNkVqoy65u1zR1IpVazeyDk5sGPZHUBlE9uMKBlNFBot203VUSrdt6ErDxgKjtqxeVs5BSAeG6qv06ysMYJ/D5bFM1hEMbI6O0cF5LjcpNzggHtQKXrcfDUp4iwxgAM4ejE3RFCHjgKvQ4QTzTpK9jhj1NBuiQdmgPyMruPU6DTCwo6jUZQphOoGMFHxavXwOknp7LWxsk0qgvjK8mOyScGeRG7EuDOtoI7t9ZVY6nzsQLhrMmkBtm2u2ZTcZnvvjdNdeIFFy91zIFiIGb0a4ul8oUpdjQkHzgZlQq9OoFO8pMrONO2GZ4d5hZz6cnmWdfl7xeFwzhMvS79ojdttw5KP4Z0UHLO2zQZFEspwfIncRAwqQuKV6RBmAE3BuOFzhMjJ+6BIpiPCTpbsdeFslK0i2w8DXRRLaxg6+0ysDKXWkmDzVMuN2kBaPVY6cSMd+B/YrO38jjcNfq3nhaId+WHv4daR0Te1bQL7WA+un5ctvsH/0Fm9koyCyFPitDuUms6r+rn5jqO3kkkBrDepL94DxDW63iX6/vk5GMe9Hn7f4fQcEntv61v9P75yiZ70gt4s6A+M/pIcQeiwLYSTiaH5/XwjHCbfz19/IhMRqw1TCq7oLvcO7tGVsW9WmFuewv7geR4MRfVBGkXc725PGLhUKdXvjQ1IAybLSIRuJMuwNtAZQjQ1h7nFux+wWTp77bKQ==|920

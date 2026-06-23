@@ -1,29 +1,38 @@
 {
   "Rows": {
-    "Count": 45
+    "Count": 40
   },
   "Cols": {
     "Count": 60
   },
   "Values": {
     "1,1": "ワークフローコメント表示",
-    "3,1": "YBSコード"
+    "1,20": "閉じる",
+    "3,1": "YBSコード",
+    "3,6": "規格名称",
+    "6,1": "委員コメント",
+    "20,1": "ワークフローコメント"
   },
   "AttachInfos": {
-    "4,1": {
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "YBSコード",
-        "GUID": "4e982bb8-30de-4e24-bc59-90af40928fb8"
+    "1,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "5,1": {
+    "7,1": {
       "ListViewInfo": {
         "Name": "リストビュー1",
         "TableName": "YBS_審議会ワークフロー",
-        "RowIndex": 5,
+        "RowIndex": 7,
         "ColumnIndex": 1,
-        "RowCount": 20,
+        "RowCount": 11,
         "ColumnCount": 23,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
@@ -33,7 +42,7 @@
         "ColumnOperation": 2
       }
     },
-    "6,1": {
+    "8,1": {
       "NameUsedInJavaScript": "管理番号",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -41,7 +50,7 @@
         "GUID": "f591b37e-3fe5-4460-b6b5-e11e1016ba2c"
       }
     },
-    "6,5": {
+    "8,5": {
       "NameUsedInJavaScript": "ID",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -49,7 +58,7 @@
         "GUID": "18d14cf0-038e-476f-bcc5-e4ba1d73d515"
       }
     },
-    "6,9": {
+    "8,9": {
       "NameUsedInJavaScript": "コメント",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -57,7 +66,7 @@
         "GUID": "1ea613c0-1f3d-4048-87ae-45f8bc2c78da"
       }
     },
-    "6,13": {
+    "8,13": {
       "NameUsedInJavaScript": "認定結果",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -65,7 +74,7 @@
         "GUID": "5fde4e78-3ade-4e8f-b7d8-3ad0330dc47b"
       }
     },
-    "6,17": {
+    "8,17": {
       "NameUsedInJavaScript": "承認者",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -73,7 +82,7 @@
         "GUID": "a3f5c976-c65e-4d1d-a6f0-3b49a2c23e5e"
       }
     },
-    "6,21": {
+    "8,21": {
       "NameUsedInJavaScript": "申請日",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -81,11 +90,11 @@
         "GUID": "e533c6a9-6846-44cd-ba12-8d114f9e11a4"
       }
     },
-    "26,1": {
+    "21,1": {
       "ListViewInfo": {
         "Name": "リストビュー2",
         "TableName": "v_YBS規格文書_ワークフロー",
-        "RowIndex": 26,
+        "RowIndex": 21,
         "ColumnIndex": 1,
         "RowCount": 4,
         "ColumnCount": 23,
@@ -97,7 +106,7 @@
         "ColumnOperation": 2
       }
     },
-    "27,1": {
+    "22,1": {
       "NameUsedInJavaScript": "HistoryID",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -105,7 +114,7 @@
         "GUID": "7b0b5387-c003-4ae1-8d38-a38ea4184157"
       }
     },
-    "27,5": {
+    "22,5": {
       "NameUsedInJavaScript": "RecordId",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -113,7 +122,7 @@
         "GUID": "9b5976c6-b3d6-43bb-af1f-1bdd91def997"
       }
     },
-    "27,9": {
+    "22,9": {
       "NameUsedInJavaScript": "Who",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -121,7 +130,7 @@
         "GUID": "df2f67a0-2048-470b-9b61-96412312ec45"
       }
     },
-    "27,13": {
+    "22,13": {
       "NameUsedInJavaScript": "When",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -129,7 +138,7 @@
         "GUID": "a6c09366-d94d-436b-b9ec-43abad557276"
       }
     },
-    "27,17": {
+    "22,17": {
       "NameUsedInJavaScript": "ActionName",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -137,7 +146,7 @@
         "GUID": "e026df98-7d01-491e-afd0-089f4e771e28"
       }
     },
-    "27,21": {
+    "22,21": {
       "NameUsedInJavaScript": "Comments",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -147,46 +156,121 @@
     }
   },
   "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      }
+    ],
     "Types": {
       "Strs": [
-        "Body"
+        "black",
+        "Body",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
       ]
     },
+    "CellStyles": {
+      "3,1": 0,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 2,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 3,
+      "4,1": 0,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 0,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 3,
+      "6,1": 4,
+      "20,1": 4
+    },
     "SheetStyle": {
-      "FontFamily": 0
+      "FontFamily": 1
     }
   },
   "Spans": [
+    "8,1,1,4",
+    "7,1,1,4",
+    "8,5,1,4",
+    "7,5,1,4",
+    "8,9,1,4",
+    "7,9,1,4",
+    "8,13,1,4",
+    "7,13,1,4",
+    "8,17,1,4",
+    "7,17,1,4",
+    "8,21,1,3",
+    "7,21,1,3",
+    "21,1,1,4",
+    "22,1,1,4",
+    "21,5,1,4",
+    "22,5,1,4",
+    "21,9,1,4",
+    "22,9,1,4",
+    "21,13,1,4",
+    "22,13,1,4",
+    "21,17,1,4",
+    "22,17,1,4",
+    "21,21,1,3",
+    "22,21,1,3",
     "4,1,1,4",
-    "7,1,18,23",
-    "6,1,1,4",
-    "5,1,1,4",
-    "6,5,1,4",
-    "5,5,1,4",
-    "6,9,1,4",
-    "5,9,1,4",
-    "6,13,1,4",
-    "5,13,1,4",
-    "6,17,1,4",
-    "5,17,1,4",
-    "6,21,1,3",
-    "5,21,1,3",
-    "28,1,2,23",
-    "26,1,1,4",
-    "27,1,1,4",
-    "26,5,1,4",
-    "27,5,1,4",
-    "26,9,1,4",
-    "27,9,1,4",
-    "26,13,1,4",
-    "27,13,1,4",
-    "26,17,1,4",
-    "27,17,1,4",
-    "26,21,1,3",
-    "27,21,1,3"
+    "4,6,1,12",
+    "9,1,9,23",
+    "23,1,2,23",
+    "1,20,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "ワークフローのコメント",
     "PermissionData": {
       "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
       "permissionResource": {
@@ -202,10 +286,11 @@
       ]
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": []
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "YBS規格文書"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//bGtXMr/uRKgYQ4pjdrspMg3qdiaa8/ekcwkfQ3DTwVA6dCWC9XQijp/E4DK2rp9rsA+cFKI6aMLVY9zDKDzkbD3OdWQ43AplfOZsBp4RiiZFghYm3GEjq3/c+3r5UEfyw3qwWUKC8GtBidc/fqHXuaqTPwNnZ9RXGokR41NQ5GqjKNTuX2CbD9zGslyikBgFJcZ3DmyK1esnjT7gFAd4pgIa2PJ80nvazKlikQ4PQrLV4RBzvzKVdUwNDGetxB3/dsUhELVFKox3ljvYc2xF2vNGOGx+9K2dc0nJUadru1fsomvTpJ8r/EEpG8VXNMNVlRWfOg4lOVtkSoM5rfNQP+a7XF9DI24T1UgYwlb5DPZRgSXcodWLsXoRzh3gBybfofaajeLKehem2iHHo3rJYlvRxtuoy9uzcMxK+HYBKFgbpNkoy1oXeBNQo2/hMicQwvZ/gZ9J7xQa0iH+fXTI+PW4LZaeHLb6rzLp31TkzwCfTLBI506vYDHBURxu2LRe+c72F38kyxQ1AF1+XlX2JFl/WcTKz4EEDwD0Nji9g/fM3voDy0YC+D7OeMQhw44ARSHAtQez+8ffeYWGm+ej1kJqNBVpXeSEQXkMuRbhnJ5zXHyAcuzNMsvVU+TTXMV5gnanrnrzatzTt2StuPWUNewEolUXLobeCh4xR3SZVolMAE7KqdTjM/cw7pUB6PeLafW/JoJmvV35FlBim4w4GTel/togpvV1pVG18JmI5J5aCANyzhFw6id9SpkKcJfmLX7b8OcrKHpCdgeYrwT+Eb5Vcmp+zhuhocIXVhCn8ikuOShEk5vN8iF+3r3txN9OJ8EF66ORwuktbrPI1D3AaCqE5r9bWTO7Pfq95SfaqCFi1J9VswihAaYZyoQ5/nYvf5lTwlJgNl1jceZ7/dqWhg==|920
+}//QKMKbMmQDjKjCdCLVqexWmdmLBptgMcGE5aYPMeA0axHE7V6YS0LwdTBgMKd0qQ2jGU5VrwCt/3VPbbQpXtMzqFE3B9spYGVrlVZ1kxa7ZzSKjgT3nj53ZPCF/mWRIu0EJjqavABb/wED0SJdStRASSNjoQjM4diUIooVBp6gt0ywQ9FXHLVM3NBos23bxrhNaD7bM3sYvSUxW4qQIVW/j+fjvaMSD7jLOOIAu9bDZKpGKN15PBxvehF4jv0iMxszyEZ2EkRuRA3X2E0MqaMWW0LywhqF7dMeLjbCLz1mACU1bEEDB2tEXV0OkKmshU058vy4ofeV01oVBEkm1Wu5GDZIPiAtBpiTocFrHctI35/bVaooBtl3dAAd8RsoxziVi/8GdEltdrlg0+leH6DTmPYVG8WbLhhaAWW5WtFNFnqDUS2vNX5+Fq0G0Rsl0/hWJC/gi6WXdbYT29nC9b+kEkgIrEybUwjlE+ybZ+1hWcCjowMMB/yxX0e50EX4qxnRY4Nr6nXfFIXNz9ebyDzBQeFSpg4HJEWjo821u6fe1lhqqTiejksXVT/GMJygzy2aQymF2PD5DAuWW09hJoPmQ1pgz2mpaHWXxlsSu9WhmEBx7Yb3hH1kAzed6ZZHNBxPDLIwU6epRda7R1Q39cqYWyzHFEhwbVNBVwCMykdvFNkR3JuEW9IVWY1+AWR7AGpjM4uOPQ1ZEUB1O9i1RMKdHjWZOk0oAfRrxwpxpTmwfy/ZLoHHg8NXgke3KvHjFCvwK/9m34PA9bajg/pmKWoXzM/ZAkwDhTg6kR9b/eTvWOOWWGe2uQJiEMas0UfcjIsKRDzipDtN2h2KFYeEJihciw3oSqWycwB13osbRRfBuP+Q10V+D+8syQ/dpLQwXooxYLyQtdpvXn2gLxf9NkTpQ==|920
