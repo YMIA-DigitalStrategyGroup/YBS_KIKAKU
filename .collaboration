@@ -312,7 +312,7 @@
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-06-25T10:08:27.5385066+09:00",
+    "LockDateTime": "2026-06-25T10:10:07.7657454+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\コメント表示.json",
@@ -339,6 +339,16 @@
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-06-25T10:10:07.7659104+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\フロー_委員コメント.json",
+      "Pages\\フロー_委員コメント.rd"
+    ]
   }
 ]
