@@ -1,0 +1,51 @@
+{
+  "Name": "サーバーサイドコマンド1",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "YBSコード",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "規格名称",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "理由",
+          "DataValidationInfo": {}
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+      "From": "%CurrentUser%",
+      "EnhancedRecipient": {
+        "CommonValue": "yuki_nakane@yanmar.com"
+      },
+      "Subject": "ＹＢＳ申請",
+      "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]",
+      "ID": "4cf6cafb8da445b3be612cbbf4b6c1e7"
+    }
+  ]
+}

@@ -141,17 +141,7 @@
   },
   {
     "ModuleName": "PCPage/文書申請（新規",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-25T14:28:13.6466651+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書申請（新規.json",
-      "Pages\\文書申請（新規.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
@@ -333,12 +323,6 @@
   },
   {
     "ModuleName": "ServerCommand/サーバーサイドコマンド1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-25T14:39:25.1570462+09:00",
     "ModuleType": 15
   }
 ]
