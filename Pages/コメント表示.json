@@ -21,13 +21,14 @@
     "1,1": "ワークフローコメント表示",
     "1,24": "閉じる",
     "3,1": "YBSコード",
-    "3,5": "改正",
-    "3,6": "規格名称",
+    "3,7": "規格名称",
     "6,1": "ワークフローコメント",
     "7,7": "氏名",
     "7,11": "日時",
     "7,17": "コメント",
     "17,1": "委員コメント",
+    "18,5": "委員名",
+    "18,27": "記載日",
     "18,35": "委員コメントID"
   },
   "AttachInfos": {
@@ -196,7 +197,7 @@
         "GUID": "f591b37e-3fe5-4460-b6b5-e11e1016ba2c"
       }
     },
-    "19,5": {
+    "19,3": {
       "NameUsedInJavaScript": "ID",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -204,7 +205,15 @@
         "GUID": "18d14cf0-038e-476f-bcc5-e4ba1d73d515"
       }
     },
-    "19,9": {
+    "19,5": {
+      "NameUsedInJavaScript": "委員名",
+      "BindingInfo": {
+        "TableName": "YBS_審議会ワークフロー",
+        "ColumnName": "承認者",
+        "GUID": "f227cf54-8ef0-4026-8c83-f0e5c3a952cb"
+      }
+    },
+    "19,11": {
       "NameUsedInJavaScript": "コメント",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -212,7 +221,7 @@
         "GUID": "1ea613c0-1f3d-4048-87ae-45f8bc2c78da"
       }
     },
-    "19,17": {
+    "19,23": {
       "NameUsedInJavaScript": "認定結果",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -220,7 +229,7 @@
         "GUID": "5fde4e78-3ade-4e8f-b7d8-3ad0330dc47b"
       }
     },
-    "19,28": {
+    "19,27": {
       "NameUsedInJavaScript": "申請日",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
@@ -235,6 +244,8 @@
         "FontFamily": 0
       },
       {
+        "Background": 1,
+        "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0
@@ -244,20 +255,52 @@
         "BorderTop": 0
       },
       {
+        "Background": 1,
         "FontFamily": 0,
-        "Formatter": 2,
+        "Formatter": 4,
+        "HorizontalAlignment": 2,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0
       },
       {
-        "Background": 3,
+        "FontFamily": 0,
         "BorderBottom": 0,
         "BorderTop": 0
       },
       {
         "FontFamily": 0,
-        "Formatter": 2
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 1,
+        "Foreground": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "Background": 1,
+        "Foreground": 5,
+        "HorizontalAlignment": 7,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 1,
+        "FontFamily": 0,
+        "Foreground": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4
       },
       {
         "FontFamily": 0,
@@ -271,20 +314,25 @@
         "BorderRight": null
       },
       {
-        "Background": 3,
+        "Background": 8,
         "FontFamily": 0
       }
     ],
     "Types": {
       "Strs": [
         "Body",
+        "#FFD7FFDB",
+        "Center",
         "black",
         "[AUTO]General",
+        "#FFFF0000",
+        "Right",
+        "Left",
         "#FFFFFF00"
       ],
       "Borders": [
         {
-          "Color": 1
+          "Color": 3
         }
       ]
     },
@@ -302,34 +350,36 @@
       "3,3": 2,
       "3,4": 2,
       "3,5": 2,
-      "3,6": 3,
-      "3,7": 2,
-      "3,8": 2,
-      "3,9": 2,
-      "3,10": 2,
-      "3,11": 2,
-      "3,12": 2,
-      "3,13": 2,
-      "3,14": 2,
-      "3,15": 2,
-      "3,16": 2,
-      "4,1": 1,
-      "4,2": 2,
-      "4,3": 2,
-      "4,4": 2,
-      "4,5": 4,
-      "4,6": 1,
-      "4,7": 2,
-      "4,8": 2,
-      "4,9": 2,
-      "4,10": 2,
-      "4,11": 2,
-      "4,12": 2,
-      "4,13": 2,
-      "4,14": 2,
-      "4,15": 2,
-      "4,16": 2,
-      "6,1": 5,
+      "3,6": 2,
+      "3,7": 3,
+      "3,8": 4,
+      "3,9": 4,
+      "3,10": 4,
+      "3,11": 4,
+      "3,12": 4,
+      "3,13": 4,
+      "3,14": 4,
+      "3,15": 4,
+      "3,16": 4,
+      "3,17": 5,
+      "4,1": 6,
+      "4,2": 7,
+      "4,3": 7,
+      "4,4": 7,
+      "4,5": 8,
+      "4,6": 7,
+      "4,7": 9,
+      "4,8": 4,
+      "4,9": 4,
+      "4,10": 4,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 4,
+      "4,14": 4,
+      "4,15": 4,
+      "4,16": 4,
+      "4,17": 5,
+      "6,1": 10,
       "6,2": 0,
       "6,3": 0,
       "6,4": 0,
@@ -357,21 +407,21 @@
       "6,26": 0,
       "6,27": 0,
       "6,28": 0,
-      "7,1": 6,
-      "7,2": 7,
-      "7,3": 7,
-      "7,4": 6,
-      "7,5": 7,
-      "7,6": 7,
+      "7,1": 11,
+      "7,2": 12,
+      "7,3": 12,
+      "7,4": 11,
+      "7,5": 12,
+      "7,6": 12,
       "7,7": 0,
       "7,11": 0,
-      "7,15": 6,
-      "7,16": 7,
-      "7,17": 7,
-      "7,18": 7,
-      "7,19": 7,
-      "7,24": 7,
-      "7,25": 7,
+      "7,15": 11,
+      "7,16": 12,
+      "7,17": 12,
+      "7,18": 12,
+      "7,19": 12,
+      "7,24": 12,
+      "7,25": 12,
       "7,26": 0,
       "7,28": 0,
       "8,1": 0,
@@ -468,35 +518,42 @@
       "15,26": 0,
       "15,27": 0,
       "15,28": 0,
-      "17,1": 5,
-      "18,9": 7,
-      "18,10": 7,
-      "18,11": 7,
-      "18,12": 7,
-      "18,13": 7,
-      "18,14": 7,
-      "18,15": 7,
-      "18,16": 7,
-      "18,17": 0,
-      "18,21": 0,
-      "18,24": 0,
-      "18,25": 0,
-      "18,26": 0,
+      "17,1": 10,
+      "18,1": 12,
+      "18,2": 12,
+      "18,3": 11,
+      "18,4": 12,
+      "18,5": 11,
+      "18,6": 12,
+      "18,7": 12,
+      "18,8": 12,
+      "18,9": 12,
+      "18,10": 12,
+      "18,11": 11,
+      "18,12": 12,
+      "18,13": 12,
+      "18,14": 12,
+      "18,15": 12,
+      "18,16": 12,
+      "18,17": 12,
+      "18,18": 12,
+      "18,19": 12,
+      "18,20": 12,
+      "18,21": 12,
+      "18,22": 12,
+      "18,23": 0,
       "18,27": 0,
-      "18,28": 0,
-      "18,35": 5,
+      "18,35": 10,
       "18,36": 0,
       "18,37": 0,
       "18,38": 0,
       "18,39": 0,
-      "19,17": 0,
-      "19,21": 0,
-      "19,24": 0,
-      "19,25": 0,
-      "19,26": 0,
+      "19,3": 0,
+      "19,5": 0,
+      "19,11": 0,
+      "19,23": 0,
       "19,27": 0,
-      "19,28": 0,
-      "19,35": 8,
+      "19,35": 13,
       "19,36": 0,
       "19,37": 0,
       "19,38": 0,
@@ -507,12 +564,7 @@
     }
   },
   "Spans": [
-    "19,1,1,4",
-    "18,1,1,4",
-    "19,5,1,4",
-    "18,5,1,4",
     "4,1,1,4",
-    "4,6,1,11",
     "7,1,1,3",
     "8,1,1,3",
     "7,4,1,3",
@@ -525,18 +577,26 @@
     "8,15,1,2",
     "8,17,1,10",
     "7,17,1,10",
-    "18,9,1,8",
-    "19,9,1,8",
-    "18,17,1,4",
-    "19,17,1,4",
-    "18,21,1,3",
-    "19,21,1,3",
-    "18,28,1,4",
-    "19,28,1,4",
     "1,24,2,4",
     "19,35,1,2",
     "9,1,6,27",
-    "20,1,9,31"
+    "20,1,9,31",
+    "19,1,1,2",
+    "18,1,1,2",
+    "19,3,1,2",
+    "18,3,1,2",
+    "18,5,1,6",
+    "19,5,1,6",
+    "18,11,1,12",
+    "19,11,1,12",
+    "18,23,1,4",
+    "19,23,1,4",
+    "18,27,1,4",
+    "19,27,1,4",
+    "4,7,1,11",
+    "3,7,1,11",
+    "4,5,1,2",
+    "3,1,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -563,4 +623,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//ROCFgutZfSyQo5TK0OQ6rBIHhIhULd3zcGNDMjkKlKrmXkLOmH78Uhl3QoRIy5yeh4fBKYWHUFlnfXDX8qbBOUA48Tds2nayQxn6RvccrPQE8OTmsWpFy0BCew4cd5aAL3B6tb+8qY7D/a7iitFlT7JGhmwo57ClU24bbQ0Hw/5+t4obX10lnG1aMfITADV+mQ+aWS9x8bSMJkT7nSh/JR8jLP0jfd1kg09Zl21/W/t1L48QhA1o+uB/vPrFOuUuHe+c0/upax0GSnJ3AYfX0IuIpUc33QYDE/TEhAgSTek8/Y95eyUOz9IRwrt79gOBwybSFUzI8nJ0uQ5Me4WD8T8UkpLwPR24Jyffux0P0+OSKvU+u/G0YMfvyiXbbLWzfsxUBbMdWDsdaUZe5OuYUPDR4iDxQQq9+YJtB2KJxv2QAZJdg3WLFkh0KAEzXqVTkaQnJzCxbZGTRqhdC+2DsrZXxkyNVB5dQCTegq8334gyE5uCr38ACd1T5L5iUFOLGkby5Y9lyETtt9vnpQy663X33ZyEHbmuttOpTIRGWwuKnT/rX8E+QZLYWvIqJvuZglPgQGydYoiZ+eUz+Rlwij5XC6CBXF7ZtxvOmdsZQra2OxYRNoWjHHo/yMjoRkxxI7Vnc85DFhRCzZQG4NsCj+XFy4Tl4BFq5Ijfh5dLV581KV+hu5FHjjavsg/Opkpa6+hbldRSrsW2TJDa7Vrn4JW/peY525yWJ0jykDeyZtjrZAnCuhc92lC1BPGj5QJDO4q7GHPQvdIpXDzhsQ2vqVYN9UNDE6Oy6HTBTatcxn+lNTP6siEXPgUWkzfAuqN7kK3zehwmVvQ1/Ww6W55/A9WvaoYDoe5BBP/TsKFKHRF1fpOywpqXU/Kkf/pkByg6u4A8zo2iYHnxY7vdNmeAUQ==|920
+}//Sep7QxhA4dbp9RXk/sRKzZNzcqLYoYP/0jRdys2Sr6rk5oSdfeNsdI1ZX2PrWqGCv2b+vkmee29QCRIr/yyE0JDzZ1w2Zli3X+9PoqPxABSBHSUUlQHWoQpfVVqcGLCMkTTcJ0R1Rb6gRRVhqqNLdZLtaZgqY1W6IhMnVAqe5yr1zHQ97ClKr3ziMaac4A4Q0Qk6ZzvGIyCJSOLCVLmd/fxEFte22r9Ng6QQ7gennVpqtX0M7PBj7j8iZIKBt46VeOcS3h3dfP9UO376vddIG99IZxmIGRrQ2VIIfgPMB5EKp3GCH5I7isBJ7uUPnVcDHUP0h8s1LYyw6NMSOzQbc3QqTpx2myv4fHpPHsj66laXLQF4zRPvhLUu4cuWqdhWAQCch0xIO2oPkCv71WX+DslcPe9azNfbsiTQKvpxc87AChDWZMxEgE8z2jbGbJI5NqipLINQjvUwPo2sH0ZS43oUS9tz6ShSefZekcp1TGf1PzPEZYUkvHM+tkrKua2gmskkgRAVctMBmBq2Cbojg7qT0YExP7daUG2SVIbNt3BgICWOvsUMhSuXmd3qCehIidRzeoWZuNIHNbyqvCkvvHiW8NOCIAgXI+G3neHNqtpGqU69MfNMQFCClfDF1WrSxnmTrha3qP+GJoAwjvx/DHp99dpXaXpK1WFlWEr/yykDi5jAkOFphr2p3S7YNAjonUI3KslDSODK4jzK6N5Pl8GGiRzh9zKgNfrpv9grcqG08ovgxssUyoiVIDuHtx856fWGQhATPyIQSwIpJiW7fcr1Yy4bdBx2wWOW2UAA7LyY6Bcxp7X4yAPmlPu2b6Zsub0ZfObK3ETmZyFBkljjXggczjI7xdSwMeg3qXSMTrC2w27Q0irK1aOePBWX2mbR2LNGzdxUEWZmoNoSVLGSVQ==|920
