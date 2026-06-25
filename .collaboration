@@ -330,5 +330,15 @@
   {
     "ModuleName": "PCPage/フロー_委員コメント",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "ServerCommand/サーバーサイドコマンド1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-06-25T14:39:25.1570462+09:00",
+    "ModuleType": 15
   }
 ]
