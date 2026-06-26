@@ -347,5 +347,15 @@
     },
     "LockDateTime": "2026-06-26T15:22:03.5504558+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/YBS申請メニュー",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-06-26T15:54:31.2352132+09:00",
+    "ModuleType": 1
   }
 ]
