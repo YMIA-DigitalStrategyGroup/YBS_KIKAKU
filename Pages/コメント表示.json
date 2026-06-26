@@ -25,7 +25,7 @@
     "6,1": "ワークフローコメント",
     "7,7": "氏名",
     "7,11": "日時",
-    "7,17": "コメント",
+    "7,20": "コメント",
     "17,1": "委員コメント",
     "18,5": "委員名",
     "18,27": "記載日",
@@ -51,7 +51,7 @@
         "RowIndex": 7,
         "ColumnIndex": 1,
         "RowCount": 8,
-        "ColumnCount": 27,
+        "ColumnCount": 31,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
           "SubConditions": [
@@ -141,7 +141,7 @@
         "GUID": "e026df98-7d01-491e-afd0-089f4e771e28"
       }
     },
-    "8,17": {
+    "8,20": {
       "NameUsedInJavaScript": "Comments",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -420,30 +420,23 @@
       "7,17": 12,
       "7,18": 12,
       "7,19": 12,
+      "7,20": 11,
+      "7,21": 12,
+      "7,22": 12,
+      "7,23": 12,
       "7,24": 12,
       "7,25": 12,
-      "7,26": 0,
-      "7,28": 0,
+      "7,26": 12,
+      "7,27": 12,
+      "7,28": 12,
+      "7,29": 12,
+      "7,30": 12,
       "8,1": 0,
       "8,4": 0,
       "8,7": 0,
       "8,11": 0,
       "8,15": 0,
-      "8,17": 0,
-      "8,18": 0,
-      "8,19": 0,
       "8,20": 0,
-      "8,21": 0,
-      "8,22": 0,
-      "8,23": 0,
-      "8,24": 0,
-      "8,25": 0,
-      "8,26": 0,
-      "8,28": 0,
-      "9,28": 0,
-      "10,28": 0,
-      "11,28": 0,
-      "12,28": 0,
       "13,1": 0,
       "13,2": 0,
       "13,3": 0,
@@ -466,7 +459,6 @@
       "13,24": 0,
       "13,25": 0,
       "13,27": 0,
-      "13,28": 0,
       "14,1": 0,
       "14,2": 0,
       "14,3": 0,
@@ -489,7 +481,6 @@
       "14,24": 0,
       "14,25": 0,
       "14,27": 0,
-      "14,28": 0,
       "15,1": 0,
       "15,2": 0,
       "15,3": 0,
@@ -573,13 +564,8 @@
     "8,7,1,4",
     "7,11,1,4",
     "8,11,1,4",
-    "7,15,1,2",
-    "8,15,1,2",
-    "8,17,1,10",
-    "7,17,1,10",
     "1,24,2,4",
     "19,35,1,2",
-    "9,1,6,27",
     "20,1,9,31",
     "19,1,1,2",
     "18,1,1,2",
@@ -596,7 +582,12 @@
     "4,7,1,11",
     "3,7,1,11",
     "4,5,1,2",
-    "3,1,1,6"
+    "3,1,1,6",
+    "9,1,6,31",
+    "7,15,1,5",
+    "8,15,1,5",
+    "7,20,1,11",
+    "8,20,1,11"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -623,4 +614,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//Sep7QxhA4dbp9RXk/sRKzZNzcqLYoYP/0jRdys2Sr6rk5oSdfeNsdI1ZX2PrWqGCv2b+vkmee29QCRIr/yyE0JDzZ1w2Zli3X+9PoqPxABSBHSUUlQHWoQpfVVqcGLCMkTTcJ0R1Rb6gRRVhqqNLdZLtaZgqY1W6IhMnVAqe5yr1zHQ97ClKr3ziMaac4A4Q0Qk6ZzvGIyCJSOLCVLmd/fxEFte22r9Ng6QQ7gennVpqtX0M7PBj7j8iZIKBt46VeOcS3h3dfP9UO376vddIG99IZxmIGRrQ2VIIfgPMB5EKp3GCH5I7isBJ7uUPnVcDHUP0h8s1LYyw6NMSOzQbc3QqTpx2myv4fHpPHsj66laXLQF4zRPvhLUu4cuWqdhWAQCch0xIO2oPkCv71WX+DslcPe9azNfbsiTQKvpxc87AChDWZMxEgE8z2jbGbJI5NqipLINQjvUwPo2sH0ZS43oUS9tz6ShSefZekcp1TGf1PzPEZYUkvHM+tkrKua2gmskkgRAVctMBmBq2Cbojg7qT0YExP7daUG2SVIbNt3BgICWOvsUMhSuXmd3qCehIidRzeoWZuNIHNbyqvCkvvHiW8NOCIAgXI+G3neHNqtpGqU69MfNMQFCClfDF1WrSxnmTrha3qP+GJoAwjvx/DHp99dpXaXpK1WFlWEr/yykDi5jAkOFphr2p3S7YNAjonUI3KslDSODK4jzK6N5Pl8GGiRzh9zKgNfrpv9grcqG08ovgxssUyoiVIDuHtx856fWGQhATPyIQSwIpJiW7fcr1Yy4bdBx2wWOW2UAA7LyY6Bcxp7X4yAPmlPu2b6Zsub0ZfObK3ETmZyFBkljjXggczjI7xdSwMeg3qXSMTrC2w27Q0irK1aOePBWX2mbR2LNGzdxUEWZmoNoSVLGSVQ==|920
+}//jGyd43ZIAvj2+3DQQLAkhvpXzTcNFRZWhe7p/080mQNnHcV7kGeO6EGFp0edFkpQGnYRrxXYat+NTsyyCAMzQhHqaCZIw0FTk8DDPJutY4e2GY3EW7ZOe1ZdIWgObUsBdz/BFvEUbHwA3WmQtf1Q35kDtjdq1EmSdYHLu4MVJAC1pbfdULtMfNESpUaXepJ+yR7h6YD6kvytg8V+FJ2WJZkiFs1YOUE5pX4oVlfZ4tZvKWOd+hH6u3TV/WqDLlAx3lcPare7lppkdcJG8osTXF7oCtHw11cCB+Q9zIlV9sK1pZBaq1toRDI3BU8JjPqPcSIBikrMrV3cGuAfcMHehQBdVNR2+JiHJwFFikAoGoXwehtTuG9cQ5UcpqClMhD6bhgekE3LQ/QQRXS0T/aS7iv4nPlo4q1LnacKAbWDOvpBx1Jo0HMNTF32SzLfK9+x6NYlcjq9LDRYTpQo1UZceBun4PyBhQ8YC4+uvG5ebWndlEhxvjwjJxezRK4sb85ADrYLujyevdSHBf/fSKQwJEQTv80TZEaJFhTGvem+bxgJrl8EMMcR6nToouVhgdR8QjyMfC9QjfV0/5xDIladbBjZsOcOsCDc2mpLWW1Ca7bwhTd5R+1E4bye25WEHrkKEqYLZ8MEaCmu9wF67knv99yk8+cFXkpKZo2osQmnWLUgStlMz6nsfAY3lckncf8K8N/Bi3Uu0QewWoU2fVtOd9Ejrd+nzSNzkdCfkKaNX71bdbw04AcC1QMRYMfyOZSYCiJ0qIx2FQeDnb0H/bAUOwtdAr1yxwQdj9HVJXH3Apk0rPIzlNLe3wZTX9+oWhuB/7TeFLsldqD/9SvT6QAWcehSEF83iRrweafjtXo75noa898kdVjxqy04mmDTwkb0mvjgKNdGJQdz8Z9+5qpcYA==|920
