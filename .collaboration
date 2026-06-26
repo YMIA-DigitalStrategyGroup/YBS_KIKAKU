@@ -334,5 +334,15 @@
     },
     "LockDateTime": "2026-06-25T17:15:23.7221994+09:00",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "PCPage/YBS宛先マスタ（メンテ",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-26T15:22:03.5504558+09:00",
+    "ModuleType": 1
   }
 ]
