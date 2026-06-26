@@ -1,12 +1,5 @@
 {
   "Rows": {
-    "RowColumnAttachedInfos": {
-      "3": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 39.0
-        }
-      }
-    },
     "InLogicalVisibleIndexes": [
       0,
       18,
@@ -21,8 +14,8 @@
     "0,1": "YBSコード",
     "0,7": "規格名称",
     "1,36": "詳細情報",
-    "3,2": "改正\nコード",
-    "3,4": "文書\r\n区分",
+    "3,2": "改正",
+    "3,5": "区分",
     "18,37": "閉じる"
   },
   "AttachInfos": {
@@ -104,41 +97,43 @@
       }
     },
     "4,2": {
+      "NameUsedInJavaScript": "改正",
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "改正コード",
         "GUID": "b8bb54f4-181a-4bdc-8f89-4376aaa6c30b"
       }
     },
-    "4,4": {
+    "4,5": {
+      "NameUsedInJavaScript": "文書区分",
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "現行_旧版",
         "GUID": "35739208-b007-44c5-a26c-433d9fa185e3"
       }
     },
-    "4,7": {
+    "4,8": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "理由",
         "GUID": "8c2f93a1-88ad-4485-8e27-9016aa0949a5"
       }
     },
-    "4,25": {
+    "4,26": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請者",
         "GUID": "d3ea3fae-47b5-449c-a13d-6833dc6d35cf"
       }
     },
-    "4,32": {
+    "4,33": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請日",
         "GUID": "46f199b5-f930-4e02-84fa-09e64db45d4c"
       }
     },
-    "4,37": {
+    "4,38": {
       "NameUsedInJavaScript": "最終更新者",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -146,7 +141,7 @@
         "GUID": "a60c3f61-22aa-4ce0-8537-a3ffdde322b8"
       }
     },
-    "4,45": {
+    "4,46": {
       "NameUsedInJavaScript": "最終更新日時",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -212,10 +207,7 @@
       },
       {
         "FontFamily": 0,
-        "WordWrap": true,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderRight": null
+        "WordWrap": true
       },
       {
         "FontFamily": 0,
@@ -269,20 +261,19 @@
       "1,40": 4,
       "3,2": 5,
       "3,3": 5,
-      "3,4": 6,
-      "3,5": 5,
-      "3,6": 5,
-      "3,7": 4,
-      "3,25": 4,
-      "3,32": 4,
-      "3,37": 4,
-      "3,45": 4,
-      "4,4": 4,
-      "4,7": 4,
-      "4,25": 4,
-      "4,32": 7,
-      "4,37": 4,
-      "4,45": 8,
+      "3,4": 5,
+      "3,5": 6,
+      "3,8": 4,
+      "3,26": 4,
+      "3,33": 4,
+      "3,38": 4,
+      "3,46": 4,
+      "4,5": 4,
+      "4,8": 4,
+      "4,26": 4,
+      "4,33": 7,
+      "4,38": 4,
+      "4,46": 8,
       "18,37": 4,
       "18,38": 4,
       "18,39": 4,
@@ -306,20 +297,20 @@
     "0,7,1,17",
     "5,1,11,53",
     "1,36,2,4",
-    "4,2,1,2",
-    "3,2,1,2",
-    "3,4,1,3",
-    "4,4,1,3",
-    "3,7,1,18",
-    "4,7,1,18",
-    "3,25,1,7",
-    "4,25,1,7",
-    "3,32,1,5",
-    "4,32,1,5",
-    "3,37,1,8",
-    "4,37,1,8",
-    "3,45,1,6",
-    "4,45,1,6"
+    "4,2,1,3",
+    "3,2,1,3",
+    "4,5,1,3",
+    "3,5,1,3",
+    "4,8,1,18",
+    "3,8,1,18",
+    "4,26,1,7",
+    "3,26,1,7",
+    "4,33,1,5",
+    "3,33,1,5",
+    "4,38,1,8",
+    "3,38,1,8",
+    "4,46,1,6",
+    "3,46,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -346,4 +337,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//y3N/7q1RFbnKFOsUDrvUkccH33tAXPo5W8hkFiHwXI7uDX4haWr2E6xGHM5F/k1zlPX47c/qyJy+ZGYvuZzNzskw0dUFSBcboMjUivrOnT7ixyqK37yTT1BkGpeHNtfn3hmFWzuiu3lNAooH4f9HR3jm155bzXYQixK0gFGw0aVybOXsl7zMygxmkDMJO1OwiQCDZ/jz14p1Lh5RxMbq3AeA9PKHkcof178nH4bU5aYt1GzWnvTexnQlTv0+TPVnkEpmmQfI/KYISnjLRSR5+Q0aMqOenHdrMjYMgwlxq9KCj/KJkS25z5Lrz8RHzm/FQSrYjDp2xEY0N5/MIC3BsG92f6G1WcjTOpyfVcMMfx3wVyJuh3D4hPz4yU2tMizYpdlLEUBr/1WqqfYBewCe8zZxA0uaEFsbWzUJRHMMHtCDUSjmNP1P73gx/2NJUv7fGiPMZZjslpLJYRV/QyifGkAUfYNO/yh2xd2+XrSS5lsH9grJzFs9G/4V07Om+I4ocJ7OFEdQF1icogrJoChJEdCWK5tP7lqsdM4f/8RdHY3AxkU8x8bakrh2nmQa8EeTVZdCm8eoHzms+J2sw1KjLf3CIVC4f6d30gCtWLukptwBqcJEngx9J+1eTYLSkWuSR6KwLqYFzPjGQ6qCTSEEh6+exeAu4tU066npfHZ1gKtNdyXCGx2cXwQitM2ubt5U/Kwm93xauZNxG+AmCe8epmkSv/12IWaaqYLhYXQPWEdkU/j28L/uooIaVNoUgZgJd9fLOLbviluHOQsqU6QEaZd7ZqzTlSsyxnUrA1IAT+0GIMlthPQSOLnjcWSE1L2lYCD2YgT1RzMXjGcFSt38w2QxKhOpg1v2gMoidVjOlZkqjokPHdd8qtB/hR6uiWFZcUUsMl8JAmzv20EdtiCzEA==|920
+}//MFFzREVCFu63oOP2C+fPvvZEjL7eS3X/TA8ocmKAIQl0ZMOn2DJHCSzjTLJoiyQag5LW3MCFe1Fvo6p+80EbqexGxVQ4ldvgQ48p4uxmFKbeXFsnOkcjnsc2BTH0mXF9m7CLerZ9kDeQE9KV9RD2msDnD5sordZXY8tcG+SGveb1wBjyFb3FTET4KFgjHvEutr1Tty/8gPfduC51RrQNwhTcIE4Vbt0B7NUyAjO84f/k7UEsCYlmDlZT6TR6RCYntNqEXr4uRNO4acmRk0xCciYMpT3GU+C/69+YK+ufcp1hA8i6EXqxSHFbUaaKfSv8chv+QhflanfWtLYAYne302JWLsE9jWwlsF+dZrz66KPnmzFmSYU8JsuOrwik2e58hKE+ISaQeagwULVQ4A6FAMXlG1j/MEgrMPdp9K45edQmVq+7hqWgWA6Jessjh21XdJ1gi/b4JKE6ZMGP6Dpw1NRUAaji7WE9SmRhzX4sl8Pq9j1/L7BcxUW+fX0+VjQEdWOnKBk4+sUf6KLoOtj1t53Q3YpbSzyjxmlEmXS8QkGp/bvewCj9JkeJiJJ4GU5Xry6xgGtBaJrztt++OonkeV+TOwDsgg8Kzk9D+4bZBeTs3C3dhncFCSA8UvfaUAOGhQBOp093eNQcCrFT8olSEH4Yf80ZBHZ+e/d0ll843+gsxPe0IuZqo8yEDBy/DBKGDIBNwUcElNDOzC0JfystB2efW7oLCC1xwyTsObhJDuCl9uhfZdEM6i7C4B7vN0tM2XkWo3aVsLLSENZWrnEO6sgfRhm8moVsKj8FH0rdtqX9bNm4gfvR63XbN4Z0yGSluT4f58VS+oN0E+lirIBNHCTybe41ToC02Grt+kYstdA07kd7QgDPwET8vRD9AyYnF3IwJ4o02GVnb2fYbhUeyg==|920

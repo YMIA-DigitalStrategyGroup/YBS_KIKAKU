@@ -129,17 +129,7 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（詳細",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-26T17:01:17.5199246+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（詳細.json",
-      "Pages\\YBS一覧（詳細.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
@@ -351,16 +341,6 @@
   },
   {
     "ModuleName": "PCPage/YBS申請メニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-26T17:07:05.0218191+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS申請メニュー.json",
-      "Pages\\YBS申請メニュー.rd"
-    ]
+    "ModuleType": 1
   }
 ]
