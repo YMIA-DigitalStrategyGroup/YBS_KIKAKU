@@ -383,12 +383,6 @@
   },
   {
     "ModuleName": "Table/YBS規格宛先マスタ",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-25T17:15:23.7221994+09:00",
     "ModuleType": 7
   },
   {
