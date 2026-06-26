@@ -100,6 +100,24 @@
             ]
           },
           {
+            "Value": "YBS申請",
+            "Text": "YBS申請",
+            "IconPath": "Application/029_edit_9.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "YBS申請メニュー"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
             "Value": "HELP",
             "Text": "HELP",
             "SelectedIconColor": "Background 1",
@@ -306,4 +324,4 @@
       "Size": "1280,104"
     }
   ]
-}//dA6gTMXdlZcFg4TVBwNc/9JjfmHmfcxgJmg51sQN6684W7sllopVnrfh+KN9vtCOiWOFzTl5L1aphVS5Dl3eAQzWzFZ2jTCxg3tDuaBoHeYtPoS6dq5C6NivbPjBmSOMWWuI6Bv+cF9pgxeWd4BR7CsFPCC4CLcaBhAmwJJL3ldZgGBYYwGkLWC8BaG/DaltBDPkQC/12mCS7SC3TvCJknnYcoQ75kp77RPASJO5oeMnfXbb0zq0lmTV8KkuiHP4EmgTlZFGcJ0QyykSZw5U2LurdbJGcBLamP3Eaq5jntCJtwC46sG2lpCAyvvFWSW1XvgX+bO+77BQQbsXJO8Os+Kf2uMuyOVgHH8rMddRLqWh5pUadFKr+BTxz+vIVjoDg1zXl9lPbt5bAHiJKIZGdpbOR+eWq+6fOaINwrYVxuH+xmXgarwu/p+N1Cls4LORAoDKHT2wHadCwbpO87H0ft5dqheGOUZDqyZRWwx0PSkbVs2Pk/Rapyl/bCe5d4SgD0R/w0AH3/hNGKMQiXsB4rPTldr1gGZxbIgmC3sBAaZDiYEG++XUFKlOmzUbkvTGChGiJoNKacVs9gliMXOaoG4pAkE3JufUO5a5UE9wdsN6wa/k1kf6EndO0r0UZJapNcUXKbsyulasvbWRB9Ufwg89LHInNBoZWx/g0Z8MeemacqitkeblaHRmsG8MXzRyG/XOfqwNQE/s7bg6SEDE6uPqF/A5BbZvEtXqgxlrF363kftsXjBQ4GU587OJF/uToYznHpJKNxazDqxMoaHI+laPJStI5iO/jAj/x7SYSnpkwpDpQxcX2ixk04F6kMcF993qisbgNlQDgQNv7hroYdDKhfOIUJmWgxoRi/letxGqBb2zl/eDPEoIWTjNipCU3GTaROFDCPvdqzaJJZRzwQ==|920
+}//ANAZGAY3bJu1ZayIjpEb0075AzwU8o8Iz1VoxdG7OMN4wb3FLO3476rh7TJG+L3GlW4Pnr4UdDrxcIo+FFbYGvPtXcLIKu1RcKD4wxE/udDdL7dotpnjRjw8CPgEF3a2rnzuzmfGxuNyI1PSMP/op4GBZ520BDwcz0KLPLHwN/SmnG2SOXC8XWCuQfYGh+k49n9xSBfYNbKtd1xAk/nji8LDy5JqhXtIWXhvbkHke0tP/Z1PuEznGVkKLSSMJx/TUHLQo7Kgb32ZkavXYhkpc9G1TPNXoRtKNaisEpvgn5AcTsOIJdY96fatxo/v4v3aAtRiwTHYRVgEPJcZrWb9kaHctKnNV+P1cb7kWclkWSUDlfxyDMLFfQCyH8BbzryQqRWfAawHg6OH4/4ve4+QG9nrW7HbjkAiYz9viKSk8TWbQGCXsuGlkCF9KrFGX2lGnlcK2gEug//EsvnxtvjL+7F8OHPbUmX7FYwiXVFfVBCP9wgGm0O/M6CxTJCmOMNs0W+eUnnVa6NtXJjSBuVHqIX/i03t+bp+CgB9pma6rdpQ1m2uLnTIACm6emM5HhgwaOQ3xdOamFS6HPvWTtaURumXSmlW3O8xI7ik4Lo4x4V2eAstOcSdEL1Eo+zPBPF8OPfN3UiXs/3jAYWkU2RmCTKECw8kqSObKab+NV6xHcgrTYYepDFFle0l+Xiz3pIqhA1Ujf1LFHEKG/mrJ84rtj9Jzolnp9QudTEmSrnSuoJllfu1yMQP4dH9OXU++dhgKu2LDNn4ZE1yMHH/0B/JrmVEHYiv7w2B1O+M2LGJL0Lj8EHAci8L6wpYA9kW+vT/67wjz0ynPuYWGzzGuc1D+TJLUDlgVPPGvwTVeyBNZCKP0eGXqh0hGGW98jBae59NCYfJv4DGw894G1inhrXjfQ==|920

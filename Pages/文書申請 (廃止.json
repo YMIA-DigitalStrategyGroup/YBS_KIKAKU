@@ -195,7 +195,7 @@
         "RelationBinding": {
           "RelatedTable": "YBS分類コード",
           "RelatedColumn": "分類コード",
-          "DisplayColumn": "主管部門"
+          "DisplayColumn": "主幹部門"
         }
       }
     },
@@ -434,7 +434,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "6193cba6-fddd-464a-86a3-de4903e9fec8"
+                "ID": "a07b124c-6a8e-4e74-8183-b5ba2afc8fb5"
               },
               {
                 "CommandList": [
@@ -449,7 +449,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "6eb7177b-a60f-4e66-87aa-ea6bbaca6901"
+                "ID": "1ae8ecf2-da94-4251-93ad-283099c89004"
               }
             ]
           },
@@ -530,7 +530,7 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "80496982-32e7-4c6f-b53d-b493a3cde372"
+                "ID": "7bf7ea14-6e1c-401f-8dc1-36d89407459a"
               },
               {
                 "CommandList": [
@@ -559,7 +559,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "b7fa65e0-b77e-4fdd-9e7c-63b0a4c683dc"
+                "ID": "e7040b21-4b0f-4f69-8ed4-941eb24b17ad"
               }
             ]
           }
@@ -2077,7 +2077,7 @@
                 ]
               }
             ],
-            "ID": "075d0391-9990-46da-b154-6b93aca31296"
+            "ID": "5c2088de-1025-468f-84d5-785d24edf9ce"
           }
         ],
         "Disabled": true
@@ -2136,4 +2136,4 @@
       "Size": "51,41"
     }
   ]
-}//AK+IiOUfZZ0UZ5ip4QCKlBjPc2gLoMMNWehODtOwvNaLZsKS+op2HS1IiMzFspZE0lBgLZWsrebqWoQNpwn8JrtGwmnjb1rmqhkNRO4rineCakqr+NwfBOMZ12ETbAfLCc8z36Mmo/RjluOBAlWt6TxEcGBdIdgxqMhw0o4oKZ2eNXdwBS5BZzowTyUjlc56v8T3jBkZo8RWEtxv4lnSpnVsCTWYcY/RBBG83KWn9dt7PwN9U8kq8nF//hWO5eKLm5DrBMzgG3DNUazIMvu/UUaYY+GwVMtOJKMVjLK5mD9HypUePjZrEZ1mRgBJ4Deh7mYHDNy7uC2s0g+ohQ04B7r0Ii4bknCqOpQ+sp6H98B3kqRq4fPNwqJONVYQduRmSkMyVAAXS9ZLNfVIjhj049UDxsAHPr88fcTDU8zmDQpBalzleZap4xP+wvTL/3bEO5wBTDrqFqRPe4opJIzabTDPGE6LSTKiruWeXAsO3uG041pkxjZiKZbjZZRWmuR1iFdDiRk14q3VkTrhDt+OdiDM9Zd497QzPBdIoICoLfgQdXPTDfBmRr7eJIFJO7vzlectzYJPh8B7tz+O/TsXN3pgcxYzvjbrTyiOkSo15NQeVrdBko2H7RCcV041vUggARgfW305pGhwK+TVaCKfKGJYyrEEZqvQ/RafNumy/ScwTCiTlGPvtTXfRk8nDMwSUurivaeuewZUSJnrgTDgZDn224XN8OmmyJpysPQk4SK/EOpQu2LQ37FrWv1YddwCoTTl9B3Cp9JyzfsX94Ay/JXExkJ1VgnG5vS+cIyU9aj7oiJDNoAVLNi9xFDK0Yg8N+PcUi/Yudczi0mI6daPaT3LGwRG5nRnMF/JVEXG0ZIsABkoImG0hkNZynS4iwloTV2CB1h900qgB1xMzxw6nQ==|920
+}//uvwAvpI/d44FB8lRT2GqjueF3cPKXfeRGj/o/06WBqism4Co3uAOnKnbEXXLkXmVMAHNTOFD+kYaSLt0ah8FeUluBOlv+mal51hWCzJSXDm1hbr2uzgZRrA2WM8MYUuEzYTsbyBRogM/L4JXmbduNPTJ02rELHqQHP7Q+vXTg9R1fliHlN/F2K2ETkd577jjQLERcFIGOXNx0r9cYykHEo8QA54dzhv/Dg5qy4p3b8TlDyvOTNlmyMZEJhyDxAkSVQXg/YOj+vIDgi+Wi8PVURM3HP7r81oo/G/BgQ8YfT8xIUUZK/Hw2lPUWvXzACGMEHbv2YtUUrowwOlzd52o1uPlHKsUXdUMEwW8dm/oh4CizqlTxjJqHb4/RGMixt+7H1AkQIYMwx9Dl6oSUWRxz33Ok5YuTcmBUmz7bE3FDpnWM1FPu5aj/THMcnw47nfNZFDmOTFNmi8kGRemCN1mwi4rSWWZ01pdG58XONwtqvzZYqPwWIuBHmaPPb9TlDda+U6tIcQPDoPJy2/hKl4+M/RZeVTj/ilBASu+O8xNqwD05UD2Sa2j9adrnpKSXjQLK0QErTbR/DLvLRfAN4CKY3AgLQMwX/ugCLBg+SArEI2Z/VgJTic23kTKuvgxWBhIZcD3l4lobMZyFPHhfsNBdL9tgB/YIoDeHF8f5j66j25BrphmkJ3/R9bffDl6eC2iuXGQW+UBeauJJHU94+Sxd/WMWJKTleLEsuTiHeSG6oFVDsIZKw6vzisMX0Sry18nF96a48WZyC3/8xESR1/nxsNIuC6KR0KvN5qjrL/aU8CEsPp3CiG8bkldnh0zfQYX5VVk5U+FVdZS7Urnbo9h/a/DQcJEHBuNLEfn7Yda1me5pxwX8XGoY+SVQ+cHksQNQjsEnTpoF90p5Gi0fsUDMA==|920

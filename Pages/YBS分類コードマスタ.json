@@ -84,7 +84,7 @@
       "NameUsedInJavaScript": "主管部門",
       "BindingInfo": {
         "TableName": "YBS分類コード",
-        "ColumnName": "主管部門",
+        "ColumnName": "主幹部門",
         "GUID": "07fe9f24-cebd-4ea1-94b8-b77cd5234855"
       },
       "CellType": {
@@ -93,12 +93,12 @@
         "DataSource": "YBS分類コード",
         "ValueColumnBindingInfo": {
           "TableName": "YBS分類コード",
-          "ColumnName": "主管部門",
+          "ColumnName": "主幹部門",
           "GUID": "70a13075-1f10-4e82-97f0-177e54f559af"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "YBS分類コード",
-          "ColumnName": "主管部門",
+          "ColumnName": "主幹部門",
           "GUID": "c16901d4-cead-4f2a-8e6a-7d5b01e0495a"
         }
       }
@@ -173,7 +173,7 @@
                     "MessageFormula": "分類コードが重複しています。"
                   }
                 ],
-                "ID": "13e4c93e-b1f1-4ac8-9b67-b61f1079177f"
+                "ID": "a5d329de-b610-44b9-a785-52a892316bd9"
               },
               {
                 "CommandList": [
@@ -195,12 +195,12 @@
                             "UpdateType": 3
                           }
                         ],
-                        "ID": "aa9f1896-aec0-4d33-b713-552b77c5ab07"
+                        "ID": "814f2b75-7abf-4fb7-b2e7-d4e7570f184b"
                       }
                     ]
                   }
                 ],
-                "ID": "69025218-0ffc-4785-99ca-d998c2336a29"
+                "ID": "15cf8f3d-9fa4-4a55-84b9-b5b4d7076d8e"
               }
             ],
             "Disabled": true
@@ -223,7 +223,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "3b3f7923-81c2-426f-9a56-97d680c7ad68"
+                "ID": "cce2db18-04e6-4c68-be68-137941ee096f"
               }
             ]
           }
@@ -303,4 +303,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//Robbpy5nk+hbovGPkqtxucmIBF7cU3X309CBqsYZYzA6wF8f+WtX9387EDl96guLRKJDQM7X7QwqriykmWpUSBrnTon0AmHTScdHYXTkubSAwYZbrGnukJrMNw5osCIa5BQKefLCttWPxEKC2VU8QoWuTme/STa513Y/dnQjKjUM+1/XZ4A4+Ftmdz5iIDCec3dh26K/VvbtyT97+M/aIYw09T+mXz0qUDHP+2quAkeCxC1N+5xFGPOC8lTRP22BfEmlhQdvHE4A4ODRaGh8yzmEzIGX2OK8Yis3kbyFIOck87Ttvyst63douOSKT27IdtZvGtOhoMCCCNFOqe2lOcy7ZgJ7nVDJZ1R/0r2WJWRlwa3dTy/D3/w6xCMFjjS6MGMxOBT08S9eGeXJEyMZq628KUmQYBXhluG8ro+frCzgopumDY/DknfvekAOCbcaTavx6bYcS5lsf344/iSOl948hgV8JiTmDepXnaNGbuORpY2iV/4P+ySjDJmRyftTyRK8fOoIcyvoLc/efRjE6+hxJ68U+ursxArvjPJH7Hn9DEOkYZ+Pdtwyb5KD3QWVQRvc7KW8ATfJm/x1Z2Kw9kU78EZr/bWZGso/i/8lrAk0DZOAy9aoiO62R/Hl5zOVw0/6JsM2yWDXQEbLF5ES3IGFMkg3LiQbOImFsgcR3JvBKg4B44hGxkv0AC80OblbwugyQT1ovlZMxOOYl/JlV6ROW9cHmvl7litM32MUTsNsqxTCCabqWvNyqlFklVmqB6MWQJMWj31SCkmG/fOZtM97aOnNSKstHvpbfRc5oWe9neF4Wd6gLUXnbtT+nE863wB947c5VvxvVgvIVa028qSvu4LA8i0xTbQn9pF44Vf2ISUHlbF4ZKQ+BN9xmX8IMIAxdaJ79DJcscQhl5QAcw==|920
+}//0/uYlsA8AR8BGsFTR+1S+WzWBPA5gyUVSyjQkISSLrVQdSy6bvvBmaKvxkivCWtOzhmWuIgmy4lTz7WD216wdx/k4E3sCPzTW4EU6tUYRg0Pc8rPwJegjcoUEO5Vj5dALJfWDauQj7a0PRRtLfr40zZnT7yb7DP8tD+wSSj6AEshqWYib53oUkrmhQoWvjzV3vKK17ZSjF0qu6xbvhANb9kqlIZ8S2NMJKgzEPiH58v3723QwSStCNyPUaKeSwfMr0lHtAl+VOerJiCxRlPMbnfZ+pS6VZJUAZvjadT7JI5UmuXeBaFsYPw5EAOukIZLbvu9shtJeLM5bMJZvM/A2cbDMoAZcjPSykejpRKkB3eNdebOqetoiX/PhDNOA5xl42Z4hwjROkkoeDZhu+blrQVNd4VHCkoZiJ/YEeVAF5wsdTc73nCynEiG8rVcp9IZN96CYU5fusYahZmIiAp87UcO0owBogGWVYmtvj3OvccSyY/G8PH2xWUlQXe9CNsxRhqAcyacWF4StTYYCfikZ0mHgJSXdSCPlFyL39LD8bH4Ju+pyG4dh7AOgwEWJtzZ6mgWWJrj4xyXaXv6qz+TyDp80RW8EVfAZZ22C8EiE7Dx65qLGmiYhClnE6PNoXzU+x9KIF4s1aCUZj+PfolE86PhWNjsl6GNFd+P2UF7NZDMoCOwQWhYLxiFIoa1rL5m74CipddSV+kHSuWrHaZRQACZggGjenPySpeQplTTG2VMZhAVceuvIpL5RgWpPJy5t3dLCnF/oLpvSQqsm4l6KLHgol3XCzbpMKc5ZiC6q4vP1nmLQfW2MNEx/KlNcpPO0BKUdBoMSIn/Vs7ebah4VmJwsiWStKNeJLeUc1PtsCRLEU0bh/TSlMsnzIm/C1oaAhsFV5LM6NZqyE5XTn6xpw==|920
