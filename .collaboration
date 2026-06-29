@@ -141,7 +141,17 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T15:23:14.9476085+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\YBSメニュー.json",
+      "MasterPages\\YBSメニュー.rd"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
