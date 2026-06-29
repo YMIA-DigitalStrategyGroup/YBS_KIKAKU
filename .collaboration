@@ -429,6 +429,15 @@
   },
   {
     "ModuleName": "ServerCommand/添付ファイルアップロード",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T15:51:36.9279347+09:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\添付ファイルアップロード.json"
+    ]
   }
 ]
