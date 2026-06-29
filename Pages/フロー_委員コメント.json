@@ -1,9 +1,11 @@
 {
   "Rows": {
     "InLogicalVisibleIndexes": [
+      1,
       2,
       3,
       4,
+      7,
       17,
       18,
       19
@@ -61,7 +63,8 @@
     "29,2": "(委員名)",
     "29,24": "承認/差戻",
     "30,2": "コメント保存",
-    "33,7": "コメント確認",
+    "33,2": "ワークフローでのコメント確認→",
+    "33,12": "確認",
     "33,25": "閉じる"
   },
   "Formulas": {
@@ -344,7 +347,7 @@
               "ColumnBindingInfo": {
                 "TableName": "v_YBS規格文書_ワークフロー",
                 "ColumnName": "YBSコード",
-                "GUID": "48b41a27-f7d1-4e93-9065-cd1eb31339b6"
+                "GUID": "5dfcf3e6-e7f3-4e63-a049-a19f4d981e49"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -356,7 +359,7 @@
               "ColumnBindingInfo": {
                 "TableName": "v_YBS規格文書_ワークフロー",
                 "ColumnName": "改正コード",
-                "GUID": "050a8032-4224-410c-b497-02c6e6127503"
+                "GUID": "c9fc5294-e910-40d5-91ff-bc7173c8ccdf"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -452,7 +455,7 @@
                     "MessageFormula": "「承認」または「差戻」を選択してください。"
                   }
                 ],
-                "ID": "7f169d32-7b8c-4ccf-985e-840e7b42f1bc"
+                "ID": "b24ec0d3-5e6c-4977-93e5-ebd19cca99f1"
               },
               {
                 "Condition": {
@@ -473,7 +476,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「コメント保存」ボタンを押してください。"
                   }
                 ],
-                "ID": "c3f87780-493d-4c32-830a-5ce4344e7b85"
+                "ID": "f0bb321b-6d62-4c51-ba94-e8850852afda"
               },
               {
                 "CommandList": [
@@ -547,7 +550,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "a65be095-0e7a-48f3-b3b5-bb942dde8eb8"
+                "ID": "4e8a40d9-dc17-4516-be3c-b243d1799286"
               }
             ]
           }
@@ -565,7 +568,7 @@
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "WaterMark": "「承認/差戻」選択して、委員のコメントを記載ください。"
+        "WaterMark": "「承認/差戻」選択して、委員コメントを記載ください。"
       }
     },
     "30,24": {
@@ -589,7 +592,7 @@
         ]
       }
     },
-    "33,7": {
+    "33,12": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -600,28 +603,28 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=フロー_委員コメント!F6"
+                  "SerializeProperty": "=フロー_委員コメント!E9"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=コメント表示!C2"
+                  "SerializeProperty": "=コメント表示!B4"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=フロー_委員コメント!K6"
+                  "SerializeProperty": "=フロー_委員コメント!J9"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=コメント表示!G2"
+                  "SerializeProperty": "=コメント表示!F4"
                 }
               },
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=フロー_委員コメント!H8"
+                  "SerializeProperty": "=フロー_委員コメント!G11"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=コメント表示!H2"
+                  "SerializeProperty": "=コメント表示!H4"
                 }
               },
               {
@@ -630,15 +633,15 @@
                   "SerializeProperty": "=フロー_委員コメント!AN24"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=コメント表示!AJ20"
+                  "SerializeProperty": "=コメント表示!AJ19"
                 }
               }
             ],
             "LoadBindingDataOption": 1
           }
         ],
-        "Text": "コメント確認",
-        "TemplateKey": "_RS_Normal_Style2"
+        "Text": "確認",
+        "TemplateKey": "_RS_RoundCorner_Style3"
       }
     },
     "33,25": {
@@ -1965,22 +1968,14 @@
       "32,26": 67,
       "32,30": 1,
       "33,1": 14,
-      "33,2": 14,
+      "33,2": 13,
       "33,3": 14,
       "33,4": 14,
-      "33,7": 12,
-      "33,8": 12,
-      "33,9": 12,
-      "33,10": 12,
       "33,11": 98,
-      "33,12": 98,
-      "33,13": 98,
-      "33,14": 98,
-      "33,15": 98,
-      "33,16": 98,
-      "33,17": 98,
-      "33,18": 98,
-      "33,19": 98,
+      "33,12": 12,
+      "33,13": 12,
+      "33,14": 12,
+      "33,15": 12,
       "33,20": 98,
       "33,21": 98,
       "33,22": 98,
@@ -2003,10 +1998,10 @@
       "33,39": 12,
       "33,40": 12,
       "33,41": 12,
-      "34,7": 12,
-      "34,8": 12,
-      "34,9": 12,
-      "34,10": 12,
+      "34,12": 12,
+      "34,13": 12,
+      "34,14": 12,
+      "34,15": 12,
       "34,25": 12,
       "34,26": 12,
       "34,27": 12,
@@ -2114,13 +2109,13 @@
     "23,35,1,4",
     "22,39,1,2",
     "23,39,1,2",
-    "33,7,2,4",
     "29,5,1,6",
     "30,6,2,18",
     "30,24,2,4",
     "29,12,1,6",
     "24,35,4,6",
-    "12,38,1,4"
+    "12,38,1,4",
+    "33,12,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2178,4 +2173,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//rMyE119yyNxYnVxgAf9UbLYOVw9k9goU9VARznmaD2CGWB3JTBG9eRAiwAm2Bgwb9AfqkdD1fgp3yaEGXgxQ81EW/sTchFi4rsIodbWbZ2vZJB0HQlNkVXunhW6AH+lkaFzlQhNwrZQZlgdCtpWeD6SJRifQit125YzvtVb4zaKV07Aid6EhFeP1PPHoSkuf/MBh2ulg6+S8yf+tHvhLr6FRC/VtlQjfay1gxTnV3v/rC6YqbTwmj6LcHQ1eHgaBVJhciZvI9YiVQMqWRiNy+TA/o3OYYgk7kzFNsL/KgPMwHaNWHkRrdKOGxIgG2+Yxozsk245g/rspKf+jJi9D8H1215rDnnIvaCXCbZj1zmqO2TXGcpPiKWhQ8THLNocSNr6n9McCWxAzM+xlWQ9ku6XlWO2tVlmhetrfNG2ZNmmzaChNyl2BWebCZQ8sO+sNeEjg4eQ7ugQd6Q0EuuknJ8QzX/+mNgg9W/rsKjCoDeGlP6l/mh9905QDe7ucR3ypn7rBUr9D0myO7r8eg2oFWLIVC0A+17C5gmD7xv0JHX+1t17m2+ga2hoqYlewsTa54ldF2mSgB35MsVwZR/1K2b4h0LiKM6E85AcfI0HMbYyN31RLaWWbWuUT2n5yCxmhhu80lK4qYGH5zKc3zC9SHUgESGTEQ3Uvy2S1lL+2UlZm1/kfTG923Lc8RS0lXn0iiS7QbxcEpqnJbUBa5Y3SQTMmO+NSeF6WlN2W0WIOYGbdTfB9RP2ElsSwK5XrLeIThkbphzjfGfibM0Hv2KNYxv69sRL8CJA03dP+Zl0SqfiEYT7IXJk7xRHA4f56lIvWpvmBsM3oVfvBm1Kiqot4IbZo6O81Nk5EZ7R3LWh0mOk7BkeM2peQKag+mFE9uHBBCunroftLQIUe9J8kvizASQ==|920
+}//ZrHhXWljs5K/Vpt5axf3sGjjDunw4NuupV/AoaSb4TABRzgFMGiqBJN6eqmNzw1uqT+nOAPteh+fpmbj78FEtHVVv6rN7nStLnJfiNRmlwvL4sDldjVW5HWkFWdBPZs/3OBoqpf1rZUXcx3mKcl4ZfiHD6DV5Mr909DF8mmLWDDuXbe93gu1nXkxD7u+N8wldQ2iwaXkizN78wRBcqwyY7NDzEFEG+TlQei+HLAiuS/MberCh5mjBs0Bngyl+jUDC+d94jDQvkXWcg7AgPQ53Ucr/89ehf6xcrjOCJhFTPRo3e9nr0Fqj1Fg0mtVKhd5nE3+pcpZch+RtloGuoyzU6VpRaGwwypnI4VOAu+YhfdOzSTfUtN/kAgs8bGQAnnpAGdg2DIH5pnFx6vvPU5KyomHH3io9bav68Qx7vylrB5Mn0wQqTLsQlkN3vYipESXUGni1FNOvc1tNb1niHOfvsbtpjZS/icZQq0rUbHafyrPfPHKfl+LcI9aea3gro2W3EBTv0ZUFaIjOYmHd52kiWgc1sU8H21kEr7ycMFtvm0U3S/zkMWsxgUlHRFux65253wtwcRoeg3IomOSEqAhvLkqUqvGoq33WHIbtvjHlqyyJs7qFWBtcpvgbeOKweUBl5X5lCKbrai3jQqXXzjLHb/opelWoBMV00StscuwTSI4GzMCOqcAB3LQKCUjnv1Gp2AVWtl4KYHBDRxT6rHSVG6i1ZRKVn9MBUPo0sVl5hKBaOdEPqqQG/S8qkuCoz5wReKHA+Ry4CRwpKrI1Wgf3HaTH/EZSi+8XggzwbCIRcQQQPaWqyMgWYbgrZVmchcWm05ocShujkh9+TN23nxfgppdpAM+KHResbgl/py0B7iQSaF3hjzXCHFQHxnbQXh9ELwUyHtsmAQlL6+wizcfig==|920
