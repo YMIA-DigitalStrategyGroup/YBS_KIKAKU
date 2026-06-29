@@ -209,7 +209,18 @@
   },
   {
     "ModuleName": "Plugin",
-    "ModuleType": 40
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T15:15:23.2302457+09:00",
+    "ModuleType": 40,
+    "ToRemoveFiles": [
+      "Plugin\\SqlServerWrapper.zip",
+      "Plugin\\メニュー／ツリービュー型セル.zip",
+      "Plugin\\ワークフローコマンド-10_0_10_0.zip"
+    ]
   },
   {
     "ModuleName": "PublishSetting",
