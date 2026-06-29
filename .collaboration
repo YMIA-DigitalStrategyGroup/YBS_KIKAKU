@@ -209,18 +209,7 @@
   },
   {
     "ModuleName": "Plugin",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T15:15:23.2302457+09:00",
-    "ModuleType": 40,
-    "ToRemoveFiles": [
-      "Plugin\\SqlServerWrapper.zip",
-      "Plugin\\メニュー／ツリービュー型セル.zip",
-      "Plugin\\ワークフローコマンド-10_0_10_0.zip"
-    ]
+    "ModuleType": 40
   },
   {
     "ModuleName": "PublishSetting",
@@ -396,22 +385,10 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル一括アップロード画面",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T14:58:44.4172206+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/添付ファイルアップロード",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T14:59:41.0135788+09:00",
     "ModuleType": 15
   }
 ]

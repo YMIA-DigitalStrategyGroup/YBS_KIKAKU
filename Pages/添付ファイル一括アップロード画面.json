@@ -1,0 +1,143 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,3": "C:\\添付ファイル用"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": "C:\\添付ファイル用",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "4,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "添付ファイルアップロード",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "添付ファイル",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付ファイル一括アップロード画面!D3"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "主キー",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付ファイル一括アップロード画面!D10"
+                }
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "8,3": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "YBS規格文書",
+        "RowIndex": 8,
+        "ColumnIndex": 3,
+        "RowCount": 22,
+        "ColumnCount": 30,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "9,3": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "ID",
+        "GUID": "0f3fc597-073b-450e-a2d4-dc2ed578f9ca"
+      }
+    },
+    "9,16": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "添付ファイル",
+        "GUID": "dceb0784-f44b-4bde-bacf-8a888ae6a429"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "4,3": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "10,3,20,30",
+    "2,3,1,9",
+    "9,3,1,13",
+    "8,3,1,13",
+    "9,16,1,16",
+    "8,16,1,16",
+    "4,3,2,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "YBS規格文書"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//zeLnkUGDvhzOl8z8W/qaGtenZRUlHhTh6ukPh1x05JpH6TROrk2vjn4wKXDx2MwNMKz/GZhJ4g9Dl3uZHD22FvpIkZ+X9N815le2Y4yVLqeotH81ddJc1C3poaj/o3rcxz2mWHUbVfAJhsMboEEQFX36MfLD8RN0DdjExicZmAAjDf+trqCOHruYA2MnRNSORlk0rO6QqNhkflGPyn8F+0aCf/nq1VxG7FD1d1XLBo2L5bkwfBg6r3Uk4eOrpfaR3zSAOiq585gonY+qwtChJ334Pr84TXu5dqDB2uwr6mZJOkO/bjLd+hdaelgd5p8BzVvGMhra8Kkx4lP/kPg8331/sgI4KjoMqabbmnQNb6adS5HpnvSkcNUOpZZHmXQrtDxCqZF8UXLSQhN0elqZrD5rzPDBXknShAH0bli4Sie9FOeQM3ptm9Gz/J04ndnM1dH/SYqZw9RaK5Stz4UJjQkK+yY+BfdHm+5xtopQtgFlkIiN7Y1bH0+dUAl+c/TYNxGAOnkPONXxLn2I9Miwarat9XbrgNCpNuI3kpZM1WypKRKNpFOLinovWcRZ64dAyjfwBPhJ5zAWbT62eRvNTb4EAdKOqWFoGX1SX3+ac0VQdO8bAI2nJnJQRbyS3gzED6HyjZhmMkiGGWV2K+/9E7xl4D1ao0ntXekt92g3gtD3E2g00vTV30lNWCms7dRwWYOCMnm/I9QnhunlXkMjUlOCA7UY1+160mTUzPlA2NIFdsuOmOeQv9L000bGjifNzWVf3pmPyoRyKNqWOrqKOT7NT2ypjz08GUW9m9qaVKNNZ9h++8Rv2at3xMrn1ru5BBrBvpepm5S6/qquQbJXWFL4hAQeKUCcWpisF1vA6tRO0uLygTJyJrHdvRIL1DxPwC6j9AyRoqxN5NoGp7Z3TQ==|920
