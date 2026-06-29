@@ -333,7 +333,7 @@
     },
     "22,35": {
       "ListViewInfo": {
-        "Name": "リストビュー1",
+        "Name": "ワークフロービュー1",
         "TableName": "v_YBS規格文書_ワークフロー",
         "RowIndex": 22,
         "ColumnIndex": 35,
@@ -455,7 +455,7 @@
                     "MessageFormula": "「承認」または「差戻」を選択してください。"
                   }
                 ],
-                "ID": "b24ec0d3-5e6c-4977-93e5-ebd19cca99f1"
+                "ID": "3af115fa-894b-42b2-8419-65dceb0dc33e"
               },
               {
                 "Condition": {
@@ -476,7 +476,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「コメント保存」ボタンを押してください。"
                   }
                 ],
-                "ID": "f0bb321b-6d62-4c51-ba94-e8850852afda"
+                "ID": "7f486de8-19a4-47ae-9408-0abc836e1903"
               },
               {
                 "CommandList": [
@@ -550,7 +550,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "4e8a40d9-dc17-4516-be3c-b243d1799286"
+                "ID": "a4b03f92-69aa-459b-9833-5582b91fbcd6"
               }
             ]
           }
@@ -2173,4 +2173,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//ZrHhXWljs5K/Vpt5axf3sGjjDunw4NuupV/AoaSb4TABRzgFMGiqBJN6eqmNzw1uqT+nOAPteh+fpmbj78FEtHVVv6rN7nStLnJfiNRmlwvL4sDldjVW5HWkFWdBPZs/3OBoqpf1rZUXcx3mKcl4ZfiHD6DV5Mr909DF8mmLWDDuXbe93gu1nXkxD7u+N8wldQ2iwaXkizN78wRBcqwyY7NDzEFEG+TlQei+HLAiuS/MberCh5mjBs0Bngyl+jUDC+d94jDQvkXWcg7AgPQ53Ucr/89ehf6xcrjOCJhFTPRo3e9nr0Fqj1Fg0mtVKhd5nE3+pcpZch+RtloGuoyzU6VpRaGwwypnI4VOAu+YhfdOzSTfUtN/kAgs8bGQAnnpAGdg2DIH5pnFx6vvPU5KyomHH3io9bav68Qx7vylrB5Mn0wQqTLsQlkN3vYipESXUGni1FNOvc1tNb1niHOfvsbtpjZS/icZQq0rUbHafyrPfPHKfl+LcI9aea3gro2W3EBTv0ZUFaIjOYmHd52kiWgc1sU8H21kEr7ycMFtvm0U3S/zkMWsxgUlHRFux65253wtwcRoeg3IomOSEqAhvLkqUqvGoq33WHIbtvjHlqyyJs7qFWBtcpvgbeOKweUBl5X5lCKbrai3jQqXXzjLHb/opelWoBMV00StscuwTSI4GzMCOqcAB3LQKCUjnv1Gp2AVWtl4KYHBDRxT6rHSVG6i1ZRKVn9MBUPo0sVl5hKBaOdEPqqQG/S8qkuCoz5wReKHA+Ry4CRwpKrI1Wgf3HaTH/EZSi+8XggzwbCIRcQQQPaWqyMgWYbgrZVmchcWm05ocShujkh9+TN23nxfgppdpAM+KHResbgl/py0B7iQSaF3hjzXCHFQHxnbQXh9ELwUyHtsmAQlL6+wizcfig==|920
+}//bm67EawS9rfzqTCTQ2KLmHf8JPzWql42tlSDzc+bFrhBUajEbb8Z9AXW8PkcPG8RtJUtuqRD1nLseIcC1cHT0uODL3b0q9h7gJM/c9W4MMtEfSGQ6Rg92Q5pFAOP+1ppyDdRbRYw44HPW8B8LjpLnnmAYuCompHeB91SpZ778ZXKnYWhCyTfFwB53sUwgKtrioGLDgdWqnxRLP/D5YBbMgz/11fnK4BH5aiO34c4guPFWz+NMIya3ULUXx8zWXna1aQaOmUU6Rcp4UW12lStkDdQ76nkJqYcHstpu0xr0L26fD9CBu/b67ZF5w3GGjp+sSJwvp6D310lXI8Bg66nI82ZsTQ5StpD+Ob5RKmVtUWStbB8jI8gKSvpdRAMPOcZSSe/5nBxsPV43hflvLyRgs0BPXNdKiL9GJxsmhkeYJZ+rCdx9sc5Q8C6YJCbS397GgtpvygGLOdgWMKOhTiTIdfszfrdicI1KY5yjdRP16h1dLO4BzDhmm54sl7ry3BOn0j5XBsKXD7YzbwcIIIDRqr9B/U6GLYw3h/HNrn4DZOepHv19A8Dsi/GXRMk3LMopmdv7sscAJg/PupNU/b470ezuWDrnGCjz1ki59dgw4P8eneCDzilqMtgfJIUvrqZYT6D6L8dxRm/7dWkJpkSFnKXz0gqdUIa29aI3h0eFAXDUh++xjv3xH9fFLT0u9il0G5MaffOfZtsnCKonPQsOW3PyDv2eD9rEFRNLx823WptNN7pPiDKPKiURXpXdrJWIX048pWkL1+V8epWV+TlAlJa3Sv/5Kg6zgubbnuGuS7lA5lREL3jg+PnKf53Y4/8Glvxz9TkgTtDD1HKWQPeVaqVSCrr5GMUMFoKD34TjGfoP4rHG6P0V5rWbxTQllyB0jgYDkZWCeu+sqyG3KYQmw==|920

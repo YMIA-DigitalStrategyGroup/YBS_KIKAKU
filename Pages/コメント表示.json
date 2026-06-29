@@ -1,5 +1,9 @@
 {
   "Rows": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1
+    ],
     "Count": 30
   },
   "Cols": {
@@ -21,12 +25,13 @@
     "2,1": "YBSコード",
     "2,7": "規格名称",
     "2,27": "閉じる",
-    "5,1": "ワークフローコメント",
+    "5,1": "ワークフローコメント（フローのコメントが、履歴順に表示されます。）",
     "6,7": "氏名",
     "6,11": "日時",
     "6,20": "コメント",
-    "16,1": "委員コメント",
+    "16,1": "委員コメント（登録のあったコメントが表示されます。）",
     "17,5": "委員名",
+    "17,23": "承認/差戻",
     "17,27": "記載日",
     "17,35": "委員コメントID"
   },
@@ -40,7 +45,7 @@
           }
         ],
         "Text": "閉じる",
-        "TemplateKey": "_RS_Normal_Style2"
+        "TemplateKey": "_RS_Normal_Style4"
       }
     },
     "6,1": {
@@ -221,7 +226,7 @@
       }
     },
     "18,23": {
-      "NameUsedInJavaScript": "認定結果",
+      "NameUsedInJavaScript": "承認_差戻",
       "BindingInfo": {
         "TableName": "YBS_審議会ワークフロー",
         "ColumnName": "認定結果",
@@ -573,18 +578,6 @@
     "6,11,1,4",
     "7,11,1,4",
     "18,35,1,2",
-    "18,1,1,2",
-    "17,1,1,2",
-    "18,3,1,2",
-    "17,3,1,2",
-    "17,5,1,6",
-    "18,5,1,6",
-    "17,11,1,12",
-    "18,11,1,12",
-    "17,23,1,4",
-    "18,23,1,4",
-    "17,27,1,4",
-    "18,27,1,4",
     "3,7,1,11",
     "2,7,1,11",
     "3,5,1,2",
@@ -595,7 +588,19 @@
     "7,20,1,11",
     "2,27,2,4",
     "19,1,9,31",
-    "8,1,6,31"
+    "8,1,6,31",
+    "18,1,1,2",
+    "17,1,1,2",
+    "18,3,1,2",
+    "17,3,1,2",
+    "18,5,1,6",
+    "17,5,1,6",
+    "18,11,1,12",
+    "17,11,1,12",
+    "18,23,1,4",
+    "17,23,1,4",
+    "18,27,1,4",
+    "17,27,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -622,4 +627,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//yvXuDqgbzg4f8yJmu3+DYr63aW746UpDzuC2VeGC3T+nHeanNx/XK3TIQ9L/Ce1Bb/emi2aRJNZaPnuecwtrCQ8xyUWWU5onXM9JbALRySAtVbHIhQfncw8Y5EndXaBP9Pwt5piJcw/G50jYqFqOcdH+B6b1ymMOme79WAz0sDLJ1GCrPugiCLJ+vlQizog4kbWmNU5e33KN83D1uRh4HhY0Km9liHVeu+UGTZhr3hzqV2/ewLAzHzCHGSHlqDOTb11RHT5OAOND57X62Ok+C8rHaarPRscZtLhWv/qHcY5FrP8UG90/gyijsaf1wWiptiOZu6bSgR741VSwS/NhLUnIrabAx1aD8hp658OqB2P7zeWx57FfSuXho6JYxCLSwl/Zv7F0cEpAnjn3f8e92qzfJiGv+48nJyfWIsCsrEDKqF+/ntbwfm01hv0jTYT+uMTW6FD5O3qVPRSViCXYar1MVrpzNA82mR2iRakvPkCImahfJ4bKbTM6o+2Gpb/nuZZrg7k98E1XcSjdvHRIYjwGaFDRTObKsoI6HJRnwRlLJ3mztFjC+VuDxCAtSSFcbEO1cUlzhM5uemMwyVJ2gvwcRvxbDZPPTCSV9YJf9M72Q1RiClxmxc0XMcQIj08k/zb83UUWC0E1DOn/ou3xnt+qr8/301tHqVJ/uMka6hWymKIDWIasADa2lXcdPCnbSLINspFRWoYd4ULv7cEvjkoWr8ISTlvkF/zMmjqylcTGiT28tY++4WFf4xIUUlbeo9+WbuYUb9Ffb/mOOFZui9mYWU251risz+gSLz0e9MHqS5axKoPxhoJ0yo3tiSy845uUJ5COrFrs4jbb6Y6uV2B5z/eYiZj9qvFo1ZkR/atIWcyf5PLbrV0YG1BwG1XOQebgeiHtKJ9u8bfGiOwElg==|920
+}//JAB+GiVRn9WPjLX4KBS94HNgpIeDaWuqT4FMfRXqvHBJs3gTHTIZ6aXkprcgVYedsDFGmgvglndsngrcfG6K8vQi+o0D/GxcyrZZrNsXTa2+UT2anDZmKVO3Aq1RvsrsQF9aRlku4iqpMDaz0IW9ZU1/JQH5DBlDAPMHaud+BscOHyS2L1Q65LQx5TAOKmdnZBVmq858fnzimTipnch1Y5fMJlJztHBfGnLYh9zSmI4f88e5v9foLakfTdQB5LxVDO15PnCPxpbAj728xYdmo6wtv7moaypX/mO0YCIbHPmnCRxyo7sEWu/6k0VsIlmUoNCJGQ4uyyruVwW+X3AIqMkEJ14JJBACmdw7jhCAyd+LKKcrstRdbP4ma2vxHiHP8GBaLHLAHKxrz2lsEnr4Rbu/d2AHujtAObfIxT1KrSNXj/ZYu6K5p22RYgH6Idnsozmh5be8BhfuXQ0t0TU/aLBqSLNWCa0XAaji6+vm6GnPdDBqL1y0ES9zG30a4kWfzPDM6hc9feMoHqqAzx6c+dhwEWOQ8dgolVHkXaXy+tkfRdHJFCW6tVuW3CWG3A0E3Vj39SuefC6PaBuKpkFUHkDiCvUjg9vCydExIInKcu4lzzvdcq6f8EoeobJehJ+w6cfi+hvMeh0bkB7w6qLw1x1LgnbzroIu1DvPQI7MPp8I6f4MB+D/NKSyRsP4VBB7tP0w3iSqehaR0yvPsgG85mgGvUe20mm64ORCHOQQFIPKkAbFHbSMLMDEJqpokDaWkriA+sENHMr6Y865wiL3nyRokUcqEFf2oSp6Sv519EsznNcXOIjSiyUziB1LiY4VFTY2ini2vv/Iqr7Ne9yLR2fw2MnryjkBkpYxAau1l3+Uti6HrM9yC8cvPyqJjdbyqGtWiFbKiA5McNzno8cFAQ==|920
