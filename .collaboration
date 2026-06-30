@@ -141,17 +141,7 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T15:50:27.0152855+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\YBSメニュー.json",
-      "MasterPages\\YBSメニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -219,19 +209,7 @@
   },
   {
     "ModuleName": "Plugin",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T16:00:32.9095086+09:00",
-    "ModuleType": 40,
-    "ToRemoveFiles": [
-      "Plugin\\SqlServerWrapper.zip",
-      "Plugin\\ファイル操作コマンド.zip",
-      "Plugin\\メニュー／ツリービュー型セル.zip",
-      "Plugin\\ワークフローコマンド-10_0_10_0.zip"
-    ]
+    "ModuleType": 40
   },
   {
     "ModuleName": "PublishSetting",
@@ -345,16 +323,7 @@
   },
   {
     "ModuleName": "Table/YBS規格宛先マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T15:43:00.386065+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS規格宛先マスタ.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "PCPage/YBS宛先マスタ（メンテ",
@@ -393,23 +362,11 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T15:15:42.5663767+09:00",
     "ModuleType": 23,
     "ExclusiveType": 0
   },
   {
     "ModuleName": "PCPage/ＹＢＳ承認者管理",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T15:35:34.0748643+09:00",
     "ModuleType": 1
   }
 ]

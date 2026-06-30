@@ -1,0 +1,377 @@
+{
+  "Rows": {
+    "Count": 49
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,2": "ＹＢＳ権限",
+    "7,27": "事前に権限を選択してください。",
+    "8,27": "更新",
+    "14,2": "＜ユーザー情報＞",
+    "15,8": "検索",
+    "15,18": "権限にコピー"
+  },
+  "AttachInfos": {
+    "3,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "YBS規格宛先マスタ",
+        "RowIndex": 3,
+        "ColumnIndex": 2,
+        "RowCount": 9,
+        "ColumnCount": 23,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,2": {
+      "NameUsedInJavaScript": "名前",
+      "BindingInfo": {
+        "TableName": "YBS規格宛先マスタ",
+        "ColumnName": "名前",
+        "GUID": "ac491de6-194a-4277-b157-4939c4c27f0b"
+      }
+    },
+    "4,7": {
+      "NameUsedInJavaScript": "アドレス",
+      "BindingInfo": {
+        "TableName": "YBS規格宛先マスタ",
+        "ColumnName": "アドレス",
+        "GUID": "cd9a95f7-6f57-4184-980e-77f7e1eeadc2"
+      }
+    },
+    "4,14": {
+      "NameUsedInJavaScript": "担当形態",
+      "BindingInfo": {
+        "TableName": "YBS規格宛先マスタ",
+        "ColumnName": "権限",
+        "GUID": "975a1d51-e03c-46af-ac0a-5032e6bc2d1b"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "Items": [
+          {
+            "Value": "部門長",
+            "DisplayValue": "部門長"
+          },
+          {
+            "Value": "審議会",
+            "DisplayValue": "審議会"
+          },
+          {
+            "Value": "委員長",
+            "DisplayValue": "委員長"
+          },
+          {
+            "Value": "管理者",
+            "DisplayValue": "管理者"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "4,18": {
+      "NameUsedInJavaScript": "ユーザーID",
+      "BindingInfo": {
+        "TableName": "YBS規格宛先マスタ",
+        "ColumnName": "ユーザーID",
+        "GUID": "14fffa6f-a0b4-431d-a67d-9c88c5a27056"
+      }
+    },
+    "8,27": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "YBS規格宛先マスタ",
+            "ShowConfirm": false
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "15,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "氏名の一部"
+      }
+    },
+    "15,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ユーザー情報ビュー",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "ユーザー情報ビュー",
+                "ColumnName": "氏名",
+                "GUID": "fd049c8c-0384-420d-ac06-a4339f814b40"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=ＹＢＳ承認者管理!C16"
+              }
+            },
+            "ID": "fd5648e23c6644ae8537ee7a30786372"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "15,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "PassRowMode": 2,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ＹＢＳ承認者管理!C20"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ＹＢＳ承認者管理!C5"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ＹＢＳ承認者管理!H20"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ＹＢＳ承認者管理!H5"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ＹＢＳ承認者管理!O20"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ＹＢＳ承認者管理!S5"
+                }
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ＹＢＳ承認者管理!C21"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ＹＢＳ承認者管理!C6"
+            }
+          }
+        ],
+        "Text": "権限にコピー",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "18,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "ユーザー情報ビュー",
+        "RowIndex": 18,
+        "ColumnIndex": 2,
+        "RowCount": 5,
+        "ColumnCount": 21,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "19,2": {
+      "NameUsedInJavaScript": "氏名",
+      "BindingInfo": {
+        "TableName": "ユーザー情報ビュー",
+        "ColumnName": "氏名",
+        "GUID": "1d783fa9-6967-4914-901d-b63afa03dde2"
+      }
+    },
+    "19,7": {
+      "NameUsedInJavaScript": "メールアドレス",
+      "BindingInfo": {
+        "TableName": "ユーザー情報ビュー",
+        "ColumnName": "メールアドレス",
+        "GUID": "79d08388-5321-44b4-8d1b-016b53fe7915"
+      }
+    },
+    "19,14": {
+      "NameUsedInJavaScript": "ユーザー名",
+      "BindingInfo": {
+        "TableName": "ユーザー情報ビュー",
+        "ColumnName": "ユーザー名",
+        "GUID": "a3732b9c-8a75-418a-8960-545e45513339"
+      }
+    },
+    "19,18": {
+      "NameUsedInJavaScript": "ロール",
+      "BindingInfo": {
+        "TableName": "ユーザー情報ビュー",
+        "ColumnName": "ロール",
+        "GUID": "7a60b768-807f-4f4a-a117-e93c73cfd9ac"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "3,2": 0,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 0,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 2,
+      "3,18": 2,
+      "4,2": 2,
+      "4,7": 2,
+      "4,14": 2,
+      "4,18": 2,
+      "15,2": 3,
+      "15,8": 2,
+      "15,9": 2,
+      "15,10": 2,
+      "16,8": 2,
+      "16,9": 2,
+      "16,10": 2,
+      "18,2": 1,
+      "18,3": 1,
+      "18,4": 1,
+      "18,5": 1,
+      "18,6": 1,
+      "18,7": 0,
+      "18,8": 1,
+      "18,9": 1,
+      "18,10": 1,
+      "18,11": 1,
+      "18,12": 1,
+      "18,13": 1,
+      "18,14": 2,
+      "18,18": 2,
+      "19,7": 2,
+      "19,14": 2,
+      "19,18": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "15,18,2,4",
+    "5,2,7,23",
+    "20,2,3,21",
+    "8,27,2,4",
+    "18,2,1,5",
+    "19,2,1,5",
+    "15,8,2,3",
+    "15,2,2,6",
+    "3,2,1,5",
+    "4,2,1,5",
+    "3,7,1,7",
+    "4,7,1,7",
+    "3,14,1,4",
+    "4,14,1,4",
+    "3,18,1,5",
+    "4,18,1,5",
+    "18,7,1,7",
+    "19,7,1,7",
+    "18,14,1,4",
+    "19,14,1,4",
+    "18,18,1,4",
+    "19,18,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "YBSメニュー",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Pictures": [
+    {
+      "Name": "e4f19ac0-7368-4bc6-a7a2-f7265760b409.svg",
+      "ForguncyPictureName": "Arrow/292_move_next_3.svg",
+      "Stretch": 2,
+      "ForegroundFill": "Accent 1",
+      "Location": "273.6,299.20000000000016",
+      "Size": "26.80940055847168,46.000099182128906"
+    }
+  ]
+}//zgluWqq8hfALusFKlMZLiClswBgTo2THPC9QyAIb7fouuXaBKnUFHnGgja0Cyty7a1aJHJ3VKR9jDcg1Qyo7aishd1K8U6Y2aSia4jWfuA0Tf1mzZaT2AwwA3O18jHEV6vjvu1oRbkoitpamEIxHIi/5ND5sunwBOYfgATGBVa+E0sd45yfBbNdZ7/r/lBL5CV9aC0OeLc5rPdHmWBdYcq6f1C5N7MouIADLqFwVZf6AL1oE4lWd2WnkJQRIkzks8AAMMT29EJMxM4QRrmQxvcaFe0UU/tacmK72WnWBrXhpPoyOWzR0MYbW/FupRBNyqGzvlmONFa0VGTbKQ2egVqr/E9EYoK4xDZlv5a7PXV/a9nFqpGeaW98e2rEROTn4BGjOhb9CMH3FqkI7Vu+UScJ5snwfWIOjatCFPsMKIrVAEGS5qjM5ihULsxgWuXIqrLPWouPGE630oZctconZS9+0DHJAPNbUex39nG0YyijMlwEdGXmsirO6a1Z8El7W5Sog9RJkFg+1qYQyVoVGfbwjVcElGC37D2ciR3Gk7+DjMnLpl2HvmpcNeOmUp2+Gn6l4TNobt4O4/JxXBzBNjyxq1eYu/LbhCLxY+eOGA5kgsUpvm7Mt9zTGWYg/ZTgNym/4qrB3W0Z4FncrMbCm1urvFPFxR0r54KCSuQXF4++VX3htBgobuT1BxaL7HBq1YVPi3ySyz2X6YvNozNuz0lMnrgvJ7gzxk9PRiKAHzMTAs2e6CYNElq3Fv9oWbSSc9AyEh1dDZRJCScYCi0DqvCv0VRZCdV5iwhW8SegW5vHxaepNOrVcjZDwRDTArqibd3SDnvwcf+BdTYNKiw1xvkITXw3olaTyi0E3EiqPG8DbQC2dV8YPwDJaOK2ehuXZLzqjmfhZGwJkvq8wCCAITQ==|920
