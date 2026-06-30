@@ -6,8 +6,10 @@
     "Count": 60
   },
   "Values": {
+    "0,1": "＜ＹＢＳ権限管理＞",
     "2,2": "ＹＢＳ権限",
-    "7,27": "事前に権限を選択してください。",
+    "6,27": "権限を選択した後、",
+    "7,27": "ユーザーを選択して更新してください。",
     "8,27": "更新",
     "14,2": "＜ユーザー情報＞",
     "15,8": "検索",
@@ -92,9 +94,41 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-            "TableName": "YBS規格宛先マスタ",
-            "ShowConfirm": false
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=YBS権限管理!O5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "「権限」を選択してください。"
+                  }
+                ],
+                "ID": "393b32f2-99d8-4395-b660-80cc7aff8e9d"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "YBS規格宛先マスタ",
+                    "ShowConfirm": true,
+                    "ConfirmText": "本当に更新してもよろしいですか？"
+                  }
+                ],
+                "ID": "165a487f-54d7-431b-9098-c49e5343df70"
+              }
+            ]
           }
         ],
         "Text": "更新",
@@ -130,7 +164,7 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=ＹＢＳ承認者管理!C16"
+                "SerializeProperty": "=YBS権限管理!C16"
               }
             },
             "ID": "fd5648e23c6644ae8537ee7a30786372"
@@ -151,41 +185,41 @@
               {
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ＹＢＳ承認者管理!C20"
+                  "SerializeProperty": "=YBS権限管理!C20"
                 },
                 "TargetCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ＹＢＳ承認者管理!C5"
+                  "SerializeProperty": "=YBS権限管理!C5"
                 }
               },
               {
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ＹＢＳ承認者管理!H20"
+                  "SerializeProperty": "=YBS権限管理!H20"
                 },
                 "TargetCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ＹＢＳ承認者管理!H5"
+                  "SerializeProperty": "=YBS権限管理!H5"
                 }
               },
               {
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ＹＢＳ承認者管理!O20"
+                  "SerializeProperty": "=YBS権限管理!O20"
                 },
                 "TargetCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=ＹＢＳ承認者管理!S5"
+                  "SerializeProperty": "=YBS権限管理!S5"
                 }
               }
             ],
             "Source": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=ＹＢＳ承認者管理!C21"
+              "SerializeProperty": "=YBS権限管理!C21"
             },
             "Target": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=ＹＢＳ承認者管理!C6"
+              "SerializeProperty": "=YBS権限管理!C6"
             }
           }
         ],
@@ -287,6 +321,7 @@
       "4,7": 2,
       "4,14": 2,
       "4,18": 2,
+      "6,27": 2,
       "15,2": 3,
       "15,8": 2,
       "15,9": 2,
@@ -374,4 +409,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//zgluWqq8hfALusFKlMZLiClswBgTo2THPC9QyAIb7fouuXaBKnUFHnGgja0Cyty7a1aJHJ3VKR9jDcg1Qyo7aishd1K8U6Y2aSia4jWfuA0Tf1mzZaT2AwwA3O18jHEV6vjvu1oRbkoitpamEIxHIi/5ND5sunwBOYfgATGBVa+E0sd45yfBbNdZ7/r/lBL5CV9aC0OeLc5rPdHmWBdYcq6f1C5N7MouIADLqFwVZf6AL1oE4lWd2WnkJQRIkzks8AAMMT29EJMxM4QRrmQxvcaFe0UU/tacmK72WnWBrXhpPoyOWzR0MYbW/FupRBNyqGzvlmONFa0VGTbKQ2egVqr/E9EYoK4xDZlv5a7PXV/a9nFqpGeaW98e2rEROTn4BGjOhb9CMH3FqkI7Vu+UScJ5snwfWIOjatCFPsMKIrVAEGS5qjM5ihULsxgWuXIqrLPWouPGE630oZctconZS9+0DHJAPNbUex39nG0YyijMlwEdGXmsirO6a1Z8El7W5Sog9RJkFg+1qYQyVoVGfbwjVcElGC37D2ciR3Gk7+DjMnLpl2HvmpcNeOmUp2+Gn6l4TNobt4O4/JxXBzBNjyxq1eYu/LbhCLxY+eOGA5kgsUpvm7Mt9zTGWYg/ZTgNym/4qrB3W0Z4FncrMbCm1urvFPFxR0r54KCSuQXF4++VX3htBgobuT1BxaL7HBq1YVPi3ySyz2X6YvNozNuz0lMnrgvJ7gzxk9PRiKAHzMTAs2e6CYNElq3Fv9oWbSSc9AyEh1dDZRJCScYCi0DqvCv0VRZCdV5iwhW8SegW5vHxaepNOrVcjZDwRDTArqibd3SDnvwcf+BdTYNKiw1xvkITXw3olaTyi0E3EiqPG8DbQC2dV8YPwDJaOK2ehuXZLzqjmfhZGwJkvq8wCCAITQ==|920
+}//6E+L7VSVOfDLc8OuHsc2pgsU5On6PZDVFatHTMtqw9FpkOLh/zRX/R46S4/NK1RYSQOugrlIuFQ1wuFPZVbyQqsja/hU08bDEdsRUlE+YjSJgCSAc0r/DRFlm5wwKWIH+R/5YrFkjQa/Xfn245kiRmZIGlav2+Kw0rGfZYEGegS0VQY0kdf4OsOX2/+7/50vgQaZRyaenWkE/h7cjuT3ChGmjKiyvaylS8tvtcvkMBevfaNo+pFK4VMg5HCHSZycPSY14wZipDxkI1u6L1MyGv51e2ix3i2ALDAxM7T9nz247u+5vEibhA5obfsuGa63ayk5mbf1IFb+b/fpe2RqcMd8VSewzmBKkh1XtJwKHqKWdhRcOBGqpxZRLdso0c46ziaWj7dl+S+fs3IoMV030jgAi9bgx69tMuZsbTJ8ymLPqZNTvqafuZpd4F/giU6ublAvG1BHZz8GO16ewD4X+BvDKvd2L63D0Z5E0fpO92ApODuW6W2LzN2FRnLzb1xv6u/5JnPJBx5RkywTN4Yl4ofY7ffPebfEFYfsAimhhTj+cKEdu2YlxRViCkEeb/LFhCp0qKZ7aBQicU1iZ8Qk4Bdy4UlsODgLrHdpgv5ojUVrBdUbk3irhIEYNRBKaLbZfz5BIaCZxTXsFg2pG9baIItoLWi5UCbstsn9kMErC4PiJd22VZgGa7O0zYBNeDpH119jrCmfabEZYnGo2kyKl4ZppY/M97ZfTtVvLJD9bz1YU3CYSesiz0Ogo8GXb6UWnsOQe5AgV1+f9uzF3QsVd4N2U67tpqOomVEaxOJoLAe9hL7MLaZRyuyXZ2wk40FyFN5t6IgeTUNrD1PVJtLubwFCJQ0ZczL2lJUt1PMTedh2jhEcqhhU7qwROKj6P3Fj5R9kiFchn7L/jvWXTscecw==|920

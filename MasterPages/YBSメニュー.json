@@ -194,6 +194,23 @@
                 ]
               },
               {
+                "Value": "権限",
+                "Text": "権限",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "YBS権限管理"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
                 "Value": "添付ファイル",
                 "Text": "添付ファイル",
                 "SelectedIconColor": "Background 1",
@@ -204,23 +221,6 @@
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
                     "PageName": "添付ファイル一括アップロード画面"
-                  }
-                ],
-                "CanVisitRoleList": [
-                  "FGC_Anonymous"
-                ]
-              },
-              {
-                "Value": "権限",
-                "Text": "権限",
-                "SelectedIconColor": "Background 1",
-                "SelectedIconColorUseItemColor": true,
-                "IconColorUseItemColor": true,
-                "IsOldMenuPath": false,
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "ＹＢＳ承認者管理"
                   }
                 ],
                 "CanVisitRoleList": [
@@ -371,4 +371,4 @@
       "Size": "1280,104"
     }
   ]
-}//xdmiVFPJexG9eeiXFZ5AYR60NflbvAL+8K6H+rzWa8zpwT2yxUrJk4rWqi753xosqZZbsBPd84+UJsSJhPiwgfOAwUC9u+ts+rScpnCO0UfOMnbkLgjppCkizsmnUhRoV+3rkREBHxQ9IqvbxPLhNbtwPsyHVinlLjLGNz3lKRNcOGZ9a1VvhsJnl9cD33nuMrIRZvUw/jeAAjMyOPwjhVSafv10P4Lf9LVFcQ7Ph0FF6Fj0Yhk1+lFMIK8zArXjZ5JjBilG9+RRGWnxClKZu/Vbm4M7gWWhoMeqdVsHsBmQL59Ai+70g8wUbp3WncMBY+PbLPOpg+FSzvvPFAjqeBv807HMToxVxfeROJUUCKc1L1O/Yvp+M2AD5mWTh6CJMxne23O5+fwk2XNApzDmB3E6D1Za61bxmIMdH8S8+BA+7qszGkIzSZNc20mtkCH0H1ME3b5iTsmZcSygkHvISdCF9u45QmjEhwGSVUj+r/+CcTrbWQL41IXWEELCAg+Z6q+8DrkvfEfVRs2aARAOirosaGQTrmTHCWmwoovjKcI30MU1tfUB8olvxWJ3xr2I20LJIgVzjAsbCtZWMvYQIvkuHfaEgDrg1EGW2dNuoHKZUj35/4ZywMTFI7bhDHkS8ji4/GKieeDc3XRuor9JL3WroXlWoAgQgIOge39IZhee0+D4nkXyYS0rKXsQDgkbB+0qKoB6bC9KdM3dwUXnsGwwPxIA2jYMlMwXQzkLGJvPRjCMl0gFd9kmQZ9EAKUfcTfaxQ54nb5eItyXfCE2K1GvawipJk5NvqSlsRlvzmNN5Bk/jV9S8RYAb/Ev+rCRm5Oxh7GZuOOTGYmEeRhTTEoAHLrruZGSPYJ1lKUT7Zp2sRhDxQ/66wsba2FJn9MqLVKHoJZbVFzA7Psg6SaWJg==|920
+}//VnBBAxwSaRvmPvsPfh1i0HhDTF3G3KNxAhzyxhO089Zlwewv4H9IrzkZm8CrLXXVtNUTiq/jjTTIRHd9IG+9FV7E7y8C66OzBUTtZb4iQYMxa+tYjnr74g7uRA51p6bLU9HK5jryA5abpxfdXduo6L5dIkVe8IoaP9ESgIg8cv43gM9yPY4sV5m/wxmVQwFpbOddnC0UCpZ+dU+Kj/Pgyc+t+zr2O4FMXEB4hshu2gxJ/QkkFTEyx81vl8kDo486r3Y/DNf7cv687jGlffZ2tdLfAb89drjCSKamcpl9afNiS4a40dBLWp4/f4PSWpf3Gf2YKN7EovPAS7S3lwfRBY8hkZnDmg0j5fKqnWf+b96lIE1f5F0gvAfWPZyI0RC63fKp6BVzNfH7e9xHPl58VoWmcptledb49I/YJsViUvdPf/CGQsbLGq7hbWPLUKwewkIPz+9VTHh3gcGKAMbJtoGhkhRVQ0RRzEUa0MW4NTu/zKah+A7z0HxbQpvwazIKnBkwFtWw06glqslGWnFCqEFe00WceTx/qz8vlFQeYUrRigPudrOt5ZkYHIPQS68bSw6TOw7HF4tWPxiqGfxFPrTbvbQnzbB0kfaI17IyR8qqUoSHEOMAeQxXT6Vm5t+K0KxBsjCdeRbpRwfApkTKCXxKWpQOVoQBna/7ZSd+o8lzhU9MSSI412FmMGtzk1dp0pzQl+RGw0Vb24uM3m4kXNP6deQhNF2TfdZjq8+G2oO87JTObnYIEAmeKB/36V0sccZyWKVhdaWMy72Tk7bSltABjT+7E2HoXQXtCftRkOA89Z//JSgEjIOeCgNOGPRxAHSU/ubjmExbqbtColFSK7KagmXHBAO9wrgiMp9ltCZel8tvfQ+IRUBV6kw3XJyc+wtC8g/4jSYzGfjCQ+41YA==|920
