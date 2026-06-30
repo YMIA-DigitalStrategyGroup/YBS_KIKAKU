@@ -229,7 +229,19 @@
   },
   {
     "ModuleName": "Plugin",
-    "ModuleType": 40
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-06-30T16:00:32.9095086+09:00",
+    "ModuleType": 40,
+    "ToRemoveFiles": [
+      "Plugin\\SqlServerWrapper.zip",
+      "Plugin\\ファイル操作コマンド.zip",
+      "Plugin\\メニュー／ツリービュー型セル.zip",
+      "Plugin\\ワークフローコマンド-10_0_10_0.zip"
+    ]
   },
   {
     "ModuleName": "PublishSetting",
