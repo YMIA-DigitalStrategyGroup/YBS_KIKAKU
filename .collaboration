@@ -298,31 +298,8 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "Table/YBS_審議会ワークフロー",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T16:54:20.9292735+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS_審議会ワークフロー.json"
-    ]
-  },
-  {
     "ModuleName": "PCPage/コメント表示",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T16:54:20.9294752+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\コメント表示.json",
-      "Pages\\コメント表示.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（承認待ち",
@@ -334,34 +311,11 @@
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T16:54:20.9296419+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\フロー_委員コメント.json",
-      "Pages\\フロー_委員コメント.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/サーバーサイドコマンド1",
     "ModuleType": 15
-  },
-  {
-    "ModuleName": "Table/YBS規格宛先マスタ",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T16:55:59.8128028+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS規格宛先マスタ.json"
-    ]
   },
   {
     "ModuleName": "PCPage/YBS宛先マスタ（メンテ",
@@ -405,36 +359,14 @@
   },
   {
     "ModuleName": "PCPage/YBS権限管理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T16:55:59.8133865+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS権限管理.json",
-      "Pages\\YBS権限管理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Table/YBS_審議会コメント",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T16:54:20.9292772+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Table/YBS権限マスタ",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-06-30T16:55:59.8128059+09:00",
     "ModuleType": 7
   }
 ]

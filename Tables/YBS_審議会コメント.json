@@ -1,5 +1,5 @@
 {
-  "Name": "YBS_審議会ワークフロー",
+  "Name": "YBS_審議会コメント",
   "Columns": [
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",

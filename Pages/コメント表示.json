@@ -156,7 +156,7 @@
     "17,1": {
       "ListViewInfo": {
         "Name": "リストビュー1",
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "RowIndex": 17,
         "ColumnIndex": 1,
         "RowCount": 11,
@@ -164,7 +164,7 @@
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
-            "TableName": "YBS_審議会ワークフロー",
+            "TableName": "YBS_審議会コメント",
             "ColumnName": "ID",
             "GUID": "b4b3af28-6182-462f-9cee-cdb04fe16365"
           },
@@ -177,7 +177,7 @@
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "YBS_審議会ワークフロー",
+                "TableName": "YBS_審議会コメント",
                 "ColumnName": "管理番号",
                 "GUID": "9813272e-e714-4d7f-bf6e-942e80b827e1"
               },
@@ -196,7 +196,7 @@
     "18,1": {
       "NameUsedInJavaScript": "管理番号",
       "BindingInfo": {
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "ColumnName": "管理番号",
         "GUID": "f591b37e-3fe5-4460-b6b5-e11e1016ba2c"
       }
@@ -204,7 +204,7 @@
     "18,3": {
       "NameUsedInJavaScript": "ID",
       "BindingInfo": {
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "ColumnName": "ID",
         "GUID": "18d14cf0-038e-476f-bcc5-e4ba1d73d515"
       }
@@ -212,7 +212,7 @@
     "18,5": {
       "NameUsedInJavaScript": "委員名",
       "BindingInfo": {
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "ColumnName": "承認者",
         "GUID": "f227cf54-8ef0-4026-8c83-f0e5c3a952cb"
       }
@@ -220,7 +220,7 @@
     "18,11": {
       "NameUsedInJavaScript": "コメント",
       "BindingInfo": {
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "ColumnName": "コメント",
         "GUID": "1ea613c0-1f3d-4048-87ae-45f8bc2c78da"
       }
@@ -228,7 +228,7 @@
     "18,23": {
       "NameUsedInJavaScript": "承認_差戻",
       "BindingInfo": {
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "ColumnName": "認定結果",
         "GUID": "5fde4e78-3ade-4e8f-b7d8-3ad0330dc47b"
       }
@@ -236,7 +236,7 @@
     "18,27": {
       "NameUsedInJavaScript": "申請日",
       "BindingInfo": {
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "ColumnName": "申請日",
         "GUID": "e533c6a9-6846-44cd-ba12-8d114f9e11a4"
       }
@@ -627,4 +627,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//JAB+GiVRn9WPjLX4KBS94HNgpIeDaWuqT4FMfRXqvHBJs3gTHTIZ6aXkprcgVYedsDFGmgvglndsngrcfG6K8vQi+o0D/GxcyrZZrNsXTa2+UT2anDZmKVO3Aq1RvsrsQF9aRlku4iqpMDaz0IW9ZU1/JQH5DBlDAPMHaud+BscOHyS2L1Q65LQx5TAOKmdnZBVmq858fnzimTipnch1Y5fMJlJztHBfGnLYh9zSmI4f88e5v9foLakfTdQB5LxVDO15PnCPxpbAj728xYdmo6wtv7moaypX/mO0YCIbHPmnCRxyo7sEWu/6k0VsIlmUoNCJGQ4uyyruVwW+X3AIqMkEJ14JJBACmdw7jhCAyd+LKKcrstRdbP4ma2vxHiHP8GBaLHLAHKxrz2lsEnr4Rbu/d2AHujtAObfIxT1KrSNXj/ZYu6K5p22RYgH6Idnsozmh5be8BhfuXQ0t0TU/aLBqSLNWCa0XAaji6+vm6GnPdDBqL1y0ES9zG30a4kWfzPDM6hc9feMoHqqAzx6c+dhwEWOQ8dgolVHkXaXy+tkfRdHJFCW6tVuW3CWG3A0E3Vj39SuefC6PaBuKpkFUHkDiCvUjg9vCydExIInKcu4lzzvdcq6f8EoeobJehJ+w6cfi+hvMeh0bkB7w6qLw1x1LgnbzroIu1DvPQI7MPp8I6f4MB+D/NKSyRsP4VBB7tP0w3iSqehaR0yvPsgG85mgGvUe20mm64ORCHOQQFIPKkAbFHbSMLMDEJqpokDaWkriA+sENHMr6Y865wiL3nyRokUcqEFf2oSp6Sv519EsznNcXOIjSiyUziB1LiY4VFTY2ini2vv/Iqr7Ne9yLR2fw2MnryjkBkpYxAau1l3+Uti6HrM9yC8cvPyqJjdbyqGtWiFbKiA5McNzno8cFAQ==|920
+}//upPGPUxHPLuZY4E9ABFKHedoL/rc/KX1+VEiPbJEfhnRC3toHySCszMamyQIPzf4kXzg6d7oVBUFS7Sm9vrOktOejhwg7J78R3Pe6N+QD654xQAtrPl8pHmsUGaqlGX/WtUwiTb7zL96fPaGyaOBuiIgbztdk8HEv/5gd+gCA5bhKRdDPsp3hGyrIIJr9Q2pkJVfuJnSvLwKPtvgrMTsBI0o0FMqUEslMuQnldgf1fKt1Fm0ApLXM86so5076F+3VczsirlCs7zvaDIjgJtJ/NUchvI/dZxi7p8fQTP93TIxrB1fhrxvjYECXsWv5+hrVWL4daR730P4wRHlnJWgi+3CevNKKrwWmzUT6SUN6dZjDauMjTglAPJhC9k6k3PHl2Rz3e102pCIXyicQngU+FDYi5XtAfps3hwsF8MgefLoXdnYoN1g40QIynHvw1RAGr1FRc8yLRAYat7OZAPa1QO20NtwZeHbawke7gD9pncFBvuzt6LD4NCeuWoBHtCN4rawR9UCFkqOVf0rFE1KoDU4GK+9veCT1gllen2xWo//ThO1VAsLvUkfwvJQTY61bKS1H2WpgwXc4oBkrz+UiW3KJ2I76Lwr4tNoCJ6+WNWIky4rpUuyCTE5eonbWYq4pvXOQgPCMJnNxWeb/Uz9bqNv9bfWkG7TfEKAFhrjYP8AuWY5fTKkrYy8Mt3UW6/t1XblQKvIvf56r2R9oI81WhF7S+fn9uHX0LrtNIw0YL6XIeq8p+CyNwFlbjYXlpS/p1NSwZ4WN6KJljxLCChPJ+OST6SR9wPT+DLRljQbObdinSiTUnarUQfmlJ1Dqn0ha35d+CeOzvul4YmmX9yiLbk4alVGolfJJtZ8kfHRpH/+7Kn6ZvGUNFwKC5nB3b5oZZOWUcO4JQ2S5fiLwE7jsg==|920

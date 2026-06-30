@@ -19,7 +19,7 @@
     "3,2": {
       "ListViewInfo": {
         "Name": "リストビュー1",
-        "TableName": "YBS規格宛先マスタ",
+        "TableName": "YBS権限マスタ",
         "RowIndex": 3,
         "ColumnIndex": 2,
         "RowCount": 9,
@@ -36,7 +36,7 @@
     "4,2": {
       "NameUsedInJavaScript": "名前",
       "BindingInfo": {
-        "TableName": "YBS規格宛先マスタ",
+        "TableName": "YBS権限マスタ",
         "ColumnName": "名前",
         "GUID": "ac491de6-194a-4277-b157-4939c4c27f0b"
       }
@@ -44,7 +44,7 @@
     "4,7": {
       "NameUsedInJavaScript": "アドレス",
       "BindingInfo": {
-        "TableName": "YBS規格宛先マスタ",
+        "TableName": "YBS権限マスタ",
         "ColumnName": "アドレス",
         "GUID": "cd9a95f7-6f57-4184-980e-77f7e1eeadc2"
       }
@@ -52,7 +52,7 @@
     "4,14": {
       "NameUsedInJavaScript": "担当形態",
       "BindingInfo": {
-        "TableName": "YBS規格宛先マスタ",
+        "TableName": "YBS権限マスタ",
         "ColumnName": "権限",
         "GUID": "975a1d51-e03c-46af-ac0a-5032e6bc2d1b"
       },
@@ -84,7 +84,7 @@
     "4,18": {
       "NameUsedInJavaScript": "ユーザーID",
       "BindingInfo": {
-        "TableName": "YBS規格宛先マスタ",
+        "TableName": "YBS権限マスタ",
         "ColumnName": "ユーザーID",
         "GUID": "14fffa6f-a0b4-431d-a67d-9c88c5a27056"
       }
@@ -115,18 +115,18 @@
                     "MessageFormula": "「権限」を選択してください。"
                   }
                 ],
-                "ID": "393b32f2-99d8-4395-b660-80cc7aff8e9d"
+                "ID": "ae3f5633-7e91-459e-912a-631432985cf6"
               },
               {
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "YBS規格宛先マスタ",
+                    "TableName": "YBS権限マスタ",
                     "ShowConfirm": true,
                     "ConfirmText": "本当に更新してもよろしいですか？"
                   }
                 ],
-                "ID": "165a487f-54d7-431b-9098-c49e5343df70"
+                "ID": "8a2ebe9d-4ca8-420e-adaf-55b5c235c70a"
               }
             ]
           }
@@ -409,4 +409,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//6E+L7VSVOfDLc8OuHsc2pgsU5On6PZDVFatHTMtqw9FpkOLh/zRX/R46S4/NK1RYSQOugrlIuFQ1wuFPZVbyQqsja/hU08bDEdsRUlE+YjSJgCSAc0r/DRFlm5wwKWIH+R/5YrFkjQa/Xfn245kiRmZIGlav2+Kw0rGfZYEGegS0VQY0kdf4OsOX2/+7/50vgQaZRyaenWkE/h7cjuT3ChGmjKiyvaylS8tvtcvkMBevfaNo+pFK4VMg5HCHSZycPSY14wZipDxkI1u6L1MyGv51e2ix3i2ALDAxM7T9nz247u+5vEibhA5obfsuGa63ayk5mbf1IFb+b/fpe2RqcMd8VSewzmBKkh1XtJwKHqKWdhRcOBGqpxZRLdso0c46ziaWj7dl+S+fs3IoMV030jgAi9bgx69tMuZsbTJ8ymLPqZNTvqafuZpd4F/giU6ublAvG1BHZz8GO16ewD4X+BvDKvd2L63D0Z5E0fpO92ApODuW6W2LzN2FRnLzb1xv6u/5JnPJBx5RkywTN4Yl4ofY7ffPebfEFYfsAimhhTj+cKEdu2YlxRViCkEeb/LFhCp0qKZ7aBQicU1iZ8Qk4Bdy4UlsODgLrHdpgv5ojUVrBdUbk3irhIEYNRBKaLbZfz5BIaCZxTXsFg2pG9baIItoLWi5UCbstsn9kMErC4PiJd22VZgGa7O0zYBNeDpH119jrCmfabEZYnGo2kyKl4ZppY/M97ZfTtVvLJD9bz1YU3CYSesiz0Ogo8GXb6UWnsOQe5AgV1+f9uzF3QsVd4N2U67tpqOomVEaxOJoLAe9hL7MLaZRyuyXZ2wk40FyFN5t6IgeTUNrD1PVJtLubwFCJQ0ZczL2lJUt1PMTedh2jhEcqhhU7qwROKj6P3Fj5R9kiFchn7L/jvWXTscecw==|920
+}//Wt1Me6T4nS764Yh9/IHuntPnKYEUmKOhQR6Pmf+zh4LLScKX4/z0ZFi8OLoVLkQ7hV/inRQ683tweEb4JWbUGIQX7Dd78U94HNnRlGs8pn7aMzs/z9b8dCG0ibkqMcbdlkhRRgsnrVMGl3czgCrb74htrwW/LVrFhz6dvKUBcSkgsZaIpBua29IOXacqH4LeL+PJh0EZrkmXf/IVlrjVskH19zNIB3ex/hR4SqXtZUYR314uTbuq5Nh0aiyL1SwzoyQnmvZX8bfge29sAQfXC7gPRBwwnSXZ7VEst8/8VWkBVU8P2FU+TpWOWXCP220gxwsLx5lSy8P6Nay8e+KW0E1zxqUWIBXy9Z1r3VI4+vmYPiSFDnYHjYdCWoxO3wHGroUfTiXwIeRVUs6+KNOr2rTZAqIGZLHN2YietZJqUTTXKvX7JvswH8sT8vxD5x4ptJPa+ROfSq1cbjeqg8dNbDBsqYONt9Fe3guQOvPUpptsDJRLVWIHaA7Q1kggJyOij6OAJtNTFl0veGkOA+hwcrstCUVOv7KmxeWqwBAI05eKwk08XGWmnFlq3YQKknFD5/n34UpakTzjLHFYnFNU4vd6i11/KQDq7tJxri5Ls7h+4iZNsW6yL489I9ucfDjpbM8YcV/cg0h6QnlKxPwLj5RkcPAwDjHTfi+0BQx3zqKUUK9jAgmlaqMtLDu19Ae6KVl23pcV3EPW3GZmpUglSYGs2xY3HRYZbY4I1h7dSvrqePQzb2cMk+JELcXFMMhM2mhHYCWNxUj+zc7EEDA0bQLGKtLdXiKOLGS0jRSogkpN5ARg5ZHsCEjQZVxxSwZb6SinMs/WcGATaoS7uzTJiK8cV90rPi/930urQFDf/Q67U7BzfQyGX9V9pqnyRi4saKPdQan9BbjJEVoxVOmUOA==|920

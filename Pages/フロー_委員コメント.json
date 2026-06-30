@@ -455,7 +455,7 @@
                     "MessageFormula": "「承認」または「差戻」を選択してください。"
                   }
                 ],
-                "ID": "3af115fa-894b-42b2-8419-65dceb0dc33e"
+                "ID": "5e6aff33-28e1-4ffb-b447-fa96eb036a69"
               },
               {
                 "Condition": {
@@ -476,13 +476,13 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「コメント保存」ボタンを押してください。"
                   }
                 ],
-                "ID": "7f486de8-19a4-47ae-9408-0abc836e1903"
+                "ID": "d267e6db-4a67-460a-8768-8abc98daf6e8"
               },
               {
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "YBS_審議会ワークフロー",
+                    "TableName": "YBS_審議会コメント",
                     "UpdateType": "add",
                     "ShowConfirm": true,
                     "ConfirmText": "本当に追加してもよろしいですか？",
@@ -490,7 +490,7 @@
                     "UpdateBindingValues": [
                       {
                         "BindingInfo": {
-                          "TableName": "YBS_審議会ワークフロー",
+                          "TableName": "YBS_審議会コメント",
                           "ColumnName": "ID",
                           "GUID": "be25fa30-e4d2-4c32-99c8-246ae6ab9327"
                         },
@@ -501,7 +501,7 @@
                       },
                       {
                         "BindingInfo": {
-                          "TableName": "YBS_審議会ワークフロー",
+                          "TableName": "YBS_審議会コメント",
                           "ColumnName": "認定結果",
                           "GUID": "338c9ece-089b-4881-86f5-1c20241c4cee"
                         },
@@ -512,7 +512,7 @@
                       },
                       {
                         "BindingInfo": {
-                          "TableName": "YBS_審議会ワークフロー",
+                          "TableName": "YBS_審議会コメント",
                           "ColumnName": "コメント",
                           "GUID": "b474e7e7-b0ff-4ab1-a212-4a1aaa74475e"
                         },
@@ -523,7 +523,7 @@
                       },
                       {
                         "BindingInfo": {
-                          "TableName": "YBS_審議会ワークフロー",
+                          "TableName": "YBS_審議会コメント",
                           "ColumnName": "承認者",
                           "GUID": "b486bd06-65d7-4253-b785-96fa6f825852"
                         },
@@ -534,7 +534,7 @@
                       },
                       {
                         "BindingInfo": {
-                          "TableName": "YBS_審議会ワークフロー",
+                          "TableName": "YBS_審議会コメント",
                           "ColumnName": "申請日",
                           "GUID": "1f2fdfb7-5693-468a-9af6-92077d237ce7"
                         },
@@ -550,7 +550,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "a4b03f92-69aa-459b-9833-5582b91fbcd6"
+                "ID": "26a22b73-c1fc-44d5-9d92-cdbf3a1c1f41"
               }
             ]
           }
@@ -561,7 +561,7 @@
     },
     "30,6": {
       "BindingInfo": {
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "ColumnName": "コメント",
         "GUID": "466ded06-bb95-4fa0-9bd5-d791c1562f09"
       },
@@ -573,7 +573,7 @@
     },
     "30,24": {
       "BindingInfo": {
-        "TableName": "YBS_審議会ワークフロー",
+        "TableName": "YBS_審議会コメント",
         "ColumnName": "認定結果",
         "GUID": "ae8b7f14-ae22-4019-9f76-393857c4ddf2"
       },
@@ -2173,4 +2173,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//bm67EawS9rfzqTCTQ2KLmHf8JPzWql42tlSDzc+bFrhBUajEbb8Z9AXW8PkcPG8RtJUtuqRD1nLseIcC1cHT0uODL3b0q9h7gJM/c9W4MMtEfSGQ6Rg92Q5pFAOP+1ppyDdRbRYw44HPW8B8LjpLnnmAYuCompHeB91SpZ778ZXKnYWhCyTfFwB53sUwgKtrioGLDgdWqnxRLP/D5YBbMgz/11fnK4BH5aiO34c4guPFWz+NMIya3ULUXx8zWXna1aQaOmUU6Rcp4UW12lStkDdQ76nkJqYcHstpu0xr0L26fD9CBu/b67ZF5w3GGjp+sSJwvp6D310lXI8Bg66nI82ZsTQ5StpD+Ob5RKmVtUWStbB8jI8gKSvpdRAMPOcZSSe/5nBxsPV43hflvLyRgs0BPXNdKiL9GJxsmhkeYJZ+rCdx9sc5Q8C6YJCbS397GgtpvygGLOdgWMKOhTiTIdfszfrdicI1KY5yjdRP16h1dLO4BzDhmm54sl7ry3BOn0j5XBsKXD7YzbwcIIIDRqr9B/U6GLYw3h/HNrn4DZOepHv19A8Dsi/GXRMk3LMopmdv7sscAJg/PupNU/b470ezuWDrnGCjz1ki59dgw4P8eneCDzilqMtgfJIUvrqZYT6D6L8dxRm/7dWkJpkSFnKXz0gqdUIa29aI3h0eFAXDUh++xjv3xH9fFLT0u9il0G5MaffOfZtsnCKonPQsOW3PyDv2eD9rEFRNLx823WptNN7pPiDKPKiURXpXdrJWIX048pWkL1+V8epWV+TlAlJa3Sv/5Kg6zgubbnuGuS7lA5lREL3jg+PnKf53Y4/8Glvxz9TkgTtDD1HKWQPeVaqVSCrr5GMUMFoKD34TjGfoP4rHG6P0V5rWbxTQllyB0jgYDkZWCeu+sqyG3KYQmw==|920
+}//Lsd/nF123WfS1kTutEGnz2Qx/fA+xdkkwE4c413TjVHWuIBlR3gBNl2jw0n25lyEllZ+jsi+wZBZkanSt/aLashddCzPPmY5x3CNHDWFAO0Ab1X6ypVCY3RWaRhEo248AcCBpFrKkMyXb3UOCNAjsqChVJ6yw9fYVNgdk+alB/srTxTUX447V6URE5owPaI1tcNGfxf83UG91NpHGx39XL301JbQG0vNLgZwzBISNEc7PWTlmMe2xabxM2JhhAMuv1BaPalD7d5+HbNcflZU3SonYE5xzZKhDwpUZAU0wX/nkjIe6S7zPIu0ri6vw9XDWBdd7jQ4lZ5eDrFa8x4a9CJL1wzhJZJdMVsR1F/Esba9WM2/nZuYGT6CCrrjuiJYoLi32zvL14K6n4OsNdMA27jtnuRGWX1qcIKIMj2tKvc5a2AWoOYmD/2w99LsmJPt1QH4zT0a0CffgOG92UQxaTVWVsAkR5kptWFEW8WbflSRLRdSiZ5kgT/LnifAd9YNmc3N32zp64wzkdO5mUGjePY428Iww9+bNRL4H14I3m2KYWj0Nybei7Odtm7DLgTQmD/Lkn4tCPnrKV1tb49+fI8ERObbVyZX/St4KZdbN80qXLFVTvBLOou/Dx+GFPL+XRvpY/iMngF1muUY/4Y8CC8zrnnZGGAQ9hvgEueaAw+dkYXFeG85pKF1lDZR0D+01ZDwjmuvhrJwPxtNo0JaHtarksXJbI74DdfjK0/zB6YsvW77b+652MKvA60hNZbfdOtAu0VutdHqlxgGrBT40FCaH867Ves80Bu3K9ltoxV9u3nXHBMysJNBqhAKx3jIYP4aQv6mmxIvMvSTGQdE8pGgapXA2wGMaYuhoXXZzP/yk24EVfyXFOqHlFWaZ4bngMRbpY/0ehYXu19uiewSIQ==|920
