@@ -303,7 +303,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "5e80546c-c035-48ec-bbf9-2a7beefae196"
+        "GUID": "7a21a4aa-1b30-4675-9286-89c1c3a4bd34"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -331,7 +331,7 @@
                   "SerializeProperty": "=YBS一覧（最新!C6"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=YBS一覧（来歴!B2"
+                  "SerializeProperty": "=YBS一覧（来歴!B3"
                 }
               },
               {
@@ -340,7 +340,7 @@
                   "SerializeProperty": "=YBS一覧（最新!K6"
                 },
                 "TargetCell": {
-                  "SerializeProperty": "=YBS一覧（来歴!H2"
+                  "SerializeProperty": "=YBS一覧（来歴!H3"
                 }
               }
             ]
@@ -640,7 +640,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "fdd55481-d849-444d-95b3-d931db725c35"
+                "ID": "eecb2814-7f51-45be-9c82-560fe358c695"
               },
               {
                 "CommandList": [
@@ -709,7 +709,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "c9d8bf7a-d1e2-49cd-b87c-a893d7d7f4c6"
+                "ID": "be58f86e-e7f3-4029-b9d7-e8f31b85482e"
               }
             ]
           }
@@ -974,7 +974,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "32725df1-786b-4807-96da-50928fdb7a15"
+                "ID": "94b4213e-26ac-4f43-b347-5e2ee4f69792"
               },
               {
                 "CommandList": [
@@ -1043,7 +1043,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "d58b5974-115d-47c2-a09d-dbf43376dee4"
+                "ID": "63833868-11a6-4950-96f6-251f8aacf064"
               }
             ]
           }
@@ -1483,4 +1483,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//WrZhYeAWJZHXkzld8VZJoBVjKzAlS/g6eXEpWHtZG0/pNBGxyiwha9c05GUsJg/emGlW2SrJptXGCCUyzTZ6T3XWmA6sGGbkGyFiKfrLiP3Smc0qkzfB4WVswQTUacHtmWAa7tXFuxq+3Zt8/1suV0Dk3tqioe76zKpsGXH6qQSzAymoaga4c8VDEJ0J1kRlgJgY4OIcsbypyuPA/d6LX4JxX93hBDiH4bVSe4bh/JE8rF6Ca+4HZB+tN3sYi6wgDtesUQF4y2IC4n6SQEGJxmKlYNEKj/fKtV/xy/VtGNFv9i0fSx8OuoqkSvxNsp5ozZtVEm9zjhNBim4gc8PLz1UmomBJAlt9Emk3r/ywtKQnbhEK1YLXGQ4VXVbLJKQaXOMRkD9cHq4/KCoc728Di9PQoS39vHY9bh4tEd8y3WsW9iXNrPgzdyyJ/wHCooR2wUkYhVBTA/jtIC1Co0SDWotSCx/ROtZ5vMTA0YMah0icp1qpfJJLlW12sctn0o6Aliyu1LaN3uYkpF91n8ScymSr41uXsh5kbiBN0AUASheI4YOfLV8f7Zmp2kOD0bbLBsPGY9+4vfd5wQbw9sKd8xi/uI0mHf1zB/0TJocz/SiAoUiuwLdW2RCcHMjyxqugptaxWKjJr3zk+zCDKZtzaOe/0kxUSjI9/o+p6/mf0fFFQVLJ6T9WqcqHueHR9fKDDbf6ipV6LDnEXf+aNiXHBww/FMKizi5VrcO3rUg/+LTWAu+NdL5F3atHbcEhkuAPAQvigkwTAVV1iapl0d5DhuDDFn3Z2EDzgkvL7bwdGQD/azutyM82wRlRbgInDTc3/SSP3ig1p9BSgkADz1nx89rtXHu5Q9Ms+JL8oKdmJmiiB+klKjiPFECP48Ccqhpd7IX0cbObiyv7wsCxoQc+dA==|920
+}//EemRdFKJkkQ8ha9Bt0u0ro9aX6BPR65lAMXYHDRt33VMUCxFIJRFer05b7RF7ZjfPqqyxO92wnvaEj1pVt2qAGFeFHaCLLirNfJw5PAz2uZoV+Y11I1N+tcXUOnWt6jPUZUrJvCKvvAsfgjT2J7C8hr4SoTZYwyTAZjf+W2kyjvycFzMDhwrmCmExPDtNqbtO1bq+EbGX5s/ZValpgk9pmxKLaMNaSuPUlk224B78vUOedWME1nBMXlVpMV4bOvB5BTaemPZmGAhuyOOCHE2oyEbzRlW6WPl0iPEf7rXZeq7XvRFsZWhpm0TknL0xfOE6kua5MEVwTD+rn3E+GoOFP6RPvMU/ihEzn8x6hJqDMT0cjDkEb46E28m+Mp6eQGC/ttlGKXJUzHjw2+NP+gMgtAGNk/XGcf0LjdB/1B5Z72/8kOc8hu6IwesbDNFk5BXEtDvK/7TGH3EnBl6t79bW1GiegyYwLkxBeX2yp2W1G38cmxbldjI1We3UTG6gqPYg/uXEd3X6OS5gaj1jxdTQJf0jgzsu0h2442VpwcGM8Tc1WSJgG+kd55LT01GM56R76sWFSPB8/Y/EE254gF5qmWNqNou+kZZSVT9ScLlguRidEg7mtXx5xTfmDXCHvcZJpc4snlkvdKIno+FKYol4RFcQM8AS6do3l6XWQ9YxGmARUDwOGbGfmEHSL4aJW+uu2wUPvbAvICBVlBbAIYm1phNZwUJpkaJYhoWYzBSPgGqnQeKTzSWFtT1aZsUyWP4lleYESa2k0CxY6D54QFPErmMKPLjGbAqS9qalf17zGAzNAnv4NbCTv/om9dXyGwMtSwa+DhNo9pBNIuspPywn5UBTrM+9rYAbmbKXS4RFMC0m1q8UPQDeMWyz8taIPu5CREa/ivr4tzm2jNCmpSVqA==|920
