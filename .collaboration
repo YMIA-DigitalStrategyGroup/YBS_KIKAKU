@@ -359,7 +359,17 @@
   },
   {
     "ModuleName": "PCPage/YBS権限管理",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-01T10:28:02.0745565+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS権限管理.json",
+      "Pages\\YBS権限管理.rd"
+    ]
   },
   {
     "ModuleName": "Table/YBS_審議会コメント",
