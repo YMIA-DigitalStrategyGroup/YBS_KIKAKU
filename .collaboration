@@ -313,7 +313,17 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（承認待ち",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-02T16:30:12.2378175+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS一覧（承認待ち.json",
+      "Pages\\YBS一覧（承認待ち.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
