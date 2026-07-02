@@ -352,16 +352,6 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル登録",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-02T11:45:12.0051256+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\添付ファイル登録.json",
-      "Pages\\添付ファイル登録.rd"
-    ]
+    "ModuleType": 1
   }
 ]
