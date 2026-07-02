@@ -1,15 +1,5 @@
 {
   "Rows": {
-    "InLogicalVisibleIndexes": [
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22
-    ],
     "Count": 28
   },
   "Cols": {
@@ -124,7 +114,7 @@
                     }
                   }
                 ],
-                "ID": "898f3bb6-9bf7-401d-ba48-349d29120b8d"
+                "ID": "d43cd8d8-1afa-4e21-bf8b-b9ff13225317"
               },
               {
                 "CommandList": [
@@ -153,7 +143,7 @@
                     }
                   }
                 ],
-                "ID": "5b40af14-53ee-4329-9cc3-6748aa5c58a5"
+                "ID": "170cdc7b-d884-4edd-96fc-8f4269a54003"
               }
             ]
           }
@@ -213,6 +203,74 @@
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PageName": "フロー_委員コメント"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "委員確認",
+            "TableValue": {
+              "TableName": "YBS権限マスタ",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "c2455dac-a855-4027-8954-814712f0eaf7",
+                  "BindingInfo": {
+                    "TableName": "YBS権限マスタ",
+                    "ColumnName": "権限",
+                    "GUID": "91cc6811-bc64-4f8d-a029-33636aa5b877"
+                  },
+                  "ColumnName": "権限"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "YBS権限マスタ",
+                  "ColumnName": "ユーザーID",
+                  "GUID": "ef4787b9-b536-4b00-8835-34036db7b446"
+                },
+                "Value": "%CurrentUser%"
+              }
+            },
+            "ID": "e6e75bfc5cc742588e57b9581f8a43ce",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=委員確認"
+                      }
+                    ]
+                  },
+                  "value": "YBS委員",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "YBS委員ではないので、登録できません。"
+                  }
+                ],
+                "ID": "842faf90-e8dc-4558-a606-3138dd09a6d4"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "フロー_委員コメント"
+                  }
+                ],
+                "ID": "13e0e444-e5d6-4a0f-b0ae-6f7942f5c0c7"
+              }
+            ],
+            "Disabled": true
           }
         ],
         "Text": "登録",
@@ -282,7 +340,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "de5c2c9e-a57e-4768-a4aa-65cd8cdf7012"
+        "GUID": "1d78c561-2036-458d-8904-ea5fc666b269"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -298,6 +356,197 @@
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
             "PageName": "フロー_承認処理",
             "LoadBindingDataOption": 1
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "承認者権限",
+            "TableValue": {
+              "TableName": "YBS権限マスタ",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "ff385776-3475-4226-a267-ae65e72488bc",
+                  "BindingInfo": {
+                    "TableName": "YBS権限マスタ",
+                    "ColumnName": "権限",
+                    "GUID": "b837ce6f-6211-4410-b83d-8a0ba2aa0328"
+                  },
+                  "ColumnName": "権限"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "YBS権限マスタ",
+                  "ColumnName": "ユーザーID",
+                  "GUID": "b464888d-2dbd-420b-b5cc-0f393dcb20f8"
+                },
+                "Value": "%CurrentUser%"
+              }
+            },
+            "ID": "ba4a0f15f0a6400a9a356730dc0cd87b",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=承認者権限"
+                          }
+                        ]
+                      },
+                      "value": "部門長",
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=承認者権限"
+                          }
+                        ]
+                      },
+                      "value": "審議会",
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=承認者権限"
+                          }
+                        ]
+                      },
+                      "value": "委員長",
+                      "compareType": 1
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "承認者ではないので、処理できません。"
+                  }
+                ],
+                "ID": "2fdd4d58-6762-463a-bd69-84302c73bfd9"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                        "tableData": {
+                          "TableName": "YBS規格文書",
+                          "ColumnName": "FGC_State",
+                          "GUID": "e32b45f8-f626-4dd4-8e69-ae76a6c341cf"
+                        }
+                      },
+                      "value": "部門長承認待ち"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=承認者権限"
+                          }
+                        ]
+                      },
+                      "value": "部門長"
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "部門長なので処理できます。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "フロー_承認処理",
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "5c85bbb2-f27d-4a04-88c7-0904891b23a1"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionTableDataParam, ServerDesignerCommon",
+                        "tableData": {
+                          "TableName": "YBS規格文書",
+                          "ColumnName": "FGC_State",
+                          "GUID": "9e256af3-ccec-4053-bc1f-d5061ab877e7"
+                        }
+                      },
+                      "value": "審議会承認待ち"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=承認者権限"
+                          }
+                        ]
+                      },
+                      "value": "審議会"
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "審議会承認者なので処理できます。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "フロー_承認処理",
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "c9f12a7e-2604-4e83-a164-87dbd01e4411"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "委員長承認者なので処理できます。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "フロー_承認処理",
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "2722e574-1096-48f3-ba13-6090e6127f28"
+              }
+            ],
+            "Disabled": true
           }
         ],
         "Text": "処理",
@@ -331,7 +580,7 @@
                     "MessageFormula": "一時保存のデータは、表示できません。\r\n再開ボタンから再開してください。"
                   }
                 ],
-                "ID": "d0579e18-54a1-41b7-8e01-7a8e073ac55a"
+                "ID": "58a55aa1-fad9-4deb-843b-de25bf2f8cfd"
               },
               {
                 "CommandList": [
@@ -341,13 +590,70 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "b3096d9e-2b95-4ec6-86cd-114a2c5dbc86"
+                "ID": "9feafc1e-7f6d-4828-b9b4-8fc6d160151d"
               }
             ]
           }
         ],
         "Text": "申請情報",
         "TemplateKey": "_RS_Normal_Style4"
+      }
+    },
+    "16,46": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "YBS権限マスタ",
+        "RowIndex": 16,
+        "ColumnIndex": 46,
+        "RowCount": 7,
+        "ColumnCount": 17,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "YBS権限マスタ",
+            "ColumnName": "ユーザーID",
+            "GUID": "596b989b-613a-40cf-91b0-9afd0acddc26"
+          },
+          "Value": "%CurrentUser%"
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "17,46": {
+      "NameUsedInJavaScript": "権限",
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "権限",
+        "GUID": "7067279f-5d7d-4699-adce-0a93f28ec983"
+      }
+    },
+    "17,49": {
+      "NameUsedInJavaScript": "アドレス",
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "アドレス",
+        "GUID": "36fefc14-3f88-41ca-9cd7-613a515a6320"
+      }
+    },
+    "17,53": {
+      "NameUsedInJavaScript": "名前",
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "名前",
+        "GUID": "3b864bb9-7a31-48b3-abbc-921647761459"
+      }
+    },
+    "17,57": {
+      "NameUsedInJavaScript": "ユーザーID",
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "ユーザーID",
+        "GUID": "52e1a9a7-bd19-4886-9f0a-50eae5b1be3f"
       }
     },
     "20,2": {
@@ -377,7 +683,7 @@
                     "MessageFormula": "「一時保存」のデータではないため、編集（再開）できません。"
                   }
                 ],
-                "ID": "a8e1935e-ae73-4fe7-957d-4deca4b8b822"
+                "ID": "d2c148ef-7b44-43dc-9bd2-0b6bbf527dc8"
               },
               {
                 "CommandList": [
@@ -421,7 +727,7 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "0e66e6fa-93cb-4e28-94bb-85658265df23"
+                        "ID": "c2f8696e-0860-44ae-9ef2-b045997700d6"
                       },
                       {
                         "Condition": {
@@ -469,12 +775,12 @@
                             "LoadBindingDataOption": 1
                           }
                         ],
-                        "ID": "e22739fb-4f2c-4e4b-9bee-266b2b164c6a"
+                        "ID": "bc1840c6-e365-4a16-a16f-afb08a2dd7c1"
                       }
                     ]
                   }
                 ],
-                "ID": "c9bd87e3-7a59-4fed-bf43-e265545540f9"
+                "ID": "723f86d0-90a4-49a4-a604-eae0bc20b600"
               }
             ]
           }
@@ -523,7 +829,7 @@
                     "MessageFormula": "「一時保存」のデータではないため、削除できません。"
                   }
                 ],
-                "ID": "af106561-7054-48ee-baa9-686be19bda7a"
+                "ID": "011239ee-ecbd-40ae-8b39-93715f434bfb"
               },
               {
                 "CommandList": [
@@ -535,7 +841,7 @@
                     "ConfirmText": "削除するデータに間違いありませんか？本当に削除してもよろしいですか？"
                   }
                 ],
-                "ID": "40985cc8-12ce-47c2-bab9-adef4492c27a"
+                "ID": "dd461597-52e2-41c8-bc0e-f39d6e27aa51"
               }
             ]
           }
@@ -812,6 +1118,12 @@
       "16,21": 6,
       "16,22": 6,
       "16,26": 16,
+      "16,46": 15,
+      "16,47": 14,
+      "16,48": 14,
+      "16,49": 6,
+      "16,53": 6,
+      "16,57": 6,
       "17,2": 6,
       "17,3": 6,
       "17,4": 6,
@@ -830,6 +1142,10 @@
       "17,21": 6,
       "17,22": 6,
       "17,26": 6,
+      "17,46": 6,
+      "17,49": 6,
+      "17,53": 6,
+      "17,57": 6,
       "18,1": 6,
       "18,2": 6,
       "18,3": 6,
@@ -1065,7 +1381,16 @@
     "6,55,1,4",
     "5,55,1,4",
     "6,59,1,4",
-    "5,59,1,4"
+    "5,59,1,4",
+    "18,46,5,17",
+    "16,46,1,3",
+    "17,46,1,3",
+    "16,49,1,4",
+    "17,49,1,4",
+    "16,53,1,4",
+    "17,53,1,4",
+    "16,57,1,4",
+    "17,57,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1133,4 +1458,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//U50xo+86onviSgclh5582yzcC1EXCrfjQCidKkJ00t7rkyRFBnC7EFS2tZnXiLkD0x/X824UzysWBObX3wIIO9BsDa+1Kttak/PyONO2MJzAZn+s40QlQi7AsZHWVtTUhkVdnH5uIe1tyxkTN5BEyBhDEX/H6He67VuTQzgwE5bruPyVMpqLe1oYvJSg0Y5YO7F1fzE0m+jrWMAmQpFPrhz6JLnjsNs8QdiA9ty3/LFBClbEKnqNsxMhfultu4WQnkAMq9eda/vMl0uTsahkn0qT+DOognm1qeCCg1myVxSmO8+U/Oc9c0IBVYXwvuQlhxZ4PVmf576gaNjXOmFy7NtBT30pC/hPnC1VCRNcDKrazIX5xO1AbEUa80PaVzMEgok0MMEAp0CVyYUMMafZO4uxWr2DFuxOTdioLo6Gp7p8H7FAnVYpR6SO/fJWga2upjW81O5rCMyP+rM7NP6/TU6OaESufaDIh1E9swomVHxpqN3JinPbCptJJO1pi4qK2vvoGUBeRVqBdlsYpmtwH90FnUMUJVlwMTQ4XCWR4ShEQqFAoLa+8a/7ix3dLwFUBhgCGIvMZGcGL5xRhEXP83baqrgJfSJBUsTUy3Dgf6V7Fr12Qgxgvcc9UayhnQmaEJmdTcZoXs9I54e2Ykuch2RxT2CgmeaV7kcCY1Aj87PZEkMSrYtlQOgWQoNotdFHYpZOAGFKY0suAKiL3UjKTyHZhheAgYl4REz58/8wmKC06n8aiHPqicRnduT96CUqWW++sWm8gfLsmn9YxIviUO8I/1xoQUgfDzEkfzAdM3wngV8MNjDNJQpOGjPmfOpOJPAsgXxQ4sk9ui2oU+3nmRcoGzL/SoAVtfNREDYfLRMPMeph77/iLo+jkTfR6yEU1gDAvPuIkGS8IiSXAllHSA==|920
+}//GfhSAMReBn+teHeOgn6hQ+NdtiveM5FBZLAVO0mAVcRZ9EjMJjKFwpOCZQwea6tWtj/NrzYiKJR3ogNu4IOqLqcDDZ4RBcT38SI9MV66Bjghqxti+lU3LkCcOaYEIQ9wRTCtQFOz9VE96VLFdRMClQZ8soOlyaaNQYZu5TBoDWyjU4hgr6zQyTelR7Z4yWVbtd+TK3Zu5Mer4mklvLixlDlasEDPYVnzSkTWUGsrDPg2mwhSc4gD3obGwL7lEoGs153UPLxIbgreWrZevwUH67qlvyr2mW6/2xoQzGIM2HIT6jrSG6z28kS680TsS6DLplkinBfmq3jSuxQzx4c0AvKpxhUnoDTItIhjrRH7lj6M/MiKGuo51TaU3wgh9RQlcsLjNVt6iGDDzBL3MRjwMxRa/E3MHXrxnuCSGzQZNEqC9Vu17RWsloUlOCTOJHgfITyPCiK5lAOWE+xNCQgzf+mdm/WgyrujGjCOrbvJx4g6tto+Tz1BES9aBq2L8dY30BEX9Tc/3m+BFzgBaQNToXp/0q2syIpN1SRqwqlehcTO0Pr6FMGVGIKrlJyf1t4o8bA7+T+pIHNAeaFR0FRHRxaYjkqaL3F1RZ2f3nbdmyp1k+oqPxYDB+UVsFqF75c4ElLTlWjZINDKyoFHaDL8LaVVo6KpjoE2Ipx1tgaS+6t6dFkuc0OTn6/FK74v8mwHjYnpIHAPAucEY5qVbcGZqy8UMC+IU+U7FCG9aJCcTHx80c7H+X9TUunXc9hNmZELAh4mO8B4vOT4EHfg2XO5evUo9AO5Al8wTlXfERoPyWmfXlq+o6HN7RyF+Xfl1WupjBabji/n1KrqS6M2nXnisnA0zjW9BlGFxHRHyFAoqG+fRXbXgjiBe29jTXRUGnon8INudcHCT9wNtpHmNBqgeQ==|920
