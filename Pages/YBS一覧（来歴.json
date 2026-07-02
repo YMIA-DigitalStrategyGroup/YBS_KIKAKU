@@ -8,11 +8,19 @@
     "Count": 20
   },
   "Cols": {
+    "InLogicalVisibleIndexes": [
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
     "Count": 59
   },
   "Values": {
+    "0,36": "セルのアクセス制御設定予定",
     "1,1": "YBSコード",
-    "1,7": "規格名称",
+    "1,8": "規格名称",
     "1,36": "詳細情報",
     "3,2": "改正",
     "3,5": "区分",
@@ -40,7 +48,7 @@
         "GUID": "8917a374-647b-410b-8550-6adf55214ccd"
       }
     },
-    "2,7": {
+    "2,8": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "規格名称",
@@ -85,6 +93,7 @@
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "ColumnOperation": 2,
+        "CommitType": 1,
         "DoNotLoadDataWhenLoadPage": true
       }
     },
@@ -225,8 +234,7 @@
       "1,4": 1,
       "1,5": 1,
       "1,6": 1,
-      "1,7": 0,
-      "1,8": 1,
+      "1,8": 0,
       "1,9": 1,
       "1,10": 1,
       "1,11": 1,
@@ -242,6 +250,7 @@
       "1,21": 1,
       "1,22": 1,
       "1,23": 1,
+      "1,24": 1,
       "1,36": 1,
       "1,40": 1,
       "2,1": 2,
@@ -250,8 +259,7 @@
       "2,4": 3,
       "2,5": 3,
       "2,6": 3,
-      "2,7": 4,
-      "2,8": 3,
+      "2,8": 4,
       "2,9": 3,
       "2,10": 3,
       "2,11": 3,
@@ -267,6 +275,7 @@
       "2,21": 3,
       "2,22": 3,
       "2,23": 3,
+      "2,24": 3,
       "3,2": 5,
       "3,3": 5,
       "3,4": 5,
@@ -312,9 +321,9 @@
     "4,38,1,8",
     "3,38,1,8",
     "2,1,1,6",
-    "2,7,1,17",
     "1,1,1,6",
-    "1,7,1,17"
+    "2,8,1,17",
+    "1,8,1,17"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -341,4 +350,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//vIg38LnP/PzCPjN7TFS8RmhDkDLVN56dgDEWUdpZtmJc7Rs3MrXkkXdrrLKBq9mtNRzZdLkXtUUitr33G+/3GlmSEChx9wJEUfHJhtZsQdB0lGIC+7/a37lL2iE7QWMkuMpKGpy9UwpeB7Hu8DTx7GDgo9N5/dmtqnZXGiPYzcHVWeQeiQqp0jlAzuFfnpqyjO9oMzErHK9wCHrfFFSU7ZhHmkbiWydRIlsVAehA/brbO0EojPbqSH4Bz1V4DMZntvrhyZ5xLbUZTBpSjgL9p90IwzjZidcfn5FN0cipysfufyISGidRky91KCpWFeTgmZf7YVGpczk3hok/Isj0Of8D6yq/E4J5zc0jOdSYgdmkZ2T9eCYLK/KKwd6mGttSDNmJPVwxKYPnx23sk0nETktLIGabPu1CgHm9tcKWzapclkKc3j5+BUySLnaQUt+cAZ2yZf9wdilMlOb/jEAN5PqF0PdpIhb3NJzXtc/e7M0lG8EX5OhyLJZWs1IimaRZ7spHDhJ8LV9cROKgVlETi0NA1nn49rY2VD6xtNrzNMCMh5nCb6TmP1fyN9x7i5IlZWnzJLf5hJzODvfeCx9O5KxWi866Qkhwc8ODzZavAWtsLezkddvfJtdcM/lo+EaOgt9TSVzXdS+K3IpGYZeP22kMJ1DplbOC1yT4uHe3PMdW4cS4IlOQfL/sAFCRrB4XgM2J5INCSdi4miSJMSuGTfefwF6L/zPmwaoBB5M6vqPSM5OStH+q8+hcfWCV74UcU+G9CE1ve9L3iRpoAJRRPG3rVvcVeyMLG/0SH8b8WZqzNfHaRzq2NrusEU9IAHEbhRiBgP9rBI9glDs6PWriVVThR/C+KdwgwoOqqq30TV5R67iSwutpiDvcr6drohGSY+HloFryzo9dz6VjHZKoxA==|920
+}//zjyPgAyhDShPqAK4vXD6I0Lt5efjOHqNNooFIT1oHkuekRhCLhpo03o+ROy/5HHi0EnOV66jMkqVi0teYonmGPYvOWrMzQaedsZ4imbhF/p2GL6xtDEk8ppr6L+AwFyPA2rIgK5xtXOQKYxo9wElF4wm4qUE1W3y6OlA+4eXGQCtYH8j35teKsc9SJ1CYO+hjq65OuaI3ueZfmngqUiyH8QeFE1mnDBI207Y3FRj9AQls8/rwSOB+zhCaQzjcxc59g7anHu/w9zwhsIWWyXHoePoYc441LXeMA5UzEV0Frn4xJjYe7o/MzwxFo9Lp843dpNyiep+FWQPl4HdBTVfH1lZuz2XP/e0btlmX0bfzI7vUeRW2pLsFMWVeLx0qh8sYohuK8uxGY0jwqBMk5bzpCy8pKtPtoEBrFCpNiuCk8hKrFF9kTGbfysOcx46H1lAqxEMKOxvyLJL6LygtGqMUqTxmypjLbQumEMkcniTqQpieCSV5BAtGtexdjjj25vz8gR6cSg+TK/eCRmVImv2DFPuY15Nwo6+LhICsy1A154+zetAQ7+0+1LG2yTmPvETaS4e8d6N3JI92XIx5W8p1NVmsL5AQN3Xj0+CYk+Hvfb/khDZuFVEfxfu1tIklbQ2g9FbscuF+kh3AfvQieouxYme7lgrvbeFT9PEuM92JKyfz5vCQTQVHYPALtW9rXB2CiGa0cZsVn8MqXqMpypFq+/0r8zS7I8Mj8l8e6caFrtpGN9IisRGgHwi+LieWmD7up0HqhBBRG1xaA9Yu7TzP0Z3H4XrzaEmwS1XUox5+CBlT4UieLWxQKQcJbrXDxywLWCo8MvgLeQM7g45kULo7s7STGPVPlyJWqrV4MsYdZuu2fEdwe6DKMpUBqw6VmORqJc2qEnI9X0s8Cb4CjszBA==|920
