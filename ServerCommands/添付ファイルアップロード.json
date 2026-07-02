@@ -23,13 +23,18 @@
       "Parameters": [
         {
           "Name": "添付ファイル",
-          "DataValidationInfo": {}
+          "DataValidationInfo": {},
+          "TestData": "C:\\添付ファイル用"
         },
         {
           "Name": "主キー",
-          "DataValidationInfo": {}
+          "DataValidationInfo": {},
+          "TestData": "1"
         }
-      ]
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
     }
   ],
   "Commands": [
@@ -64,7 +69,7 @@
               "ID": "466ae1eea5d544e9aa4b2ebe25aed58f"
             }
           ],
-          "ID": "35ceb424-c7ac-484e-ae69-516d1289fdcd"
+          "ID": "e91f2bf1-9031-49d9-9f5f-1e04b8c673c2"
         },
         {
           "CommandList": [
@@ -78,7 +83,7 @@
               "ID": "ff9904f5748244f99606dc1b1ca8590c"
             }
           ],
-          "ID": "298e3fe7-2f84-4e25-9bf5-8a6297e4eb7d"
+          "ID": "f0ec17e7-e778-40a5-a9d9-25bba9d7b253"
         }
       ]
     },
@@ -102,8 +107,8 @@
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
             "ColumnBindingInfo": {
               "TableName": "YBS規格文書",
-              "ColumnName": "ID",
-              "GUID": "17582a0a-7f99-4e0e-bfe0-1d7c6261454b"
+              "ColumnName": "添付ファイル",
+              "GUID": "e776055a-8c05-4547-8a6e-74a8813fe6e2"
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -115,7 +120,7 @@
               "BindingInfo": {
                 "TableName": "YBS規格文書",
                 "ColumnName": "添付ファイル",
-                "GUID": "1181475e-563c-4ac3-969e-b3101f8d0efd"
+                "GUID": "6cf2229c-4672-4dac-9b34-8f3dbcac183f"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -125,6 +130,11 @@
           ]
         }
       ]
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": "0",
+      "Message": "データの登録が完了しましした。"
     }
   ]
 }

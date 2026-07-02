@@ -3,6 +3,13 @@
     "Count": 45
   },
   "Cols": {
+    "RowColumnAttachedInfos": {
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 281.0
+        }
+      }
+    },
     "Count": 60
   },
   "Values": {
@@ -42,7 +49,7 @@
                 "ParamName": "主キー",
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=添付ファイル一括アップロード画面!D10"
+                  "SerializeProperty": "=添付ファイル一括アップロード画面!Q10"
                 }
               }
             ],
@@ -66,7 +73,8 @@
         "ShowColumnHeaderInDesigner": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
-        "ColumnOperation": 2
+        "ColumnOperation": 2,
+        "CommitType": 1
       }
     },
     "9,3": {
@@ -81,6 +89,19 @@
         "TableName": "YBS規格文書",
         "ColumnName": "添付ファイル",
         "GUID": "dceb0784-f44b-4bde-bacf-8a888ae6a429"
+      },
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
+        }
+      }
+    },
+    "9,32": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "添付ファイル",
+        "GUID": "bb28f09a-e6a0-412b-af99-aa5d3489ff05"
       }
     }
   },
@@ -91,17 +112,23 @@
       },
       {
         "FontFamily": 1
+      },
+      {
+        "Foreground": 2,
+        "Underline": true
       }
     ],
     "Types": {
       "Strs": [
         "@",
-        "Body"
+        "Body",
+        "Blue"
       ]
     },
     "CellStyles": {
       "2,3": 0,
-      "4,3": 1
+      "4,3": 1,
+      "9,16": 2
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -112,9 +139,11 @@
     "2,3,1,9",
     "9,3,1,13",
     "8,3,1,13",
+    "4,3,2,9",
     "9,16,1,16",
     "8,16,1,16",
-    "4,3,2,9"
+    "34,5,3,7",
+    "34,15,2,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -140,4 +169,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//zeLnkUGDvhzOl8z8W/qaGtenZRUlHhTh6ukPh1x05JpH6TROrk2vjn4wKXDx2MwNMKz/GZhJ4g9Dl3uZHD22FvpIkZ+X9N815le2Y4yVLqeotH81ddJc1C3poaj/o3rcxz2mWHUbVfAJhsMboEEQFX36MfLD8RN0DdjExicZmAAjDf+trqCOHruYA2MnRNSORlk0rO6QqNhkflGPyn8F+0aCf/nq1VxG7FD1d1XLBo2L5bkwfBg6r3Uk4eOrpfaR3zSAOiq585gonY+qwtChJ334Pr84TXu5dqDB2uwr6mZJOkO/bjLd+hdaelgd5p8BzVvGMhra8Kkx4lP/kPg8331/sgI4KjoMqabbmnQNb6adS5HpnvSkcNUOpZZHmXQrtDxCqZF8UXLSQhN0elqZrD5rzPDBXknShAH0bli4Sie9FOeQM3ptm9Gz/J04ndnM1dH/SYqZw9RaK5Stz4UJjQkK+yY+BfdHm+5xtopQtgFlkIiN7Y1bH0+dUAl+c/TYNxGAOnkPONXxLn2I9Miwarat9XbrgNCpNuI3kpZM1WypKRKNpFOLinovWcRZ64dAyjfwBPhJ5zAWbT62eRvNTb4EAdKOqWFoGX1SX3+ac0VQdO8bAI2nJnJQRbyS3gzED6HyjZhmMkiGGWV2K+/9E7xl4D1ao0ntXekt92g3gtD3E2g00vTV30lNWCms7dRwWYOCMnm/I9QnhunlXkMjUlOCA7UY1+160mTUzPlA2NIFdsuOmOeQv9L000bGjifNzWVf3pmPyoRyKNqWOrqKOT7NT2ypjz08GUW9m9qaVKNNZ9h++8Rv2at3xMrn1ru5BBrBvpepm5S6/qquQbJXWFL4hAQeKUCcWpisF1vA6tRO0uLygTJyJrHdvRIL1DxPwC6j9AyRoqxN5NoGp7Z3TQ==|920
+}//TJjngMy62XjU80i+zBXo7QynVftkvQuzmTM7m2JLI8x/mcF1ph1iwpFtpE6FFsK9BwmCgsudTNxA1ndPP136nRZNtyxm1lfNEBfCuEpR78kODbwMUwC9z/WdUeZhftkdCrKlzzNZQp+RuPrbXK1h69t+FZFrz0bMrl5E/tWCbyKmPyy3Jyq+Avqg9Pz9NQPbimjqnSm+KQS0SFLG3Cc/1CVUz/Zpz6i9xFTjXC3EvG4T6S9bDk0aQV89KnugcapmTfNMwzu6uygzaqzpXZXy5DY3YmAlG10gNMUJjBkkemeivsL1ZMW25NoJSY2s/XLsZHFfxNbYJ2WVI1UftPOzw6Boug+dikNzZyfsMa22ipeY8rk9CmDuLTwlUj/rr5mKXabvkY11RkLSJjfIR6ejPgQqWsZpjPkZpI4lUwK2sbBxao/3E/Btb2QoPXzbV2EeiGMNjbuD4Ev+9FGmiw4OVbrdCOr+ynZsG7IOY/wZInzRvaQy8Sj/ErXSuoiH78a6rGetRNi3Ee8X0nGrBp5HYde8XRHUPe/6WbtAKy8M+ThKPUJ3uarjdEH9Y7bxqwJEght4o4d/kNJ0bSqdlz2RLchGjfQao5rpfr7aK6t47oaFNeoI/PsHsAtOZmLF1KKTQG3HEHoZvxq7EzyawqrDEubsQ8gIB/MjABVoOYPhKlOqGeKioTEX8PUK2ypOE2B80D/6sRrGOD0TFOmKc7Ejg4L0ePO/kbGT80pMG9BaTGXhnCH0EoMXEGXzZNK7vQgv+FFAKLeAOBRh9/i56ffAqv1BNz3gkbLhTjNi1z3oG0hk8JUlIxfRHB3s3ZJDbCzxNf7Sdf2OJ2l7K0pbq/x3L3Fe3BG2QObNIaj6tQ+XzoWRgngP2i9QDY03Hxq4I29MlW0QDlCGmnFV2WnNk/UtrA==|920
