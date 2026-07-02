@@ -12,8 +12,10 @@
     "7,27": "ユーザーを選択して更新してください。",
     "8,27": "更新",
     "14,2": "＜ユーザー情報＞",
+    "14,18": "ユーザー情報をコピーします。",
     "15,8": "検索",
-    "15,18": "権限にコピー"
+    "15,18": "権限にコピー",
+    "15,35": "添付登録へ"
   },
   "AttachInfos": {
     "3,2": {
@@ -24,6 +26,18 @@
         "ColumnIndex": 2,
         "RowCount": 9,
         "ColumnCount": 23,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "YBS権限マスタ",
+                "ColumnName": "名前",
+                "GUID": "60d6825d-7619-45f8-be60-a3aee434702a"
+              },
+              "Order": 0
+            }
+          ]
+        },
         "TopCondition": {
           "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
           "TopCount": 100
@@ -125,7 +139,7 @@
                     "MessageFormula": "「権限」を選択してください。"
                   }
                 ],
-                "ID": "274ffecd-96b9-446f-be60-3739155a9e73"
+                "ID": "9853f5f0-fdc4-400a-b46b-3d85352ae09d"
               },
               {
                 "CommandList": [
@@ -136,7 +150,7 @@
                     "ConfirmText": "本当に更新してもよろしいですか？"
                   }
                 ],
-                "ID": "d7fa99c6-fb3c-406c-92ae-ea362e84bcdd"
+                "ID": "20232f9d-283c-4d19-9238-5939c9c2b456"
               }
             ]
           }
@@ -235,6 +249,19 @@
         ],
         "Text": "権限にコピー",
         "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "15,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "添付ファイル登録"
+          }
+        ],
+        "Text": "添付登録へ",
+        "TemplateKey": "_RS_RoundCorner_Style7"
       }
     },
     "18,2": {
@@ -340,9 +367,17 @@
       "15,8": 2,
       "15,9": 2,
       "15,10": 2,
+      "15,35": 2,
+      "15,36": 2,
+      "15,37": 2,
+      "15,38": 2,
       "16,8": 2,
       "16,9": 2,
       "16,10": 2,
+      "16,35": 2,
+      "16,36": 2,
+      "16,37": 2,
+      "16,38": 2,
       "18,2": 1,
       "18,3": 1,
       "18,4": 1,
@@ -380,14 +415,15 @@
     "19,14,1,4",
     "18,18,1,4",
     "19,18,1,4",
-    "3,2,1,4",
     "4,2,1,4",
-    "3,6,1,5",
+    "3,2,1,4",
     "4,6,1,5",
-    "3,11,1,8",
+    "3,6,1,5",
     "4,11,1,8",
+    "3,11,1,8",
+    "4,19,1,5",
     "3,19,1,5",
-    "4,19,1,5"
+    "15,35,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -423,4 +459,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//aAeLjp9rj04B6lEX19f3ZdBwhy/FVYRJWWKmzIRUTu6Y9UNTqu7Cowxny9h5rdfaLxhmWFTcLeyFIcEwWKSdO2tEPe6bvf30oIfb9SQjzoDdboSQxYG1EeTNwg2KVuwDqMoy5y/1LTkcyu7w0XOYMj6cWQfbUbJHAVOydKo500V+QgBe0CNSY8C/iF+hR+vu+FQcNnycvW1G2ErHmh7FjqilerVV8GE25nPlKpdlm+ojVrujQUl4EQvZspeWPso/xGGW2xKeLVinN4hBwc8hIT7rlVO8sENw7h9/GwgMkSpga9kdaCAv6ARKPqDnBIS8srziN7r1TSsmyZJ4F6mAwaVb8wJAuBRGmLdGDDBK8vbY3ly7TgwCYltqkD+l9IJBiqeMfBTatopZmdXQcYZwr8uDUc9Ij6O9hkWiGNOkkjiUq5aP9SnNt1JSXYKrdhraEgGdxyLxkKUIAHfLMtWJCaJjjQrN+hiJV1rZGvKbpb0Y072EyCs2/NZN6CPyerwcrdChwZpLxaBJQrGRanFoBXD1luXKhL2unTQ6lX9I7wv6gY23dkNdba1QmzFplP947wRcUja7kvWY5Orc/w9b1E/QXw/6W6vk213Wdp5KP3ygGGz2o+veryHr8Xo+syFcOYELwjiehqC8lO+0RrmLxv22crpGZsDttMkmCHCT59c8iFb0h2AGw9AxohXK+owZXt0k3K9oBny5PhUA1rK0WXy/8RFEqXf5T208Hj3H/srClUE2U5zQ0CZTs+/5e3vIyAi0l+FL7JKeil+zh4a0QExH1ZXAskL3ii23gq57S0WAO/bJBwLcQiZDKQcMzbWZxmglFhmIeu1V6eewf7hcKyfIU4zyGdUtnSwXjS8cP7P+EwxmThJdECqtz8IhYzyar0810f+jKXFxL+ueZHKe7g==|920
+}//g/DYGXKK8rxOXXcJeTMV+zBElAUXGTO//Duwzu/Pw+TdzGC0sY/P4rll+9T/C3TGQi65tg+DIXSFjQ6SKeNc4H1maGp1sfOfRtjUC+CWV9beie6fkgvcnH9PmNqdUZvebcYeV5DdAy9xsXmu1kcdsMUXGM2JcvwHgKZWHKbBwvN8RktH85u0oyzgZq3wbYnc4B92FiyY1ajQc3x63/AsSyoA6UwUETMkkRXg/2wuTn+NemU+DG+XPGqrSR394dAkRHC0kPwWf0K2UzeHH0h31i7Ru5sezodMf+62gGwodBZPGpxVUtddggFzDLnI4E0DTXakMIv50KFsv7CAP9ZI0Na2+2qv93uLZDjzRma7v5Xy715yAAFszKt1z4PLN8xDGBe96ZIFbVhruc4J1taxrluhab8pWCDiqLuCz/Cjn+GX7K6r2Jn9T21XFz+5NEgx42veOtFW1fX5jXXj+f5VnJoZ5s2fKRw/JYJ6rZ7dMIzn5d0DxLMP/s9afu/aT+YzyfgVsemovmBCwHV3UBwJGJdQQ2tU4VH5tfjk2Q9fSt3TyfAoz0+HPv1T3QpGPfj0m9JOvJNcUcsuTDif+YOsbzZ+CxNYgCNsh7E/PkR69YBuSFyr9YWPMhRCs/QFrI6CdAymjSEeqwxlB8EJy4nVG2+qdIwliA2GbDeUn2waiF8tfHJjVr0ayQYLeZsRpy6kGDNJ2FIZUpd4ZuSyCkibl4PxKkcwJ/2XSYiEtWQNs7L6XB7U+DoBfrZbKmMOyf1IefruFvoDeeH1QKGrd7GOSOybqMWlduHpwZdNdS662KGKaGLLPHyohbOIVXyKrYrVlW+5rfLogP5RheURa9junCbMt0W9sOq0m2zq0sxElZBeknC6mpVbUDYaKJsfpXarKNKWRHFqXQxAQp/KJ9lN9A==|920

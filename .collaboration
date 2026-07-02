@@ -340,17 +340,7 @@
   },
   {
     "ModuleName": "PCPage/YBS権限管理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-02T11:42:04.5129237+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS権限管理.json",
-      "Pages\\YBS権限管理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Table/YBS_審議会コメント",
@@ -362,12 +352,6 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル登録",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-02T11:42:04.5122828+09:00",
     "ModuleType": 1
   }
 ]
