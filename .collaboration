@@ -295,7 +295,17 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（一時保存_差戻",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-02T16:43:55.8757574+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS一覧（一時保存_差戻.json",
+      "Pages\\YBS一覧（一時保存_差戻.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/コメント表示",
