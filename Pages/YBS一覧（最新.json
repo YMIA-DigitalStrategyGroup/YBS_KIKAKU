@@ -33,7 +33,6 @@
     "4,7": "改正\nコード",
     "4,38": "見直し\n必要",
     "4,41": "文書\n区分",
-    "4,56": "承認者",
     "16,1": "来歴表示",
     "17,3": "YBS一覧（詳細",
     "30,2": "来歴/詳細表示",
@@ -43,7 +42,7 @@
     "30,30": "廃止"
   },
   "Formulas": {
-    "5,38": "IFS(AP6=\"廃止\",\"\",ROUND((TODAY()-AU6)/365,2)>=0.1,\"★\",TRUE,\"\")"
+    "5,38": "IFS(AP6=\"廃止\",\"\",ROUND((TODAY()-AS6)/365,2)>=0.1,\"★\",TRUE,\"\")"
   },
   "AttachInfos": {
     "1,17": {
@@ -287,36 +286,42 @@
         "a727c80e-c79a-46fa-b45d-d61fa4c911f2"
       ]
     },
-    "5,46": {
+    "5,44": {
+      "NameUsedInJavaScript": "施行日_日",
       "BindingInfo": {
         "TableName": "YBS規格文書",
-        "ColumnName": "申請日",
-        "GUID": "7f6a05d7-b14d-40a3-8524-753fb1bc7170"
+        "ColumnName": "施行日",
+        "GUID": "de1d33db-65d1-4cb3-825a-e13d7bd148c4",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+          "ColumnAttachType": 5
+        }
       }
     },
-    "5,50": {
+    "5,48": {
+      "NameUsedInJavaScript": "最終更新者_氏名",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "FGC_LastModifier",
+        "GUID": "a38db35b-6f11-4369-a1b9-558c35c8cdc6",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
+      }
+    },
+    "5,51": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請者",
         "GUID": "25385dcc-9616-4ffa-8c19-3f558cf9a7f5"
       }
     },
-    "5,53": {
+    "5,54": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_State",
         "GUID": "0245c345-dd8b-476e-8436-168896132436"
-      }
-    },
-    "5,56": {
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "FGC_AssignTo",
-        "GUID": "b27a03d2-653d-44a1-b20d-490635076f8e"
-      },
-      "CellType": {
-        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "Columns": 2
       }
     },
     "17,3": {
@@ -649,7 +654,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "2ca04c97-9117-496e-8dc7-885f32acaad5"
+                "ID": "d2a6594f-8c62-4bef-8159-358f80698373"
               },
               {
                 "CommandList": [
@@ -718,7 +723,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "e2b8e370-bea4-49b0-9fd0-f69c96f4d71b"
+                "ID": "79622cfc-626e-4ff5-8c44-fa64de94e8db"
               }
             ]
           }
@@ -983,7 +988,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "17a2f83f-967c-4d02-9a68-3a05bdbac935"
+                "ID": "479ebd00-6301-407b-a7a7-8f3021ad58e8"
               },
               {
                 "CommandList": [
@@ -1052,7 +1057,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "18242ea7-5e22-4073-811b-8d4d7a168c3a"
+                "ID": "7474986e-058a-48b2-87ae-5abc0ad55ec1"
               }
             ]
           }
@@ -1150,6 +1155,25 @@
         "Background": 8,
         "FontFamily": 5,
         "WordWrap": true
+      },
+      {
+        "Background": 8,
+        "FontFamily": 5,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
       },
       {
         "Foreground": 9,
@@ -1295,53 +1319,48 @@
       "4,38": 15,
       "4,39": 7,
       "4,40": 7,
-      "4,41": 15,
-      "4,42": 7,
-      "4,43": 7,
+      "4,41": 16,
+      "4,42": 17,
+      "4,43": 17,
       "4,44": 7,
-      "4,45": 7,
-      "4,46": 7,
-      "4,50": 7,
-      "4,53": 7,
-      "4,56": 8,
-      "5,24": 16,
+      "4,48": 7,
+      "4,51": 7,
+      "4,54": 18,
+      "4,55": 17,
+      "5,24": 19,
       "5,34": 7,
       "5,35": 7,
       "5,36": 7,
       "5,37": 7,
-      "5,38": 17,
+      "5,38": 20,
       "5,39": 7,
       "5,40": 7,
-      "5,41": 18,
-      "5,42": 7,
-      "5,43": 7,
-      "5,44": 7,
-      "5,45": 7,
-      "5,46": 19,
-      "5,50": 7,
-      "5,53": 7,
-      "5,56": 7,
-      "17,3": 20,
-      "18,3": 21,
-      "19,3": 21,
-      "20,3": 21,
-      "21,3": 21,
-      "22,3": 21,
-      "23,3": 21,
-      "24,3": 21,
+      "5,41": 21,
+      "5,44": 22,
+      "5,48": 7,
+      "5,51": 7,
+      "5,54": 7,
+      "17,3": 23,
+      "18,3": 24,
+      "19,3": 24,
+      "20,3": 24,
+      "21,3": 24,
+      "22,3": 24,
+      "23,3": 24,
+      "24,3": 24,
       "26,34": 7,
       "26,35": 7,
       "26,36": 7,
       "27,34": 7,
       "27,35": 7,
       "27,36": 7,
-      "30,2": 22,
+      "30,2": 25,
       "30,3": 7,
       "30,4": 7,
       "30,5": 7,
       "30,6": 7,
       "30,7": 7,
-      "30,15": 23,
+      "30,15": 26,
       "30,16": 7,
       "30,17": 7,
       "30,18": 7,
@@ -1403,7 +1422,6 @@
     "30,30,2,4",
     "30,2,2,6",
     "6,1,9,56",
-    "17,3,8,46",
     "5,2,1,5",
     "4,2,1,5",
     "5,7,1,3",
@@ -1418,14 +1436,17 @@
     "4,34,1,4",
     "5,38,1,3",
     "4,38,1,3",
-    "5,41,1,5",
-    "4,41,1,5",
-    "5,46,1,4",
-    "4,46,1,4",
-    "5,50,1,3",
-    "4,50,1,3",
-    "5,53,1,3",
-    "4,53,1,3"
+    "4,41,1,3",
+    "5,41,1,3",
+    "4,44,1,4",
+    "5,44,1,4",
+    "4,48,1,3",
+    "5,48,1,3",
+    "4,51,1,3",
+    "5,51,1,3",
+    "4,54,1,2",
+    "5,54,1,2",
+    "17,3,8,51"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1494,4 +1515,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//+A4miZZUBdhdCjwP0DOrE9/0vMSoI4vG21xk41HtG3llJDZOznblkZ2CNWu5TpyP0tPi47ZeRvHBPPjp2d9vnk3t7YdMSIaQ307b631m/+5WnhrMmE7ygXQiFFrO+G8Z4fpXkDfD9N8XKH9Dg6bW2FR4FxpbchISXMtEv3ACCkZLCvaC+KuyG2X7nzZd+I1FdeudtLwGcEBKjJmQTOZHeHDspgGjLmR7D+4suw0nDYIMTar6Kv8beXhr26A84b/Lulh79OFW+WesWbF1YJnnRUM365jN6VCHtP7Gc1hV53wE+iIhQgu+f8zrB+hqCN2M/mygyhgo4ZUYJ4afvBxC8ht4nYmnHmyAbLLDwFCPMUbdg6cAIv7t6jW4m7eBUcGsLgqNeZtTYxrd8WG6KSoQLbuA0PZoQH13s1cGSbx1gDkUItVdgUO2va4nX4x9UlTVvxMpbvA5QBeHQNr9k9dRUgsLsnnv6JdRAhfnpvRgyvJxBvYmYWupdxJICCBodjtca3OSn7+yRvyzPnOEmXkmd1VNUZ+eHsqnAlXX3KheG96pnI5gpBsZuzNb2L6xzWEJdWH+r12JLeax+glBHYK87zoKlVhLPN1bJ3bbC8B0M9SHwiBxBJqEXxhgP43FxKbG+7F3xICNBZPUoYRXnAXEffoVpMRn9Uwl73xVPXaOFifvmQeBQFHKlfCMrmdLUhjrlF33IiJdkf1htHA60v+sVkIdyp5CTTR9VrCVXFbUILA7VLj4UXCd2Q3sN7AZHK7KP2vy8kzUOpIfeMa8fheWH4i9a3myexl0+tzVjSmpCFwBTmPZ39+V7X8zcEIKW5unA9IH4kZ4eNYc4P2D1YNzCwAP20cjzVSULjC+Y7SFqmymn/zRhnMMyVn9KQiHJ2gHzir9CRTVfYqWq/putCTp1w==|920
+}//YP5VMdcgEHf2wQuVTsL/xSuBMLx+aKSF42igYkhQ9FKigygsY3H8af6DCT3Oro1z/4UYo9kFr5HLptIdxHAWso7fYyN8MmqN8/gpmEW3RRLQWOSeVCK0eJrDSTiRuWH27PGkuF9A/tVMf/7Cqqv7dz5JQghyFR8oPKEbQLTQu9eQHkWUd9foN2sALv7gbC+1EkO6Y9unjbtjdQ6cjGqBCte/kfj1pcazdWvadVUHDDd+A848LZFPst+cEn0TRDJQ9jMB0jfmXaoa5bvO452t/vK/9prNA9xclUD5MVNR8UJ4dobLQaxKxxVAOY4fABaI/I125aTgb3YfnwaUgCyiZVWJ2NXTqFpdh8CaOpWYClCMk8NPn9/fvHKBQskIyZjCLR0WhhHxWV5MU/sSgEE5xxVNvcc+tG0Da9uQ8gbUH+vfV4ZW0vm976cuvdpDHlZi2M1Ttjk1Uxs5KqvCgzvbLSrVXosIv7yc/TW2GFW3l3O+CJlNFhwG+hX67HUpGlus1hCfZm93EcWxmwQGjfIqy1f3WKw926CWt69Hce4PMA7/l3eDSw7cR96F6aE/W3Om+X6o1H2HpYMmDhKvQiqwAlmjxJGV+bKPa0TcPYPu047ceBEY1TNnmlo+PlH7k5m6PW9zZtyYjt4AFJLi1whHLANmnMmM8KpAlQu3UWs//1+yG+hLXGtEPIMGztWVJPLvw8t6Dd23min8n9vpXWyokZ5q83+meXFHwmpeEjcHoVsi3ojBniambyKI+Gpo2vc677RC9nT2/DxcplUpDQitEq53+QCfB0aMud3p8WPnU774+Lxq+IhZUdf2KKtGeWi6g1xvUwY9zhEYiF9KKqWNAWCQgY47pRa5VS10VGXl28P9UuDkxdqj7Abe4JyMp8kNWsJN3ZTpYjbn/LKqs6lIUw==|920

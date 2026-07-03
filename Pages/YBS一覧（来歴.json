@@ -19,8 +19,8 @@
   },
   "Values": {
     "0,36": "セルのアクセス制御設定予定",
-    "1,1": "YBSコード",
-    "1,8": "規格名称",
+    "1,1": "（YBSコード）",
+    "1,8": "（規格名称）",
     "1,36": "詳細情報",
     "3,2": "改正",
     "3,5": "区分",
@@ -136,11 +136,15 @@
       }
     },
     "4,33": {
-      "NameUsedInJavaScript": "最終更新者",
+      "NameUsedInJavaScript": "最終更新者_氏名",
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_LastModifier",
-        "GUID": "a60c3f61-22aa-4ce0-8537-a3ffdde322b8"
+        "GUID": "a62c25a9-1fe3-435b-bdfe-a82bcf80e86a",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
       }
     },
     "4,38": {
@@ -177,8 +181,9 @@
       {
         "Background": 3,
         "FontFamily": 0,
-        "FontSize": 18.666666666666664,
-        "Formatter": 4,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 4,
+        "Formatter": 5,
         "HorizontalAlignment": 2,
         "BorderTop": null,
         "BorderLeft": null,
@@ -193,10 +198,11 @@
       {
         "Background": 3,
         "FontFamily": 0,
-        "FontSize": 18.666666666666664,
-        "Formatter": 4,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 4,
+        "Formatter": 5,
         "HorizontalAlignment": 2,
-        "VerticalAlignment": 5,
+        "VerticalAlignment": 6,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null,
@@ -213,7 +219,7 @@
       },
       {
         "FontFamily": 0,
-        "Formatter": 6
+        "Formatter": 7
       }
     ],
     "Types": {
@@ -222,6 +228,7 @@
         "[AUTO]General",
         "Center",
         "#FFD7FFDB",
+        "Bold",
         "@",
         "Bottom",
         "yyyy/m/d"
@@ -308,6 +315,10 @@
     "18,37,2,5",
     "5,1,11,53",
     "1,36,2,4",
+    "2,1,1,6",
+    "1,1,1,6",
+    "2,8,1,17",
+    "1,8,1,17",
     "4,2,1,3",
     "3,2,1,3",
     "4,5,1,3",
@@ -319,11 +330,7 @@
     "4,33,1,5",
     "3,33,1,5",
     "4,38,1,8",
-    "3,38,1,8",
-    "2,1,1,6",
-    "1,1,1,6",
-    "2,8,1,17",
-    "1,8,1,17"
+    "3,38,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -350,4 +357,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//zjyPgAyhDShPqAK4vXD6I0Lt5efjOHqNNooFIT1oHkuekRhCLhpo03o+ROy/5HHi0EnOV66jMkqVi0teYonmGPYvOWrMzQaedsZ4imbhF/p2GL6xtDEk8ppr6L+AwFyPA2rIgK5xtXOQKYxo9wElF4wm4qUE1W3y6OlA+4eXGQCtYH8j35teKsc9SJ1CYO+hjq65OuaI3ueZfmngqUiyH8QeFE1mnDBI207Y3FRj9AQls8/rwSOB+zhCaQzjcxc59g7anHu/w9zwhsIWWyXHoePoYc441LXeMA5UzEV0Frn4xJjYe7o/MzwxFo9Lp843dpNyiep+FWQPl4HdBTVfH1lZuz2XP/e0btlmX0bfzI7vUeRW2pLsFMWVeLx0qh8sYohuK8uxGY0jwqBMk5bzpCy8pKtPtoEBrFCpNiuCk8hKrFF9kTGbfysOcx46H1lAqxEMKOxvyLJL6LygtGqMUqTxmypjLbQumEMkcniTqQpieCSV5BAtGtexdjjj25vz8gR6cSg+TK/eCRmVImv2DFPuY15Nwo6+LhICsy1A154+zetAQ7+0+1LG2yTmPvETaS4e8d6N3JI92XIx5W8p1NVmsL5AQN3Xj0+CYk+Hvfb/khDZuFVEfxfu1tIklbQ2g9FbscuF+kh3AfvQieouxYme7lgrvbeFT9PEuM92JKyfz5vCQTQVHYPALtW9rXB2CiGa0cZsVn8MqXqMpypFq+/0r8zS7I8Mj8l8e6caFrtpGN9IisRGgHwi+LieWmD7up0HqhBBRG1xaA9Yu7TzP0Z3H4XrzaEmwS1XUox5+CBlT4UieLWxQKQcJbrXDxywLWCo8MvgLeQM7g45kULo7s7STGPVPlyJWqrV4MsYdZuu2fEdwe6DKMpUBqw6VmORqJc2qEnI9X0s8Cb4CjszBA==|920
+}//PzucowlqfyX4i5L1X1FQEYOo+o8FGdQn5pN7bvB+Mw372ffClbJXKTEah8clon49iXPvwPKDl0jhjQmr75CnIE+xYEyCYC1m3GqYfLy+C5mi69taHCW9LYgPlW1SRsdiFlJe5ZSGftgo5HSLk5+WHr09kfZlO88of6Cl0D+T2cVuBVjhpnMcSPRnQHPgLqz/WQHQQowhKFbF+SNg7grySTeK45Nkl4UQ25ptw8qFg+97veTiElAetIdDuyDYlH7al2P51rngYiMSOrFjCHbNtGgUrRwWXjq7+ci797ZzzaWeUzyeWwNzBhCja2pkEBJ0S4Tvx8dVyj6ehOZesiaPi8t18cJ7fh8+vZ5XN+7OFmcNzjmaJCihjTaqFj7FpUcJeVqVGZckUvisRfOKZjmAnZb//o0+xBFPDO98InxyWMMoyq/VONqmlCaGLthL+Z8DL8yyD5X9jwP3w/s4Qz5HHyqPV/pkqimbDFFEIgD+erTtLBQdPr1NHYfaXHeez8HWybNn/iuTjC+Ql9G9b+txu988gAyZdCcJWvblo51Bgjhg2lsw3AZqn3PWbq5fSKjFagCoBEdJb/XvxpbNFg3SIBb9hUFiDRk3QZ7Qe2HxDBgerRBy9kUQbyl7PtE7Gfnn1Np3LKv39Y/8L7mPjgDpqxB9a62aT+7VBxkw0HceuQ397mBSnihFgyOsz5tLq8JxUEEM/B/jpHYjXfRHZjljmFNWV29RA36zTR/yZUKbwHZ3xDTxmcIQH93cqlOokG4/YIE/+iRW8n60Z78iWOhdePx+S7Wg5ZT1+YCq1OO0pT2CQbGVino36jI3UrENytVGEWPvPI4J+isW4OGUYuJaoV3L28kuCLy5WoAE7ArdW3k7suWNMv0CSkIuzOWVsMOYOqjxmYC/rytGKaNYYmbqpw==|920
