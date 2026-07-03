@@ -90,11 +90,11 @@
                 "IsMultiRecipient": true
               },
               "Subject": "ＹＢＳが承認されました。",
-              "Content": "[=YBSコード]\r\n[=規格名称]",
-              "ID": "f1db403502944c87926947db2f8dae70"
+              "Content": "[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,こちらをクリック)%]",
+              "ID": "eb86ae7d5d2949fa96a4a515d770854c"
             }
           ],
-          "ID": "78ef097e-ab84-4bb8-be66-3dbf5393556e"
+          "ID": "bb714e40-bab3-46e1-8746-5351258c5378"
         },
         {
           "Condition": {
@@ -134,11 +134,11 @@
                 "IsMultiRecipient": true
               },
               "Subject": "ＹＢＳが申請されましたので、承認処理をお願いします。",
-              "Content": "[=YBSコード]\r\n[=規格名称]",
-              "ID": "de9c0eec3ac6416c9a21f9dbc36a722d"
+              "Content": "[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,こちらをクリック)%]",
+              "ID": "34cb30201dbf4f81bb68af8d51bc9ae1"
             }
           ],
-          "ID": "dd7595e2-361d-4df8-9475-80072713c8e2"
+          "ID": "fd6b1b7c-55a4-4b81-ae25-e4f6ce5c846b"
         },
         {
           "CommandList": [
@@ -167,11 +167,11 @@
                 "IsMultiRecipient": true
               },
               "Subject": "ＹＢＳ申請",
-              "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]",
-              "ID": "a3bd231572c8408b810a3c842f40deb1"
+              "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（最新,こちらをクリック)%]",
+              "ID": "0b68c6d8cef84e79ba40f34b9b75ded4"
             }
           ],
-          "ID": "ddf0ac0d-f3fe-429a-a968-a151fa181a70"
+          "ID": "6f8057d1-404c-4e9d-bbb0-359a488dd39c"
         }
       ]
     }
