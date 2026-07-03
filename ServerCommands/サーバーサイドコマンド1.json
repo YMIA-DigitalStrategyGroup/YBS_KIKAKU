@@ -90,11 +90,11 @@
                 "IsMultiRecipient": true
               },
               "Subject": "ＹＢＳが承認されました。",
-              "Content": "[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,こちらをクリック)%]",
-              "ID": "eb86ae7d5d2949fa96a4a515d770854c"
+              "Content": "申請したＹＢＳ文書が承認されました。確認してください。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,ＹＢＳ一覧へ)%]",
+              "ID": "44588da3a64b4926b2b8c53edd18c849"
             }
           ],
-          "ID": "bb714e40-bab3-46e1-8746-5351258c5378"
+          "ID": "cc5cbb9c-798a-4711-a88e-5ab2ae111533"
         },
         {
           "Condition": {
@@ -134,11 +134,11 @@
                 "IsMultiRecipient": true
               },
               "Subject": "ＹＢＳが申請されましたので、承認処理をお願いします。",
-              "Content": "[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,こちらをクリック)%]",
-              "ID": "34cb30201dbf4f81bb68af8d51bc9ae1"
+              "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+              "ID": "ea1e2081218a434184d0da62aa406b26"
             }
           ],
-          "ID": "fd6b1b7c-55a4-4b81-ae25-e4f6ce5c846b"
+          "ID": "0fbdc3b0-6f11-42f4-9bb4-90076f938bc9"
         },
         {
           "CommandList": [
@@ -166,12 +166,12 @@
                 },
                 "IsMultiRecipient": true
               },
-              "Subject": "ＹＢＳ申請",
-              "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（最新,こちらをクリック)%]",
-              "ID": "0b68c6d8cef84e79ba40f34b9b75ded4"
+              "Subject": "ＹＢＳが申請されました。",
+              "Content": "以下のＹＢＳが申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+              "ID": "b3db7a701c9e4eaf96461a7dcc432bd8"
             }
           ],
-          "ID": "6f8057d1-404c-4e9d-bbb0-359a488dd39c"
+          "ID": "275d9cc3-c401-4e1e-9b39-da97fe2aac1c"
         }
       ]
     }
