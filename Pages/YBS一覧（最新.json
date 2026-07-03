@@ -312,7 +312,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "1570e02e-3d5d-49f7-935d-4df7fd963d61"
+        "GUID": "b27a03d2-653d-44a1-b20d-490635076f8e"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -370,19 +370,19 @@
               {
                 "Source": "新規",
                 "TargetCell": {
-                  "SerializeProperty": "=文書申請（新規!G6"
+                  "SerializeProperty": "=文書申請（新規!G5"
                 }
               },
               {
                 "Source": "0",
                 "TargetCell": {
-                  "SerializeProperty": "=文書申請（新規!T6"
+                  "SerializeProperty": "=文書申請（新規!T5"
                 }
               },
               {
                 "Source": "新規",
                 "TargetCell": {
-                  "SerializeProperty": "=文書申請（新規!AP17"
+                  "SerializeProperty": "=文書申請（新規!AP16"
                 }
               }
             ],
@@ -649,7 +649,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "ed8d46b1-7334-49ec-b0f3-7066bddc3519"
+                "ID": "2ca04c97-9117-496e-8dc7-885f32acaad5"
               },
               {
                 "CommandList": [
@@ -718,7 +718,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "610bd97f-73c5-4758-98cb-c017baf2c1d5"
+                "ID": "e2b8e370-bea4-49b0-9fd0-f69c96f4d71b"
               }
             ]
           }
@@ -983,7 +983,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "5a0c45fc-65c8-4e85-85d6-17f19cc00251"
+                "ID": "17a2f83f-967c-4d02-9a68-3a05bdbac935"
               },
               {
                 "CommandList": [
@@ -1052,7 +1052,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "020231fd-ddce-48c1-af46-e34dce760bd2"
+                "ID": "18242ea7-5e22-4073-811b-8d4d7a168c3a"
               }
             ]
           }
@@ -1494,4 +1494,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//FHs6WdUEY6JEtKkKQtS79EHhu1CBmwcCN/fP/AUYEUt8lVhFlNJ6cgo3H6BzdetdtQ9RTnxnqzvJi2S0/aX5qlFDuq6Ybt4wqrw9w6eQQ1kX+OyU6xYjR+admyOxNX5H3y4L/7x8p7IZlsWrqnOqNNk+zXppXgm9PSy4UV7tkJcvfd44RxM9wScBfz3UbIqckcKIyYg5MEi/YAtHRali/E2sLe3136tZp3gwkmgyWlRZpYfJaqVxzMxsvZ8RUHHxLR6cUilhUGPnNnZAykGOke9Xm06MjJfs/York5zIUKSUZ6/P9hOyK9OcchspiHOeJ8UpdrVa5kEO6X+9ELo+i5LU55/Fg6lgW99hQpsj8mkNdmbrdvyBpRkehmlyfympzikPpb0julxtAmibyQ0ACSgNDEVklCeXxCEp3xv0ASJ8ncH0EO23o1dOwHb51AVWHknFVyaHPmhF92HwaW4Ue17uqalOv6Z7hbBmepmi+J7064qrjluKK8BNFIK+NTPUA6m5Ys+2cnYK4JfCN9TPo4eY/DgUL6ACrjoSl/S1ZhZXyKpUBlKi6xbJE+HnucCD7MDuWQBvIwES/Wat6b6LE4wumIlm9A9cKOdq53F6jEzqSIftsXAMCLxml5bZpnrcCD80DdCLd6Y5opVPCP0Ig6IzigPeuZ/tLlyLiWoGC+51z2BNFmL1xCPTHmmi3j0tEEkUu+Z8I4l9nSVwUnZLBnKVGQ4yEf5eZv6YkWZ5KABvE8sNxwKNnkFAIyKDWZh5+iSo8+PvuVnHLiKycrtnh7kILpxDzN8er1oBgbdbcosFuoAPjWKrefY/8a1hDBzTphPOI99StllkU95L3Jca3bM1bNB7+PDC28VIJLuLlI6bOlrY0gIL2PGhM3VusO0Hg38+ACsT7H2QqRtE+DGATg==|920
+}//+A4miZZUBdhdCjwP0DOrE9/0vMSoI4vG21xk41HtG3llJDZOznblkZ2CNWu5TpyP0tPi47ZeRvHBPPjp2d9vnk3t7YdMSIaQ307b631m/+5WnhrMmE7ygXQiFFrO+G8Z4fpXkDfD9N8XKH9Dg6bW2FR4FxpbchISXMtEv3ACCkZLCvaC+KuyG2X7nzZd+I1FdeudtLwGcEBKjJmQTOZHeHDspgGjLmR7D+4suw0nDYIMTar6Kv8beXhr26A84b/Lulh79OFW+WesWbF1YJnnRUM365jN6VCHtP7Gc1hV53wE+iIhQgu+f8zrB+hqCN2M/mygyhgo4ZUYJ4afvBxC8ht4nYmnHmyAbLLDwFCPMUbdg6cAIv7t6jW4m7eBUcGsLgqNeZtTYxrd8WG6KSoQLbuA0PZoQH13s1cGSbx1gDkUItVdgUO2va4nX4x9UlTVvxMpbvA5QBeHQNr9k9dRUgsLsnnv6JdRAhfnpvRgyvJxBvYmYWupdxJICCBodjtca3OSn7+yRvyzPnOEmXkmd1VNUZ+eHsqnAlXX3KheG96pnI5gpBsZuzNb2L6xzWEJdWH+r12JLeax+glBHYK87zoKlVhLPN1bJ3bbC8B0M9SHwiBxBJqEXxhgP43FxKbG+7F3xICNBZPUoYRXnAXEffoVpMRn9Uwl73xVPXaOFifvmQeBQFHKlfCMrmdLUhjrlF33IiJdkf1htHA60v+sVkIdyp5CTTR9VrCVXFbUILA7VLj4UXCd2Q3sN7AZHK7KP2vy8kzUOpIfeMa8fheWH4i9a3myexl0+tzVjSmpCFwBTmPZ39+V7X8zcEIKW5unA9IH4kZ4eNYc4P2D1YNzCwAP20cjzVSULjC+Y7SFqmymn/zRhnMMyVn9KQiHJ2gHzir9CRTVfYqWq/putCTp1w==|920
