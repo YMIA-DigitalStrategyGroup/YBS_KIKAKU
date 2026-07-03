@@ -315,7 +315,16 @@
   },
   {
     "ModuleName": "ServerCommand/サーバーサイドコマンド1",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-03T16:31:14.4781818+09:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\サーバーサイドコマンド1.json"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS申請メニュー",
