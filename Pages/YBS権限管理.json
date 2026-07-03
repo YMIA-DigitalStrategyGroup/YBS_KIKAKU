@@ -137,18 +137,17 @@
                     "MessageFormula": "「権限」を選択してください。"
                   }
                 ],
-                "ID": "3245167c-6de1-4818-8dd7-5153a55d594a"
+                "ID": "462a4af6-9746-46fd-a836-9abdb7f437a4"
               },
               {
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "YBS権限マスタ",
-                    "ShowConfirm": true,
-                    "ConfirmText": "本当に更新してもよろしいですか？"
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
                   }
                 ],
-                "ID": "81802833-1b21-4758-bbe1-b815f410a1a9"
+                "ID": "66f92dd0-f6cd-4582-9124-fc54cae89fca"
               }
             ]
           }
@@ -457,4 +456,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//OXRi45+NsdRDG5rPZtiROf5S18LawupYsRIgwvEaB/+YGY9B+QZFcAed04gapR3mbijfRetZD9rMK66kpEE/ksbCT0vhFLfJYml0Z/RRbkiVwYlAsQ3lw5qNfOsEYfJYPP8YdJBt5JmDGqvFUL/AgOMEvGCbfZNaXWy04Ul6pzJO+xoR7afqcjqe5orCcifoe5bn4I1p5lPHfH/xyadHuNs0aN91t5PMk1PJKGYZGgSYki+s3K3+YEzzoUuUtyRKoQrv5HkEZKPTkfUzyOfjEct4Khwpk2nZFxwAly6vaD5yTLd8+RP/bEq7bQvACtYg9ZoFJ+qTUiRmJaN5Vm7ADMZ81h2VgHqnB3Egke+4bCqJ+QEHLeNY66BDdgOVKPpBAOql2/6X2R/nj7J6sxgWZ0n4AMXAdFfmC69hP4jKT/a4Jr2ITbr6VGAtYiE844hEh9vkXalmWneHwXIA8GS3IGQDa6vNM5e1hTxGE6VkVPP014FDqWwd0t1lywiZU+9JAuzGRZUZl0G7W7/wlgBHDYtBJIfMwJ+ibQKkT6Ub7/xaMHAaYAnSNoigEeLenDTU3KxwUQJyXyoNimUcloAHhTmQJTMLO+qWAQ3u1Botuj2svWlBmkSUlj+gElFja0PVsaKUS+p3uwbNCNetJcuorljFN0vHKBoJbz1zyWRYJ1GcU5YshTLYh8PFD0h888uJlBxKzCPewYOmg3Y/UHZY8Z2vFVkWGxb1x6wTfw2+fw00VGJHQ/wo7E7yl6sETc73u3/8sObWJiiwjVUlPmQhJrEqHnGQ5vyjhVsYsVxZxIricM90EzTLMdeCGlM1PqOYktS9vzr51v/ERN+FBNTCC/+5RamrBddoCYwhL/hq0hCDMxR5lsElB2QnxABVugVTq13yjwfA+BUPTZ5wEHBdYA==|920
+}//pUjG7D3CtRzJQoGJGRGBGCVvGTGrpvvth2imYqFRdSHGra5RLXOHFHWUYqODnXUoVmyO5+NVsoSYKN6gYi1PIhA2sKB24OW0N9Bsfi00o8JRzBCRAiLPGRAGxgWwPlMxwpBwd60WM9NLFWaKZtTV9epEwPCUS7ZFRdbBMNNHtZLBmalRogKXOKdQpxSSdfy5rHEzcKide0rMbzGcmvIkM88TvxjCsz4zoSk44yZdqisgInvfc4fosgMx5Nx+/b+X/4DXcmOK0U7rUaMYiGo1rzs5JX8JeuyRkG1Nf0ROsL28lZYxXoxf4jjA32C/1nM4p3sRh3vO+lUUzfQoCpIGsUYAR9z7DcxRbowZAWFvnwLBHhQuvk8CggKZ8Q0ivlPS8KyCjAFP0Vq+iIl2M7AifjapaoAdR5VViOdAaM7tfdpbCg4JsE0qZPfi9VFJfFCKWdqE4Scj1r24FDoJi7QdVVucxgKdWCYFTMEPCSJNd5ST56fkmmg+4U+LyoG7E8IedVZlf9MLF/UOVEnP/f5jTkyogcmR8p/NEtmVMh3OvZbHPe6SYf3teKGJrdjZ89R/OcCVYzsu/HDIdOAF52WcRC5lEH2cPKQHuMczPsUDDef1Vs3H+Q/xhGG23HT5umy65RycglcnXa0bvWnyFzMr4tp6a+ahqp94PzPmFW5ug6y/acos31bFrKK9Ao0cVnsK5RidpIJgYH4siECR1kjftgCMVp9wvuF9QsBywaJwppmPYJd7SU/OJpWL5JypJYPuWqU6ACw5kxu0zoEkrHBsgOvh3hkO6MY1FAxap3Scc2vmFNazzDu78DttirfHUIjjoVhKbN63U2YQ3vNyG0Xov4PHHnZpZK4IjsRqDp65gjBV/3oqs3ZFIpa6CsZW3BttbIbLFV6/dkJw46CupCnRHQ==|920
