@@ -137,7 +137,17 @@
   },
   {
     "ModuleName": "PCPage/文書申請（新規",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-06T08:44:23.0260198+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\文書申請（新規.json",
+      "Pages\\文書申請（新規.rd"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
@@ -312,7 +322,7 @@
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-07-03T17:44:26.7205785+09:00",
+    "LockDateTime": "2026-07-06T08:44:23.0262457+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\フロー_承認処理.json",
@@ -325,12 +335,12 @@
   },
   {
     "ModuleName": "ServerCommand/サーバーサイドコマンド1",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-07-03T17:29:24.8701322+09:00",
+    "LockDateTime": "2026-07-06T08:44:23.0253473+09:00",
     "ModuleType": 15,
     "ToRemoveFiles": [
       "ServerCommands\\サーバーサイドコマンド1.json"
@@ -391,5 +401,15 @@
   {
     "ModuleName": "PCPage/添付ファイル登録",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "ServerCommand/メール通知",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-06T08:44:23.0253733+09:00",
+    "ModuleType": 15
   }
 ]
