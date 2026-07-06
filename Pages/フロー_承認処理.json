@@ -381,7 +381,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "1e6a8679-b890-4a57-b63e-689b2e402b95",
+                  "GUID": "b653532a-ca77-4313-9dee-d0c8ad9a41cd",
                   "BindingInfo": {
                     "TableName": "YBS規格文書",
                     "ColumnName": "FGC_State",
@@ -420,7 +420,7 @@
                 ]
               }
             },
-            "ID": "016f5550bdcf4dfab787081886c0a648"
+            "ID": "da6eceb158254d31b4d40cd851b2f46d"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -499,7 +499,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメント入力後、「承認」ボタンを押してください。"
                   }
                 ],
-                "ID": "6aec6697-ee11-462f-bfd3-c96b35fc510d"
+                "ID": "dfeb46fa-aec1-4f62-95a2-74d4908f7c36"
               },
               {
                 "CommandList": [
@@ -578,10 +578,7 @@
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                         "ParamName": "状態",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
-                                        }
+                                        "Value": "承認済み"
                                       },
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -590,6 +587,10 @@
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                           "SerializeProperty": "=フロー_承認処理!N6"
                                         }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分"
                                       }
                                     ],
                                     "RefreshAfterFinish": true,
@@ -629,7 +630,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "9d697a6b-ebc6-4c92-95f4-559e9cc03691"
+                                        "ID": "e031876b-ff31-4ca0-bda0-f1650a697006"
                                       },
                                       {
                                         "Condition": {
@@ -689,7 +690,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "e55219be-da53-4458-9523-1d66200b6fdd"
+                                        "ID": "a86fade0-d195-4307-b089-98b042bed733"
                                       },
                                       {
                                         "Condition": {
@@ -764,7 +765,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "bf55e6a4-14f3-4927-b310-74afba150bca"
+                                        "ID": "55abe472-c403-4726-b98c-3c7dab3cce21"
                                       }
                                     ]
                                   },
@@ -773,7 +774,7 @@
                                     "MessageFormula": "【部内審議】 部門長が承認しました。"
                                   }
                                 ],
-                                "ID": "9daa5988-d132-4931-a378-93c28749e709"
+                                "ID": "125e601e-8b13-4624-ab6f-3d79a28a0b1e"
                               },
                               {
                                 "Condition": {
@@ -835,11 +836,20 @@
                                       },
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                        "ParamName": "状態"
+                                        "ParamName": "状態",
+                                        "Value": "審議会承認待ち"
                                       },
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                         "ParamName": "ユーザーID"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!F6"
+                                        }
                                       }
                                     ],
                                     "RefreshAfterFinish": true,
@@ -880,11 +890,20 @@
                                       },
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                        "ParamName": "状態"
+                                        "ParamName": "状態",
+                                        "Value": "審議会承認待ち"
                                       },
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                         "ParamName": "ユーザーID"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!F6"
+                                        }
                                       }
                                     ],
                                     "RefreshAfterFinish": true,
@@ -895,12 +914,12 @@
                                     "MessageFormula": "【審議会承認待ちへ】 部門長が承認しました。"
                                   }
                                 ],
-                                "ID": "358571ac-3526-421f-89e1-57f6af1719b0"
+                                "ID": "056d6a01-b4be-412c-850e-104b086e1dc2"
                               }
                             ]
                           }
                         ],
-                        "ID": "6137b8f4-dedf-4c57-affa-d80a642ad79f"
+                        "ID": "fd7ffb4b-5f36-4c58-a3f4-b988a4408a56"
                       },
                       {
                         "Condition": {
@@ -961,11 +980,20 @@
                               },
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "状態"
+                                "ParamName": "状態",
+                                "Value": "委員長承認待ち"
                               },
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                 "ParamName": "ユーザーID"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!F6"
+                                }
                               }
                             ],
                             "RefreshAfterFinish": true,
@@ -976,7 +1004,7 @@
                             "MessageFormula": "審議会メンバーが全員承認しました。"
                           }
                         ],
-                        "ID": "b90d7c0b-a430-48b4-b532-d61751f03db1"
+                        "ID": "9d4074e9-796e-458a-8f31-e1490402c9f1"
                       },
                       {
                         "Condition": {
@@ -1033,10 +1061,7 @@
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                 "ParamName": "状態",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
-                                }
+                                "Value": "承認済み"
                               },
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -1045,6 +1070,10 @@
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                                   "SerializeProperty": "=フロー_承認処理!N6"
                                 }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分"
                               }
                             ],
                             "RefreshAfterFinish": true,
@@ -1084,7 +1113,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "20ad2790-8810-4e5a-9e80-5acf611ed4ac"
+                                "ID": "bb6c6943-90ae-4de3-8d6f-e6972b27b8fa"
                               },
                               {
                                 "Condition": {
@@ -1144,7 +1173,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "d38cc293-0f22-4cc4-87e0-d32ca5ff8d1d"
+                                "ID": "a9dbd425-3b6c-42d5-a487-208a3536258f"
                               },
                               {
                                 "Condition": {
@@ -1219,7 +1248,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "09e4c75f-fa27-4f13-a834-1f26bdfab7dd"
+                                "ID": "1b6b42f8-772d-4939-b4f4-7c0e4490bb29"
                               }
                             ]
                           },
@@ -1228,7 +1257,7 @@
                             "MessageFormula": "委員長が承認しました。"
                           }
                         ],
-                        "ID": "9b4265be-46db-4ff1-b9fc-faca7f415b81"
+                        "ID": "9c989115-f7b4-447e-b4c8-e1f036b51c73"
                       }
                     ]
                   },
@@ -1237,7 +1266,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "67fa0cea-a3b7-4794-941a-b6086db391dd"
+                "ID": "e50ed191-e59b-4400-8c53-c19fe7023707"
               }
             ]
           }
@@ -1335,7 +1364,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "afb8b8c5-5f03-4329-aa6a-8a57a7f8cd8f",
+                  "GUID": "efe61520-c105-4be2-aede-bd800168a8fe",
                   "BindingInfo": {
                     "TableName": "YBS規格文書",
                     "ColumnName": "FGC_State",
@@ -1374,7 +1403,7 @@
                 ]
               }
             },
-            "ID": "54f28c4915d544e2aa8cde6fb52772a3"
+            "ID": "ebcc480a3eb64423bb0dbfc42c6136b1"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1453,7 +1482,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「差戻」ボタンを押してください。"
                   }
                 ],
-                "ID": "88f0be6b-eda5-4abd-831c-df8d05006197"
+                "ID": "a70bdf3b-fdc1-458e-a60f-e49673d92797"
               },
               {
                 "CommandList": [
@@ -1543,8 +1572,12 @@
                                         "ParamName": "ユーザーID",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=フロー_承認処理!AM6"
+                                          "SerializeProperty": "=フロー_承認処理!N6"
                                         }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分"
                                       }
                                     ],
                                     "RefreshAfterFinish": true,
@@ -1555,7 +1588,7 @@
                                     "MessageFormula": "【部内審議】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "f6331956-e2bd-4710-816a-b589913b2db2"
+                                "ID": "aa716d8e-eb4b-4bf1-bf06-b8a5195de79f"
                               },
                               {
                                 "Condition": {
@@ -1624,8 +1657,12 @@
                                         "ParamName": "ユーザーID",
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=フロー_承認処理!AM6"
+                                          "SerializeProperty": "=フロー_承認処理!N6"
                                         }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分"
                                       }
                                     ],
                                     "RefreshAfterFinish": true,
@@ -1636,12 +1673,12 @@
                                     "MessageFormula": "【審議会承認待ちへ】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "eaf1ddd7-ba48-43e7-8ed2-07c235785902"
+                                "ID": "aab60061-396f-467a-b6da-d5d55fe18504"
                               }
                             ]
                           }
                         ],
-                        "ID": "924b031e-7142-4993-b736-939937789ff0"
+                        "ID": "635c3759-d448-4d30-a296-0dc6b2245590"
                       },
                       {
                         "Condition": {
@@ -1709,8 +1746,12 @@
                                 "ParamName": "ユーザーID",
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=フロー_承認処理!AM6"
+                                  "SerializeProperty": "=フロー_承認処理!N6"
                                 }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分"
                               }
                             ],
                             "RefreshAfterFinish": true,
@@ -1721,7 +1762,7 @@
                             "MessageFormula": "審議会メンバーが差戻ました。"
                           }
                         ],
-                        "ID": "525f4370-236f-43e9-8c1e-2d87579bd94f"
+                        "ID": "9fcdc22e-6c13-4783-b31c-78a81d36a29c"
                       },
                       {
                         "Condition": {
@@ -1789,8 +1830,12 @@
                                 "ParamName": "ユーザーID",
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=フロー_承認処理!AM6"
+                                  "SerializeProperty": "=フロー_承認処理!N6"
                                 }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分"
                               }
                             ],
                             "RefreshAfterFinish": true,
@@ -1801,7 +1846,7 @@
                             "MessageFormula": "委員長が差戻ました。"
                           }
                         ],
-                        "ID": "c7cf5cc2-ba25-4170-8dc1-b9f217d47cb7"
+                        "ID": "da1c323c-3ba4-41e3-a349-9bbced172a1f"
                       }
                     ]
                   },
@@ -1810,7 +1855,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "46aa05a2-1b0f-445d-9b63-b632f40ffb74"
+                "ID": "9d091db2-9a7f-4b19-8c53-f40b7adda6cb"
               }
             ]
           }
@@ -3503,4 +3548,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//8go5eW8EtKnXyNm40mI+nxOCChYRiC3dz+9Pij4DhGwsOc6MzxVhD3rpIH6LzK8xln8tfYsOmu/g1wfeg01lcnSULwMy5TJXx3qD+ItWu5E+EGR0rnTZdq+9HHuUnXi8CnmnG8KQQFVGGbmRLTJ8Gnrhc5eFV9ZPoaJzaxYn2yu9EiWSp1iW4gWGE0rcsbUgnRRLJlFjM3SxCHh9tY7i+ZChMCH7mymwA64hL4KuVT2ZjVHaxE/lD8U5298cpCdycrkbCjGqkLFsqCZDFROvFNZbldItTRchMSbpZoOUPSS9KMFQEm6p1lt6m167FW4le2URUqT1p5kFjYaFiq2niKl5CsLAAmEaeun79harIQMWknwVKqBSp+37t4N+U5e+8PUNpr2rCnOCW6u1fghMxqglh8AXBXvgF603+yVvDHljqvgS2vCD2O+7Sb4dT+oMSUjc+n+mFCxfFYM/2DIMKPo+oswAlM3DPrI/JMv85YaYlGQ8f/2VOwBu6ck1O1Sgdz0xNFgSlrd2qCLWNjiuqf+OPxyoLjnOvjEuRuUUsLTdTeo0GaAWo5EdNxJEYPmnWtTX7hiTdTv0aXDMo2A1ro/f1w3TDwIAj0/1gdk8hF6qJ04jZAcdte5Q9s5UPvbtINjnKwQcJ6DGH1h3uP4sj0ed6oRLu8+kC//poEdQinyC0hjBN94yaKsP9ZilxGO8zNgn0AVn8FhDgAhyrv/m7ZtZZlJpZdRhAGZZwN+RYfNVf5U7I2f8HO29Np+hejbsLNimxT4c0+mR46EUou9mmqo4gxks0WYrMqGx/jj0bp4z7axBJ02BzRMC8aDryhYGJwVtXElY/Ld9LleNzFnVWplwEPU9HElj7iTLl5UnsYw5wQOEUCM2mHckUUrvxUEbnLGppYNL/Xv8JmMjq86Mpg==|920
+}//3JCYSqa77+4nNzC7Nso0ld1YtY96YAM9O3ZLKY++b1SjRLvjaB6y4pfGxlPS5K1t6PX9OPM+AYwviYKS9ERQo8tYXv3qudHtFQOmXXOnGfiYpGWM0NhH0I49dhCaFrvmUv5glIDb/sWSpSJL5YjH9M+0R007dcyUQNirjc3gq7mUaQUgX5N0+ZCl3ln/RKeRDh5EhoxCFC8GEyuf4u0IuqKg+6a84F0vO1Xoxxv4OHQze0w3peN9Gk0AjKkBeuH4/bJuMqs22fpkGtKaF/T3/RNvDjwiQKq4+Sc9iQnd22Vk2YFhk1gTMcwYmu9BaYgFa4YeNvPtvjbHtXGWunRLBuz/MHYLgZktbHi9nBQ3CNyajSQdivrkC6RsZeWl7BRIDbP+TyuQohGXVKfXeXMRkJCkEpmyb4PLXwdbRe+CVjXx06Vh20tc1jUYse/cvDaL1b9ZKMkC2Bz+cHj+cDN8plBEAqW+5jIkBu8MlFACR0dt1d1fcToaNLObX5PEDnc/wuhZ+c68uC/ykCrTfWcYJu5kwPD6U2QHVucFhFKddO1aQaDsMGr/Z3ChBrSNE04FDCxdKsVFt3jE8/aqguIhlui9ebH7N82hPhsr58AtBZKsAgHf01pYqurMkdvWQxvSUS7HjKzCamcHaT7btkgG005fCOMmJEk+qB11HRGlARLt6v/InRDkodixY8JNV9LEeElLKYxc9kxQYzptnN1hj54eWkI59UqHZ25Ws9RgD2a/MGBBBkGAdajMhlzXWgEsRGlKiIf4PHqLzBZW7BA+tzT9rr7Ros9OYUanl/KGCbQ31trFjzbigPfrwPvCHVjjLSZXXUAuNF42hUVmV2wGT5+QMnMnAkRw0aDp0zyVBUeo1Y5nQMQH4drCprAB1iTsqn5BFNrzAWG8n+laLsK9DQ==|920

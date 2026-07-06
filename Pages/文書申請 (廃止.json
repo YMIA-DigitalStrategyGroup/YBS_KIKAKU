@@ -357,10 +357,33 @@
         "GUID": "b37a31c8-d0fd-4f10-829c-196ef9823d8b"
       },
       "CellType": {
-        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "DisplayColumnName": "FullName",
-        "Columns": 3,
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "YBS権限マスタ",
+        "ValueColumnBindingInfo": {
+          "TableName": "YBS権限マスタ",
+          "ColumnName": "ユーザーID",
+          "GUID": "6ad8ecbe-d204-4d70-86b2-7abf1a96c092"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "YBS権限マスタ",
+          "ColumnName": "名前",
+          "GUID": "bfa77d1d-2f45-4c0e-8659-ef84e30c3706"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "YBS権限マスタ",
+            "ColumnName": "権限",
+            "GUID": "4860acc7-426b-4090-b1df-c71fdae71e91"
+          },
+          "Value": "部門長"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "27,39": {
@@ -434,7 +457,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "a07b124c-6a8e-4e74-8183-b5ba2afc8fb5"
+                "ID": "32f47a1b-d924-4c52-b0ee-778627efcc44"
               },
               {
                 "CommandList": [
@@ -449,7 +472,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "1ae8ecf2-da94-4251-93ad-283099c89004"
+                "ID": "6c22419b-949a-4571-8168-6879d3600723"
               }
             ]
           },
@@ -530,7 +553,7 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "7bf7ea14-6e1c-401f-8dc1-36d89407459a"
+                "ID": "99cd809a-c88a-4e5b-adb1-f8c9d013e76a"
               },
               {
                 "CommandList": [
@@ -556,10 +579,67 @@
                     }
                   },
                   {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "メール通知",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "YBSコード",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!E9"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "規格名称",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!G12"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "理由",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!G14"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "権限"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "状態",
+                        "Value": "部門長承認待ち"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "ユーザーID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!G28"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "申請区分",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!G6"
+                        }
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "e7040b21-4b0f-4f69-8ed4-941eb24b17ad"
+                "ID": "3dee7cde-aa8e-4548-867c-faa093014b24"
               }
             ]
           }
@@ -1928,8 +2008,8 @@
     "30,1,2,4",
     "30,5,2,11",
     "30,23,2,4",
-    "27,6,2,8",
-    "13,41,1,4"
+    "13,41,1,4",
+    "27,6,2,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2077,7 +2157,7 @@
                 ]
               }
             ],
-            "ID": "5c2088de-1025-468f-84d5-785d24edf9ce"
+            "ID": "be8319ef-d32a-4d25-b923-7ba6080eeefd"
           }
         ],
         "Disabled": true
@@ -2136,4 +2216,4 @@
       "Size": "51,41"
     }
   ]
-}//uvwAvpI/d44FB8lRT2GqjueF3cPKXfeRGj/o/06WBqism4Co3uAOnKnbEXXLkXmVMAHNTOFD+kYaSLt0ah8FeUluBOlv+mal51hWCzJSXDm1hbr2uzgZRrA2WM8MYUuEzYTsbyBRogM/L4JXmbduNPTJ02rELHqQHP7Q+vXTg9R1fliHlN/F2K2ETkd577jjQLERcFIGOXNx0r9cYykHEo8QA54dzhv/Dg5qy4p3b8TlDyvOTNlmyMZEJhyDxAkSVQXg/YOj+vIDgi+Wi8PVURM3HP7r81oo/G/BgQ8YfT8xIUUZK/Hw2lPUWvXzACGMEHbv2YtUUrowwOlzd52o1uPlHKsUXdUMEwW8dm/oh4CizqlTxjJqHb4/RGMixt+7H1AkQIYMwx9Dl6oSUWRxz33Ok5YuTcmBUmz7bE3FDpnWM1FPu5aj/THMcnw47nfNZFDmOTFNmi8kGRemCN1mwi4rSWWZ01pdG58XONwtqvzZYqPwWIuBHmaPPb9TlDda+U6tIcQPDoPJy2/hKl4+M/RZeVTj/ilBASu+O8xNqwD05UD2Sa2j9adrnpKSXjQLK0QErTbR/DLvLRfAN4CKY3AgLQMwX/ugCLBg+SArEI2Z/VgJTic23kTKuvgxWBhIZcD3l4lobMZyFPHhfsNBdL9tgB/YIoDeHF8f5j66j25BrphmkJ3/R9bffDl6eC2iuXGQW+UBeauJJHU94+Sxd/WMWJKTleLEsuTiHeSG6oFVDsIZKw6vzisMX0Sry18nF96a48WZyC3/8xESR1/nxsNIuC6KR0KvN5qjrL/aU8CEsPp3CiG8bkldnh0zfQYX5VVk5U+FVdZS7Urnbo9h/a/DQcJEHBuNLEfn7Yda1me5pxwX8XGoY+SVQ+cHksQNQjsEnTpoF90p5Gi0fsUDMA==|920
+}//w12W+92j/OQseAMDOfevFeJ4TAyKiwxgHqeEDh81ULh+MeQ3n9s0mnuJoiPpEOGj0NTvqJEA/MW3zuxL4sG3rxf0dvW29DZj5QWCBTgnc+tbWpuXwTzDeSHzcAP3au/NCQ87zYpgmihmjv1FSN220vfEy9N4V73b6N15SUkY0Zs7VTa1URgSUmx2nQWhko5Jlv8WDinOYt5IckSPTuQZaod1QL69FMM2/WOVCoO8/jvEZxzN7tJGm+qhWA4hWS0KCPlea4XLCyqg2OmNwZIdIRVGay+p9Weti8pSyBltkI/ykkjM74zHJwuKfDgGShRbvmP7kcqJZXORU57IagVS9U+vX4Gei1Fszj3JUuWGP1Z1OLEmhv0ZzokEs12OYuVwr5g8+R3L5L5oHCeFt3dWEXyp3iBZFwBFOm0rOm3Oy9nG+Gjx/BjXCppqoGwoM3STrEaQfbBwlteky30eR8fkVEmG+O9RZi/VRzbc76f9gN1pJHW1FnhYbEX6nJhgPxSpm91YtMEa7z3c8BX+6+cAocSkZoSZF58OQYiL618WN6fOXQ60gOzUwMGp/1iWvbFWx+39zFTwsSjxRSXFewDi4GRYe9slqoo3tbGeEzBTCge00+QgM/7YIa+xa2wresoOBR7rHQgAc0lyFUWiSJiyN+RBQEoxSgXO5PMK6eipvTl4w553yYpfmhZdi26X2MovWBXQvaVYuJhC3CdcUDBD90kzVNVN/qGZbqn9n0X86xh9Y0BJilEuiYTefLzY3SqXMqFAQ21kdJA7ot5tmLEycVUhmHGEyW4S+aHsRTnAVQSgcdSMwrf+NQapjtbArA2GrB0FyCSTUNp0IdrmTzyFRY0Hz6kEU3rV/+KO3x4D+WqTZUWAW/CrDfUSwKM4z7haxLDD1vBFuEC4zPh6zLuLZA==|920

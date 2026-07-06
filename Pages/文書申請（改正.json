@@ -358,10 +358,45 @@
         "GUID": "3b52bf4e-9797-478e-99f8-b66f18d616e1"
       },
       "CellType": {
-        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
-        "DisplayColumnName": "FullName",
-        "Columns": 3,
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "YBS権限マスタ",
+        "ValueColumnBindingInfo": {
+          "TableName": "YBS権限マスタ",
+          "ColumnName": "ユーザーID",
+          "GUID": "b16b9185-08e4-4776-8739-d09a8b7ed9c8"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "YBS権限マスタ",
+          "ColumnName": "名前",
+          "GUID": "2263b345-5f11-4ec8-8190-8a3ad4e1a2f3"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "YBS権限マスタ",
+            "ColumnName": "権限",
+            "GUID": "b68c2c1c-1809-4334-92d4-8fce7f50fdcb"
+          },
+          "Value": "部門長"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "YBS権限マスタ",
+                "ColumnName": "名前",
+                "GUID": "c1bcc94f-e031-4a51-aa2c-164b61b463a2"
+              },
+              "Order": 0
+            }
+          ]
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "33,1": {
@@ -468,7 +503,7 @@
                     "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・規格名称\r\n・理由\r\n・適用範囲\r\n・施行日\r\n・規格本文の添付\r\n・規格本文閲覧用ＰＤＦの添付\r\n\r\n\r\n「部門承認者」の設定もお願いします。"
                   }
                 ],
-                "ID": "15772058-8f30-4dcb-8ff3-4fb2308116db"
+                "ID": "5ec34d2f-51e6-4c9a-82bd-b14af7e941b5"
               },
               {
                 "CommandList": [
@@ -539,7 +574,7 @@
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "6ac7a2bf-8c49-4d32-956c-b3d79a32222e"
+                        "ID": "7ac1b806-1789-4337-918e-4a4600c36855"
                       },
                       {
                         "CommandList": [
@@ -554,7 +589,7 @@
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "d193bb17-dd73-4bc3-954e-16183f848bc4"
+                        "ID": "daa3d024-337d-486c-aea3-ab8cc3d3b9c5"
                       }
                     ]
                   },
@@ -573,12 +608,69 @@
                     }
                   },
                   {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "メール通知",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "YBSコード",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=文書申請（改正!E9"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "規格名称",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=文書申請（改正!G12"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "理由",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=文書申請（改正!G14"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "権限"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "状態",
+                        "Value": "部門長承認待ち"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "ユーザーID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=文書申請（改正!G31"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "申請区分",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=文書申請（改正!G6"
+                        }
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
                     "PassValueBack": true,
                     "ReloadData": true
                   }
                 ],
-                "ID": "303e348a-8507-4bad-899d-f221e7d451ff"
+                "ID": "f961044a-835a-44c8-a57d-da06ea200272"
               }
             ]
           }
@@ -665,7 +757,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "d6452563-e222-4828-a664-ed2750541c40"
+                "ID": "fb8aee95-df68-4cb7-8902-84043a42d361"
               },
               {
                 "CommandList": [
@@ -680,7 +772,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "42645259-0c26-49f5-8cb6-0bd76a740eb5"
+                "ID": "a3f58f4d-be01-4441-a588-ffb0bc5e8422"
               }
             ]
           },
@@ -2235,8 +2327,8 @@
     "33,23,2,4",
     "33,17,2,4",
     "33,5,2,11",
-    "30,6,2,8",
-    "13,41,1,4"
+    "13,41,1,4",
+    "30,6,2,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2384,7 +2476,7 @@
                 ]
               }
             ],
-            "ID": "44ff1d61-5714-4bc0-a32d-b162087b2e2f"
+            "ID": "8f1d7fd8-59c3-4724-bb6a-bec144673424"
           }
         ],
         "Disabled": true
@@ -2443,4 +2535,4 @@
       "Size": "48,51"
     }
   ]
-}//uj3v4EKvQRoJQ2XVrQkBm48Cxp9dQbbvpZBy1AObwMsy1uriyHwvWwib4Ea/BCrpyDqjZ59jIPzVneJkQPXjY+M1e32/fBNx1uUFymjZrqPL55wvfCQlE4nRItGMlpK9wW4Xjqd/XYiuNxNKiXdS78OJEfArXLT4HLe1U+phYbFoojm4SYu1U0YGKEfK5+rB+8QSEp+uGbz8aRiJBARdegjD0hdFYebb/qaIui7Z9u9pXXdrOT/MSSN8tPi04YJsquz3AtOCDRW6c7FdWrIhV5OW3jCti19cJsQlXMnt101dRFqUSJVUwns4vgcWArtQdZtVJx4/IBJVxnf3gu7Wn9jzmXqHEbjiyJc9oAmHUQ6OKiuUcVYaHhnUebIwQEoieTrJKRjAh8bAgok5Ayam6ktJevhWiZj5TJI8rvmK+uvmI5Ab3YGUvafJIvSFako3RMXqxpcvRaood13ijPTtZBicmu9CFHMLqbFzKx4q9xygial7BgggSvHbE/Tb+derPTU60lJX03hRe3JgXATjaFYmJ1gKGXHU9BEc0TvJ141e58Ozta0J9LOsZT9YdRkPXXuAHv8mRUDpDeQMvKeJTZaXW3VIpmzUXJdrqHRRxwtcJjn9HUgu4vFHKoJGDmgRYSu5x7IKCu8RC50lGOYvxyECe/hbI4JBHqKyGe3/YDkVmM6yWhzijakchN4RgN0l803NxtZEeIWgH2RSXm9FFxgZmymHnJ+B3b76CNhHEYkU7jIAKsinL1pUmSMKLI0AsLxbQq8h36UmTHkH6XrIa7Yikl5MQycikRd8XLaYNv2L2AzTR98xE6lwx2UIdw08Uenj+jI/g/2vqzntVdEKlfjTrlMUAu6hdCr1a+F557uRd8j9BTlvA25c6Ab0cDrbaUWYl0u7a6nwr+U0A/SNDQ==|920
+}//VB8KLnRbEX7X0TMQTY5JevstlcxsWFr0bT3+ZAotIrPHiNZ6Wyas93t4JgrNgw2OEt3EnG/gm5hcL4oMFvmwYVKG43JsTr8D0+cu1+7jB3YejDJ2aKR9mehfR12pdMK2qo799xdxZ1fYSOzr7pf8/ThHAe3BqW4h/0mYfxoRY0xwlYQ7p891aj+xaHHP7hxVVORX+1owwYrr9PFnBBNIi/bHqiDddUW+NKgPvy1Md2EMtdsOXQi5d9aGDiCpzLqD0AHKmyL3IC7AmgUx3RambaQUdM2Ht7PySaToSuBz2+LxMqzPzNSWNy2Sib5OroLUk/5/mZgKUi60C4Cg813ewVe7kvOm1yaN722N37sSLUFp2frQgg/yrfOkhq7mgxu1XmvoM5giaKa75q016ce3mLitf2iPzLG4a8l2vahBQRECawwEIBKMPAjPzuB7av3zSbz9BFDo2aD5lb/GbCLgO9n6uxAVfPzg0ugZ7kFrbr95mWw6s6pCcvOwLT7l1w4QUDy3oEZTrvJtoB8+LoO/AI7BHT67lfZiTLJhGDBmf+dGNb7GFRD3xAdeyNV5uBhIhrHUcpOU3yz1QBdvD8q1SxNrdToXn8tY7sTYsliHJQcvxeT9PS8V8R16j4iKVuniSQyWhW8hYVwnBjTJOJfCh2j0f/IdEU9LmIvRlN5AWNfPNECeYaFMNYdoxRgXhFu65oVexE2EmuzqL3coLE5ZHkUW7zkC6+HX3VMtVPEwSSpVLri9p+FfuTKR7lGm1kuLY09Sgxr55VCEE+SzDgVCI8+qmAIn9MbqvzMIpDuHmfHcY43Uv+1L2MhIq4WlXS7tRkXEydPBBxDEOxdig6NDQbwE5xzukmkL9EUISe5FFhJKlkRKtzU+Xl/9j/d1nxebBWRFfHWQeydfaAuL952HgQ==|920

@@ -44,6 +44,10 @@
         {
           "Name": "ユーザーID",
           "DataValidationInfo": {}
+        },
+        {
+          "Name": "申請区分",
+          "DataValidationInfo": {}
         }
       ]
     }
@@ -62,7 +66,7 @@
                 "SerializeProperty": "=状態"
               }
             },
-            "value": "承認待ち"
+            "value": "承認済み"
           },
           "CommandList": [
             {
@@ -91,10 +95,10 @@
               },
               "Subject": "ＹＢＳが承認されました。",
               "Content": "申請したＹＢＳ文書が承認されました。確認してください。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,ＹＢＳ一覧へ)%]",
-              "ID": "0826fb8ddd3d4b8997d9003ae94c7d9a"
+              "ID": "125ba8d7a75a45e1a8257780aaed6308"
             }
           ],
-          "ID": "8c34e89d-f8c3-42db-9f97-cc64daf0552f"
+          "ID": "d9a3532c-fe91-473c-9efe-ac17974cf9f1"
         },
         {
           "Condition": {
@@ -135,10 +139,10 @@
               },
               "Subject": "YBSが差戻されました。",
               "Content": "差戻されました。確認してください。\r\n[=YBSコード]\r\n[=規格名称]\r\n\r\n",
-              "ID": "9ed2d2d58ac240cd9ef793a10ebd49c8"
+              "ID": "27d2ba37b2ea41eda1f32c0606f2661a"
             }
           ],
-          "ID": "45258037-277a-4067-9236-3a8ac1831e8c"
+          "ID": "8937403d-eba9-43e4-b7e3-2ad10f06f84f"
         },
         {
           "Condition": {
@@ -154,68 +158,450 @@
           },
           "CommandList": [
             {
-              "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
-              "From": "%CurrentUser%",
-              "EnhancedRecipient": {
-                "TableName": "YBS権限マスタ",
-                "TableColumn": {
-                  "TableName": "YBS権限マスタ",
-                  "ColumnName": "アドレス",
-                  "GUID": "3e3cea3f-6037-4bd3-9e83-b87d74264f9f"
-                },
-                "QueryCondition": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "ColumnBindingInfo": {
-                    "TableName": "YBS権限マスタ",
-                    "ColumnName": "ユーザーID",
-                    "GUID": "ba039b53-3552-4e1d-8acd-cec62a08d413"
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "新規"
                   },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=ユーザーID"
-                  }
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "3e3cea3f-6037-4bd3-9e83-b87d74264f9f"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "ユーザーID",
+                            "GUID": "ba039b53-3552-4e1d-8acd-cec62a08d413"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=ユーザーID"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが申請されましたので、承認処理をお願いします。",
+                      "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "f291733aa106447795c6c8e1ab4a15fc"
+                    }
+                  ],
+                  "ID": "7e8d4da8-cd93-489f-95ed-42587cff330f"
                 },
-                "IsMultiRecipient": true
-              },
-              "Subject": "ＹＢＳが申請されましたので、承認処理をお願いします。",
-              "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-              "ID": "5ef64bb19d3e4b4d9bd2a8c2a42cfe5f"
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "改正"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "3e3cea3f-6037-4bd3-9e83-b87d74264f9f"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "ユーザーID",
+                            "GUID": "ba039b53-3552-4e1d-8acd-cec62a08d413"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=ユーザーID"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが改正申請されましたので、承認処理をお願いします。",
+                      "Content": "以下のＹＢＳが改正申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "d2279ec33b0a45d7b42c61b9041d071e"
+                    }
+                  ],
+                  "ID": "28604ca1-51f6-4ee2-9bc8-f18e85c6e546"
+                },
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "廃止"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "3e3cea3f-6037-4bd3-9e83-b87d74264f9f"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "ユーザーID",
+                            "GUID": "ba039b53-3552-4e1d-8acd-cec62a08d413"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=ユーザーID"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが廃止申請されましたので、承認処理をお願いします。",
+                      "Content": "以下のＹＢＳが廃止申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "6346a6a53ce74f309dcd6336959dfd12"
+                    }
+                  ],
+                  "ID": "8ff4590a-64fd-40c3-aa8e-5d3e133c88d8"
+                }
+              ]
             }
           ],
-          "ID": "9a9b1934-3a20-4ee9-9b12-58b4792972a2"
+          "ID": "452126f4-0820-41ee-9b09-062e13748cd3"
         },
         {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=状態"
+              }
+            },
+            "value": "審議会承認待ち"
+          },
           "CommandList": [
             {
-              "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
-              "From": "%CurrentUser%",
-              "EnhancedRecipient": {
-                "TableName": "YBS権限マスタ",
-                "TableColumn": {
-                  "TableName": "YBS権限マスタ",
-                  "ColumnName": "アドレス",
-                  "GUID": "fb74dd3f-4636-4a16-8eea-3527fbb74382"
-                },
-                "QueryCondition": {
-                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                  "ColumnBindingInfo": {
-                    "TableName": "YBS権限マスタ",
-                    "ColumnName": "権限",
-                    "GUID": "2f4bd343-7ccc-4bee-a0ff-cd2cf5df0bc9"
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "新規"
                   },
-                  "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=権限"
-                  }
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "fb74dd3f-4636-4a16-8eea-3527fbb74382"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "権限",
+                            "GUID": "2f4bd343-7ccc-4bee-a0ff-cd2cf5df0bc9"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=権限"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが申請されました。",
+                      "Content": "以下のＹＢＳが申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "3ee8651240844f3498e7a4d0396beecb"
+                    }
+                  ],
+                  "ID": "a1dea5bd-0202-48e5-a9dd-4aa2b826e71e"
                 },
-                "IsMultiRecipient": true
-              },
-              "Subject": "ＹＢＳが申請されました。",
-              "Content": "以下のＹＢＳが申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-              "ID": "47c66d521d314db28159fa8f9785ccd9"
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "改正"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "fb74dd3f-4636-4a16-8eea-3527fbb74382"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "権限",
+                            "GUID": "2f4bd343-7ccc-4bee-a0ff-cd2cf5df0bc9"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=権限"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが改正申請されました。",
+                      "Content": "以下のＹＢＳが改正申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "3848991efc504d52972ece4366c4e4f4"
+                    }
+                  ],
+                  "ID": "d754940e-44db-4fd1-bb79-ab5eec1d73d6"
+                },
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "廃止"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "fb74dd3f-4636-4a16-8eea-3527fbb74382"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "権限",
+                            "GUID": "2f4bd343-7ccc-4bee-a0ff-cd2cf5df0bc9"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=権限"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが廃止申請されました。",
+                      "Content": "以下のＹＢＳが廃止申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "d0c7dc6aa51943b68b71a11983b26881"
+                    }
+                  ],
+                  "ID": "12aca2ca-714f-4074-9369-c3c4ccb719a2"
+                }
+              ]
             }
           ],
-          "ID": "e089c3ca-fa87-4b4e-b6b3-60dfdda82566"
+          "ID": "2e257eef-41e7-4117-85bb-8420010a4dc5"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=状態"
+              }
+            },
+            "value": "委員長承認待ち"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "新規"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "fb74dd3f-4636-4a16-8eea-3527fbb74382"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "権限",
+                            "GUID": "2f4bd343-7ccc-4bee-a0ff-cd2cf5df0bc9"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=権限"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが申請されました。",
+                      "Content": "以下のＹＢＳが申請され、審議会承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "c35b30e525944ffb80d79eac333c06cd"
+                    }
+                  ],
+                  "ID": "18f28002-ace9-4df6-aca8-088bff21aab6"
+                },
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "改正"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "fb74dd3f-4636-4a16-8eea-3527fbb74382"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "権限",
+                            "GUID": "2f4bd343-7ccc-4bee-a0ff-cd2cf5df0bc9"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=権限"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが改正申請されました。",
+                      "Content": "以下のＹＢＳが改正申請され、審議会承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "92b8c5df198d4a0381b29293a630fc0d"
+                    }
+                  ],
+                  "ID": "70d46abc-37f6-4791-965d-352e7689511d"
+                },
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申請区分"
+                      }
+                    },
+                    "value": "廃止"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                      "From": "%CurrentUser%",
+                      "EnhancedRecipient": {
+                        "TableName": "YBS権限マスタ",
+                        "TableColumn": {
+                          "TableName": "YBS権限マスタ",
+                          "ColumnName": "アドレス",
+                          "GUID": "fb74dd3f-4636-4a16-8eea-3527fbb74382"
+                        },
+                        "QueryCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "権限",
+                            "GUID": "2f4bd343-7ccc-4bee-a0ff-cd2cf5df0bc9"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=権限"
+                          }
+                        },
+                        "IsMultiRecipient": true
+                      },
+                      "Subject": "ＹＢＳが廃止申請されました。",
+                      "Content": "以下のＹＢＳが廃止申請され、審議会承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "823405fc39324b44a0398e198b8e6b78"
+                    }
+                  ],
+                  "ID": "edd06654-eb67-47f3-b98a-fe2e112fd42b"
+                }
+              ]
+            }
+          ],
+          "ID": "adb23b6d-bb5d-4091-9fe5-1c5bd31ab032"
         }
       ]
     }
