@@ -391,6 +391,15 @@
   },
   {
     "ModuleName": "ServerCommand/メール通知",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-06T13:59:05.8313813+09:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\メール通知.json"
+    ]
   }
 ]
