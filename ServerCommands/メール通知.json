@@ -1,5 +1,5 @@
 {
-  "Name": "サーバーサイドコマンド1",
+  "Name": "メール通知",
   "Enabled": true,
   "Triggers": [
     {
@@ -62,7 +62,7 @@
                 "SerializeProperty": "=状態"
               }
             },
-            "value": "承認済み"
+            "value": "承認待ち"
           },
           "CommandList": [
             {
@@ -91,10 +91,54 @@
               },
               "Subject": "ＹＢＳが承認されました。",
               "Content": "申請したＹＢＳ文書が承認されました。確認してください。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,ＹＢＳ一覧へ)%]",
-              "ID": "44588da3a64b4926b2b8c53edd18c849"
+              "ID": "0826fb8ddd3d4b8997d9003ae94c7d9a"
             }
           ],
-          "ID": "cc5cbb9c-798a-4711-a88e-5ab2ae111533"
+          "ID": "8c34e89d-f8c3-42db-9f97-cc64daf0552f"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=状態"
+              }
+            },
+            "value": "差戻"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+              "From": "%CurrentUser%",
+              "EnhancedRecipient": {
+                "TableName": "YBS権限マスタ",
+                "TableColumn": {
+                  "TableName": "YBS権限マスタ",
+                  "ColumnName": "アドレス",
+                  "GUID": "ed3c6b6f-1908-411d-ac4f-957469a60c9a"
+                },
+                "QueryCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "YBS権限マスタ",
+                    "ColumnName": "ユーザーID",
+                    "GUID": "3b29e90e-4091-4826-8197-30944b90053c"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ユーザーID"
+                  }
+                },
+                "IsMultiRecipient": true
+              },
+              "Subject": "YBSが差戻されました。",
+              "Content": "差戻されました。確認してください。\r\n[=YBSコード]\r\n[=規格名称]\r\n\r\n",
+              "ID": "9ed2d2d58ac240cd9ef793a10ebd49c8"
+            }
+          ],
+          "ID": "45258037-277a-4067-9236-3a8ac1831e8c"
         },
         {
           "Condition": {
@@ -135,10 +179,10 @@
               },
               "Subject": "ＹＢＳが申請されましたので、承認処理をお願いします。",
               "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-              "ID": "ea1e2081218a434184d0da62aa406b26"
+              "ID": "5ef64bb19d3e4b4d9bd2a8c2a42cfe5f"
             }
           ],
-          "ID": "0fbdc3b0-6f11-42f4-9bb4-90076f938bc9"
+          "ID": "9a9b1934-3a20-4ee9-9b12-58b4792972a2"
         },
         {
           "CommandList": [
@@ -168,10 +212,10 @@
               },
               "Subject": "ＹＢＳが申請されました。",
               "Content": "以下のＹＢＳが申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-              "ID": "b3db7a701c9e4eaf96461a7dcc432bd8"
+              "ID": "47c66d521d314db28159fa8f9785ccd9"
             }
           ],
-          "ID": "275d9cc3-c401-4e1e-9b39-da97fe2aac1c"
+          "ID": "e089c3ca-fa87-4b4e-b6b3-60dfdda82566"
         }
       ]
     }

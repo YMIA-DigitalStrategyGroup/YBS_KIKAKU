@@ -133,31 +133,11 @@
   },
   {
     "ModuleName": "PCPage/文書申請（改正",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-06T10:45:52.6361785+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書申請（改正.json",
-      "Pages\\文書申請（改正.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/文書申請（新規",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-06T08:44:23.0260198+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書申請（新規.json",
-      "Pages\\文書申請（新規.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
@@ -327,34 +307,11 @@
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-06T08:44:23.0262457+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\フロー_承認処理.json",
-      "Pages\\フロー_承認処理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "ServerCommand/サーバーサイドコマンド1",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-06T08:44:23.0253473+09:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\サーバーサイドコマンド1.json"
-    ]
   },
   {
     "ModuleName": "PCPage/YBS申請メニュー",
@@ -366,30 +323,11 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル一括アップロード画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-02T15:24:12.5712283+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\添付ファイル一括アップロード画面.json",
-      "Pages\\添付ファイル一括アップロード画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/添付ファイルアップロード",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-02T15:24:12.5707934+09:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\添付ファイルアップロード.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
@@ -414,12 +352,6 @@
   },
   {
     "ModuleName": "ServerCommand/メール通知",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-06T08:44:23.0253733+09:00",
     "ModuleType": 15
   }
 ]

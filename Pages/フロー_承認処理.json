@@ -381,7 +381,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "f75cbf6c-0d00-4ea6-be4a-3e87f7d89535",
+                  "GUID": "1e6a8679-b890-4a57-b63e-689b2e402b95",
                   "BindingInfo": {
                     "TableName": "YBS規格文書",
                     "ColumnName": "FGC_State",
@@ -420,7 +420,7 @@
                 ]
               }
             },
-            "ID": "f3e76e211d6146d698506a9d6a615303"
+            "ID": "016f5550bdcf4dfab787081886c0a648"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -499,7 +499,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメント入力後、「承認」ボタンを押してください。"
                   }
                 ],
-                "ID": "d6c8db34-b943-4429-b45d-b8942b711a47"
+                "ID": "490fd280-d5b3-402f-8c01-b13bf65e81f4"
               },
               {
                 "CommandList": [
@@ -548,6 +548,54 @@
                                     }
                                   },
                                   {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!E9"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!G11"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!N6"
+                                        }
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
                                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
                                     "ConditionAndCommandPairList": [
                                       {
@@ -581,7 +629,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "41640589-4666-47fb-ace2-ce0c9f514847"
+                                        "ID": "8722445a-15ec-45e4-8893-c8aa951bb1f8"
                                       },
                                       {
                                         "Condition": {
@@ -641,7 +689,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "77966fba-9d6c-4907-a188-4c7a366d066e"
+                                        "ID": "e3133a05-a91a-439d-9ccf-4acedf13dd9a"
                                       },
                                       {
                                         "Condition": {
@@ -716,7 +764,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "f4b2ac88-04cd-42e8-9e1b-029f7c97da31"
+                                        "ID": "229408db-e7ea-44b5-ab41-2424077e7414"
                                       }
                                     ]
                                   },
@@ -725,7 +773,7 @@
                                     "MessageFormula": "【部内審議】 部門長が承認しました。"
                                   }
                                 ],
-                                "ID": "92b670a5-9d7f-4134-b4ce-fca36c420e41"
+                                "ID": "11278f84-02a9-4848-96fa-99cd5ffdbf85"
                               },
                               {
                                 "Condition": {
@@ -754,7 +802,7 @@
                                   },
                                   {
                                     "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                                    "ServerCommandName": "サーバーサイドコマンド1",
+                                    "ServerCommandName": "メール通知",
                                     "Parameters": [
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -799,7 +847,7 @@
                                   },
                                   {
                                     "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                                    "ServerCommandName": "サーバーサイドコマンド1",
+                                    "ServerCommandName": "メール通知",
                                     "Parameters": [
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -847,12 +895,12 @@
                                     "MessageFormula": "【審議会承認待ちへ】 部門長が承認しました。"
                                   }
                                 ],
-                                "ID": "c0601f98-22c8-4e15-8956-5d6cc0c94e2e"
+                                "ID": "e471fa23-ac17-4d35-9c96-2f7ed4636ebe"
                               }
                             ]
                           }
                         ],
-                        "ID": "44c8b3a7-d785-41f9-a3f6-c673f7bffff8"
+                        "ID": "cde7ee26-96ce-4780-bdb6-695c13e9bf0f"
                       },
                       {
                         "Condition": {
@@ -880,7 +928,7 @@
                           },
                           {
                             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                            "ServerCommandName": "サーバーサイドコマンド1",
+                            "ServerCommandName": "メール通知",
                             "Parameters": [
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -928,7 +976,7 @@
                             "MessageFormula": "審議会メンバーが全員承認しました。"
                           }
                         ],
-                        "ID": "3ea46a6b-fc9b-4f2c-800e-1052d4d05f90"
+                        "ID": "2a4c1dc6-487d-4f77-a717-1bbd88e6fbaa"
                       },
                       {
                         "Condition": {
@@ -956,7 +1004,7 @@
                           },
                           {
                             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                            "ServerCommandName": "サーバーサイドコマンド1",
+                            "ServerCommandName": "メール通知",
                             "Parameters": [
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -985,7 +1033,10 @@
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                 "ParamName": "状態",
-                                "Value": "承認済み"
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
+                                }
                               },
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -1033,7 +1084,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "d0ca3ab2-73b3-43bb-a82f-21704bce5b7c"
+                                "ID": "c9dc62cf-afe8-4d42-8dfa-3a7e6ac271c4"
                               },
                               {
                                 "Condition": {
@@ -1093,7 +1144,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "b60932e9-270c-45ef-b198-d70774bc6af6"
+                                "ID": "81dab295-1179-42c9-9ffc-115bc557a453"
                               },
                               {
                                 "Condition": {
@@ -1168,7 +1219,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "515f08d2-b74c-4055-850c-49a40368ddd2"
+                                "ID": "73285264-4113-4440-abf5-912a286a78f1"
                               }
                             ]
                           },
@@ -1177,7 +1228,7 @@
                             "MessageFormula": "委員長が承認しました。"
                           }
                         ],
-                        "ID": "7b181ab9-dafe-4c91-9da8-9ff8ca8d48d1"
+                        "ID": "452bfe8c-d7d1-4e45-bc82-a48f1931a516"
                       }
                     ]
                   },
@@ -1186,7 +1237,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "a5f61fff-bdf7-4ac7-8db3-fc5d13a96590"
+                "ID": "4ae49788-1105-418b-a726-4310529015ec"
               }
             ]
           }
@@ -1284,7 +1335,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "d0427a42-e11b-45fd-bcef-f9c5753e20eb",
+                  "GUID": "ca66ae25-ac42-431c-9e63-53ac337d9837",
                   "BindingInfo": {
                     "TableName": "YBS規格文書",
                     "ColumnName": "FGC_State",
@@ -1323,7 +1374,7 @@
                 ]
               }
             },
-            "ID": "2496c832d2b24ad2b634d22304226afb"
+            "ID": "7114fcf98495418e8b92dff8db7ff2b7"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1402,7 +1453,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「差戻」ボタンを押してください。"
                   }
                 ],
-                "ID": "597f3214-38fa-4754-ac68-dfcc18f277d4"
+                "ID": "4b9c2c01-39c5-41f2-a7a7-457a82ece4a8"
               },
               {
                 "CommandList": [
@@ -1451,11 +1502,63 @@
                                     }
                                   },
                                   {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!E9"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!G11"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!G13"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!AM6"
+                                        }
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
                                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                                     "MessageFormula": "【部内審議】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "aeced9d0-e8f4-4719-a911-b69c6669c0cd"
+                                "ID": "166dfd28-fcc2-4459-b504-8989dad15d22"
                               },
                               {
                                 "Condition": {
@@ -1483,16 +1586,68 @@
                                     }
                                   },
                                   {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!E9"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!G11"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!G13"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=フロー_承認処理!AM6"
+                                        }
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
                                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                                     "MessageFormula": "【審議会承認待ちへ】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "ee185a71-dfad-414c-a3bb-c193e2670656"
+                                "ID": "1cde871f-7b7e-41f4-8f1b-9d2e3a3617ed"
                               }
                             ]
                           }
                         ],
-                        "ID": "20215e08-bf29-4936-8db9-ed93cad6f1f3"
+                        "ID": "ad631afe-1829-4a30-abbd-15c5dbdb33d9"
                       },
                       {
                         "Condition": {
@@ -1519,11 +1674,63 @@
                             }
                           },
                           {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "メール通知",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "YBSコード",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!E9"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "規格名称",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!G11"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "理由",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!G13"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "権限"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "状態",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "ユーザーID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!AM6"
+                                }
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
                             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                             "MessageFormula": "審議会メンバーが差戻ました。"
                           }
                         ],
-                        "ID": "572fded3-82e1-4d9d-b46f-81be0dc886d3"
+                        "ID": "d75fa566-59b0-4a77-83ac-320b139a9b9f"
                       },
                       {
                         "Condition": {
@@ -1550,11 +1757,63 @@
                             }
                           },
                           {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "メール通知",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "YBSコード",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!E9"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "規格名称",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!G11"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "理由",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!G13"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "権限"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "状態",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "ユーザーID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_承認処理!AM6"
+                                }
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
                             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                             "MessageFormula": "委員長が差戻ました。"
                           }
                         ],
-                        "ID": "8549c5fc-af7c-445c-986f-3ff636f7d51b"
+                        "ID": "aa7d4c0d-7bd6-4d9c-9097-e7a1a2e6a71f"
                       }
                     ]
                   },
@@ -1563,7 +1822,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "4725e9dd-047a-4e58-abb0-dfc1c108e213"
+                "ID": "4f38a331-81b2-4dd3-a1df-6d87a26656e7"
               }
             ]
           }
@@ -3256,4 +3515,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//5HTkm2DL604ctBnEYbc6P/wL6iZY3mPFsGNfkEqjwVTC9qvtJKJHLg/p/lwY0EVKI+m8MZK8Yo0DrHn6FtPsYkFH+iXdg3FTQEeFKyvIJRhAXbj7KNwJIZXwp75Np3dkYTaO9rWu8B+usKngUlDqUS/WkLKitRm3QrYtMABh2j75nNhDHVCwA70ov0sGPgshHt2YYiyqzqJvUvrvYVF23fm4tmAh8xxSV3LdI1QkweLFx7/KQaCd4gCehQPu8evbve+K8Eb3iCGDJOVlNik4u/DmsmrBfaoBqn6eU4vOKA9HqsTE8JCyz9fI9vrdNywSEya4j4istYIwtqVl7fWAVU/ZLS3865dY3MEA4+/WNZyHWLEsorfqxX4Yfgsx3CA47B7R5SGhxSNMaetEj9QUfohA027UQ/YoUhAhaVuPoWAKHKMB8QfrOu+1CejUjHD2qW3J9y25IP82CQnYxDD2ex5A555KUAvz2Cat1p5ddE3EgReFKApIzdryahOymh9xJBoR7lq2oiqKktbDO0O3XOSIcUK93t8G7QVbQ4TZtMoUOLFfqgQPGY9y7ahNxxQdjk3InfeF5X4UaYmgFQrMMMGDkzCLjYo1xDz0rs24ASk69S/dA8EexO3aD9jJIsut+7yo4OaIiV/GkiKHEq3TB2Cbl8C6Bfcje07zOIJtGJaOS3XIc4JI6McZLbCCjPgsyiH/pts2kTz47EIZ8SxpGJoBpXOf5Qjrw5FE1NaXekmjGloaF4t8yAS7hW6zSA7Z8urRmfXXxA+97D8uOaPcq7ctNwDCih9aBm+4FxedVOPRmDbjQuQMC4/ouitQkP7Q/oAwb8zW0hRCq9Fzc8tgjHr0NMQdzPkjcv+3MsPMqC9ME1r5TvxIudpq4LULyDenI9CzOT4NC84yKFHuzvEjjw==|920
+}//ORq+mZhhbNzomJ5B/EPTLrRKmsuYbc9mTq/M74RsaITZ/rBQvpI9Ppdca84z00U6f/hh15K5buwDR6MEmWY/9rN688vt8Qq9HLz1I0YZ0rdm5H9V18pF5a69gbCt421Cvwc7HOenneVG3Xuw4numgZ+EDYyidOLCByooQl67EALLEIz8RTWpfx+5VEWcoT72RMOcY4WA2t2ja5ZddsQvBcsZxyT6R8XKi6QhYAo8kWjT2oSkZDYplrQ5javLDggKKllf4JZ11Nb16ukE8KAMZswKkAYE6i/f8gXWLQm5PFcNXo0wvT95ida1b1ygkLqB/cSb0vJ5j8CyHJ+rz1kBnssBVgwLP5gVbeXOxdJALO80gmK9RfxXZr9+LObgUCaNsoayKZHgvvzwSbz/J6GfRA5sZ9dkd7r96ZsAbs1TOEy+lKudSB3/PX8/BHiyl7NZC/c2fIW99wT0+44MK583Wb5TJF/KPw9gYxXcvc5wFV62STcjMt7F1sAL1nUf8UnFMoeFk8/iP630M131T2j8EJmDgSwNOsZuzMQPpJTZTAIMFolF+nuyVgLnMNayMwPLBpuphuBPfIQrVbuZV3/HSJxjORCkCNJpQeZmaksaoKMBrefjxjSU/qY/T7L24yboOdLVNt5IKqN/GJ7n57Dp7TT8njEeEn26iNPfJWVfUPmyJDjwLJVRE0wfc+J1mRHA/v8yRdvoiS6Ocy5XXdkO3u2Q4tq5fIK+Nhcx7cu8S6kog+1JIKEtSkXS9ORwTBFPNxHz90Ak13F09ELy2MBLOXxiKxWyWv1J0WH9lQvo5NVlntVZj9axp8Ud9yL2KZ2wqxGBDWG4fAZbhJZvdLzoHT/8vXgzrS+IjI5vkclWcTW+mK/NeDZyw40FVjyCNNVEmduZ3wQm2KC8jQRh/MQmOw==|920
