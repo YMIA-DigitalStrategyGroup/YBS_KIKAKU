@@ -499,7 +499,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメント入力後、「承認」ボタンを押してください。"
                   }
                 ],
-                "ID": "490fd280-d5b3-402f-8c01-b13bf65e81f4"
+                "ID": "6aec6697-ee11-462f-bfd3-c96b35fc510d"
               },
               {
                 "CommandList": [
@@ -629,7 +629,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "8722445a-15ec-45e4-8893-c8aa951bb1f8"
+                                        "ID": "9d697a6b-ebc6-4c92-95f4-559e9cc03691"
                                       },
                                       {
                                         "Condition": {
@@ -689,7 +689,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "e3133a05-a91a-439d-9ccf-4acedf13dd9a"
+                                        "ID": "e55219be-da53-4458-9523-1d66200b6fdd"
                                       },
                                       {
                                         "Condition": {
@@ -764,7 +764,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "229408db-e7ea-44b5-ab41-2424077e7414"
+                                        "ID": "bf55e6a4-14f3-4927-b310-74afba150bca"
                                       }
                                     ]
                                   },
@@ -773,7 +773,7 @@
                                     "MessageFormula": "【部内審議】 部門長が承認しました。"
                                   }
                                 ],
-                                "ID": "11278f84-02a9-4848-96fa-99cd5ffdbf85"
+                                "ID": "9daa5988-d132-4931-a378-93c28749e709"
                               },
                               {
                                 "Condition": {
@@ -895,12 +895,12 @@
                                     "MessageFormula": "【審議会承認待ちへ】 部門長が承認しました。"
                                   }
                                 ],
-                                "ID": "e471fa23-ac17-4d35-9c96-2f7ed4636ebe"
+                                "ID": "358571ac-3526-421f-89e1-57f6af1719b0"
                               }
                             ]
                           }
                         ],
-                        "ID": "cde7ee26-96ce-4780-bdb6-695c13e9bf0f"
+                        "ID": "6137b8f4-dedf-4c57-affa-d80a642ad79f"
                       },
                       {
                         "Condition": {
@@ -976,7 +976,7 @@
                             "MessageFormula": "審議会メンバーが全員承認しました。"
                           }
                         ],
-                        "ID": "2a4c1dc6-487d-4f77-a717-1bbd88e6fbaa"
+                        "ID": "b90d7c0b-a430-48b4-b532-d61751f03db1"
                       },
                       {
                         "Condition": {
@@ -1084,7 +1084,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "c9dc62cf-afe8-4d42-8dfa-3a7e6ac271c4"
+                                "ID": "20ad2790-8810-4e5a-9e80-5acf611ed4ac"
                               },
                               {
                                 "Condition": {
@@ -1144,7 +1144,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "81dab295-1179-42c9-9ffc-115bc557a453"
+                                "ID": "d38cc293-0f22-4cc4-87e0-d32ca5ff8d1d"
                               },
                               {
                                 "Condition": {
@@ -1219,7 +1219,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "73285264-4113-4440-abf5-912a286a78f1"
+                                "ID": "09e4c75f-fa27-4f13-a834-1f26bdfab7dd"
                               }
                             ]
                           },
@@ -1228,7 +1228,7 @@
                             "MessageFormula": "委員長が承認しました。"
                           }
                         ],
-                        "ID": "452bfe8c-d7d1-4e45-bc82-a48f1931a516"
+                        "ID": "9b4265be-46db-4ff1-b9fc-faca7f415b81"
                       }
                     ]
                   },
@@ -1237,7 +1237,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "4ae49788-1105-418b-a726-4310529015ec"
+                "ID": "67fa0cea-a3b7-4794-941a-b6086db391dd"
               }
             ]
           }
@@ -1335,7 +1335,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "ca66ae25-ac42-431c-9e63-53ac337d9837",
+                  "GUID": "afb8b8c5-5f03-4329-aa6a-8a57a7f8cd8f",
                   "BindingInfo": {
                     "TableName": "YBS規格文書",
                     "ColumnName": "FGC_State",
@@ -1374,7 +1374,7 @@
                 ]
               }
             },
-            "ID": "7114fcf98495418e8b92dff8db7ff2b7"
+            "ID": "54f28c4915d544e2aa8cde6fb52772a3"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1453,7 +1453,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「差戻」ボタンを押してください。"
                   }
                 ],
-                "ID": "4b9c2c01-39c5-41f2-a7a7-457a82ece4a8"
+                "ID": "88f0be6b-eda5-4abd-831c-df8d05006197"
               },
               {
                 "CommandList": [
@@ -1536,10 +1536,7 @@
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                         "ParamName": "状態",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
-                                        }
+                                        "Value": "差戻"
                                       },
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -1558,7 +1555,7 @@
                                     "MessageFormula": "【部内審議】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "166dfd28-fcc2-4459-b504-8989dad15d22"
+                                "ID": "f6331956-e2bd-4710-816a-b589913b2db2"
                               },
                               {
                                 "Condition": {
@@ -1620,10 +1617,7 @@
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                         "ParamName": "状態",
-                                        "Value": {
-                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
-                                        }
+                                        "Value": "差戻"
                                       },
                                       {
                                         "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -1642,12 +1636,12 @@
                                     "MessageFormula": "【審議会承認待ちへ】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "1cde871f-7b7e-41f4-8f1b-9d2e3a3617ed"
+                                "ID": "eaf1ddd7-ba48-43e7-8ed2-07c235785902"
                               }
                             ]
                           }
                         ],
-                        "ID": "ad631afe-1829-4a30-abbd-15c5dbdb33d9"
+                        "ID": "924b031e-7142-4993-b736-939937789ff0"
                       },
                       {
                         "Condition": {
@@ -1708,10 +1702,7 @@
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                 "ParamName": "状態",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
-                                }
+                                "Value": "差戻"
                               },
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -1730,7 +1721,7 @@
                             "MessageFormula": "審議会メンバーが差戻ました。"
                           }
                         ],
-                        "ID": "d75fa566-59b0-4a77-83ac-320b139a9b9f"
+                        "ID": "525f4370-236f-43e9-8c1e-2d87579bd94f"
                       },
                       {
                         "Condition": {
@@ -1791,10 +1782,7 @@
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
                                 "ParamName": "状態",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "=フロー_承認処理!ワークフロー状態"
-                                }
+                                "Value": "差戻"
                               },
                               {
                                 "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
@@ -1813,7 +1801,7 @@
                             "MessageFormula": "委員長が差戻ました。"
                           }
                         ],
-                        "ID": "aa7d4c0d-7bd6-4d9c-9097-e7a1a2e6a71f"
+                        "ID": "c7cf5cc2-ba25-4170-8dc1-b9f217d47cb7"
                       }
                     ]
                   },
@@ -1822,7 +1810,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "4f38a331-81b2-4dd3-a1df-6d87a26656e7"
+                "ID": "46aa05a2-1b0f-445d-9b63-b632f40ffb74"
               }
             ]
           }
@@ -3515,4 +3503,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//ORq+mZhhbNzomJ5B/EPTLrRKmsuYbc9mTq/M74RsaITZ/rBQvpI9Ppdca84z00U6f/hh15K5buwDR6MEmWY/9rN688vt8Qq9HLz1I0YZ0rdm5H9V18pF5a69gbCt421Cvwc7HOenneVG3Xuw4numgZ+EDYyidOLCByooQl67EALLEIz8RTWpfx+5VEWcoT72RMOcY4WA2t2ja5ZddsQvBcsZxyT6R8XKi6QhYAo8kWjT2oSkZDYplrQ5javLDggKKllf4JZ11Nb16ukE8KAMZswKkAYE6i/f8gXWLQm5PFcNXo0wvT95ida1b1ygkLqB/cSb0vJ5j8CyHJ+rz1kBnssBVgwLP5gVbeXOxdJALO80gmK9RfxXZr9+LObgUCaNsoayKZHgvvzwSbz/J6GfRA5sZ9dkd7r96ZsAbs1TOEy+lKudSB3/PX8/BHiyl7NZC/c2fIW99wT0+44MK583Wb5TJF/KPw9gYxXcvc5wFV62STcjMt7F1sAL1nUf8UnFMoeFk8/iP630M131T2j8EJmDgSwNOsZuzMQPpJTZTAIMFolF+nuyVgLnMNayMwPLBpuphuBPfIQrVbuZV3/HSJxjORCkCNJpQeZmaksaoKMBrefjxjSU/qY/T7L24yboOdLVNt5IKqN/GJ7n57Dp7TT8njEeEn26iNPfJWVfUPmyJDjwLJVRE0wfc+J1mRHA/v8yRdvoiS6Ocy5XXdkO3u2Q4tq5fIK+Nhcx7cu8S6kog+1JIKEtSkXS9ORwTBFPNxHz90Ak13F09ELy2MBLOXxiKxWyWv1J0WH9lQvo5NVlntVZj9axp8Ud9yL2KZ2wqxGBDWG4fAZbhJZvdLzoHT/8vXgzrS+IjI5vkclWcTW+mK/NeDZyw40FVjyCNNVEmduZ3wQm2KC8jQRh/MQmOw==|920
+}//8go5eW8EtKnXyNm40mI+nxOCChYRiC3dz+9Pij4DhGwsOc6MzxVhD3rpIH6LzK8xln8tfYsOmu/g1wfeg01lcnSULwMy5TJXx3qD+ItWu5E+EGR0rnTZdq+9HHuUnXi8CnmnG8KQQFVGGbmRLTJ8Gnrhc5eFV9ZPoaJzaxYn2yu9EiWSp1iW4gWGE0rcsbUgnRRLJlFjM3SxCHh9tY7i+ZChMCH7mymwA64hL4KuVT2ZjVHaxE/lD8U5298cpCdycrkbCjGqkLFsqCZDFROvFNZbldItTRchMSbpZoOUPSS9KMFQEm6p1lt6m167FW4le2URUqT1p5kFjYaFiq2niKl5CsLAAmEaeun79harIQMWknwVKqBSp+37t4N+U5e+8PUNpr2rCnOCW6u1fghMxqglh8AXBXvgF603+yVvDHljqvgS2vCD2O+7Sb4dT+oMSUjc+n+mFCxfFYM/2DIMKPo+oswAlM3DPrI/JMv85YaYlGQ8f/2VOwBu6ck1O1Sgdz0xNFgSlrd2qCLWNjiuqf+OPxyoLjnOvjEuRuUUsLTdTeo0GaAWo5EdNxJEYPmnWtTX7hiTdTv0aXDMo2A1ro/f1w3TDwIAj0/1gdk8hF6qJ04jZAcdte5Q9s5UPvbtINjnKwQcJ6DGH1h3uP4sj0ed6oRLu8+kC//poEdQinyC0hjBN94yaKsP9ZilxGO8zNgn0AVn8FhDgAhyrv/m7ZtZZlJpZdRhAGZZwN+RYfNVf5U7I2f8HO29Np+hejbsLNimxT4c0+mR46EUou9mmqo4gxks0WYrMqGx/jj0bp4z7axBJ02BzRMC8aDryhYGJwVtXElY/Ld9LleNzFnVWplwEPU9HElj7iTLl5UnsYw5wQOEUCM2mHckUUrvxUEbnLGppYNL/Xv8JmMjq86Mpg==|920
