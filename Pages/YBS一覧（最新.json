@@ -30,9 +30,11 @@
     "1,22": "検索値をクリアしてボタンを押すと",
     "2,22": "「全表示」に戻ります。",
     "4,2": "ＹＢＳ\r\nコード",
-    "4,7": "改正\nコード",
-    "4,38": "見直し\n必要",
-    "4,41": "文書\n区分",
+    "4,6": "改正\nコード",
+    "4,37": "見直し\n必要",
+    "4,40": "文書\n区分",
+    "4,47": "最終更新日",
+    "4,51": "最終更新者",
     "16,1": "来歴表示",
     "17,3": "YBS一覧（詳細",
     "30,2": "来歴/詳細表示",
@@ -42,7 +44,7 @@
     "30,30": "廃止"
   },
   "Formulas": {
-    "5,38": "IFS(AP6=\"廃止\",\"\",ROUND((TODAY()-AS6)/365,2)>=0.1,\"★\",TRUE,\"\")"
+    "5,37": "IFS(AO6=\"廃止\",\"\",ROUND((TODAY()-AV6)/365,2)>=0.1,\"★\",TRUE,\"\")"
   },
   "AttachInfos": {
     "1,17": {
@@ -137,7 +139,7 @@
         "RowIndex": 4,
         "ColumnIndex": 1,
         "RowCount": 11,
-        "ColumnCount": 56,
+        "ColumnCount": 58,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
           "SubConditions": [
@@ -222,7 +224,7 @@
         "GUID": "6f2ebddb-da28-4ed7-a69d-cdc5a60d482d"
       }
     },
-    "5,7": {
+    "5,6": {
       "NameUsedInJavaScript": "改正",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -230,14 +232,14 @@
         "GUID": "657fb59d-86a2-41f8-bd6a-f5887ae97448"
       }
     },
-    "5,10": {
+    "5,9": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "規格名称",
         "GUID": "d775d813-59e2-4990-9ca4-4026c8e22fce"
       }
     },
-    "5,24": {
+    "5,23": {
       "NameUsedInJavaScript": "規格PDF",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -251,7 +253,7 @@
         }
       }
     },
-    "5,30": {
+    "5,29": {
       "NameUsedInJavaScript": "適用範囲",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -259,7 +261,7 @@
         "GUID": "1d46673f-18f1-445e-a177-967a8641cd45"
       }
     },
-    "5,34": {
+    "5,33": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "分類コード",
@@ -271,12 +273,12 @@
         }
       }
     },
-    "5,38": {
+    "5,37": {
       "RulesGuidList": [
         "2409001a-a408-4850-8a54-45b6e45cbe67"
       ]
     },
-    "5,41": {
+    "5,40": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "現行_旧版",
@@ -286,20 +288,24 @@
         "a727c80e-c79a-46fa-b45d-d61fa4c911f2"
       ]
     },
-    "5,44": {
-      "NameUsedInJavaScript": "施行日_日",
+    "5,43": {
+      "NameUsedInJavaScript": "施行日",
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "施行日",
-        "GUID": "de1d33db-65d1-4cb3-825a-e13d7bd148c4",
-        "AttachType": {
-          "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
-          "ColumnAttachType": 5
-        }
+        "GUID": "5b588053-ee2c-49a0-b41b-5d4b301c4100"
       }
     },
-    "5,48": {
-      "NameUsedInJavaScript": "最終更新者_氏名",
+    "5,47": {
+      "NameUsedInJavaScript": "最終更新日",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "FGC_LastModifyDate",
+        "GUID": "362fcbc5-13be-48b7-9448-0e5e2b0b0276"
+      }
+    },
+    "5,51": {
+      "NameUsedInJavaScript": "最終更新者",
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_LastModifier",
@@ -310,14 +316,14 @@
         }
       }
     },
-    "5,51": {
+    "5,54": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請者",
         "GUID": "25385dcc-9616-4ffa-8c19-3f558cf9a7f5"
       }
     },
-    "5,54": {
+    "5,56": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_State",
@@ -351,7 +357,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS一覧（最新!K6"
+                  "SerializeProperty": "=YBS一覧（最新!J6"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=YBS一覧（来歴!I3"
@@ -654,7 +660,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "d2a6594f-8c62-4bef-8159-358f80698373"
+                "ID": "40e1f612-2e4a-4570-8349-1421992fc211"
               },
               {
                 "CommandList": [
@@ -723,7 +729,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "79622cfc-626e-4ff5-8c44-fa64de94e8db"
+                "ID": "eb5fd4db-f31c-4ad6-bb3e-839c4f89679b"
               }
             ]
           }
@@ -988,7 +994,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "479ebd00-6301-407b-a7a7-8f3021ad58e8"
+                "ID": "492d1586-d043-4bbd-9835-2d27ee2d1c5f"
               },
               {
                 "CommandList": [
@@ -1057,7 +1063,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "7474986e-058a-48b2-87ae-5abc0ad55ec1"
+                "ID": "de79759c-5275-48b9-a166-18a83389b095"
               }
             ]
           }
@@ -1145,20 +1151,6 @@
         "BorderRight": 0
       },
       {
-        "WordWrap": true
-      },
-      {
-        "Background": 8,
-        "WordWrap": true
-      },
-      {
-        "Background": 8,
-        "FontFamily": 5,
-        "WordWrap": true
-      },
-      {
-        "Background": 8,
-        "FontFamily": 5,
         "WordWrap": true,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1170,12 +1162,26 @@
         "BorderRight": null
       },
       {
+        "Background": 8,
         "FontFamily": 5,
+        "FontSize": 14.666666666666666,
+        "WordWrap": true,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderRight": null
       },
       {
+        "Background": 8,
+        "FontFamily": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 5,
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 5,
         "Foreground": 9,
         "Underline": true
       },
@@ -1195,15 +1201,19 @@
       },
       {
         "FontFamily": 5,
-        "BorderLeft": 1
+        "Formatter": 13
       },
       {
-        "BorderLeft": 1
-      },
-      {
-        "Background": 14,
         "FontFamily": 5,
-        "Foreground": 15,
+        "BorderLeft": 1
+      },
+      {
+        "BorderLeft": 1
+      },
+      {
+        "Background": 15,
+        "FontFamily": 5,
+        "Foreground": 16,
         "HorizontalAlignment": 3
       },
       {
@@ -1226,6 +1236,7 @@
         "0.00_);[Red](0.00)",
         "yyyy/m/d",
         "Right",
+        "yyyy/MM/dd",
         "Background 1 -15",
         "Accent 3 60",
         "Text 1 0"
@@ -1235,7 +1246,7 @@
           "Color": 4
         },
         {
-          "Color": 13
+          "Color": 14
         }
       ]
     },
@@ -1311,35 +1322,35 @@
       "2,35": 7,
       "2,36": 7,
       "4,2": 13,
+      "4,3": 14,
+      "4,4": 14,
+      "4,5": 14,
+      "4,6": 15,
       "4,7": 14,
-      "4,34": 7,
-      "4,35": 7,
-      "4,36": 7,
-      "4,37": 7,
-      "4,38": 15,
-      "4,39": 7,
-      "4,40": 7,
-      "4,41": 16,
-      "4,42": 17,
-      "4,43": 17,
-      "4,44": 7,
-      "4,48": 7,
+      "4,8": 14,
+      "4,9": 7,
+      "4,23": 7,
+      "4,29": 7,
+      "4,33": 7,
+      "4,37": 16,
+      "4,40": 16,
+      "4,43": 7,
+      "4,47": 7,
       "4,51": 7,
-      "4,54": 18,
-      "4,55": 17,
-      "5,24": 19,
-      "5,34": 7,
-      "5,35": 7,
-      "5,36": 7,
-      "5,37": 7,
-      "5,38": 20,
-      "5,39": 7,
-      "5,40": 7,
-      "5,41": 21,
-      "5,44": 22,
-      "5,48": 7,
+      "4,54": 7,
+      "4,56": 17,
+      "5,6": 7,
+      "5,9": 7,
+      "5,23": 18,
+      "5,29": 7,
+      "5,33": 7,
+      "5,37": 19,
+      "5,40": 20,
+      "5,43": 21,
+      "5,47": 22,
       "5,51": 7,
       "5,54": 7,
+      "5,56": 7,
       "17,3": 23,
       "18,3": 24,
       "19,3": 24,
@@ -1421,32 +1432,32 @@
     "30,25,2,4",
     "30,30,2,4",
     "30,2,2,6",
-    "6,1,9,56",
-    "5,2,1,5",
-    "4,2,1,5",
-    "5,7,1,3",
-    "4,7,1,3",
-    "5,10,1,14",
-    "4,10,1,14",
-    "5,24,1,6",
-    "4,24,1,6",
-    "5,30,1,4",
-    "4,30,1,4",
-    "5,34,1,4",
-    "4,34,1,4",
-    "5,38,1,3",
-    "4,38,1,3",
-    "4,41,1,3",
-    "5,41,1,3",
-    "4,44,1,4",
-    "5,44,1,4",
-    "4,48,1,3",
-    "5,48,1,3",
+    "17,3,8,51",
+    "5,2,1,4",
+    "4,2,1,4",
+    "4,6,1,3",
+    "5,6,1,3",
+    "4,9,1,14",
+    "5,9,1,14",
+    "4,23,1,6",
+    "5,23,1,6",
+    "4,29,1,4",
+    "5,29,1,4",
+    "4,33,1,4",
+    "5,33,1,4",
+    "4,37,1,3",
+    "5,37,1,3",
+    "4,40,1,3",
+    "5,40,1,3",
+    "4,43,1,4",
+    "5,43,1,4",
+    "4,47,1,4",
+    "5,47,1,4",
     "4,51,1,3",
     "5,51,1,3",
     "4,54,1,2",
     "5,54,1,2",
-    "17,3,8,51"
+    "6,1,9,58"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1515,4 +1526,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//YP5VMdcgEHf2wQuVTsL/xSuBMLx+aKSF42igYkhQ9FKigygsY3H8af6DCT3Oro1z/4UYo9kFr5HLptIdxHAWso7fYyN8MmqN8/gpmEW3RRLQWOSeVCK0eJrDSTiRuWH27PGkuF9A/tVMf/7Cqqv7dz5JQghyFR8oPKEbQLTQu9eQHkWUd9foN2sALv7gbC+1EkO6Y9unjbtjdQ6cjGqBCte/kfj1pcazdWvadVUHDDd+A848LZFPst+cEn0TRDJQ9jMB0jfmXaoa5bvO452t/vK/9prNA9xclUD5MVNR8UJ4dobLQaxKxxVAOY4fABaI/I125aTgb3YfnwaUgCyiZVWJ2NXTqFpdh8CaOpWYClCMk8NPn9/fvHKBQskIyZjCLR0WhhHxWV5MU/sSgEE5xxVNvcc+tG0Da9uQ8gbUH+vfV4ZW0vm976cuvdpDHlZi2M1Ttjk1Uxs5KqvCgzvbLSrVXosIv7yc/TW2GFW3l3O+CJlNFhwG+hX67HUpGlus1hCfZm93EcWxmwQGjfIqy1f3WKw926CWt69Hce4PMA7/l3eDSw7cR96F6aE/W3Om+X6o1H2HpYMmDhKvQiqwAlmjxJGV+bKPa0TcPYPu047ceBEY1TNnmlo+PlH7k5m6PW9zZtyYjt4AFJLi1whHLANmnMmM8KpAlQu3UWs//1+yG+hLXGtEPIMGztWVJPLvw8t6Dd23min8n9vpXWyokZ5q83+meXFHwmpeEjcHoVsi3ojBniambyKI+Gpo2vc677RC9nT2/DxcplUpDQitEq53+QCfB0aMud3p8WPnU774+Lxq+IhZUdf2KKtGeWi6g1xvUwY9zhEYiF9KKqWNAWCQgY47pRa5VS10VGXl28P9UuDkxdqj7Abe4JyMp8kNWsJN3ZTpYjbn/LKqs6lIUw==|920
+}//UlHK1zLgxCKJw4qh+FCU9MSsD8XGzn7mLnLg+cWmLsnyqMQuWdsvQlEs3nEoO2ePMBw383w5tBE8Fe4DP+cn4qK339BH8Es5nUNo4GrIESlquqF5pdXIwlyE2eBic6WdHxxcDvriOUZQ7u4HAwn3PX9jurTXV1rHtKxXjrIg3AsQwV6/1+N4ex2NeNr0Pk9ZTf6MZB314W7+LxPGBhFVVIi2kjAx5rBSleNlYTYWzNFz4C1l1oq09U0vMg8FiKXZOWWqMcvKW382b5x1zhiqQ+hxQVmKuLykzXraqJK2VlR0UIu3b8AHJiwmlNWicLMP1lpIVGIm/uWUWiSFc78i+wOLlifJPY8+JEjgSSAsTUYgYCgFBNHlj+X+AO+D+v7qsfcqvvDjJ/kK+TrvbHwW21KpV8rLNBEKw0Sgwq8x8XvF4JmJmv656doloDes6pNhE6maapZTibPIK7JKkbNRtlCrsHjzBycZEp3cMOjBPIYpqGdYfBi7cbNOuwZaQW8dbBrfPjN16W4MbxiNqVCXwspBmmY4oM0HKw/m4JWCtC+11rJjntpfkAeoLNjX+8MiP6lTGRoNs6surSbJUfkOYjLQ4QMTvZkon4AUAz5NqpK04jE9xfDKZ1yU5hWVkPJ9dH6NqOson2YchAJbLfEwv+V/mPgqKGjJ126jkS4xFh/nGwv/1jcg8PTHeu/PbnjvKpXTxufdSvUOaAdDLAiOAd8v+HRTTGTITs5BD7y9dtM5cpfNfKV6QJmjWGfz4mQzOuxa2k1Jl7/LHoBGH6ikfe8S8TRnOjZyxh2OgKWXC63LeF+OSQiFaul/JOr7lfTz2haJqZ16riJEaFONI70bDlrgvx4q6uIHAhdWwLpFpGeo7kW/h/ehsqIdAbGBFYTLlKES3sdO9NOLqeD2XZBS6g==|920
