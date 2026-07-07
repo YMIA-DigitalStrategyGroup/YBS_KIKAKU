@@ -29,11 +29,11 @@
     "6,4": "氏名",
     "6,8": "アクション",
     "6,12": "コメント",
-    "6,22": "日時",
+    "6,25": "日時",
     "16,1": "委員コメント（登録のあったコメントが表示されます。）",
     "17,4": "委員名",
     "17,8": "承認/差戻",
-    "17,22": "記載日",
+    "17,25": "記載日",
     "17,35": "委員コメントID"
   },
   "AttachInfos": {
@@ -138,7 +138,7 @@
         "GUID": "95c0e034-8e0a-46a8-9811-af3df225b12d"
       }
     },
-    "7,22": {
+    "7,25": {
       "NameUsedInJavaScript": "When",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -208,7 +208,10 @@
         "TableName": "YBS_審議会コメント",
         "ColumnName": "認定結果",
         "GUID": "5fde4e78-3ade-4e8f-b7d8-3ad0330dc47b"
-      }
+      },
+      "RulesGuidList": [
+        "eaebc3a1-8a21-4893-823a-5605f1b6aea8"
+      ]
     },
     "18,12": {
       "NameUsedInJavaScript": "コメント",
@@ -218,7 +221,7 @@
         "GUID": "1ea613c0-1f3d-4048-87ae-45f8bc2c78da"
       }
     },
-    "18,22": {
+    "18,25": {
       "NameUsedInJavaScript": "記載日",
       "BindingInfo": {
         "TableName": "YBS_審議会コメント",
@@ -423,12 +426,15 @@
       "6,19": 13,
       "6,20": 13,
       "6,21": 13,
-      "6,22": 4,
+      "6,22": 13,
+      "6,23": 13,
+      "6,24": 13,
+      "6,25": 4,
       "7,1": 4,
       "7,4": 4,
       "7,8": 4,
       "7,12": 4,
-      "7,22": 4,
+      "7,25": 4,
       "12,1": 4,
       "12,2": 4,
       "12,3": 4,
@@ -520,12 +526,10 @@
       "17,19": 13,
       "17,20": 13,
       "17,21": 13,
-      "17,22": 12,
+      "17,22": 13,
       "17,23": 13,
       "17,24": 13,
-      "17,25": 13,
-      "17,26": 13,
-      "17,27": 13,
+      "17,25": 4,
       "17,35": 11,
       "17,36": 4,
       "17,37": 4,
@@ -535,7 +539,7 @@
       "18,4": 4,
       "18,8": 4,
       "18,12": 4,
-      "18,22": 4,
+      "18,25": 4,
       "18,35": 14,
       "18,36": 4,
       "18,37": 4,
@@ -568,14 +572,14 @@
     "17,4,1,4",
     "17,8,1,4",
     "18,8,1,4",
-    "17,12,1,10",
-    "18,12,1,10",
-    "6,12,1,10",
-    "7,12,1,10",
-    "6,22,1,6",
-    "7,22,1,6",
-    "17,22,1,6",
-    "18,22,1,6"
+    "17,12,1,13",
+    "18,12,1,13",
+    "17,25,1,6",
+    "18,25,1,6",
+    "6,12,1,13",
+    "7,12,1,13",
+    "6,25,1,6",
+    "7,25,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -596,10 +600,26 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "YBS規格文書"
+    "RelatedDataTableName": "YBS規格文書",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"差戻\"",
+          "GUID": "eaebc3a1-8a21-4893-823a-5605f1b6aea8",
+          "StyleInfo": {
+            "Background": "#FFFFFF00",
+            "Foreground": "#FFFF0000",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//COpkCSM+k/mlb/6MtxLTTTZwS1nAIvY3e+I72qOijdhoB5ffvxo97AMcHEC95o/2V9h5KNSJ1CuT3GMEUDpUS3w6/wmu0bPS4XZrtwPQqs8r20WnMIPQsvf8q9QGfrrQULiZqoxcLIxtfDfJNn45RYT3llXnLvpFwPuOKeU/HYAq74eyHlG3buCm4x38RsGi6/oh3gnWwLy+CAgh9t9PlJSCacolrwFTsMlXHx9sACHa3iwa617BtjTBh9mnn2IvoK2wFAC3wMOAKLmL1Ac2OkfOMM6Y2H7FykKD26oJZ0XFwaHh4M2PetOu4316lxJTf5K5cxllkymSOl5wopkABXM7Fwy3RbHwxmb1vlfqcvURUhqDG+BrlD1Swbwj5zN0Kt9PuTvWVVrC8zGa7zWZ8Ln+plDaeSfErInxlRYCuR9uQcoA9DsaNKBKP4YxStzJaO2SEQIE35RBcUgsV7UuzyykM6jSCaOZ1th92GcXbNmffpLrPfJkECgfzkPs2yeQbq5XpRvbNvLs3VXldVNHIlJfbuEKHdeezPxTBAKIWn+C6j3bkQGS6yHFanVvGf80nJ/CRVrO5uG+YwlQVh6dcuyi1Gt1esyhirVqsRF40hIM6Ff+1D1qn41v63XpAOwHgUitsMvdd5JvOLl0J3hV3vMBcGppBvQbf5E25GbNzVH8K656VoOD0VLYiSS0ODTAPaeRurYZSb3J/EQVd7kTlva7MXfW27iW9AllRvQcwuHvnQDOmRtZJOI6s7xukT3+UAIBNG6xsmK2Su8zNqkfR13656LaT1M2opquc1ef7vWcrS02H/1dIoSxPVV1vwYxeh5cdz321fXZQFD/8+Lx9u6qDvbykL5BqXsMhakjDwWdRLlvTK0egsKbeRP/nP8h0YI7QpuD3irEdfpVgnl+GA==|920
+}//kTohxVS8xzM/CnRvVP14hKCBLlZ4MWUadywFGFUq0wnletUgCOQXyA0pVO0PZc3fSr3MTzWB1ZAu7q0Jq54KkK5iDE06mz3vRBu2GpoyoLKfwSRjy5bS8XMPMmzNDdtG3f9T2R1Ztq9zSHnOnsYpUUNUIkEn7rUhCX1J/B8zKFi+6sPBck7EkRZHAMaEblwHlQ2xu9djF3wBYc8aHDl4Lo8+Env/NtY4xEXXKuCB3p8B80Q8dcuMolBzhGweSoquWd0XbxlYmVXvBQJcxcIkQ/reFqv4G9p6+NlccQO0hwVJ4u8HlgWmyHBB5lYYtMmkERMTdgNd78QdKUzILIx0pBvnP4H1N9cXxWqWk7OpzLU3vthAgztldjX0fRSbwA+ZgAgkM08GJEmncBQtaAS1MQLGWKCveVKIHkxBqq/eHZHQcy9n99UpqgXWUhLyLxVideni+VOmXP8vZXgYl/XWFdf1gzMj3sbV7aNdZzaks/crC4gv/SrfiJ1TqlqEegvxuOrtBRhEwhM8J9VCC8MwFko5mAGnanarfiMS2B1JNDDjE8h/+odAX7dMN6WIYGMVHczIuJhQew3QH6eRVpwf1/FggXcKLOIJqW9F2iQ1Nm2ZOJGw4f3iGf4XH6HQzqRTgSSeOqnpNGHLGgnZkJ7B4BCs3LRUNXQFoz0hDrglev8Ej4DxT96rhOIABW4/BmHZHTffuEY7WIY31GJ4EdLoAkD6m91uLGJGBk45hISuIK6QXptlsClGYaYxSgGcLV1c+S48HFnLH/Hf4u8TZkecro3pBbex5dpOf/+vzZkoinUGROdC5XG4L5slB7NsIUJdpPeZmYEKFVWqAgWmJnfjvgdvf0wUXnqPBPUN6hXq5xcqvTsBZY77pUCTvMnTwn01r/gB8h2aEPNO/2X5/6APww==|920
