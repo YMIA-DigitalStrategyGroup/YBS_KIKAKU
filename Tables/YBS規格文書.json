@@ -435,6 +435,18 @@
       "PrimaryColumn": "細分化コード",
       "ForeignTable": "YBS規格文書",
       "ForeignColumn": "細分化コード"
+    },
+    {
+      "PrimaryTable": "v_YBS規格文書_ワークフロー",
+      "PrimaryColumn": "Who",
+      "ForeignTable": "YBS規格文書",
+      "ForeignColumn": "YBSコード"
+    },
+    {
+      "PrimaryTable": "ユーザー情報ビュー",
+      "PrimaryColumn": "氏名",
+      "ForeignTable": "YBS規格文書",
+      "ForeignColumn": "申請者"
     }
   ],
   "Indexes": []
