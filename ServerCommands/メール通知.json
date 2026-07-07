@@ -94,11 +94,11 @@
                 "IsMultiRecipient": true
               },
               "Subject": "ＹＢＳが承認されました。",
-              "Content": "申請したＹＢＳ文書が承認されました。確認してください。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,ＹＢＳ一覧へ)%]",
-              "ID": "125ba8d7a75a45e1a8257780aaed6308"
+              "Content": "「YBSアプリ」よりメールです。\r\n申請した下記のＹＢＳ文書が承認されました。確認してください。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n[%PageNavigate=(YBS一覧（最新,ＹＢＳ一覧へ)%]",
+              "ID": "72a77e77271140afba548201ed509d63"
             }
           ],
-          "ID": "d9a3532c-fe91-473c-9efe-ac17974cf9f1"
+          "ID": "90494d2f-3bab-479f-95f6-efd0a6783cd2"
         },
         {
           "Condition": {
@@ -138,11 +138,11 @@
                 "IsMultiRecipient": true
               },
               "Subject": "YBSが差戻されました。",
-              "Content": "差戻されました。確認してください。\r\n[=YBSコード]\r\n[=規格名称]\r\n\r\n",
-              "ID": "27d2ba37b2ea41eda1f32c0606f2661a"
+              "Content": "「YBSアプリ」よりメールです。\r\n部門/審議会/委員長のいずれかにより差戻されました。確認してください。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n\r\n[%PageNavigate=(YBS一覧（一時保存_差戻,一覧へ)%]",
+              "ID": "6a0571e444b848c1a5ca21d078db8ab3"
             }
           ],
-          "ID": "8937403d-eba9-43e4-b7e3-2ad10f06f84f"
+          "ID": "545fd75e-5d73-47af-a53e-856a90dc255d"
         },
         {
           "Condition": {
@@ -197,12 +197,12 @@
                         },
                         "IsMultiRecipient": true
                       },
-                      "Subject": "ＹＢＳが申請されましたので、承認処理をお願いします。",
-                      "Content": "以下のＹＢＳが申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "f291733aa106447795c6c8e1ab4a15fc"
+                      "Subject": "ＹＢＳが申請されましたので、処理をお願いします。",
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「新規」申請されました。\r\n「部門長承認待ち」にて確認して、処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "bb15360010074eb7847bc681bfb11aa4"
                     }
                   ],
-                  "ID": "7e8d4da8-cd93-489f-95ed-42587cff330f"
+                  "ID": "5c39d6e2-e6a6-48bc-b6f3-1f1c95055f82"
                 },
                 {
                   "Condition": {
@@ -241,12 +241,12 @@
                         },
                         "IsMultiRecipient": true
                       },
-                      "Subject": "ＹＢＳが改正申請されましたので、承認処理をお願いします。",
-                      "Content": "以下のＹＢＳが改正申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "d2279ec33b0a45d7b42c61b9041d071e"
+                      "Subject": "ＹＢＳが改正申請されましたので、処理をお願いします。",
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「改正」申請されました。\r\n「部門長承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "44e86dbff45541daa0f144593531fa07"
                     }
                   ],
-                  "ID": "28604ca1-51f6-4ee2-9bc8-f18e85c6e546"
+                  "ID": "ac36efda-4128-45cc-a5b4-edcef71334bd"
                 },
                 {
                   "Condition": {
@@ -285,17 +285,17 @@
                         },
                         "IsMultiRecipient": true
                       },
-                      "Subject": "ＹＢＳが廃止申請されましたので、承認処理をお願いします。",
-                      "Content": "以下のＹＢＳが廃止申請されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "6346a6a53ce74f309dcd6336959dfd12"
+                      "Subject": "ＹＢＳが廃止申請されましたので、処理をお願いします。",
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「廃止」申請されました。\r\n「部門長承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "865842484303469787d614ea931c588c"
                     }
                   ],
-                  "ID": "8ff4590a-64fd-40c3-aa8e-5d3e133c88d8"
+                  "ID": "4ef14c17-7dbd-48ea-b9b3-3adb7f531028"
                 }
               ]
             }
           ],
-          "ID": "452126f4-0820-41ee-9b09-062e13748cd3"
+          "ID": "257f2598-229c-42cf-b222-f573d9ebe86f"
         },
         {
           "Condition": {
@@ -351,11 +351,11 @@
                         "IsMultiRecipient": true
                       },
                       "Subject": "ＹＢＳが申請されました。",
-                      "Content": "以下のＹＢＳが申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "3ee8651240844f3498e7a4d0396beecb"
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが申請され、部門長承認されました。\r\n「審議会承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n理由：[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "239a5ac71350481da36780153769665e"
                     }
                   ],
-                  "ID": "a1dea5bd-0202-48e5-a9dd-4aa2b826e71e"
+                  "ID": "b22ff6f7-6a65-4ec5-9bfd-41c51b33651b"
                 },
                 {
                   "Condition": {
@@ -395,11 +395,11 @@
                         "IsMultiRecipient": true
                       },
                       "Subject": "ＹＢＳが改正申請されました。",
-                      "Content": "以下のＹＢＳが改正申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "3848991efc504d52972ece4366c4e4f4"
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが改正申請され、部門長承認されました。\r\n「審議会承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n理由：[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "7212234c566c406ebe36ea2748437777"
                     }
                   ],
-                  "ID": "d754940e-44db-4fd1-bb79-ab5eec1d73d6"
+                  "ID": "c9964f00-24f7-42cb-a15f-bf456e4391b7"
                 },
                 {
                   "Condition": {
@@ -439,16 +439,16 @@
                         "IsMultiRecipient": true
                       },
                       "Subject": "ＹＢＳが廃止申請されました。",
-                      "Content": "以下のＹＢＳが廃止申請され、部門長承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "d0c7dc6aa51943b68b71a11983b26881"
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「廃止」申請され、部門長承認されました。\r\n「審議会承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n理由：[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "04b49a17f64f4cfb8ece79c266284dcb"
                     }
                   ],
-                  "ID": "12aca2ca-714f-4074-9369-c3c4ccb719a2"
+                  "ID": "9bc3e091-8197-4a08-a20c-943d0861db53"
                 }
               ]
             }
           ],
-          "ID": "2e257eef-41e7-4117-85bb-8420010a4dc5"
+          "ID": "4e35f95d-5431-43d3-8a71-a561d6e853d1"
         },
         {
           "Condition": {
@@ -504,11 +504,11 @@
                         "IsMultiRecipient": true
                       },
                       "Subject": "ＹＢＳが申請されました。",
-                      "Content": "以下のＹＢＳが申請され、審議会承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "c35b30e525944ffb80d79eac333c06cd"
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「新規」申請され、審議会承認されました。\r\n「委員長承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n理由：[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "52eadc840c784a2b825f521e1150dcf5"
                     }
                   ],
-                  "ID": "18f28002-ace9-4df6-aca8-088bff21aab6"
+                  "ID": "b05f4ca3-53b0-40f9-a531-f9dad4d184c4"
                 },
                 {
                   "Condition": {
@@ -548,11 +548,11 @@
                         "IsMultiRecipient": true
                       },
                       "Subject": "ＹＢＳが改正申請されました。",
-                      "Content": "以下のＹＢＳが改正申請され、審議会承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "92b8c5df198d4a0381b29293a630fc0d"
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「改正」申請され、審議会承認されました。\r\n「委員長承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n理由：[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "a1f7bdb28a9a4e7581930707e65fd70e"
                     }
                   ],
-                  "ID": "70d46abc-37f6-4791-965d-352e7689511d"
+                  "ID": "d24da47f-6da0-41be-8393-ac00f6e883c4"
                 },
                 {
                   "Condition": {
@@ -592,16 +592,16 @@
                         "IsMultiRecipient": true
                       },
                       "Subject": "ＹＢＳが廃止申請されました。",
-                      "Content": "以下のＹＢＳが廃止申請され、審議会承認されました。確認して処理願います。\r\n[=YBSコード]\r\n[=規格名称]\r\n[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
-                      "ID": "823405fc39324b44a0398e198b8e6b78"
+                      "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「廃止」申請され、審議会承認されました。\r\n「委員長承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称：[=規格名称]\r\n理由：[=理由]\r\n[%PageNavigate=(YBS一覧（承認待ち,一覧へ)%]",
+                      "ID": "df5de17a8dd14af7aa7f7722a83ade14"
                     }
                   ],
-                  "ID": "edd06654-eb67-47f3-b98a-fe2e112fd42b"
+                  "ID": "ebe924a8-0b00-4386-8d2b-424bd4e502ff"
                 }
               ]
             }
           ],
-          "ID": "adb23b6d-bb5d-4091-9fe5-1c5bd31ab032"
+          "ID": "3ccb3933-04ea-43ec-b5da-fcd6883a3b18"
         }
       ]
     }
