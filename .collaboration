@@ -9,16 +9,7 @@
   },
   {
     "ModuleName": "Table/YBS細分化コード",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-09T17:20:27.9127511+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS細分化コード.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Pages/ビルトイン モバイルページ",
@@ -126,31 +117,11 @@
   },
   {
     "ModuleName": "PCPage/細分化コード選択",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-09T17:25:26.6624204+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\細分化コード選択.json",
-      "Pages\\細分化コード選択.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS細分化コードマスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-09T17:22:07.6389492+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS細分化コードマスタ.json",
-      "Pages\\YBS細分化コードマスタ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS分類コードマスタ",
