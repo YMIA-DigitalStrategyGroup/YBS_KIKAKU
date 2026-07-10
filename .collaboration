@@ -233,7 +233,7 @@
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-07-10T10:37:00.0970832+09:00",
+    "LockDateTime": "2026-07-10T10:38:12.0287846+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\文書_情報.json",
@@ -312,7 +312,16 @@
   },
   {
     "ModuleName": "TableView/v_YBS規格文書_ワークフロー",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-10T10:38:12.0302731+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\v_YBS規格文書_ワークフロー.json"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS一覧（一時保存_差戻",
