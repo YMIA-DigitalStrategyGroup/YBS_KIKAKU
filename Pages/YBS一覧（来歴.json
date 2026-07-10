@@ -18,7 +18,6 @@
     "Count": 59
   },
   "Values": {
-    "0,36": "セルのアクセス制御設定予定",
     "1,1": "（YBSコード）",
     "1,8": "（規格名称）",
     "1,36": "詳細情報",
@@ -38,7 +37,23 @@
           }
         ],
         "Text": "詳細情報",
-        "TemplateKey": "_RS_Normal_Style5"
+        "TemplateKey": "_RS_Normal_Style5",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "YBS管理者",
+              "YBS申請可能者"
+            ]
+          }
+        ]
       }
     },
     "2,1": {
@@ -354,4 +369,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//U4KtdmhtCNLezSoWUuUPyTMWt+7k9XH5o78XAs0cv4JBTcgo+H8SHk/c55pu0MkboCNJidgY1vVii1sMMLGHEHe1bk3L0fTQcUB7yYLM54yDMm6qekW9DY3L3E/guirJWg6n/rckZHBw1Wr0BZqcBPzjujO2y9T1y7Sdx7niCJzwM8xedFRMyxSdBPkFtGEyDOUIqMSWnT9kotDVRtYbkVTg1GXq0wCl+2b2N4VdfAV2Q/8CY8uLfw4fPB7JyYJttkD59IhK/+SmQ5s5NZ1M2vpcRZhgTPhze+dLIOA8791E7YgXy2zL/mdMcbfcibOB6C6tWrEs8pIjsrbucypWc4kfcnqTCKW6vcVCjjH0tIqM917oregS70ItJ8BnppeNR9DM1H0eEQkMf0KTGG/wJMkTxIaJb21yE7YdzCaK7ftCeUSCb7thhEjTT2AftM5KOkMutQ7At7U1AsbrmqZ1fFDdMALWmg/X3ngtXOsKx35v+ZrSONx9BVO4Qm/xdWnUSrASb+aTwxxYmKRry6dFYNTMgKvfSMFxPZFngqwe8Qh3tANeA4eRFIpRIKlMZXeBIwpexWEsxYspWBXRY11ZgDyFXwIRYv2PnRkgdbWri9VVfV2iRHHA2DOfdIu3DLCeLBggGJSxPMIpGmca9TsalhaGVgoT3WN55D5zHw2yS3KjN+74g5Ycmgn0pjq8q3EWV61V1aCY2Qc9kxc5E+npBhkzox6ySJrV7ukEyUbBQ9IJ72vB0iPUz9rpQopgean/06OnlzIVX3iImJ2qR3+ttGgD+GStfp7LpqHLq34hmpMQ13TGZgB/ruyJRiN8nZrd1GNR1GrIM4mIqjXV0nbYn8UdN5vWKZoHlmEWiEtnYC3GCny2w8mK6waU18ckstkjSniabcbJPKQkx/Ljsl0+Bg==|920
+}//JI8UmyxkZmIrjh6aQiWdj6PofNBQHD9bCHb+O/+tCNyVVRCFX3BtRxmmbwYwE+joasF1zf48lWZrVaI1QNahmk0GK3MVR5OWw7zOj9WOfwMncrYbPSfMRKv8ZdVsM/gwxj+8LXYE966WJjr5JoZXKP7S9yLzJAlm2YHWhcpj1ZRuJPm5QLvktkvY7bA7CoOzobL1GlMXWGjvJ+epKkAYUxgWPdsCqqPCok6omFvNXCu5m+p4YLZy9agkjBdivkZ0sY0lAn0aOFcR1nYuceCLXCxivODUDp1jgu1Cp0y8RFOxSBHaVrocIgzrm/7KU3oq1Gbsmu5l6deZ7UkrD0XMUFztG6zczsr6RCXWNf2kX3E6qZOoxhuQJizO2gFXhVV4NcZDiTxtxdclqY93S9rcAVp7Nb40oTJkfUVOZz+HrZQqOB2WTQ5rCI2zdZtuch597iP00ctOp9zLigiysySS2s+M5yKXG48fpsuNIu5HtE7NZlQR6Txpo6D1BgjrToG2AXB7Fi4ErxRppfy6WC+2TxrabmBNVlqtEmkWZ5j2Ke3BESleU8kkhv00RLOYLWPKA0bkdhP/cL0jmXaKgWXQsNFw39njBUQmkl3Yfpr/uYi6+o4sXSFQDK9ze6Nj8CJ4rpU+brfdrnqnAHTa64kpwyQSGyF039iNXIJknfeIarTi5R4z0uHHIMmIQxBxuZJ44wAV4j7BeCg+e6SE5OOZaCnrKSs0u23s9Jw4smppQTDQ/mp9xkYLp8W8RnY9voiSF0/fconsAKbeuE0hjU2QSYl81mjwgZi58RZ66kbtI2C5T4XvdfsbBNoSiOd8fpehMu144iqVj99Kgj3CNtBTQbet4bkBurvEyGhdhVhuph9bj/ezuD2XbpJ/YqxDc5cFphp7V12/AuReaYjz8duh9Q==|920
