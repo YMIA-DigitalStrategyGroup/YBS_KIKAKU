@@ -185,18 +185,7 @@
   },
   {
     "ModuleName": "UserService",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-07T09:07:24.8686672+09:00",
-    "ModuleType": 11,
-    "ToRemoveFiles": [
-      "UserServiceDB.sqlite3",
-      "CloudStorageProvider\\data.json",
-      "SecurityProviderV2\\data.json"
-    ]
+    "ModuleType": 11
   },
   {
     "ModuleName": "CustomLibrary",
@@ -334,30 +323,11 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル一括アップロード画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-07T13:31:28.372093+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\添付ファイル一括アップロード画面.json",
-      "Pages\\添付ファイル一括アップロード画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/添付ファイルアップロード",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-09T15:40:21.434527+09:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\添付ファイルアップロード.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
@@ -386,12 +356,6 @@
   },
   {
     "ModuleName": "Table/テスト_YBS規格文書",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-09T16:42:13.9317289+09:00",
     "ModuleType": 7
   },
   {

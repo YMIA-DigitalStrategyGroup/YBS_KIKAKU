@@ -13,13 +13,13 @@
     "Count": 60
   },
   "Values": {
-    "2,3": "C:\\添付ファイル用"
+    "2,3": "\\\\YMIADIGITALSV01\\temp\\YBS規格文書_upload用フォルダ\\規格PDF"
   },
   "AttachInfos": {
     "2,3": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
-        "CellDefaultValue": "C:\\添付ファイル用",
+        "CellDefaultValue": "\\\\YMIADIGITALSV01\\temp\\YBS規格文書_upload用フォルダ\\規格PDF",
         "SavedValidators": [
           {
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
@@ -43,14 +43,6 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=添付ファイル一括アップロード画面!D3"
                 }
-              },
-              {
-                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                "ParamName": "キー",
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=添付ファイル一括アップロード画面!Q10"
-                }
               }
             ],
             "RefreshAfterFinish": true,
@@ -66,7 +58,7 @@
         "TableName": "YBS規格文書",
         "RowIndex": 8,
         "ColumnIndex": 3,
-        "RowCount": 22,
+        "RowCount": 10,
         "ColumnCount": 30,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
@@ -130,6 +122,51 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_Normal_Style2"
       }
+    },
+    "21,3": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "テスト_YBS規格文書",
+        "RowIndex": 21,
+        "ColumnIndex": 3,
+        "RowCount": 12,
+        "ColumnCount": 30,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "22,3": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "テスト_YBS規格文書",
+        "ColumnName": "ID",
+        "GUID": "6f052b38-776d-4222-8b3b-38338cc07f47"
+      }
+    },
+    "22,16": {
+      "NameUsedInJavaScript": "添付ファイル",
+      "BindingInfo": {
+        "TableName": "テスト_YBS規格文書",
+        "ColumnName": "添付ファイル",
+        "GUID": "a18d2f6c-9705-4130-a8f1-acde05015b77"
+      },
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
+        }
+      }
+    },
+    "22,32": {
+      "BindingInfo": {
+        "TableName": "テスト_YBS規格文書",
+        "ColumnName": "添付ファイル",
+        "GUID": "b77b81ec-6a1b-4234-9883-5ca996c58ae0"
+      }
     }
   },
   "StyleDatas": {
@@ -155,24 +192,28 @@
     "CellStyles": {
       "2,3": 0,
       "4,3": 1,
-      "9,16": 2
+      "9,16": 2,
+      "22,16": 2
     },
     "SheetStyle": {
       "FontFamily": 1
     }
   },
   "Spans": [
-    "10,3,20,30",
     "2,3,1,9",
     "9,3,1,13",
     "8,3,1,13",
     "4,3,2,9",
     "9,16,1,16",
     "8,16,1,16",
-    "34,5,3,7",
-    "34,15,2,5",
     "9,38,2,5",
-    "18,39,2,5"
+    "18,39,2,5",
+    "10,3,8,30",
+    "23,3,10,30",
+    "22,3,1,13",
+    "21,3,1,13",
+    "22,16,1,16",
+    "21,16,1,16"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -192,10 +233,10 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "YBS規格文書"
+    "RelatedDataTableName": "テスト_YBS規格文書"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//daistr18/34Haen7xO8WlNwV+Un7WOEn6TygxwCNlIT/9Nivxv1mmSrqg2RAODm7KUhRazvsMMUNQrGXDrxpIr4FpKtgwn6U8xwVk0f8ysj7IAXWdVgw+yiqzehXqpCoIr4hu1QggcnidMRhXPjnbXISGYtOrVw18Imhkx0K8m+GQ/Ld3XHlVUZxxBTljHDtGQnznteE9i2vpt27G4ktjzwcRfjhwDwmE8Dbt15JYlVkJTDrtRpEIL4cn6m11sj9Ct9MX41Bo19wBEcJ8DtXcDmV/UrKlIgbhHzlNw5aRl7dMpaPd/3nzk7P6VSjPaobOyUDYei6nM+MUiwVvtoQpRnGfuoTy9UZt8zJCpBh+qokOdtHog+XY86b6uBXzFQZgPEs2pR6J7UVJqxHTHJZW0JzNGpQ33ahID2KWy6oBt6Er5lZ9wueyZQAAQRk4cj4XrOIrOulSxDyWXUDUPNLiZD/2F+LLIvGhEVcPi0YM5GvgNYkcRSVEIby6/yx8lYCfGK0FlwRMXz0U0itvcve2AEKHWXfFQobgMDxISP1SPZ28/aYh0cxnrkbzMCfG4VwUpDWcw3bz4sd9ahtDalkAM0Twv0Iw5AqtpFmKiZg1ZoDC6XhUNQJSpPuHa5aqmeWwgTWSFAtPgTAZMTvp+F118zPJiiVKRVjPc3tP8LIo8zLezSC7dtQzsG/5lpqVp3ZUPKKg4zKxxrqFOsaNcPPfRc4eu1srqJidrVZMKj5zhAWEWj/m19HZZMqMewM1MnkOzwWBmoRLFH08vMxI7zbRfpmkyrsnUjBmCftUgqk45qhpE0VNuauGh6Hvg50ybdF1e2D14lxVi7Dehc5cTgGOdQ6MXCkjo5uUvqKIBHcDaFgaT7supMzR3rdX1J+I+v1TbOhUHpHEVUfwIFGjHsWvA==|920
+}//lALmOFAkQsFfqgqH8Xm/xVvdu/AZGuZ4+3oS5aIaSix5ScoCMVGH4beaDC6GSEnWp57BLgvMoo7TEaCC0RMysHDbC4IuqemNviKxJ8o2ZbooNjCsUBQpi1yMVdV7WaT6/dhdKtN3Ag4ImvqgkfVjn20JYY5qPtjk3kpZMJLHbBVYcI/urOz9AVQxLeiGDNz+EKMRiggvYEoJNwET1sDzkHwNTJ5rD0/J/0yH5W3Tt/tSN3Rah7Ur3oLlU8XzMhyV614Uo1Nb32Oh27+3pAOXZTqsZS/lZG3TqHDbtyBrtQGn1uAxWmp6Y2htnEZqB6V0ckXSI+tfplTnqhXl0F1J9Tem9DEFbjAzsOuVhjMGMjXv4wv+fllsyXUPd55E3X1wztWExmUppenT/UnjnSuAfVxxqdrha4CR9d3yS9Bfo/CFroFluFzY6RuZkXRKBNC5vR8FbKGBoFKlkdPPcybF9E+J2LbprqgWr01QD5FZTKRnh6UyNUkW0tqsDqdBwv/epbX0/1fBpgJjAicwg1foTo3sVtiwHJ1xRj2LO+BDouunzQEhHi+yaLyXnsYBgIpUuFbRY4c+MT9YVphUU1PmjPndyZbQs+ywoTBBd+uKWS+dS4LF8SwHZ69uB6J7qY/Ts+bW9dnRIQ1DaLYiEA3BERjEOmNovp+/gIA3WhpHUpECqznVubewKjOllXJJSja6QCdHUpBIQx8ma35V6qWmE5VSmXAlRvpFoiy4YHbKq/+fckMN5Qvps+5Q7bDary7deLzYP1ZwNbx9G9BT8w91ZfuA13MrscQ6i+U7lHK1qyusxCNLKnLk1OjriMm1gfRjEL75ESRhX//zZ25zVhMGyTPz9hyolZtV+nCS3SlzIMLEVH1hk8oa79kUaOuZE7VosjuIHaCztl4Dtbnr896Ohw==|920

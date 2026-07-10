@@ -25,11 +25,6 @@
           "Name": "添付ファイル",
           "DataValidationInfo": {},
           "TestData": "C:\\添付ファイル用"
-        },
-        {
-          "Name": "キー",
-          "DataValidationInfo": {},
-          "TestData": "1"
         }
       ],
       "InvokeTriggerTestData": {
@@ -40,7 +35,11 @@
   "Commands": [
     {
       "$type": "OperateFilesCommand.GetFilesFromFolderCommand, OperateFilesCommand",
-      "FolderPath": "C:\\添付ファイル用",
+      "FolderPath": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=添付ファイル"
+      },
+      "IncludeSubFolder": true,
       "ToParameterName": "取得ファイル"
     },
     {
@@ -69,7 +68,7 @@
               "ID": "466ae1eea5d544e9aa4b2ebe25aed58f"
             }
           ],
-          "ID": "2a690610-2e56-4a98-a902-b3a77d728e4b"
+          "ID": "b78a4d46-2636-437c-b1ef-d9ba826a0288"
         },
         {
           "CommandList": [
@@ -83,7 +82,7 @@
               "ID": "ff9904f5748244f99606dc1b1ca8590c"
             }
           ],
-          "ID": "137fd715-66a9-453d-900c-de88242c1666"
+          "ID": "e8e92394-5146-4dc1-af63-c804703b0542"
         }
       ]
     },
@@ -100,27 +99,15 @@
       "CommandList": [
         {
           "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-          "TableName": "YBS規格文書",
+          "TableName": "テスト_YBS規格文書",
+          "UpdateType": "add",
           "ShowConfirm": false,
-          "RowsToUpdate": 1,
-          "RowsToUpdateCondition": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "ColumnBindingInfo": {
-              "TableName": "YBS規格文書",
-              "ColumnName": "添付ファイル",
-              "GUID": "e776055a-8c05-4547-8a6e-74a8813fe6e2"
-            },
-            "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=キー"
-            }
-          },
           "UpdateBindingValues": [
             {
               "BindingInfo": {
-                "TableName": "YBS規格文書",
+                "TableName": "テスト_YBS規格文書",
                 "ColumnName": "添付ファイル",
-                "GUID": "6cd7fe3b-2ff3-40a8-94f3-e14f970111ed"
+                "GUID": "af88a197-e556-4daa-9dde-86a70783ee28"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
