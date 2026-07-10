@@ -393,5 +393,15 @@
     },
     "LockDateTime": "2026-07-09T16:42:13.9317289+09:00",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "PCPage/YBS一覧（管理者",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-10T09:25:40.8921197+09:00",
+    "ModuleType": 1
   }
 ]
