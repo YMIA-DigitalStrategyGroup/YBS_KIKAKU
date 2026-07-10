@@ -65,10 +65,10 @@
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=LEN(添付ファイル)"
               },
-              "ID": "466ae1eea5d544e9aa4b2ebe25aed58f"
+              "ID": "5666696528e34b71869ce0284fde60e3"
             }
           ],
-          "ID": "b78a4d46-2636-437c-b1ef-d9ba826a0288"
+          "ID": "16d5e3c6-85a4-4b46-bf29-e694675149bd"
         },
         {
           "CommandList": [
@@ -79,12 +79,21 @@
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=LEN(添付ファイル)+1"
               },
-              "ID": "ff9904f5748244f99606dc1b1ca8590c"
+              "ID": "b10eb361f98947cc8acaf89c9f34e63e"
             }
           ],
-          "ID": "e8e92394-5146-4dc1-af63-c804703b0542"
+          "ID": "54639564-ea89-4b8f-857b-84e310f1bd53"
         }
       ]
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "YBSコード",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=MID(取得ファイル,5,7)"
+      },
+      "ID": "e8fd514ff3df487cb2a54b06d6fdb403"
     },
     {
       "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
@@ -107,11 +116,22 @@
               "BindingInfo": {
                 "TableName": "テスト_YBS規格文書",
                 "ColumnName": "添付ファイル",
-                "GUID": "af88a197-e556-4daa-9dde-86a70783ee28"
+                "GUID": "af3c4116-9b9e-429a-a8ca-e910d840f560"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=Item"
+              }
+            },
+            {
+              "BindingInfo": {
+                "TableName": "テスト_YBS規格文書",
+                "ColumnName": "YBSコード",
+                "GUID": "884df949-d708-4c75-9e9a-ada3720c06d5"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YBSコード"
               }
             }
           ]
