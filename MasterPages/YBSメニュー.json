@@ -148,8 +148,8 @@
             ]
           },
           {
-            "Value": "マスタメンテ",
-            "Text": "マスタメンテ",
+            "Value": "ＹＢＳ管理者用",
+            "Text": "ＹＢＳ管理者用",
             "IconPath": "Navigation/183_table_2.svg",
             "SelectedIconColor": "Background 1",
             "SelectedIconColorUseItemColor": true,
@@ -160,8 +160,25 @@
             ],
             "SubItems": [
               {
-                "Value": "YBS分類コード",
-                "Text": "YBS分類コード",
+                "Value": "管理者用一覧",
+                "Text": "管理者用一覧",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "YBS一覧（管理者"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "YBS分類コードメンテ",
+                "Text": "YBS分類コードメンテ",
                 "SelectedIconColor": "Background 1",
                 "SelectedIconColorUseItemColor": true,
                 "IconColorUseItemColor": true,
@@ -177,8 +194,8 @@
                 ]
               },
               {
-                "Value": "YBS細分化コード",
-                "Text": "YBS細分化コード",
+                "Value": "YBS細分化コードメンテ",
+                "Text": "YBS細分化コードメンテ",
                 "SelectedIconColor": "Background 1",
                 "SelectedIconColorUseItemColor": true,
                 "IconColorUseItemColor": true,
@@ -194,8 +211,8 @@
                 ]
               },
               {
-                "Value": "権限",
-                "Text": "権限",
+                "Value": "権限メンテ",
+                "Text": "権限メンテ",
                 "SelectedIconColor": "Background 1",
                 "SelectedIconColorUseItemColor": true,
                 "IconColorUseItemColor": true,
@@ -372,4 +389,4 @@
       "Size": "1280,104"
     }
   ]
-}//fRyZHvq7QvEKJqbMNjLFB2+EBr2iozIPnin34HAyTzEFW95dtyA7MVmNkz/qC5IorcnRgIXte1qtcsfCFZHgGJ+KftOPlgQ8L5qOAdX7y0+D+A2hvX6YySihcvkxiskSduVs73r7zoilKndoMP9J9DQhkVbUZdZNhz0uayrPNam1N30mUN9c20RnodBWEfKU9DgjIQiUYy/bC92Ibt4sajcFswBBQL3FBIB6I1yQtixoyRZMzOOwqBe07oSnm/WWtT1cA1uhQDwRAwAKfIZT6RHyWUCOZjhxv46rDmPDpi7mUmiI6F+dac66LUHVCdKqiOkOO3BNdbXu76s3rZB9MzhaCOu6g/RN6mATr6YvgSC/Ogv7zpQ71Y2hdwHn7g0xdbJl9mcnvPJ1m9HdA62mZunEKWr/DLAPMIsogLzxYuuTE/CzCdZuJd6HbfBN8J+HYYmzcFI07Jm0dgtPGy/YLWJwNaGdwqaPmhuGG7b5LLvaTPq8wQPFOasVfHdhpbdt/4owAenIHO4svSVgZeifJVjcvd8YaOtGdyaTgzeiAi8Vp/C7vumueuTSqQIuY1+eyCJQiDp9hxECfFLW10i1HB2HkYSvvz8cFcJjSLiy9WNUmCzTbeMqJyOz167kA6itW6m/D2JIVnhu8ZuOrrBR+J+/L6f2BiUR86gO+m50PXhNMZaMzOR1nnVOCx1fjrAVBVXah9z/vDQotDnxiT7H98r+L047hSkwnhL6SP8s/YZz4N+ATdQsEhZV9ai91cw6RJA3+LPcyGn/nlp2s2cb/XJliAii/ccC5aiXCMHxuSzJZTjoUl7W7lSIYp+TrmSEt5LlYU+DiG7laM1HMLIut3v17O380nsPlFrJGrW8gTpUiBlQ/sKWae5sastOE570wAJXDTVJ2GRy6W92JjQXAQ==|920
+}//2fk10igjkHB5v1mG9td/Tkrcq+/kuQwr/PXoOtqY43hD7mvO1+Y4+W+ftI+C9oga8SjeW/KzN3c/0DnpfRKiE6fbPinrcqiR2ooMO82kmOe7BmShJKCyRbFRia4V3U+N21JWguae5e+mNpsZMjv2pINQJrx/ZoIMcd0fi+0zhvZON44YMPguf5O7P+ET013Q+tYkPnQ8tKzgQf3Byv927aaPc275tlOcWgdF9r14ZgMC7VSmwACnqToIfKbsLD4ZifTdJaEKy7i7e4HznMiw3vKeeqNYsHHk+gWgi1iKaYFkLto/YQPfBhujo5px+4e/yo4ShRiquadwJ1lhweeEZOCwE/CNpN0dTfnP5+4/F71fVw/lVLX2KX8qgp/m0uqAiDvlgBJ5FzBeFeIOmTt6LhHCsHJ7aei/mjqQiJJ+tNoNBMgArtReYB5LiRmkGfgH2kG8ksUVIco1ynHC93xo6r1sGAMdCzai3iEjNMkoVMXO5AeiJUCV39LCv2GhRRpM+XtiTTQkAwh66mlEFgzZmZx6UmDOAATQ76o09Ag7I90UZ5eb7/FlAn9YBaXkdNfTa+T66tNl9ZoHBKJRkIySMb/GLe/vH10IYte7n9bgXrW/UAR851JExnVfGjBtMrKqEjQk5MURibo7L4IUk31oCJbbHq2DxR7T6jjN766lh40gMGFMeejl88kJqI/FMGiGY3wWkSJQzZlO8YxN3PbPz1wfZjlggvCr8r/A17HyuCyLIdPKJYAKMsfjqt6Cwqpkod5YyhCOEK0cENTwakUn73hmLfn135GO+l4Bi5d/he/RLFdBI17XbqdXxOWXLsYSEJ689JKscbxTnZ3PXJ89O9EPr0OnYzTdc2xNJ0wmzkPEyNPPSm2R+WttEkWsibGckAjv0VVeyXeojSIDJKo7IA==|920

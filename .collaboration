@@ -121,31 +121,11 @@
   },
   {
     "ModuleName": "PCPage/YBS細分化コードマスタ",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-10T09:58:28.8898976+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS細分化コードマスタ.json",
-      "Pages\\YBS細分化コードマスタ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS分類コードマスタ",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-10T09:58:52.1247028+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS分類コードマスタ.json",
-      "Pages\\YBS分類コードマスタ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
@@ -161,17 +141,7 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-10T09:28:16.674843+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\YBSメニュー.json",
-      "MasterPages\\YBSメニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -396,17 +366,7 @@
   },
   {
     "ModuleName": "PCPage/YBS権限管理",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-10T09:58:02.8124355+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS権限管理.json",
-      "Pages\\YBS権限管理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Table/YBS_審議会コメント",
@@ -418,17 +378,7 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル登録",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-10T09:57:48.2478527+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\添付ファイル登録.json",
-      "Pages\\添付ファイル登録.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/メール通知",
@@ -446,22 +396,10 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（管理者",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-10T09:25:40.8921197+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/YBS管理者",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-10T09:57:30.2481301+09:00",
     "ModuleType": 6
   }
 ]
