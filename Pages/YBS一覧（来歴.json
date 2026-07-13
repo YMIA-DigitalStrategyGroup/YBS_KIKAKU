@@ -9,24 +9,29 @@
   },
   "Cols": {
     "InLogicalVisibleIndexes": [
-      54,
-      55,
       56,
       57,
-      58
+      58,
+      59,
+      60
     ],
-    "Count": 59
+    "Count": 61
   },
   "Values": {
     "1,1": "（YBSコード）",
     "1,8": "（規格名称）",
-    "1,36": "詳細情報",
+    "1,38": "詳細情報",
     "3,2": "改正",
     "3,5": "区分",
-    "18,37": "閉じる"
+    "3,29": "申請者",
+    "3,35": "申請者ID",
+    "18,39": "閉じる"
+  },
+  "Formulas": {
+    "4,29": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AJ5),\"null\",\"'\"&AJ5&\"'\"))"
   },
   "AttachInfos": {
-    "1,36": {
+    "1,38": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -77,7 +82,7 @@
         "RowIndex": 3,
         "ColumnIndex": 1,
         "RowCount": 13,
-        "ColumnCount": 53,
+        "ColumnCount": 55,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
@@ -143,14 +148,18 @@
         "GUID": "8c2f93a1-88ad-4485-8e27-9016aa0949a5"
       }
     },
-    "4,26": {
+    "4,29": {
+      "NameUsedInJavaScript": "申請者"
+    },
+    "4,35": {
+      "NameUsedInJavaScript": "申請者ID",
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請者",
         "GUID": "d3ea3fae-47b5-449c-a13d-6833dc6d35cf"
       }
     },
-    "4,33": {
+    "4,38": {
       "NameUsedInJavaScript": "最終更新者_氏名",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -162,7 +171,7 @@
         }
       }
     },
-    "4,38": {
+    "4,43": {
       "NameUsedInJavaScript": "最終更新日時",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -170,7 +179,7 @@
         "GUID": "7bde17cc-e0a7-45a0-8a37-53e36ad27e15"
       }
     },
-    "18,37": {
+    "18,39": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -232,6 +241,12 @@
       },
       {
         "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
         "Formatter": 6
       }
     ],
@@ -270,8 +285,8 @@
       "1,22": 1,
       "1,23": 1,
       "1,24": 1,
-      "1,36": 1,
-      "1,40": 1,
+      "1,38": 1,
+      "1,42": 1,
       "2,1": 2,
       "2,2": 3,
       "2,3": 3,
@@ -299,34 +314,63 @@
       "3,3": 5,
       "3,4": 5,
       "3,5": 6,
-      "3,8": 1,
-      "3,26": 1,
-      "3,33": 1,
+      "3,8": 7,
+      "3,9": 5,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 5,
+      "3,19": 5,
+      "3,20": 5,
+      "3,21": 5,
+      "3,22": 5,
+      "3,23": 5,
+      "3,24": 5,
+      "3,25": 5,
+      "3,26": 5,
+      "3,27": 5,
+      "3,28": 5,
+      "3,29": 7,
+      "3,30": 5,
+      "3,31": 5,
+      "3,32": 5,
+      "3,33": 5,
+      "3,34": 5,
+      "3,35": 7,
+      "3,36": 5,
+      "3,37": 5,
       "3,38": 1,
+      "3,43": 1,
       "4,5": 1,
       "4,8": 1,
-      "4,26": 1,
-      "4,33": 1,
-      "4,38": 7,
-      "18,37": 1,
-      "18,38": 1,
+      "4,29": 1,
+      "4,35": 1,
+      "4,38": 1,
+      "4,43": 8,
       "18,39": 1,
       "18,40": 1,
       "18,41": 1,
-      "19,37": 1,
-      "19,38": 1,
+      "18,42": 1,
+      "18,43": 1,
       "19,39": 1,
       "19,40": 1,
-      "19,41": 1
+      "19,41": 1,
+      "19,42": 1,
+      "19,43": 1
     },
     "SheetStyle": {
       "FontFamily": 0
     }
   },
   "Spans": [
-    "18,37,2,5",
-    "5,1,11,53",
-    "1,36,2,4",
+    "18,39,2,5",
+    "5,1,11,55",
+    "1,38,2,4",
     "2,1,1,6",
     "1,1,1,6",
     "2,8,1,17",
@@ -335,14 +379,16 @@
     "3,2,1,3",
     "4,5,1,3",
     "3,5,1,3",
-    "4,8,1,18",
-    "3,8,1,18",
-    "4,26,1,7",
-    "3,26,1,7",
-    "4,33,1,5",
-    "3,33,1,5",
-    "4,38,1,8",
-    "3,38,1,8"
+    "3,8,1,21",
+    "4,8,1,21",
+    "3,29,1,6",
+    "4,29,1,6",
+    "3,35,1,3",
+    "4,35,1,3",
+    "3,38,1,5",
+    "4,38,1,5",
+    "3,43,1,8",
+    "4,43,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -369,4 +415,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//JI8UmyxkZmIrjh6aQiWdj6PofNBQHD9bCHb+O/+tCNyVVRCFX3BtRxmmbwYwE+joasF1zf48lWZrVaI1QNahmk0GK3MVR5OWw7zOj9WOfwMncrYbPSfMRKv8ZdVsM/gwxj+8LXYE966WJjr5JoZXKP7S9yLzJAlm2YHWhcpj1ZRuJPm5QLvktkvY7bA7CoOzobL1GlMXWGjvJ+epKkAYUxgWPdsCqqPCok6omFvNXCu5m+p4YLZy9agkjBdivkZ0sY0lAn0aOFcR1nYuceCLXCxivODUDp1jgu1Cp0y8RFOxSBHaVrocIgzrm/7KU3oq1Gbsmu5l6deZ7UkrD0XMUFztG6zczsr6RCXWNf2kX3E6qZOoxhuQJizO2gFXhVV4NcZDiTxtxdclqY93S9rcAVp7Nb40oTJkfUVOZz+HrZQqOB2WTQ5rCI2zdZtuch597iP00ctOp9zLigiysySS2s+M5yKXG48fpsuNIu5HtE7NZlQR6Txpo6D1BgjrToG2AXB7Fi4ErxRppfy6WC+2TxrabmBNVlqtEmkWZ5j2Ke3BESleU8kkhv00RLOYLWPKA0bkdhP/cL0jmXaKgWXQsNFw39njBUQmkl3Yfpr/uYi6+o4sXSFQDK9ze6Nj8CJ4rpU+brfdrnqnAHTa64kpwyQSGyF039iNXIJknfeIarTi5R4z0uHHIMmIQxBxuZJ44wAV4j7BeCg+e6SE5OOZaCnrKSs0u23s9Jw4smppQTDQ/mp9xkYLp8W8RnY9voiSF0/fconsAKbeuE0hjU2QSYl81mjwgZi58RZ66kbtI2C5T4XvdfsbBNoSiOd8fpehMu144iqVj99Kgj3CNtBTQbet4bkBurvEyGhdhVhuph9bj/ezuD2XbpJ/YqxDc5cFphp7V12/AuReaYjz8duh9Q==|920
+}//JbqeyzwNt2ONBQPy7OD0ntMOsrm++0hgvoegundxAPqSMsEVAkGylNnHTUpTlyCZ/8GnyP+ad//lYS+aja+qfL2nAeTHmdv2ckoGBIZLR0yek/6XktkZEXQbtDwttLse8IWhXwGTl1A4zNbqyFsBjqOH1My0yWYALPMDnIQ+yNmldn0wTZNGchu29gcCuEWIwSEPTw9HXZ0ffCopOldYXjUIvuaT92hdc0Cz3oBq1YcWKvnZTpWsUsfnNJPA81xxrZaZIhHR2mUtWaP2uz5UvCIdwLH1Bf3ZBMHilLC0CE8NEb/m25sWKt2rRDRNsx95QWNlE3qgHYLl2SGon/qcftwuAbvzhzlIbvHhjXNmSOT1dDDRD+LQN4JwIU3mZYH8KqehdfdnUZjWY/qqRrlIdYdH3htNrjauPgkdt8mpK1co5rHyYnhLPrq3/PH2hADg0BNWZK4eOBXXIxOenOS2589vLDKjKtMAgamVu736kHB5OSVGZVDViOel1MrZPY3l2TTHjTSobxLnZNkfB8y/ltROdTG0yFs3r+c4YTqTrvUy5RCE87CQEuSbbMr8AbqdMuVNi8SscvdqCfZxleIC0pOIu2jgUnzXFXIgDBETyo025MXiIhSEuIHMH7hi4G5/sGIUG0t8LLoMsHmXsG7b5LBbTo/d2mRytWykIo1KjszBUVJgvW1UPkG+XiTGF1W5nGHmFEydrAquoecbC/hBwFDJVMHK28xwso95OnEnK9Pl3pwaB2jH36QO1xkORfRyVYh0JiqkK1cQ8uOeyFdDabeZeTavMg9mR3FHQh1Upb5+PfHvYe9FeE6Ovc9v6MDOJS7Y7wDFQgLfeg39gXQwRce5cWzgKyy+yCVwhxWBoPxtN8RuUET5VA9/+KzF2DyjXn4GxT2imIVV8+YiZjCYEQ==|920

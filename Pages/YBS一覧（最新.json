@@ -22,7 +22,7 @@
     "Count": 38
   },
   "Cols": {
-    "Count": 65
+    "Count": 64
   },
   "Values": {
     "0,2": "＜最新文書一覧＞",
@@ -33,11 +33,10 @@
     "2,22": "「全表示」に戻ります。",
     "4,2": "ＹＢＳ\r\nコード",
     "4,6": "改正\nコード",
-    "4,37": "見直し\n必要",
-    "4,40": "文書\n区分",
-    "4,47": "最終更新日",
-    "4,51": "最終更新者",
-    "4,58": "申請者氏名",
+    "4,39": "見直し\n必要",
+    "4,42": "文書\n区分",
+    "4,49": "最終更新日",
+    "4,53": "最終更新者",
     "16,1": "来歴表示",
     "16,5": "YBS一覧（詳細",
     "26,1": "承認者表示",
@@ -56,8 +55,7 @@
     "36,30": "廃止"
   },
   "Formulas": {
-    "5,37": "IFS(AO6=\"廃止\",\"\",ROUND((TODAY()-AR6)/365,2)>=0.1,\"★\",TRUE,\"\")",
-    "5,58": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=メールアドレス eq \"&IF(ISBLANK(BE6),\"null\",\"'\"&BE6&\"'\"))",
+    "5,39": "IFS(AQ6=\"廃止\",\"\",ROUND((TODAY()-AT6)/365,2)>=0.1,\"★\",TRUE,\"\")",
     "27,22": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AC28),\"null\",\"'\"&AC28&\"'\"))"
   },
   "AttachInfos": {
@@ -153,7 +151,7 @@
         "RowIndex": 4,
         "ColumnIndex": 1,
         "RowCount": 11,
-        "ColumnCount": 64,
+        "ColumnCount": 63,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
           "SubConditions": [
@@ -253,7 +251,7 @@
         "GUID": "d775d813-59e2-4990-9ca4-4026c8e22fce"
       }
     },
-    "5,23": {
+    "5,25": {
       "NameUsedInJavaScript": "規格PDF",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -267,7 +265,7 @@
         }
       }
     },
-    "5,29": {
+    "5,31": {
       "NameUsedInJavaScript": "適用範囲",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -275,7 +273,7 @@
         "GUID": "1d46673f-18f1-445e-a177-967a8641cd45"
       }
     },
-    "5,33": {
+    "5,35": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "分類コード",
@@ -287,12 +285,12 @@
         }
       }
     },
-    "5,37": {
+    "5,39": {
       "RulesGuidList": [
         "2409001a-a408-4850-8a54-45b6e45cbe67"
       ]
     },
-    "5,40": {
+    "5,42": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "現行_旧版",
@@ -302,7 +300,7 @@
         "a727c80e-c79a-46fa-b45d-d61fa4c911f2"
       ]
     },
-    "5,43": {
+    "5,45": {
       "NameUsedInJavaScript": "施行日",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -310,7 +308,7 @@
         "GUID": "5b588053-ee2c-49a0-b41b-5d4b301c4100"
       }
     },
-    "5,47": {
+    "5,49": {
       "NameUsedInJavaScript": "最終更新日",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -318,7 +316,7 @@
         "GUID": "362fcbc5-13be-48b7-9448-0e5e2b0b0276"
       }
     },
-    "5,51": {
+    "5,53": {
       "NameUsedInJavaScript": "最終更新者",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -330,18 +328,11 @@
         }
       }
     },
-    "5,54": {
+    "5,56": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_State",
         "GUID": "0245c345-dd8b-476e-8436-168896132436"
-      }
-    },
-    "5,56": {
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "申請者",
-        "GUID": "25385dcc-9616-4ffa-8c19-3f558cf9a7f5"
       }
     },
     "16,5": {
@@ -411,7 +402,8 @@
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "ColumnOperation": 2,
-        "CommitType": 1
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true
       }
     },
     "27,5": {
@@ -819,7 +811,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "9c78ccfc-943f-447b-b927-19a44fc7326d"
+                "ID": "2354f13c-def9-4a05-82ed-e0229c1b77e1"
               },
               {
                 "CommandList": [
@@ -888,7 +880,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "b292a29e-73b6-40a5-9a05-0e8571b7471d"
+                "ID": "329ad562-23dc-4bb4-b213-9eaeb0b9e545"
               }
             ]
           }
@@ -1153,7 +1145,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "36bd0d28-3ad7-4742-94d3-4be346df775e"
+                "ID": "c7ace680-fa9f-43a5-9132-4fdd8cfd4c0c"
               },
               {
                 "CommandList": [
@@ -1222,7 +1214,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "c15bba48-5143-4933-8036-99c22aaef9a3"
+                "ID": "b5131225-dd69-4d3e-8f6f-3433b32bae82"
               }
             ]
           }
@@ -1330,22 +1322,15 @@
         "BorderRight": null
       },
       {
+        "FontFamily": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
         "Background": 8,
         "FontFamily": 5,
         "WordWrap": true
-      },
-      {
-        "FontFamily": 5,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 5,
-        "Formatter": 1,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderRight": null
       },
       {
         "FontFamily": 5,
@@ -1496,36 +1481,43 @@
       "4,6": 15,
       "4,7": 14,
       "4,8": 14,
-      "4,9": 7,
-      "4,23": 7,
-      "4,29": 7,
-      "4,33": 7,
-      "4,37": 16,
-      "4,40": 16,
-      "4,43": 7,
-      "4,47": 7,
-      "4,51": 7,
-      "4,54": 17,
-      "4,56": 17,
-      "4,57": 14,
-      "4,58": 18,
-      "4,59": 14,
-      "4,60": 14,
-      "4,61": 14,
+      "4,9": 16,
+      "4,10": 14,
+      "4,11": 14,
+      "4,12": 14,
+      "4,13": 14,
+      "4,14": 14,
+      "4,15": 14,
+      "4,16": 14,
+      "4,17": 14,
+      "4,18": 14,
+      "4,19": 14,
+      "4,20": 14,
+      "4,21": 14,
+      "4,22": 14,
+      "4,23": 14,
+      "4,24": 14,
+      "4,25": 7,
+      "4,31": 7,
+      "4,35": 7,
+      "4,39": 17,
+      "4,42": 17,
+      "4,45": 7,
+      "4,49": 7,
+      "4,53": 7,
+      "4,56": 7,
       "5,6": 7,
       "5,9": 7,
-      "5,23": 19,
-      "5,29": 7,
-      "5,33": 7,
-      "5,37": 20,
-      "5,40": 21,
-      "5,43": 22,
-      "5,47": 23,
-      "5,51": 7,
-      "5,54": 7,
+      "5,25": 18,
+      "5,31": 7,
+      "5,35": 7,
+      "5,39": 19,
+      "5,42": 20,
+      "5,45": 21,
+      "5,49": 22,
+      "5,53": 7,
       "5,56": 7,
-      "5,58": 7,
-      "16,5": 24,
+      "16,5": 23,
       "16,6": 7,
       "16,7": 7,
       "16,8": 7,
@@ -1576,7 +1568,7 @@
       "16,53": 7,
       "16,54": 7,
       "16,55": 7,
-      "17,5": 24,
+      "17,5": 23,
       "17,6": 7,
       "17,7": 7,
       "17,8": 7,
@@ -1627,7 +1619,7 @@
       "17,53": 7,
       "17,54": 7,
       "17,55": 7,
-      "18,5": 24,
+      "18,5": 23,
       "18,6": 7,
       "18,7": 7,
       "18,8": 7,
@@ -1678,7 +1670,7 @@
       "18,53": 7,
       "18,54": 7,
       "18,55": 7,
-      "19,5": 24,
+      "19,5": 23,
       "19,6": 7,
       "19,7": 7,
       "19,8": 7,
@@ -1729,7 +1721,7 @@
       "19,53": 7,
       "19,54": 7,
       "19,55": 7,
-      "20,5": 24,
+      "20,5": 23,
       "20,6": 7,
       "20,7": 7,
       "20,8": 7,
@@ -1780,7 +1772,7 @@
       "20,53": 7,
       "20,54": 7,
       "20,55": 7,
-      "21,5": 24,
+      "21,5": 23,
       "21,6": 7,
       "21,7": 7,
       "21,8": 7,
@@ -1831,7 +1823,7 @@
       "21,53": 7,
       "21,54": 7,
       "21,55": 7,
-      "22,5": 24,
+      "22,5": 23,
       "22,6": 7,
       "22,7": 7,
       "22,8": 7,
@@ -1882,7 +1874,7 @@
       "22,53": 7,
       "22,54": 7,
       "22,55": 7,
-      "23,5": 24,
+      "23,5": 23,
       "23,6": 7,
       "23,7": 7,
       "23,8": 7,
@@ -1937,19 +1929,19 @@
       "26,6": 7,
       "26,7": 7,
       "26,8": 7,
-      "26,9": 17,
-      "26,10": 17,
-      "26,11": 17,
-      "26,12": 17,
-      "26,13": 17,
-      "26,14": 17,
-      "26,15": 17,
-      "26,16": 17,
-      "26,17": 17,
-      "26,18": 17,
-      "26,19": 17,
-      "26,20": 17,
-      "26,21": 17,
+      "26,9": 16,
+      "26,10": 16,
+      "26,11": 16,
+      "26,12": 16,
+      "26,13": 16,
+      "26,14": 16,
+      "26,15": 16,
+      "26,16": 16,
+      "26,17": 16,
+      "26,18": 16,
+      "26,19": 16,
+      "26,20": 16,
+      "26,21": 16,
       "26,22": 7,
       "26,23": 7,
       "26,24": 7,
@@ -1965,11 +1957,11 @@
       "26,34": 7,
       "26,35": 7,
       "26,36": 7,
-      "26,37": 17,
-      "26,38": 17,
-      "26,39": 17,
-      "26,40": 17,
-      "26,41": 17,
+      "26,37": 16,
+      "26,38": 16,
+      "26,39": 16,
+      "26,40": 16,
+      "26,41": 16,
       "26,42": 7,
       "26,43": 7,
       "26,44": 7,
@@ -2009,7 +2001,7 @@
       "27,30": 7,
       "27,31": 7,
       "27,32": 7,
-      "27,33": 23,
+      "27,33": 22,
       "27,34": 7,
       "27,35": 7,
       "27,36": 7,
@@ -2177,18 +2169,18 @@
       "33,35": 7,
       "33,36": 7,
       "34,4": 8,
-      "34,8": 25,
+      "34,8": 24,
       "34,9": 7,
       "34,10": 7,
       "34,11": 7,
       "34,12": 7,
-      "36,2": 26,
+      "36,2": 25,
       "36,3": 7,
       "36,4": 7,
       "36,5": 7,
       "36,6": 7,
       "36,7": 7,
-      "36,15": 27,
+      "36,15": 26,
       "36,16": 7,
       "36,17": 7,
       "36,18": 7,
@@ -2249,35 +2241,7 @@
     "36,25,2,4",
     "36,30,2,4",
     "36,2,2,6",
-    "5,2,1,4",
-    "4,2,1,4",
-    "5,6,1,3",
-    "4,6,1,3",
-    "5,9,1,14",
-    "4,9,1,14",
-    "5,23,1,6",
-    "4,23,1,6",
-    "5,29,1,4",
-    "4,29,1,4",
-    "5,33,1,4",
-    "4,33,1,4",
-    "5,37,1,3",
-    "4,37,1,3",
-    "5,40,1,3",
-    "4,40,1,3",
-    "5,43,1,4",
-    "4,43,1,4",
-    "5,47,1,4",
-    "4,47,1,4",
-    "5,51,1,3",
-    "4,51,1,3",
-    "5,54,1,2",
-    "4,54,1,2",
-    "4,56,1,2",
-    "5,56,1,2",
-    "4,58,1,4",
-    "5,58,1,4",
-    "6,1,9,64",
+    "6,1,9,63",
     "34,8,1,5",
     "16,5,8,51",
     "28,5,3,48",
@@ -2300,7 +2264,31 @@
     "26,47,1,3",
     "27,47,1,3",
     "26,50,1,3",
-    "27,50,1,3"
+    "27,50,1,3",
+    "5,2,1,4",
+    "4,2,1,4",
+    "5,6,1,3",
+    "4,6,1,3",
+    "4,9,1,16",
+    "5,9,1,16",
+    "4,25,1,6",
+    "5,25,1,6",
+    "4,31,1,4",
+    "5,31,1,4",
+    "4,35,1,4",
+    "5,35,1,4",
+    "4,39,1,3",
+    "5,39,1,3",
+    "4,42,1,3",
+    "5,42,1,3",
+    "4,45,1,4",
+    "5,45,1,4",
+    "4,49,1,4",
+    "5,49,1,4",
+    "4,53,1,3",
+    "5,53,1,3",
+    "4,56,1,4",
+    "5,56,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2369,4 +2357,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//IRFHP82IctUs1L2OjRV7PveaeiBjbGWWFlBhbpGd1J50q7SPx5Zxk0IQPA07jOeKJbAazEX1jXRIXYxuX4reDZYlrEp5hDzOcS8CNENzWJk0gFrhDLPgz1qN1UVWO47BcIjgpOyzymqOynNMQTL6ftcqW4QF8QJlRpGQh7kiYwbaBNgdJDmWtQ/WRLWbU26cNirs4M3KM4Os6v5mtAmRwgPFVO5/HbxpL0cNACaWQ3u4Iw059ybaVy+VHJJAw2Xl2Xf4LTDfIQ1dCZJuURmolv5PZxssU1BGt3c3fFR47Gn8kfys1SiH08WJyE7TBaQ6PEYhOrks14PoML5ArcLdodntPNHSc76IO1/du9f5EFn2Py4kcBccEvaRMI1qPXmQeW4US/Qy3b5mKDlh9PlMb0OX2w60SXQ4Pcmo4UmSh7e1zMjA15Tpz8UXHDgLLRwxYcy8ZR/cEyriadzbvQSK5nar1J0E/0Zy/vtz2Y2f+zDMYvae4TBnKCzw+W9uoAfne2QrkRG6HtPLhujGl0pvIvNCxlOeCkRiT2jVg2dUpUvUXS9sJC/saQYhrEQQCcXQENwBeUFMHmU/cM3QIzSGTBgskL4AanCA3+FK+RXYlMa0fnQMDxekcO/IGQQ/4a29CF/6sXaILcDHWHFX9I0SgZKFJy9X+X7HFlyoOLZTHZFV7NU3wazHyqUSD5ppaUtOjzZ6FK3F7gcATwf/eXZtqJ5FB772d4UvSQVaQiV7GhsmhMrh11Zl5QKpERej5qCNqayErnMfOAD25vkzztyI3k6CNIBJmZre5GVzdU1L8EQHulcdq4WeV668CKJqrwTs81dUKW6NmJNr9ICOjVz6KeNOSvPcKgkrb2KLN//PFuCt38VDpUZ8HixNjN7wlWmU+mDmarFTFIz6ZviJ8Y16Tw==|920
+}//S8+8glCVaLmC5uPKgL2UkADR3CmFXXj8wKr7T2ELCjlQ4C5SgvVnptm+A/NIy9xm3gBySZEcESG4PsR4lkwCDyO0ogpa0XhRrYLSK1QtzJqweSzeJYLvc/f4c/RNsWeZ5rsvWv31NH9jcbgQhsZeK0FjuHvp+bKRard/KgHtyTAL37MPTA3vb1HQZ3rbNaFZ28zGXHW2xFLqPzsVFG/VMGoL5lCoLog9b+oH8K1oPgU8Qz7gW6a2X06pGgTBcemGVGoYwPaT6hf9nQxgLW+XGzHbPh4lc/Y3cQPih9M+H/2HzbG9mQ6uE67ckDW/fRi+lfcym6Ip3MPM4Bz8bQ7eVualt9UukQpOwFsCJei6HTyxv8NDqvxwoI0hNMtUApSKDb5B8giyQP8+6beYIZfB8NWcXW+hNjfv5JaoXgb3cH/hjTKUVbdinzK8bwDm3R9st5e7dN4ZUY0ZhcW2Y7yDyPE2ZssZGx/66vruq8V7Fgq6bTaTp5zC273/3fgvJrdDaQ6lBgVa2UB9xCP1FBLLOqbuuPSmjRWn8OEkIrR/5J+MIpem5v3MnqOselvpvRQ4CnIEtaNn/J/1Nx4KIcDPk7bYz6hVemo5aUZeXlWJlrsUX8pSlAekwmaeh8z7ee2s6c2iiDJi6+dQ9VY5O1uMjMTMMYlcEj1sBQrmwrW4T2Z7Tike89Wvc8Q/xLeFYE3gUwA+7CBJf/YhZL0UfASMgskeisISRkgw7v9erP5Btc5uN+yvxUahcVLeFgls4FD2VzrtFB2o1UpdXpRE6nw/JZUNqG+KiPH16DEoDezxdi8m1s6ccX6SFQDoavrE9TSK/Tvk89//CO0X69S3gnDKhymh65qjsoCAiWf1X/6n9BVFHkP7pWVD01OKTpObRCuPYGwni11A3Gb+YoOfRjCYkQ==|920
