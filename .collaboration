@@ -450,7 +450,16 @@
   },
   {
     "ModuleName": "Table/テスト_YBS規格文書",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-13T16:10:35.6780783+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\テスト_YBS規格文書.json"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS一覧（管理者",
