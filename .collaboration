@@ -129,17 +129,7 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（最新",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-13T10:41:27.2954287+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（最新.json",
-      "Pages\\YBS一覧（最新.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/文書申請（改正",
@@ -305,31 +295,11 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（一時保存_差戻",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-13T10:57:21.6657817+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（一時保存_差戻.json",
-      "Pages\\YBS一覧（一時保存_差戻.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/コメント表示",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-13T10:57:21.6653261+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\コメント表示.json",
-      "Pages\\コメント表示.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（承認待ち",
@@ -337,31 +307,11 @@
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-13T10:57:21.6656598+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\フロー_承認処理.json",
-      "Pages\\フロー_承認処理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-13T10:57:21.6654785+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\フロー_委員コメント.json",
-      "Pages\\フロー_委員コメント.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS申請メニュー",
