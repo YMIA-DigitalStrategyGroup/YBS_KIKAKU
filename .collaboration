@@ -305,7 +305,17 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（一時保存_差戻",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-13T10:57:21.6657817+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS一覧（一時保存_差戻.json",
+      "Pages\\YBS一覧（一時保存_差戻.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/コメント表示",
@@ -314,7 +324,7 @@
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-07-13T10:47:00.3562493+09:00",
+    "LockDateTime": "2026-07-13T10:57:21.6653261+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\コメント表示.json",
@@ -327,11 +337,31 @@
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-13T10:57:21.6656598+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\フロー_承認処理.json",
+      "Pages\\フロー_承認処理.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-13T10:57:21.6654785+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\フロー_委員コメント.json",
+      "Pages\\フロー_委員コメント.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS申請メニュー",
