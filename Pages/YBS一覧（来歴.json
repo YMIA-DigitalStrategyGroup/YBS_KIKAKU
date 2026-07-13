@@ -9,13 +9,13 @@
   },
   "Cols": {
     "InLogicalVisibleIndexes": [
+      53,
+      54,
+      55,
       56,
-      57,
-      58,
-      59,
-      60
+      57
     ],
-    "Count": 61
+    "Count": 58
   },
   "Values": {
     "1,1": "（YBSコード）",
@@ -82,7 +82,7 @@
         "RowIndex": 3,
         "ColumnIndex": 1,
         "RowCount": 13,
-        "ColumnCount": 55,
+        "ColumnCount": 52,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
@@ -156,7 +156,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "申請者",
-        "GUID": "d3ea3fae-47b5-449c-a13d-6833dc6d35cf"
+        "GUID": "58c8a6f7-62c2-4146-af48-a34afc1738ad"
       }
     },
     "4,38": {
@@ -345,7 +345,12 @@
       "3,36": 5,
       "3,37": 5,
       "3,38": 1,
-      "3,43": 1,
+      "3,43": 7,
+      "3,44": 5,
+      "3,45": 5,
+      "3,46": 5,
+      "3,47": 5,
+      "3,48": 5,
       "4,5": 1,
       "4,8": 1,
       "4,29": 1,
@@ -369,7 +374,7 @@
   },
   "Spans": [
     "18,39,2,5",
-    "5,1,11,55",
+    "5,1,11,52",
     "1,38,2,4",
     "2,1,1,6",
     "1,1,1,6",
@@ -379,16 +384,16 @@
     "3,2,1,3",
     "4,5,1,3",
     "3,5,1,3",
-    "3,8,1,21",
     "4,8,1,21",
-    "3,29,1,6",
+    "3,8,1,21",
     "4,29,1,6",
-    "3,35,1,3",
+    "3,29,1,6",
     "4,35,1,3",
-    "3,38,1,5",
+    "3,35,1,3",
     "4,38,1,5",
-    "3,43,1,8",
-    "4,43,1,8"
+    "3,38,1,5",
+    "3,43,1,6",
+    "4,43,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -415,4 +420,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//JbqeyzwNt2ONBQPy7OD0ntMOsrm++0hgvoegundxAPqSMsEVAkGylNnHTUpTlyCZ/8GnyP+ad//lYS+aja+qfL2nAeTHmdv2ckoGBIZLR0yek/6XktkZEXQbtDwttLse8IWhXwGTl1A4zNbqyFsBjqOH1My0yWYALPMDnIQ+yNmldn0wTZNGchu29gcCuEWIwSEPTw9HXZ0ffCopOldYXjUIvuaT92hdc0Cz3oBq1YcWKvnZTpWsUsfnNJPA81xxrZaZIhHR2mUtWaP2uz5UvCIdwLH1Bf3ZBMHilLC0CE8NEb/m25sWKt2rRDRNsx95QWNlE3qgHYLl2SGon/qcftwuAbvzhzlIbvHhjXNmSOT1dDDRD+LQN4JwIU3mZYH8KqehdfdnUZjWY/qqRrlIdYdH3htNrjauPgkdt8mpK1co5rHyYnhLPrq3/PH2hADg0BNWZK4eOBXXIxOenOS2589vLDKjKtMAgamVu736kHB5OSVGZVDViOel1MrZPY3l2TTHjTSobxLnZNkfB8y/ltROdTG0yFs3r+c4YTqTrvUy5RCE87CQEuSbbMr8AbqdMuVNi8SscvdqCfZxleIC0pOIu2jgUnzXFXIgDBETyo025MXiIhSEuIHMH7hi4G5/sGIUG0t8LLoMsHmXsG7b5LBbTo/d2mRytWykIo1KjszBUVJgvW1UPkG+XiTGF1W5nGHmFEydrAquoecbC/hBwFDJVMHK28xwso95OnEnK9Pl3pwaB2jH36QO1xkORfRyVYh0JiqkK1cQ8uOeyFdDabeZeTavMg9mR3FHQh1Upb5+PfHvYe9FeE6Ovc9v6MDOJS7Y7wDFQgLfeg39gXQwRce5cWzgKyy+yCVwhxWBoPxtN8RuUET5VA9/+KzF2DyjXn4GxT2imIVV8+YiZjCYEQ==|920
+}//w8jEnkTRDbLFrB2B2yIyaxhn6l6lDtiLIzaxxZwEt6lB0oWOxCqw+zJhsrmqnBGSp5us8Dg/5fL3Zm380McRABZV/OccFCnH6so/plz4iuWRLwJqaP7AmhP/XcuIvz0++ChWI6kQQ2+CNuslmn8Gk8ZR2USPeA2q75OVZrMoTxz16KnXTWFAM1uGS07/Jm8gbK+OMSZQ46bKlGBZ/ZWkFVw+m+HSr2A87fqLyd5j9N3rh9WIpAI7Y6loxKKZslpawf8HdbpFdICLubBRbmn5xHWjH9woWPHHC1ki2RbMvsOxFqSUBhcl5unrGKvqqGGYvFVD10FXy3SQt9hJ+SSdWvvLtodNK+kE62yompDgqwsCCPnnwTCN/EIO/G9SIsgdM5O9FxjGnnU5ip0E7z28YXrAlqpgCqhUNF/oBXzKrwKn3HmECxRIVjQEYKANctQw0q9zg/eUzNtyTY7zOpKXgEt31LzpyrA+alWTCfthEyH3UI1DRKZjxxeaOShB/OUngiE4eSsUgbXLlj7BKiGCWYwOuVfBZRWTf+4vXzzJBe1jKvH3hnlnXtWpl8D0UnHxkDzZpEWhUcEnJR4Iv2raH8qXyFctcnozXbmxbybLmWJBuAcobPJlsH/MU0T0GnoU+lCMbyM0oBNxIi1bYz+Q9l2uhcDAd0/en3ctAFvnyzyV6ItRxv1NrKjwtEFNJCw96W9J8G/aVsUap38vlAw5PkGpfQoT9Td0D7M6TEqvENSfU8cxyCxw+jJ0bgfaqazH36tubCSew8oIzxRckCmt6BjGL1FOmUGz9QPOH33TtPoWG56UaKsaUqVIPwTLI3PUgBgHoVbxBTjnqTP9CeRSyCbiwVek25aDOKN2BUlz68sviegPP4ywDcFZAN7aaRsbr8uRZrjYblSJcWOZYvwx0g==|920
