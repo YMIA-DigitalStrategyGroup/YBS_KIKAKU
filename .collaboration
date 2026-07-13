@@ -354,17 +354,7 @@
   },
   {
     "ModuleName": "PCPage/コメント表示",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-13T16:38:55.1424749+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\コメント表示.json",
-      "Pages\\コメント表示.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS一覧（承認待ち",
