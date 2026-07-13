@@ -8,7 +8,6 @@
   },
   "Cols": {
     "InLogicalVisibleIndexes": [
-      38,
       39,
       40,
       41,
@@ -17,25 +16,32 @@
       44,
       45,
       46,
-      47
+      47,
+      48
     ],
-    "Count": 48
+    "Count": 49
   },
   "Values": {
     "2,1": "（YBSコード）",
     "2,7": "（規格名称）",
     "2,31": "閉じる",
     "5,1": "ワークフローコメント（フローのコメントが、履歴順（降順）に表示されます。）",
-    "6,4": "氏名",
-    "6,9": "アクション",
-    "6,13": "コメント",
+    "6,4": "氏名ID",
+    "6,7": "氏名",
+    "6,12": "アクション",
+    "6,17": "コメント",
     "6,30": "日時",
     "16,1": "委員コメント（登録のあったコメントが表示されます。）",
-    "17,4": "委員名",
-    "17,9": "承認/差戻",
+    "17,4": "委員ID",
+    "17,7": "委員名",
+    "17,12": "承認/差戻",
     "17,30": "コメント日",
-    "17,39": "委員コメントID",
-    "19,39": "ページ遷移のコマンドで取得"
+    "17,40": "委員コメントID",
+    "19,40": "ページ遷移のコマンドで取得"
+  },
+  "Formulas": {
+    "7,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E8),\"null\",\"'\"&E8&\"'\"))",
+    "18,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E19),\"null\",\"'\"&E19&\"'\"))"
   },
   "AttachInfos": {
     "2,31": {
@@ -56,8 +62,8 @@
         "TableName": "v_YBS規格文書_ワークフロー",
         "RowIndex": 6,
         "ColumnIndex": 1,
-        "RowCount": 8,
-        "ColumnCount": 35,
+        "RowCount": 9,
+        "ColumnCount": 38,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
           "SubConditions": [
@@ -123,7 +129,10 @@
         "GUID": "df2f67a0-2048-470b-9b61-96412312ec45"
       }
     },
-    "7,9": {
+    "7,7": {
+      "NameUsedInJavaScript": "氏名"
+    },
+    "7,12": {
       "NameUsedInJavaScript": "アクション",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -131,7 +140,7 @@
         "GUID": "e026df98-7d01-491e-afd0-089f4e771e28"
       }
     },
-    "7,13": {
+    "7,17": {
       "NameUsedInJavaScript": "ｺﾒﾝﾄ",
       "BindingInfo": {
         "TableName": "v_YBS規格文書_ワークフロー",
@@ -154,7 +163,7 @@
         "RowIndex": 17,
         "ColumnIndex": 1,
         "RowCount": 11,
-        "ColumnCount": 35,
+        "ColumnCount": 38,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
@@ -164,7 +173,7 @@
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=コメント表示!AN19"
+            "SerializeProperty": "=コメント表示!AO19"
           }
         },
         "OrderByCondition": {
@@ -196,14 +205,17 @@
       }
     },
     "18,4": {
-      "NameUsedInJavaScript": "委員名",
+      "NameUsedInJavaScript": "委員ID",
       "BindingInfo": {
         "TableName": "YBS_審議会コメント",
         "ColumnName": "承認者",
         "GUID": "f227cf54-8ef0-4026-8c83-f0e5c3a952cb"
       }
     },
-    "18,9": {
+    "18,7": {
+      "NameUsedInJavaScript": "_委員名"
+    },
+    "18,12": {
       "NameUsedInJavaScript": "承認_差戻",
       "BindingInfo": {
         "TableName": "YBS_審議会コメント",
@@ -214,7 +226,7 @@
         "eaebc3a1-8a21-4893-823a-5605f1b6aea8"
       ]
     },
-    "18,13": {
+    "18,16": {
       "NameUsedInJavaScript": "コメント",
       "BindingInfo": {
         "TableName": "YBS_審議会コメント",
@@ -407,16 +419,42 @@
       "6,4": 10,
       "6,5": 12,
       "6,6": 12,
-      "6,7": 12,
+      "6,7": 10,
       "6,8": 12,
-      "6,9": 4,
-      "6,13": 4,
-      "6,30": 4,
+      "6,9": 12,
+      "6,10": 12,
+      "6,11": 12,
+      "6,12": 10,
+      "6,13": 12,
+      "6,14": 12,
+      "6,15": 12,
+      "6,16": 12,
+      "6,17": 10,
+      "6,18": 12,
+      "6,19": 12,
+      "6,20": 12,
+      "6,21": 12,
+      "6,22": 12,
+      "6,23": 12,
+      "6,24": 12,
+      "6,25": 12,
+      "6,26": 12,
+      "6,27": 12,
+      "6,28": 12,
+      "6,29": 12,
+      "6,30": 10,
+      "6,31": 12,
+      "6,32": 12,
+      "6,33": 12,
+      "6,34": 12,
+      "6,35": 12,
+      "6,36": 12,
       "7,1": 4,
       "7,4": 4,
-      "7,9": 4,
-      "7,13": 4,
-      "7,30": 4,
+      "7,7": 4,
+      "7,12": 4,
+      "7,17": 4,
+      "7,30": 11,
       "12,1": 4,
       "12,2": 4,
       "12,3": 4,
@@ -461,38 +499,6 @@
       "13,28": 4,
       "13,29": 4,
       "13,31": 4,
-      "14,1": 4,
-      "14,2": 4,
-      "14,3": 4,
-      "14,4": 4,
-      "14,5": 4,
-      "14,6": 4,
-      "14,7": 4,
-      "14,8": 4,
-      "14,9": 4,
-      "14,10": 4,
-      "14,11": 4,
-      "14,12": 4,
-      "14,13": 4,
-      "14,14": 4,
-      "14,15": 4,
-      "14,16": 4,
-      "14,17": 4,
-      "14,18": 4,
-      "14,19": 4,
-      "14,20": 4,
-      "14,21": 4,
-      "14,22": 4,
-      "14,23": 4,
-      "14,24": 4,
-      "14,25": 4,
-      "14,26": 4,
-      "14,27": 4,
-      "14,28": 4,
-      "14,29": 4,
-      "14,30": 4,
-      "14,31": 4,
-      "14,32": 4,
       "16,1": 11,
       "17,1": 10,
       "17,2": 12,
@@ -500,24 +506,50 @@
       "17,4": 10,
       "17,5": 12,
       "17,6": 12,
-      "17,7": 12,
+      "17,7": 10,
       "17,8": 12,
-      "17,9": 4,
-      "17,13": 4,
-      "17,30": 4,
-      "17,39": 11,
-      "17,40": 4,
+      "17,9": 12,
+      "17,10": 12,
+      "17,11": 12,
+      "17,12": 10,
+      "17,13": 12,
+      "17,14": 12,
+      "17,15": 12,
+      "17,16": 10,
+      "17,17": 12,
+      "17,18": 12,
+      "17,19": 12,
+      "17,20": 12,
+      "17,21": 12,
+      "17,22": 12,
+      "17,23": 12,
+      "17,24": 12,
+      "17,25": 12,
+      "17,26": 12,
+      "17,27": 12,
+      "17,28": 12,
+      "17,29": 12,
+      "17,30": 10,
+      "17,31": 12,
+      "17,32": 12,
+      "17,33": 12,
+      "17,34": 12,
+      "17,35": 12,
+      "17,36": 12,
+      "17,40": 11,
       "17,41": 4,
       "17,42": 4,
       "17,43": 4,
+      "17,44": 4,
       "18,1": 4,
       "18,4": 4,
-      "18,9": 4,
-      "18,13": 4,
+      "18,7": 4,
+      "18,12": 4,
+      "18,16": 4,
       "18,30": 4,
-      "18,39": 13,
-      "18,42": 4,
-      "18,43": 4
+      "18,40": 13,
+      "18,43": 4,
+      "18,44": 4
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -530,29 +562,33 @@
     "3,5,1,2",
     "2,1,1,6",
     "2,31,2,4",
-    "19,1,9,35",
-    "8,1,6,35",
+    "18,40,1,3",
+    "8,1,7,38",
     "7,1,1,3",
     "6,1,1,3",
-    "18,39,1,3",
-    "6,4,1,5",
-    "7,4,1,5",
-    "6,9,1,4",
-    "7,9,1,4",
-    "6,13,1,17",
-    "7,13,1,17",
-    "6,30,1,6",
-    "7,30,1,6",
+    "6,4,1,3",
+    "7,4,1,3",
+    "6,7,1,5",
+    "7,7,1,5",
+    "6,12,1,5",
+    "7,12,1,5",
+    "6,17,1,13",
+    "7,17,1,13",
+    "6,30,1,7",
+    "7,30,1,7",
+    "19,1,9,38",
     "18,1,1,3",
     "17,1,1,3",
-    "18,4,1,5",
-    "17,4,1,5",
-    "18,9,1,4",
-    "17,9,1,4",
-    "18,13,1,17",
-    "17,13,1,17",
-    "18,30,1,6",
-    "17,30,1,6"
+    "17,4,1,3",
+    "18,4,1,3",
+    "17,7,1,5",
+    "18,7,1,5",
+    "17,12,1,4",
+    "18,12,1,4",
+    "17,16,1,14",
+    "18,16,1,14",
+    "17,30,1,7",
+    "18,30,1,7"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -595,4 +631,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//BX4FxDzV0I0M8qotJCf4egrVa9qiiYpo94re0hhOzWIDeSKcE3ZKs4l5bXjtguswNxtpTaGxprdJiNoTdEl4ifKTQf5eucTpekHnF3oWcqZUwH9stcH2zaKDcitubB1Oa3O8prepIvC6Yh/DMi0o6lD9aoR8oFBGU6blJB0UEsZO/c5LDa76YO/lZrmCi6RrMUQmc25QobaTJIc/DiIJQ9BxeQV0/P0XP4Y6H2Ol8NU30KENUyKyISgGsN63JJaRezPrVGj5vkcZ+4CVpvsniTHsxAlF7qNy+Sd7v6Q5yfPmgwionryWWviAKJptYu0+QlUQw6AWIF132KD8BjFpeAaYElwrYeaUQl76euMecLzTQ8ylqkl0d6vTz7s8EKVWprfGfRnUWjGPqc1aPR9qntEHYbz90YLRJZ7G2SPkVyDI2+9i9coHGSdUtVzkeM91mM8JIsh56gX2Z5LlsRTpXIC79dprVOB2BhNn2m2kmikEfNzO1SZ/Bb3JiX3t5Ad3KzRwr+g8KVbIFoSXmJ3b6qCdeXSF/o+5qwkvDrFySeP9GeJmdUvGY8mQXAdJ1cOA5tsaPag/DjKmOJsx3wqhgp9/igrDi1p+Tunad+z1rfG4tOmBgeDV0bDs1+NO4I8WDrD4Q9IPlGYrxSG9uEpe4siC7lOqZQSjsYIyVMkFRi0zTRFyMvNfAJ64SytrKq4QSB8ujwAFQaiEKAp5Arqno67ELbxR9q3HuVDprPdLaMRPEyEFN6EF+Ny6gb4UkPF1QcnQKH+rzENs/qbF3WyhDcPu0inAacAV1LQXSjq3q5SwBsm5LK7ItQPe+ZgTKaCVThZ/+D/Oi2c9x8Dby9B0ttk1JrJlNMp2wY0rfIdREaUIZTmyOBqAKZVbNljrZ4uSsy7vRKXHAIPtiXvCgn5xZw==|920
+}//YT405hEjW8HDa58LPFSt+Ze93L40D7fd/sDRMyu5iCgjZxD3sQpRZ8fd7nie56Qqrlx0W7Ex2YP4GRTkp7QD+b3a7aMF+0lsU4oCDy0+5XJznQTfoOIimMigYD7qojgvPAa0eMLLuLBOCousnic2Rso6bhOQPOl5VBzivRq72VoDrzWHVtrargkfwr+sIaLUYDVAMwQcCMF69xq/o0wptrCOy53VuS42E2ee6maO04EJjIaFnLwEfgBB94kT1jugMHUbNT1zGY3/q428vi7RieGFB31D0mslb+d70Rv+i772RwBnozenJiSDqdU/XxYpPKC28PhCWV0SF3JqKkMa6ona2v3gUf8cRkwn/opLODkvySEX0FbUoIIBw2YJqBpSRmmG63ru+WMCGKgf1bgjQKwGorw4TRfW6GJtYLMUWvhlxVdD4FVsqBzF72epfFj0P4ZkKZh9AqkLWT49m8WSHLhDi8avCse7/ptPfgZyKBCMFQoJ0NWoTOh+ONTU2GeYsmg6bHiBufZRbmzrBYWDfEU/K+LmQacmqmPRHlY4r/8yHN8dK6YELGWMay+gxQXRB0QYU6x1gUS0YC1urXpaIioyfhSMxfEXqP4JIjThSElneyJGAKHgP+GXm9xQMkZWFMkPwfEWEYNf2EkDLInRzn5DHbeiAy/Ov2JTPxQ/TPptYKYn7653ub/CreiRK6nzp2yi+AC7Ya4OVN0cEkaN9G6fNekbdsHhC1kEBaZEyaroOdWEk2d+c6nr0cZR+OCsAHU8A0EA1PXCUujbmcUfcQjh2DMXg00XyxXLy1Fkr4OzX+ZmbKxmc9dseXYzmxW5OhmnkoG9qfGF74afVABgHMlBmroJjAZIXE/ZRTrFR3Utcgfb8cA1l0vWNIT3s2oojDy7/RrtPnytsM5gpUMVmA==|920
