@@ -333,7 +333,17 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル一括アップロード画面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-14T15:43:58.3875979+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\添付ファイル一括アップロード画面.json",
+      "Pages\\添付ファイル一括アップロード画面.rd"
+    ]
   },
   {
     "ModuleName": "ServerCommand/添付ファイルアップロード",
