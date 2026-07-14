@@ -79,7 +79,7 @@
                     "MessageFormula": "終わりだよー"
                   }
                 ],
-                "ID": "7f51f781-0017-4a5e-859e-cc0331f918b3"
+                "ID": "01c03076-0455-489e-8cdd-319613875a8e"
               }
             ]
           }
@@ -151,6 +151,12 @@
         "TableName": "YBS規格文書",
         "ColumnName": "付表添付",
         "GUID": "0b1b5adb-b605-4bde-a6b6-95888f6b841b"
+      },
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
+        }
       }
     },
     "9,33": {
@@ -158,6 +164,12 @@
         "TableName": "YBS規格文書",
         "ColumnName": "規格PDF",
         "GUID": "c014fc29-b582-4363-9895-adbbfb406b75"
+      },
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
+        }
       }
     },
     "30,3": {
@@ -341,6 +353,8 @@
       "9,14": 1,
       "9,15": 1,
       "9,16": 2,
+      "9,32": 2,
+      "9,33": 2,
       "29,3": 3,
       "30,3": 1,
       "30,4": 1,
@@ -1056,13 +1070,13 @@
     "31,6,1,4",
     "30,6,1,4",
     "10,3,17,42",
-    "9,33,1,12",
-    "8,33,1,12",
     "31,16,1,9",
     "30,16,1,9",
     "31,25,1,7",
     "30,25,1,7",
-    "2,14,1,9"
+    "2,14,1,9",
+    "9,33,1,12",
+    "8,33,1,12"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1088,4 +1102,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//RX+mAdXb7FWsMKZ3rvsX2ItMeZMzifgkOLybm4I9g/Cb2CWjbpM7mjSbia80C6QGuBloqFfvNw5JMC/b56mQQFx7LUJH0TUY/0hgUCIhxG1LmbQEBIq0VArTiDu1/eRVPmLMLRIJoVsXkWhLCVJxlFnNko0JT3veCsqZW3E0VIsE1q5ik38Mz3/V8F6x0oUEhJBIhA5/0eWDo/08bovROn7wLcjm31DJQqIuNxsWkBp2mqdN+SBtC6948YUT9//UdTCzovlbY0a9NI0VWOyesBE2VYygA2RjG7e2S5oRltHZS/UwuAp+Ux5Ej4XP2PPLgxoStAACz0q4HX3wq171Cn8NNvKztD/D0NdejpkSEc82uJt3vWZhEysgYCBFDckDsLz3tkBkoRbCzh+mgUYyRRAhXjcB7sjCE3HHwXhytENaehVf+aEHf9P2/yaKM2tdkdtqitCQtbSBzPCKMd7Y0cVphZwDoTAaFDqGOis4s6MoMCMvGKBLkuAAXHNUFvwx+qQRwbyYuSRq9ZtFRk8rXTZRBj9o8w/2xgcgnY3RiVnNYiXEt7l72Bnm9bP+xUShYRbheYp7MTdT0cGJjcyAqE8GEHu1zYXC79h7fjGIixRX9QGE/hK7FbUrR6usZVAwNsmnbJ8aK+CGlrJPYdCTGgigJnoIH3p5PnDKk5BR+BCR4HIyZsHmRFHGdk2kFdgG3eGB72wQ20ZjY+O3Bs1haMh6vPODjLT5z8yO6Uu4FonCAzJg01cjHIzjOSnP2ly0QZeha92hjl3hP3zlmvtZ/+5aaSwt/JJd2kQqmh1DJ4uZHb1esqcHZld3cpg8TtPCQKenbbPAWIXb0jrGhHQmRRdVUgP4tUaewIwoDegavU+jqN0quZDYy3uOHJ4EzRUNhpXKz/oXilJFr7z3Da/IxQ==|920
+}//4V9qmutX7/jK3rLTxh008usOuwKekveAVXxKkMXDAbhREfwvX0qFycEFyD6sA6lIHdhqz2zwq/hJ5/0xZwVY5B94nZiYz6AAM4lJoegmdaIVXMufm9JvezkIZwXneqWaFQjmcjuPqR5ov1gNtDJPwFAQCGc9/Ux48nsjJ9U+wMlncZD+hAghKq6HN5Kx4R8hQncseTRkaATQGXbnu0u9fJ6HYHvWZlJceze2agP+jFXLZ4FIr7cXeVEAoV4wg08an5918zDZSVpr0gFsrHyppGkuRg9rBdTJIjSY/Zyj1vX2VWH6CNs62t0W/5nMOJ7Yi/y+FogpNSaAYK/RLpwXvbvBno4gTBljVGHXvOY/n8DTs3oGIsDsHsrFZohUzUYiJ1ZDd9iC9Tnd2dP59YqtV6hqOY3V/DzdjXBjOMKoWRBiL/Nh77LBj5H7DGGe2qilPT6yCpxbtBEpPJh/0hzlk9lAMtNgfmOymEXguRlv5ZLdbtUWBGHOurTE3xAxipnO1A9SFcSR4UCKHhzHrfLssF7mHcRfYJaosKJGKfK8LvHFijHo6j00mnnrISt2+ETLm/QBMOYVWrADXyGFWD9w9cGgIagjUUXGlEnDbSEGHNCnpUPZPJZtujDII5sqbtg4/bL4QBrHzK44SNkZjAfLMOIxY5yopblEjsQu67rFbvAO+noU41qADyBI4xL8k1/BT5Gx51OIELBQ5LxQoSpx63KwO722NTTC8dq3LFBcuda2P2+Ivv4hrnBvjzIxKKZxdZJFCLGb88T3rSZtaDLWljlN+q5zeCOznkp7yrVgG3izps1kDNN/65bk2gpfZVSOueOFRmSJAjJ/FvDpdaKf3hEOksU1AZu2H6GjKCiYmvkPd7AUx/oPp5rO4TvEB98RyxQlWOfttmvUQDqeyrrasw==|920
