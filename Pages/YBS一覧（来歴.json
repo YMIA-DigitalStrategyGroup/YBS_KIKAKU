@@ -24,11 +24,12 @@
     "3,2": "改正",
     "3,5": "区分",
     "3,29": "申請者",
-    "3,35": "申請者ID",
+    "3,34": "申請者ID",
+    "3,38": "最終更新者",
     "18,39": "閉じる"
   },
   "Formulas": {
-    "4,29": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AJ5),\"null\",\"'\"&AJ5&\"'\"))"
+    "4,29": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AI5),\"null\",\"'\"&AI5&\"'\"))"
   },
   "AttachInfos": {
     "1,38": {
@@ -151,7 +152,7 @@
     "4,29": {
       "NameUsedInJavaScript": "申請者"
     },
-    "4,35": {
+    "4,34": {
       "NameUsedInJavaScript": "申請者ID",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -160,7 +161,7 @@
       }
     },
     "4,38": {
-      "NameUsedInJavaScript": "最終更新者_氏名",
+      "NameUsedInJavaScript": "最終更新者",
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_LastModifier",
@@ -340,21 +341,16 @@
       "3,31": 5,
       "3,32": 5,
       "3,33": 5,
-      "3,34": 5,
-      "3,35": 7,
+      "3,34": 7,
+      "3,35": 5,
       "3,36": 5,
       "3,37": 5,
       "3,38": 1,
-      "3,43": 7,
-      "3,44": 5,
-      "3,45": 5,
-      "3,46": 5,
-      "3,47": 5,
-      "3,48": 5,
+      "3,43": 1,
       "4,5": 1,
       "4,8": 1,
       "4,29": 1,
-      "4,35": 1,
+      "4,34": 1,
       "4,38": 1,
       "4,43": 8,
       "18,39": 1,
@@ -386,12 +382,12 @@
     "3,5,1,3",
     "4,8,1,21",
     "3,8,1,21",
-    "4,29,1,6",
-    "3,29,1,6",
-    "4,35,1,3",
-    "3,35,1,3",
-    "4,38,1,5",
+    "3,29,1,5",
+    "4,29,1,5",
+    "3,34,1,4",
+    "4,34,1,4",
     "3,38,1,5",
+    "4,38,1,5",
     "3,43,1,6",
     "4,43,1,6"
   ],
@@ -420,4 +416,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//w8jEnkTRDbLFrB2B2yIyaxhn6l6lDtiLIzaxxZwEt6lB0oWOxCqw+zJhsrmqnBGSp5us8Dg/5fL3Zm380McRABZV/OccFCnH6so/plz4iuWRLwJqaP7AmhP/XcuIvz0++ChWI6kQQ2+CNuslmn8Gk8ZR2USPeA2q75OVZrMoTxz16KnXTWFAM1uGS07/Jm8gbK+OMSZQ46bKlGBZ/ZWkFVw+m+HSr2A87fqLyd5j9N3rh9WIpAI7Y6loxKKZslpawf8HdbpFdICLubBRbmn5xHWjH9woWPHHC1ki2RbMvsOxFqSUBhcl5unrGKvqqGGYvFVD10FXy3SQt9hJ+SSdWvvLtodNK+kE62yompDgqwsCCPnnwTCN/EIO/G9SIsgdM5O9FxjGnnU5ip0E7z28YXrAlqpgCqhUNF/oBXzKrwKn3HmECxRIVjQEYKANctQw0q9zg/eUzNtyTY7zOpKXgEt31LzpyrA+alWTCfthEyH3UI1DRKZjxxeaOShB/OUngiE4eSsUgbXLlj7BKiGCWYwOuVfBZRWTf+4vXzzJBe1jKvH3hnlnXtWpl8D0UnHxkDzZpEWhUcEnJR4Iv2raH8qXyFctcnozXbmxbybLmWJBuAcobPJlsH/MU0T0GnoU+lCMbyM0oBNxIi1bYz+Q9l2uhcDAd0/en3ctAFvnyzyV6ItRxv1NrKjwtEFNJCw96W9J8G/aVsUap38vlAw5PkGpfQoT9Td0D7M6TEqvENSfU8cxyCxw+jJ0bgfaqazH36tubCSew8oIzxRckCmt6BjGL1FOmUGz9QPOH33TtPoWG56UaKsaUqVIPwTLI3PUgBgHoVbxBTjnqTP9CeRSyCbiwVek25aDOKN2BUlz68sviegPP4ywDcFZAN7aaRsbr8uRZrjYblSJcWOZYvwx0g==|920
+}//LAF4W3YUn7izSu6yLh1oizsPAXbxwzRhzzcUSjRNoZXWkYsF2P4CUgTrglz2IOyQxrGLCjnlXkhQWEnEemkI8QYcwasj4YMpqrlM88cAclwPqxbJJoCcXDVKMcg9q2mnH53fpVSrRQ8UJ1BdWosWCxvbN45ED4TYpeNYNNzr//poVKNXkkhYKm2njgzV4VtFiUwAOUj4iYhepkID8G+B78Az1E3pLMKcaNJeaEWVuizI/SlGiv8yYYM47D73Cv2ckCZ+LHR+ncoXACyT+mbWud0KZcvYsiyW6POHRQ/PdJ0lV7Ou6d/bUEECjH4SFuhUnLLt1qMtRokjKDQejI8ERGdWeHphKwl2XSOnHtUq+n8H+2D4oGaoQmtl4QeeE7SxI1hafpwatVOy/z4fqCrE4tpK0utudt9bQiFBCfcr7b49XKz/CYzdfWUQ7RHRMT9LpErtmrvUh+yfqfYn8orzoUxQgQqO2qUB9XSzj67vk05KUSIk0MalHu4ft9JUmeRWafuqwGssQ9Pnu486zHd3bjRN/WM9XZI/o0DMOU7RJF55Tz7N5uFTGXAYnFyFEoaWvhuG1g/G2Ip8+12cjkri87lvL8T/OZKWbm7Ibk6oIQxAy8vOGL19L3R/iqJoW0W64BbzwUhqgnUaXRcSrfupNGMklN7qOlyzuRP83k3J+zxezf05wOxGnU+I5aoArjlMGC1sGr4sBv0sJZmFGD+IXeDdGnMDYlzboD1FaIJtVJ9LTUer6OqBd/Lvxo/bD++K2Elh/5i7fZh9+wpHfBYDTn+d0RONaL9k4YE4mZylX6hCVrfqmzrzYDBFLF8nylZEP3Pcy3N4muG0KyUwE6vHAQHUKQGvO5hRfslPubY8DvZXp7lvKGxeOrVbs/F3d1Z2V2oQImn8kJ9FM9yJyxs/2A==|920
