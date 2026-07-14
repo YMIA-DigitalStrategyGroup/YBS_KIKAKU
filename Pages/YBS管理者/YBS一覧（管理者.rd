@@ -3,6 +3,6 @@
   "ColumnCount": 71,
   "RowCount": 27,
   "Formulas": {
-    "18,2": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(G19),\"null\",\"'\"&G19&\"'\"))"
+    "18,55": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(BH19),\"null\",\"'\"&BH19&\"'\"))"
   }
 }
