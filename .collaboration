@@ -356,7 +356,17 @@
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-16T16:34:59.0020593+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\フロー_承認処理.json",
+      "Pages\\フロー_承認処理.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
