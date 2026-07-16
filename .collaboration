@@ -466,6 +466,16 @@
   },
   {
     "ModuleName": "PCPage/一覧_全文書",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-16T16:35:54.8157817+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS管理者\\一覧_全文書.json",
+      "Pages\\YBS管理者\\一覧_全文書.rd"
+    ]
   }
 ]
