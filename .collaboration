@@ -141,17 +141,7 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-16T14:26:50.9858392+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\YBSメニュー.json",
-      "MasterPages\\YBSメニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -369,41 +359,15 @@
     "ModuleType": 7
   },
   {
-    "ModuleName": "PCPage/YBS一覧（管理者",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-16T13:03:44.2184033+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS管理者\\YBS一覧（管理者.json",
-      "Pages\\YBS管理者\\YBS一覧（管理者.rd"
-    ]
-  },
-  {
     "ModuleName": "Pages/YBS管理者",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/一覧_処理中",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-16T14:26:50.9857845+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/一覧_全文書",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-07-16T13:38:20.1734091+09:00",
     "ModuleType": 1
   }
 ]

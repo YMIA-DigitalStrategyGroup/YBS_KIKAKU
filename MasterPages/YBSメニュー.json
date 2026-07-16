@@ -148,8 +148,8 @@
             ]
           },
           {
-            "Value": "ＹＢＳ管理者用",
-            "Text": "ＹＢＳ管理者用",
+            "Value": "管理者用",
+            "Text": "管理者用",
             "IconPath": "Navigation/183_table_2.svg",
             "SelectedIconColor": "Background 1",
             "SelectedIconColorUseItemColor": true,
@@ -160,8 +160,8 @@
             ],
             "SubItems": [
               {
-                "Value": "管理者用一覧",
-                "Text": "管理者用一覧",
+                "Value": "管理用_全文書一覧",
+                "Text": "管理用_全文書一覧",
                 "SelectedIconColor": "Background 1",
                 "SelectedIconColorUseItemColor": true,
                 "IconColorUseItemColor": true,
@@ -169,7 +169,24 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                    "PageName": "YBS一覧（管理者"
+                    "PageName": "一覧_全文書"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "管理用_処理中一覧",
+                "Text": "管理用_処理中一覧",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "一覧_処理中"
                   }
                 ],
                 "CanVisitRoleList": [
@@ -389,4 +406,4 @@
       "Size": "1280,104"
     }
   ]
-}//2fk10igjkHB5v1mG9td/Tkrcq+/kuQwr/PXoOtqY43hD7mvO1+Y4+W+ftI+C9oga8SjeW/KzN3c/0DnpfRKiE6fbPinrcqiR2ooMO82kmOe7BmShJKCyRbFRia4V3U+N21JWguae5e+mNpsZMjv2pINQJrx/ZoIMcd0fi+0zhvZON44YMPguf5O7P+ET013Q+tYkPnQ8tKzgQf3Byv927aaPc275tlOcWgdF9r14ZgMC7VSmwACnqToIfKbsLD4ZifTdJaEKy7i7e4HznMiw3vKeeqNYsHHk+gWgi1iKaYFkLto/YQPfBhujo5px+4e/yo4ShRiquadwJ1lhweeEZOCwE/CNpN0dTfnP5+4/F71fVw/lVLX2KX8qgp/m0uqAiDvlgBJ5FzBeFeIOmTt6LhHCsHJ7aei/mjqQiJJ+tNoNBMgArtReYB5LiRmkGfgH2kG8ksUVIco1ynHC93xo6r1sGAMdCzai3iEjNMkoVMXO5AeiJUCV39LCv2GhRRpM+XtiTTQkAwh66mlEFgzZmZx6UmDOAATQ76o09Ag7I90UZ5eb7/FlAn9YBaXkdNfTa+T66tNl9ZoHBKJRkIySMb/GLe/vH10IYte7n9bgXrW/UAR851JExnVfGjBtMrKqEjQk5MURibo7L4IUk31oCJbbHq2DxR7T6jjN766lh40gMGFMeejl88kJqI/FMGiGY3wWkSJQzZlO8YxN3PbPz1wfZjlggvCr8r/A17HyuCyLIdPKJYAKMsfjqt6Cwqpkod5YyhCOEK0cENTwakUn73hmLfn135GO+l4Bi5d/he/RLFdBI17XbqdXxOWXLsYSEJ689JKscbxTnZ3PXJ89O9EPr0OnYzTdc2xNJ0wmzkPEyNPPSm2R+WttEkWsibGckAjv0VVeyXeojSIDJKo7IA==|920
+}//fLvH4Oqyl9HXUpfWuk1DhGC8mXKKYZfNCWvsntORk21x0TwGXXRSMRFPje69Hu0uzZTZ55bjT5WpD86bxIInN+Eq65W1Wx/Qy0q515qgS8ehnba8PMXYx0W90vzA8MaPMeA3PR+OtnRh2gYV8l6jk/moGTAQ3GF1+FXcBw1AwR77iO7PuIu9P6WZ4qMfhKM/nMaBhg9oPjs9lzMYVUuWGQ4AFlHCSO0ub6biUUZ+BMPbjqPM5P09au9T51aoLEzquSPjTyx1JZ302C68jNk9HtxQ6QbYtGp8uVeSDlUrVfeFMFlQl4x7p3Jto7pCT79yhii5ffBPvjyiDg7yNNTGpOPNNVD+h/7m8A23/EzFJA5C9Q6R+cmbmBNlMn8SqMKgy1ADzI1/dW0TmJ16MKj4ZP4Hr+6C7iidmugW4bi4fVyH/5Xmq8k+kcITHnOJuYTj2ARx6+OiPPvY7RW8Ymw1Wh9VlGoAsVSxhZ41GEFHhi4jdQyGgsZUXA6t5wM2sIXtKRgHR06uWLPvjzyakgKWpfS6K2NlYuKfaRfo1FZeWutZGY9sVvpk7RSj0Ofx6+2JQtl6qM4mv2/DlzCAUCvvS5pfJFWrlcR4qRGEXCe5Rks1e2+o0cwpVTn6EJ68CESc2AL6GsWajA8V/Fj4esGvcnsGcF4mpg98UdeIaybOGpyEGAAuJdI1zUtf4RSiXmRKyP9FAImXDeuCqsOTvY79Vn5VYMrykmTEIoKSxxF5f0mgb0WJQXXTDaxJDK0nPhVX7yHFGiw+PaNJTzqxuVaQkZNjcGCpO6BdyQx0PxXjmXXwANbeU7UP+J2rAFGSUAh7pBRKx2DYMx/dJndQO1SK7LtLVatjQ+wBA9as73jGgvmnQzvg1vZTv7i+cIfeZNNB5YX9mkZMB8tgetzo6BbioA==|920

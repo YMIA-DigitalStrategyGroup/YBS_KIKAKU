@@ -1,6 +1,6 @@
 {
   "Rows": {
-    "Count": 27
+    "Count": 16
   },
   "Cols": {
     "Count": 71
@@ -20,17 +20,7 @@
     "13,3": "編集",
     "13,7": "すべてのデータが\n編集（再開）できます。",
     "13,23": "削除",
-    "13,27": "「差戻/一時保存」でのデータが、\n選択して削除できます。",
-    "16,1": "ＹＢＳ全文書（管理用）",
-    "17,20": "本文添付",
-    "17,37": "区分",
-    "17,55": "申請者",
-    "17,59": "申請者ID",
-    "25,2": "更新確定",
-    "25,6": "更新した内容を確認して「更新確定」"
-  },
-  "Formulas": {
-    "18,55": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(BH19),\"null\",\"'\"&BH19&\"'\"))"
+    "13,27": "「差戻/一時保存」でのデータが、\n選択して削除できます。"
   },
   "AttachInfos": {
     "2,31": {
@@ -83,10 +73,10 @@
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=YBS一覧（管理者!B4"
+                "SerializeProperty": "=一覧_処理中!B4"
               }
             },
-            "ID": "fe9a4439b2904cda842ad8e27b9a8747"
+            "ID": "def579d5091f4411bf0591f29be84c05"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -107,19 +97,6 @@
                 },
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
-                    "PropertyItemsList": [
-                      {
-                        "Location": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=YBS一覧（管理者!AT:AW"
-                        },
-                        "Value": false
-                      }
-                    ],
-                    "Disabled": true
-                  },
-                  {
                     "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
                     "ListviewName": "リストビュー1",
                     "UpdateType": 6,
@@ -131,23 +108,10 @@
                     }
                   }
                 ],
-                "ID": "b0aeb4b4-fe14-48ec-ac39-bc4245c77b11"
+                "ID": "c4720500-800b-4169-87ba-794d56a242e9"
               },
               {
                 "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
-                    "PropertyItemsList": [
-                      {
-                        "Location": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=YBS一覧（管理者!AT:AW"
-                        },
-                        "Value": true
-                      }
-                    ],
-                    "Disabled": true
-                  },
                   {
                     "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
                     "ListviewName": "リストビュー1",
@@ -160,7 +124,7 @@
                     }
                   }
                 ],
-                "ID": "9292e847-0a34-44e7-b60e-0200bbd97e50"
+                "ID": "d24600ba-75b1-4606-9bb8-04c2a47b9934"
               }
             ]
           }
@@ -276,7 +240,7 @@
                     "MessageFormula": "YBS委員ではないので、登録できません。"
                   }
                 ],
-                "ID": "3b197299-2991-4ff1-813a-69fce6d6e205"
+                "ID": "7239a599-2d74-4025-b7b9-9d5c6fadb2d3"
               },
               {
                 "CommandList": [
@@ -285,7 +249,7 @@
                     "PageName": "フロー_委員コメント"
                   }
                 ],
-                "ID": "7734f0ba-292b-4ab8-9cc2-53da920e94d4"
+                "ID": "a6ae952e-aed8-48a5-bbe4-888339d3e7e0"
               }
             ],
             "Disabled": true
@@ -358,7 +322,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "0c616922-b08d-4cfa-8fa6-515a4d9da034"
+        "GUID": "517ff337-2fa6-4b15-85b7-78c9adf9baeb"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -406,11 +370,11 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS一覧（管理者!AH23"
+                  "SerializeProperty": "=#REF!"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS一覧（管理者!承認者権限"
+                  "SerializeProperty": "=一覧_処理中!承認者権限"
                 }
               }
             ],
@@ -465,7 +429,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "f0d5399c-7597-4c00-9661-d08b2eb33f4c"
+                "ID": "5a1a83e2-1546-4612-9554-5826ba056167"
               },
               {
                 "Condition": {
@@ -508,7 +472,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "6ac02706-69bf-4804-ab3c-8532264925a0"
+                "ID": "31aa64b0-3e07-4bfb-a25d-6171f2b5c9f5"
               },
               {
                 "Condition": {
@@ -551,7 +515,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "43ae50a7-af02-49f2-95b2-6ff3eaa26e34"
+                "ID": "ebce293e-ce59-450d-81b3-164a0dc26f32"
               },
               {
                 "CommandList": [
@@ -560,7 +524,7 @@
                     "MessageFormula": "承認者ではないので、処理できません。"
                   }
                 ],
-                "ID": "46b9aeb1-d0ff-4990-94fc-1e7e445d845f"
+                "ID": "34d9b7db-9a84-486c-941a-2d6360a00cbc"
               }
             ],
             "Disabled": true
@@ -614,7 +578,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "32aae90d-5488-4815-970c-38112aae6597"
+                "ID": "3123481b-6a43-455c-8058-a2780cffd406"
               },
               {
                 "Condition": {
@@ -643,7 +607,7 @@
                       {
                         "Source": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=YBS一覧（管理者!K7"
+                          "SerializeProperty": "=一覧_処理中!K7"
                         },
                         "TargetCell": {
                           "SerializeProperty": "=文書申請（改正!T5"
@@ -662,7 +626,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "4af4f217-1a89-4cce-8dca-1bcf0803c66a"
+                "ID": "72e6b038-44b0-4c48-a9c5-6843a037f5b7"
               },
               {
                 "CommandList": [
@@ -679,7 +643,7 @@
                       {
                         "Source": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=YBS一覧（管理者!K7"
+                          "SerializeProperty": "=一覧_処理中!K7"
                         },
                         "TargetCell": {
                           "SerializeProperty": "='文書申請 (廃止'!T5"
@@ -698,7 +662,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "4dc6fcf3-28e4-4708-a6ea-9dcf65f08d0d"
+                "ID": "be66d6eb-0138-472c-8e89-f1855eb89baa"
               }
             ]
           },
@@ -712,7 +676,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=YBS一覧（管理者!BF6"
+                        "SerializeProperty": "=一覧_処理中!BF6"
                       }
                     ]
                   },
@@ -725,7 +689,7 @@
                     "MessageFormula": "申請者ではないので、編集できません。"
                   }
                 ],
-                "ID": "12149d25-c488-44b5-b0fa-f6d85f2a1f71"
+                "ID": "dd173520-b371-492a-bca2-755d28da28f1"
               },
               {
                 "CommandList": [
@@ -742,7 +706,7 @@
                                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                                 "cellLocations": [
                                   {
-                                    "SerializeProperty": "=YBS一覧（管理者!BK6"
+                                    "SerializeProperty": "=一覧_処理中!BK6"
                                   }
                                 ]
                               },
@@ -754,7 +718,7 @@
                                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                                 "cellLocations": [
                                   {
-                                    "SerializeProperty": "=YBS一覧（管理者!BK6"
+                                    "SerializeProperty": "=一覧_処理中!BK6"
                                   }
                                 ]
                               },
@@ -804,7 +768,7 @@
                                     "LoadBindingDataOption": 1
                                   }
                                 ],
-                                "ID": "7b5c5a69-a44d-4982-ad46-6a970518cd8a"
+                                "ID": "90e2afe1-68b0-421e-af44-47bb946e9b0b"
                               },
                               {
                                 "Condition": {
@@ -833,7 +797,7 @@
                                       {
                                         "Source": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=YBS一覧（管理者!AK6"
+                                          "SerializeProperty": "=一覧_処理中!AK6"
                                         },
                                         "TargetCell": {
                                           "SerializeProperty": "=#REF!"
@@ -852,7 +816,7 @@
                                     "LoadBindingDataOption": 1
                                   }
                                 ],
-                                "ID": "8125e447-f813-433c-ae14-3d99fc72ec2e"
+                                "ID": "c8906c55-d3e8-414d-8f8e-b230281e9695"
                               },
                               {
                                 "CommandList": [
@@ -869,7 +833,7 @@
                                       {
                                         "Source": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                          "SerializeProperty": "=YBS一覧（管理者!AK6"
+                                          "SerializeProperty": "=一覧_処理中!AK6"
                                         },
                                         "TargetCell": {
                                           "SerializeProperty": "=#REF!"
@@ -888,12 +852,12 @@
                                     "LoadBindingDataOption": 1
                                   }
                                 ],
-                                "ID": "66be6fd7-2a1f-4149-9655-5e1bd3ff4ab8"
+                                "ID": "c37846d7-5c8b-4673-b2d6-5be74707e760"
                               }
                             ]
                           }
                         ],
-                        "ID": "1a5bb6ed-e110-47f3-99a5-5002060ac2f4"
+                        "ID": "952cc69f-09b5-48da-b93d-876e097cc4b4"
                       },
                       {
                         "CommandList": [
@@ -902,12 +866,12 @@
                             "MessageFormula": "「差戻」または「一時保存」のデータではないため、編集（再開）できません。"
                           }
                         ],
-                        "ID": "970618ae-d2a7-43ed-816d-24e44ffd5a8b"
+                        "ID": "d863fe75-1561-44d0-9ed3-64a75fabfd9c"
                       }
                     ]
                   }
                 ],
-                "ID": "163cfede-a034-4814-b047-070ae67bdf9b"
+                "ID": "522fec9e-1381-45e4-8725-9d06d8e81899"
               }
             ],
             "Disabled": true
@@ -947,7 +911,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=YBS一覧（管理者!AV7"
+                            "SerializeProperty": "=一覧_処理中!AV7"
                           }
                         ]
                       },
@@ -960,7 +924,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=YBS一覧（管理者!AV7"
+                            "SerializeProperty": "=一覧_処理中!AV7"
                           }
                         ]
                       },
@@ -975,7 +939,7 @@
                     "MessageFormula": "「差戻」または「一時保存」のデータではないため、削除できません。"
                   }
                 ],
-                "ID": "6b815c88-823c-43ff-9aa1-5e811093b78e"
+                "ID": "34645133-31cf-4a6b-98df-fc8760686f7b"
               },
               {
                 "CommandList": [
@@ -987,7 +951,7 @@
                     "ConfirmText": "削除するデータに間違いありませんか？本当に削除してもよろしいですか？"
                   }
                 ],
-                "ID": "9b46f1c7-abb7-4dac-b215-3e32cf592e3a"
+                "ID": "3ef0298e-9075-4df2-8513-262d876e94a9"
               }
             ]
           },
@@ -1001,7 +965,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=YBS一覧（管理者!BF6"
+                        "SerializeProperty": "=一覧_処理中!BF6"
                       }
                     ]
                   },
@@ -1014,7 +978,7 @@
                     "MessageFormula": "申請者ではないので、「削除」できません。"
                   }
                 ],
-                "ID": "7a9882d2-3a7c-462a-9e28-e96d2c0a6f88"
+                "ID": "8323df8f-4abc-4502-886c-7c3d8dda5435"
               },
               {
                 "CommandList": [
@@ -1031,7 +995,7 @@
                                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                                 "cellLocations": [
                                   {
-                                    "SerializeProperty": "=YBS一覧（管理者!BK6"
+                                    "SerializeProperty": "=一覧_処理中!BK6"
                                   }
                                 ]
                               },
@@ -1044,7 +1008,7 @@
                                 "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                                 "cellLocations": [
                                   {
-                                    "SerializeProperty": "=YBS一覧（管理者!BK6"
+                                    "SerializeProperty": "=一覧_処理中!BK6"
                                   }
                                 ]
                               },
@@ -1059,7 +1023,7 @@
                             "MessageFormula": "「差戻」または「一時保存」のデータではないため、削除できません。"
                           }
                         ],
-                        "ID": "9462a25e-9afa-4564-97bc-aed4399a259b"
+                        "ID": "d834848b-a1dc-4026-9059-bfc45daa074a"
                       },
                       {
                         "CommandList": [
@@ -1071,12 +1035,12 @@
                             "ConfirmText": "削除するデータに間違いありませんか？本当に削除してもよろしいですか？"
                           }
                         ],
-                        "ID": "9b4f279e-e2fd-440e-9065-e600570a2b30"
+                        "ID": "28b1fa3f-0a1e-45d2-aadf-bec4f9799b2a"
                       }
                     ]
                   }
                 ],
-                "ID": "af200e35-8f5f-4d17-af3a-fc183486a2b1"
+                "ID": "1a3ee2ef-de76-45e5-9dbd-ad6e4dcad86b"
               }
             ],
             "Disabled": true
@@ -1097,196 +1061,6 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "「差戻/一時保存」でのデータが、\n選択して削除できます。",
         "TemplateKey": "_RS_Outline_Style7"
-      }
-    },
-    "17,0": {
-      "ListViewInfo": {
-        "Name": "YBS全文書",
-        "TableName": "YBS規格文書",
-        "RowIndex": 17,
-        "RowCount": 8,
-        "ColumnCount": 67,
-        "OrderByCondition": {
-          "OrderByColumns": [
-            {
-              "ColumnBindingInfo": {
-                "TableName": "YBS規格文書",
-                "ColumnName": "YBSコード",
-                "GUID": "0f363c5e-c495-4d00-bd74-a404e115d7f8"
-              },
-              "Order": 0
-            },
-            {
-              "ColumnBindingInfo": {
-                "TableName": "YBS規格文書",
-                "ColumnName": "改正コード",
-                "GUID": "e5158483-db00-4c82-9d1b-28c33da6b955"
-              },
-              "Order": 0
-            }
-          ]
-        },
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2",
-        "ShowColumnHeaderInDesigner": true,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "AllowEditInListview": true,
-        "ColumnOperation": 2,
-        "FrozenIndex": 3,
-        "FrozenLineColor": "Accent 2 0",
-        "CommitType": 1
-      }
-    },
-    "18,0": {
-      "NameUsedInJavaScript": "選択",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "選択",
-        "GUID": "30ee0e7c-bb77-4740-9e4f-266b11cbf87f"
-      }
-    },
-    "18,1": {
-      "NameUsedInJavaScript": "YBSコード",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "YBSコード",
-        "GUID": "fdb70418-8757-40d0-8ed9-b43c29c339a2"
-      }
-    },
-    "18,5": {
-      "NameUsedInJavaScript": "改正コード",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "改正コード",
-        "GUID": "a4904e58-281f-4d33-9e66-b89ace32b0a0"
-      }
-    },
-    "18,8": {
-      "NameUsedInJavaScript": "規格名称",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "規格名称",
-        "GUID": "8d91ccce-7812-4339-ab12-40b0547c3ed1"
-      }
-    },
-    "18,16": {
-      "NameUsedInJavaScript": "理由",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "理由",
-        "GUID": "27b28596-3eee-4017-8b91-c7c169a17e24"
-      }
-    },
-    "18,20": {
-      "NameUsedInJavaScript": "本文添付",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "添付ファイル",
-        "GUID": "b55bd917-f274-4abe-85c1-8e19c43d115a"
-      }
-    },
-    "18,25": {
-      "NameUsedInJavaScript": "付表添付",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "付表添付",
-        "GUID": "632be7e5-f3b8-42d5-8b38-9e9938070d09"
-      }
-    },
-    "18,31": {
-      "NameUsedInJavaScript": "規格PDF",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "規格PDF",
-        "GUID": "fa9266b4-598f-4269-b792-e442ac5be18d"
-      }
-    },
-    "18,37": {
-      "NameUsedInJavaScript": "区分",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "現行_旧版",
-        "GUID": "d375bec2-dbf4-48cb-8bf4-2c01e12730f0"
-      }
-    },
-    "18,41": {
-      "NameUsedInJavaScript": "適用範囲",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "適用範囲",
-        "GUID": "a5f27fbb-3f62-4c6b-89c4-217c3c286209"
-      }
-    },
-    "18,46": {
-      "NameUsedInJavaScript": "主幹部門",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "分類コード",
-        "GUID": "272d71df-9a03-478b-9954-a4fd9a9d5249",
-        "RelationBinding": {
-          "RelatedTable": "YBS分類コード",
-          "RelatedColumn": "分類コード",
-          "DisplayColumn": "主幹部門"
-        }
-      }
-    },
-    "18,51": {
-      "NameUsedInJavaScript": "施行日",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "施行日",
-        "GUID": "1374fbff-b655-4337-ba9d-2d71f09ce3be"
-      }
-    },
-    "18,55": {
-      "NameUsedInJavaScript": "申請者"
-    },
-    "18,59": {
-      "NameUsedInJavaScript": "申請者ID",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "申請者",
-        "GUID": "bc6d60b0-f966-4282-9be2-82a6c390b4f7"
-      }
-    },
-    "18,63": {
-      "NameUsedInJavaScript": "申請日",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "申請日",
-        "GUID": "cfaa3c81-f679-4fd7-b99c-dc14d6bf2241"
-      }
-    },
-    "25,2": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "ConfirmDialogSettings": {
-                  "Title": "確認",
-                  "FormulaText": "本当に実行してもよろしいですか？",
-                  "YesButtonText": "はい",
-                  "NoButtonText": "いいえ",
-                  "ConfirmIcon": 1
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-                    "ListviewName": "YBS全文書",
-                    "UpdateType": 3
-                  }
-                ],
-                "ID": "efef3bdf-5e51-44fb-8c5d-7f64d54086f8"
-              }
-            ]
-          }
-        ],
-        "Text": "更新確定",
-        "TemplateKey": "_RS_Normal_Style2"
       }
     }
   },
@@ -1382,38 +1156,6 @@
         "FontFamily": 0,
         "Formatter": 10,
         "ShrinkToFit": true
-      },
-      {
-        "FontFamily": 0,
-        "BorderTop": null
-      },
-      {
-        "BorderTop": null
-      },
-      {
-        "FontFamily": 0,
-        "HorizontalAlignment": 4,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 0,
-        "Formatter": 2,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 0,
-        "Formatter": 11,
-        "HorizontalAlignment": 4,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
       }
     ],
     "Types": {
@@ -1428,8 +1170,7 @@
         "Accent 2 40",
         "yyyy/m/d",
         "Left",
-        "General",
-        "@"
+        "General"
       ],
       "Borders": [
         {
@@ -1671,220 +1412,7 @@
       "15,67": 18,
       "15,68": 18,
       "15,69": 18,
-      "15,70": 18,
-      "16,2": 16,
-      "16,3": 6,
-      "16,4": 6,
-      "16,5": 6,
-      "16,6": 16,
-      "16,7": 16,
-      "16,8": 16,
-      "16,9": 16,
-      "16,10": 6,
-      "16,11": 16,
-      "16,12": 6,
-      "16,15": 6,
-      "16,18": 16,
-      "16,19": 6,
-      "16,20": 6,
-      "16,21": 6,
-      "16,22": 6,
-      "16,26": 16,
-      "16,29": 6,
-      "16,30": 6,
-      "16,31": 6,
-      "16,32": 6,
-      "16,33": 16,
-      "16,34": 16,
-      "16,35": 16,
-      "16,36": 16,
-      "16,37": 16,
-      "16,38": 16,
-      "16,39": 16,
-      "16,40": 16,
-      "16,41": 16,
-      "16,42": 16,
-      "16,43": 6,
-      "16,44": 6,
-      "16,45": 6,
-      "16,46": 6,
-      "16,47": 6,
-      "16,48": 6,
-      "16,49": 6,
-      "16,50": 6,
-      "16,51": 6,
-      "16,52": 6,
-      "16,53": 18,
-      "16,54": 18,
-      "16,55": 18,
-      "16,56": 18,
-      "16,57": 18,
-      "16,58": 18,
-      "16,59": 18,
-      "16,60": 18,
-      "16,61": 18,
-      "16,62": 18,
-      "16,63": 18,
-      "16,64": 18,
-      "16,65": 18,
-      "16,66": 18,
-      "16,67": 18,
-      "16,68": 18,
-      "16,69": 18,
-      "16,70": 18,
-      "17,0": 14,
-      "17,1": 6,
-      "17,5": 6,
-      "17,6": 14,
-      "17,7": 14,
-      "17,8": 15,
-      "17,9": 14,
-      "17,10": 14,
-      "17,11": 14,
-      "17,12": 14,
-      "17,13": 14,
-      "17,14": 14,
-      "17,15": 14,
-      "17,16": 6,
-      "17,20": 6,
-      "17,25": 6,
-      "17,31": 6,
-      "17,37": 6,
-      "17,41": 6,
-      "17,46": 6,
-      "17,51": 6,
-      "17,55": 6,
-      "17,59": 6,
-      "17,63": 16,
-      "18,0": 15,
-      "18,1": 6,
-      "18,5": 6,
-      "18,8": 6,
-      "18,16": 6,
-      "18,20": 6,
-      "18,25": 6,
-      "18,31": 6,
-      "18,37": 6,
-      "18,41": 6,
-      "18,46": 6,
-      "18,51": 6,
-      "18,55": 6,
-      "18,59": 6,
-      "18,63": 6,
-      "19,0": 19,
-      "19,1": 19,
-      "19,2": 19,
-      "19,3": 19,
-      "19,36": 20,
-      "19,37": 20,
-      "19,38": 20,
-      "19,39": 20,
-      "19,40": 20,
-      "19,41": 20,
-      "19,42": 20,
-      "19,43": 20,
-      "20,1": 6,
-      "20,2": 6,
-      "20,3": 6,
-      "20,44": 6,
-      "21,51": 6,
-      "22,46": 6,
-      "22,47": 6,
-      "22,48": 6,
-      "22,49": 6,
-      "22,50": 6,
-      "22,51": 6,
-      "23,14": 10,
-      "23,15": 10,
-      "23,16": 10,
-      "23,17": 10,
-      "23,18": 10,
-      "23,19": 10,
-      "23,20": 10,
-      "23,21": 10,
-      "23,22": 10,
-      "23,23": 10,
-      "23,24": 10,
-      "23,25": 10,
-      "23,26": 10,
-      "23,27": 10,
-      "23,28": 10,
-      "23,29": 10,
-      "23,30": 10,
-      "23,31": 10,
-      "23,32": 10,
-      "23,39": 10,
-      "23,40": 10,
-      "23,41": 10,
-      "23,42": 10,
-      "23,43": 10,
-      "23,44": 10,
-      "23,45": 10,
-      "24,14": 21,
-      "24,15": 10,
-      "24,16": 10,
-      "24,17": 10,
-      "24,18": 10,
-      "24,19": 10,
-      "24,20": 10,
-      "24,21": 10,
-      "24,22": 10,
-      "24,23": 21,
-      "24,24": 10,
-      "24,25": 10,
-      "24,26": 10,
-      "24,27": 10,
-      "24,28": 10,
-      "24,29": 10,
-      "24,30": 10,
-      "24,31": 10,
-      "24,32": 10,
-      "24,33": 10,
-      "24,34": 10,
-      "24,35": 10,
-      "24,36": 22,
-      "24,37": 10,
-      "24,38": 10,
-      "24,39": 10,
-      "24,40": 10,
-      "24,41": 10,
-      "24,42": 10,
-      "24,43": 10,
-      "24,44": 10,
-      "24,45": 10,
-      "25,6": 16,
-      "26,15": 23,
-      "26,16": 10,
-      "26,17": 10,
-      "26,18": 10,
-      "26,19": 10,
-      "26,20": 10,
-      "26,21": 10,
-      "26,22": 10,
-      "26,23": 10,
-      "26,24": 23,
-      "26,25": 10,
-      "26,26": 10,
-      "26,27": 10,
-      "26,28": 10,
-      "26,29": 10,
-      "26,30": 10,
-      "26,31": 10,
-      "26,32": 10,
-      "26,33": 10,
-      "26,34": 10,
-      "26,35": 10,
-      "26,36": 10,
-      "26,37": 22,
-      "26,38": 10,
-      "26,39": 10,
-      "26,40": 10,
-      "26,41": 10,
-      "26,42": 10,
-      "26,43": 10,
-      "26,44": 10,
-      "26,45": 10,
-      "26,46": 10
+      "15,70": 18
     },
     "SheetStyle": {
       "FontFamily": 0
@@ -1920,37 +1448,7 @@
     "13,23,2,4",
     "13,27,2,18",
     "13,7,2,10",
-    "7,1,6,62",
-    "25,2,2,4",
-    "17,1,1,4",
-    "17,5,1,3",
-    "18,1,1,4",
-    "18,5,1,3",
-    "19,0,6,67",
-    "17,8,1,8",
-    "18,8,1,8",
-    "17,16,1,4",
-    "18,16,1,4",
-    "17,20,1,5",
-    "18,20,1,5",
-    "17,25,1,6",
-    "18,25,1,6",
-    "17,31,1,6",
-    "18,31,1,6",
-    "17,37,1,4",
-    "18,37,1,4",
-    "17,41,1,5",
-    "18,41,1,5",
-    "17,46,1,5",
-    "18,46,1,5",
-    "17,51,1,4",
-    "18,51,1,4",
-    "17,55,1,4",
-    "18,55,1,4",
-    "17,59,1,4",
-    "18,59,1,4",
-    "17,63,1,4",
-    "18,63,1,4"
+    "7,1,6,62"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1977,4 +1475,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//z7mzh+QtKfH82Hjb2Cj8h68y2XP9Zv4OySKzpZlndZ+cfhnQk/FPOfAhX37DjZ1k8Ur4xHTp6AhYksVGzf5/+TR+j02LSTYs1lfnydcrOOgpTbSmpDyTHvwgHXNFlkyI7/Q90nLMy6GFR0rGtcgc1mXin82Vrnnro/PdoYOZiKJxTx7BxV9wcCoe4NOJXXzGpZuiMA+Bse9NROm9JSM8Zuqwayf/m7MbnVwvLIvAHGRzdLLGTtOPh1vDcuiuM6S4Q1H7kJ2R9FT7sUJQZGLsJ10TyD2CVtii7NEa+5w6E5Z1PvOqmVTyHuHbzuXhfwSElJLDzkK/X62Ez/zvPb4XPNNEZ7Lzh6dkcpyqfsKG9jGZPu2vkiczv3A/clBcXdYA+WDSSTvEF8LyKo3CgGu4ZHJpyC52QZ94DWQrXX2W6pVQJHOaF60Mo2Pe/tqcgXffc0QKvjnYJCDVwqtePJf1JWHs9CwlVrZBzRA+48h8SssbcJI2x9EvH6kmq4KlAmSW6ANoidMIzxrENd3EK43497C6Qpxt/+4IzVQc6h46AzqMOz4OedNmaHeNZRFMJoANikhc0EqjKX1YSTggOTUlyxKcGqXmL8zErggVkoAnTMpvopKMrbspcXI8K0R3QWZQ/WJ9GJDBVAih8f2umELApIzJ0vNxbVuFOoPMQ2v50TJZ7pHfnjNxW732K/ZDa2PhnvLNbOyXts/pxTwCpCVvu462tA+kshlROQ2m7DXd/TqpL96N9U7Y0EWZ7YKlfrCkCbcA9LOz7YzZH6DUi1YwwwD+3qj6orEfVczFhDWNQgJjAzP62AU2sLQ4s0Gcvo5FEh+hqTTstAC02cyW06oriFih3eZWBvIbOY7ASbdB0VDQZU+zXmG71hWLnQYctI3cfxqM4xpN/bU6Y5RTWP+uZw==|920
+}//k+OUMLYuFDEfA/Z7TXYyi5S+g0ieml+TsJE2NLoWjS0/R9cT4Wx43LncWj1YtDAArdAPhd0jR/GMcp5IwuUNwvDUlk7m54ZWyFRSDh3hN7/oIIemsdlVsOwc5ZesyMi8ET6qNhM5x2h23OF7F+K8I1OekY4982GMy5xqIydPcgEV3Hcgmo0kNZThRydtqXZ+8FJfoccLb9PhkhwP2HK05VgAi6tcjlQ/H0sdBt0yn+5HVfApdGB3pOoXCBlu8oPZae6fWpnmsP9ONnXTD6Ovo2B5Hd8t84fAWHk7w2isE9oQ28DHA+W6TltLamCM5SOGCwUYM57EJQCAXgn62xeCM0YbTIQf//HAXUHRvfrmrbzOAVN90/g+d+8s4+3jS+9YacVuE9Vf7veFO7zzfv3P3MpBlzdLPBXUYQdpEetuPYcmvO6I+8zQUbBubqjvq1JUi27RtkqiJXSWVLoyLx78FCrht/r10dQ4N8dy/hfzjgtQkGhHe739H9AwF2xKDwSMPB948+nQrjbpoEqbidoJmwu4w6Ky35KI3pj/hMyRBfw7WWoASfxWX/n8q+xEIlRWuh/zaLa3hoo9IO3BEYkU0nazLxOxu4gStvNLLrxeWGf1ee/r4NW/j97wM06whTPLiAT/872cEsSGCz9w9T7kwbQv4U+Djt/SJ1nNEplY13YZ3r4Z0qE6+U4Aj3nRGjWQ3kC2bhCsLRLICb+i32hEe/CoUu/25vEkiX61ZJ6qnI2KjSWS0RyKu5oagslkrBQ7n8gxtluYR11ME3Ea4mtjqQPIO/Yy3lLpYhoiqLRwLHaAtLZtOUrIJpdgn+ToFN1jNBW3QCzEEVnM1Nxq8273lLRPbFBf/UzQVDej80B80O0nNyrykSyn11CDd+dyiPsBL52vcV8FKoOWLGAJf138+w==|920
