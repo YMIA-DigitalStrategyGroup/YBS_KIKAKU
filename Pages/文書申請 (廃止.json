@@ -294,8 +294,8 @@
     "17,6": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
-        "ColumnName": "添付ファイル",
-        "GUID": "5c752de9-a9e3-47d1-8c83-341497d61d1f"
+        "ColumnName": "規格本文",
+        "GUID": "cffd8b55-4063-4db0-89cb-ebf7ebf613d9"
       },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
@@ -444,7 +444,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "92b8c202-4fb3-44dd-bba6-991014a3eb7b"
+                "ID": "ac2fd97f-e5f2-48e4-a470-427a95bd6df2"
               },
               {
                 "CommandList": [
@@ -459,7 +459,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "4ef1f09e-b6a3-4710-8046-3e3ad2dc382a"
+                "ID": "47a879cb-2e80-4964-bc72-03a285869b46"
               }
             ]
           },
@@ -540,7 +540,7 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "b14f0e92-aa0f-4432-b669-236c450730b6"
+                "ID": "c995712c-3906-435f-9999-460107d54915"
               },
               {
                 "CommandList": [
@@ -626,7 +626,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "f2ca2801-92bb-45c4-8c21-56cc7443787b"
+                "ID": "480ffd54-3591-409a-885c-35c3c55837d6"
               }
             ]
           }
@@ -1919,7 +1919,6 @@
     "5,14,1,5",
     "5,19,1,8",
     "12,6,3,21",
-    "17,6,2,21",
     "17,1,2,5",
     "10,1,2,5",
     "10,6,2,21",
@@ -1954,7 +1953,8 @@
     "12,41,1,4",
     "26,6,2,8",
     "2,1,1,5",
-    "2,6,1,21"
+    "2,6,1,21",
+    "17,6,2,21"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2102,7 +2102,7 @@
                 ]
               }
             ],
-            "ID": "4f0f8536-5551-4ae3-acec-5d8f40a16614"
+            "ID": "4c575b7e-d9b2-4aff-892f-8bc68a26dd36"
           }
         ],
         "Disabled": true
@@ -2161,4 +2161,4 @@
       "Size": "51,41"
     }
   ]
-}//kUbrRGMyDCpuQIRKZ54wRWpSMqY78PR2QEY0AZHN3LlPT2AgMY9aTohnGsi3D+G9ygeAnMjdvsh/uJrT+CQVsZ/0rasbN70KjcXaoUgHth1UW06Tkx0FPuaIftcknhgQwxqJMRHdon/CbJQYYaMpYL7OQZcyzjrP78On5kZ/tDUHJVx4/9L+NVqsPILVc1QICDXXTPN0FjqujwuW7bzWTL2FMopaeFgOYma/wC2yxcVQRTpCTIH6qLr7jSxcYjNExhzjV0YtWAml51+M1hYvOyvStq802Ly7siUzoWjXciOtJMLc0fPsi/lCktPm2yzWk/m/hoR7ydkAiAW0jkSmmbBnKt76kSgLlk4XCWWbGYObC3bMBwK2w7dnO0iinA21TyuEYmNyVN+xb1Uo06iGfVpnPg7Ub0QaThNCFI6lEFXCqAee2QHq1POjm2I+DUHeB4W/V6uS1du5Dq6ERw/2ckWvMb2z0dDemVyhAHAi48/cgZ85AZ1BYwyZy3bqm8hSMalwKm5cURjsmZW5lX5r3ZoyChlb3FPKgadkX937j/YcBgXs1wUsKGSlPhL3pO6KctqJZjoR6wClJgPcuRrcBlSHb3oYETbYzolpV1m237YSxiTGM7r5ulAhdNMXOnn6P36pUwhJkk2BvUTcwBuQtqa2L1PriMvhXPjdRVjgMpEgPSBAz9Mm1i7A0hzxl91R46f6sl59gdlTiFnKHBXG5N3vkdR79XldR5v4WwULg606HPH/QIDZ3ZJROqKrvj6G3Rwik4b3tbEz8i54wNfJjstkIFZxbV6vcbStonrPz2ViXMGWxiUBWqZ/bm5vqHcgdV84zKJkzQS1Q/Q4ZflVHgMmNxk110EPbY2ZlMYmri7NOk80n6ZeLs7NHijrqayQJ2kwrWeO4RxqjwvZGHa5eQ==|920
+}//zXWfj3Lwm7iH6415RLYIXe0ikoRaLd+Ep+aBoU+rNUH4HegqM0qSIKDVBu1/rs6gvdLZq3TB1o8bSvWHnV/XMlUBcOb7PeJjAe254y5LPnhFz5wBVKv1pvmsEXSAoBwa0GQ/DZaVMlro9X9lRB5lWzidh/eQeQdcpwW9MDCPVIDkoYwfP60MnoHfSL7dPl6C1bAiilk4HJz95dK7LiizmVo0ZCajZQ8b+WWbw88g4/Q6wpDWrBkKo4UI+Ans1EKXrncKeR/qGHEIrWDFtP67eTYRUhbw3GxhgsibeQMArV3DzJXo6Erji0N6Q/hKoClmgM/QosoU8vVrZ6k99luu0obw2mLEm8gADpQPGLTbL8XfpwTUj9F5lN6s0/YkrNriFe47jXBJqS7meK52C6WJmmiOQpnbNbAQB8yAzH+nmGOQ7eB8Bg3uuLZDBQGcoBOFVJr47/ePIVt2MTdMrU25Zh/sceAKXrcYxv/5IZkYA6nZDUXXNE6YQx9sfeJzFrdLlW5K2J6z1NZB3Dba3DBqEg8704KCSI2I81T/dO+tXHXK82uZqcJuks+wlUs4EPiJvk+D7Q326UX0Z/WsplgWSxUMHj+F2FWrUOhXqNEDj35111c8e+Dq0PoL2R5CpefGI1X2umHoSAgGSYuMeQ9Rr998xv3gRaDnUXjUWWJPVTdGcrGbAtYP6eAPqOBvzE/9KLLATEskokGKLBE05UUGL34a+bNvMm7LNM7e+argLJkuN6xWicCm1HN6lpYXHPJmO6WuDbRc3OcFAdfaS5xlRGf1dIty1Cvh2hf0gm7U87uMqUjam7dcvwESZljIstetd+m1SL5LTGdWfNZ+zbEpukVs2Om6dPEayg57FLPhARSvYpz2qTdJQwJJGdPz4GOPgVjNtXq8jNI4ISdj16Ty7Q==|920

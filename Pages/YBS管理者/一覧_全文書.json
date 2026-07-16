@@ -282,8 +282,8 @@
       "NameUsedInJavaScript": "規格本文",
       "BindingInfo": {
         "TableName": "YBS規格文書",
-        "ColumnName": "添付ファイル",
-        "GUID": "5b9be2a5-273c-4a37-aba8-8c414442d6fb"
+        "ColumnName": "規格本文",
+        "GUID": "99cfa9ef-dc66-4538-8f77-eac1a84c82b8"
       }
     },
     "4,24": {
@@ -356,7 +356,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "273b4c9d-2026-4e9b-98de-66a587323442"
+                "ID": "c76859ec-1c94-4c6b-8395-53f5b9100684"
               }
             ]
           },
@@ -398,7 +398,7 @@
                     }
                   }
                 ],
-                "ID": "4dc5ad6f-b0dc-4792-b3c9-b207bfa707a5"
+                "ID": "70b72697-5b0d-4a6b-bade-5e14ebcbe6b6"
               }
             ]
           }
@@ -581,8 +581,6 @@
     "3,12,1,4",
     "4,16,1,4",
     "3,16,1,4",
-    "4,20,1,4",
-    "3,20,1,4",
     "4,24,1,4",
     "3,24,1,4",
     "4,28,1,4",
@@ -596,7 +594,9 @@
     "4,42,1,4",
     "3,42,1,4",
     "4,46,1,4",
-    "3,46,1,4"
+    "3,46,1,4",
+    "4,20,1,4",
+    "3,20,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -616,10 +616,11 @@
       ]
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": []
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "YBS規格文書"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//+1DWGD4FCgwCxMt7Qjh3rEIRkGXE/Wu4oMBIYtyZ7f54/AKOc9M6b4v1WFleAst1k2YD9tTXKKw0Atnn+cED8k5g/XdaAZHwTa0eZS4ffvzJYj8LIRiIoVp4PNDlEG0z1us2rHnlPFCuzZvMHnU7iUoCelhJlDSrmWRg5T84cOkYcskar732Ch7owkhBJo50RAlI3WtMmOK6Qs3MGnloHP/ZVUG033ncwGytBQr8N/5KCHEQLVA7uzE9vUENHbDqyQAOL2mz+i8i6tIhr0fuaz+f0Wa8lWCBk9f8zuLMtdQdzbogdKGzpKFM6KdZtd1Tq8wlUOQT+QgUZcZbBrw8ThS11AwT7/hEL6Sqn3R4ehfqwV2KvvT99EUPGb0AtldyCedzm2KKNBM+9HqaaXwBeUEfDQgmTZR4Ik0dtSr8iGelg+8ydAtPZzJLF2hZ6S/YirKVhOf8Bfu/WLIR8DDvNyBPzNyyWYL9zqlPfJ2aFQLSSp0mrg7j+NZKQr/GPI3UMewVW5JKrP61KbygXSEp9c1sUoqNfi3FaD0F8jD2xmDAtS7A5bLeqM/VwJ6Hbnm7bakxbFePjN5aMWVxGxyEJCjEa9bt6nsBxpjIfEOxHihicK/ulWMN4mrAK6Gh//hVYbAoQKHnTTn9WwX9ZroLGqRBgdEsAnVfccYzg6gtFJsCaXFQ/oWd2A5kjAOhWI0hHSfTIOx5pjcC+VQdnEEwXd/0ogl/zZAhU8MamQf7I1z8LiPLIFKfKVJzEzJR45j9dnX02f25M3eRSKOdoPfro21q+TAhZolVFHBPNq5DhZzU65K/jaHyNly6PMnC7YK8PzVU3px5QP08xbX8TQbyr2/onLXwA7ySIkX4Y0O3J7yNgGeqikCpJKYZ/5dw/gyrrzSYjE+Yqy4bvR71X2UwGw==|920
+}//RbIQu1uEL0usevLfAncrLyx5Rrijk4b8ZoZVme/deajxCTXTClVDgq3pzecb2xBkV+TN8SJZcc5RCphxFT0wZWSygRjrVFWOZXGVQBgHFghDhA7rAzvY7qOFI66NqGDAn6oFaExRkwtmdU7VrpFISWqbvJazrakUYdCL06St21wfmApvCMeUuk6mQG8EJN1jRwQIsE4rVyjxeC5Oq7/ve0fXt5j5IPBFoKAP0460aZmyO5O+tLNKs7NwT8VzKWMTNP0mtKOyooxzhW9YnXn1wXXqLcoSXFyEgAO2sfhj/6NOYelvaBeCivGd1krLz8fHaQfdAMxKYFXTTCA+cNOo/gW5N4pkz552jonKIyA8+w3ep4UZSu8Y0SNnbW/Mts8/xCQnO9n84uBakDi20GTKJo3v+2qbkvygewplzi9QwBhWMUeiEC0mxGvLvcr6gfU89RTM85kSBz06JpQkw3AhnMmeLly50bEMql2J19HMiPtOT+UyAlsMHq2LPkLUBf4X4DqriEQeb6Q7q7qTYNqtwRzKmqaxUW2gHKHPvx2gE0qU7Rryuu18MGLulz1HXZkwlVQw/a3WnXjxijhPFDacWMkp4g8xzblbfjgBvCZe6ICdFyr8SCpNSY+y3HD1lut1edSI7uQSKIBDAtBsYR0vQFcuiPMP6lpa1AGKcSXJj0oLD7z4DzdWb0QC5hDYi895q+F2dND19767nuBG3bLYt8XNIjEDW0kDD08EwayVr88//upnuEqxwy3EXaMBBlgH0FpoqEm1xxYQcKrzrNQQaqc4wYCaLWb8hcsOCym9YQSpAUnaJz7ROYwUukqv+AwM0yquwGtfw7xkXJY/MgZNafBXWu/OwLo/SvsCFRyUIP2eHy4U727EjaCwH4uwvsWNAz2OSPP0eAlCKsZwNnw/aw==|920

@@ -5,16 +5,7 @@
   },
   {
     "ModuleName": "Table/YBS規格文書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:29:18.1553673+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\YBS規格文書.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/YBS細分化コード",
@@ -142,31 +133,11 @@
   },
   {
     "ModuleName": "PCPage/文書申請（改正",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:30:57.9532175+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書申請（改正.json",
-      "Pages\\文書申請（改正.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/文書申請（新規",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:30:39.0063375+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書申請（新規.json",
-      "Pages\\文書申請（新規.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
@@ -246,31 +217,11 @@
   },
   {
     "ModuleName": "PCPage/文書_情報",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:34:12.2864246+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書_情報.json",
-      "Pages\\文書_情報.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/文書申請 (廃止",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:33:18.5452782+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\文書申請 (廃止.json",
-      "Pages\\文書申請 (廃止.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ヘルプ",
@@ -340,16 +291,7 @@
   },
   {
     "ModuleName": "TableView/v_YBS規格文書_ワークフロー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:41:09.2588442+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\v_YBS規格文書_ワークフロー.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "PCPage/YBS一覧（一時保存_差戻",
@@ -365,31 +307,11 @@
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:34:59.0020593+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\フロー_承認処理.json",
-      "Pages\\フロー_承認処理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:34:46.9086964+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\フロー_委員コメント.json",
-      "Pages\\フロー_委員コメント.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS申請メニュー",
@@ -401,30 +323,11 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル一括アップロード画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T15:36:23.049943+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\添付ファイル一括アップロード画面.json",
-      "Pages\\添付ファイル一括アップロード画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/添付ファイルアップロード",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T15:35:46.3747092+09:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\添付ファイルアップロード.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
@@ -445,17 +348,7 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル登録",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:35:28.2354424+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS管理者\\添付ファイル登録.json",
-      "Pages\\YBS管理者\\添付ファイル登録.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "ServerCommand/メール通知",
@@ -475,16 +368,6 @@
   },
   {
     "ModuleName": "PCPage/一覧_全文書",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-16T16:35:54.8157817+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS管理者\\一覧_全文書.json",
-      "Pages\\YBS管理者\\一覧_全文書.rd"
-    ]
+    "ModuleType": 1
   }
 ]

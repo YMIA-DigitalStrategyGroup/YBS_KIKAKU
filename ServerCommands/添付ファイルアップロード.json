@@ -68,7 +68,7 @@
               "ID": "f996c45bd81d49ee8c83e89c4802b048"
             }
           ],
-          "ID": "2880c118-294d-49b4-94f1-0156691e10d9"
+          "ID": "17231173-cdd2-4efe-aec9-138fc5507c6a"
         },
         {
           "CommandList": [
@@ -82,7 +82,7 @@
               "ID": "b26c35785aaa42388d3912c0b53139d4"
             }
           ],
-          "ID": "5ed4bb23-552a-490e-9e8f-dbebe0a9a16c"
+          "ID": "4447a7a6-a008-402e-87b8-e006c8bc8380"
         }
       ]
     },
@@ -104,7 +104,7 @@
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=MID(取得ファイル,5,7)"
           },
-          "ID": "696da432d0734770893d98be1f92643d"
+          "ID": "7b0080070543400389e200948bc57c37"
         },
         {
           "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
@@ -115,8 +115,8 @@
             {
               "BindingInfo": {
                 "TableName": "テスト_YBS規格文書",
-                "ColumnName": "付表添付",
-                "GUID": "9a0d1abf-7607-437c-b849-0a74608cf459"
+                "ColumnName": "添付ファイル",
+                "GUID": "6b810d45-4f22-4593-b888-70676942b0e8"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -127,7 +127,7 @@
               "BindingInfo": {
                 "TableName": "テスト_YBS規格文書",
                 "ColumnName": "YBSコード",
-                "GUID": "72eb24ae-e919-4be1-ad1c-34cae0a3f2f9"
+                "GUID": "b3ca0ea6-cf79-482d-8a41-1a9be5718909"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",

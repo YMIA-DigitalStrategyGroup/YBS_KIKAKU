@@ -136,7 +136,7 @@
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DatabaseColumnType": "nvarchar",
       "MaxLength": -1,
-      "Name": "添付ファイル",
+      "Name": "規格本文",
       "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {
@@ -229,7 +229,7 @@
     "ConnectionId": "SqlServer1",
     "SourceTableName": "v_YBS規格文書_ワークフロー",
     "SourceTableSchema": "dbo",
-    "CreateViewSql": "SELECT \r\n    -- ① ワークフロー履歴テーブル（_FGC_WHT）の項目\r\n    h.[ID] AS HistoryID          -- 履歴のID（名前をHistoryIDに変更）\r\n    , h.[RecordId]\r\n    , h.[Who]\r\n    , h.[When]                   \r\n    , h.[ActionName]\r\n    , h.[Comments]               \r\n    , h.[FGC_State] AS WorkflowState\r\n    \r\n    -- ② ベーステーブル（$$YBS規格文書）の項目をすべて列挙\r\n    , b.[ID] AS BaseRecordID     -- ★ベースのIDは別名にして重複を回避！\r\n    , b.[選択]\r\n    , b.[申請者]\r\n    , b.[申請日]\r\n    , b.[分類コード]\r\n    , b.[細分化コード]\r\n    , b.[追番]\r\n    , b.[改正コード]\r\n    , b.[YBSコード]\r\n    , b.[規格名称]\r\n    , b.[理由]\r\n    , b.[添付ファイル]\r\n    , b.[FGC_AssignTo]\r\n    , b.[FGC_State]\r\n    , b.[FGC_CreateDate]\r\n    , b.[FGC_LastModifier]\r\n    , b.[FGC_LastModifyDate]\r\n    , b.[FGC_Creator]\r\n    , b.[FGC_UpdateHelp]\r\n    , b.[FGC_Rowversion]\r\n    , b.[現行_旧版]\r\n    , b.[test]\r\n    , b.[適用範囲]\r\n    , b.[施行日]\r\n    , b.[付表添付]\r\n    , b.[規格PDF]\r\nFROM \r\n    [dbo].[YBS規格文書_FGC_WHT] h\r\nINNER JOIN \r\n    [dbo].[YBS規格文書] b ON h.[RecordId] = CAST(b.[ID] AS NVARCHAR(50));",
+    "CreateViewSql": "SELECT \r\n    -- ① ワークフロー履歴テーブル（_FGC_WHT）の項目\r\n    h.[ID] AS HistoryID          -- 履歴のID（名前をHistoryIDに変更）\r\n    , h.[RecordId]\r\n    , h.[Who]\r\n    , h.[When]                   \r\n    , h.[ActionName]\r\n    , h.[Comments]               \r\n    , h.[FGC_State] AS WorkflowState\r\n    \r\n    -- ② ベーステーブル（$$YBS規格文書）の項目をすべて列挙\r\n    , b.[ID] AS BaseRecordID     -- ★ベースのIDは別名にして重複を回避！\r\n    , b.[選択]\r\n    , b.[申請者]\r\n    , b.[申請日]\r\n    , b.[分類コード]\r\n    , b.[細分化コード]\r\n    , b.[追番]\r\n    , b.[改正コード]\r\n    , b.[YBSコード]\r\n    , b.[規格名称]\r\n    , b.[理由]\r\n    , b.[規格本文]\r\n    , b.[FGC_AssignTo]\r\n    , b.[FGC_State]\r\n    , b.[FGC_CreateDate]\r\n    , b.[FGC_LastModifier]\r\n    , b.[FGC_LastModifyDate]\r\n    , b.[FGC_Creator]\r\n    , b.[FGC_UpdateHelp]\r\n    , b.[FGC_Rowversion]\r\n    , b.[現行_旧版]\r\n    , b.[test]\r\n    , b.[適用範囲]\r\n    , b.[施行日]\r\n    , b.[付表添付]\r\n    , b.[規格PDF]\r\nFROM \r\n    [dbo].[YBS規格文書_FGC_WHT] h\r\nINNER JOIN \r\n    [dbo].[YBS規格文書] b ON h.[RecordId] = CAST(b.[ID] AS NVARCHAR(50))",
     "ViewInfo": {
       "ViewName": "v_YBS規格文書_ワークフロー",
       "IsUpdatable": true,
