@@ -340,7 +340,16 @@
   },
   {
     "ModuleName": "TableView/v_YBS規格文書_ワークフロー",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-16T16:41:09.2588442+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\v_YBS規格文書_ワークフロー.json"
+    ]
   },
   {
     "ModuleName": "PCPage/YBS一覧（一時保存_差戻",
