@@ -436,7 +436,17 @@
   },
   {
     "ModuleName": "PCPage/添付ファイル登録",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-16T16:35:28.2354424+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS管理者\\添付ファイル登録.json",
+      "Pages\\YBS管理者\\添付ファイル登録.rd"
+    ]
   },
   {
     "ModuleName": "ServerCommand/メール通知",
