@@ -104,7 +104,7 @@
                     }
                   }
                 ],
-                "ID": "d89b1b87-078e-420c-a8f7-5513da3ee94a"
+                "ID": "d38abe67-b8b2-47c7-b944-68274b852cf4"
               },
               {
                 "CommandList": [
@@ -120,7 +120,7 @@
                     }
                   }
                 ],
-                "ID": "ce5b517a-b235-42c7-955a-fff576c9ddaf"
+                "ID": "602cc458-4e47-47a8-8b51-7c51130d8a15"
               }
             ]
           }
@@ -236,7 +236,7 @@
                     "MessageFormula": "YBS委員ではないので、登録できません。"
                   }
                 ],
-                "ID": "be4896e5-6469-456b-92a0-2be528bc29e2"
+                "ID": "8c5980e7-b84b-477d-9e4d-82358ad33cd7"
               },
               {
                 "CommandList": [
@@ -245,7 +245,7 @@
                     "PageName": "フロー_委員コメント"
                   }
                 ],
-                "ID": "39b81df8-9441-405d-b8af-e3f80105ead5"
+                "ID": "5be537d2-7a01-4c95-8e73-9fed8fd41d57"
               }
             ]
           }
@@ -321,7 +321,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "690b6549-51bd-44db-bb29-a8ee572d32f6"
+        "GUID": "6466bab7-f2f5-4208-b311-1117e2e120c1"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -335,12 +335,6 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "フロー_承認処理",
-            "LoadBindingDataOption": 1,
-            "Disabled": true
-          },
-          {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
             "ParameterName": "承認者権限",
             "TableValue": {
@@ -349,7 +343,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "d440ef1c-5742-41cd-a346-e2103ae7501d",
+                  "GUID": "342f774b-d62d-4933-8824-7e156c4dd0fc",
                   "BindingInfo": {
                     "TableName": "YBS権限マスタ",
                     "ColumnName": "権限",
@@ -368,22 +362,7 @@
                 "Value": "%CurrentUser%"
               }
             },
-            "ID": "cfc87465d29a44f1af059e767f04b28c"
-          },
-          {
-            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-            "PropertyItemsList": [
-              {
-                "TargetCells": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS一覧（承認待ち!AI23"
-                },
-                "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS一覧（承認待ち!承認者権限"
-                }
-              }
-            ]
+            "ID": "598cce40ed004148a5905dcbb03bcb54"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -429,7 +408,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "d26c1694-a290-46e6-9e27-c99d285d1031"
+                "ID": "926107ab-de82-4af6-b6fe-fc7c80418eef"
               },
               {
                 "Condition": {
@@ -472,7 +451,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "28288355-be51-4518-9ee8-950a004ab53f"
+                "ID": "1fa1baaf-2dd4-48bb-9f71-77e48b4bae17"
               },
               {
                 "Condition": {
@@ -515,7 +494,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "93d7a647-c3d8-4f2e-910f-d9ebbafef6b2"
+                "ID": "405fabb8-d8fe-4533-91ea-dc595736c0e2"
               },
               {
                 "CommandList": [
@@ -524,7 +503,7 @@
                     "MessageFormula": "承認者ではないので、処理できません。"
                   }
                 ],
-                "ID": "7e086276-1e15-4649-965b-a7ee04f00fb5"
+                "ID": "12148071-8e5c-4e3f-b901-ca11d1752d70"
               }
             ]
           }
@@ -1118,4 +1097,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//ORgIceq+zTbfGV82hASvzqUgdH23Lqbz3d2TYBy3fFbFp0l4XYLWIExh6RN96TXowO1r45H4H1BMdzavTFBh/XFboBPf2Wt2d/JT5IrmbJQ8kgJJ5zPMuoHa+XIYolSTn3npVqNQLYW6wYjb1W2n6t9/fHWATfkVwVcLtBTvtqmmI6l7NcU6Zi/zZ9jwnSUVo1GAPewcZvodPTwoH/XeS7/icugYs84C87ITaJrrX3tty+QUnugvRswA66jz1+uTsW2aMfkPdyLmbPCCxY6LPPBG7v05jAaypJS9wkNR2ZSh2tBYWH0yHpiGnjD8g//Tm6aV46yn/TfU/u1dSKxkGT1QErAoNJsWhPcJFEfHzxwqqpSztWT5d3HjRp0n/OTZOGuFflc1in/zh58kbDlFIo3uAA9YlJpagb156+GIRcd7XoEyEXvMFmVc2TnPdtPeAtKDB1L/LRGFmgcF0Mj3DBVsGCu2cuvMSF2C0wL9cT0K2tNkAzD8DlEMEn80Mj1xe2XiVGqPA4gzNgkBLegqiprWeGKiV1LtHxOjxT2jtg5TPqePz3eauvl2uyUcGgBUkCLQCeWhvIwv+azl8DopLowYoq28GJbEGgt5nk5qtP1cDe0dB4JJNm4zEeYflixnV3WriaoaQ6EsuR9RJLnRVAuoZoVFGyvXk1KlmLScc1zbC5tl7T7Bvj5ovNtb+GxqiS7t3vt/jGltd5G74N5DTrauAAB6fqmU/yklSvepsk9ZTxob7VCNEXs64Hd2E1sY/6aq2mM1O+jKmYCkQ/i9+r4onMAvhYHjWqt5sbTuhIn0iyD46E+dvwD6nQs/NcFJdit/aKq7wpuPwk21oyBsHqaTyxu4xbOVpbezD77deCpEa0ZX9i9QIGcb6cdG0Zy7GpSzyUKvK+MHN/YnQCjUXw==|920
+}//k6Xr5GRSKrbEBzT04ODBUvARVQ2/cjpkBnI5H5sPXfVHTJxIYcAmlUwpPI11yWdKw8Uh0XuQLI5MoimlEx0yZLjtkDbwCPm2iHNyirPjiyu0UHkjMog8uH3VszB+JO+YF2dujeBO99rXDEszooasYBsM+V64r3dx5gqmZS4m6nb/y6A3ZLjxl64W6BT31uW2V/1W3Ki0ZPhCRofm8Rccw4eDK4YRj2z1E4CpY9R98cCkDvPTR9VupdaBFfLyGtLmz3/ZNO4Bv20Xj++Te1ssWrt0/ynTHNN69CiqTFV6IpiG2hG/icgWWk/lHZSwBJ1vK58qJJzGA0ovQw3hkuIEQTj+jOIxgGBAe4rOeuwKJFfIQ2egUDpBDCsc/aN3nQz+xZ6OWmnvsb6Lo9rSPb//ZC5qKcmxF6NAdwcixyYPgRn4aH9HIDrCpCSARKQThvggrL9eaxzz9DYbGacqyhA6RUpfCOojwKUCmUPgiaYT903z3hiANpYeO7Y2yQDUnF/KvZ5xbffThjyuZkdGMY6/xDzw4/bn1qtdojUzRtnr2A8DuXu75hPDMAsr1+Mze9fiotPEMweVvavd58RBkfmGdWGW2kWHon+TuS/+g4xdTfy4pX2L/44kzIoiqiLcnM9VxExdgczSpQX6V0sYX5ANy7cuacPs29HsD2tinCYmoA1dYaSGf+6K0DmtHSMPPoo06QBwCPf1HzASweHyURyMsznqZVnQGrnJXm0an0yg8E3+vzlv5SbA9YD8YKvdvvAg1PZBwCdJnefbVEPL3Lh+dIeYJ+LFtvg9AQhLL4+1MCIyKzaIhGe00/rOJTGcADeIbMG8wCndr+LLge4rLpvCrLg29C7ZB+01NQDFiMV/x8LXtVbZEQI/TCZf+E+pzHVwLTaJPJaTxGVJ2+mZfrxbwg==|920
