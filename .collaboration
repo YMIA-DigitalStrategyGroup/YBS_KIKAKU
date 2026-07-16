@@ -405,5 +405,15 @@
     },
     "LockDateTime": "2026-07-16T13:04:26.1760142+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/一覧_全文書",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-16T13:38:20.1734091+09:00",
+    "ModuleType": 1
   }
 ]
