@@ -131,16 +131,16 @@
     },
     "6,13": {
       "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "FGC_LastModifier",
-        "GUID": "8480c3cb-403d-4a68-9b61-61da7055d0d1"
+        "TableName": "v_YBS規格文書_ワークフロー",
+        "ColumnName": "Who",
+        "GUID": "cc5b464a-143d-41f0-b9d7-c58fb3766869"
       }
     },
     "6,21": {
       "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "FGC_LastModifyDate",
-        "GUID": "5b6d0189-d042-46d2-9848-f44d0f5ed737"
+        "TableName": "v_YBS規格文書_ワークフロー",
+        "ColumnName": "When",
+        "GUID": "85da5d46-97dc-4951-a74b-e4f89f729f35"
       }
     },
     "8,4": {
@@ -333,6 +333,16 @@
         "TableName": "YBS規格文書",
         "ColumnName": "申請者",
         "GUID": "a1795f8f-09c2-4efd-9f75-731b64c987e3"
+      },
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "DisplayColumnName": "FullName",
+        "Columns": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ReadOnly": true
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "29,22": {
@@ -1534,13 +1544,13 @@
       "29,4": 20,
       "29,5": 89,
       "29,6": 90,
-      "29,7": 20,
-      "29,8": 20,
-      "29,9": 20,
-      "29,10": 20,
-      "29,11": 20,
-      "29,12": 20,
-      "29,13": 89,
+      "29,7": 22,
+      "29,8": 22,
+      "29,9": 22,
+      "29,10": 22,
+      "29,11": 22,
+      "29,12": 22,
+      "29,13": 25,
       "29,14": 4,
       "29,15": 4,
       "29,16": 4,
@@ -1667,7 +1677,6 @@
     "30,1,1,5",
     "30,6,1,8",
     "29,1,1,5",
-    "29,6,1,8",
     "8,4,2,5",
     "8,9,2,2",
     "5,1,2,4",
@@ -1688,16 +1697,62 @@
     "5,18,1,3",
     "5,13,1,5",
     "5,21,1,6",
-    "6,21,1,6",
     "6,18,1,3",
     "29,22,2,5",
     "12,38,1,4",
+    "17,6,2,21",
+    "29,6,1,8",
     "6,13,1,5",
-    "17,6,2,21"
+    "6,21,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "ＹＢＳ情報表示",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+        "TargetTableName": "v_YBS規格文書_ワークフロー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_YBS規格文書_ワークフロー",
+                "ColumnName": "YBSコード",
+                "GUID": "de832796-5727-4dc7-a3b9-f18c6a2940a3"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=文書_情報!E9"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_YBS規格文書_ワークフロー",
+                "ColumnName": "改正コード",
+                "GUID": "85e11416-edac-498d-837f-e3141656b23e"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=文書_情報!J9"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_YBS規格文書_ワークフロー",
+                "ColumnName": "FGC_State",
+                "GUID": "cd0bd451-bafa-4abd-a663-46df611a0925"
+              },
+              "Value": "承認済み"
+            }
+          ]
+        },
+        "ID": "f01ca187a166428f84707435d1cc7450"
+      }
+    ],
     "PermissionData": {
       "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
       "permissionResource": {
@@ -1714,7 +1769,7 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "RelatedDataTableName": "YBS規格文書",
+    "RelatedDataTableName": "v_YBS規格文書_ワークフロー",
     "ConditionFormatRulesCollection": {
       "Rules": []
     }
@@ -1751,4 +1806,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//mimT3XjR7XGYCJ81ldAhfc/ge1+CA6YaLwTYDrl0eA/HAabn9VoByoSez2/vc8AJsvP1wIx2pDHaK4u+WQHVjavlRph4iDvIgr+lLIBVEXtdJNwa1u+LIOW7TrqHm6P0BrAYZq4j9Ee92oLpvgL8faLHWzALHx2T8HN649d+DbagEljhTPP8Q0qpwUFGIeVMIv9wqxQuP4SQQSOsb5ITlRjigpvSOd/rLnhu/EuZWWN/lHOkW+iapiaSQFhvRhdL9ZZiX2RD/6NshWWP+i4VG8yDEHua58zzN9Jqi1cdOo3cy1LdBU4BzIh6P7TaYp++lO7/SGboFOcp14BpEil2bJ4Fgje7t3w4g/u8P1vByaPti6KqoAoTMNSFN2RhxpqyYN4GpBmEj0UOFXlCOo9ZCleByqpzMYqB54/p7xya7asXt4fVyp4NFciwmJKK5j/5r9xB0GPulKEgFvW6U552SxEAZWBYpMxdOXvEBwQPuVMe1cOziYUFT6zRObcqJ3VDB0z74/Z1rLMtwZTJ8uUhtf9cW/Vv0PvuCMYkv5UZKpZvXj0RZYxtbJiBUAzrEx7Q9kujir+htP/I6IaQIzMdm4UWorNl1gg9Oqx22hnYT1MGxN/1hzzQFSa7l3QMRkY6es3+ALfLW6w1C2Wx/OJujAGidHDlPNsVW0K8fYPoTMHbwGLHdZuYxEFm/JhEec9GDfb1QrruSLfDoO4g2SDlUyyaKHl4H6+dZM/dVFmdpUG2otLkgZKwJQLGmAar880s2b09fJIKGUSwsRuIc3BcW1ca6m9akVjqZx5zYI8vP9vpoB4IuiSYpa+87PNJTuquGWTi72/pi/PYqSW5gO//NUwp3zDTqMfSRgRM+dKDK539STXBX+/J6EJyzm8FX0htlZWI/D8glkJBPGABFmqsqw==|920
+}///WLR31LwqqqBoC9oMBz2/SO8XWgYuJ1T4KNMgd4dWKA0wxubP53D/0tx17waEyiwkG5bgfc3ynI9E1hrZqzFFmCzgH2H3AflusGuAtglNKgKsKfZdZRsooEXKh19aWtYhCz2Q9lUtBDdRASOLLKVt9gr7krah+FneX7HFLnFBIfE9TVJaIt7Looo2y+lPmERcU+sHKidI+6f3Pj/Z/HHU7JBTzshMDdZHYnmK1QCu5JphotDXa6q9Z5/KoOO6Jl8WQ5l+3U2RJLzfM7bieYxaeYkkkGxlPMph3bMjOuWHztT5+l+3iPj8QzlcWAZAKcBQf5T15myiXikV/HlMCuDt1IWv1LuAo9mn/qlWmDvowkhEXZ/X13/QogvOBfG3773rUHAKZuDmhmQ4taxwhsO4BGJpfdQRdbkH4c4P8uoaOH3Deq+IdQUllgU56LJvuWc8uNo4gZIScPreXal3QGC2PDtBlb+lil7r3bPDOXUFR/N4zjl8CNMHr3LUroLSxReethOStISGH7p0UJrqGq20VCcFoCjDLST9oL4aZvWw3g2s54p6GIQzET2AV7Gn3/bYoXHIxELAijUI2gwqy0hyQvLU2xhm+RXA8iupDQy0RC/F2AKElFtA6A0YXs9v7T3PqstFe7SkIGrcaT5ztQKJIaFUNkC1KbKFcWDEst4Zm3pxvRJZlWqvAjYWyU0ePPpwU7L+8ogNypr6BUsJxq4SEkKZhfxGVOTeW+sorKac1DxKJe3xo4nnm286bkA1NBJw4PAger+m1QUia6lX54ZMIJ6hxkqIdTDDmNwEzpjG11ZAieHjrCXNgW/HsSfMA+/qbdSs4/bjIEzOS2wtSSJM86I5Hti8j53/+Kwvmt4iURxSMlBVmi9QlxUNiPeXTEwUM7QwHPfRdcX+6YcfyFaGQ==|920
