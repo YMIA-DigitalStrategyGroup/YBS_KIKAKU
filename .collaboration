@@ -699,5 +699,15 @@
     },
     "LockDateTime": "2026-07-21T09:34:08.5345079+09:00",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/スクリーンショット 2026-07-21 093552.png",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-21T09:36:29.8911334+09:00",
+    "ModuleType": 38
   }
 ]
