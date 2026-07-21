@@ -141,7 +141,17 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-21T09:24:15.2666546+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\YBSメニュー.json",
+      "MasterPages\\YBSメニュー.rd"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -239,7 +249,17 @@
   },
   {
     "ModuleName": "PCPage/HELP",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-21T09:24:15.2655536+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\HELP.json",
+      "Pages\\HELP.rd"
+    ]
   },
   {
     "ModuleName": "Image/画像リソース",
