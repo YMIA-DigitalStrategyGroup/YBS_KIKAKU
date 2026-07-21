@@ -479,5 +479,15 @@
     },
     "LockDateTime": "2026-07-21T09:20:03.754375+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/Sheet1 (2)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041319",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-21T09:22:09.8905915+09:00",
+    "ModuleType": 1
   }
 ]
