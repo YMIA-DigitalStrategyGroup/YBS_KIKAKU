@@ -141,17 +141,7 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:24:15.2666546+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\YBSメニュー.json",
-      "MasterPages\\YBSメニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -232,34 +222,6 @@
   {
     "ModuleName": "PCPage/文書申請 (廃止",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/ヘルプ",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-05-18T14:43:14.636957+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ヘルプ.json",
-      "Pages\\ヘルプ.rd"
-    ]
-  },
-  {
-    "ModuleName": "PCPage/HELP",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:24:15.2655536+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\HELP.json",
-      "Pages\\HELP.rd"
-    ]
   },
   {
     "ModuleName": "Image/画像リソース",
@@ -392,312 +354,126 @@
   },
   {
     "ModuleName": "Image/画像リソース12",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:13:51.0911657+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース13",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:13:55.7508631+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース14",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:13:59.714952+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース15",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:14:03.2942475+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース16",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:14:06.6439641+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース17",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:14:10.4555638+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース18",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:14:13.9379803+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース19",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:14:17.4438853+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース20",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:14:20.9573578+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース21",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:13.6510104+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース22",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:17.1419066+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース23",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:20.4039835+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース24",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:23.5375191+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース25",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:27.0477503+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース26",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:30.2687717+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース27",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:33.5650469+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース28",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:36.6772554+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース29",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:22:40.151411+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "PCPage/HELP2",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:31:51.9426405+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Image/画像リソース30",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:24:59.4420515+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース31",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:25:02.7307304+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース32",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:25:05.8184968+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース33",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:25:09.0894198+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース34",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:25:12.7193183+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース35",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:25:16.0037371+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース36",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:25:19.19742+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース37",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:25:22.3578918+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/画像リソース38",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:25:26.4854445+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/スクリーンショット 2026-07-21 93300.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:34:08.5345042+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/スクリーンショット 2026-07-21 093335.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:34:08.5345079+09:00",
     "ModuleType": 38
   },
   {
     "ModuleName": "Image/スクリーンショット 2026-07-21 093552.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041319",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T09:36:29.8911334+09:00",
     "ModuleType": 38
   }
 ]
