@@ -221,7 +221,17 @@
   },
   {
     "ModuleName": "PCPage/文書申請 (廃止",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-07-24T11:46:46.2946476+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\文書申請 (廃止.json",
+      "Pages\\文書申請 (廃止.rd"
+    ]
   },
   {
     "ModuleName": "Image/画像リソース",
