@@ -11,8 +11,8 @@
     "1,12": "コード",
     "1,17": "名称",
     "1,24": "検索",
-    "3,20": "規格本文",
-    "3,32": "区分",
+    "3,10": "改正",
+    "3,39": "区分",
     "23,2": "全",
     "23,5": "件",
     "23,8": "処理中",
@@ -217,6 +217,7 @@
         },
         "ListViewStyleName": "_RS_Medium2",
         "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "AllowEditInListview": true,
@@ -244,12 +245,7 @@
       }
     },
     "4,1": {
-      "NameUsedInJavaScript": "選択",
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "選択",
-        "GUID": "6c2ec8fd-7080-490d-9cb5-888519291336"
-      }
+      "NameUsedInJavaScript": "選択"
     },
     "4,3": {
       "NameUsedInJavaScript": "状態",
@@ -268,7 +264,7 @@
       }
     },
     "4,10": {
-      "NameUsedInJavaScript": "改正コード",
+      "NameUsedInJavaScript": "改正",
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "改正コード",
@@ -283,7 +279,7 @@
         "GUID": "e8a1a8fc-5f0e-47fb-8d95-c22567a14e85"
       }
     },
-    "4,16": {
+    "4,20": {
       "NameUsedInJavaScript": "理由",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -291,7 +287,7 @@
         "GUID": "ab8062ea-48ff-4488-8662-32dae470ab9c"
       }
     },
-    "4,20": {
+    "4,27": {
       "NameUsedInJavaScript": "規格本文",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -299,7 +295,7 @@
         "GUID": "99cfa9ef-dc66-4538-8f77-eac1a84c82b8"
       }
     },
-    "4,24": {
+    "4,31": {
       "NameUsedInJavaScript": "付表添付",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -307,7 +303,7 @@
         "GUID": "02e0a100-5e05-471a-b0c5-c38fe0688b4c"
       }
     },
-    "4,28": {
+    "4,35": {
       "NameUsedInJavaScript": "規格PDF",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -315,7 +311,7 @@
         "GUID": "c8e73f08-32ea-4439-b409-f2ef2bda79cb"
       }
     },
-    "4,32": {
+    "4,39": {
       "NameUsedInJavaScript": "区分",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -323,7 +319,7 @@
         "GUID": "3f14b376-ecb6-4927-838c-041e3de49c92"
       }
     },
-    "4,35": {
+    "4,42": {
       "NameUsedInJavaScript": "申請者",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -331,7 +327,7 @@
         "GUID": "8775e0c9-9b15-4174-8ce5-60687e15be43"
       }
     },
-    "4,42": {
+    "4,46": {
       "NameUsedInJavaScript": "申請日",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -339,7 +335,7 @@
         "GUID": "5d4d0dc0-0f06-4f2e-9be6-bce5d9c1dbef"
       }
     },
-    "4,46": {
+    "4,49": {
       "NameUsedInJavaScript": "施行日",
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -369,7 +365,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "6b9e6344-3127-4ac7-9c61-90b6e8ead84b"
+                "ID": "0409a422-fd22-4282-8ac9-e93fb4ea3f13"
               }
             ]
           },
@@ -411,7 +407,7 @@
                     }
                   }
                 ],
-                "ID": "a2a6e718-2a7f-4759-a1b4-76cefe417210"
+                "ID": "9a678d79-6b18-4e1a-ac5e-4f97602ce2dd"
               }
             ]
           }
@@ -541,28 +537,39 @@
       "3,6": 2,
       "3,10": 5,
       "3,11": 4,
-      "3,12": 2,
-      "3,16": 2,
-      "3,20": 2,
-      "3,24": 2,
-      "3,28": 2,
-      "3,32": 5,
-      "3,33": 4,
-      "3,34": 4,
+      "3,12": 5,
+      "3,13": 4,
+      "3,14": 4,
+      "3,15": 4,
+      "3,16": 4,
+      "3,17": 4,
+      "3,18": 4,
+      "3,19": 4,
+      "3,20": 5,
+      "3,21": 4,
+      "3,22": 4,
+      "3,23": 4,
+      "3,24": 4,
+      "3,25": 4,
+      "3,26": 4,
+      "3,27": 2,
+      "3,31": 2,
       "3,35": 2,
+      "3,39": 2,
       "3,42": 2,
       "3,46": 2,
+      "3,49": 2,
       "4,6": 2,
       "4,10": 2,
       "4,12": 2,
-      "4,16": 2,
       "4,20": 2,
-      "4,24": 2,
-      "4,28": 2,
-      "4,32": 2,
+      "4,27": 2,
+      "4,31": 2,
       "4,35": 2,
+      "4,39": 2,
       "4,42": 2,
       "4,46": 2,
+      "4,49": 2,
       "23,3": 6,
       "23,11": 6,
       "25,6": 1
@@ -590,26 +597,24 @@
     "3,6,1,4",
     "4,10,1,2",
     "3,10,1,2",
-    "4,12,1,4",
-    "3,12,1,4",
-    "4,16,1,4",
-    "3,16,1,4",
-    "4,24,1,4",
-    "3,24,1,4",
-    "4,28,1,4",
-    "3,28,1,4",
-    "4,32,1,3",
-    "3,32,1,3",
-    "4,35,1,4",
+    "4,12,1,8",
+    "3,12,1,8",
+    "3,20,1,7",
+    "4,20,1,7",
+    "3,27,1,4",
+    "4,27,1,4",
+    "3,31,1,4",
+    "4,31,1,4",
     "3,35,1,4",
-    "4,39,1,3",
+    "4,35,1,4",
     "3,39,1,3",
-    "4,42,1,4",
+    "4,39,1,3",
     "3,42,1,4",
-    "4,46,1,4",
-    "3,46,1,4",
-    "4,20,1,4",
-    "3,20,1,4"
+    "4,42,1,4",
+    "3,46,1,3",
+    "4,46,1,3",
+    "3,49,1,4",
+    "4,49,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -636,4 +641,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//ifWnovOXJmHK/7PipjkbkH9G197NwU3RYw7wh761LIfHoaFpqsg87gBHQa0ogF9lg42NuLdHSA5Dte6dAMTtk/Qw7TbO54flGqW1aWGIhwOVGMUAllOMU3mFhGTQkyu6ML+RWjrUDWoWro08zyzS5mTGVxP2lZ73DzaaqpcuNJrIqqIQ8YhKVjj+HLaspOyNJxsDZCKB29lhZnSJ+n7yC6LtZxK8vhpEGfKAzGjLFtnxPMAGi2yD7dD3udk544ZSFBjPaWGcIcojEBJIwXXnfD1Ht+3y+ME4cVO3AAPwWunWGhZaHHEf23hbQY20xUxffideL3SKRn2LdWxK7aPFmw9kBxmBSRhiRaoNvsrDVz0HS9HXvwfh65FiD4yVNCkEG7l2RgF7z+Ihr+MKlm7vOdaAnCWJ+g7kulo9BLcVWmnUFDm5RpwEFf0w/ie5D2dR7oJT2MITPbjR42eGLiNr/t0h05PiCJRMDdgATJ+KuxU5LK9cbcfntxaoHVwaCJp/fDJ+86uENO5/JpuBUm4NHYuR7OOdqk1Z1yz/6bfIR5smqrp94p79QzXaNIkRBWfUlxtHZf+SPkSFEh0AdMKWV0WQTFk7hkoE5kDWoddk8kHOCs51LWOP+alctJ6rO8jdKVz2dKh7WWbkieOZ7vLh/u3BlWCBuecrFZwJ0gWj4waLfKJqyssYfmkKGz+i/H6LAIfnOuX6LGoX9NfadG4o0zpO3dx8mQryKaazPlz9kKozmcuR2CsI/q0GqRX/KK4PNobCoyrvpI0RLZ7ok+37m4zRZT3k6+pBHdTUH2HAdWH259p+7DQV6PEs2IY+hoyezD+1eS8ETRP8JP1XJxG3vAY082pwe2VTOa0mQlc6Xq/dD/C0Pkq5CrR6g5kjSdv2dbpTFAc2cT0XHsCA3bmxyg==|920
+}//FiAIIRALpqP/P/h4lxVIY+NTa/hZvKBv3MFS0biYx47ZbJ+iDaJakPRIkoQTzX98uwYMRs7OOFONJRULGU1qdT8HOcVgCtX6RfLexMeCxoVqGxXWdxIXbiWdUcaHH8EDU4D/IjKbRV0xn0GyWrWxr3o7TsGlH2K9FbpWdOr3yrPfwDZT0Y9T8Sun7xoTI81TLaWrtQJQ6eCMbClw8zlNVseZxwG6xzgg+ZbmQRMKUBCeO7vDYz3PMZcmS3TbX57o3R7SSR440VauzNnH/h/omBChVHcEwIy6Zg0JPPMii2bf7dH1Ud8Ie3ncYTzIRrTbK3m3fo/it7ew2M0Y2qZv2RQteFPJxcRu6Wqph5FNSD8NXT3zw1HnYqdFkkuSVetb1F1R3KZ6Z1pS/X+N5tFMyCJyvgDpnTaF0xFcebJT/RdVYq/bZo8My9wKC6VZI2sKBU6dFdUxmBIrPrd+HvNefWt6pUAdI+1/YP+gSqXwkf7Gayr6jmc+RdeAeh9U+ZcK1fkvJQxaJiWuT3BwWORM/0kog7hDGX2hdQQgaV5J2rIzV9T+9iBphVdukrzVE0rrtnP+scAuaK5EhBmeWbLihQ1VgyYrG7s8vaqwFBia3it1UPaQ0US4onOVNyaw9kU4K1/92UNf+X66VUNNqCz9S4CYFbBBgJej2iQ+BwPXDWN3icis33EqrOiTKMnORv/X8EIYNgrIvDYHasTe9ZzQBY9IvtW/W/NDhw9MIEgexJ04cPJfYbPLUqIXtun9hTLBctcsUwcKEF3qGsgUSALTrMRBA6i7AE92XrcJIxHXh0lvPj/rdXS13dcrqwK9hKbbtwQhXH733ESdxbuALlGViIVutrwoEQcozBKaKfmR/VXdbuB+1VG+73DqIudQpP4UIPw7bbt06bxuIcBOI4oZDw==|920
