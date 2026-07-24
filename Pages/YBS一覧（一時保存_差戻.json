@@ -110,7 +110,7 @@
                     }
                   }
                 ],
-                "ID": "875715c2-717d-43dd-93d7-df3c0f758499"
+                "ID": "96269d79-d869-425a-80eb-a70ae56dcd96"
               },
               {
                 "CommandList": [
@@ -129,7 +129,7 @@
                     }
                   }
                 ],
-                "ID": "430a92f8-21a7-4aa4-b487-42d9042902a5"
+                "ID": "8ce4d1fe-81d2-4902-aa7f-ed783a6a395e"
               }
             ]
           }
@@ -370,7 +370,7 @@
                     "MessageFormula": "申請者ではないので、編集できません。"
                   }
                 ],
-                "ID": "22e18728-b8c1-4533-b0ff-02d79ec217e2"
+                "ID": "6e4831ad-4dbb-4667-90fb-419884401732"
               },
               {
                 "CommandList": [
@@ -449,7 +449,7 @@
                                     "LoadBindingDataOption": 1
                                   }
                                 ],
-                                "ID": "4dce1682-2a71-40a2-8249-1bd83e05b870"
+                                "ID": "88d004ec-ad9f-4168-b4fe-80e2cb004408"
                               },
                               {
                                 "Condition": {
@@ -497,7 +497,7 @@
                                     "LoadBindingDataOption": 1
                                   }
                                 ],
-                                "ID": "7b43a301-d6d9-4d20-bd07-569bcbd03b9b"
+                                "ID": "25726b1a-40e0-452d-9cbe-87a943d97ed6"
                               },
                               {
                                 "CommandList": [
@@ -508,7 +508,7 @@
                                       {
                                         "Source": "廃止",
                                         "TargetCell": {
-                                          "SerializeProperty": "='文書申請 (廃止'!G5"
+                                          "SerializeProperty": "='文書申請 (廃止'!G4"
                                         }
                                       },
                                       {
@@ -517,7 +517,7 @@
                                           "SerializeProperty": "=YBS一覧（一時保存_差戻!J7"
                                         },
                                         "TargetCell": {
-                                          "SerializeProperty": "='文書申請 (廃止'!T5"
+                                          "SerializeProperty": "='文書申請 (廃止'!T4"
                                         }
                                       },
                                       {
@@ -526,19 +526,19 @@
                                           "SerializeProperty": "=TODAY()"
                                         },
                                         "TargetCell": {
-                                          "SerializeProperty": "='文書申請 (廃止'!T6"
+                                          "SerializeProperty": "='文書申請 (廃止'!T5"
                                         }
                                       }
                                     ],
                                     "LoadBindingDataOption": 1
                                   }
                                 ],
-                                "ID": "615e2e75-5d44-452d-b6d9-f61262fa0851"
+                                "ID": "fc85d122-7285-491c-b110-ac410ef78ce1"
                               }
                             ]
                           }
                         ],
-                        "ID": "901401ff-a5cf-4d13-ad11-620b824d1b86"
+                        "ID": "71e13746-6d2f-4bd5-ae13-08c283600ea5"
                       },
                       {
                         "CommandList": [
@@ -547,12 +547,12 @@
                             "MessageFormula": "「差戻」または「一時保存」のデータではないため、編集（再開）できません。"
                           }
                         ],
-                        "ID": "18b746e3-033f-480b-a62e-f1b87085b05a"
+                        "ID": "7e40fc01-e4ab-44ae-94c8-d8d86796e54e"
                       }
                     ]
                   }
                 ],
-                "ID": "9ba9aa6d-1f50-419f-9d9a-b5d8bae00a30"
+                "ID": "9f3174d5-759f-4a7f-8ee5-3fffbc832ebe"
               }
             ]
           }
@@ -601,7 +601,7 @@
                     "MessageFormula": "申請者ではないので、「削除」できません。"
                   }
                 ],
-                "ID": "e641c776-b4ff-40b8-bc5d-bb7ffca36e64"
+                "ID": "4bad3344-658e-4bbb-a87e-bf3ed1ce678c"
               },
               {
                 "CommandList": [
@@ -646,7 +646,7 @@
                             "MessageFormula": "「差戻」または「一時保存」のデータではないため、削除できません。"
                           }
                         ],
-                        "ID": "7327a2be-2a54-4d6c-b76f-889ec9f4a25c"
+                        "ID": "a8903b46-998c-43a3-9ee3-27e65b20d19a"
                       },
                       {
                         "CommandList": [
@@ -658,12 +658,12 @@
                             "ConfirmText": "削除するデータに間違いありませんか？本当に削除してもよろしいですか？"
                           }
                         ],
-                        "ID": "e71201e9-b70e-4edc-be5b-2c1ec5ad4eb2"
+                        "ID": "499afa52-e697-4cbe-ba7b-191c4377b7c2"
                       }
                     ]
                   }
                 ],
-                "ID": "3dda6553-ee0c-400a-92ea-87e596f782a5"
+                "ID": "d5eae4a9-9a6b-4895-b66a-23c9a00864e8"
               }
             ]
           }
@@ -820,7 +820,7 @@
                           }
                         ],
                         "Comments": "対象文書が　「新規」　の場合　→　承認後に現行にする",
-                        "ID": "f665c889-a8c1-4dfb-b628-c728d409e69e"
+                        "ID": "ee8c71d6-5e74-4209-8d0c-008cffaea7b8"
                       },
                       {
                         "Condition": {
@@ -894,7 +894,7 @@
                             ]
                           }
                         ],
-                        "ID": "d01917fa-6937-4c75-849b-b6272a87a1e4"
+                        "ID": "bcc9f022-b414-4a67-8977-2d0df3c75852"
                       },
                       {
                         "Condition": {
@@ -953,7 +953,7 @@
                             ]
                           }
                         ],
-                        "ID": "42039a7a-1cb2-40b7-80a2-c0e021efac27"
+                        "ID": "2817526a-befa-4b63-a7f8-bfd96edf36ba"
                       }
                     ]
                   },
@@ -968,7 +968,7 @@
                     "ActionName": "承認"
                   }
                 ],
-                "ID": "6ee60351-88e3-4d9f-9467-233f3db303d7"
+                "ID": "c84f667c-72b9-408a-8b51-4ef2b6386394"
               },
               {
                 "CommandList": [
@@ -977,7 +977,7 @@
                     "MessageFormula": "承認者ではないため、承認ができません！！"
                   }
                 ],
-                "ID": "7cf0a8a0-565f-4de8-8fe9-505d36efbf26"
+                "ID": "c471fbf9-d734-4f43-92e6-07c20c603053"
               }
             ],
             "Disabled": true
@@ -1507,4 +1507,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//NxL6Mn8vl5m9PBvPv3W9wpvm/GfCcp026Hh6lsfp+CpR05cRuoMM4k52DwdlQOlIKzl4nwu8LRHvbWpIwBoZXCBkCBF4MarK+qt1LryN9qIm8Rzg0WbTj36Ak5xiJCAaSb876S35XgmnJrfv4ve6KA1NyU+hho5s2pOro1cB/NJA3C/V/t/7cSgOR5LEKz7V630ZyuOLQXjQlg7nBmNFPZXaGc+NT6d2GsH0zYCDpDAD3KkXnxAAcuKtY6KP8Y5Ldyx1+D9+jS2w3bunFaLrKLDzZMuofscG/ft8iVi9vYu2OCBxA212l4IaHJJs1xAZcvV1eC2Nf2m2rXShNyRm8o9EIFLxp0xfLBmfA1Wq1NQABjCeG/qc575vgZ8rT71LmuXrtwb67r8hf0mzfMnELYaOaAU7CRuJ6ywXxS5ufLeLasfs8iWSxMoHvmKvQFIQlwNzq1ykvr9FHhJFYkheVuJuEYKFL1MhA7S3PBzI3t1d8we+6x/Q8cOc0ki461zlWtNjtyuK2wQR/NOcor7vomrFW8/CzTakPouB0/GVaR7t2Ge8mXcLRE51dRW2M+kqF2dYa0IATHtVW6TgkCjPBKmPBiLOr975ulX2q3M47vLWuPLWsKBMWk4hW9oznix0fK3iUnUkFK6gI4F9J8J8wG9DaU6w1RE0z/w9JFpAJP10HNGIHwDE17YTFjhC760k220LChGuxxcz5WPL59YJoI54nfcZWGDLio5hdXk+Atp90zVpq9N+PHw4178O57M9emW+1XZ9rNDe+u2kzrW5voe5qMjxRKGMcoZOOHC5Gs7L6z0QeaQdxYZETJ3bIXkb0aWV83TH6b8PtDClnEYQy7TFQiMgCsusGEXep0tn0ejTlNvt8ORLaInlvs1jvIR5WDQuf5NlbTtEG9GupOIqFg==|920
+}//ob5eCZzElyBNeAA4HJorB1zwErSyuC+9wWMo5HoysZu8c2iD5a5vTY0eVPEf8a7hPsX1CrDvVbks+W6DftdiWwkq/s0HjSfckgqHl7V3dtS0HPSQ2x6r2Ag9pemObS/twbuWfM8NTZiNAiSmuPEDmCM2jndMSS4aeKb1ju/7IMV/aibFEHr0ir3/FCUP4bMeSNkBbfnonBjCMSQ/R6DCKMSVhuhKdXMPNhGT7YNltteKOWbwi4PFlRLlapZI3mjU9UowYO6rRkqZItqOmP7mSEMCBNb3cXViLMoTOowoeMB4U2QTHwevgkBtApEk1FojI5Z/cPx/L5uY7klHhtpC45qMHkohjCmOtOyY4sUHjo/B9n074OEvxNglZRANhU2MbvhLpqRfBIyoq43IezRqO50PE1bEaiXRu3wmkNzOIrUdIz73piudKb7lfMBG+MXvoKfS57uYl9ZUdDI19LpPgyumcgYsknLbtFuCMxXB2rFkjqCpXPJ6TQ0T5Bg0zfxjj494Nk9umMLGgb8Ec9nbX5vn8iflLN5s3tCUSZn3LXF6CkdEDZVLgi2+rJ/YWrhGmjzJ3iB2CEVKnaDZPccVBo3zWA76zQRScxRrD5fI6nlSy6FRv/r1Rq9pTiiIpupJsUh+5MtN6z9XW0YBfT2CBMUtvSAR9hMIWmLw5XeF4Gbutatk+OQ1GowPD0LcWfJqPF9Zs7v/H2IZyVfOiuNOv4fx9nzgbN9SSNyCob+GaXS5lUSgjDDbdZZb2vlDUof57UIXtI7NiwUE+9z9wrc0n2qJR+jb6FogtdnohhCXaPzSMuiKq5+lpxDrhUooRtAAFOrW726Bx28383fWaHpjZrv87FVvmmlUKh9Z85F26fIxwlZfEVz2CoRZsNiKHthEdlsIZMDPg1OmE2xpooRpsw==|920
