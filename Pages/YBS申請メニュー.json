@@ -239,7 +239,7 @@
         "RowIndex": 5,
         "ColumnIndex": 20,
         "RowCount": 15,
-        "ColumnCount": 38,
+        "ColumnCount": 40,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
@@ -342,6 +342,14 @@
         }
       }
     },
+    "6,58": {
+      "NameUsedInJavaScript": "追番",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "追番",
+        "GUID": "e48f9302-760d-4215-ac01-26a06130310a"
+      }
+    },
     "7,1": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
@@ -405,7 +413,7 @@
                 ]
               }
             },
-            "ID": "67fa13b6818747418ebb007e529019e0"
+            "ID": "ebda3fc5e9c146c08a0c9185c8505419"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -592,7 +600,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "cb526a1b-27a0-4d5f-acca-23290495fb7f"
+                "ID": "7c98421b-1683-44c8-a380-679347ec15b7"
               },
               {
                 "CommandList": [
@@ -692,12 +700,21 @@
                         "TargetCell": {
                           "SerializeProperty": "=文書申請（改正!G6"
                         }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=YBS申請メニュー!BG7"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=文書申請（改正!AP10"
+                        }
                       }
                     ],
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "6f4369e2-2912-42cb-afb7-257d0bb0fd36"
+                "ID": "79868965-0b27-40c9-9bfd-cfdfad07825f"
               }
             ]
           }
@@ -725,7 +742,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "9072a047-2058-4d1b-8d6b-8cbf3d7602d6",
+                  "GUID": "e3993358-a4c8-45e4-b0fe-231381fd61bf",
                   "BindingInfo": {
                     "TableName": "YBS規格文書",
                     "ColumnName": "改正コード",
@@ -760,7 +777,7 @@
                 ]
               }
             },
-            "ID": "5f946e619cbb4534b6aba85f923b78df"
+            "ID": "1c09fc0e126340d4aa9ba9ee6c3281be"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -962,7 +979,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "67b54894-3e6d-42e9-9e75-778a9f3add8d"
+                "ID": "60c5b0b1-8482-4306-86f0-f11af239022f"
               },
               {
                 "CommandList": [
@@ -1035,12 +1052,21 @@
                         "TargetCell": {
                           "SerializeProperty": "='文書申請 (廃止'!G5"
                         }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=YBS申請メニュー!BG7"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "='文書申請 (廃止'!AP9"
+                        }
                       }
                     ],
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "df5134dc-79ea-447d-bf2c-13bce90325e3"
+                "ID": "434c2ade-9b86-4dc6-a8f7-4a574c3f5283"
               }
             ]
           }
@@ -1087,6 +1113,10 @@
         "BorderBottom": null,
         "BorderTop": null,
         "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null
       },
       {
         "FontFamily": 1,
@@ -1235,7 +1265,7 @@
       "5,54": 5,
       "5,55": 6,
       "5,56": 6,
-      "5,57": 6,
+      "5,57": 7,
       "6,20": 5,
       "6,21": 2,
       "6,22": 2,
@@ -1265,7 +1295,7 @@
       "6,46": 2,
       "6,47": 2,
       "6,48": 2,
-      "6,49": 7,
+      "6,49": 8,
       "6,50": 2,
       "6,51": 2,
       "6,52": 2,
@@ -1759,22 +1789,24 @@
     "3,21,1,5",
     "3,32,1,5",
     "3,37,1,6",
-    "5,21,1,4",
-    "5,25,1,2",
-    "5,27,1,14",
-    "5,41,1,4",
-    "5,45,1,4",
-    "5,49,1,5",
+    "0,28,2,8",
+    "7,20,13,40",
     "6,21,1,4",
+    "5,21,1,4",
     "6,25,1,2",
+    "5,25,1,2",
     "6,27,1,14",
+    "5,27,1,14",
     "6,41,1,4",
+    "5,41,1,4",
     "6,45,1,4",
+    "5,45,1,4",
     "6,49,1,5",
-    "7,20,13,38",
-    "5,54,1,4",
+    "5,49,1,5",
     "6,54,1,4",
-    "0,28,2,8"
+    "5,54,1,4",
+    "6,58,1,2",
+    "5,58,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1800,4 +1832,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//CxX9gawh5H0hGeFgtGUdSJm9S2uBKizP/xYaml8CsRV20PXknxAOIsTTeABgDaoV3YupPpU8QqZzQjJM7xBgkkDtEx7vlqzHGBiRgopWYtnRMm4XYJxv08N8aal1xv04eFePLOLhb0NLG+q1g0twv+LxN6cHNAi78T7eUL7KdcHFZnyHsfDHPn4RnXMb8oQoUuHY39rV0NIXoz3gI+BEHXRzaI0uKn8Tr6jlBgpztnZAzUrw3uGvBz+sLGYEjz/O9CQyFMdSBuebUrIJpRBgwxroMfRhlr0MXpo1yw4ioGnt3lb0wge3+DVf8Kda7R4+Kls3HjEWRhlsjWBssoHIrUQ+XI2q22Ofv95cr1GornihhTBCwgosQmEu9vx0H/rbaFWi9j04s53J6JVduFBOMZzruCUWEffirMnbaqoJHvSaM9Jr6yTvM9iUxa+GfC5udVYzHQmgsTODqwRGQ0/rLFHCTYev6pJTW0bJEGzD4RWiH6x2W7l/eHw3ZTDOYW3jxqEn40+6HFqeuz8HfZ4aXYp4of/7kmCi7oLE9Ntr0qasNOQ3IMVDdLwy3tv+YR0rfTDImt7kshflNftu8nuHYdDhGB9ueptxBk/NDwR7i0vNb9KFPG643zGKcaOeQp4H+IiPYtQsErTeUs5Pqc/uZbklSlL835YVL9nxeoNJK5hhkbqmLQ2sba/CLEcrBIJaJMwWigIrCXeBkgUyBdvtMmPCb6GYNT1ZgdmrzxC5F/QDK0adJQZ1S+Rw6+8tyKFo7TcxfkJYEOMoKxMvnrJlQaE6/vxYHtgMtm6uwZzmTnaMRXlJydo9g7rgzn7o8OS2Xjq4VLmHho4h3P9pr9z1Zs/fI8Dglg4Es7GogiW+R9vvtMNfI1Pr2NMB63IgpkpqjmhhPeAiDwal0MwUm8ZGHg==|920
+}//uuGQIiGbz97CSkQPk9rPc+DwD4ZyY4E2MzLZAA9R89zndDTIAR+221/LjgEabVrXlTr05zdz1WmiDyrvS1YYYxiMa/TdtJQ3Ztet0zr2muLROVOffdJxK6f3fTWsYFYktP0bqY4+HBuMZbKxa04IG3ecFC0LhkCfBpKd+qI/+uYwda2D2AcODMtsQxzBcGA/aFaLu/HUJO4JK3ASJCH9GCNiFDdsh5ILD1Gb9M1Tyu7XiPO1045+t+03DTj8FBxIjM+ZBZ0k/oSwHXqFlTauKAIhmeHkvvMkZFoV+Rh5HdCKbIwHB73YGfASVfMiS9huj36aus9C9n6qazXaix25Ng4VuIUeVHnfsrHiHm00tF01b6/J0nA1ni19iATcsBhZKONJVrCb4YFKNgOaCiUdq9SINCdkkmyC/MME3cHXLP495fgHK5637fcZH1r/QqhcowNDvHnikzad4q1JMpVGhYJqDgZ/kYDLasr7mlTUgt0LHJpavaqwEy4LvOIMwf2H04s+Qs8NWswY0dcLg+Zy515n14+C1KzuJIIHhu+QUh6ZbCXvp9zq2iLB2UU712NF9k5pNckP81GAv8Z6c80G8/wvUdIzt1svecGEfYH2uIblNK7aainTr9mCvuxdFLstQH4Fm1KC6mgVoVTdfbW9A02vAieAX4ZXdNsuW5ldPO0AF0KeY63kU8cwjmLer3QrrwLoruLxry8KwnZ5/tdLUQB8NFOnnfK+gotxH4zf7ftzuApUW+o5s4CB3x7NJITWwK/GxB783ZXQO+srmGrQpmGotDXmNCnJsNRq1dA8Us781QTv11mNDJq6jMsf8ko0T2E744qEsNhLJEZIvCLGct8O6i7Jq607uD2qOFRjvsc23I5afeW8v+w8pTUOB0Lbh7UXNitPPz/5QRJd1tsFbA==|920
