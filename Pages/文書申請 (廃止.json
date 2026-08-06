@@ -418,159 +418,89 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "c58d3c6c-37f0-4c1a-9d4a-89057f7918e1"
+                "ID": "2c948e11-2775-4e8a-9c14-bb99920e2e2f"
               },
               {
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-                    "ParameterName": "廃止レコード数",
-                    "TableValue": {
-                      "TableName": "YBS規格文書",
-                      "TableValueType": 3,
-                      "SqlCondition": {
-                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                        "SubConditions": [
-                          {
-                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                            "ColumnBindingInfo": {
-                              "TableName": "YBS規格文書",
-                              "ColumnName": "YBSコード",
-                              "GUID": "b7912e56-c7b0-494d-90ad-8352aea85b2d"
-                            },
-                            "Value": {
-                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='文書申請 (廃止'!E7"
-                            }
-                          },
-                          {
-                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                            "ColumnBindingInfo": {
-                              "TableName": "YBS規格文書",
-                              "ColumnName": "改正コード",
-                              "GUID": "e00d96e6-460d-4e38-9f86-f98a7989618a"
-                            },
-                            "Value": {
-                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='文書申請 (廃止'!T4"
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    "ID": "7564ba96ca3742ba952bdd05c29e9e97"
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "YBS規格文書",
+                    "UpdateType": "add",
+                    "ShowConfirm": true,
+                    "ConfirmText": "本当に追加してもよろしいですか？"
                   },
                   {
-                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-                    "ConditionAndCommandPairList": [
+                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                    "TableName": "YBS規格文書",
+                    "NextState": "部門長承認待ち",
+                    "ActionName": "提出",
+                    "WorkflowComments": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='文書申請 (廃止'!F32"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "メール通知",
+                    "Parameters": [
                       {
-                        "Condition": {
-                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                          "param": {
-                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                            "cellLocations": [
-                              {
-                                "SerializeProperty": "=廃止レコード数"
-                              }
-                            ]
-                          },
-                          "value": "0",
-                          "compareType": 1
-                        },
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                            "MessageFormula": "コードが重複しているので追加できません。"
-                          }
-                        ],
-                        "ID": "c4516589-44a8-4b42-a1ca-ea2c5ef08f7a"
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "YBSコード",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!E7"
+                        }
                       },
                       {
-                        "CommandList": [
-                          {
-                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                            "TableName": "YBS規格文書",
-                            "UpdateType": "add",
-                            "ShowConfirm": true,
-                            "ConfirmText": "本当に追加してもよろしいですか？"
-                          },
-                          {
-                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
-                            "TableName": "YBS規格文書",
-                            "NextState": "部門長承認待ち",
-                            "ActionName": "提出",
-                            "WorkflowComments": {
-                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='文書申請 (廃止'!F32"
-                            }
-                          },
-                          {
-                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
-                            "ServerCommandName": "メール通知",
-                            "Parameters": [
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "YBSコード",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "='文書申請 (廃止'!E7"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "規格名称",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "='文書申請 (廃止'!G10"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "理由",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "='文書申請 (廃止'!G12"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "権限"
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "状態",
-                                "Value": "部門長承認待ち"
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "ユーザーID",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "='文書申請 (廃止'!G29"
-                                }
-                              },
-                              {
-                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
-                                "ParamName": "申請区分",
-                                "Value": {
-                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                  "SerializeProperty": "='文書申請 (廃止'!G4"
-                                }
-                              }
-                            ],
-                            "RefreshAfterFinish": true,
-                            "CheckDataValidation": true
-                          },
-                          {
-                            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
-                          }
-                        ],
-                        "ID": "409ffef4-78f2-4da6-9b14-f51ed417ce71"
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "規格名称",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!G10"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "理由",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!G12"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "権限"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "状態",
+                        "Value": "部門長承認待ち"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "ユーザーID",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!G29"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "申請区分",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='文書申請 (廃止'!G4"
+                        }
                       }
-                    ]
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "82222f78-7634-4494-8509-a627018f9b4d"
+                "ID": "9185a57d-87e6-4593-8e9b-ff3beaa6f68a"
               }
             ]
           }
@@ -2012,4 +1942,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//EOqcBNuhndHDjC6HLIalKkVmSILRKrSBH7I9j8oLSIdmUVsPsGIxzjllp9R0XMPLTWpI6ZlmH0tONLtFv+r6dHpK0lwGIY745Uxjwd7XYdDvEqUKNlvZZz22AOd2GL9Qskv3Gd4BLuE0ngtQv6N29Yze5xu4wXSBft4FHdoOKyVf85WnNhO9JsCl7b19STYvUgkRIIexhHEVFLaiVIff6IMKq+THw2GSgnbsKKCBNucZB2hxt8ZZOSTXUtF9G9Slhkcn+Qmat9xDU5MJqFV8vjdlXWM7TQWlEkCZpQKPIfHIPZ3ISpyumu4U/pH3dhSin9YzzWJAIesIWiMHXVo2okA7Ww6g5Bmme9TfE+yGMkcZuX2MhgLJzIB9fqk0mibXA07PEr6gkhrIyIOSmG9661UP3Hv+0dooUbtzIoBIwc63qTSslWQ9VozwHdTKATC03cvuapALPWHBKjksERiUIDn7a9cC990rWzyg4KjVoQy7xYTaUtp1UsH+djwMjDlOHquCCIBtm3rCBv5WZ/90EUrzjGV2MUW1GIifSbtlJ1wua4CnZ+Kv/QoMhDlS+WYzTJQ0DpBNP1WaSmg04XjI9RAHOijq/C+tw10Tqc8qUA2bWIy0mvTpl2Wd6zV30jr9s+RdnEWsBSHhPyiKFwBY9BqGpTrsPvX0NzbaeqqPV0XAefT59axlYqE1fqFLVftGYXFFnX7DSPLtLogAhmoxbVOZP9Jtkqni+jI2DuxryL9Hej6m6D+Zu6ZomDrWAzvTE/OIqiHVNTt9A8VRUgXv26wEwUwrGXIx/KmxlXmYV6bNbh8vpFqo/FGwIolThYmTiGf9dEzB56dP2XS6URqJOGQVJWypk+i77g8mIhQzvbXDXb4KcxyP2OLMAff0nDLH3hzZ60s9vocue/ZE/R4/rg==|920
+}//eJ8ufJ6LRSGulCjVqFrcoTbM36E3XlMukC4Az4A8YjarfjjO1KPj81ihzks9GgOg9UiMqcvKZsq3uGOlfbdfA989UrERcswdypRomdZPv9RvvTC3WAWyYrO1nIvXAuQmb5xIPce6A7JOZcD2B95g8ENcCNrbolmI09s79mq0HZ5OIwiE+D1L5Cz/8UuPfj1GVFRnfXlNm9e0v4CitUUtqDtj4ir+9UjSp2LvxVQitn4be2K8eWLS/yqnwHaEu7GxQ5SXNtKiRHhTxju0WJUYuHcOByTDU3jd+455NDE4xiFVS7K7TY0/C++XNdMv+BVqLPCrd5ceJ4Jpewg/tUBB37BWSMbelXJxn73qDF5HIlE97xpAJ/lSt01LQHUNfhps+/gmlGmwqkmjEXpDGylKRUnEXXX9FFriT5nUlnHZYiWvCbNmJa5YgFev783pQ+kJ2L+Ljr8M7xbgzsn6QiIqM2vJJFmQU778UUFZIKZ56+SuTv5pqH5mXz0daoYv3uZSc1o+NeKk1YRRFfrBuC0gt3ooRYIiYWIw7WoZOTgfeBnKZu2BhHivrXy+RcGsf3AFR7Hh2AamE++wTkKwD/6pBHfuuJsyVjiTgZ+THBxaEndTgl3mqDfOCrm0K5hV+NADHPrzUpWjwaVrDTEDhxnkVWQtsZgnmvfiIwY2oShD5Ud8grfs6IX4hG2ujlU3ZMxeelTier+PG+z72IbKVRurBSGX1xPV5A3+iUXgFZ7iu4UVd3Pywyln/uT4E4WGOl+Sq4tGNnLxsrU7WwirGZ5jzBRvpnodu6ZCGGwTi1MQMup4QthCcAzeAUKzwGQGbzoP96lz0aKo1MFVkYC4adCEqPFclJfswpsMuZeJ/FJK5lqqtNzXEogzFqKOt3ADPMifm9eqk80CuNQRxCjtQVfknA==|920
