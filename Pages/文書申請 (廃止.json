@@ -296,6 +296,11 @@
       "DataValidationInfo": {}
     },
     "18,6": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "規格本文",
+        "GUID": "905a5905-b33a-4f42-bb10-1ce45683194b"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
@@ -306,17 +311,26 @@
       }
     },
     "20,6": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "付表添付",
+        "GUID": "1ab32048-f311-4475-9ee8-91324719d6bf"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
-          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
-          "MaxUploadFileCount": 6
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
         },
         "ReadOnly": true,
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
     "25,6": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "規格PDF",
+        "GUID": "3137ac64-8cad-48a7-bae2-2715164418e3"
+      },
       "CellType": {
         "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
         "UploadLimit": {
@@ -418,7 +432,7 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "91d2eabe-7f79-409d-981c-42247a5d067c"
+                "ID": "52f36d52-43ef-4217-83cb-13c9b627c02e"
               },
               {
                 "CommandList": [
@@ -482,28 +496,74 @@
                             "TableName": "YBS規格文書",
                             "UpdateType": "add",
                             "ShowConfirm": true,
-                            "ConfirmText": "本当に追加してもよろしいですか？"
+                            "ConfirmText": "本当に追加してもよろしいですか？",
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS規格文書",
+                                  "ColumnName": "規格本文",
+                                  "GUID": "642eb7cc-8b1c-4693-b946-668a4148aee4"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS規格文書",
+                                  "ColumnName": "付表添付",
+                                  "GUID": "7f1569c2-9114-4a8e-b34e-2fc8ca6dd378"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS規格文書",
+                                  "ColumnName": "規格PDF",
+                                  "GUID": "8bf4fdf8-1807-4564-9ce6-429ac7f123dc"
+                                }
+                              }
+                            ]
                           },
                           {
                             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "86ae8b3b-0a6d-4c60-906c-80c38746af37"
+                        "ID": "c30271c8-f1db-4df0-b100-7b6ccd64cdd8"
                       },
                       {
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                             "TableName": "YBS規格文書",
-                            "ShowConfirm": false
+                            "ShowConfirm": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS規格文書",
+                                  "ColumnName": "規格本文",
+                                  "GUID": "341dc9b7-96e9-44c9-94ef-1839ab9f2af2"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS規格文書",
+                                  "ColumnName": "付表添付",
+                                  "GUID": "1ad6f5c1-1cd6-41ad-b53d-232b70a8811b"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS規格文書",
+                                  "ColumnName": "規格PDF",
+                                  "GUID": "898abd0b-4c23-48bb-b5e0-0bb44ecda8e3"
+                                }
+                              }
+                            ]
                           },
                           {
                             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "f6ad3aa2-8bba-4c61-ae5d-d13b9ff01c03"
+                        "ID": "cdaaa3ab-6959-4e7e-9e87-eddc137a5ac0"
                       }
                     ]
                   },
@@ -578,7 +638,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "a73b4e43-87de-4f3e-b437-468a8f17b726"
+                "ID": "92486a15-dc32-4126-a765-abb62189ffdd"
               }
             ]
           }
@@ -2020,4 +2080,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//IDogSrpPWLyW/6hEm24pYgbRdYwPYQ2mPDreqnF2zMgOn7eq/B8TpagjnptVmuDxpRyF5KqZpYDbHqTxj4/CbTSjo/QXWYF/V6jyRjTPoZFaFhvHzqFK2U1lUwkYlZvUh9lQ1VLNfu0nPd5VRTEm6HmPqx44ZkYqVEJ1X3auTQlq4IHmi/5Fg/btTCRLeJRuHFJN5w9+hLIICE7xQunKK8ZAIl9+bTIiqJttXeo3xnp10a5APMmm05cMVZ290UMYhJzbsrHG8xC+1MlTjq6VJZWn1i/MzeTdrWLvvP68b4As2Ktl8wao/BL9VvuxaBlDIzq6+R4s3DhaYIoNEj/ohPo5hjzmFAb8X++XrGjX2GvwzIb4RQFDGAf2nXaXMwVyImx3XKZb8e/BC8VRefudgZb0gEdHLcqQb3XwiiD2a+9DsuPThPLAsPhSZ/qXhXKMwx9TqbvN90oJRV6uLHaW443KCy62XJNAthpoGpI8PF0qbBLo4VmMPwuH3ztlWtVPb36LiTOrH/JaESFALfcq1oUs2+uwVsLd+wi+5RyFEiWaeJ12GgMgymXgezHcmllNWTkZGTVUvDG1YQGWiYMyjIaSM9UduA04mexlf3m6WubcAtRRiTyaUTq2QuVccgsP21apTr6XDQTEE6pRvdqwZsvAORerbvINcftKsZxL35KLMYO/dX+libqwt/IdUDVl8rmhzeohGmJ56dfKQNWe0D1iMWWUGQAl9h5nc7LvSYKtDG/eeDjJIeOCVo3vh5KX0e32l48hEjYVhbUatbEXL/LvQG3XYnfSvJqDbJBTdqiyWfvVCrLWLltSGuqB5q8VZ0K7sNNpCM2CTQ7IfpXa3e0CfVW9RYj9jy3V9TXdTgKd4Xq9dLFSxLhWixUP0zpp6LFSJRwmbSp/dNvkc+3/mw==|920
+}//bx2xqc0sXD8Y8W9R5nh+hVsxwf7DBxAnQ/HQoD5jAZKYQabAG0tlqQzb29G/w8G1wPDKOtFyCnB1HgnnLgr6KOLRgTOaDjHpBm1uFnTRNKxY/foDGwRuXgrC1HWAub4hz/uLyn3RDA7Ob2OuyB10U2/gZTBvYC8poBv4Zg5idnwrNS7GTVNdDneH9GX4bJGRIjjHKusH2FPEh9tTVQJjR17FGRkEzDAJek/NQW+fsduA4n5WNIworzcsKpLKOeAHSWbsYLKtSMk4EZqkbxmfj8YfKkD5Qh2Q37FxYcw5zVuangKIAxsgQDK14QR18X772C5sJe0EPSP/tyrd8pzPLxuexVGnGzP6lPMt1uFSIlX2WO86r7K0kesd7fknItvWgwobRht9OlBmb7N/TiJNE1E3oHmJuMd5zmMM1kd3mhXZuzgr8/liljk+Zoo+BIg+X8bAlJJJKgYKF4nVk7B7CY6vIAG+kJUMUk3BNdrlGH+iqHw3pnHfpSKMnV63TFdmh3JgrYRYvS15e/13ej2tjF9Mmd9sqL3x7ovvbdBwQK27CpEgVjaw8lbY0Uj0zO2Sg/Ey2brTaMVMMlik36Lon7aRS4UtZLJaWcW7khkS/VG3tHtn7iRm8xs2IQ31WGCNopPycmP5ASKrIwfNfjMeO/ZYQuAMi2xpcpH+vsj+X2ETAhyYlylo7VsjJTGLzh1Fa4ghqoazz/oWl9WSTKnlNGtfFLx+MCH+7o+l03lyxx5Gr84oFlTVfAWEaSKNI8TeC+psiLYjlkY7GH9A/t9f10ium6Gk6YJthLBM3YHx0zVasAozpdcooG04hA2whqpgUIbz0A96enMWZ1oegsm+vhi4f1w7xW094a7khA77tVQLyweOS/J81xunEErXGQJh7BXF6xpK+Yq1VAW4hh6+sQ==|920
