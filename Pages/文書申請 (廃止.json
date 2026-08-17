@@ -432,7 +432,7 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "52f36d52-43ef-4217-83cb-13c9b627c02e"
+                "ID": "abfacc93-70fe-484e-b79e-f89343e1aa82"
               },
               {
                 "CommandList": [
@@ -496,74 +496,28 @@
                             "TableName": "YBS規格文書",
                             "UpdateType": "add",
                             "ShowConfirm": true,
-                            "ConfirmText": "本当に追加してもよろしいですか？",
-                            "UpdateBindingValues": [
-                              {
-                                "BindingInfo": {
-                                  "TableName": "YBS規格文書",
-                                  "ColumnName": "規格本文",
-                                  "GUID": "642eb7cc-8b1c-4693-b946-668a4148aee4"
-                                }
-                              },
-                              {
-                                "BindingInfo": {
-                                  "TableName": "YBS規格文書",
-                                  "ColumnName": "付表添付",
-                                  "GUID": "7f1569c2-9114-4a8e-b34e-2fc8ca6dd378"
-                                }
-                              },
-                              {
-                                "BindingInfo": {
-                                  "TableName": "YBS規格文書",
-                                  "ColumnName": "規格PDF",
-                                  "GUID": "8bf4fdf8-1807-4564-9ce6-429ac7f123dc"
-                                }
-                              }
-                            ]
+                            "ConfirmText": "本当に追加してもよろしいですか？"
                           },
                           {
                             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "c30271c8-f1db-4df0-b100-7b6ccd64cdd8"
+                        "ID": "54040718-2566-4c08-8e6d-278dc7732d6b"
                       },
                       {
                         "CommandList": [
                           {
                             "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                             "TableName": "YBS規格文書",
-                            "ShowConfirm": false,
-                            "UpdateBindingValues": [
-                              {
-                                "BindingInfo": {
-                                  "TableName": "YBS規格文書",
-                                  "ColumnName": "規格本文",
-                                  "GUID": "341dc9b7-96e9-44c9-94ef-1839ab9f2af2"
-                                }
-                              },
-                              {
-                                "BindingInfo": {
-                                  "TableName": "YBS規格文書",
-                                  "ColumnName": "付表添付",
-                                  "GUID": "1ad6f5c1-1cd6-41ad-b53d-232b70a8811b"
-                                }
-                              },
-                              {
-                                "BindingInfo": {
-                                  "TableName": "YBS規格文書",
-                                  "ColumnName": "規格PDF",
-                                  "GUID": "898abd0b-4c23-48bb-b5e0-0bb44ecda8e3"
-                                }
-                              }
-                            ]
+                            "ShowConfirm": false
                           },
                           {
                             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "cdaaa3ab-6959-4e7e-9e87-eddc137a5ac0"
+                        "ID": "3a5a0880-98f4-43cd-bb62-8f91f610889b"
                       }
                     ]
                   },
@@ -638,7 +592,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "92486a15-dc32-4126-a765-abb62189ffdd"
+                "ID": "1a75e6a8-06e1-4c5a-a6e0-237040b0703a"
               }
             ]
           }
@@ -2080,4 +2034,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//bx2xqc0sXD8Y8W9R5nh+hVsxwf7DBxAnQ/HQoD5jAZKYQabAG0tlqQzb29G/w8G1wPDKOtFyCnB1HgnnLgr6KOLRgTOaDjHpBm1uFnTRNKxY/foDGwRuXgrC1HWAub4hz/uLyn3RDA7Ob2OuyB10U2/gZTBvYC8poBv4Zg5idnwrNS7GTVNdDneH9GX4bJGRIjjHKusH2FPEh9tTVQJjR17FGRkEzDAJek/NQW+fsduA4n5WNIworzcsKpLKOeAHSWbsYLKtSMk4EZqkbxmfj8YfKkD5Qh2Q37FxYcw5zVuangKIAxsgQDK14QR18X772C5sJe0EPSP/tyrd8pzPLxuexVGnGzP6lPMt1uFSIlX2WO86r7K0kesd7fknItvWgwobRht9OlBmb7N/TiJNE1E3oHmJuMd5zmMM1kd3mhXZuzgr8/liljk+Zoo+BIg+X8bAlJJJKgYKF4nVk7B7CY6vIAG+kJUMUk3BNdrlGH+iqHw3pnHfpSKMnV63TFdmh3JgrYRYvS15e/13ej2tjF9Mmd9sqL3x7ovvbdBwQK27CpEgVjaw8lbY0Uj0zO2Sg/Ey2brTaMVMMlik36Lon7aRS4UtZLJaWcW7khkS/VG3tHtn7iRm8xs2IQ31WGCNopPycmP5ASKrIwfNfjMeO/ZYQuAMi2xpcpH+vsj+X2ETAhyYlylo7VsjJTGLzh1Fa4ghqoazz/oWl9WSTKnlNGtfFLx+MCH+7o+l03lyxx5Gr84oFlTVfAWEaSKNI8TeC+psiLYjlkY7GH9A/t9f10ium6Gk6YJthLBM3YHx0zVasAozpdcooG04hA2whqpgUIbz0A96enMWZ1oegsm+vhi4f1w7xW094a7khA77tVQLyweOS/J81xunEErXGQJh7BXF6xpK+Yq1VAW4hh6+sQ==|920
+}//lbDIiYw8JnRzPV9pxj7EbFjfLxItSMXSHPgYgauXO/2xjEg4sRPd4Xjr/fOs+3Bp7Q2UYcTKiA4lISrLH0zh4ulVdOQrYpodkF0HYDikBtyzvMveKsZccY8sIA8oCfAoAPvPfdnlO5Co3MWG3lW0MfGQSX0wVDswoQkoUrX5uukCz4CbnDVJKzjXZ3Mgeux/UWcoMjSvOsmOtpmu9YO8pzuI85lwTsuUbI+HMC55RUCgzUo7ik/pEINatU0SplNDsYiGYhE26aRtfyTVSD74gOXRDq9EgwQpYkYCbqA4YcaT8hZfEH8K2LYUR4yWC3ACxZJgZpQ4+Q4nvxufzmylmywDGDcORB9hsgo2j342mtngnrM3Zqi2RUqjHXyDTwIfcG3q/JVqScy23WEiIg9HHeZsydKzbAPQddAOgt7crYtUS+iFJovQlWKhFlznmY1yvg9i0vdzJKTZ4FoW8l3taXJrJY0OxvKuG/7FT64VwPkEoixU5u9iTH5CpUW2AYDFOysTb5WkzV2fKe+mGcViIGL0C3Y511IDU84H2Bxl3nhnBrlNPWm1j5s5ljE4kRzMN/ZzjGdMNdGbYSUvnMNYFC8nGeJCnELjy6wjLnIy7i7t1RmfdYLkQyvehhB58aH3M86AoswMb5amUPXwSxrc3e8U2tRvErv77mzaJC20t6yM6jIiaQd58N+OojLFYzTodFg17v8gdz/HENydG17DJJjv1lDeUcfOnJMB2ixNQO4x/jCo6sxP91jiZTuW6xUvVkeFoqdY8WHFFFENGlYJXkzIXP1oCf+eOVycBZ6W84QZDVUYmtiG7ozAQb1PyvYiBjGqiJRjeKoPXWk2bop/JK9YSCIAXy8NeY+7TsEMBBV3xJ7SSOjBY+PxNr1ljFgKIRKAawPtPBFtjbN/F2G04A==|920
