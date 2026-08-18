@@ -43,7 +43,10 @@
         },
         {
           "Name": "ユーザーID",
-          "DataValidationInfo": {}
+          "DataValidationInfo": {
+            "IgnoreBlank": false,
+            "ErrorMessage": "ユーザーが受け渡せていません。"
+          }
         },
         {
           "Name": "申請区分",
@@ -98,7 +101,7 @@
               "ID": "ca681269a3fe45c8b9edbe8fc47bbbba"
             }
           ],
-          "ID": "91d4a0b6-6e5b-414f-90d4-bf15dc41b26c"
+          "ID": "1a8c37ce-e1c0-4994-bdb0-0deaa8f7eba0"
         },
         {
           "Condition": {
@@ -142,7 +145,7 @@
               "ID": "c99247d994184cf793f6b065d93a24ad"
             }
           ],
-          "ID": "2a21a60d-7088-4466-8816-bcf85125323c"
+          "ID": "c1257e42-25e5-4ea4-ad02-0d2ac8360e04"
         },
         {
           "Condition": {
@@ -202,7 +205,7 @@
                       "ID": "da0d08f8c40642d6b2a59f76e5e2b6d2"
                     }
                   ],
-                  "ID": "5e004945-62b9-472b-8c5c-bfda2abe2d8b"
+                  "ID": "9ca52c20-ae23-4825-84c7-f6a113484f46"
                 },
                 {
                   "Condition": {
@@ -246,7 +249,7 @@
                       "ID": "598a0c64cad74134a83a97de69c16220"
                     }
                   ],
-                  "ID": "fc3e666c-ff19-4275-bf9a-689c877bf481"
+                  "ID": "14558958-fabf-4833-8074-0959aa90e4d0"
                 },
                 {
                   "Condition": {
@@ -272,49 +275,31 @@
                           "GUID": "3e3cea3f-6037-4bd3-9e83-b87d74264f9f"
                         },
                         "QueryCondition": {
-                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                          "SubConditions": [
-                            {
-                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                              "ColumnBindingInfo": {
-                                "TableName": "YBS権限マスタ",
-                                "ColumnName": "ユーザーID",
-                                "GUID": "ba039b53-3552-4e1d-8acd-cec62a08d413"
-                              },
-                              "Value": {
-                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "=ユーザーID"
-                              }
-                            },
-                            {
-                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                              "ColumnBindingInfo": {
-                                "TableName": "YBS権限マスタ",
-                                "ColumnName": "名前",
-                                "GUID": "40ee6b7a-fdb4-4c5a-b3ca-120d33fa0fc5"
-                              },
-                              "Value": {
-                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "=ユーザーID"
-                              }
-                            }
-                          ],
-                          "RelationType": 1
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "YBS権限マスタ",
+                            "ColumnName": "ユーザーID",
+                            "GUID": "ba039b53-3552-4e1d-8acd-cec62a08d413"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=ユーザーID"
+                          }
                         },
                         "NullFormulaValueQueryPolicy": 0,
                         "IsMultiRecipient": true
                       },
                       "Subject": "ＹＢＳが廃止申請されましたので、処理をお願いします。",
                       "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「廃止」申請されました。\r\n「部門長承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称　：[=規格名称]\r\n理由　：[=理由]\r\n\r\n[%PageNavigate=(YBS一覧（承認待ち,承認待ち一覧へ)%]",
-                      "ID": "a42dc268911b450abc471cb28c9468f6"
+                      "ID": "e49234eaef074e6f99c2a32dd9c4d92b"
                     }
                   ],
-                  "ID": "20e0f38b-97f6-444f-a456-de1adc3e48dc"
+                  "ID": "afbf8aa4-f0d0-42f2-b5fe-2ff9323a5a5c"
                 }
               ]
             }
           ],
-          "ID": "5eaf8c7c-59da-45e1-95ea-e426728a6ec4"
+          "ID": "99afd8a3-a5b8-4400-bfbc-3d481acf3078"
         },
         {
           "Condition": {
@@ -374,7 +359,7 @@
                       "ID": "fb5cdd28381945a5a4d49388bbdcaa84"
                     }
                   ],
-                  "ID": "057efbb4-6ffc-4587-b895-93e499e9e14f"
+                  "ID": "62862335-2bb3-4d92-b807-2119621a2470"
                 },
                 {
                   "Condition": {
@@ -418,7 +403,7 @@
                       "ID": "6ed98952fe0c4f38b15ba4f750ad22b2"
                     }
                   ],
-                  "ID": "9644a858-0c75-4ad3-b97f-b32281218410"
+                  "ID": "0962150a-6c6d-47e5-b79b-a20f7a777408"
                 },
                 {
                   "Condition": {
@@ -462,12 +447,12 @@
                       "ID": "8451e385e5794b4ea0f88fb9f72c50f4"
                     }
                   ],
-                  "ID": "77530b40-ed10-4014-b600-710e4b649c88"
+                  "ID": "4c7c061f-3794-4835-8d05-bfb081a55b93"
                 }
               ]
             }
           ],
-          "ID": "b2fc98cb-2103-4e42-aeff-42edd1f0b3ca"
+          "ID": "c4ef5b17-45e6-4144-a7c6-91034e8341e9"
         },
         {
           "Condition": {
@@ -527,7 +512,7 @@
                       "ID": "c3ab9bf880894066abd895fc4224778e"
                     }
                   ],
-                  "ID": "a075c45f-cb64-4810-b061-fa0e31e67875"
+                  "ID": "2ba3d2c0-9ac1-4689-a101-f72c220e4268"
                 },
                 {
                   "Condition": {
@@ -571,7 +556,7 @@
                       "ID": "da9e12fffd77418e917c1eb1bef4f0b0"
                     }
                   ],
-                  "ID": "eb37aa01-5924-41ee-85b5-73c7e9a8dcf1"
+                  "ID": "d3712997-9d7b-40c7-bfeb-92cae3a70378"
                 },
                 {
                   "Condition": {
@@ -615,12 +600,12 @@
                       "ID": "e410e42100ea43859ab9b12851f89df9"
                     }
                   ],
-                  "ID": "c236d2b3-83ac-4a7d-8929-95d3f5b5c093"
+                  "ID": "762aa287-adc5-4d64-ad48-5fdf3f482bf2"
                 }
               ]
             }
           ],
-          "ID": "783d73c7-07c0-4e1e-a361-e7d75eef69d8"
+          "ID": "42981b36-f282-481a-8374-b5c375034e28"
         }
       ]
     }

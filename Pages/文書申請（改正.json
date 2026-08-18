@@ -501,7 +501,7 @@
                     "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・規格名称\r\n・理由\r\n・適用範囲\r\n・施行日\r\n・規格本文の添付\r\n・規格本文閲覧用ＰＤＦの添付\r\n\r\n\r\n「部門承認者」の設定もお願いします。"
                   }
                 ],
-                "ID": "3e167c7f-e3d7-4e04-9c5c-37d95a31bccb"
+                "ID": "ab2683b3-e1b4-437d-b6be-76918885e899"
               },
               {
                 "CommandList": [
@@ -572,7 +572,7 @@
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "93dfa071-3fea-49bb-b57e-a9af21d30627"
+                        "ID": "d40cb268-02a8-4973-b8bb-d54c6d9e3518"
                       },
                       {
                         "CommandList": [
@@ -587,7 +587,7 @@
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "6fde90fc-792d-41bb-84ed-9444fe706d31"
+                        "ID": "55aec0cf-da8f-4367-b639-19a07028b381"
                       }
                     ]
                   },
@@ -668,7 +668,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "91d82323-495a-4e0d-84bf-ef213de64f82"
+                "ID": "0d80c01d-1c18-408d-b921-866a050faeb4"
               }
             ]
           }
@@ -755,7 +755,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "bcf69395-efc7-4ae7-b6d1-ac9a7a70600f"
+                "ID": "6a47c8e5-8702-4b7c-a1e0-ba467543891b"
               },
               {
                 "CommandList": [
@@ -770,7 +770,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "91e76b3f-ba58-4c2c-8412-19b46ab955f2"
+                "ID": "81aca61a-67fe-4619-b2a2-0f6f7e67a532"
               }
             ]
           },
@@ -2437,7 +2437,7 @@
                 ]
               }
             ],
-            "ID": "0fdef9e9-8bff-4972-9d21-55821d4e080a"
+            "ID": "48a75b13-0fe4-4ddc-b018-66240f59caf0"
           }
         ],
         "Disabled": true
@@ -2496,4 +2496,4 @@
       "Size": "48,51"
     }
   ]
-}//FR0Fw2H47UetdeKlU+aUkUxDr3A65xACYvYWB0p9b7Z3d45LB9ciJYKIvjlgyI+2o/jk0K12IMgqM6NmecOVYvLyB2PonagyNG0V9vYERKr1bhlq309LPrWwQwYONgcYFG/otYinA50A5uEIM9eNgE2/ZyDKOtxIrNV15xhOHER2pAdut0Q70wVkxz+1HfEYGL2GMzSViQHaAEFaPNxyog7RtRlM3oXQrdRqq3G/j2txfZUto/ZOBYJ08rjyhaklgYlRAaQPVz0x2jKPxACpoTAkXkhEcV+cJEYezjlN+LVeE+3jRjILACrKfZKKQjIH68v+UcIIAHveFacQ7IALUUjyk5mRDymLylfYNrkPuTgStk2XsqP7lpXF7BjDKryWEnBosi6IWkpEMTWd7GySPLwnkT/VOunyFbk90ubDD0lRCkrOS8oNnLQx8JrIP7QE4Z+OE0WjfTxw+b/puVEAw3eEO016cAGsx2bWSs8Azj23LWP7VX+36nSZlBjrapLzsTHzgWNyOh24kAw/Xhmwp0XdueRPgw+wCfQGkuTKaFcnqHfiH6FHV3J+VlP5/ifs/CqrXNPJtF1AeXF38HedXrkzBDbL03NnDlvHdePufR9Q4RbtbfC6i3fmULT6S6OEd3UxhRs2FKRYSU2ndbVZXwK2R7BXdb68PJPUoqdB9ox7lY8maUya1sRGq/QFS5CRKqDXkkjkoK5QZ9d1qgLoi4dWCuk3FGf7VJj+x52b6w9FeEIzlzxBe9xKjrqSdBZJrT9H7POQs6dL000iETirH85W4Wx7xKiMQb5zKocV4mjnExBWHwK64wbw5It/gfOMXZyn8Q/+M5P9E72EJXf7i8P5isR2xb98mfhQYxWEOCHQutTVXzeFYctbAFXdUfj3rVLA1wT7l3xir4dNL/vAsw==|920
+}//k0tM6c3WFKzkYbFGhKE3G0VGhSPQKtc/EhGujeNP55zIuk6AcjYAzHK/q45J4qTJpptS+kcTfedcksGVRvnsvub+mUV2RysxjC4STtMKqL3SwP6wPpa47p43/n5c58wYtLk68U0J5ZsMCad65K+3qwS0P82nLZB4ryQHDnemnmk4C5uZdACp+49GTCtolX4ToN3hvneS/tTtGmRvQP03AOtHPNfFmrisHeNwLUWQ6WQ+3xbMCT3S5mBdGithp1z2090n31TKC79GUdxDfbOzEsWgH1GjyOHJQIoIcJRpkmBy3NHJ+V95knurMLaragAqhWNUK9Fe55KFZ0GFPr3Pbn9qzG/PyLJPxd4Ez4gzjL/OxUkVm6fP9jKDLfSbSX6aUk64JAfAXIvMdlfjLaKswS3/G3uauqhxgETImG7yOvS5W3+ufLKZhLd4mCIb8JWmFMWZ4Wr0zuDYeKkkQl7qb3hcBQusKYgZ8CI3QJWql8btwtB3THRi2DfaInjoWjt28lAODg1qqeohBOSJc7xmdCGeHAJkaFsZC9Q9GfWsVmVsIi0tKtTgysfnTB4rl37/5vAGCFQ/Wp7+d60Sfs0JZWaafcGX3OG526aqrj+WCprfsGU/Cv/2VbSKKJDpJXCCM3hT8CL9ISZpB0KeNMDgL6OWl8BPpBOyREzPYQum+mXoVA0+ufl5TOsFIMPv4B14uUmG345pL+N1oYpU6qCRBl5ABLtx0gtvkcRb6sKpEwyrwJC22yQgTonBURDYkn7VDOxpuAK2Vex2zzQsuOkaBuvRr+qG2Gp35x/nlnvVmDtbBa86BaUxQh7b4Ruz45SHD01Aw2daDseud2IZ4IaTLvCQIbHYjcVqE4ql8WE6czLuLT9zlPPDFC+9M0tYEwierRWqQJLFj+XMQPKR+4dKJg==|920

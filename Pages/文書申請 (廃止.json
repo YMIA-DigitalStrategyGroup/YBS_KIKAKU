@@ -432,7 +432,7 @@
                     "MessageFormula": "下記項目に未入力の項目があります。\r\n・廃止理由\r\n・施行日（廃止を施行する日）\r\n・部門承認者"
                   }
                 ],
-                "ID": "abfacc93-70fe-484e-b79e-f89343e1aa82"
+                "ID": "0bf73dbe-ad77-4afb-b366-eb27a948e51a"
               },
               {
                 "CommandList": [
@@ -503,7 +503,7 @@
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "54040718-2566-4c08-8e6d-278dc7732d6b"
+                        "ID": "3bce5a25-46c1-4118-8a9d-72f080104274"
                       },
                       {
                         "CommandList": [
@@ -517,7 +517,7 @@
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "3a5a0880-98f4-43cd-bb62-8f91f610889b"
+                        "ID": "08863c23-75d6-4f6e-9a4f-8bc55d716d14"
                       }
                     ]
                   },
@@ -592,7 +592,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "1a75e6a8-06e1-4c5a-a6e0-237040b0703a"
+                "ID": "f08f7496-c907-4d9e-9747-59261b0cfbae"
               }
             ]
           }
@@ -2034,4 +2034,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//lbDIiYw8JnRzPV9pxj7EbFjfLxItSMXSHPgYgauXO/2xjEg4sRPd4Xjr/fOs+3Bp7Q2UYcTKiA4lISrLH0zh4ulVdOQrYpodkF0HYDikBtyzvMveKsZccY8sIA8oCfAoAPvPfdnlO5Co3MWG3lW0MfGQSX0wVDswoQkoUrX5uukCz4CbnDVJKzjXZ3Mgeux/UWcoMjSvOsmOtpmu9YO8pzuI85lwTsuUbI+HMC55RUCgzUo7ik/pEINatU0SplNDsYiGYhE26aRtfyTVSD74gOXRDq9EgwQpYkYCbqA4YcaT8hZfEH8K2LYUR4yWC3ACxZJgZpQ4+Q4nvxufzmylmywDGDcORB9hsgo2j342mtngnrM3Zqi2RUqjHXyDTwIfcG3q/JVqScy23WEiIg9HHeZsydKzbAPQddAOgt7crYtUS+iFJovQlWKhFlznmY1yvg9i0vdzJKTZ4FoW8l3taXJrJY0OxvKuG/7FT64VwPkEoixU5u9iTH5CpUW2AYDFOysTb5WkzV2fKe+mGcViIGL0C3Y511IDU84H2Bxl3nhnBrlNPWm1j5s5ljE4kRzMN/ZzjGdMNdGbYSUvnMNYFC8nGeJCnELjy6wjLnIy7i7t1RmfdYLkQyvehhB58aH3M86AoswMb5amUPXwSxrc3e8U2tRvErv77mzaJC20t6yM6jIiaQd58N+OojLFYzTodFg17v8gdz/HENydG17DJJjv1lDeUcfOnJMB2ixNQO4x/jCo6sxP91jiZTuW6xUvVkeFoqdY8WHFFFENGlYJXkzIXP1oCf+eOVycBZ6W84QZDVUYmtiG7ozAQb1PyvYiBjGqiJRjeKoPXWk2bop/JK9YSCIAXy8NeY+7TsEMBBV3xJ7SSOjBY+PxNr1ljFgKIRKAawPtPBFtjbN/F2G04A==|920
+}//qTqbf8F1sZ1c2Gd25Ypu9JylQqgafkWgIhFKEBQLw1Hr5OrsVW7IR6Um5BzTou3tWIw+AJKHf33reJpiFgOTj+kdqJxiLqW8ccSews2gY59IkJkTKkOmzsEJDirMzAUXrOhWgg6y+U7XYgTOvklBJZ8KLfDbBwZUw2kqAnKeaCH/tY+3a7CeZdxaLP/7/RTI1bTzL1gVg7a1vE1qoKjLVqnHV/PmTWgN1e0KIzXaeCbp8RwCyTtp4/nvrexcm+HPpPKzqwxCeGsYJvDw5aRlRPIpd/ubH1NVJi4MDAatnfAToy200H63SJUo7LTXQTB9wzXPy6VDxG/tTFbeM23/WHif2iOWQtonGRYDih+vkRuYnvDPrdH9XkITXwMJoOFhB3+QDKF4pIWq6HtTEZ0s4eDYmyYNsCTMSDm0guJrXxiOTM8OpHlmQsBqj5ldsV2SRofCnNRwAF8H2p410ALCcYO+PgwAo3EPmNkdBAB1Dn0D+2bB4mKiHJcfgVLiera7uh2XgKl/3V/dyjgXoQql3d/Nuz29QjAyc/q85Q7ohXyMRs8uzydDKGeALDyXnE7qkF3QfTe0lOWVe4OpDQVBgctr06SGkuC/f/8aIExlk1kQgaC/K1pKAipQdMIOpIlVuBVgeKQp+xTMiXI1Ft3M6imK9IS9nd2gb4IyHBiEBRKzKpVICEcy/Tg9MkAdBB2jteDTcw3LIHlsLFIDihdA+1labYHrclrXOHTcMXHGP5GO77PGRVSkrWV6o2v6KOHUDDZL87lClxskWnqzzByff4ky7tN7B+ExYjDfCmNIm2gYmDwWxMvYSPx8bJHlxn9NPnMvhcykgLRDI34J6lYtaOppjCrOOVPyoU9sLDc0Yjkdyj74zsLNQFzSK8NdT1yvK8MjGJuWVQuuEPceoZWAsA==|920
