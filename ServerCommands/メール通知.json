@@ -98,7 +98,7 @@
               "ID": "ca681269a3fe45c8b9edbe8fc47bbbba"
             }
           ],
-          "ID": "91d64074-28ec-4018-87db-7d205d64784e"
+          "ID": "91d4a0b6-6e5b-414f-90d4-bf15dc41b26c"
         },
         {
           "Condition": {
@@ -142,7 +142,7 @@
               "ID": "c99247d994184cf793f6b065d93a24ad"
             }
           ],
-          "ID": "6d8e4c42-ac31-47fb-98f5-157b95693860"
+          "ID": "2a21a60d-7088-4466-8816-bcf85125323c"
         },
         {
           "Condition": {
@@ -202,7 +202,7 @@
                       "ID": "da0d08f8c40642d6b2a59f76e5e2b6d2"
                     }
                   ],
-                  "ID": "2dccbf27-419e-46be-a1e7-b0908401cf7a"
+                  "ID": "5e004945-62b9-472b-8c5c-bfda2abe2d8b"
                 },
                 {
                   "Condition": {
@@ -246,7 +246,7 @@
                       "ID": "598a0c64cad74134a83a97de69c16220"
                     }
                   ],
-                  "ID": "70f497ea-2001-43e4-a8bf-711c61c69991"
+                  "ID": "fc3e666c-ff19-4275-bf9a-689c877bf481"
                 },
                 {
                   "Condition": {
@@ -272,30 +272,49 @@
                           "GUID": "3e3cea3f-6037-4bd3-9e83-b87d74264f9f"
                         },
                         "QueryCondition": {
-                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                          "ColumnBindingInfo": {
-                            "TableName": "YBS権限マスタ",
-                            "ColumnName": "ユーザーID",
-                            "GUID": "ba039b53-3552-4e1d-8acd-cec62a08d413"
-                          },
-                          "Value": {
-                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=ユーザーID"
-                          }
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "SubConditions": [
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "YBS権限マスタ",
+                                "ColumnName": "ユーザーID",
+                                "GUID": "ba039b53-3552-4e1d-8acd-cec62a08d413"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=ユーザーID"
+                              }
+                            },
+                            {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "YBS権限マスタ",
+                                "ColumnName": "名前",
+                                "GUID": "40ee6b7a-fdb4-4c5a-b3ca-120d33fa0fc5"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=ユーザーID"
+                              }
+                            }
+                          ],
+                          "RelationType": 1
                         },
+                        "NullFormulaValueQueryPolicy": 0,
                         "IsMultiRecipient": true
                       },
                       "Subject": "ＹＢＳが廃止申請されましたので、処理をお願いします。",
                       "Content": "「YBSアプリ」よりメールです。\r\n以下のＹＢＳが「廃止」申請されました。\r\n「部門長承認待ち」にて確認して処理願います。\r\nコード：[=YBSコード]\r\n名称　：[=規格名称]\r\n理由　：[=理由]\r\n\r\n[%PageNavigate=(YBS一覧（承認待ち,承認待ち一覧へ)%]",
-                      "ID": "e9c7469cef2148b2862e74de12c61726"
+                      "ID": "a42dc268911b450abc471cb28c9468f6"
                     }
                   ],
-                  "ID": "b2d7853b-3209-47c0-89f1-4d5e364dd26a"
+                  "ID": "20e0f38b-97f6-444f-a456-de1adc3e48dc"
                 }
               ]
             }
           ],
-          "ID": "d2900200-54c4-430e-afe6-976141c37d11"
+          "ID": "5eaf8c7c-59da-45e1-95ea-e426728a6ec4"
         },
         {
           "Condition": {
@@ -355,7 +374,7 @@
                       "ID": "fb5cdd28381945a5a4d49388bbdcaa84"
                     }
                   ],
-                  "ID": "6abcf34b-0016-447a-930c-021dab563503"
+                  "ID": "057efbb4-6ffc-4587-b895-93e499e9e14f"
                 },
                 {
                   "Condition": {
@@ -399,7 +418,7 @@
                       "ID": "6ed98952fe0c4f38b15ba4f750ad22b2"
                     }
                   ],
-                  "ID": "6a0be407-b762-43e9-aba8-2b942e258f99"
+                  "ID": "9644a858-0c75-4ad3-b97f-b32281218410"
                 },
                 {
                   "Condition": {
@@ -443,12 +462,12 @@
                       "ID": "8451e385e5794b4ea0f88fb9f72c50f4"
                     }
                   ],
-                  "ID": "304358e5-dc6c-4aad-bf34-8d065dcb6608"
+                  "ID": "77530b40-ed10-4014-b600-710e4b649c88"
                 }
               ]
             }
           ],
-          "ID": "e71ff244-f3e7-432b-9322-9d48d82a35bc"
+          "ID": "b2fc98cb-2103-4e42-aeff-42edd1f0b3ca"
         },
         {
           "Condition": {
@@ -508,7 +527,7 @@
                       "ID": "c3ab9bf880894066abd895fc4224778e"
                     }
                   ],
-                  "ID": "7b5ce618-21c5-4318-807c-183f5b2b0852"
+                  "ID": "a075c45f-cb64-4810-b061-fa0e31e67875"
                 },
                 {
                   "Condition": {
@@ -552,7 +571,7 @@
                       "ID": "da9e12fffd77418e917c1eb1bef4f0b0"
                     }
                   ],
-                  "ID": "a07d28c5-cc29-47d9-aec6-c95329da82cf"
+                  "ID": "eb37aa01-5924-41ee-85b5-73c7e9a8dcf1"
                 },
                 {
                   "Condition": {
@@ -596,12 +615,12 @@
                       "ID": "e410e42100ea43859ab9b12851f89df9"
                     }
                   ],
-                  "ID": "87f878f8-fb02-496c-aa55-0059490ce1d3"
+                  "ID": "c236d2b3-83ac-4a7d-8929-95d3f5b5c093"
                 }
               ]
             }
           ],
-          "ID": "f1ca2cff-cf93-4c07-a5c7-9e164a9050f8"
+          "ID": "783d73c7-07c0-4e1e-a361-e7d75eef69d8"
         }
       ]
     }
