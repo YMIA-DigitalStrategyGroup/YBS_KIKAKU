@@ -353,7 +353,16 @@
   },
   {
     "ModuleName": "ServerCommand/メール通知",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-08-18T13:52:27.302102+09:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\メール通知.json"
+    ]
   },
   {
     "ModuleName": "Table/テスト_YBS規格文書",
