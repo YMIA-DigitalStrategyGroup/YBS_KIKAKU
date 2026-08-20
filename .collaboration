@@ -5,7 +5,16 @@
   },
   {
     "ModuleName": "Table/YBS規格文書",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-08-20T16:34:16.8466064+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\YBS規格文書.json"
+    ]
   },
   {
     "ModuleName": "Table/YBS細分化コード",
@@ -294,7 +303,7 @@
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-08-20T16:33:51.8088124+09:00",
+    "LockDateTime": "2026-08-20T16:34:16.8451144+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\フロー_承認処理.json",
