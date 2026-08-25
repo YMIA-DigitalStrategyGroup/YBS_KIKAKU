@@ -289,31 +289,11 @@
   },
   {
     "ModuleName": "PCPage/フロー_承認処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-08-25T11:57:11.3124182+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\フロー_承認処理.json",
-      "Pages\\フロー_承認処理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/フロー_委員コメント",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-08-25T11:59:12.1372058+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\フロー_委員コメント.json",
-      "Pages\\フロー_委員コメント.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/YBS申請メニュー",
@@ -321,17 +301,7 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧（来歴",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-08-25T11:54:10.3653559+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS一覧（来歴.json",
-      "Pages\\YBS一覧（来歴.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/添付ファイル一括アップロード画面",
