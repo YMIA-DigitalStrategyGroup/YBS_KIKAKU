@@ -20,7 +20,8 @@
     "25,2": "更新確定",
     "25,6": "更新した内容を確認して「更新確定」",
     "25,19": "入力をクリア\r\n（再読み込み）",
-    "25,24": "編集内容を更新する前にクリアする（もとに戻す）場合"
+    "25,24": "編集内容を更新する前にクリアする（もとに戻す）場合",
+    "28,2": "・添付ファイルの削除：対象セル選択して、Deleteキー。その後、更新確定。"
   },
   "Formulas": {
     "23,3": "ODATA(\"YBS規格文書/$count\")",
@@ -365,7 +366,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "0409a422-fd22-4282-8ac9-e93fb4ea3f13"
+                "ID": "a35ab5a3-b6dc-4d78-90c4-4c479468506e"
               }
             ]
           },
@@ -407,7 +408,7 @@
                     }
                   }
                 ],
-                "ID": "9a678d79-6b18-4e1a-ac5e-4f97602ce2dd"
+                "ID": "16e5ff50-3540-4f3f-8e54-da93167ea558"
               }
             ]
           }
@@ -641,4 +642,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//FiAIIRALpqP/P/h4lxVIY+NTa/hZvKBv3MFS0biYx47ZbJ+iDaJakPRIkoQTzX98uwYMRs7OOFONJRULGU1qdT8HOcVgCtX6RfLexMeCxoVqGxXWdxIXbiWdUcaHH8EDU4D/IjKbRV0xn0GyWrWxr3o7TsGlH2K9FbpWdOr3yrPfwDZT0Y9T8Sun7xoTI81TLaWrtQJQ6eCMbClw8zlNVseZxwG6xzgg+ZbmQRMKUBCeO7vDYz3PMZcmS3TbX57o3R7SSR440VauzNnH/h/omBChVHcEwIy6Zg0JPPMii2bf7dH1Ud8Ie3ncYTzIRrTbK3m3fo/it7ew2M0Y2qZv2RQteFPJxcRu6Wqph5FNSD8NXT3zw1HnYqdFkkuSVetb1F1R3KZ6Z1pS/X+N5tFMyCJyvgDpnTaF0xFcebJT/RdVYq/bZo8My9wKC6VZI2sKBU6dFdUxmBIrPrd+HvNefWt6pUAdI+1/YP+gSqXwkf7Gayr6jmc+RdeAeh9U+ZcK1fkvJQxaJiWuT3BwWORM/0kog7hDGX2hdQQgaV5J2rIzV9T+9iBphVdukrzVE0rrtnP+scAuaK5EhBmeWbLihQ1VgyYrG7s8vaqwFBia3it1UPaQ0US4onOVNyaw9kU4K1/92UNf+X66VUNNqCz9S4CYFbBBgJej2iQ+BwPXDWN3icis33EqrOiTKMnORv/X8EIYNgrIvDYHasTe9ZzQBY9IvtW/W/NDhw9MIEgexJ04cPJfYbPLUqIXtun9hTLBctcsUwcKEF3qGsgUSALTrMRBA6i7AE92XrcJIxHXh0lvPj/rdXS13dcrqwK9hKbbtwQhXH733ESdxbuALlGViIVutrwoEQcozBKaKfmR/VXdbuB+1VG+73DqIudQpP4UIPw7bbt06bxuIcBOI4oZDw==|920
+}//dUONGtJTThFk+V6f9PtXklz/DEFCwkN9wLyoPIywrf2j59sXXAETg36EPaoBBrqqXCcjr3VfH20XF84OBd3qRnnM89e+C1UTV2xFlyZZFKkdksX2EtfsAIp3u8+v5ZBqq1acFxxTL5xYib1BneHzgJl6dT0IT0ZCKF6C2tvok9cVeedVtSERuz9qoArHWlIDk7pilqbnHVBuSOQTuD9CZOwi/Mvdlm9C6ImGJGt2qkjizdXTHv6s8YEvKEVjD0e9ZF3SggzR5s6rLGIFF/6vCA3lpa5Z8o+xO5TJ38Zm9zblBqYw+jVCjRc0XZwkDBKiGb/D6E1TY1mX/DGCjJ+D/U1C/rVqnyaB4uaEngBdQlIRm3UmIMVAH1TTnjlSfWSy2e7XZ6or3s71YMMURvkCTEvR7MjXo5Sn+Y55ZFjFq0vxJ5HWQAjnHOi06wtXX2Q6gpkBipJHyG2v5DZOoNeZjKsv/julrRNKdTuF8XV99N+hlX6okYILrFzdRuWMvOIf7PtuFWzDcc/kuXsrZKq+GWKY8ISutVkbCmbeMvRBTxmARme5ozkRpRRldms8VvaEbyQOxhrINOYLO4XQWfNwm58DSY01fLJCav82mk2iOg1tsC0yZS32BSRdBF87XYuHPgRh8QBqRXyeyCAbYTHKBXgQx32v+sRkfNkOVrntpm5kVx1zgm3Mds8LEPdg10ga2uBzoR/QwoiND4XCx5s0Rs+MSz5c7Kn1jzLSGpOTKY4ZUwipt5jwhL27RJnv6up10WK1GBeqYjB627/Ldfuez/8RyQOglkLOVGBMQmuGpwxfdDe1RZmBm11ikaWkfrJfTSaRRcucbd8R3nH1guoAnA3XPIhp6oPDuxsL8mgv8P3U2mdX7/l3k8ddUHImti4UoDo0oomWrNUAmXOa5G/4Vg==|920
