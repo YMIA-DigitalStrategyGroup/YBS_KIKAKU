@@ -12,19 +12,6 @@
     "Count": 36
   },
   "Cols": {
-    "InLogicalVisibleIndexes": [
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41
-    ],
     "Count": 42
   },
   "Values": {
@@ -321,13 +308,6 @@
         },
         "ReadOnly": true,
         "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
-    "30,6": {
-      "BindingInfo": {
-        "TableName": "YBS規格文書",
-        "ColumnName": "申請者",
-        "GUID": "c235b504-c6c4-427a-a2e8-008f4e5b0977"
       }
     },
     "30,22": {
@@ -1718,8 +1698,8 @@
     "6,21,1,6",
     "6,13,1,5",
     "8,38,1,4",
-    "30,6,1,8",
-    "5,38,1,4"
+    "5,38,1,4",
+    "30,6,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1810,7 +1790,7 @@
                 ]
               }
             ],
-            "ID": "09335e1d-52fe-4253-b34f-44337f4aa5f4"
+            "ID": "0bfa559c-64a8-4cbf-9b5f-7d893fe2dc98"
           }
         ]
       },
@@ -1871,4 +1851,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//wz4FSLOlXi7TbL+3L2uCPHI+G8iZaM1+sxFGHLZFqDEyxSxz2A9rNkklY3AeqfffWZgARrTowF5g3pYpJroZnuO/8P5IXlIlgFwocc0vP4VKRiEOklKY4u5ENbmCIdi+n9eJ3aXQ/5FB++ZSZ5BzT3Kx/AeVq/owoc87/CkbR8B0rym/emlz0nbl2/4o5f/ZBcTgpuetbLwXzrMekQfy/QY/UApC0MkZvegtqV4+qfNbKRtFoygmrdLygzhnNcgNNV+qoCSgPXr3+ezWWjfemHPW39Xuc8EdgqHjkTx7uKJH7Dqy3+t+NITczSKEpx3/I7a9jU7GlvHMthtTktAn/xzq4JiUrKQ9nmvQONW8U3JI07W82k2KLuDLWRVV7AYUOOlis7LFbuk0m+G9QyznNa4OvPXE0pd8xlrrBzHwQVUed9jw8I9r1rJrMc3lGF9nzvP5p493jbSKlS2Q/XY3z4tDPs0GNJ0jd3gsoIDFvcwKADzV0AevE9e3nC4svM0PkgESCGubaXTnNnbyZmACK/McOpzaVbCnnf9JcnJeYVW7hssQyGvWd/RVIw1QYuYs5gQ6WuIjPzz/v22Var3Xdf4H1NBWa8nFoLfg717bc74edtDeo474tEoJyvvqdrmNmmRl3rPWa0V5zHsEYSuxFZpLbR6FnFBRRdBhir+yocYChXP2qPSj1xqNQ22ghvnj4lMHuP7l7LTeVh5xgegT2OcNIkUnQW3BERQ28j0VN+3ivfLUqON8CCK71Jt9A394+hWVia63Kje/58nEgvQHgrRi8wVRA/T8yd2VQQuhJWmbMpuM3SycSdMBiV0o30HICiuX9blAJMRLMvsCqYyRwzLWzr05sE71Wb/Ck0yHNGM5x4CUYzzGY0KKslogi7l5hYgxmmFgZD5Ix6q7F9SNhA==|920
+}//jI+tbhTzqWIaZtL7SLmPq0bgBvkUoCYL69L5GtfxV5q3Jh2KrpEtaxRTenas8fDBSayHbUP4ZXSRG0b545o7hyzA+AEQ/MtLkX6/mf0NUBmQIkILzhse94b/srsAfxkZ2J1b5T7/6LZEeDjMdZMohfGJKRQu7ID7/NQyRiyFPIL4WEUtEd8MNatl8MfJWZB83Kx7iJOVd6eLEYf7mpJRIiNfvnrCuEdNPby5n3w9niU5tE0epdvvKAl4GRiH1kC2oonErWetUP9rni1TbxfQT3xmaL2WQILrjCXkn5S8agVpWnqr+bMVQ7gh9C5XhIUTeqNmcRv61lVTTDCE6UwnGMy5taop4qAax+G721sxEYTPMLa0UgUUfepDk9rEekswqZcI5aG5qK5j8pYMtpGeUBZU+WqfEHi14pX8XXRkAX60YXRZUbbNwJ62khVS9AMlktdH1cEUamp5RoOjCAuZz9Tb4yl4OO7s7vGF3ntDe6fWUDw+zPV8nGNQIKgtm96RQkmppUCv2M3p7j8LRZu16ofmhYXRXJ6MsB1L1iLs7wVOlCKienCUNVflHaEcbA8lNZx6F3vneQH5GcsJMuiXS260ehR0X6VEYG/bsiQ5jFvhGkyugdMxwlEseJaitlFioVHk4JQVrVFotxOf/asZOBW2VAmWM2UxbiiC2vIn7BopW/yJUiqHo96+41TrK26dHVS+ZZLhiVmLQiI3WGTLFt7EDG/7Xt/YZ4V411JvU3/wyPhUIC+TfliqAq0tGetmJI/xKYEPuVG+xbOwLqNep6BJQBnDaR4xvrq5jt/4Ck3mM563Gd3G+FKz3lKbv7WSf0Tw0oDDjQhIaKkACULMr5Ti6itGdVBpGAmoAD+vVB4wEuShVRg3Cx2YDPnUQyE8a/alok04QlhxefrSqUMqvQ==|920

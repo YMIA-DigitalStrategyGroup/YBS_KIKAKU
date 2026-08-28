@@ -444,7 +444,7 @@
     },
     {
       "PrimaryTable": "ユーザー情報ビュー",
-      "PrimaryColumn": "氏名",
+      "PrimaryColumn": "ユーザー名",
       "ForeignTable": "YBS規格文書",
       "ForeignColumn": "申請者"
     }
