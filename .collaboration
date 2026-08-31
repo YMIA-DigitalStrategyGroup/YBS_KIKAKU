@@ -365,7 +365,17 @@
   },
   {
     "ModuleName": "PCPage/一覧_処理中",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-08-31T13:14:32.4522102+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\YBS管理者\\一覧_処理中.json",
+      "Pages\\YBS管理者\\一覧_処理中.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/一覧_全文書",
