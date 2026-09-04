@@ -497,23 +497,72 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧_褒賞",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T16:06:09.600726+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1\\YBS一覧_褒賞.json",
+      "Pages\\インポートフォルダー1\\YBS一覧_褒賞.rd"
+    ]
   },
   {
     "ModuleName": "Pages/インポートフォルダー1",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T16:06:09.6002532+09:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1"
+    ]
   },
   {
     "ModuleName": "PCPage/褒賞_評価",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T16:06:09.6160835+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1\\褒賞_評価.json",
+      "Pages\\インポートフォルダー1\\褒賞_評価.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/褒賞_フロー",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T16:06:09.6161786+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1\\褒賞_フロー.json",
+      "Pages\\インポートフォルダー1\\褒賞_フロー.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/褒賞一覧_承認待ち",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T16:06:09.6162182+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1\\褒賞一覧_承認待ち.json",
+      "Pages\\インポートフォルダー1\\褒賞一覧_承認待ち.rd"
+    ]
   },
   {
     "ModuleName": "Table/YBS褒賞",
@@ -522,5 +571,15 @@
   {
     "ModuleName": "Tables/インポートフォルダー1",
     "ModuleType": 22
+  },
+  {
+    "ModuleName": "Pages/褒賞処理",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T16:06:09.6002617+09:00",
+    "ModuleType": 6
   }
 ]
