@@ -1,0 +1,233 @@
+{
+  "Name": "YBS褒賞",
+  "FlowProcess": {
+    "IsEnabled": true,
+    "FlowStates": [
+      {
+        "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",
+        "StateName": "新規"
+      },
+      {
+        "Id": "b4381433-f1c1-4bf7-8fac-460fa78cc04f",
+        "StateName": "申請中"
+      },
+      {
+        "Id": "408afa51-f858-4a1b-a374-b877938542d2",
+        "StateName": "承認済み"
+      }
+    ],
+    "FlowPaths": [
+      {
+        "StartState": {
+          "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",
+          "StateName": "新規"
+        },
+        "Action": {
+          "ActionName": "提出",
+          "GUID": "65ba827b-90bb-453c-adb0-023ddcd99657"
+        },
+        "ToState": {
+          "Id": "b4381433-f1c1-4bf7-8fac-460fa78cc04f",
+          "StateName": "申請中"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": ""
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "b4381433-f1c1-4bf7-8fac-460fa78cc04f",
+          "StateName": "申請中"
+        },
+        "Action": {
+          "ActionName": "承認",
+          "GUID": "90c0abc5-2d37-413f-8bc0-d28705c9570e"
+        },
+        "ToState": {
+          "Id": "408afa51-f858-4a1b-a374-b877938542d2",
+          "StateName": "承認済み"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "b4381433-f1c1-4bf7-8fac-460fa78cc04f",
+          "StateName": "申請中"
+        },
+        "Action": {
+          "ActionName": "差戻",
+          "GUID": "40ea1dda-00f1-463e-b8da-b6a3f30f4c98"
+        },
+        "ToState": {
+          "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",
+          "StateName": "新規"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "評価者",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "評価日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "評価分類",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "判定1_1",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "判定1_2",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "判定1_3",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "判定1_4",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "判定2_1",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "判定2_2",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "判定2_3",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "判定2_4",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "等級",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "規格文書ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "FGC_State",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "FGC_AssignTo",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.UserExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.DateExtraBingingColumnSaveData, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "AllowModifySchema": true,
+    "ConnectionId": "SqlServer1",
+    "SourceTableName": "YBS褒賞",
+    "SourceTableSchema": "dbo"
+  },
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Indexes": []
+}

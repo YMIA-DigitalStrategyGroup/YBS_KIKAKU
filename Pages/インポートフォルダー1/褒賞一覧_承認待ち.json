@@ -1,0 +1,159 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "0,1": "%PageTitle%",
+    "2,26": "規格名称"
+  },
+  "Formulas": {
+    "3,26": "ODATA(\"YBS規格文書?$select=規格名称&$filter=ID eq \"&IF(ISBLANK(G4),\"null\",G4))"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "YBS褒賞",
+        "RowIndex": 2,
+        "ColumnIndex": 2,
+        "RowCount": 11,
+        "ColumnCount": 40,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,2": {
+      "NameUsedInJavaScript": "状態",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "FGC_State",
+        "GUID": "e6910a65-a8bf-4a1e-8844-6a21dd056d96"
+      }
+    },
+    "3,6": {
+      "NameUsedInJavaScript": "規格文書ID",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "規格文書ID",
+        "GUID": "a2fb5f42-a901-4aa8-896d-29030ecd6b55"
+      }
+    },
+    "3,10": {
+      "NameUsedInJavaScript": "評価者",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "評価者",
+        "GUID": "1b09b1de-b15c-4117-9710-686876d0f2a7"
+      }
+    },
+    "3,14": {
+      "NameUsedInJavaScript": "評価日",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "評価日",
+        "GUID": "cc8187bd-0db5-47f5-8524-92c6617d6dc9"
+      }
+    },
+    "3,18": {
+      "NameUsedInJavaScript": "分類",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "評価分類",
+        "GUID": "1f2c9d52-5514-4518-aebb-2c3446496a2a"
+      }
+    },
+    "3,22": {
+      "NameUsedInJavaScript": "等級",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "等級",
+        "GUID": "34275be9-56ec-4bd4-b05b-6dd5a8bdb357"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "2,10": 0,
+      "2,14": 0,
+      "2,18": 0,
+      "2,22": 0,
+      "2,26": 0,
+      "3,2": 0,
+      "3,10": 0,
+      "3,14": 0,
+      "3,18": 0,
+      "3,22": 0,
+      "3,26": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,1,1,6",
+    "2,2,1,4",
+    "2,6,1,4",
+    "2,10,1,4",
+    "2,14,1,4",
+    "2,18,1,4",
+    "2,22,1,4",
+    "2,26,1,4",
+    "3,2,1,4",
+    "3,6,1,4",
+    "3,10,1,4",
+    "3,14,1,4",
+    "3,18,1,4",
+    "3,22,1,4",
+    "3,26,1,4",
+    "4,2,9,40"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//OIhZv3B2C1WHBFPWN0oGAWAzHg1ZD2XweM5Njx7U1KGoLP+YHTFfrhLWq1g5PReLVeCG5TQFE8LLMNaYc08sazCKr4Dw8uSojesptVfX6n/NDmhD861Z78WBlJruOKuan7UvRuiH44oIWBJYlQOcRanqjk0Okcu8wfVWhngyZbDn1i0MW9XKakfWLJPReJJVTLykHVuWjfYLsgulWopxKarJexfXrd57EzlBGZoJCltK1PGzn9LN2Y7xai0o+8Ip9+UAttrSifpQSmtGdbuLYuYoid0OiWIH/XJqEogoj/1Tgs8m1yCXAlQy2n2DHoGj4DhRfHz/MihJmPFQouSGHrk2uPIjxwdufW3xzX2TdJNfV1DoLAUvzR8tximHmUcO2U9F8RTv+k8SjenB83ZT9kfvjH+AgyTecXoa8aCZYrrWD8WDrx6Y4ZqMa9LgonnWKr7pg3SkxPcRhweKiC5hm9J4keLtwLr6i5WvftgyI+qIu7aZuTZqrkcf+3HVskq8gK9LUkod1XIE8bNzW995oD3b5gzIEO/YN5tEywCtCe3gcstaGyw1ju2dp7g2t4iSIjz6i3NbMBu9/GJ0r0a37P0/YdGutJr9CmLQYT9Wr77zmq+6qSCHIztJJEsKDOOB2ulDSkFOvRKauiwp8CkALZxbUC56YycN2Jm5T+tG9TC2y9gN6E26Rm9dDJ2Y4hPif3uXC/vTZRxZUrASKRTbS1JPqj0Yx5xFihely6NyXyrvltNs+pRyiFKVpgtekqDJUC3BjyiDl/iQ/aZIBxr+ZIfk6QWGO7fK4/jlQYzsQG7RG9CxgOeQ0KwpdeRhmxLGafhju3Ftef7QOp8i5H7co1Tdxmoupynbn/IKdvJ9zvncu5eNs6bf6V1WRl6DHrirLuJRkm+biqUY9Yom28UnTw==|920
