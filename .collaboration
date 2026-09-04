@@ -497,117 +497,30 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧_褒賞",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T16:06:09.600726+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1\\YBS一覧_褒賞.json",
-      "Pages\\インポートフォルダー1\\YBS一覧_褒賞.rd"
-    ]
-  },
-  {
-    "ModuleName": "Pages/インポートフォルダー1",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T16:06:09.6002532+09:00",
-    "ModuleType": 6,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/褒賞_評価",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T16:06:09.6160835+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1\\褒賞_評価.json",
-      "Pages\\インポートフォルダー1\\褒賞_評価.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/褒賞_フロー",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T16:06:09.6161786+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1\\褒賞_フロー.json",
-      "Pages\\インポートフォルダー1\\褒賞_フロー.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/褒賞一覧_承認待ち",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T16:06:09.6162182+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\インポートフォルダー1\\褒賞一覧_承認待ち.json",
-      "Pages\\インポートフォルダー1\\褒賞一覧_承認待ち.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Table/YBS褒賞",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T17:11:08.8059908+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\インポートフォルダー1\\YBS褒賞.json"
-    ]
-  },
-  {
-    "ModuleName": "Tables/インポートフォルダー1",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T17:11:08.8059335+09:00",
-    "ModuleType": 22,
-    "ToRemoveFiles": [
-      "Tables\\インポートフォルダー1"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Pages/褒賞処理",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T16:06:09.6002617+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "Tables/褒賞",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-04T17:11:08.8059377+09:00",
     "ModuleType": 22
   }
 ]
