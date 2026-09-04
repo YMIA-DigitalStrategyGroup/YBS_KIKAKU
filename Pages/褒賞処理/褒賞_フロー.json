@@ -76,7 +76,10 @@
     "34,23": 15,
     "37,18": "合計点",
     "40,19": "等級",
-    "43,2": "ワークフロー（以下のボタンにて処理してください）"
+    "43,2": "ワークフロー（以下のボタンにて処理してください）",
+    "44,2": "承認",
+    "47,2": "差戻",
+    "50,2": "確認"
   },
   "Formulas": {
     "4,5": "ODATA(\"YBS分類コード?$select=分類名称&$filter=分類コード eq \"&IF(ISBLANK(AN13),\"null\",\"'\"&AN13&\"'\"))",
@@ -187,7 +190,7 @@
                     ]
                   }
                 ],
-                "ID": "48b63f2f-ca7e-4b0c-a092-354c4b306d83"
+                "ID": "798b81ad-d467-425e-87d5-3be154aed94c"
               },
               {
                 "Condition": {
@@ -240,7 +243,7 @@
                     ]
                   }
                 ],
-                "ID": "8b364e76-ba4a-4b57-ac01-cb0b3242b48c"
+                "ID": "9ca686f0-909c-4811-a8db-456ba1bb4feb"
               },
               {
                 "CommandList": [
@@ -269,7 +272,7 @@
                     ]
                   }
                 ],
-                "ID": "8d868853-8880-4146-8cf6-0aa0ad76cc82"
+                "ID": "41027440-eed7-4470-98fc-6df162dd15b1"
               }
             ]
           }
@@ -344,7 +347,7 @@
                     ]
                   }
                 ],
-                "ID": "79cb81fa-c171-4824-9d48-f6830e08ff96"
+                "ID": "f91da97e-ee5c-4419-a73f-467cf85388f5"
               },
               {
                 "Condition": {
@@ -397,7 +400,7 @@
                     ]
                   }
                 ],
-                "ID": "c146ec65-277b-468b-ad95-cc7a876b7cc2"
+                "ID": "4eb507e4-dfec-4272-be6f-2adfcbe92c4b"
               },
               {
                 "CommandList": [
@@ -426,7 +429,7 @@
                     ]
                   }
                 ],
-                "ID": "628d3625-6332-4451-9559-3a1ee4f7dd0f"
+                "ID": "5b3551ff-2e02-4440-b965-f81897d06d99"
               }
             ],
             "Disabled": true
@@ -517,6 +520,992 @@
     },
     "44,2": {
       "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "ワークフロー状態",
+            "TableValue": {
+              "TableName": "YBS規格文書",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "7b31e4a9-3549-48d0-93e6-1002ecc50222",
+                  "BindingInfo": {
+                    "TableName": "YBS規格文書",
+                    "ColumnName": "FGC_State",
+                    "GUID": "1f77653c-9f83-4b42-bf4a-c6eb854a7f51"
+                  },
+                  "ColumnName": "FGC_State"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "YBSコード",
+                      "GUID": "531daf75-22e6-473f-b297-fefd7982406e"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!E20"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "改正コード",
+                      "GUID": "e6c7bff6-ede8-4334-b8ff-7e431a7e921b"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!J20"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "0d61fd3e89a14c2882e894c6c696af05"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "審議形態",
+            "TableValue": {
+              "TableName": "YBS規格文書",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "5d1c9105-0ebf-4e58-9f57-b785277e01b8",
+                  "BindingInfo": {
+                    "TableName": "YBS規格文書",
+                    "ColumnName": "分類コード",
+                    "GUID": "d01d5a1c-24dd-43e1-8579-edd638902ed8",
+                    "RelationBinding": {
+                      "RelatedTable": "YBS分類コード",
+                      "RelatedColumn": "分類コード",
+                      "DisplayColumn": "審議形態"
+                    }
+                  },
+                  "ColumnName": "審議形態"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "YBSコード",
+                      "GUID": "5cfc2315-964e-413c-9a2b-44780fb70168"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!E20"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "改正コード",
+                      "GUID": "f4f155f4-2f2c-446e-b149-68ce6d51843e"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!J20"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "df903bf746bc4d7eb80c75dcd4a4ad4a"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=褒賞_フロー!G45"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "コメントが未入力です。\r\nコメント入力後、「承認」ボタンを押してください。"
+                  }
+                ],
+                "ID": "27430669-de20-4940-bf7f-ed64e99ec811"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "部門長承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!審議形態"
+                                      }
+                                    ]
+                                  },
+                                  "value": "部内審議"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                                    "TableName": "YBS規格文書",
+                                    "NextState": "承認済み",
+                                    "AssignTo": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!F44"
+                                    },
+                                    "ActionName": "部門長承認",
+                                    "WorkflowComments": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!G45"
+                                    }
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!E20"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G22"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": "承認済み"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!AK13"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分"
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                    "ConditionAndCommandPairList": [
+                                      {
+                                        "Condition": {
+                                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                          "param": {
+                                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                            "cellLocations": [
+                                              {
+                                                "SerializeProperty": "=褒賞_フロー!F17"
+                                              }
+                                            ]
+                                          },
+                                          "value": "新規"
+                                        },
+                                        "CommandList": [
+                                          {
+                                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                            "TableName": "YBS規格文書",
+                                            "ShowConfirm": true,
+                                            "ConfirmText": "新規本当に更新してもよろしいですか？",
+                                            "UpdateBindingValues": [
+                                              {
+                                                "BindingInfo": {
+                                                  "TableName": "YBS規格文書",
+                                                  "ColumnName": "現行_旧版",
+                                                  "GUID": "3abeba0f-6d3d-4b33-8a52-4ee50d1e5f82"
+                                                },
+                                                "Value": "現行"
+                                              }
+                                            ]
+                                          }
+                                        ],
+                                        "ID": "fa4e318f-0549-49e4-a4ec-836f0dade8cd"
+                                      },
+                                      {
+                                        "Condition": {
+                                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                          "param": {
+                                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                            "cellLocations": [
+                                              {
+                                                "SerializeProperty": "=褒賞_フロー!F17"
+                                              }
+                                            ]
+                                          },
+                                          "value": "廃止"
+                                        },
+                                        "CommandList": [
+                                          {
+                                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                            "TableName": "YBS規格文書",
+                                            "ShowConfirm": true,
+                                            "ConfirmText": "廃止_本当に更新してもよろしいですか？",
+                                            "RowsToUpdate": 1,
+                                            "RowsToUpdateCondition": {
+                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                              "SubConditions": [
+                                                {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "YBS規格文書",
+                                                    "ColumnName": "YBSコード",
+                                                    "GUID": "1e36cb85-5a80-4755-922a-acb3fa609885"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=褒賞_フロー!E20"
+                                                  }
+                                                },
+                                                {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "YBS規格文書",
+                                                    "ColumnName": "現行_旧版",
+                                                    "GUID": "c43d792d-31ec-4bb8-89a9-b76d458f5fd9"
+                                                  },
+                                                  "Value": "現行"
+                                                }
+                                              ]
+                                            },
+                                            "UpdateBindingValues": [
+                                              {
+                                                "BindingInfo": {
+                                                  "TableName": "YBS規格文書",
+                                                  "ColumnName": "現行_旧版",
+                                                  "GUID": "3d4b41e3-1c70-4249-9716-15d80dc5030f"
+                                                },
+                                                "Value": "旧版"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                            "TableName": "YBS規格文書",
+                                            "ShowConfirm": false,
+                                            "UpdateBindingValues": [
+                                              {
+                                                "BindingInfo": {
+                                                  "TableName": "YBS規格文書",
+                                                  "ColumnName": "規格本文",
+                                                  "GUID": "37481ecb-6a9e-4196-b4ae-ca0cb6f1d6a5"
+                                                }
+                                              },
+                                              {
+                                                "BindingInfo": {
+                                                  "TableName": "YBS規格文書",
+                                                  "ColumnName": "付表添付",
+                                                  "GUID": "7428038d-7c22-4bb9-912c-89eea9764f13"
+                                                }
+                                              },
+                                              {
+                                                "BindingInfo": {
+                                                  "TableName": "YBS規格文書",
+                                                  "ColumnName": "規格PDF",
+                                                  "GUID": "d9b99f9c-a35b-4e60-b68f-60ac4c47232f"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ],
+                                        "ID": "8c76f0ac-3c26-4135-bda8-57187d107afa"
+                                      },
+                                      {
+                                        "Condition": {
+                                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                          "param": {
+                                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                            "cellLocations": [
+                                              {
+                                                "SerializeProperty": "=褒賞_フロー!F17"
+                                              }
+                                            ]
+                                          },
+                                          "value": "改正"
+                                        },
+                                        "CommandList": [
+                                          {
+                                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                            "TableName": "YBS規格文書",
+                                            "ShowConfirm": true,
+                                            "ConfirmText": "改正_本当に更新してもよろしいですか？",
+                                            "RowsToUpdate": 1,
+                                            "RowsToUpdateCondition": {
+                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                              "SubConditions": [
+                                                {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "YBS規格文書",
+                                                    "ColumnName": "YBSコード",
+                                                    "GUID": "90a30b70-d2eb-4455-bf41-3e199d2fb751"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=褒賞_フロー!E20"
+                                                  }
+                                                },
+                                                {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "YBS規格文書",
+                                                    "ColumnName": "現行_旧版",
+                                                    "GUID": "bd2a03ca-4c24-44d2-967c-b42a19a6a7ad"
+                                                  },
+                                                  "Value": "現行"
+                                                }
+                                              ]
+                                            },
+                                            "UpdateBindingValues": [
+                                              {
+                                                "BindingInfo": {
+                                                  "TableName": "YBS規格文書",
+                                                  "ColumnName": "現行_旧版",
+                                                  "GUID": "8985e8ff-88b3-48a7-853b-13eea85926af"
+                                                },
+                                                "Value": "旧版"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                            "TableName": "YBS規格文書",
+                                            "ShowConfirm": false,
+                                            "UpdateBindingValues": [
+                                              {
+                                                "BindingInfo": {
+                                                  "TableName": "YBS規格文書",
+                                                  "ColumnName": "現行_旧版",
+                                                  "GUID": "2424840f-9e8a-4cdd-a2ea-55d7c2520e28"
+                                                },
+                                                "Value": "現行"
+                                              }
+                                            ]
+                                          }
+                                        ],
+                                        "ID": "59024f8b-647c-49cc-965e-b162c8c19858"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "【部内審議】 部門長が承認しました。"
+                                  }
+                                ],
+                                "ID": "d12e790a-fa3e-499f-9df0-49406f1e6884"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!審議形態"
+                                      }
+                                    ]
+                                  },
+                                  "value": "部内審議",
+                                  "compareType": 1
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                                    "TableName": "YBS規格文書",
+                                    "NextState": "審議会承認待ち",
+                                    "AssignTo": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!F44"
+                                    },
+                                    "ActionName": "部門長承認",
+                                    "WorkflowComments": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!G45"
+                                    }
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!E20"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G22"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G24"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限",
+                                        "Value": "審議会"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": "審議会承認待ち"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!F17"
+                                        }
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!E20"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G22"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G24"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限",
+                                        "Value": "YBS委員"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": "審議会承認待ち"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!F17"
+                                        }
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "【審議会承認待ちへ】 部門長が承認しました。"
+                                  }
+                                ],
+                                "ID": "8eaefcd8-d006-4a8d-b1bc-ed3bcc2fe51b"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "b8c45aea-0356-47ec-86dc-91b9d424a43a"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "審議会承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "YBS規格文書",
+                            "NextState": "委員長承認待ち",
+                            "AssignTo": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!F44"
+                            },
+                            "ActionName": "審議会承認",
+                            "WorkflowComments": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!G45"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "メール通知",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "YBSコード",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!E20"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "規格名称",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G22"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "理由",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G24"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "権限",
+                                "Value": "委員長"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "状態",
+                                "Value": "委員長承認待ち"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "ユーザーID"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!F17"
+                                }
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "審議会メンバーが全員承認しました。"
+                          }
+                        ],
+                        "ID": "5288dc4c-fa7d-44bd-bf2a-58cae77307dd"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "委員長承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "YBS規格文書",
+                            "NextState": "承認済み",
+                            "AssignTo": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!F44"
+                            },
+                            "ActionName": "委員長承認",
+                            "WorkflowComments": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!G45"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "メール通知",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "YBSコード",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!E20"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "規格名称",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G22"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "理由"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "権限"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "状態",
+                                "Value": "承認済み"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "ユーザーID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!AK13"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分"
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!F17"
+                                      }
+                                    ]
+                                  },
+                                  "value": "新規"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                    "TableName": "YBS規格文書",
+                                    "ShowConfirm": true,
+                                    "ConfirmText": "新規本当に更新してもよろしいですか？",
+                                    "UpdateBindingValues": [
+                                      {
+                                        "BindingInfo": {
+                                          "TableName": "YBS規格文書",
+                                          "ColumnName": "現行_旧版",
+                                          "GUID": "74b1eaee-106b-4299-b421-a5bea8351966"
+                                        },
+                                        "Value": "現行"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "7dc0d826-fd06-4200-a38a-2ece8f4ddd92"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!F17"
+                                      }
+                                    ]
+                                  },
+                                  "value": "廃止"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                    "TableName": "YBS規格文書",
+                                    "ShowConfirm": true,
+                                    "ConfirmText": "廃止_本当に更新してもよろしいですか？",
+                                    "RowsToUpdate": 1,
+                                    "RowsToUpdateCondition": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "SubConditions": [
+                                        {
+                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                          "ColumnBindingInfo": {
+                                            "TableName": "YBS規格文書",
+                                            "ColumnName": "YBSコード",
+                                            "GUID": "d75e49c2-b700-40f2-bdb2-f8401178b03e"
+                                          },
+                                          "Value": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=褒賞_フロー!E20"
+                                          }
+                                        },
+                                        {
+                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                          "ColumnBindingInfo": {
+                                            "TableName": "YBS規格文書",
+                                            "ColumnName": "現行_旧版",
+                                            "GUID": "7866d236-74ca-4b11-b97f-515933d0053c"
+                                          },
+                                          "Value": "現行"
+                                        }
+                                      ]
+                                    },
+                                    "UpdateBindingValues": [
+                                      {
+                                        "BindingInfo": {
+                                          "TableName": "YBS規格文書",
+                                          "ColumnName": "現行_旧版",
+                                          "GUID": "1844b076-8cc3-48a8-bad1-c50f5ea477f6"
+                                        },
+                                        "Value": "旧版"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                    "TableName": "YBS規格文書",
+                                    "ShowConfirm": false,
+                                    "UpdateBindingValues": [
+                                      {
+                                        "BindingInfo": {
+                                          "TableName": "YBS規格文書",
+                                          "ColumnName": "規格本文",
+                                          "GUID": "e6182705-c7be-4f22-a856-8861c143547a"
+                                        }
+                                      },
+                                      {
+                                        "BindingInfo": {
+                                          "TableName": "YBS規格文書",
+                                          "ColumnName": "付表添付",
+                                          "GUID": "eb18c2e2-04d5-4565-80a8-43085add575e"
+                                        }
+                                      },
+                                      {
+                                        "BindingInfo": {
+                                          "TableName": "YBS規格文書",
+                                          "ColumnName": "規格PDF",
+                                          "GUID": "b6c5a906-0806-4c12-9625-61144e9307cc"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "ddc6b0b7-ed10-4c60-b043-be2a09f3d50d"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!F17"
+                                      }
+                                    ]
+                                  },
+                                  "value": "改正"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                    "TableName": "YBS規格文書",
+                                    "ShowConfirm": true,
+                                    "ConfirmText": "改正_本当に更新してもよろしいですか？",
+                                    "RowsToUpdate": 1,
+                                    "RowsToUpdateCondition": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "SubConditions": [
+                                        {
+                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                          "ColumnBindingInfo": {
+                                            "TableName": "YBS規格文書",
+                                            "ColumnName": "YBSコード",
+                                            "GUID": "f4e3e3f4-5e31-43c9-87b4-9d5376cf0a4a"
+                                          },
+                                          "Value": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=褒賞_フロー!E20"
+                                          }
+                                        },
+                                        {
+                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                          "ColumnBindingInfo": {
+                                            "TableName": "YBS規格文書",
+                                            "ColumnName": "現行_旧版",
+                                            "GUID": "4fbf081e-522f-41ac-b1f9-af07c59771ea"
+                                          },
+                                          "Value": "現行"
+                                        }
+                                      ]
+                                    },
+                                    "UpdateBindingValues": [
+                                      {
+                                        "BindingInfo": {
+                                          "TableName": "YBS規格文書",
+                                          "ColumnName": "現行_旧版",
+                                          "GUID": "f25fcff0-adc9-4884-8507-6910e08b2594"
+                                        },
+                                        "Value": "旧版"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                    "TableName": "YBS規格文書",
+                                    "ShowConfirm": false,
+                                    "UpdateBindingValues": [
+                                      {
+                                        "BindingInfo": {
+                                          "TableName": "YBS規格文書",
+                                          "ColumnName": "現行_旧版",
+                                          "GUID": "65d6288a-8c66-47c3-8340-92088be5bdf1"
+                                        },
+                                        "Value": "現行"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "67255b71-d160-44ee-97c0-062295ad1b68"
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "委員長が承認しました。"
+                          }
+                        ],
+                        "ID": "3afd19cd-cedf-42fd-9156-b50e622e328b"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "6234bbc6-c523-4c2f-a9fd-728ad599e247"
+              }
+            ]
+          }
+        ],
+        "Text": "承認",
+        "TemplateKey": "_RS_RoundCorner_Style5"
+      }
+    },
+    "44,6": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "承認コメントを記載ください。"
+      }
+    },
+    "44,42": {
+      "CellType": {
         "$type": "Forguncy.ProcessBarCellType, ServerDesignerCommon",
         "TableName": "YBS褒賞",
         "ShowCreateBy": true,
@@ -525,6 +1514,1078 @@
           "TableName": "YBS褒賞",
           "SelectedID": "00000000-0000-0000-0000-000000000000"
         }
+      }
+    },
+    "47,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "ワークフロー状態",
+            "TableValue": {
+              "TableName": "YBS規格文書",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "1e68e9a6-c52b-4e88-9f38-513c007bc5e3",
+                  "BindingInfo": {
+                    "TableName": "YBS規格文書",
+                    "ColumnName": "FGC_State",
+                    "GUID": "d7332a2b-9bb3-46ab-86e0-d90db969f781"
+                  },
+                  "ColumnName": "FGC_State"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "YBSコード",
+                      "GUID": "27abfe9d-3c07-418a-9d40-8e848a5e57e6"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!E20"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "改正コード",
+                      "GUID": "68997e10-5262-407e-86c3-8b8ae28f5f02"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!J20"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "c0e27eb022e040419f2b1b4d26220bb8"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "審議形態",
+            "TableValue": {
+              "TableName": "YBS規格文書",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "d16b5b92-2f29-49d6-91f3-af5848ffaaf7",
+                  "BindingInfo": {
+                    "TableName": "YBS規格文書",
+                    "ColumnName": "分類コード",
+                    "GUID": "3666bcfa-3900-44a0-83f6-149357f0430a",
+                    "RelationBinding": {
+                      "RelatedTable": "YBS分類コード",
+                      "RelatedColumn": "分類コード",
+                      "DisplayColumn": "審議形態"
+                    }
+                  },
+                  "ColumnName": "審議形態"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "YBSコード",
+                      "GUID": "fa954b40-b985-4d94-9aad-1295c750b951"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!E20"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "改正コード",
+                      "GUID": "ad8ef8b7-a924-4fe4-b3d1-d572d5b13954"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!J20"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "734a9359c7554fcaa08e56861c357aa1"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=褒賞_フロー!G48"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「差戻」ボタンを押してください。"
+                  }
+                ],
+                "ID": "d1826e7c-c8e8-4aff-bf00-7b3118a8dd1e"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "部門長承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!審議形態"
+                                      }
+                                    ]
+                                  },
+                                  "value": "部内審議"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                                    "TableName": "YBS規格文書",
+                                    "NextState": "差戻",
+                                    "AssignTo": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!N17"
+                                    },
+                                    "ActionName": "部門長差戻",
+                                    "WorkflowComments": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!G48"
+                                    }
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!E20"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G22"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G24"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": "差戻"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!AK13"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分"
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "【部内審議】 部門長が差戻ました。"
+                                  }
+                                ],
+                                "ID": "c7cd4a48-69c3-49fc-ae2b-f87be905977e"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!審議形態"
+                                      }
+                                    ]
+                                  },
+                                  "value": "部内審議",
+                                  "compareType": 1
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                                    "TableName": "YBS規格文書",
+                                    "NextState": "差戻",
+                                    "AssignTo": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!N17"
+                                    },
+                                    "ActionName": "部門長差戻",
+                                    "WorkflowComments": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!G48"
+                                    }
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!E20"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G22"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G24"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": "差戻"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!AK13"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分"
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "【審議会審議】 部門長が差戻ました。"
+                                  }
+                                ],
+                                "ID": "08e4263d-b976-46cd-82e2-9acce439de2c"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "dcfd117f-d1cf-4a53-b33d-3fb5e301d3f5"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "審議会承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "YBS規格文書",
+                            "NextState": "差戻",
+                            "AssignTo": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!N17"
+                            },
+                            "ActionName": "審議会差戻",
+                            "WorkflowComments": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!G48"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "メール通知",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "YBSコード",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!E20"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "規格名称",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G22"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "理由",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G24"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "権限"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "状態",
+                                "Value": "差戻"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "ユーザーID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!AK13"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分"
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "審議会メンバーが差戻ました。"
+                          }
+                        ],
+                        "ID": "7f4022a2-8f0c-4559-a65d-1796faf037e4"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "委員長承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "YBS規格文書",
+                            "NextState": "差戻",
+                            "AssignTo": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!N17"
+                            },
+                            "ActionName": "委員長差戻",
+                            "WorkflowComments": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!G48"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "メール通知",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "YBSコード",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!E20"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "規格名称",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G22"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "理由",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G24"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "権限"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "状態",
+                                "Value": "差戻"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "ユーザーID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!AK13"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分"
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "委員長が差戻ました。"
+                          }
+                        ],
+                        "ID": "a24e9afe-19d2-4870-844d-acb733debe52"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "17ec6004-3a7a-427f-9f8f-7dca03a44fe3"
+              }
+            ]
+          }
+        ],
+        "Text": "差戻",
+        "TemplateKey": "_RS_RoundCorner_Style2"
+      }
+    },
+    "47,6": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "必須：差し戻しコメントを記載ください。"
+      }
+    },
+    "50,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "ワークフロー状態",
+            "TableValue": {
+              "TableName": "YBS規格文書",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "1e68e9a6-c52b-4e88-9f38-513c007bc5e3",
+                  "BindingInfo": {
+                    "TableName": "YBS規格文書",
+                    "ColumnName": "FGC_State",
+                    "GUID": "9436e19f-271c-4f33-9d36-23f61278d34f"
+                  },
+                  "ColumnName": "FGC_State"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "YBSコード",
+                      "GUID": "3e950d02-0ff7-4882-b969-8bd8d8a57942"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!E23"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "改正コード",
+                      "GUID": "a0cd38b0-eb23-4d04-b004-e903000cb5fb"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!J23"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "33dc7b92bd00467c9deaa248f502fb9b"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "審議形態",
+            "TableValue": {
+              "TableName": "YBS規格文書",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "d16b5b92-2f29-49d6-91f3-af5848ffaaf7",
+                  "BindingInfo": {
+                    "TableName": "YBS規格文書",
+                    "ColumnName": "分類コード",
+                    "GUID": "d682cdb1-7996-48ca-b90b-743f23c66409",
+                    "RelationBinding": {
+                      "RelatedTable": "YBS分類コード",
+                      "RelatedColumn": "分類コード",
+                      "DisplayColumn": "審議形態"
+                    }
+                  },
+                  "ColumnName": "審議形態"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "YBSコード",
+                      "GUID": "c5feaeec-741b-401a-8d7c-76c7499edf9b"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!E23"
+                    }
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "YBS規格文書",
+                      "ColumnName": "改正コード",
+                      "GUID": "341f2973-d699-4b5f-9391-43d84f59961d"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_フロー!J23"
+                    }
+                  }
+                ]
+              }
+            },
+            "ID": "03c631d1ae65466991542f5ffdd40fe9"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=褒賞_フロー!G51"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「差戻」ボタンを押してください。"
+                  }
+                ],
+                "ID": "d3581c75-008a-43a6-a342-c25b0a10240e"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "部門長承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!審議形態"
+                                      }
+                                    ]
+                                  },
+                                  "value": "部内審議"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                                    "TableName": "YBS規格文書",
+                                    "NextState": "差戻",
+                                    "AssignTo": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!N20"
+                                    },
+                                    "ActionName": "部門長差戻",
+                                    "WorkflowComments": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!G51"
+                                    }
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!E23"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G25"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G27"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": "差戻"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!AK16"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分"
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "【部内審議】 部門長が差戻ました。"
+                                  }
+                                ],
+                                "ID": "084cd98a-bf90-43b1-99c7-25a8c2264cd6"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=褒賞_フロー!審議形態"
+                                      }
+                                    ]
+                                  },
+                                  "value": "部内審議",
+                                  "compareType": 1
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                                    "TableName": "YBS規格文書",
+                                    "NextState": "差戻",
+                                    "AssignTo": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!N20"
+                                    },
+                                    "ActionName": "部門長差戻",
+                                    "WorkflowComments": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=褒賞_フロー!G51"
+                                    }
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                                    "ServerCommandName": "メール通知",
+                                    "Parameters": [
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "YBSコード",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!E23"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "規格名称",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G25"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "理由",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!G27"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "権限"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "状態",
+                                        "Value": "差戻"
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "ユーザーID",
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=褒賞_フロー!AK16"
+                                        }
+                                      },
+                                      {
+                                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                        "ParamName": "申請区分"
+                                      }
+                                    ],
+                                    "RefreshAfterFinish": true,
+                                    "CheckDataValidation": true
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "【審議会審議】 部門長が差戻ました。"
+                                  }
+                                ],
+                                "ID": "1265ea57-ce59-4418-8ca1-b43094b4fb26"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "cea4e65c-2578-47fe-8de7-6c04b833871f"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "審議会承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "YBS規格文書",
+                            "NextState": "差戻",
+                            "AssignTo": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!N20"
+                            },
+                            "ActionName": "審議会差戻",
+                            "WorkflowComments": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!G51"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "メール通知",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "YBSコード",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!E23"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "規格名称",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G25"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "理由",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G27"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "権限"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "状態",
+                                "Value": "差戻"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "ユーザーID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!AK16"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分"
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "審議会メンバーが差戻ました。"
+                          }
+                        ],
+                        "ID": "c88fddaf-6ab3-4aac-9dd3-e31da9742c6a"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞_フロー!ワークフロー状態"
+                              }
+                            ]
+                          },
+                          "value": "委員長承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "YBS規格文書",
+                            "NextState": "差戻",
+                            "AssignTo": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!N20"
+                            },
+                            "ActionName": "委員長差戻",
+                            "WorkflowComments": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞_フロー!G51"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "メール通知",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "YBSコード",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!E23"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "規格名称",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G25"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "理由",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!G27"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "権限"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "状態",
+                                "Value": "差戻"
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "ユーザーID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=褒賞_フロー!AK16"
+                                }
+                              },
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "申請区分"
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "委員長が差戻ました。"
+                          }
+                        ],
+                        "ID": "88c16d5e-f592-43fc-9186-25fa573aa4ba"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "1bbe5d01-581e-43d3-acd7-9517ca963e8c"
+              }
+            ]
+          }
+        ],
+        "Text": "確認",
+        "TemplateKey": "_RS_RoundCorner_Style3"
+      }
+    },
+    "50,6": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "確認コメントを記載ください。"
       }
     }
   },
@@ -1189,6 +3250,109 @@
         "BorderTop": 1,
         "BorderLeft": null,
         "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 13,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 14,
+        "VerticalAlignment": 15,
+        "WordWrap": true,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 14
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 13,
+        "HorizontalAlignment": 5,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 14,
+        "VerticalAlignment": 15,
+        "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 14,
+        "VerticalAlignment": 15,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -1205,7 +3369,10 @@
         "Accent 4 80",
         "Right",
         "Accent 2 80",
-        "Accent 3 80"
+        "Accent 3 80",
+        "General",
+        "@",
+        "Top"
       ],
       "Borders": [
         {
@@ -2359,15 +4526,264 @@
       "43,28": 83,
       "43,29": 83,
       "43,30": 83,
-      "44,2": 9,
-      "44,39": 9,
-      "44,40": 9,
-      "44,41": 9,
+      "44,2": 84,
+      "44,3": 9,
+      "44,4": 9,
+      "44,5": 12,
+      "44,6": 85,
+      "44,7": 86,
+      "44,8": 86,
+      "44,9": 86,
+      "44,10": 86,
+      "44,11": 86,
+      "44,12": 86,
+      "44,13": 86,
+      "44,14": 86,
+      "44,15": 86,
+      "44,16": 86,
+      "44,17": 86,
+      "44,18": 86,
+      "44,19": 86,
+      "44,20": 86,
+      "44,21": 86,
+      "44,22": 86,
+      "44,23": 86,
+      "44,24": 86,
+      "44,25": 87,
       "44,42": 9,
-      "45,39": 9,
-      "45,40": 9,
-      "45,41": 9,
-      "45,42": 9
+      "44,43": 9,
+      "44,44": 9,
+      "44,45": 9,
+      "44,46": 9,
+      "44,47": 9,
+      "44,48": 9,
+      "44,49": 9,
+      "44,50": 9,
+      "44,51": 9,
+      "44,52": 9,
+      "44,53": 9,
+      "44,54": 9,
+      "44,55": 9,
+      "44,56": 9,
+      "44,57": 9,
+      "44,58": 9,
+      "44,59": 9,
+      "45,2": 9,
+      "45,3": 9,
+      "45,4": 9,
+      "45,5": 12,
+      "45,6": 88,
+      "45,7": 88,
+      "45,8": 88,
+      "45,9": 88,
+      "45,10": 88,
+      "45,11": 88,
+      "45,12": 88,
+      "45,13": 88,
+      "45,14": 88,
+      "45,15": 88,
+      "45,16": 88,
+      "45,17": 88,
+      "45,18": 88,
+      "45,19": 88,
+      "45,20": 88,
+      "45,21": 88,
+      "45,22": 88,
+      "45,23": 88,
+      "45,24": 88,
+      "45,25": 89,
+      "45,42": 9,
+      "45,43": 9,
+      "45,44": 9,
+      "45,45": 9,
+      "45,46": 9,
+      "45,47": 9,
+      "45,48": 9,
+      "45,49": 9,
+      "45,50": 9,
+      "45,51": 9,
+      "45,52": 9,
+      "45,53": 9,
+      "45,54": 9,
+      "45,55": 9,
+      "45,56": 9,
+      "45,57": 9,
+      "45,58": 9,
+      "45,59": 9,
+      "46,2": 90,
+      "46,3": 90,
+      "46,4": 90,
+      "46,5": 90,
+      "46,6": 91,
+      "46,7": 91,
+      "46,8": 91,
+      "46,9": 91,
+      "46,10": 91,
+      "46,11": 91,
+      "46,12": 91,
+      "46,13": 91,
+      "46,14": 91,
+      "46,15": 91,
+      "46,16": 91,
+      "46,17": 91,
+      "46,18": 91,
+      "46,19": 91,
+      "46,20": 91,
+      "46,21": 91,
+      "46,22": 91,
+      "46,23": 91,
+      "46,24": 91,
+      "46,25": 91,
+      "46,42": 9,
+      "46,43": 9,
+      "46,44": 9,
+      "46,45": 9,
+      "46,46": 9,
+      "46,47": 9,
+      "46,48": 9,
+      "46,49": 9,
+      "46,50": 9,
+      "46,51": 9,
+      "46,52": 9,
+      "46,53": 9,
+      "46,54": 9,
+      "46,55": 9,
+      "46,56": 9,
+      "46,57": 9,
+      "46,58": 9,
+      "46,59": 9,
+      "47,2": 92,
+      "47,3": 93,
+      "47,4": 93,
+      "47,5": 94,
+      "47,6": 95,
+      "47,7": 86,
+      "47,8": 86,
+      "47,9": 86,
+      "47,10": 86,
+      "47,11": 86,
+      "47,12": 86,
+      "47,13": 86,
+      "47,14": 86,
+      "47,15": 86,
+      "47,16": 86,
+      "47,17": 86,
+      "47,18": 86,
+      "47,19": 86,
+      "47,20": 86,
+      "47,21": 86,
+      "47,22": 86,
+      "47,23": 86,
+      "47,24": 86,
+      "47,25": 87,
+      "47,42": 9,
+      "47,43": 9,
+      "47,44": 9,
+      "47,45": 9,
+      "47,46": 9,
+      "47,47": 9,
+      "47,48": 9,
+      "47,49": 9,
+      "47,50": 9,
+      "47,51": 9,
+      "47,52": 9,
+      "47,53": 9,
+      "47,54": 9,
+      "47,55": 9,
+      "47,56": 9,
+      "47,57": 9,
+      "47,58": 9,
+      "47,59": 9,
+      "48,2": 96,
+      "48,3": 97,
+      "48,4": 97,
+      "48,5": 98,
+      "48,6": 99,
+      "48,7": 88,
+      "48,8": 88,
+      "48,9": 88,
+      "48,10": 88,
+      "48,11": 88,
+      "48,12": 88,
+      "48,13": 88,
+      "48,14": 88,
+      "48,15": 88,
+      "48,16": 88,
+      "48,17": 88,
+      "48,18": 88,
+      "48,19": 88,
+      "48,20": 88,
+      "48,21": 88,
+      "48,22": 88,
+      "48,23": 88,
+      "48,24": 88,
+      "48,25": 89,
+      "48,42": 9,
+      "48,43": 9,
+      "48,44": 9,
+      "48,45": 9,
+      "48,46": 9,
+      "48,47": 9,
+      "48,48": 9,
+      "48,49": 9,
+      "48,50": 9,
+      "48,51": 9,
+      "48,52": 9,
+      "48,53": 9,
+      "48,54": 9,
+      "48,55": 9,
+      "48,56": 9,
+      "48,57": 9,
+      "48,58": 9,
+      "48,59": 9,
+      "50,2": 84,
+      "50,3": 9,
+      "50,4": 9,
+      "50,5": 12,
+      "50,6": 100,
+      "50,7": 6,
+      "50,8": 6,
+      "50,9": 6,
+      "50,10": 6,
+      "50,11": 6,
+      "50,12": 6,
+      "50,13": 6,
+      "50,14": 6,
+      "50,15": 6,
+      "50,16": 6,
+      "50,17": 6,
+      "50,18": 6,
+      "50,19": 6,
+      "50,20": 6,
+      "50,21": 6,
+      "50,22": 6,
+      "50,23": 6,
+      "50,24": 6,
+      "50,25": 8,
+      "51,2": 9,
+      "51,3": 9,
+      "51,4": 9,
+      "51,5": 12,
+      "51,6": 101,
+      "51,7": 39,
+      "51,8": 39,
+      "51,9": 39,
+      "51,10": 39,
+      "51,11": 39,
+      "51,12": 39,
+      "51,13": 39,
+      "51,14": 39,
+      "51,15": 39,
+      "51,16": 39,
+      "51,17": 39,
+      "51,18": 39,
+      "51,19": 39,
+      "51,20": 39,
+      "51,21": 39,
+      "51,22": 39,
+      "51,23": 39,
+      "51,24": 39,
+      "51,25": 40
     },
     "SheetStyle": {
       "FontFamily": 3,
@@ -2418,7 +4834,13 @@
     "34,23,1,3",
     "37,23,1,3",
     "39,23,2,3",
-    "44,2,9,25"
+    "44,42,5,18",
+    "44,2,2,4",
+    "47,2,2,4",
+    "44,6,2,20",
+    "47,6,2,20",
+    "50,2,2,4",
+    "50,6,2,20"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2457,7 +4879,7 @@
                 "MessageFormula": "制定を表示します。"
               }
             ],
-            "ID": "81cfdf11-c929-4fb4-9d04-2dfdff646908"
+            "ID": "90eab08a-d910-4b69-b713-fafff327f19d"
           },
           {
             "Condition": {
@@ -2486,7 +4908,7 @@
                 ]
               }
             ],
-            "ID": "1d55521e-5fc7-4efd-bdad-ac333d745713"
+            "ID": "9dce8aa0-7384-4ea2-91ab-138ac1bb72e5"
           },
           {
             "CommandList": [
@@ -2503,7 +4925,7 @@
                 ]
               }
             ],
-            "ID": "4293a6fe-a468-4359-82b2-030f9f59b37b"
+            "ID": "bd4b79f6-a490-4ab0-8a91-def381e6ad99"
           }
         ]
       }
@@ -2539,4 +4961,4 @@
       "Size": "49,21"
     }
   ]
-}//VSTgV20CTj+8XUb1mTBwWH10WeYvEm78KS4Cl6/PB4fPJuoe6QlSyEQOcuUcylnooJL0prCnjtJJj+KCveO08n3AWAKw1NVeGINap1UQ1dC8up5GjyucJKa5jaAYbIvSEJrFf98JnEbH9Sf0OD07kg3Y24JpFifRnSKXFRV/F2Pn5a9A08haj8Fxav1vkephKfa7wEaNL2xYaRqvdG6DRMCugENMv3/FKLATN8YvsotlHd3kscRjo2zpCsQwR1I5sJqdQGINu5v/LMKQ06inuQ2Iy+JY3qe8BjyJ0dDWeosIEH+s/gmhzY1EnODnn2AhONt8oiZUfT1niSnlWMx/yu2pdHX6bWS/DVVCV1BEtR6D7w3qz2mUyUGh/hWIG5bBMFxrBHoSSAj08XZMk2jatctb2mmE2vwCzG+Eq9ZFSmxbReR1fSaRCNoa5AAjvSJKJ7qH02d1DXsopUdrsCNzmBHTpUDpmzN8xNkzaZ6ojlOzEEviXAg7tBFymKHAlOzhYYcaCxdEZy6esTkU9LN7bRiNdfCh8p0uXU0Fi751wrvrIj5snYsqzWFWMEOqdlLmxMIsrsrd0gj67V3ynlTvS/A3kBjRh50wRpbM1/Jy4f6dQKqGvgoLnVUu/oGxKUedfTs7TqFqyA9LgkdYh/avBgKe7GM7vVlyoOQ+j5i/PbBO9Gp/U0fWxv+DUutVVS499H7KniKFIfELv0wgALt9wzCy4dfxW3mI3It64FOTpGURSqMItN6IfBM8CjdVPeGsFT4PwLySSFcQjX3TrGOHbgYkXSseWQH2nwwAa/ZIAU1irgPPBpPrjjk/EDI0yNZ8ebwcpab8NdYf1d7oqswdANMouqTrhVRGlKppoFzly7nbrGe0uNaEAaUhWcur+kdPj/cXEV9z9nIKFVQ1n9FzzQ==|920
+}//ecDIqfIj0VC85rrjR3qkHG6r4vV+8zNvMc6QpO31l5YtNsKb2ROTucpg44cvcne5GuKBPuH1pbOmsM4p6nqhZQtElhSBqPbb2DqQNa8bLM611ORCxoqIa3WsXmqQrdyrZW/PPb+Xo8cqYw/YPktxRUGCcEHalq9kuZviuX2k9gGSnC3RJOGT0pwMox+3VHEhVW61RgaSrdXdjJrIRrxyrOVlMkEdpsKV/6Q+jgeTJQ+Vw4IuI7RrVq3QLcxXya8N8alEYd0o/tLVdOB9gpzYcJi5MFR80t0Nycdc4BMy4OGbswsXUFJAL9SjBQpZeXzuJvP9tLXgx+Wp/DinoqhI4YdTq+/Kp0tZaPUt7q1tROZrAhjqNsniMivi2D53B/Qdl2t7U4zG4ZVqTybhbaPVoBZJP42oXx24/QYfJ7Qb1jEsrtM2k00goPxfOwh6+wh8K18O4RhGb3LgkMQGuBgJj7OKJv3F2Cs88yttnEZJ0v+Cvh2i+KHuVf6/2tknnU6T4nBU0YF0V83wjwoyFGThnzi7LK7bKVQzetbIsKJ70B2m6PfMKTvavwUDeY3NBxUSIwXA4941V5DHOZB7v+MY+w5QAf6jI+wBeySYQxqNb8zZSVyRpJRqBKpN8PgaFEXwBUeJ9QxsEzCQdmjWdZ8CaEYppL0yQ4A9qH/7MFL9VDaKErHSK4fIL3J+8QzpkUwW8+8l0GI0Bw3uDekaTPjZnyDmpNgMkRQMijLRGiyh9YN09thUPd2p8fCilZGNqiVXID/7Cao/7TYwBw/h65Xwe3fXjVB0KGfcn3OcZ2b4fcEpIUI2sW31wjohLYtPiLUZCvWJoVt4NjF45EZT8xZt0JuYXt+Jq1eduKTje40DzAbrtZgkkbJyMLtY7TeoK95gtF72csxOXn6tRao9LzgTLA==|920
