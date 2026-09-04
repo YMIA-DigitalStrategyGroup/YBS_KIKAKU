@@ -332,7 +332,17 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:06:09.2343385+09:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\ユーザー情報ビュー.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -494,5 +504,75 @@
   {
     "ModuleName": "Image/スクリーンショット 2026-07-21 093552.png",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "PCPage/YBS一覧_褒賞",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:06:09.2319372+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/インポートフォルダー1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:06:09.2331506+09:00",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/褒賞_評価",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:06:09.2331839+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/褒賞_フロー",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:06:09.2331865+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/褒賞一覧_承認待ち",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:06:09.2331899+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Table/YBS褒賞",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:06:09.234274+09:00",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/インポートフォルダー1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:06:09.2342882+09:00",
+    "ModuleType": 22
   }
 ]
