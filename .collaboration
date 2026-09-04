@@ -505,7 +505,17 @@
   },
   {
     "ModuleName": "PCPage/褒賞_評価",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-04T15:43:00.9988846+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\インポートフォルダー1\\褒賞_評価.json",
+      "Pages\\インポートフォルダー1\\褒賞_評価.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/褒賞_フロー",
