@@ -8,8 +8,20 @@
         "StateName": "新規"
       },
       {
-        "Id": "b4381433-f1c1-4bf7-8fac-460fa78cc04f",
-        "StateName": "申請中"
+        "Id": "37653c16-9b92-4279-b18f-6934e5ebf259",
+        "StateName": "事務局確認待ち"
+      },
+      {
+        "Id": "a67db9fe-35f4-4286-a3a9-543f479a661b",
+        "StateName": "委員長承認待ち"
+      },
+      {
+        "Id": "34837b52-0f42-4c77-a938-2b7eac1637d2",
+        "StateName": "申請者確認待ち"
+      },
+      {
+        "Id": "c9995dcb-4bdf-4c61-a419-fb2f09b6064d",
+        "StateName": "部門長承認待ち"
       },
       {
         "Id": "408afa51-f858-4a1b-a374-b877938542d2",
@@ -27,8 +39,8 @@
           "GUID": "65ba827b-90bb-453c-adb0-023ddcd99657"
         },
         "ToState": {
-          "Id": "b4381433-f1c1-4bf7-8fac-460fa78cc04f",
-          "StateName": "申請中"
+          "Id": "37653c16-9b92-4279-b18f-6934e5ebf259",
+          "StateName": "事務局確認待ち"
         },
         "Assignees": [
           {
@@ -40,12 +52,96 @@
       },
       {
         "StartState": {
-          "Id": "b4381433-f1c1-4bf7-8fac-460fa78cc04f",
-          "StateName": "申請中"
+          "Id": "37653c16-9b92-4279-b18f-6934e5ebf259",
+          "StateName": "事務局確認待ち"
         },
         "Action": {
-          "ActionName": "承認",
+          "ActionName": "事務局確認",
           "GUID": "90c0abc5-2d37-413f-8bc0-d28705c9570e"
+        },
+        "ToState": {
+          "Id": "a67db9fe-35f4-4286-a3a9-543f479a661b",
+          "StateName": "委員長承認待ち"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "a67db9fe-35f4-4286-a3a9-543f479a661b",
+          "StateName": "委員長承認待ち"
+        },
+        "Action": {
+          "ActionName": "委員長承認",
+          "GUID": "40ea1dda-00f1-463e-b8da-b6a3f30f4c98"
+        },
+        "ToState": {
+          "Id": "34837b52-0f42-4c77-a938-2b7eac1637d2",
+          "StateName": "申請者確認待ち"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "a67db9fe-35f4-4286-a3a9-543f479a661b",
+          "StateName": "委員長承認待ち"
+        },
+        "Action": {
+          "ActionName": "委員長差戻",
+          "GUID": "47eda80e-f38b-44aa-ac24-dac73b459000"
+        },
+        "ToState": {
+          "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",
+          "StateName": "新規"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "34837b52-0f42-4c77-a938-2b7eac1637d2",
+          "StateName": "申請者確認待ち"
+        },
+        "Action": {
+          "ActionName": "申請者確認",
+          "GUID": "1c767752-8ba0-469f-ba7c-79989f8cf82b"
+        },
+        "ToState": {
+          "Id": "c9995dcb-4bdf-4c61-a419-fb2f09b6064d",
+          "StateName": "部門長承認待ち"
+        },
+        "Assignees": [
+          {
+            "FlowProcessRoleType": 5,
+            "Name": "Everyone"
+          }
+        ],
+        "Errors": []
+      },
+      {
+        "StartState": {
+          "Id": "c9995dcb-4bdf-4c61-a419-fb2f09b6064d",
+          "StateName": "部門長承認待ち"
+        },
+        "Action": {
+          "ActionName": "部門長承認",
+          "GUID": "499a0c34-aafc-4f50-9f67-50908ce0f781"
         },
         "ToState": {
           "Id": "408afa51-f858-4a1b-a374-b877938542d2",
@@ -61,12 +157,12 @@
       },
       {
         "StartState": {
-          "Id": "b4381433-f1c1-4bf7-8fac-460fa78cc04f",
-          "StateName": "申請中"
+          "Id": "c9995dcb-4bdf-4c61-a419-fb2f09b6064d",
+          "StateName": "部門長承認待ち"
         },
         "Action": {
-          "ActionName": "差戻",
-          "GUID": "40ea1dda-00f1-463e-b8da-b6a3f30f4c98"
+          "ActionName": "部門長差戻",
+          "GUID": "77fa98b6-0a41-431c-a538-8d4c8e74e49d"
         },
         "ToState": {
           "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",

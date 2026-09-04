@@ -262,7 +262,7 @@
                     ]
                   }
                 ],
-                "ID": "b38c681f-21ac-4ab2-ba17-7ecd438b1a95"
+                "ID": "5cea3a4f-5a84-498a-8016-40fff75187f3"
               },
               {
                 "Condition": {
@@ -315,7 +315,7 @@
                     ]
                   }
                 ],
-                "ID": "90a6e39b-cdf8-48ca-8b4e-0107ecfe90c9"
+                "ID": "2e0a3bd2-0c4e-46bd-8dfb-7e5647752ca5"
               },
               {
                 "CommandList": [
@@ -344,7 +344,7 @@
                     ]
                   }
                 ],
-                "ID": "97b782ca-3ca6-489d-a58b-b0d3ff9ac5ce"
+                "ID": "ec2255ae-3ba3-4035-bfed-116de940d4e0"
               }
             ]
           }
@@ -534,11 +534,52 @@
         "CellDefaultValue": 15.0
       }
     },
+    "37,37": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "YBS権限マスタ",
+        "RowIndex": 37,
+        "ColumnIndex": 37,
+        "RowCount": 4,
+        "ColumnCount": 8,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "YBS権限マスタ",
+            "ColumnName": "権限",
+            "GUID": "4ffc3a2d-3b95-47a3-8b03-ef967c737b65"
+          },
+          "Value": "審議会"
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
     "38,22": {
       "BindingInfo": {
         "TableName": "YBS褒賞",
         "ColumnName": "等級",
         "GUID": "6e15d956-bc88-44c6-ba6c-b33080bbf174"
+      }
+    },
+    "38,37": {
+      "NameUsedInJavaScript": "ユーザーID",
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "ユーザーID",
+        "GUID": "6e656e46-d99e-44a6-a541-d573d84efc51"
+      }
+    },
+    "38,41": {
+      "NameUsedInJavaScript": "名前",
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "名前",
+        "GUID": "8792ec6c-1987-452f-877c-e0bbf2d9d657"
       }
     },
     "41,3": {
@@ -567,7 +608,7 @@
                     "MessageFormula": "評価ができていません。\r\n褒賞分類を選択して、加算点を判定のうえ、登録をお願いします。"
                   }
                 ],
-                "ID": "06a24a88-fbc4-47ca-b7b8-1ba60defe69c"
+                "ID": "abc106e1-a17c-4f3a-bed7-b67d788d3088"
               },
               {
                 "CommandList": [
@@ -580,142 +621,21 @@
                   {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                     "MessageFormula": "ﾃﾞｰﾀを更新しましたよ。"
+                  },
+                  {
+                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                    "TableName": "YBS褒賞",
+                    "NextState": "事務局確認待ち",
+                    "AssignTo": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=褒賞_評価!AL39"
+                    },
+                    "ActionName": "提出"
                   }
                 ],
-                "ID": "10048aa9-b273-4a99-b64a-174440ece39b"
+                "ID": "f2e0de18-66c3-4975-a1dc-71004c2d5e9e"
               }
             ]
-          },
-          {
-            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
-            "ParameterName": "評価レコード数",
-            "TableValue": {
-              "TableName": "YBS褒賞",
-              "TableValueType": 3,
-              "SqlCondition": {
-                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                "SubConditions": [
-                  {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "YBS褒賞",
-                      "ColumnName": "不要YBSコード",
-                      "GUID": "0492c751-c7df-494c-a79a-bd4aace8bdc4"
-                    },
-                    "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=#REF!"
-                    }
-                  },
-                  {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "YBS褒賞",
-                      "ColumnName": "不要改正",
-                      "GUID": "d3102796-9f3e-4fd3-b735-5ff9de6e3a89"
-                    },
-                    "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=#REF!"
-                    }
-                  }
-                ]
-              }
-            },
-            "ID": "a230ca5e9d4446d4b0119fa316bf00da",
-            "Disabled": true
-          },
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=褒賞_評価!評価レコード数"
-                      }
-                    ]
-                  },
-                  "value": "0"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "YBS褒賞",
-                    "UpdateType": "add",
-                    "ShowConfirm": false,
-                    "ReloadAfterSucceed": false
-                  },
-                  {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "追加しました。"
-                  }
-                ],
-                "ID": "b139ff3f-78ce-4c03-9f10-069cbcc69827"
-              },
-              {
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "YBS褒賞",
-                    "ShowConfirm": true,
-                    "ConfirmText": "本当に更新してもよろしいですか？",
-                    "RowsToUpdate": 1,
-                    "RowsToUpdateCondition": {
-                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                      "SubConditions": [
-                        {
-                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                          "ColumnBindingInfo": {
-                            "TableName": "YBS褒賞",
-                            "ColumnName": "不要YBSコード",
-                            "GUID": "6ec56ee0-a29e-45fb-a80d-f2e8b6e3c2a6"
-                          },
-                          "Value": {
-                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=#REF!"
-                          }
-                        },
-                        {
-                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                          "ColumnBindingInfo": {
-                            "TableName": "YBS褒賞",
-                            "ColumnName": "不要改正",
-                            "GUID": "78311dca-74c0-4f44-a396-35b4c78c77e1"
-                          },
-                          "Value": {
-                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "=#REF!"
-                          }
-                        }
-                      ]
-                    },
-                    "UpdateBindingValues": [
-                      {
-                        "BindingInfo": {
-                          "TableName": "YBS褒賞",
-                          "ColumnName": "評価分類",
-                          "GUID": "6e3dd707-e350-475d-8dc9-6de89bbf4365"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=#REF!"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "更新しました。"
-                  }
-                ],
-                "ID": "21f708e2-9968-4b26-a7f1-e617d4378ac7"
-              }
-            ],
-            "Disabled": true
           }
         ],
         "Text": "更新",
@@ -2144,7 +2064,23 @@
       "36,24": 82,
       "36,25": 45,
       "36,26": 45,
+      "37,37": 7,
+      "37,38": 7,
+      "37,39": 7,
+      "37,40": 7,
+      "37,41": 7,
+      "37,42": 7,
+      "37,43": 7,
+      "37,44": 7,
       "38,22": 83,
+      "38,37": 7,
+      "38,38": 7,
+      "38,39": 7,
+      "38,40": 7,
+      "38,41": 7,
+      "38,42": 7,
+      "38,43": 7,
+      "38,44": 7,
       "39,19": 45,
       "39,20": 20,
       "39,21": 20,
@@ -2153,10 +2089,22 @@
       "39,24": 20,
       "39,25": 20,
       "39,26": 20,
+      "39,37": 7,
+      "39,38": 7,
+      "39,39": 7,
+      "39,40": 7,
+      "39,41": 7,
+      "39,42": 7,
+      "39,43": 7,
+      "39,44": 7,
+      "40,37": 7,
+      "40,38": 7,
+      "40,39": 7,
       "40,40": 7,
       "40,41": 7,
       "40,42": 7,
       "40,43": 7,
+      "40,44": 7,
       "41,3": 7,
       "41,4": 7,
       "41,5": 7,
@@ -2236,7 +2184,12 @@
     "36,24,1,3",
     "38,22,2,5",
     "41,3,2,4",
-    "41,23,2,3"
+    "41,23,2,3",
+    "39,37,2,8",
+    "37,37,1,4",
+    "38,37,1,4",
+    "37,41,1,4",
+    "38,41,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2310,4 +2263,4 @@
       "Size": "48.99999999999994,23"
     }
   ]
-}//+V+/PevAfFvnlOpNVXYuf2kTdHVzVbV3XxT7Friw80NGfsRZKmowqre3Cc/V/KtUDvA/tcZdhfKXpwDWffCgNNyel0SH7d2pV29yPyG6If6I1XaEdYHOd2FtILjCxTNmGR4BouXlWdpWWk4L4mJfZT+aN2F1lNwZxfqZWmc37BL8bymIvJqP3U/0kEyVtMqv61G8RpWOs9gptIzJopxabYiExgA38fyj9+EbkkNFIAJQpUrFVxolhUtCnnmUCZRF4i2ik0818IkwvCaAz98WfI5Fw5TGV5IFdnoYW80QpERd+md7k1VMyEtTWfgon6yPuo8Z7kGuESsxI+bWz9sJ2WQvR4N3wpzvdeihxfhMya1xqskEG0lOAyx2hCUBLomNMvPpFqCbmvgBKA9yk4HbNPgy43XHas/l9exmcxYEgBevtwjdN6+O+Hp76rKc09nUyk5ieGnWqgLnD0nOtie5T42bjd4ViW0asRytufXMW2lPCi6vDOTkb6G6rW1VTNPj8N5ijbzl0rkdxOBfQxaXoJ5/7mr9AbXJo4J6DLgO4P/zToneByWxhnX/ezUI0gSwnusFnKPlsK4gFApY7GOBHsjrJrfH7X0HHFE82eDkJa+Yt0RnuaL56sj23HOReTXXvHefmgcrre9tfVwhEWtlPlrhKxYxPIEx4HHih1ugy/LLlx1SbUNG5uzQo/IVv6XgDV5+8DCItEcnw2cyA8whEe4QMsSlxXPTwW8S2RQlsuQ0Kr8Wc/3DPQwgJl7uki6T2vgW+A3/6MgesMcHjlZ+B9b3O4RiUPbSsehpux0MTblrwUCDss59lSvjfoCEb/GwNUMHj+9yf2q/k3tjV19QUpdJLowBdApLd/DkUyIHEbV3sWY34ghthqpEy4nnnyN/tScqukUaf9vBiLVPAgfB/Q==|920
+}//GPLgLiGSe4yML56/PPweIWBcZS7MKTGJGFkRf06LWigdhSdIDHU6hC+edAnelHbwV9RMHWxVSUaV+tEre0xDi/Z+jZ1nhjmDCfFOUGhVjrScT2A6mXANqtuXb7/8uFCen7BKrnU1WU4OFGaXu8YIcN7Y1y0BpNow7ygXGYm0I4NTVuyNsuu2b00BvuyzXvwSPNh8KgIXOgtodrQvcj+9m82lBBZXNSIfHjZyI0ZlT1yh6Ufmku8G01lqVX5mRTxV8xKehZKWT+unNn+4znbna61EV/H2xOl5UGQrw65QgLtpcqYAn2JfDVXeNHGmhAE2R/qvlDLCGethRgU9rztIV9zoFtO+IhTf3wOslCO+NNHzY9cJ2yrQqEgwpdh58NQg/o/H99TqBv/PXeDLINCWQmZ3g9dxBNfmk0h50yzjh36UtosgLMSNkn2h6JbcW7V+Td5OoWryofloi59utRMPImOYC7e6eKE9Z1mmhwtGU8ymKuaMy+S5eT+HcWURkO0TRRvRBz5JoaVVgVBHLi84tZtg5x7l6p8rDpL6kQ9Ltzf+wNNQPXHdOQSRNBx1RKXKyx+gTWv6h6ZJWSryguB+kRoPBmYRd11DaTCvmlvi5E5/q1S+j/NlWlSWlT3s7dtYA7LGIo6gEAIsUgTYBgffNnbXFA7qf14OHAfH1+aTgdF7yIJjzFaeN760w70UPMzdn9NIm7PQgPgBx/m84yKUyqaJ00Z4hbC/K7gw2Xr4C3rnwOF6BGI7iQ7eBuagB+wUmlYZu3St15sBxpXOuX0ABUcSEJKi+UHqqhXUT5bsNrF6HO3SSItTJEUrMonu+LnGbnZHc2UnI/Pp1J5AyfG8YsAjbPeaWgLUAgo0q0msX3cGUMPFCppbldEV3sQJP59iPCJurxlG/mws8ZDPJiKVlQ==|920
