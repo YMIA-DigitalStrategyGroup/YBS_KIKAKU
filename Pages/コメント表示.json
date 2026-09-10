@@ -40,11 +40,14 @@
     "17,40": "委員コメントID",
     "19,40": "ページ遷移のコマンドで",
     "20,40": "レコードIDを取得",
-    "21,40": "→リストビューのクエリに使用"
+    "21,40": "→リストビューのクエリに使用",
+    "27,3": "承認コメント数",
+    "27,10": "/8"
   },
   "Formulas": {
     "7,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E8),\"null\",\"'\"&E8&\"'\"))",
-    "18,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E19),\"null\",\"'\"&E19&\"'\"))"
+    "18,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E19),\"null\",\"'\"&E19&\"'\"))",
+    "27,8": "ODATA(\"YBS_審議会コメント/$count?$filter=ID eq \"&IF(ISBLANK(AO19),\"null\",AO19)&\" and 認定結果 eq '承認'\")"
   },
   "AttachInfos": {
     "2,34": {
@@ -345,6 +348,10 @@
       {
         "Background": 8,
         "FontFamily": 1
+      },
+      {
+        "Foreground": 4,
+        "HorizontalAlignment": 7
       }
     ],
     "Types": {
@@ -560,7 +567,8 @@
       "18,30": 4,
       "18,40": 16,
       "18,43": 4,
-      "18,44": 4
+      "18,44": 4,
+      "27,8": 17
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -600,7 +608,8 @@
     "7,30,1,7",
     "2,34,2,4",
     "8,1,7,38",
-    "19,1,8,38"
+    "19,1,8,38",
+    "27,8,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -643,4 +652,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//Rc8HFaoNTGUiYGVdTKRwZ0XR+oaBIHNaGz6Pdr8WLctxYw+sz9Kac2j132xtjtfw7mVYSA7FYp8pOzquHpwtahE2u/lXbl2ZeeVWGMgyCrLvrC83YsQ/hJaUcnUjetARNYtstGWEJgJL1KU44F73Xq4AGQPpao2xd/PT17N6GPIH0ycB02a9IHD6nZnyKSyvFog6jrgg3trSgDtubH3NPS/jmdxeaS0B9BI/MdxCHkE3hYBCYttCYLpuBRLm/KML+qjvF/6OVs3IV+Gqw2qtx/mYLGTVvGEnXZJxANzpmVMCRCivcWoBOL6CftDK2YB3/pfZMeaOnCeXu0m1FEtijStnpgRYxBiF9vD975ugu5Dt2mCriKc5VjlSYAzSly/Th/STU4ozVCfM++JgSeN2EvReRacGwose+yZRrehQDWzgmbi5ELOLzvYhL2BPTbkltg5tNlS0l7mi/GXjYZ3e0whRr3a6Ec7dk24K7rO5rX0EC2vykKPQLh4x9+kmclolc8dSM4dN4C80dcF7RwncclYVnrCMvKSlkA0ubUCiWYEAm9FWwKgiOQvNZ3PfDRt+sKoelTQpadTp37Aui6rjmKujaRKuhWKHhS+Eu1ppBQ7EOhcBMkQjuXLiPfvIXXZ/dHJudQ3nlB+geb1Sg8ReRKPGM/yTSJ1h+3Cv/cLcRY2HxRMPoDprWaoPE4E/cp/H1SdxvAb/z/GYOdimEtJ4VBKReZuheRkVoLIuVUT3TMtKEm0mKyj5tlqsu4OYPRw7osfZ2TyGRp/ffmEBSt1ygZWJ71p1Tl8acYBd2fH4OSBjNMOUz/5NnbAcUMJE0cj/wITW+U/R+FsvcXEnGbJ/ZHpfVDaCekrIum9ypzauwxYICYEx2oCEWoZ+xH42AVpucTXfrXAIAgErQY2pnQJ5wg==|920
+}//VsPKY3Ih2jIiW7apIIM2mig2GEsRQOAdm+r6/kGy4kJ0m8X/iZQbaZHGHhh0kXhsKgEcmdkISxcUdNjj2NvsPtl23rmOc2q44uUKBYB3pNo7lxuu+grit8ZyxLlzrzY93F2+X3s+lTMcpjszNtLL7dB6lv2Q47jKvtQ6aKef3R3Js+jlKtIO1tsjWhc6RPWqYLtFzpxwDxCdEOzsZbixazub2waUntsDOXsOm1Bwk6AYJoXikg7m8DvRHTNCa+F9a2dBaudu+qivb3VuTgRRK0MXJCowjWGDKIvRIkdGN+bajhOtJnAJmVGFdb1PYJTMrXtAJw1GDmIohrQt3ADWpwTkklT2xpcSG5FLCbrrAmcCWoE66gozhsd7Dk0Nr4MlqnI3u4V//mBbWJsv7OtK31rJ+RTZ6MpK5JLkTq48oHW2qsE1gSbGwUZnP1prlUM1F+YfJR1w4EF+mpH8udmKtuk0Zbs53l9XeRihzFpSxa3yDpYFcIBYvJ47f1IdVgq69kpJBB6zqY1xPtszdOUHu4hqZeSDtl3BnrDccoxEFXLg0vtLEER1B2hd0wkdGzpdIRzNHnb0jWVV+hnsa5rqfwxG0iMAr//KcJCMnTPQqaFfvx1LR2oL8tNeCgqTB5rsk9oEX1+15vALum+umaR5aVg+kxfj7LFqTc4fdqbDKB8R+exyI7FB0jEsL4Ze+Z1QwA86KSEhqU0jTEhaHKJ+UsdI2aqA5gwdgINptD28h7/m4SnKizHETbyJvHEx6xzu1z4UtCKEJTuggZDbq2b4xWsp8V9ce5ohjh0raYEkp8rgiGS5zFZAPo3YTGFDga/Z+IRIyxfVAKJKlQ2PRuQ7nbynyWu1KdXAA+dq1X5eFUaw+3iXhgI1bNYYHWuQZaCEUHy3Cqyc6BqzhGurVy//Fg==|920
