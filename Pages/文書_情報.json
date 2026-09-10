@@ -12,19 +12,6 @@
     "Count": 37
   },
   "Cols": {
-    "InLogicalVisibleIndexes": [
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41
-    ],
     "Count": 42
   },
   "Values": {
@@ -44,6 +31,7 @@
     "8,38": "」=ODATA(\"v_YBS規格文書_ワークフロー?$select=Who&$filter=YBSコード eq \"&IF(ISBLANK(E9),\"null\",\"'\"&E9&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J9),\"null\",J9)&\" and 状態 eq '承認済み'\")",
     "9,11": "細分化",
     "10,1": "規格名称",
+    "10,34": "YBS　ID",
     "12,1": "目的・理由",
     "12,34": "現行区分",
     "13,34": "※ 新規のときは新規",
@@ -70,7 +58,8 @@
     "8,38": "ODATA(\"v_YBS規格文書_ワークフロー?$select=Who&$filter=YBSコード eq \"&IF(ISBLANK(E9),\"null\",\"'\"&E9&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J9),\"null\",J9)&\" and WorkflowState eq '承認済み'\")",
     "6,13": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AM9),\"null\",\"'\"&AM9&\"'\"))",
     "6,21": "ODATA(\"v_YBS規格文書_ワークフロー?$select=When&$filter=YBSコード eq \"&IF(ISBLANK(E9),\"null\",\"'\"&E9&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J9),\"null\",J9)&\" and 状態 eq '承認済み'\")",
-    "31,6": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AM6),\"null\",\"'\"&AM6&\"'\"))"
+    "31,6": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AM6),\"null\",\"'\"&AM6&\"'\"))",
+    "10,38": "ODATA(\"YBS規格文書?$select=ID&$filter=YBSコード eq \"&IF(ISBLANK(E9),\"null\",\"'\"&E9&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J9),\"null\",\"'\"&J9&\"'\"))"
   },
   "AttachInfos": {
     "2,6": {
@@ -287,75 +276,6 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "17,32": {
-      "ListViewInfo": {
-        "Name": "リストビュー1",
-        "TableName": "v_YBS規格文書_ワークフロー",
-        "RowIndex": 17,
-        "ColumnIndex": 32,
-        "RowCount": 6,
-        "ColumnCount": 9,
-        "SqlCondition": {
-          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-          "SubConditions": [
-            {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "v_YBS規格文書_ワークフロー",
-                "ColumnName": "YBSコード",
-                "GUID": "1031cb5b-28e0-41ae-89ce-a61a9da884d4"
-              },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=文書_情報!E9"
-              }
-            },
-            {
-              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-              "ColumnBindingInfo": {
-                "TableName": "v_YBS規格文書_ワークフロー",
-                "ColumnName": "改正コード",
-                "GUID": "bcc90a52-9fb6-48d6-ad12-95dd4be80996"
-              },
-              "Value": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=文書_情報!J9"
-              }
-            }
-          ]
-        },
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2",
-        "ShowColumnHeaderInDesigner": true,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "ColumnOperation": 2
-      }
-    },
-    "18,32": {
-      "NameUsedInJavaScript": "HistoryID",
-      "BindingInfo": {
-        "TableName": "v_YBS規格文書_ワークフロー",
-        "ColumnName": "HistoryID",
-        "GUID": "8906f039-695c-4dde-b85e-405862045ed1"
-      }
-    },
-    "18,36": {
-      "NameUsedInJavaScript": "RecordId",
-      "BindingInfo": {
-        "TableName": "v_YBS規格文書_ワークフロー",
-        "ColumnName": "RecordId",
-        "GUID": "d4e167fd-925c-47ca-9fb2-a58335536ed8"
-      }
-    },
-    "18,40": {
-      "NameUsedInJavaScript": "Who",
-      "BindingInfo": {
-        "TableName": "v_YBS規格文書_ワークフロー",
-        "ColumnName": "Who",
-        "GUID": "c107a398-9d83-4692-b965-5132eca5157e"
-      }
-    },
     "20,6": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
@@ -426,7 +346,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=文書_情報!AK19"
+                  "SerializeProperty": "=文書_情報!AM11"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=コメント表示!AO19"
@@ -950,13 +870,6 @@
       },
       {
         "FontFamily": 3,
-        "Foreground": 16,
-        "Formatter": 7,
-        "VerticalAlignment": 14,
-        "WordWrap": true
-      },
-      {
-        "FontFamily": 3,
         "Formatter": 8,
         "HorizontalAlignment": 5,
         "BorderLeft": 2
@@ -1014,11 +927,6 @@
         "Formatter": 17,
         "BorderBottom": 0,
         "BorderLeft": 0
-      },
-      {
-        "FontFamily": 3,
-        "Foreground": 6,
-        "WordWrap": true
       },
       {
         "FontFamily": 3,
@@ -1333,11 +1241,11 @@
       "10,31": 4,
       "10,32": 4,
       "10,33": 4,
-      "10,34": 4,
-      "10,35": 4,
-      "10,36": 4,
-      "10,37": 4,
-      "10,38": 4,
+      "10,34": 52,
+      "10,35": 52,
+      "10,36": 52,
+      "10,37": 52,
+      "10,38": 52,
       "10,39": 4,
       "10,40": 4,
       "10,41": 4,
@@ -1372,13 +1280,6 @@
       "11,31": 4,
       "11,32": 4,
       "11,33": 4,
-      "11,34": 4,
-      "11,35": 4,
-      "11,36": 4,
-      "11,37": 4,
-      "11,38": 4,
-      "11,39": 4,
-      "11,40": 4,
       "11,41": 4,
       "12,1": 65,
       "12,6": 66,
@@ -1538,7 +1439,6 @@
       "20,25": 15,
       "20,26": 79,
       "20,30": 1,
-      "20,34": 86,
       "21,1": 69,
       "21,6": 70,
       "21,26": 62,
@@ -1555,7 +1455,7 @@
       "24,6": 70,
       "24,26": 62,
       "24,30": 1,
-      "25,1": 87,
+      "25,1": 86,
       "25,2": 12,
       "25,3": 12,
       "25,4": 12,
@@ -1609,32 +1509,32 @@
       "26,25": 15,
       "26,26": 79,
       "26,30": 1,
-      "27,1": 88,
-      "27,2": 89,
-      "27,3": 89,
-      "27,4": 89,
-      "27,5": 89,
-      "27,6": 90,
-      "27,7": 89,
-      "27,8": 89,
-      "27,9": 89,
-      "27,10": 89,
-      "27,11": 89,
-      "27,12": 89,
-      "27,13": 89,
-      "27,14": 89,
-      "27,15": 89,
-      "27,16": 89,
-      "27,17": 89,
-      "27,18": 89,
-      "27,19": 89,
-      "27,20": 89,
-      "27,21": 89,
-      "27,22": 89,
-      "27,23": 89,
-      "27,24": 89,
-      "27,25": 89,
-      "27,26": 91,
+      "27,1": 87,
+      "27,2": 88,
+      "27,3": 88,
+      "27,4": 88,
+      "27,5": 88,
+      "27,6": 89,
+      "27,7": 88,
+      "27,8": 88,
+      "27,9": 88,
+      "27,10": 88,
+      "27,11": 88,
+      "27,12": 88,
+      "27,13": 88,
+      "27,14": 88,
+      "27,15": 88,
+      "27,16": 88,
+      "27,17": 88,
+      "27,18": 88,
+      "27,19": 88,
+      "27,20": 88,
+      "27,21": 88,
+      "27,22": 88,
+      "27,23": 88,
+      "27,24": 88,
+      "27,25": 88,
+      "27,26": 90,
       "27,30": 1,
       "28,1": 12,
       "28,2": 12,
@@ -1663,7 +1563,7 @@
       "28,25": 83,
       "28,26": 83,
       "28,30": 1,
-      "29,1": 92,
+      "29,1": 91,
       "29,2": 12,
       "29,3": 12,
       "29,4": 12,
@@ -1705,14 +1605,14 @@
       "30,22": 4,
       "30,23": 4,
       "30,24": 4,
-      "30,25": 93,
+      "30,25": 92,
       "30,30": 1,
       "31,1": 54,
       "31,2": 20,
       "31,3": 20,
       "31,4": 20,
-      "31,5": 94,
-      "31,6": 95,
+      "31,5": 93,
+      "31,6": 94,
       "31,7": 22,
       "31,8": 22,
       "31,9": 22,
@@ -1728,7 +1628,7 @@
       "31,19": 4,
       "31,20": 4,
       "31,21": 4,
-      "31,22": 96,
+      "31,22": 95,
       "31,23": 4,
       "31,24": 4,
       "31,25": 4,
@@ -1738,15 +1638,15 @@
       "32,2": 33,
       "32,3": 33,
       "32,4": 33,
-      "32,5": 97,
-      "32,6": 98,
+      "32,5": 96,
+      "32,6": 97,
       "32,7": 33,
       "32,8": 33,
       "32,9": 33,
       "32,10": 33,
       "32,11": 33,
       "32,12": 33,
-      "32,13": 97,
+      "32,13": 96,
       "32,22": 4,
       "32,23": 4,
       "32,24": 4,
@@ -1755,14 +1655,6 @@
       "32,30": 1,
       "33,30": 1,
       "33,31": 10,
-      "33,32": 4,
-      "33,33": 4,
-      "33,34": 4,
-      "33,35": 4,
-      "33,37": 99,
-      "33,38": 4,
-      "33,39": 4,
-      "33,40": 4,
       "33,41": 4,
       "34,30": 1,
       "34,31": 4,
@@ -1776,11 +1668,9 @@
       "34,40": 4,
       "34,41": 4,
       "35,30": 1,
-      "35,31": 100,
+      "35,31": 98,
       "35,32": 4,
       "35,33": 4,
-      "35,34": 4,
-      "35,35": 4,
       "36,1": 1,
       "36,2": 1,
       "36,3": 1,
@@ -1819,7 +1709,7 @@
     },
     "ColStyles": {
       "0": 1,
-      "30": 101
+      "30": 99
     },
     "SheetStyle": {
       "FontFamily": 3
@@ -1871,13 +1761,9 @@
     "8,38,1,4",
     "5,38,1,4",
     "31,6,1,8",
-    "19,32,4,9",
-    "17,32,1,4",
-    "18,32,1,4",
-    "17,36,1,4",
-    "18,36,1,4",
     "30,1,1,9",
-    "12,38,1,4"
+    "12,38,1,4",
+    "10,38,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1968,7 +1854,7 @@
                 ]
               }
             ],
-            "ID": "6f34db6b-6c09-48f7-abb1-143a73667bad"
+            "ID": "99260ad2-02ec-4516-849e-f55ba1d836d2"
           }
         ]
       },
@@ -2029,4 +1915,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//Oz5DiCbwhgoq/tczlNW/tGuFyobE0BVziMAP2GZGw/1NjZtQvqAuUSLofF/I8LyoIWZ9e5059dyKbqGkbIiZl6sBJYNpIWjKtPYey/3bVhC6KrkURXPzj7Ry2D0Jv+uXO/IX6k7Yzt41TC2TXa4nkx2nuKA7MyXIfmSffujoeVN5KNVWlfyNPxM23SQP7kI75pwxaLe8yXuCjnjbtvD2FipoLPkiGvkWlQNQPTSB3nk+ZWEvvZHs76Cwbrgull2cy9OGS+lBuciLUEi0GTw6Z/LLxk1d6ns8NlPYqr8HUxWGvOGRSTqzGouUMMuonJYtnZEyqR6GRNPra3Rm2PZVrxzzTIAj0EYUtly3nWbQyjfrl0vGMzrZ+FbD8DRbvCVcItlJeerMHPBmo2zCY7piz2khUusqB4zA4hjSuu/rpC7tDERX71FcH2RV3uLlF8DPomGkMydyMR7FT2sYXflW9MTdgQtqtla8vIQ/sQdBajpsw5XWvG+hTxBr+Op/PApJYMqXZptxkpfi8ZDMbFD/KTQnrVWdhJsUnxF8Qyxo+zsyww1FsDiVEQcYBWYFf4a1ltfM7u4QDNSN8YPEGJ32UR/Ou8GlJcmId+uwr4r0m7Q+7suZzngG3pGUtJoxu17HYRyIhPVxCh0LiWutgaBQAlRVIaxANDHk8Nrkbl+zOMQNue+p66Xf6EqYvTNxhY0OtHHKRvuF8NrAcRvOPL+5b+/ZVtPwb/IttoSZ1UkTB046wAmWLNv4iyb51rPfLFdGy/whgt1NxDAMdfZem/Llf2AX/VzTgg3fNfbfspWRiM2pH0Fq+HGqRpeV2M9RIlM9tMLVtsw2UnnDJg3pNLpYgrAHiErb2U8Nd4tk+mFGtvC6xPq1L0+dYhYgq8hY8MXmHecdWVS62NQLCcOlZfkQbg==|920
+}//mzvWIZA17/QXWx0+mDQcqWYJfw30LcL1MaIT+up98wSwxME+3q3sCCHYMTyq0hxTeLWV0BPTSTnQOmEQQKdUbAZ9YeVfnFDwIc12kPruMuUqFo3jwIcoBJ7lN6ncIssN6Ifw5V5rY6jAOSNVX4c/yzfjwuCO+JA6XKEYzlgKMQ7SoYJeV3ImjAhSlWeRf3uCFZqT4bxlyQ/hmGm646OloW7Xa8U68+Yp4ca2fh0xeKrQc8Pao4EaW+vYukyBwmPBqc2nXdszmHM2JE8AfB2GfOv+E/3VmA+fBBYjG1mOA6IURxUZulmDG2me4H703w0uCowud/6DWDZQ6PrAeqvIy9DOM00FHeKJJeeyZQu0WFe7yM9MkC/uChzyzwN7G5E/2k6/FpUIZ6PhtqRIwjK1Pb+lRKllIcobqLF+4PQdyDhLz5v3Gn+FalFSoDQmq3Qq97EU/YnujdN74775dV5j250T4AXAPDxQIfZyUYiYVi2/uTQFr8JejqkLvfNMYp7StwGMxh/4lUWoxiCgeLe5kitl/YeFMZ8f6H94iirXpiiOLEls6axQ7X0NWkxZrx+w6RkVYL9ojNodj1A7wFeMqjzs0R83CNGuLBwcM3YzW9T0YBhIwsA0LaGfvPVxwXfGU2kYlDuMOg3gRtWAawSi6TWrajYMw0cj2odCVGI/gTTvCeoQJKSZdtq/TfCAUAabjJs5mlFOhrAYpD3ZkpgLvfYsQSdgLJ6PZxhXeg8OH/Tzz6s8U4yYcPvXNaJlDeJH5tNxAIQiiyIf19li8dXh3Y6fvdLEWGQCtlFjhYLc3zgW2q0G5ImgB4MrJQWdVIl2bqWAKfhWdsh4szEhmKHeJ2q3QUn15DrZdz0Zg1og/N2QfB8+o37TUrnNkBmlPFubhwexU+pfcIeepAhrdkBcmA==|920
