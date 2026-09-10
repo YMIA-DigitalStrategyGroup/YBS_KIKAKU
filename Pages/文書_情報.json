@@ -12,6 +12,19 @@
     "Count": 37
   },
   "Cols": {
+    "InLogicalVisibleIndexes": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
     "Count": 42
   },
   "Values": {
@@ -58,8 +71,7 @@
     "8,38": "ODATA(\"v_YBS規格文書_ワークフロー?$select=Who&$filter=YBSコード eq \"&IF(ISBLANK(E9),\"null\",\"'\"&E9&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J9),\"null\",J9)&\" and WorkflowState eq '承認済み'\")",
     "6,13": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AM9),\"null\",\"'\"&AM9&\"'\"))",
     "6,21": "ODATA(\"v_YBS規格文書_ワークフロー?$select=When&$filter=YBSコード eq \"&IF(ISBLANK(E9),\"null\",\"'\"&E9&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J9),\"null\",J9)&\" and 状態 eq '承認済み'\")",
-    "31,6": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AM6),\"null\",\"'\"&AM6&\"'\"))",
-    "10,38": "ODATA(\"YBS規格文書?$select=ID&$filter=YBSコード eq \"&IF(ISBLANK(E9),\"null\",\"'\"&E9&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J9),\"null\",\"'\"&J9&\"'\"))"
+    "31,6": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AM6),\"null\",\"'\"&AM6&\"'\"))"
   },
   "AttachInfos": {
     "2,6": {
@@ -200,6 +212,13 @@
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
+      }
+    },
+    "10,38": {
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "ID",
+        "GUID": "f0c0dd98-23eb-4632-ba9a-0dd812335fd3"
       }
     },
     "12,6": {
@@ -1854,7 +1873,7 @@
                 ]
               }
             ],
-            "ID": "99260ad2-02ec-4516-849e-f55ba1d836d2"
+            "ID": "1b487cb3-cd5c-40ac-8701-13c00db566a5"
           }
         ]
       },
@@ -1915,4 +1934,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//mzvWIZA17/QXWx0+mDQcqWYJfw30LcL1MaIT+up98wSwxME+3q3sCCHYMTyq0hxTeLWV0BPTSTnQOmEQQKdUbAZ9YeVfnFDwIc12kPruMuUqFo3jwIcoBJ7lN6ncIssN6Ifw5V5rY6jAOSNVX4c/yzfjwuCO+JA6XKEYzlgKMQ7SoYJeV3ImjAhSlWeRf3uCFZqT4bxlyQ/hmGm646OloW7Xa8U68+Yp4ca2fh0xeKrQc8Pao4EaW+vYukyBwmPBqc2nXdszmHM2JE8AfB2GfOv+E/3VmA+fBBYjG1mOA6IURxUZulmDG2me4H703w0uCowud/6DWDZQ6PrAeqvIy9DOM00FHeKJJeeyZQu0WFe7yM9MkC/uChzyzwN7G5E/2k6/FpUIZ6PhtqRIwjK1Pb+lRKllIcobqLF+4PQdyDhLz5v3Gn+FalFSoDQmq3Qq97EU/YnujdN74775dV5j250T4AXAPDxQIfZyUYiYVi2/uTQFr8JejqkLvfNMYp7StwGMxh/4lUWoxiCgeLe5kitl/YeFMZ8f6H94iirXpiiOLEls6axQ7X0NWkxZrx+w6RkVYL9ojNodj1A7wFeMqjzs0R83CNGuLBwcM3YzW9T0YBhIwsA0LaGfvPVxwXfGU2kYlDuMOg3gRtWAawSi6TWrajYMw0cj2odCVGI/gTTvCeoQJKSZdtq/TfCAUAabjJs5mlFOhrAYpD3ZkpgLvfYsQSdgLJ6PZxhXeg8OH/Tzz6s8U4yYcPvXNaJlDeJH5tNxAIQiiyIf19li8dXh3Y6fvdLEWGQCtlFjhYLc3zgW2q0G5ImgB4MrJQWdVIl2bqWAKfhWdsh4szEhmKHeJ2q3QUn15DrZdz0Zg1og/N2QfB8+o37TUrnNkBmlPFubhwexU+pfcIeepAhrdkBcmA==|920
+}//dBIPBrYAkBMyd/8j0GGOO9u322o5G2Zj1IcGPiVfAGzOOwcqBhzTH18ub3UsixTbhdt5QRJvkt5QQumlW9YCKnANTCVIlT6tQp2/HfAXpS0ryFLkzYo1s7Z3CkQ96UK+CKdUirOpD2Qy+DIwmU9TcFJkIesbh/qc9/lUTaUhC+ro213OkHRi/alPkuzD8aUsXRn5Dzt59n3eYy/0ZsTsALKlwwe7/QJY2pVdX19v2hGScli2iYfHISY9xiSNBooSXHSMOxJIA/uynWfX3m4zi4UO98s9YGOFOLYrvrJqsOjo7ppjf5BOi/z8AHPj1kmygCeW7KKdZDRToxxMgxtWUYn2sQEqB9p2EfgVvIQ1cFSM3ZpzBcGeq2Q53SYXTMpq/VYHOuYcab+CZ/l6r1VbZyDq/pqiyqpx0l5jVAVOBnRkD42UKN6QpU99bECy6y94fJ+XfGB/26FkCzzp0w4qtwaUtV7fUeBXNNCwPaUXSzN3IairswxID1HWm/atnLYcl/jLxKHmmG1bwn58aXJ+VdkD1wh2NRaG2/8ahfqrqOSZ2T7f6eexorsCsAp9hJTCu/YNOxIKNSKyiKVFdJUMyK/gkFkuXsAciLEbPCK0Vk4kqUhNy+66QZ8nNRMJY+OepqNreKnwtxw3K0QAvGslgl38X9x4KxAadSuNqHSqMTK950v3XJBDBE8ub+E0o3b0Uu4m0Xk6nBk18etDVwv5EpO9YhR5Qr1CkJL8dWdZqoUgEHp5V2LIANrizFXi+ndnSArn9qis1wrFXV/4Gtc05adH7hQHmQuA+FNKKQPbkzjKPNzlKgJiH9FndpaY1f+mGCnHvWpgYDvuKPjFr8cGNp1Fe92Qc+HV6828oFeg5f+kpbbVVX2jhW/KqhU2MvROXYJjPHoPoDbf0i2/zTF9RQ==|920
