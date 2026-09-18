@@ -1,6 +1,6 @@
 {
   "PageType": 0,
-  "ColumnCount": 68,
+  "ColumnCount": 63,
   "RowCount": 46,
   "Formulas": {
     "20,7": "ODATA(\"YBS規格文書?$select=YBSコード&$filter=ID eq \"&IF(ISBLANK(F21),\"null\",F21))",
