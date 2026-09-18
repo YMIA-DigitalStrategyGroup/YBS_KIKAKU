@@ -505,17 +505,7 @@
   },
   {
     "ModuleName": "PCPage/褒賞_フロー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME041351",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-09-18T16:46:28.3024208+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\褒賞処理\\褒賞_フロー.json",
-      "Pages\\褒賞処理\\褒賞_フロー.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/褒賞一覧_承認待ち",
