@@ -7,11 +7,12 @@
   },
   "Values": {
     "0,1": "%PageTitle%",
-    "2,26": "規格名称",
-    "3,30": "承認処理"
+    "2,24": "規格名称",
+    "3,30": "承認処理",
+    "16,33": "戻る"
   },
   "Formulas": {
-    "3,26": "ODATA(\"YBS規格文書?$select=規格名称&$filter=ID eq \"&IF(ISBLANK(G4),\"null\",G4))"
+    "3,24": "ODATA(\"YBS規格文書?$select=規格名称&$filter=ID eq \"&IF(ISBLANK(G4),\"null\",G4))"
   },
   "AttachInfos": {
     "2,2": {
@@ -90,6 +91,19 @@
         "Text": "承認処理",
         "TemplateKey": "_RS_Normal_Style2"
       }
+    },
+    "16,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "YBS一覧_褒賞"
+          }
+        ],
+        "Text": "戻る",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
     }
   },
   "StyleDatas": {
@@ -100,6 +114,20 @@
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
       }
     ],
     "Types": {
@@ -112,14 +140,22 @@
       "2,10": 0,
       "2,14": 0,
       "2,18": 0,
-      "2,22": 0,
-      "2,26": 0,
+      "2,22": 1,
+      "2,23": 2,
+      "2,24": 1,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 2,
+      "2,28": 2,
+      "2,29": 2,
+      "2,30": 3,
       "3,2": 0,
       "3,10": 0,
       "3,14": 0,
       "3,18": 0,
-      "3,22": 0,
-      "3,26": 0
+      "3,22": 3,
+      "3,24": 3,
+      "3,30": 3
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -130,24 +166,25 @@
     }
   },
   "Spans": [
-    "0,1,1,6",
     "2,2,1,4",
     "2,6,1,4",
     "2,10,1,4",
     "2,14,1,4",
     "2,18,1,4",
-    "2,22,1,4",
-    "2,26,1,4",
     "3,2,1,4",
     "3,6,1,4",
     "3,10,1,4",
     "3,14,1,4",
     "3,18,1,4",
-    "3,22,1,4",
-    "3,26,1,4",
     "4,2,9,40",
+    "0,1,1,8",
+    "2,22,1,2",
+    "3,22,1,2",
+    "2,24,1,6",
+    "3,24,1,6",
+    "2,30,1,4",
     "3,30,1,4",
-    "2,30,1,4"
+    "16,33,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -172,4 +209,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//+mDtigPEoFhcMODyYMvrPCBv0ivyFp8xMvP4iy4PLPmsHQdm4royQL1zQzCaoGOcvGU8PPZjHxTYmxYiYP4PWbvX+6PQBSeG68I1/ezF094vKzb2OcV3nX1eE/7lgVyRlvyHqPQleCNqb+v1qDoYVJk4fdkU8POxtU8PvZRBkSlXbBS1/oiGu/2VYGGZrPOcIXlVBY7SMqCSUEqW6jmaOvM1tL2T1K1La0nOkGxnkEUxsv81WSAWjUqTySF+W+mfWKDBa1b1LDuUQc/BdO8Oa9o05Hl2AsRSw+0frBdEq8TUqGmJIN/f4RrjpmCph7weOgrOK0f8KNmgc3Yr1OKqjsgK9xqudCsyUcQiL5AO+cpsu/vzW5YN2OCi2Ma/NgWQZk7Bcs4j4ftd7kNiCB/ib1+SbbdxsNnEIFG+z4iQlCdgUVcpsoCxNgbtAX1nIOxmGoje34NpjTw1EtgiqZKlBwIhL4idIcYlYmUX91Y9UjqUvuVAZuSitT7vDov9mA1bq6IeRD0/iH/uNSYTWsTyKvYa2mKzdo5uQ3L8+H17hImMczwV7FCD5qwGwPoJBdmJD7e1e9QMInFxsFB+c3+2E1cjXjAQzS6X4KohxK2EpAu/UaSU0tA6k/RRGykawqKMph1fvUUnL7MWsX6keu7vqdhK9tkNBZ4LH+TJBGFTlg/XqWH4B+wNLNvWbyZH1PrUcNYMzWdVoF1wEVthRVcoBqAiYtgXyNEWPZUZQV3kmeFc+U1ggMTEHAbOhzdyiORQC/hPBlvgSF69tyBrsYCkFpAE+TAiNwT2KNHgnNUGSw1/0EcRC0FjHdAmhqgRJb7b4fqOMt1xZ3qMGFzM7W0OmIfMmVh3Vrhxg7RqUK5kWFW+zaAFv9H7EnO5u3cB9WND0b8JU+ADEofiuJO9iqrO9A==|920
+}//1nzZAV4Ubvk/5hwVKmUa48yLI94Wjono8rTDs+JOfhHRtC9gmjJlsD+9GDQOhteUj9jZkqghIk4ZIqYOJnEX/9NDyfgeT7s5UndqpgJeF1mvZ5ECRh2CAoCAuaASCsphl5O5K5kuRECqlylfH63GEKK8qRNljfmpqKM6DrkOWTTc5O3Gy9aNzZw+2tei8Jke21a3AnVm/E+n+uH5AuAmiBD2cjiqt4cEhoyhwDfcQzCVUj4wVgPkIv86Vy+B4cK+WM7+/GtZ/qvqzXDT9bGKRCBFw4cZz3ZI+ixKvjuArHYmVrVKInDAASE1R8ybl6d7p/2VQJwtdPE1nqBeznLzwHjzGp6fpmul/shUiFc7ZUYITdk0ajeJZvH/VZd4pqMsFRN1on4H2TH0OhxiyKK6xtdvRJliFHQP1cIqp7/n5DBDRiKk+9FGVWd3OrQHZ99xWiAjGKwj3d0GiTHd5rHN9zZpLIg9kdiNiYREEQW8//SsH5/qMGRk2UL4j+dlDz/xL+NyFr1Glkc12UUSwq8o+2H4mrB/nUMeTl705ll/3r+vma5sxk15pcnVTnZNxrmw6XPu9SamBoxgD0LalVu2H+L+hcCVCj0g3TYgTU7U/J4RfZCZYgHj6c29ftuzlS8exh3YMM6lnioekX9gCkX1j4pSMq6MYSQGspicuwW1CDulAqdaJK32kV/O2AYFX0p6UYfeoLEQBaFpXI9Q48Yfdt2DWu7mHLsBIYiSD+HZKee3iajTeXJj1NPkgf8Ti7vXxWtbQsGgwFoivpPxtCSeKJHLIo3V74U0zqmd13MCftGAUH5/mY/5VFgsIyVa0haPZvV9ySOVa+cLcFLexBPq5+D+f2yWd8A44snAIZGmxeSANJKg4tuOwMeot7CzHi3Tsz937Irk5Kl9x20S0bfp6g==|920
