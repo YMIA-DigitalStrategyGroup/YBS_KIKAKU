@@ -525,12 +525,6 @@
   },
   {
     "ModuleName": "TableView/v_YBS褒賞_ワークフロー",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-09-25T14:43:26.493225+09:00",
     "ModuleType": 23
   }
 ]
