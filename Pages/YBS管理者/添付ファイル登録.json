@@ -562,7 +562,7 @@
                     "ConfirmText": "本当に更新してもよろしいですか？"
                   }
                 ],
-                "ID": "1d0260f3-b81f-44a2-83b1-030a33ff2e52"
+                "ID": "5d5c7b01-a1e7-4178-99cb-7dbab3ef9fb2"
               },
               {
                 "CommandList": [
@@ -571,7 +571,7 @@
                     "MessageFormula": "「いいえ」が選択されたので、データを更新せずに終了します。"
                   }
                 ],
-                "ID": "e7bfdb28-e5f1-4906-a6e0-934136632ae5"
+                "ID": "c2ff621d-bcaf-486e-b227-2e2f3dceb887"
               }
             ]
           }
@@ -2541,7 +2541,7 @@
                 ]
               }
             ],
-            "ID": "4cf534fb-eab7-41e7-ac27-3e693b494622"
+            "ID": "5c5e3ad8-e6c3-4c6c-be8a-ae99a133bed1"
           }
         ],
         "Disabled": true
@@ -2587,7 +2587,7 @@
       "ForegroundFill": "#FFFF0000",
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Location": "491.79999999999995,849",
+      "Location": "445.39999999999986,844.2",
       "Size": "48,50"
     },
     {
@@ -2596,8 +2596,8 @@
       "Stretch": 2,
       "Transparency": 0.6999999999999997,
       "ForegroundFill": "#FF0070C0",
-      "Location": "488.60000000000014,621.8",
+      "Location": "441.4000000000003,618.5999999999999",
       "Size": "48,57"
     }
   ]
-}//Vv/AHEHMw+AFg52K3KeEX3rw+luvv+cJzhO2O9zXpJnMTHf7jTBzefk/zkrn+ypl8JEHMn1SSR9nOu3zw7drBTgLbwbzUsluOODxmrkB9Zoo2rRTXfm9xhELgqsGr6TpCyGnDURQf6irZmQZWmcTJQcQQ1fcCnQcYh/q1DKeYNdlnEJwg8MWHLEBm411soYcBKIWGSwFcZcMEn2D4EutzbjSpExq23wm+CY9mPi6nzm2TTk2sZk8rLaO1oG6jXmEoXJ2O9ivnMaBH0xX9+FlaPl7Y6wcxJykY+hUvQZjGjb2HQYv8sYFw8LqRrzHH1PK81DIVJMiBwyqkYrz5EXUcUugaC4aBMd8ACbHasReIdcE5xEFhr3rlKda3r56enzmb0H6c/8EjlYRyg10WcTCN/yrNYDd5cpbeB/gNSgjPfFGhGAaJliJtmGKx8OtFJdpCLJ0dAEyXfSwOrlb6S8fn5Qb2sxgVOkeqT5F//lscUp7gfWaNy/PAu35rxIUszmR9oAgJPCImV9Nk9wU8KY/87qYaUV0oNF/oLGiBjPT6JzPQVFhwMO2L0C6avhtG72romujDLAl+vZdJ02PE1yS3pswPSCN2MooY8ZiW0EAqrSaXX+lK+ldsrEGoIkGby6/ExhVBxDk2StUs3rZCDBepm/AFW3KcHYBrzvU3cQzGR2s/JjxSwmqqH1KZV+XATZI6QPVdP6Qt7JqNaO340dUzIvrgeiOwMRXlpWXzp80Gr8OWstrlPNtBQQZRR2YI02jQhfhCoMvwFclReAwjXTguCSi1Nb4BvGqm36OVWD3e+LJVMBNp+AkSQdki3+q/1kQq7fLiY9Gu4YH8u+86l3pe0VWq8Vv+a0YUzzlUBubfmH4jaauGuAfRJFhLa1YoLmblUCMpS+7i4SoHu75Evh9jA==|920
+}//4mKUavw3M0iqOeyjDsu3VW9uQIiy2knJlGwrbmtXbZsLc5/xxLN7+yGxlzmb0RZHFMWjcQviV6lke36QEjg91FSFBJHKXmGi6TAU17Y/PomLrDnc5OVNxqWgZU+jBNsuU8h74ceE+/MyHTB+esbt4hGD+emNuRLeOOlJuRii67MfY+ZRpUOUzwDV5rl4X8gW5k16OnmrmyGAWv+M4lzRTPHOhWxBxjuXYGu8jfd67TJeIujMSvOZkilE2nU8nBbUvIXQ1bIJQ53LBjuhFLrwxy3ffSiTH24uDYhdPthIx2VnsYiDp3Z10yPiyvVWqCxAaubcgKbBvEEFL2zl60YLT16gLslsUAl9a38z2nC1g30SbmCo+bYig4B2VlvftNamEIuA6RsT3l+6FC8iG9c5OeEcCaT4BfnJrjsZolrFYxOlQzexhZ/tfY0oWwqAB6T647fC4Gk8EJBEacA2CGEGEB4Ykl3voyiGMOBI/mS1GfJ6nRbXiqDQnorP6UmTdFxl9QVT/iQosr944Y25zPXQVOu9dCnjZDHuEU72Oc69bd8ocB9ltAPVejPI2rR5H/33THVgUfZ2DD4t2NJqFnxiLqYg+fGmk7OoeTLNYCmEFb8iyJ71/Gmw7r+S7bUtDMaPewJXAa0UCt99JJqnlMEtZWV1YxzJpNeodDMiDQzYSzz6boe9eHLM/NJWlbc6t/zXHMThmsK7nHozaJwCIuC6D8V0qobICqdrnW0Dj/vfxn1zWEgHqhAA1wXGZnNbBcS5G7IblFSfhvceFxwbf9eRcA+6Jaa+y748nL6oOgPHu2nNYV76V2ddT9te5HFoutF99WOvIhMpEYbLR79QDQ1tY0ykyvMYQxyaARVxUcbPyPaI2QIcYD3dFPHN4Vp4qB8LnYuvcg4S5MnpLAQOIkAzqg==|920
