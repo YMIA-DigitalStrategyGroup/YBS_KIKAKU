@@ -492,7 +492,7 @@
                     "MessageFormula": "下記いずれかに未入力の項目があります。入力してから申請してください。\r\n・規格名称\r\n・理由\r\n・適用範囲\r\n・施行日\r\n・規格本文の添付\r\n・規格本文閲覧用ＰＤＦの添付\r\n\r\n\r\n「部門承認者」の設定もお願いします。"
                   }
                 ],
-                "ID": "ed449f04-83f6-46c2-b93b-dfc210b450b5"
+                "ID": "d250dfef-a905-472f-8d7a-ff8e54e975bb"
               },
               {
                 "CommandList": [
@@ -563,7 +563,7 @@
                             "MessageFormula": "レコードを追加しました。"
                           }
                         ],
-                        "ID": "1d5d4f65-7f12-4a1d-8844-2edf4c37496b"
+                        "ID": "885516d1-c6f7-4e30-b4a4-4a7edcf5e157"
                       },
                       {
                         "CommandList": [
@@ -578,7 +578,7 @@
                             "MessageFormula": "レコードを更新しました。"
                           }
                         ],
-                        "ID": "85cd46da-82cf-4c52-a4e8-8837c41aaab4"
+                        "ID": "7c697f65-6f1d-4c7a-bc04-b7bf44e2c84b"
                       }
                     ]
                   },
@@ -659,7 +659,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "6923987b-1f85-468b-a7a7-a9378be00573"
+                "ID": "44730506-0836-422b-93f8-ad5e170bc899"
               }
             ]
           }
@@ -746,7 +746,7 @@
                     "MessageFormula": "レコードを追加しました。"
                   }
                 ],
-                "ID": "d0ee1eb8-057e-466b-859e-6d34ca96c0e6"
+                "ID": "63af3842-9286-445a-88a6-85501b8d354d"
               },
               {
                 "CommandList": [
@@ -761,7 +761,7 @@
                     "MessageFormula": "レコードを更新しました。"
                   }
                 ],
-                "ID": "d6b441a3-6c38-40fd-a734-ad1de27a7489"
+                "ID": "13f5d0f8-fe64-41c2-8db8-ec59c763e91b"
               }
             ]
           },
@@ -2438,7 +2438,7 @@
                 ]
               }
             ],
-            "ID": "7ff8b888-f014-4e91-b836-1e8e4c329593"
+            "ID": "f8164224-617d-4938-9c68-f7881f49a34b"
           }
         ],
         "Disabled": true
@@ -2484,8 +2484,8 @@
       "ForegroundFill": "#FFFF0000",
       "IsAutomaticStroke": false,
       "IsAutomaticFill": false,
-      "Location": "490,520",
-      "Size": "50,40"
+      "Location": "454.79999999999995,521.5999999999999",
+      "Size": "47,35"
     },
     {
       "Name": "582d3d2f-b895-4c06-b316-842fdd45796e.svg",
@@ -2493,8 +2493,8 @@
       "Stretch": 2,
       "Transparency": 0.6999999999999997,
       "ForegroundFill": "#FF0070C0",
-      "Location": "487,344",
-      "Size": "48,51"
+      "Location": "455.4000000000001,342",
+      "Size": "40,37"
     }
   ]
-}//dUXb4kf6ZEFCB8sEgyGhNAvDV2T2ZM+TpO9VlMO8h+NyLzNhMuNWUvi9Iw2IOgCuA8qgx1GYODSztPyqu6uCll9mvYb5keveRrfO0+DPabWClBdZsVeWLPER5TpFrrDxPUhu/IOwVJOz4Jl5Ly7+iuGkJoDOLA+r96EyNF4qORd+FYz2xyB23X3HxfTFYpAMUl5xCzEH11miQOGJzUuwJ92gt1e4Givl87iTRzCHZurWF5n0tR7i4h9Jotded7hPV0AaaWAAV/1ycqDhQTZ+H6TpHKxCBWtTtD5ApAkpXniTqRtfNZzsAsqjoS29XFFKsEMw1V39KvXbdATtUtdUuSH5TI/YYZ24L5iKofVXY+FlKmiVbycWNotNytDjW5QRqal9gQ6Cp6/B/JXddcyiELMWiwNZuGBb1htqx5KfbvttSQ0lcYrKjxRDJ4vr7wtSa7bja72iRIEJ/kzMrtEhgM6EFK/JjV6GyH2cbXxninm4DFaPRjE28gqbQHRPrZUTs5CIsisLJIxb0mmRllMxCzYSkmhIJyoEZEDlB/Fi7gb3vuz1e0Rovy65ORINLjxYuQDAB55iagNcUM07ZeNj8KD0Lk1kKC6rS2IQBy7vKHYMOk+utb6tnT5MlpCz95oOHOmvR7V0oV4Z6Sj0FZkO3VroqnU1993q6noDb+lYHoiQ3dx5A03U3X8OeioaVjCCCmuY6CJfZ4P21RsMLiIWUZqTmVxbalk8wDa8d6S6VOR0HkyB+ppd2nN2PjgkDdZN/A+vADXRx3InT62Q3e6PFVJ8/5X/bgCeUo5o+FLWOmpgzZuE72b+pOdiw+qRhKRScVZn5ugH3oXkRUfgPfREefjer0JKnRmbSybk1/wzaZsFZDkLT058FfFKynspG9Ea0JmUoYLTMxUMaeZcTFHNpQ==|920
+}//vc9Rcclew5BRClLozn0WsscVzyGabM4yNPWuK3GMWcXlCgqpMVUCRT6OPILbBfIVu5MJ6/bkFN2DsLhqjwlYVdOf1WD9llwmFxOfW9m3vX429798yUEW2Hdxiwe3l9b2HEg0eHiGJBvU9dnPK3PuukjPU7MdBeWJJ/y84YGKjG3rHuxaAFgzKMkmVQeBgvGewSkYdLxKKl9LyolVw+iBEdUQ+0qE1wywR07mFbRPtDsR3cJI66n0SNzlOVGgc6gU6qTZFDfu0xNROkBln3Tb7Z1AkFM28IQDrleejOjfRd1MlOAHNLieDeaa/Q7lTEvHe8bI0cyyizo5qnVMbgco3dsUihK6OrlJnNkI0VBZ+TCC2FPm48Kp4ey4JLrZxVql/IpyN5YWCCpbMNAiJ5LKhbfMzM2KekfoktekuZJfIlC7pvTh7pbTp4xrwAedZN3jdZsGRSPEl70R0DxngZj4zE2vFpEys/uX+vnU2r3BHlFqZnRtCqXOP/6uJsdB2CFCRIsJDHJLP2R9XL4yRkQDc4QKUbjVzQRyFmyzjbJ4zt61aFGF1i0nOgMHpnWcF2Vo1jKykumojJE136BsNRkf+uyOz9wgdV4ypOPbNkZmTvpinqI/3IqqYhZttfRa6mTDU4F3c+iKod7ElrDEYpfvg/xP1a7llqa6YghUYvtCaDYYqP03nZotCVMm38dp4c2f9FukXmN3PM4oid9rn/zORUzy40GIa6p1y6MMCReg7ijBxf82PC1HbiWq9eridQJ4zZX7HixevH17EpFei0H+wCYPnv+wvDbzFqorh8hDQPeB85x62cbTUeiQIRWbLTXTxXEudp2XB6W2i0XRExBRd59SJjmQqJZ8B26k8RCvBqlzqq6tEXEHmvqxa07lJ9paiiQoAf6VinrCy79y2b9zzg==|920
