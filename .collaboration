@@ -525,6 +525,15 @@
   },
   {
     "ModuleName": "TableView/v_YBS褒賞_ワークフロー",
-    "ModuleType": 23
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-09-25T14:48:52.2231071+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\v_YBS褒賞_ワークフロー.json"
+    ]
   }
 ]
