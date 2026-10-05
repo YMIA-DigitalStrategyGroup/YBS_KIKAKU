@@ -42,6 +42,7 @@
         "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
         "CellCustomValue": "%CurrentUser%",
         "ShowCircleUserPicture": true,
+        "ShowNotification": false,
         "NavigateSettingWhenLogout": {
           "NavigateWhenLogoutMode": 1
         }
@@ -600,7 +601,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため改正できません。\r\n廃止文書も改正できません。"
                   }
                 ],
-                "ID": "7c98421b-1683-44c8-a380-679347ec15b7"
+                "ID": "ea50ac5b-75e2-4696-8658-c413340583f6"
               },
               {
                 "CommandList": [
@@ -714,7 +715,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "79868965-0b27-40c9-9bfd-cfdfad07825f"
+                "ID": "82b4d910-5297-4b13-807e-c8781ea2fb99"
               }
             ]
           }
@@ -979,7 +980,7 @@
                     "MessageFormula": "「承認中」または「差戻/一時保存」の文書があるため、廃止できません。\r\n「廃止文書」も廃止できません。"
                   }
                 ],
-                "ID": "60c5b0b1-8482-4306-86f0-f11af239022f"
+                "ID": "31b1296f-8a1b-45f6-9fec-699874cb6a15"
               },
               {
                 "CommandList": [
@@ -1066,7 +1067,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "434c2ade-9b86-4dc6-a8f7-4a574c3f5283"
+                "ID": "641312a9-0c94-48a6-85b8-7dadde49549f"
               }
             ]
           }
@@ -1832,4 +1833,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//uuGQIiGbz97CSkQPk9rPc+DwD4ZyY4E2MzLZAA9R89zndDTIAR+221/LjgEabVrXlTr05zdz1WmiDyrvS1YYYxiMa/TdtJQ3Ztet0zr2muLROVOffdJxK6f3fTWsYFYktP0bqY4+HBuMZbKxa04IG3ecFC0LhkCfBpKd+qI/+uYwda2D2AcODMtsQxzBcGA/aFaLu/HUJO4JK3ASJCH9GCNiFDdsh5ILD1Gb9M1Tyu7XiPO1045+t+03DTj8FBxIjM+ZBZ0k/oSwHXqFlTauKAIhmeHkvvMkZFoV+Rh5HdCKbIwHB73YGfASVfMiS9huj36aus9C9n6qazXaix25Ng4VuIUeVHnfsrHiHm00tF01b6/J0nA1ni19iATcsBhZKONJVrCb4YFKNgOaCiUdq9SINCdkkmyC/MME3cHXLP495fgHK5637fcZH1r/QqhcowNDvHnikzad4q1JMpVGhYJqDgZ/kYDLasr7mlTUgt0LHJpavaqwEy4LvOIMwf2H04s+Qs8NWswY0dcLg+Zy515n14+C1KzuJIIHhu+QUh6ZbCXvp9zq2iLB2UU712NF9k5pNckP81GAv8Z6c80G8/wvUdIzt1svecGEfYH2uIblNK7aainTr9mCvuxdFLstQH4Fm1KC6mgVoVTdfbW9A02vAieAX4ZXdNsuW5ldPO0AF0KeY63kU8cwjmLer3QrrwLoruLxry8KwnZ5/tdLUQB8NFOnnfK+gotxH4zf7ftzuApUW+o5s4CB3x7NJITWwK/GxB783ZXQO+srmGrQpmGotDXmNCnJsNRq1dA8Us781QTv11mNDJq6jMsf8ko0T2E744qEsNhLJEZIvCLGct8O6i7Jq607uD2qOFRjvsc23I5afeW8v+w8pTUOB0Lbh7UXNitPPz/5QRJd1tsFbA==|920
+}//x/G1OA4BDkUF5e6q4Hyo/W+4NPEVXOt5EP8UvMwHtqqoc3AX93T+NJJvmKJNv2v/20sTEOK6Sd1vT5IHuHsNKM9G+N1QSdtfKxnm/ho+IKL1gQeJ01AFcQMj2lsQe/Z0cjlqtnf4vlZkGUfvaB9sWNU7aJdAJESAUC6QNhNvBDf69ThZWrKNdho2RH/MO8yfr5LlBztyQFdilgtuM4+PzoTvdt+X/nLpf0KZOAbM4x/2yNLJYbMLWvxn4O6npmnf5MnH20FBiZeSgj/luS3kz0KewgwHgz5t21OhP55Y0tp1KDqaLypDJNGXMu0yRhHiEealvZn0jCpXXkat4jWZyxd1UTBIu9OP3hmnZXBIAVd33+toND3x9aJFzdUvYXnQWwexaImXd1NmI5OWVqv18tSp4NjsbouLx6imQ11iQpuZD08JrgB5jRo9LY5up7hYORMY5ETQmo08GB4bvykRQduy5lKIBFS6pnZdk+SU2Ql4/eOayP9TXuGTCJhbSarryuVIkKkp1Q1749sHEDjLuz9KOyxU1WI7vh6u4a/y1lrpruJ2WXnwy5wI/ENbg1gHPeNxEkhpIYMP3BLRzgtSLfb3ywZTBjZNggM+lCKTeXQf7HBn+/rRQ3mw0xdLm8KIEiE3BUsWDPjkS4wE80XuG0z82o8NSib5icR+1XcJ65HQaTxv/66awEhAXqaDJmiX3bN9N3CsWsWYlTOUbkpDiygI4wDyqs4l8KHGHsgcOPDJgbOd7+ln2ULKhhHiNQ6lkgkcuMY8MCWu5D4vK8CxI2hJTjsk4WqNvAP+aNQPXHNuKnfNM/EnanCE13Q8a60QM1Trb+xmKRVWbbNP9AVbJJAKP5PX0oVRJns0mnE0FwG3jPLkECTlJ6scB3y50UMSayNibCTYcqThjl8f0gdE3A==|920
