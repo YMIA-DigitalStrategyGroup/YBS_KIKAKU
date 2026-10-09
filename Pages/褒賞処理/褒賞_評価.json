@@ -89,7 +89,7 @@
     "33,24": 15,
     "36,19": "合計点",
     "39,19": "等級",
-    "41,3": "更新",
+    "41,3": "提出",
     "41,23": "閉じる",
     "43,37": "事務局"
   },
@@ -264,7 +264,7 @@
                     ]
                   }
                 ],
-                "ID": "0da61455-b3a9-4c85-86a1-8a3611aa4b70"
+                "ID": "38ffc07d-1fee-41f6-b1f6-7703a641e5de"
               },
               {
                 "Condition": {
@@ -317,7 +317,7 @@
                     ]
                   }
                 ],
-                "ID": "90ea0e33-6c3c-4c7f-bdf3-0259efe9e6a5"
+                "ID": "b58b5845-bf8a-4b46-b004-ac847b0d4b03"
               },
               {
                 "CommandList": [
@@ -346,7 +346,7 @@
                     ]
                   }
                 ],
-                "ID": "3983f6e1-a6d9-4d39-b33a-1229704ceda2"
+                "ID": "e77ced23-851b-47be-8606-2ad341b23b6d"
               }
             ]
           }
@@ -607,10 +607,10 @@
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "評価ができていません。\r\n褒賞分類を選択して、加算点を判定のうえ、登録をお願いします。"
+                    "MessageFormula": "評価ができていません。\r\n褒賞分類を選択して、加算点を判定のうえ、「提出」をお願いします。"
                   }
                 ],
-                "ID": "e932c4b9-e647-4074-a234-ddbd716e027a"
+                "ID": "53d5f1de-b57c-4b84-8c94-894f64879297"
               },
               {
                 "CommandList": [
@@ -629,14 +629,18 @@
                     "TableName": "YBS褒賞",
                     "NextState": "事務局確認待ち",
                     "ActionName": "提出"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "ワークフロー遷移「提出」しました。"
                   }
                 ],
-                "ID": "86f8c4d4-250f-419e-9987-638abfe40209"
+                "ID": "b13e9607-b54a-45fa-ab84-a02f2c2516a8"
               }
             ]
           }
         ],
-        "Text": "更新",
+        "Text": "提出",
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -2269,4 +2273,4 @@
       "Size": "48.99999999999994,23"
     }
   ]
-}//Ryk9/GTZBHYrIFgCyQ34agqxZaJCEpCZcIsvrwrD8NnzA3OEzW53fEqwcnmr5KHdi9QpreRMXiliSHjsx8ed+IgxIOMUKF7slXrS/uilErJNNHDcCn0zs7Tg4GRBk2T39LJiBU3aZBvxODD+cp8dKuHOeNg2SWQ2vf1S/now7LzAWA7wz6CiMb7idCr248DlKxokGaZhfY0t7A63+NYNf84RGvUBuBLgVe04jSQ5GYFnHFsZgVit+PSTM0ZuVIebQQTaD79JHKVNxlImRV1SlLJY3HiWtwbcevcoeT+0vBYu/i8ZLMU23+t0yKDwg13ZM5+iisgnF7FxCFqNaex1D078LjEPYwzuGUJ/KaiprE+5x/v1GjrqYW8dVmXeeWN+eF74SxT4iZwydfWThGGuv5tG2faE8644wAEbzRUsoWlcq/0cgOeAVmVaZf74CdkEPk2JbpZlzw3bFBSygc6jppHyLXgDfgMG7QXj2tQnQRbovLf0pJIaG29h1SDt/onYA96U4XoseNLlkQGfuwRGEqqsTiCwul5dsJmIH2hHElhZgzJXYsy8oEdlCqEEOC0G6q8pRoDX1cVjhp0jFaxpRRAFL/1Eep7b9KrN/HLjzbtKk3OVqNN2PapwfSx0JjO8BjrsXo9FMgOaYxPDwZUfzPd5SCJm5inLiVrRAKsbINAtR1ITuwTS3O1EgY/Xby65tR7kPO84lZ+4H+IjfyW3UEYV4zfpF9fCZIqWAdQqThMiRzMEU++R7iNL638/fSJJedw3kgt5RXmqI6rzF/dZyTFaM8ZlF3J+4MP2A8vJMEKHHnNRMcMhCjSdUTiwWRmvI8rIe0rdQCY5dxA/alXEllyz6uE4tUEIdvaiTM9QMdn9tD/xQcEG3o3erSPRI0oAQBUl3W0Q+UB+S74b0DhgrA==|920
+}//02pYG8VcLiQLPC+I6B39GO0KWKfLcb30l+GfRHfw0hujiOvCDre1ITrCxiT0fDE+qId9Vr2jiD/OnHunnPBL4JEkgUH1px4a0/GfyuzAO4HDSSOhmcRCzNmKTez9+6n2aiLzm8WNPnab20B17MVpLSlj25aziyO3cTNs+li5omMzKE+N+mZrD3gAEu90t2pleV3m8I1E10LYW/ue/3PuhjpJnl69/Xt+koOoGVLrDgKjbwRzYDuXOrj14QN0QumQf24ozakCtqupoKN1h0EVNyxyL1a53TOYDMz/vQbTL5+i7pWq5iKZUN6F30v2p/DqVnvz7qvs0rvrHbVr97kifQNZ/4l/qt3NHNsjjYG2j0clmY5KqSSYNrWR1Xue8j71XVkMSKsfu7g4dZFLnl+Lr690CvWaa0K0VZiAuXYLUFgNaQBrSaoeysls7CJ0mJWIIg2QWhMYO7qj0/pZYmYCa67YPwU6NaZWvC2TVTWwDThG10iEgtK77jobXNwhHgrxJayCGpU0lvFclY785H641KnCRF+BQ0egtfROqK75YeVlqZGc3kFiyhaW0S1Zqj230CUs3Xr75dM0YI+kSJkJUlBV4hwOPmIMKPrbgYcQlibcOgzNVVLfj2O9B4uxpmxhCXJW/PECR7MCrA92RwFUxjV7L2zWkR6z6KjnX56Rh2jMOnwLf3fsLmdpFttcdTNYMg7QRzwJ53WEhwKFNKZIivjEN9ersJYu8m2vXS/lGNXRgqzSVOOtzAC6cMYUVZUKL8eEDnsEpIWkuRTDJnVTnsWchpSeJJYY6vwmlbe3fsYVHsOL77NdXrZ8TEv53bL0wzH0GLsNRtxW/szGP8sQDDpt0lfNQSX+00gnv5Xo/3ePAvjQE8MKcv9o4VJ3fmNltEHpfA/kqeebnchuUpQwvA==|920
