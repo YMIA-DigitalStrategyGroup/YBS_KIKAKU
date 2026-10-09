@@ -486,7 +486,7 @@
                     "MessageFormula": "「承認」または「差戻」を選択してください。"
                   }
                 ],
-                "ID": "6616c219-7923-496f-a664-576efaacaf99"
+                "ID": "19000812-9995-47c1-a0a3-d903f1417535"
               },
               {
                 "Condition": {
@@ -507,72 +507,125 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「コメント保存」ボタンを押してください。"
                   }
                 ],
-                "ID": "27041890-7759-4642-9ef1-d44d303d9c85"
+                "ID": "3630d9ad-4abc-4ae6-bd7e-efc122683f32"
               },
               {
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "YBS_審議会コメント",
-                    "UpdateType": "add",
-                    "ShowConfirm": true,
-                    "ConfirmText": "本当に追加してもよろしいですか？",
-                    "ReloadAfterSucceed": false,
-                    "UpdateBindingValues": [
-                      {
-                        "BindingInfo": {
-                          "TableName": "YBS_審議会コメント",
-                          "ColumnName": "ID",
-                          "GUID": "0cf91616-54e7-4d59-9533-17d7fcc6895f"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=フロー_委員コメント!AN25"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "YBS_審議会コメント",
-                          "ColumnName": "認定結果",
-                          "GUID": "4ff17e96-5dd7-42a1-b44e-25629a4ed5f4"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=フロー_委員コメント!Y34"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "YBS_審議会コメント",
-                          "ColumnName": "コメント",
-                          "GUID": "a35a958f-fed2-47ae-9243-0cd8793454d2"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=フロー_委員コメント!G34"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "委員コメント数",
+                    "TableValue": {
+                      "TableName": "YBS_審議会コメント",
+                      "TableValueType": 3,
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
                           "TableName": "YBS_審議会コメント",
                           "ColumnName": "承認者",
-                          "GUID": "1b4b1c5d-0411-49f6-b9e1-18b3a44989e5"
+                          "GUID": "530a3eff-8e04-4997-b032-67be67ec54e1"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                           "SerializeProperty": "=フロー_委員コメント!F33"
                         }
+                      }
+                    },
+                    "ID": "97e3cce64d034fe79064b17b312fcc8e"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=委員コメント数"
+                              }
+                            ]
+                          },
+                          "value": "1",
+                          "compareType": 3
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "すでにコメント登録済みです。"
+                          }
+                        ],
+                        "ID": "952f6494-8aee-44d4-91c3-273c09641836"
                       },
                       {
-                        "BindingInfo": {
-                          "TableName": "YBS_審議会コメント",
-                          "ColumnName": "申請日",
-                          "GUID": "311b1704-2a18-403b-bafa-010bb2304711"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=フロー_委員コメント!AM7"
-                        }
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "YBS_審議会コメント",
+                            "UpdateType": "add",
+                            "ShowConfirm": true,
+                            "ConfirmText": "本当に追加してもよろしいですか？",
+                            "ReloadAfterSucceed": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS_審議会コメント",
+                                  "ColumnName": "ID",
+                                  "GUID": "1e2f66c9-6724-430c-b7dc-2f9138a8a137"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_委員コメント!AN25"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS_審議会コメント",
+                                  "ColumnName": "認定結果",
+                                  "GUID": "b292cd82-02f5-4834-b98c-6cd6ebf7674e"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_委員コメント!Y34"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS_審議会コメント",
+                                  "ColumnName": "コメント",
+                                  "GUID": "8db9e6f4-2fb4-4b68-aaf5-9f82edac8bc5"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_委員コメント!G34"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS_審議会コメント",
+                                  "ColumnName": "承認者",
+                                  "GUID": "d590c3bf-26af-4f24-86ec-efdc10721c0d"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_委員コメント!F33"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "YBS_審議会コメント",
+                                  "ColumnName": "申請日",
+                                  "GUID": "96b477de-14ee-47a6-b48f-b323dd8e1e17"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=フロー_委員コメント!AM7"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "314f3a36-9cab-42d0-8cf3-348ab2509ab0"
                       }
                     ]
                   },
@@ -581,7 +634,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "4e6c08dc-3d8d-4857-bc00-b2c40165bf6c"
+                "ID": "cb45a473-0707-4fdc-ba8c-9ad0f1355285"
               }
             ]
           }
@@ -2238,4 +2291,4 @@
       "Size": "36,38.80000000000007"
     }
   ]
-}//l/6uOIjH0QZgFzZo2NXshdt65ZRg8mtI+ukhXEUuTYc38T+hZiPl3JcA05KeQ9WrD8UR0aH9lWEZd9/8PZHvP3OvJ2IvaMBCSUswuntYIrQuWMk9J2Ah+AM3AG7gy2TN1uXW7hXvTgam3yJFVjb2inmaL6CVj45Wrz9xk9xO2L9wDJj+SsbqxphsnMnufslq0R96kcTCKeOT/hiBRYGH5BjMVbeokzkouSFeli348pZKeId8bWTMcLWQ5Aj6gTc+NxUy2npXytun4fjE/n2c8276zcLX99lou4VS91pN/HZwO/Q/fXM8EwCQOOP8wHHw9BsttkAK1puq74JPq5aB01os+TzjsvS1IoqLQx/x+GY65gB/q9V1tUjGlXp513Fgu9Q/nhIpK2sH/3SZfnAOZYcG++o6NuTGg1GBfm1tOcvjK839jGqJuTiO2Xy6LkQy/8hnZ9/yO33xpMfuvWGWA/DsG80N9DpbvSp0ejFFulnCq837Yz4bj6hzUjHNNDk6X3ii1RvLMhhok/M7rjtLLOzFOoNKgRl6oj1ob1ENR0JWCM+8nvopm0zPvShJjyaHch81k0AwHm3vMwF63AfNsxR3VqGEk/pCKS54V9CjP4p5QWLe8E0HlOgAkdcfAHdpdkGq0R7ZfZ5nSLCp0TVGahdwtjP0gN+Wr6H6gmb2WYMI0aMj5JFcTlM26YVO74pc1am/3N4kHyy5GpKzPgW/CLZFnch93rxQVKtNeyS1/fJSEkguibu0rlviCqfcEWCDxCL1fzmgtIAmE/0UmHQrQOWnLsEfLpQLtqFZbyIDPJ0fhPXwA+lzb5ECB5J+RFoJ45x1n45gGuq+skh/vTOZxSPeDFJ4KVw4rs/qivwyaZI62pviQHscqx21Oe+KRnglPCVpfQYENHjpug9ZauId2A==|920
+}//f4bK0FKCiyzbzi6FVHYwE8nOC5/pbwIP87OaIGLFP+ZhNqVS6tH+VvSh9npxKSqM80sFc8JkeelW7AChL1hqO7PSToBGzN4E8rPhrWL77is/u5gYujhvbKfiLVOc3azKAVHHT3wrf5xszZ7HUtta74I1jznYdV9ZJ7d4gRfyNt7NpLocHMTNg/Fx1QHTZXml4Tuig6bQ/X4neSP/CA5j2ZEUZzOuqFf/YGM//pCWFRKg/PNkMIYmquyKh2yZ+dpDyfef79TlY0BYLK1g8ijo/9Vl+mUytFWx2n8xUBa4QfPogOMBKTqAvwDwTnII+wHb1r8zialzNO/64rY+k84YnbE7Llv2reaaTfvQei09SYcQMnrulWK8jHOkHQvfZX0/RCK+wj5VnCk+YnbmcBijM+nJEQWOiz0boK3kYMAp2L7M9+5Vj13WA7RyALhmpnY14TDZdfznfE/Gh8V85Oi/nSSeeHeYvF/mthnpsMvDIGIT73N4HJLaZ+yib5VVLa3O31pzKuL2WdZgox3J4Cw+morvpR4zaRvQjhoa80Y6AUaupLnv9k5Zkv6l6rGmVY6ZXUWMaY5KdNmAMDaR594iz3Xt3fHkNQvYu5cfuDCSLwsuM9SrD83sD24gkN+U2PxnYXroLK15+xg8YWGi2D6SRsZZwlquv3ddFrp/hU/nyMZGk7WZ1ycZrrhoLmr3PjGd+HnPP3gER1KMOzRqUrbSg6v01YEiOkiMThdUlju2GDw0Rp8qqim14okLYn4whdEjWxzTi31RHhkOXYvYOqKxXQzB96Cxf8xEqYddkZbclMdfXgahdsQBKC9yaXovrPD8GM868kx0LUjSwvm1vtzH/iS9lhhRx83XH8eYzCv1j6D+6fnSlihFbBqmtOs2SymgqZw/SymmMJxpUQZF2yOD8Q==|920
