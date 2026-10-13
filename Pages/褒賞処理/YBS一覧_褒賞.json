@@ -39,12 +39,12 @@
     "19,9": "コード",
     "19,13": "改正",
     "19,15": "規格名称",
-    "19,21": "申請者",
-    "20,37": "評価",
+    "19,22": "申請者",
+    "20,38": "評価",
     "20,49": "更新確定"
   },
   "Formulas": {
-    "20,21": "ODATA(\"YBS規格文書?$select=申請者&$filter=ID eq \"&IF(ISBLANK(H21),\"null\",H21))",
+    "20,22": "ODATA(\"YBS規格文書?$select=申請者&$filter=ID eq \"&IF(ISBLANK(H21),\"null\",H21))",
     "20,13": "ODATA(\"YBS規格文書?$select=改正コード&$filter=ID eq \"&IF(ISBLANK(H21),\"null\",H21))",
     "20,9": "ODATA(\"YBS規格文書?$select=YBSコード&$filter=ID eq \"&IF(ISBLANK(H21),\"null\",H21))",
     "20,15": "ODATA(\"YBS規格文書?$select=規格名称&$filter=ID eq \"&IF(ISBLANK(H21),\"null\",H21))"
@@ -267,7 +267,7 @@
                     "MessageFormula": "すでに登録されています。"
                   }
                 ],
-                "ID": "1b532c61-f694-4c0e-a373-5b3765a9950e"
+                "ID": "5df37a47-b9d0-4ac6-962a-463e2800c96e"
               },
               {
                 "CommandList": [
@@ -292,7 +292,7 @@
                     ]
                   }
                 ],
-                "ID": "e1d38ee1-463b-4198-8ea0-7983bd789002"
+                "ID": "5527da9d-46a4-432b-bbd3-35dcda0bbf69"
               }
             ]
           }
@@ -473,10 +473,10 @@
     "20,15": {
       "NameUsedInJavaScript": "規格名称"
     },
-    "20,21": {
+    "20,22": {
       "NameUsedInJavaScript": "申請者"
     },
-    "20,25": {
+    "20,26": {
       "NameUsedInJavaScript": "評価者",
       "BindingInfo": {
         "TableName": "YBS褒賞",
@@ -484,7 +484,7 @@
         "GUID": "f66e52ba-22bc-4dc8-8b91-1436dcc8b9e7"
       }
     },
-    "20,29": {
+    "20,30": {
       "NameUsedInJavaScript": "評価日",
       "BindingInfo": {
         "TableName": "YBS褒賞",
@@ -492,7 +492,7 @@
         "GUID": "7deec7b4-d05e-451c-8f35-dbf30fe8358d"
       }
     },
-    "20,32": {
+    "20,33": {
       "NameUsedInJavaScript": "分類",
       "BindingInfo": {
         "TableName": "YBS褒賞",
@@ -500,7 +500,7 @@
         "GUID": "c6f1d529-e520-4afa-80db-23f98b4ac2c8"
       }
     },
-    "20,34": {
+    "20,35": {
       "NameUsedInJavaScript": "等級",
       "BindingInfo": {
         "TableName": "YBS褒賞",
@@ -508,7 +508,7 @@
         "GUID": "80f275a8-cb24-4847-a134-29ac86e2db6d"
       }
     },
-    "20,37": {
+    "20,38": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -535,7 +535,7 @@
                     "MessageFormula": "申請済みのため、再評価できません。"
                   }
                 ],
-                "ID": "c55b1ec6-ccef-4e5a-b8b4-b1ef1cd0f149"
+                "ID": "d49f6c20-50e0-4412-ac0c-de3422d74eb0"
               },
               {
                 "CommandList": [
@@ -565,7 +565,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "2d677982-ed30-42fa-b016-e0fd49da20d8"
+                "ID": "a6d9497d-6fed-4756-9dd6-954b753bd800"
               }
             ]
           }
@@ -630,6 +630,12 @@
       },
       {
         "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
       },
       {
         "Background": 4,
@@ -730,24 +736,30 @@
       "19,7": 6,
       "19,9": 6,
       "19,13": 6,
-      "19,15": 6,
-      "19,21": 6,
-      "19,25": 7,
-      "19,29": 7,
-      "19,32": 7,
-      "19,34": 7,
-      "19,37": 6,
-      "20,2": 8,
+      "19,15": 7,
+      "19,16": 5,
+      "19,17": 5,
+      "19,18": 5,
+      "19,19": 5,
+      "19,20": 5,
+      "19,21": 5,
+      "19,22": 6,
+      "19,26": 8,
+      "19,30": 8,
+      "19,33": 8,
+      "19,35": 8,
+      "19,38": 6,
+      "20,2": 9,
       "20,7": 6,
       "20,9": 6,
       "20,13": 6,
       "20,15": 6,
-      "20,21": 6,
-      "20,25": 6,
-      "20,29": 6,
-      "20,32": 6,
-      "20,34": 6,
-      "20,37": 6,
+      "20,22": 6,
+      "20,26": 6,
+      "20,30": 6,
+      "20,33": 6,
+      "20,35": 6,
+      "20,38": 6,
       "20,49": 0,
       "20,50": 0,
       "20,51": 0,
@@ -922,20 +934,20 @@
     "20,9,1,4",
     "19,13,1,2",
     "20,13,1,2",
-    "19,15,1,6",
-    "20,15,1,6",
-    "19,21,1,4",
-    "20,21,1,4",
-    "19,25,1,4",
-    "20,25,1,4",
-    "19,29,1,3",
-    "20,29,1,3",
-    "19,32,1,2",
-    "20,32,1,2",
-    "19,34,1,3",
-    "20,34,1,3",
-    "19,37,1,4",
-    "20,37,1,4"
+    "19,15,1,7",
+    "20,15,1,7",
+    "19,22,1,4",
+    "20,22,1,4",
+    "19,26,1,4",
+    "20,26,1,4",
+    "19,30,1,3",
+    "20,30,1,3",
+    "19,33,1,2",
+    "20,33,1,2",
+    "19,35,1,3",
+    "20,35,1,3",
+    "19,38,1,4",
+    "20,38,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -961,4 +973,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//6LLTgL7EYCIGgog2+Pa177Tp8Kdy40h4J1MZ7cXdeczK8j+BwgS/Ug3RFmTwZGz9tHYkRrMuwL+TgJqiZTJ40VSyGFaxDBZ6vkFKiwaf7qE008LoozcyDRgevn5JtRaJE+8StxGiVYLBSnjllns6RCvB12KeGHCOiNiSWrkj/2l4+3GX8z8mdGdvN+qJC0hdk6Zqs5nXbM6piwQkR8pUM4edM5QlE62WxigxfK2wTfOX2zBx+V3hqHodz01PzKNpLpPn7ui9ZXk+bEoxoUDQgu6PDrfFj/LKV+1LTP5CaxZ6TksFMJQ6EFE9y4kJLS1e4qGmMSGBUxgabA5zGX8AzEi6rWRmef88gRkkxVhsGeRT55OQxM8Kz2KmqdAYyglvqjVD3yYm33TGnAUe/nAQ5rkXgXIM3QPd7K/j3tYO7DWsu0lB9eRq+epUep4w6it8GoYM6gGrGt3LTexps3zgzfwXzCc84LtIkvWII0W6KTOUYDab/bxUep7jz3GKeh90uilzcyOULSy9qKF1SwiRF2BFBnBN97iv3iL08zMbKpExL3M96Xl3GOI2/dbgqI7bWhQLyFAQZALa8NpjO9WooVraKZVGXe0a42FMR8sZam6fUMVwqfeVV99T/mBRhcjXV/2RH2JAi4g4jNtbiOwrawQlyej7GB7IzMI25A4K2XE40EVNKCU1ajzSHTaTRUKvC0Oeno/58w6/YH6G0zZo9tumk2T9ITk6eTibeaQ8eNOf/AOApu1rNIjubaG6+sJCRO+wziLvSWDRB9O6tY46M4QNfydWOVoh2va2E0V/eFtFjsVihCFFf7e0Qs8n2H73kRBR//g7+gLpzSGhdQ/BT6hHmzSVvGhValkM8DRYmgw95HGLKuvVLBZ0xj5HuhOui7yQtzNGEPMKheAOYQjHfw==|920
+}//ei8Rk0dJA2XWfIBi4dJ4djXyFNrX6xVYz2GtAR424rViuv6DxUtzaVuF7XKMZwWCC+Wm/KyMbuCu6/hMxCUfL2Cv7itrJvMgHVIqWfYeNshpf6A3Nloe48cYDoCqfmOoOiVa0lc7IaCDI3D3fakYFxzHUj37bUg0aj/wRqZI8jQiJXansYlOEqzHZSNdhUvErMJ7l3PuvTpyjThW0GL9QYiAu0yzEVV82+zWMACmsOyWbtCAPUOB7bNbpC0GmY3gJ+EqHfMp0YqCOjnbBU1OabQ8wA1TN4P1mAMIbvmWGLjbvTBTp3GEhT1NMqSjcReNQWMvPhTcUAueu/Ix3Kk5XDKYnA6d3VkjNjt6nG91FeCOQnNhLzCXCIe/Qu/9xOEtH9jEgWxMxJZJEwq3i8Lmv9vO024jGzi/RETm6ooSqa3xzdVTw3AsuUel2eMCKmTDW0kiEyvGuUP9r0vp5pL9gLz9T4QUexLthsA8Wh3FU9im8Y1f75ei2jGJkS+3cJWhIhcSTcRqpPqlPCQaMlWaq7wnpuymhzP6mkbikjkW4zRMpKqhRkELqq4XoNMCgl4FJkUuklcM2yYUrRqv73K9ilHBNCTXmuaDCnTRK+REqJ171KyN8MY28ZouYIpgu1oYmo65nIQWm0NTm3u7kbIfvpWm3cO9BGrwn9PVi1pjdTnA/Z9739/K+rEtRS9hsvuGmZAVbNc+R169rwo/GMr0kcdSbGBHq8fY7CDnw71mv3z5Fac4b8AvtSwPk0bbYKbKT2wyexTUChulVtgmwa06QAIIQz6JdXzRii/eGH/rWOH16dCOkj8lGW+zyE48CP1GyJes4f+6cE9EM2UXLzXKlawu7WySidUWciu0TBxfxgOCD6fWbYdggvIhJKOn5BhHarZmRnPLWZ1h1JDHgY01ag==|920

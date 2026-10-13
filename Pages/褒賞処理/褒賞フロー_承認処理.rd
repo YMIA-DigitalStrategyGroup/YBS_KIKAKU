@@ -1,7 +1,7 @@
 {
   "PageType": 0,
   "ColumnCount": 60,
-  "RowCount": 67,
+  "RowCount": 68,
   "Formulas": {
     "4,5": "ODATA(\"YBS分類コード?$select=分類名称&$filter=分類コード eq \"&IF(ISBLANK(AR5),\"null\",\"'\"&AR5&\"'\"))",
     "4,24": "ODATA(\"YBS規格文書?$select=現行_旧版&$filter=YBSコード eq \"&IF(ISBLANK(F7),\"null\",\"'\"&F7&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J7),\"null\",\"'\"&J7&\"'\"))",
