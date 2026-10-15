@@ -574,7 +574,17 @@
   },
   {
     "ModuleName": "PCPage/褒賞一覧_承認待ち",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME041351",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-10-15T14:45:37.4597937+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\褒賞処理\\褒賞一覧_承認待ち.json",
+      "Pages\\褒賞処理\\褒賞一覧_承認待ち.rd"
+    ]
   },
   {
     "ModuleName": "Table/YBS褒賞",
