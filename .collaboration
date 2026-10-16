@@ -566,7 +566,17 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧_褒賞",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-10-16T11:11:32.8814428+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\褒賞処理\\YBS一覧_褒賞.json",
+      "Pages\\褒賞処理\\YBS一覧_褒賞.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/褒賞_評価",
