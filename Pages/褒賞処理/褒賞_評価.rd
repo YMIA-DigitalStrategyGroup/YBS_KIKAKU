@@ -3,9 +3,9 @@
   "ColumnCount": 60,
   "RowCount": 64,
   "Formulas": {
-    "2,5": "ODATA(\"YBS分類コード?$select=分類名称&$filter=分類コード eq \"&IF(ISBLANK(AK17),\"null\",\"'\"&AK17&\"'\"))",
+    "2,6": "ODATA(\"YBS分類コード?$select=分類名称&$filter=分類コード eq \"&IF(ISBLANK(AK17),\"null\",\"'\"&AK17&\"'\"))",
     "2,24": "ODATA(\"YBS規格文書?$select=現行_旧版&$filter=YBSコード eq \"&IF(ISBLANK(F5),\"null\",\"'\"&F5&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J5),\"null\",\"'\"&J5&\"'\"))",
-    "3,5": "ODATA(\"YBS規格文書?$select=規格名称&$filter=YBSコード eq \"&IF(ISBLANK(F5),\"null\",\"'\"&F5&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J5),\"null\",\"'\"&J5&\"'\"))",
+    "3,6": "ODATA(\"YBS規格文書?$select=規格名称&$filter=YBSコード eq \"&IF(ISBLANK(F5),\"null\",\"'\"&F5&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J5),\"null\",\"'\"&J5&\"'\"))",
     "4,5": "ODATA(\"YBS規格文書?$select=YBSコード&$filter=ID eq \"&IF(ISBLANK(Y2),\"null\",Y2))",
     "4,9": "ODATA(\"YBS規格文書?$select=改正コード&$filter=ID eq \"&IF(ISBLANK(Y2),\"null\",Y2))",
     "6,10": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AK7),\"null\",\"'\"&AK7&\"'\"))",
