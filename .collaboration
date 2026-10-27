@@ -153,7 +153,20 @@
   },
   {
     "ModuleName": "Theme",
-    "ModuleType": 9
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-10-27T13:02:18.3465093+09:00",
+    "ModuleType": 9,
+    "ToRemoveFiles": [
+      "Theme\\CellTypeStyles",
+      "Theme\\ListViewStyles",
+      "Theme\\StyleDefaultNames",
+      "Theme\\ThemeConfig",
+      "Reports\\DefaultTheme.rdlx-theme"
+    ]
   },
   {
     "ModuleName": "image/組み込み画像",
@@ -525,6 +538,16 @@
   },
   {
     "ModuleName": "PCPage/褒賞フロー_承認処理",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-10-27T13:02:18.3522813+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\褒賞処理\\褒賞フロー_承認処理.json",
+      "Pages\\褒賞処理\\褒賞フロー_承認処理.rd"
+    ]
   }
 ]
