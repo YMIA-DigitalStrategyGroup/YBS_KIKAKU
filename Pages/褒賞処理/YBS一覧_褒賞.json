@@ -7,9 +7,9 @@
   },
   "Values": {
     "0,1": "%PageTitle%",
-    "0,36": "戻る",
     "1,1": "テーブル：YBS一覧",
     "1,11": "*最終：「承認済み」のみ表示",
+    "1,49": "戻る",
     "2,2": "事務局が登録処理します。",
     "3,3": "褒賞対象外はどうするか：一時的、または限定的な技術、ノウハウで、伝承の必要性が低い規格は適用外",
     "4,11": "例えば、その商品固有の規格であって、その商品が生産中止となった場合に使用できなくなる規格。",
@@ -38,7 +38,17 @@
     "23,14": "ODATA(\"YBS規格文書?$select=規格名称&$filter=ID eq \"&IF(ISBLANK(G24),\"null\",G24))"
   },
   "AttachInfos": {
-    "0,36": {
+    "1,20": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "1,49": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -49,16 +59,6 @@
         ],
         "Text": "戻る",
         "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
-    "1,20": {
-      "CellType": {
-        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
-        "CellCustomValue": "%CurrentUser%",
-        "ShowCircleUserPicture": true,
-        "NavigateSettingWhenLogout": {
-          "NavigateWhenLogoutMode": 1
-        }
       }
     },
     "5,1": {
@@ -255,7 +255,7 @@
                     "MessageFormula": "すでに登録されています。"
                   }
                 ],
-                "ID": "1a1190a3-e69c-4e1e-922f-2caa50bff234"
+                "ID": "ae72a2d1-fe2d-4587-88d6-1e3101637abd"
               },
               {
                 "CommandList": [
@@ -280,7 +280,7 @@
                     ]
                   }
                 ],
-                "ID": "cb7d3739-7443-4453-ad15-de04cf64fbd2"
+                "ID": "428755bc-4db4-4710-a231-fe64fa7b9768"
               }
             ]
           }
@@ -535,7 +535,7 @@
                     "MessageFormula": "申請済みのため、再評価できません。"
                   }
                 ],
-                "ID": "5013b929-6c74-4941-a793-7c4e1ee751f0"
+                "ID": "5f350d4e-58e2-4f79-989e-6b2fabd004f7"
               },
               {
                 "CommandList": [
@@ -565,7 +565,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "c485eb01-1357-4b66-b2b1-41ca747d79f5"
+                "ID": "cff723e0-e1b9-47fa-9fe0-1800114a9ca1"
               }
             ]
           }
@@ -712,7 +712,15 @@
       "0,6": 0,
       "0,7": 0,
       "1,11": 1,
+      "1,49": 0,
+      "1,50": 0,
+      "1,51": 0,
+      "1,52": 0,
       "2,11": 2,
+      "2,49": 0,
+      "2,50": 0,
+      "2,51": 0,
+      "2,52": 0,
       "3,3": 3,
       "3,11": 2,
       "4,3": 4,
@@ -962,7 +970,6 @@
   },
   "Spans": [
     "0,1,1,7",
-    "0,36,2,4",
     "1,20,1,6",
     "5,49,2,3",
     "8,49,1,3",
@@ -1020,10 +1027,12 @@
     "23,35,1,3",
     "22,35,1,3",
     "23,38,1,4",
-    "22,38,1,4"
+    "22,38,1,4",
+    "1,49,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "YBSメニュー",
     "Title": "YBS褒賞処理",
     "PermissionData": {
       "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
@@ -1046,4 +1055,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//leZJkhVFcdC1BAR6hhq69YXaFtDoOxPZZdf+bN8LtF5V9b4ACqj5vjQ25EPNYXhLnUvP06ol0VYJBIbDkZSK8o2IKJ7VqKq4u28qojWLe10P+/+IcBMajcoCpSkrKoL675NuDQKYPARTb8OCXMQTT9x9OFTDM1boe2P3HW07Pia/SCpWfmzT5/EUe7rHYFnfQeHxl5aBa2kssoHb0JjhWYvnmj1DkW88toDafrZG8BVzLfhzhY2MYKf6QWFzVwzsJBaiGPLChKdO/+GAxN7u+0D+O9JMqYqMa7Gop+s/+Y9IB0klNNZ0MnU5QaqXF1rb8kflpmJq3jyH8koRnMUs9enxyn5yFX/7VSG/p9fD5RYc8S0+HMnc7QaDnM2q7hSy2aaAlqemAlVFG/tFuYeBPCNbkCgdtOftZOkUQogUvMEHM4ivAWBXU3+0lT71mEX1g47U+f3/YwVE9bEdrQEAxc0IrEDQpkhd6S0GdlZ2Th/BRZ1fsnfgt66JbGRs1vDKEKGGRvCjRxWaXiFkyYrmuEiIuD/N6NCTeTYtuUyqvdt9elaEUpD+KbetirT+uPEjOKVXjoNCzBAhfOxGbazIaZEvj2uWzUcP8SRl+1OB2CkDRcQRVefnoFwIOWEv8YokxrRjdFfbcGS/t4JjwM/fygsotvDEGIC6OOSf1rtuwsPhFiEOK+/lND1PYw1coQovsiLbxJCGp01jgi8iyH5SKoVst4+j0yFFpXL3OS+XgfZ47sNFIvZW7X74Upz1gfnnEW8kyW3ffCoOIMi3qJUVctRQGHLnFVtywHSPZhNZKQ3bsra312+z7G9pznVNpah47Fj334hNk09vm7xfibIbF8E2Q+kjm+z5DznljDQ2K34MCD1gok1IDdSZn9CfuQzfUgBwau8k6B/iDY/nAMfExA==|920
+}//rW/WKBEzELUU953jtVyYgB8srSFNOEMSffzo9E6q1TF25fnrogFn4VaMFRJ+UWmiMqqMsA0MuWnlR3bq7uoOvBIVGoFfr2OTevM/LOrIjxr5KVnBM7riERetw/0ifKXeE3+o8JLiDZlaEOOK0+rbWGI7yAVYeh/KYp7GMPS2lvSW2n5Y8NRUBaNxKFGwlH8sjI0ndcQQ5Elthw3ryt4FD5NQLINNRgVJgrOI9I4/iIOQ4XTGfjWor7hA/p8U8BpA8xgUK5IOOnP7CaQVkspIOQXrb+yQz6FgGWltGJXo5PLSkrro28t7G+fIK5OlxX+VDK6mZu3DTe1HnmxTcXM+bZiyEZomRi9+CP5KTCdiBQyPb0Dl+mZaYcfFgxut8mKmSIcqzHO8qHB6WwplUMIvXfQW4nDyiBaah00Uol/AX1qSpfRk5ElMzZrKlBya0e65YLSL7JHVqvAIKL4BOrwszeTyyY8wrZfSTvSiIZF+f2yT4f2jLfvdPiPPd4mE4KfmMoy7FiDpykW/q1Yhr/KuHYlXH9Ija7FaauaPiaTzwNhS1oxgemWHwrb6sz4d1lEzygn57GR3592E+5RRVG3XCg9uuS56MPz0rm/X52BAxoF+xTJok+DuG/x2wLTnzBwPql3/r3QneoDII1wbkxGlM2lD07+G/ydKMI1HxN3RfD1fUHugFR+hG3ruHVAkICW8TnogzTmQbSyZWv6ciLPjHIio+/tZX7T3u+HbXzoXBrLL5mRrJqa185QxmXygjj2XlC6sARiMsZkLPo7bxLzuRYqG59go6IbR4yVfOWQOLZh/ji6yB8LB5UQ23lFRcvlFQqxnNfIg2bHHB7bWzGajwRMQEldvbmHPDj2WXi3S6g/tPmXxi0ILrWTzaAX8o5B23kQNED+0Xfxi99P4Qy8zEw==|920

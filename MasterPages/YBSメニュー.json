@@ -151,6 +151,56 @@
             ]
           },
           {
+            "Value": "褒賞処理",
+            "Text": "褒賞処理",
+            "IconPath": "Application/013_add_folder_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "YBS管理者"
+            ],
+            "SubItems": [
+              {
+                "Value": "褒賞評価一覧",
+                "Text": "褒賞評価一覧",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "YBS一覧_褒賞",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "褒賞承認待ち一覧",
+                "Text": "褒賞承認待ち一覧",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "褒賞一覧_承認待ち",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
             "Value": "管理者用",
             "Text": "管理者用",
             "IconPath": "Navigation/183_table_2.svg",
@@ -250,53 +300,6 @@
                 ],
                 "CanVisitRoleList": [
                   "FGC_Anonymous"
-                ]
-              },
-              {
-                "Value": "褒賞処理",
-                "Text": "褒賞処理",
-                "SelectedIconColor": "Background 1",
-                "SelectedIconColorUseItemColor": true,
-                "IconColorUseItemColor": true,
-                "IsOldMenuPath": false,
-                "CanVisitRoleList": [
-                  "FGC_Anonymous"
-                ],
-                "SubItems": [
-                  {
-                    "Value": "褒賞評価一覧",
-                    "Text": "褒賞評価一覧",
-                    "SelectedIconColor": "Background 1",
-                    "SelectedIconColorUseItemColor": true,
-                    "IconColorUseItemColor": true,
-                    "IsOldMenuPath": false,
-                    "CommandList": [
-                      {
-                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "YBS一覧_褒賞"
-                      }
-                    ],
-                    "CanVisitRoleList": [
-                      "FGC_Anonymous"
-                    ]
-                  },
-                  {
-                    "Value": "褒賞承認待ち一覧",
-                    "Text": "褒賞承認待ち一覧",
-                    "SelectedIconColor": "Background 1",
-                    "SelectedIconColorUseItemColor": true,
-                    "IconColorUseItemColor": true,
-                    "IsOldMenuPath": false,
-                    "CommandList": [
-                      {
-                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                        "PageName": "褒賞一覧_承認待ち"
-                      }
-                    ],
-                    "CanVisitRoleList": [
-                      "FGC_Anonymous"
-                    ]
-                  }
                 ]
               },
               {
@@ -467,4 +470,4 @@
       "Size": "1280,104"
     }
   ]
-}//NdWFQqQo57eTpEuoCKi2FV+JEvQGdi3Tfq7jOF2azCReIlIC2pDAloXRGCdGr4Jkbbb7ghZZYgj8GQmnm4KBZDJaaAYEHvZDZBIrQOivVEITSuz/V2jca4cnXRph4OloMOVm0UnyDvu3cAL0vMRxpmOiRm6sWD4AAUKluix4R2PL/V0Gk+BstwXtW7IwdhptVxpgUoxMHO5ajavOK1af1XKsGR47cDDwUVSsjU/wIJAmk8BKf2tamTZypOHbCm2gzZFGGN86kRp1P7WvBpqtRZC629uhNWanwYDsAg04TLgPeI/WLWZoWPlD8WqUr1ExAK0rsiJaVh/UrTs2miDEmzCLpovwuFdH50OhycrmuvZHs4lhr2hV1iDmOHzhMl1fn0aZ44oRF6hlIglFCiBGkfbBK0RTof3xwUQCYhJAXGZezOV9bMG7j1DenL1rmWc3aL/z6l5bqK9JRVrcmP5qLqv72w5oa9J/Ze9rk68WPRePLkrb+17SLKWnO7xpMNL8OtYEiXsH2CIv3JT5j1sLkzj4sKVJghOTVHS4kdOQPpfONWYpEDvk+uh/gauDlLgemBe6WUm7dDsut6bQGZF2Z95Bu/TtDHKC6/7u4kE66maEnuy8d65wHe0r07w8roqKu5n6GKDQ2NnM0w5bdZKml1Rnq4xYej/HM2aE3OhRnYM3hj72yKtrfpCpoRJt2kqP0nOWf0agE0c7zjZpdY3aWkipYwy0n+lgOvou9ppK2v3wgM8CFrmfQNWnJA9nVK6hwE/Ttzhc6WFlcMJoD3xweGIol/O+6eul/t8nB2C3PGoeuI2l//UN1us6snmDfXqcZYkt6n8ZHkggEID5+pXYlMkx+kW6wB1VC14Ad4LsJrz5CKssQIpZGThPizBUKhoSrtj4Ix2icC+ANx+gIntyoA==|920
+}//5f7uEMZzBnN2h18XoZm2Ldw9ko6zIjzL753S0lgco3MOynHQL1SP8JHAzzqUiZOQiMX1jJYDjsIB0mqLSDJpv+0nDaFjH1oGM23n4Ehf4knb+umyHWl+L1ZgzH5lHLZXebByY5AxQQc8AhQZkTg95TMGFOWruNnxArMSF2G5BlHcAGkKEcYX1eciAWuiIaSmBTm5nBQRcWw3zTYbTdVRfxgqbLkIbhgnzdx/Db4Ln2qwOTPSJV7ofRJm5xlDhp1+TPak+X/Q8PwsgOBI3xwPxyerJshWsNHOpEwspYNo9B+6ZSa5+5Oz6GTJk7vqwtFfvHAxnv2QM9FLsaHh+R8OsLpL70GL081miewIvjHvQ+p9QfTQI+W1ZaRAUP37xNbAEpJdzEFjvsyuqo7TSbtkmleoWYFQcJu9hdKTxmXuS9ggk0WQtDGorjTljP/oUCGnjeztY3DKztPo++uGvgQ6v57tyCnAH84XJJXdshQjmyZWZCr2VXX+FSs9/blFnk/jd6dj672qauJd/xaYrU7kK+/rjz/s5tkHMCb/MxD4Uoi2s2XiAJXggr7xiKhGVVMHy03iTfnaWtmcNTpPrXJOr4uoySq8F/XHkzw2y8jaTgHvQdE4d8xeRl1ZDqz6fPoaYoL/tpvXSeeFJeCrJ3w7jKGYLmJvvCAqx55FgOVp8gdbFjfEg9CfI1iTsSJuKWolhn2GkeKbvpWUHxC9Waxj/KQ1nLI0bDT3IO35j3geGN0rcZ5XtjEKk8CODCH5l4XLVQZqYnve/PcH8bMdvQa7ijIFMISZEDeidWHZdV2f1pZjdnlnqin/YUfQoQqbk4ZonAKDBFYOpt7d+I/8PcRTt2qj8EosOS23+TIO+qqb+t6yIIwUjqSWrvz4T77620yuscOWaLxTwWh8FkCIkf6+sg==|920

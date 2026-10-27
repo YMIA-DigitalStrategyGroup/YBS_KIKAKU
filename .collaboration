@@ -141,17 +141,7 @@
   },
   {
     "ModuleName": "MasterPCPage/YBSメニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-10-27T13:45:01.3721983+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\YBSメニュー.json",
-      "MasterPages\\YBSメニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -507,17 +497,7 @@
   },
   {
     "ModuleName": "PCPage/YBS一覧_褒賞",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-10-27T13:46:35.7330459+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\褒賞処理\\YBS一覧_褒賞.json",
-      "Pages\\褒賞処理\\YBS一覧_褒賞.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/褒賞_評価",
@@ -525,17 +505,7 @@
   },
   {
     "ModuleName": "PCPage/褒賞一覧_承認待ち",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-10-27T13:46:49.6547891+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\褒賞処理\\褒賞一覧_承認待ち.json",
-      "Pages\\褒賞処理\\褒賞一覧_承認待ち.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Table/YBS褒賞",
