@@ -1,13 +1,14 @@
 {
   "Rows": {
-    "Count": 43
+    "Count": 35
   },
   "Cols": {
     "Count": 37
   },
   "Values": {
     "1,1": "＜分類コードマスタメンテ＞",
-    "40,2": "更新"
+    "32,2": "更新",
+    "32,13": "入力をクリア\r\n（再読み込み）"
   },
   "AttachInfos": {
     "2,1": {
@@ -16,7 +17,7 @@
         "TableName": "YBS分類コード",
         "RowIndex": 2,
         "ColumnIndex": 1,
-        "RowCount": 37,
+        "RowCount": 29,
         "ColumnCount": 35,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
@@ -125,7 +126,7 @@
         }
       }
     },
-    "40,2": {
+    "32,2": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -173,7 +174,7 @@
                     "MessageFormula": "分類コードが重複しています。"
                   }
                 ],
-                "ID": "841267f4-102c-4522-bebf-591ae66a6298"
+                "ID": "2d80322e-0fda-415e-9b7b-ff480b40de39"
               },
               {
                 "CommandList": [
@@ -195,12 +196,12 @@
                             "UpdateType": 3
                           }
                         ],
-                        "ID": "29aea10b-1001-4a1c-98f4-e4f2c7a4711c"
+                        "ID": "14702e37-2c5b-4c82-bb6f-60a92f81f380"
                       }
                     ]
                   }
                 ],
-                "ID": "47abc0df-7da6-4f52-8f7c-2d485cfe6941"
+                "ID": "74335535-afdb-432f-9232-25bbbf50f41b"
               }
             ],
             "Disabled": true
@@ -223,12 +224,51 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "d5c092b8-2111-46b9-8a5f-9a983bd36470"
+                "ID": "8e2f3a2f-1df7-49bd-b095-4f4d0589c2db"
               }
             ]
           }
         ],
         "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "32,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "編集した内容を反映せずに、リストを再読み込みします。\r\n本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 6,
+                    "UpdateListviewCommandRunTimeMethodSetting": {
+                      "MethodName": "Reload",
+                      "ParameterValues": {
+                        "clearFilter": false,
+                        "clearSort": false,
+                        "clearRuntimeQueryConditions": false
+                      }
+                    }
+                  }
+                ],
+                "ID": "8a8c5fba-990b-424d-92b7-9ba55d683224"
+              }
+            ]
+          }
+        ],
+        "Text": "入力をクリア\r\n（再読み込み）",
         "TemplateKey": "_RS_Normal_Style2"
       }
     }
@@ -259,23 +299,34 @@
       "3,2": 2,
       "3,24": 1,
       "3,25": 1,
-      "3,26": 1
+      "3,26": 1,
+      "32,13": 1,
+      "32,14": 1,
+      "32,15": 1,
+      "32,16": 1,
+      "32,17": 1,
+      "33,13": 1,
+      "33,14": 1,
+      "33,15": 1,
+      "33,16": 1,
+      "33,17": 1
     },
     "SheetStyle": {
       "FontFamily": 1
     }
   },
   "Spans": [
-    "40,2,2,5",
+    "32,2,2,5",
     "3,6,1,18",
     "2,6,1,18",
     "3,24,1,6",
     "2,24,1,6",
     "3,30,1,6",
     "2,30,1,6",
-    "4,1,35,35",
     "3,2,1,4",
-    "2,2,1,4"
+    "2,2,1,4",
+    "32,13,2,5",
+    "4,1,27,35"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -303,4 +354,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//OepL3Tjd5XEaeSUMBULF5mncy6bnZGKeNrfXC4FyTlKxp4+/vOMC298Q3sj8fgeEkWXgOZ93uyMGvREw80AfAtZphHUtVoxBvm4tbX3TAX0G8vPSgLFN5gBzYz1DYBo/P/LdHbu3HfXW/SVuj6X5IXGaUJuYpHsCIqD/WcgiMHR8SvNiQZHZl7pJJJ2h2iL88llD5RgzfFDvcpEbjT8QNHCTyXD3dOg4mTJdlwY6yw1ncHvaF8/duVANwEPgYKOe6Beok/auO6BqbBpBm46I05LcX0h2LPaTWeObXnUKJ/nB8Wr1/0Nl3DNB0FzHH+1gG+UCAP/GmWZwLV/Y9OKjsZTahExhTX88cQhxmm3WX4/socZ8TZRd6L0wAkGJ0wxcdQaliilTOh7vAv8uJlX3nGlTEeUapaz2utAilXi0bGzfY0XfBHPol3GBSZ4L7Uo7WDch8mKv6awWrmohITbHpnnCoCT+TmH+MuUmAjRIA2IhF0gglwQKH17gMnXjXsR3hjgQfiK+H6xB2jT2Eh2ARoU+jESTvtkT67RfGfZAhmhdsViAm8IPLolwzKg6O+WItIv0KkdtMHXYsDB4S2Yl2TZlyYs6KefjPALUvOtsZ+HHaEWydGNEMGV1mqWl7Bbpgw8ml4qE9TCRTp7wS8EV/9tKu/LsRNDRpGb2fR3HpIIZ/pgsDUwXONL6Z0W0a9WAwX8Hby+/OblL+Xrd5S1qHhmAmlKdshKY3u2XagQAqHJFKlIT1b5nixZdJMtHRRXowu0/T0dP82yO9Gih0FBCR8Jdcpm6q5PopUX9s5HMoa0ikzFHKJpCMUwol8Lhboe4CFqBRF0KLigrg7slYKedZipyOPOLkbs5ApV4h1vh+cQdaZmJGG5B1fkAO/Tx5OmO/F0SEOmlb+JbPrGhZ0TBxg==|920
+}//+xGpglogKmlOZWIaS3iUFMrtqmB6OTPe5YzoUWFMG2dtpIUb6RXRKhwcnCElMbExVUpz+tV5Rb6HWadZndRz8N6ujz2TdRT5jXcKA97pHKdYW3FhFxftMqSvV+B+xXWaLcDwG4J1u+JPS1MU40U6GJioyofmxIboE7iRh8cOuQi2WgWhNSBmZDxNtcPF/2bdvopiXVaaBhkY0DUCa57iTI12pWo+sJzO3idCRRZlxceixuuuWMwuWIbno+YTSen7RP92LveCN1d4uyDK9abTHh1/JwzvQK8r+OO14Rbj9z0/Vm5B5nkFnSDyNiLpmxyVr4cCL0In83lvx7JjA1cClIiEx1Nf36yUdUFo0Mc8nZ3eQ6t2hJ7PIwIZKbyGnHvijExAn62j8zBpI5Fh+OgqMyOfce+0iJjvTc3ZPPD6XPqAJzfkvYwAcbwH9ZHRn9a68TQ/FSxNU9z0VE9cHdFbMxifys8PENPLit8RN1ICDvy/fQ9oyJT6VywVNQrMiKfpn7GsyhTZO/vbYQvSlQrQ+q17go9ILqdr0rI451pcbyJL2kfJ4GYebDJGvLHzy1P1QrDmVwY2FOjnBYjITsuw0bCYUCKIoi6CAaXMNfnbZ7iv0tzTmZea0EU5SD/jhdVXYrfUUcP0DpI8oJBXm+VE2bDHlL8CdkHRx4UVTPqZEqH01dy/snheRobzfD+luBSdM2R6MsE0wIgD29O4FxD7vK1UWcaI4ftGZ9I6Xlmd3aVVIXJM5fNg2FXveUXNCTWZ43FO7cKLvkaZGAqgqolsACqUIEq28WOc/ZD/P49aIfzY4D/vxKpaMUuN6fP9NaAg3/sepiRHY++xgbgu5249mKVXalWKBQX78mBJZrvlLP2TC9aZKPkd5J7LGrp6ZdvPMz2dqTsJxsxseZxmPff8OA==|920

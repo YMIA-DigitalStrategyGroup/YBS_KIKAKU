@@ -1,10 +1,10 @@
 {
   "Rows": {
     "InLogicalVisibleIndexes": [
-      42,
-      43
+      38,
+      39
     ],
-    "Count": 45
+    "Count": 41
   },
   "Cols": {
     "Count": 47
@@ -13,8 +13,9 @@
     "1,1": "＜細分化分類コードマスタ＞",
     "2,7": "分類名称（自動）",
     "2,41": "結合コード（自動）",
-    "40,2": "更新",
-    "42,15": "Excelインポート"
+    "36,2": "更新",
+    "36,15": "入力をクリア\r\n（再読み込み）",
+    "38,15": "Excelインポート"
   },
   "Formulas": {
     "3,41": "C4&W4"
@@ -26,7 +27,7 @@
         "TableName": "YBS細分化コード",
         "RowIndex": 2,
         "ColumnIndex": 1,
-        "RowCount": 37,
+        "RowCount": 33,
         "ColumnCount": 45,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
@@ -62,7 +63,7 @@
       "BindingInfo": {
         "TableName": "YBS細分化コード",
         "ColumnName": "分類コード2",
-        "GUID": "2847e3e1-1f76-4e6c-8639-b8654560ca27"
+        "GUID": "53bfa3c7-fd90-41d8-b9c1-bf88e5cd6249"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -166,7 +167,7 @@
         "GUID": "755fda5e-478e-437d-89ba-68afb7793176"
       }
     },
-    "40,2": {
+    "36,2": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -188,7 +189,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "2cd3f289-2bd3-4dac-b501-88d3f09d3bcf"
+                "ID": "59bb09bc-f506-422c-aa80-d8a29ee41a6c"
               }
             ]
           }
@@ -197,7 +198,46 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "42,15": {
+    "36,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "編集した内容を反映せずに、リストを再読み込みします。\r\n本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 6,
+                    "UpdateListviewCommandRunTimeMethodSetting": {
+                      "MethodName": "Reload",
+                      "ParameterValues": {
+                        "clearFilter": false,
+                        "clearSort": false,
+                        "clearRuntimeQueryConditions": false
+                      }
+                    }
+                  }
+                ],
+                "ID": "0c5eb331-d409-4a03-bc37-b5b31f6cbca9"
+              }
+            ]
+          }
+        ],
+        "Text": "入力をクリア\r\n（再読み込み）",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "38,15": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -287,29 +327,38 @@
       "3,22": 0,
       "3,37": 3,
       "3,41": 3,
-      "40,2": 3,
-      "40,3": 3,
-      "40,4": 3,
-      "40,5": 3,
-      "40,6": 3,
-      "40,7": 3,
-      "40,8": 3,
-      "41,2": 3,
-      "41,3": 3,
-      "41,4": 3,
-      "41,5": 3,
-      "41,6": 3,
-      "41,7": 3,
-      "41,8": 3
+      "36,2": 3,
+      "36,3": 3,
+      "36,4": 3,
+      "36,5": 3,
+      "36,6": 3,
+      "36,7": 3,
+      "36,8": 3,
+      "36,15": 3,
+      "36,16": 3,
+      "36,17": 3,
+      "36,18": 3,
+      "36,19": 3,
+      "37,2": 3,
+      "37,3": 3,
+      "37,4": 3,
+      "37,5": 3,
+      "37,6": 3,
+      "37,7": 3,
+      "37,8": 3,
+      "37,15": 3,
+      "37,16": 3,
+      "37,17": 3,
+      "37,18": 3,
+      "37,19": 3
     },
     "SheetStyle": {
       "FontFamily": 1
     }
   },
   "Spans": [
-    "42,15,2,7",
-    "40,2,2,7",
-    "4,1,35,45",
+    "38,15,2,7",
+    "36,2,2,7",
     "3,2,1,5",
     "2,2,1,5",
     "3,7,1,15",
@@ -321,7 +370,9 @@
     "2,41,1,3",
     "3,41,1,3",
     "3,37,1,4",
-    "2,37,1,4"
+    "2,37,1,4",
+    "36,15,2,5",
+    "4,1,31,45"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -347,4 +398,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//SisGGeUV90kaLbKqsQA7pJU4AXB9xhR5bMc3zvxzUhtjFjgn5+34T2mGlCzh/Bnv+tqx78ILWewviax6/XaDldt9Yep3de7ynHrHg8eNti7EtBoNgfaOhGtKJvS+twtulbJk7Zl1tQZQiOIbD9sfLk4DCCOTWETsiNZkh1ThNU9q8uxRxbBW1uW5oFIoL8jfsi8eHwlVEPYK4PI0uoZ7tyNMpCHE8Zhbk40XF49FfzZP5IyNkc2jFCazzRq01ToA1LpGb6RgmRla7wpkje3ijmbvaCtKneFrYKcbaolNpuHRcCEHOOFkppu5BmCHaNHdV6VNeB0hl4g1h/NSqgOBssOIWGcRPe09ehRXCUeqLn2+KN7VBMADTwJhR2Kvt6kfQ6GGgo7QHEbSCY22e8ut9lY8DlTAk+Gny9Y83pqSoyPTjG4gE9Lv1fvIGjIf7uZ0Y1KAf5RisHkwiuqk58EPtqHDLXW7TYtI36oobkio52GXYDy+osJJu0PhR9cpZnhf1ZcSjwe8BSh2JCxQvHi7Qe2jnFkX53ygHWBpVQEywxKzPtqDB4EC9Kd9Gc70xrNnxoBdFNyBe0H7sgLiJnF7whZvrdIkU5FMtm+tL7uy+G0/ysG7ExdGPweQB87wCmG/ivX3yQdnznLdqVeZYNpjAHQCW7gLNzHHmf1qwq6Cr1vrg62Br5xUQ851Zf7IjyifwJi2Ukfc+tePKYkvfK3k2PNaE+5OWK98oJNkHibbUpmidU5/fxgCel1r2rDgvNPP9CAHuKjKDJXw7qsJTzjxxjeFihJk3rLCv5Pm8VwVMJIFTuNM3CSjWsaKo2UTawlo83eH1xgVQHmK+R7HYm+/zINPOKV6Wnyg47dBQ3PsCVD4dlS4Er0394KmKXcCRWxNJs6UwNtutCK51IPxY5zFjg==|920
+}//evNT8lVtjWYmar0cZlPseSaBOGLB9JKE8hQdV8oty5EmIbDTbqLeZ8bzWeZnvuUSqYtVfdZwUGIedw6t8sIzsODlFlumrlcdTEg6aZ/uVZcl3wxLVb1xHklQxi/aLwBi7Sl1WfMYqL3h9xGYe00r4ZtAdscx3PCyjiI0GDYYiqTJz+rBES4NJzszD4uxnnD6oviqQ7bAHH1UV6XZ5oKFU5wVNee9ZAxMqq/Mf9kQ8VCcnzERjVReYlBAJ5ZmIdg5CN3OF7GhSpfP3E+XsiFR6XH/EhG9bBP/xffCPaA1L+ewcus9Ho8ecGpA5U5Kwfnzsdz5sEtg9lxclqM5kjXllp+pyeeEzdAV0NpoypsX/Q920blS2HgiFETcoOxa33mc4m65bQqdqvNL3ECvunV5lyn5ofTluzTR2gXievw6kbl/Hbrkn7KzA/U1I9CNQh7ocYxqnx01QC9mpGiMW36m3tHdxosxdxXLCxxSLZBponnPAmCA5m8JTEoUfXiscP5bQs8p8tTrwxqjKBh0j9HO33qo02MLFyzzlwoVNe/jnw2fFUtrqbHb+EGmBrB7TCdQFmds4oui9cntTwZwYFfNi1x+Z1Sz3Q+KZE8MBkQFXfPnublyx2JOBsPqFbQRNd+tzwgD+Zip+zX1C63Ug/a9gXKi40LhrQZUcqafq0CRJW9a1/ux0OqVQs73TyZEnncayIdjsYF+ME8z3RWh2W+aKwGIj684vbPvUDkelCZore4IGzbVaxXrS2OBRBcuRMtK20YCVR9EXq8g0pjPxXceQIn+I4g7po1HRnw2Zp4p+GMyDuQld3A+ANJvcCSyV9NNmPF+O4GCxVk038qObhYH9wPCu/Fa7+npwZvVyimEiwRfXSPOAdws8lPE7LkCBdRCNsd8qYyDDS6nvksKS8I05w==|920
