@@ -8,7 +8,7 @@
   "Values": {
     "0,1": "%PageTitle%",
     "2,2": "ＹＢＳ権限",
-    "3,6": "氏名",
+    "3,7": "氏名",
     "6,33": "権限を選択した後、",
     "7,33": "ユーザーを選択して更新してください。",
     "8,33": "更新",
@@ -26,7 +26,7 @@
         "RowIndex": 3,
         "ColumnIndex": 2,
         "RowCount": 10,
-        "ColumnCount": 29,
+        "ColumnCount": 30,
         "OrderByCondition": {
           "OrderByColumns": [
             {
@@ -88,7 +88,7 @@
         "IgnoreBlank": false
       }
     },
-    "4,6": {
+    "4,7": {
       "NameUsedInJavaScript": "氏名",
       "BindingInfo": {
         "TableName": "YBS権限マスタ",
@@ -96,7 +96,7 @@
         "GUID": "ac491de6-194a-4277-b157-4939c4c27f0b"
       }
     },
-    "4,11": {
+    "4,12": {
       "NameUsedInJavaScript": "アドレス",
       "BindingInfo": {
         "TableName": "YBS権限マスタ",
@@ -104,7 +104,7 @@
         "GUID": "cd9a95f7-6f57-4184-980e-77f7e1eeadc2"
       }
     },
-    "4,17": {
+    "4,18": {
       "NameUsedInJavaScript": "ユーザーID",
       "BindingInfo": {
         "TableName": "YBS権限マスタ",
@@ -112,15 +112,19 @@
         "GUID": "14fffa6f-a0b4-431d-a67d-9c88c5a27056"
       }
     },
-    "4,22": {
-      "NameUsedInJavaScript": "最終更新者",
+    "4,23": {
+      "NameUsedInJavaScript": "最終更新者_氏名",
       "BindingInfo": {
         "TableName": "YBS権限マスタ",
         "ColumnName": "FGC_LastModifier",
-        "GUID": "90067f74-c980-4d08-a494-3fd268bb3e74"
+        "GUID": "d2343800-b799-42e6-99d0-d2cd3d78f176",
+        "AttachType": {
+          "$type": "ForguncyDataAccess.UserColumnAttachObj, ForguncyDataAccess",
+          "UserColumnAttachType": 1
+        }
       }
     },
-    "4,26": {
+    "4,27": {
       "NameUsedInJavaScript": "最終更新日時",
       "BindingInfo": {
         "TableName": "YBS権限マスタ",
@@ -154,7 +158,7 @@
                     "MessageFormula": "「権限」を選択してください。"
                   }
                 ],
-                "ID": "9209cf1e-3af7-4f0a-abe8-04426dff5b9a"
+                "ID": "893a8c20-9437-41ef-9f09-75e97ac7dede"
               },
               {
                 "CommandList": [
@@ -164,7 +168,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "73609ba6-4c59-4530-836e-c40d84c46f14"
+                "ID": "abe35280-c183-4a57-8153-6c47654a7433"
               }
             ]
           }
@@ -227,7 +231,7 @@
                 },
                 "TargetCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS権限管理!G5"
+                  "SerializeProperty": "=YBS権限管理!H5"
                 }
               },
               {
@@ -237,7 +241,7 @@
                 },
                 "TargetCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS権限管理!L5"
+                  "SerializeProperty": "=YBS権限管理!M5"
                 }
               },
               {
@@ -247,7 +251,7 @@
                 },
                 "TargetCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=YBS権限管理!R5"
+                  "SerializeProperty": "=YBS権限管理!S5"
                 }
               }
             ],
@@ -363,30 +367,18 @@
       "3,3": 2,
       "3,4": 2,
       "3,5": 2,
-      "3,6": 1,
-      "3,7": 2,
-      "3,8": 2,
-      "3,9": 2,
-      "3,10": 2,
-      "3,11": 1,
-      "3,12": 2,
-      "3,13": 2,
-      "3,14": 2,
-      "3,15": 2,
-      "3,16": 2,
-      "3,17": 3,
-      "3,22": 3,
-      "3,26": 1,
-      "3,27": 2,
-      "3,28": 2,
-      "3,29": 2,
-      "3,30": 2,
+      "3,6": 2,
+      "3,7": 3,
+      "3,12": 3,
+      "3,18": 3,
+      "3,23": 3,
+      "3,27": 3,
       "4,2": 3,
-      "4,6": 3,
-      "4,11": 3,
-      "4,17": 3,
-      "4,22": 3,
-      "4,26": 3,
+      "4,7": 3,
+      "4,12": 3,
+      "4,18": 3,
+      "4,23": 3,
+      "4,27": 3,
       "6,33": 3,
       "6,34": 3,
       "6,35": 3,
@@ -459,23 +451,23 @@
     "19,14,1,4",
     "15,35,2,4",
     "8,33,2,4",
-    "5,2,8,29",
-    "4,2,1,4",
-    "3,2,1,4",
-    "4,6,1,5",
-    "3,6,1,5",
-    "4,11,1,6",
-    "3,11,1,6",
-    "4,17,1,5",
-    "3,17,1,5",
-    "4,22,1,4",
-    "3,22,1,4",
-    "4,26,1,5",
-    "3,26,1,5",
     "18,18,1,8",
     "19,18,1,8",
     "20,2,5,25",
-    "0,1,1,8"
+    "0,1,1,8",
+    "5,2,8,30",
+    "4,2,1,5",
+    "3,2,1,5",
+    "4,7,1,5",
+    "3,7,1,5",
+    "4,12,1,6",
+    "3,12,1,6",
+    "4,18,1,5",
+    "3,18,1,5",
+    "4,23,1,4",
+    "3,23,1,4",
+    "4,27,1,5",
+    "3,27,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -511,4 +503,4 @@
       "Size": "26.80940055847168,46.000099182128906"
     }
   ]
-}//0DcftrOYOZidMFUPx8J2s/FY+w/raQqxEfmIHu6V6E7MdZ4+a0TJy5amLPeqFY+RMMMeiq9kUHPQbpMjSkQGJdmJcORLmbgt1RP50BTBmGR3q/j5e2keVuZvOs6KqXWzCjRcPuXCnmDs5CrHsYBv7sRwaY83lOxlgkBCVAGA82PkV9s9azL9MlBhxP2L8i6u+rqIzG50YhQbsLEze8+Unt3C/uDQKc1yTJkEyIHam1NjA+WfjgMJeVMiezR2rX/We2+4cvuNX5kVoeEj8OT/LUi+VyMTaNpkHsp2d35ULknheSvVceuFOuvUG1HOf3yZJ6PEPX9ynFWPCehK1ac5esa4ba2dyg+7371OrNmu+WlmlI06eHv3G8BVxxfIecKQnL6KAjkuIpIBKG6NIsCpwKdja3Hjb7ZekVvzMxwwXv1wVtkL8Cl2gnPxWwh396V0CYOqRb5rKVHClbkOnDnN0iPwa2Q4MYV9bcS4RXBxFGBf5+A4bqhMfBockGcrw1NkgiLKm7xevZ2zWEYiDhiZXtMUIhbM2yfyIdnQ/JQZA0rqiNaHNDGbLtW0WKGEJnVvyv9HnREV9Bb8endnV3kmyP1N3di4z/X86WDtxyLX2se9/y07KXkgHrLgrZgpCSR0DYYkl2Z4B3yglcqWbaJbizRm9XXqRrwiiQufoOkSLka0Pl2Lj4XXSzhCGgS8itXPbHV/fiYJu71+xFQyGIdjZyLgqydcRgtO4obn2DolGQWTZnvR3pkuBUqYmIqZuIQjkhs48zp7Fk5IePbjS1x8pgKUJ2FTROmoPzHylMwpKMaSNbpeWMt29FtTdTqEnKxd3N4zweki/fW9VXYiKDZmrq4SiOKpK7lh+y1sA3JTIewQFq/SuPkmIYUn1hLtiIsrlel7Za28La1GwAIoj2EtUg==|920
+}//1h40UZeix3x6n3oxlq8ABXU0D+sL48S64oAThRbdjE5Z/UWwFbH5xu1vAGn76dmV74cLRczeK4vdh5x7fluIcoqOT+BpnGIh14IRWS9xyiTEQ928rgafG6MywjMm8abe/k2dbFHyuKKQSPTJ6JCMhJB66pWb5YBW6zeqYJ1N+syiywVDq99S12pLffJT+LiSk1/VMPavFj2iyF7IKgQAqHXCqTrdauBTMI1xWhVxupMrBJRFwjuLmyZDEK+wgWZsHwIcYiONmhCF8HHvhe66SIZxzSyzDSoFL56qrds/4Es7fy8CJRnxcuvVXd+EiVpaQB/mVuINGZCGIGUKv98QHLzvU3lXjmBemvi2WAoXaFB7pyZS3vo7sKTNnPj77R9xShp5lWWEPLS0tYHE0mrtHUCSZ7zUxc0vheoiqly6ujffRNzNd/MLOZPUR06XSm4wzPfwpUWDWZJ+bIi1jUcM1tH5RuQ9k0e1w9kUDj0fM7f7MAa+Uk/kVifSw++xYbi0iQizGe4cLYI+JWzpSmaTyaoh/lk2Ut8qWVv9b8H6OzNHnEuAS5amPatMq0+NL71e5Rm4sBd21WZExPvj6HKNknQBHT4nYGt0GmzppEOOlUSXnTr1hmsdJ33U12v6ZiqmESKhVT0bQImU9z0XK7IUDOhJvJPySXaYi+FXJ1e8L/Va1bGtYrooJIBFdtiOx08LGqE3xagOBVN4sdD3MbN9sRgmc5xR8XotH/ez6E+uMTSmvvnke2pBpkB70R6bQd6NzlZKij5a9Boibbh9cqSOhCpXigUiJSNuY/tplSXjtGeXvL0XQ9P01T3jY1QEnAdAH78w5gnB5UAIUIOm98VQ+tfhedzsksXX8fas5aP3Pi+6v0/QYg3Cgfp/f4vN39jOKvWk4K0uz+444v3ZdiTABw==|920

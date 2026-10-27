@@ -238,5 +238,13 @@
       ]
     }
   },
+  "Relations": [
+    {
+      "PrimaryTable": "ユーザー情報ビュー",
+      "PrimaryColumn": "ユーザー名",
+      "ForeignTable": "v_YBS規格文書_ワークフロー",
+      "ForeignColumn": "Who"
+    }
+  ],
   "Indexes": []
 }

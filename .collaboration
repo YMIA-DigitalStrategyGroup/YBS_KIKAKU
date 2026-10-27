@@ -273,16 +273,7 @@
   },
   {
     "ModuleName": "TableView/v_YBS規格文書_ワークフロー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-10-27T15:21:30.8237843+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\v_YBS規格文書_ワークフロー.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "PCPage/YBS一覧（一時保存_差戻",
@@ -346,17 +337,7 @@
   },
   {
     "ModuleName": "PCPage/YBS権限管理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-10-27T15:07:02.9652799+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS管理者\\YBS権限管理.json",
-      "Pages\\YBS管理者\\YBS権限管理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Table/YBS_審議会コメント",
