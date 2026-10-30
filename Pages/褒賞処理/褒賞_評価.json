@@ -322,7 +322,7 @@
                     ]
                   }
                 ],
-                "ID": "0aba494c-5b62-4a7c-ba82-a12110611558"
+                "ID": "ccfcf620-3ea9-45f1-a5d1-5c18af5626f9"
               },
               {
                 "Condition": {
@@ -375,7 +375,7 @@
                     ]
                   }
                 ],
-                "ID": "896670a5-6fa9-4f4e-a557-083b6af1111f"
+                "ID": "e0e070cf-0348-4416-8ec1-aa9509543185"
               },
               {
                 "CommandList": [
@@ -404,7 +404,7 @@
                     ]
                   }
                 ],
-                "ID": "392c3d1e-c005-487b-b3be-b50e9cffd115"
+                "ID": "29695dfb-5858-4ad5-ab08-c5f2f854e568"
               }
             ]
           }
@@ -698,7 +698,7 @@
                     "MessageFormula": "次のいずれかが未入力です。\r\n・評価者の選択\r\n・評価日の選択\r\n・褒賞分類及び評価\r\n　　褒賞分類を選択して、加算点を判定のうえ、「提出」をお願いします。"
                   }
                 ],
-                "ID": "abb9c4b7-7659-4c09-91f0-6ef2b08cf1f4"
+                "ID": "52bad971-05d1-4fe9-b87b-ec4857186ff3"
               },
               {
                 "CommandList": [
@@ -721,9 +721,12 @@
                   {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
                     "MessageFormula": "ワークフロー遷移「提出」しました。"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "569bbe1a-bf4a-4da4-ae66-686950420210"
+                "ID": "72d84730-722c-471d-ad1c-b7d45f0f76ed"
               }
             ]
           }
@@ -2558,4 +2561,4 @@
       "Size": "48.99999999999994,23"
     }
   ]
-}//qzqwKkeX2VvTzVQJKAsbOE97ebBFI8BKpfR5XSWZUYGawhrQ0Tp/Zv/RT23UIGZEWvB6SJMIm8RFX5eAyyA1zfvwrhZr/gVUXzXrabgVcylo1B0FlACVpjCa4ZS1HNMPH1VLUdpTthtNySMwAZd81P1Hg5CG2zh4RAfbKeOgH0Gwl/3RHWuwptwsKlHpirVjMgyK5Kq2VIlHza5I3AhQPj77UBiFtmbTGs2Oepx7+/x3lSIw0byTPU1kLdZZfoQpNuvZ4h516eMj8ahiJfO8LhPIpN2quXcdGf3HRGUYX0o1MlJmOhH8haqXOgrxMkkr5toOd6qL3vqV+8DCER+3Ls1DtssGabtmgYzYQ3ElxHWomR122kgPDGgG4C4gv3dYmXXzkdS64SAOlV9VP97UsqpiTwMMmLQWLWnO0BF232EoAAFP9uT2uTaNSjzqJtvqObNahCdIvG/sl7JpfpsnrBQS4PY2U2V/frYX+ZHidxMOw+7T5gVSS5pI1zzc/rJQBJyABEa+fhA007pAxlneJ50tdu3badJt1JsNa/km51Uv3wWyEX26bFtcr160RYLagNNsOkBZwqC3LDO8Z9LhQro8/Qr0G69JfOKtgKqsXL+/rM43RKimsF9A/Ui2q9WJNLNvlK2MBTSr6DtLTtvcZ/jCYqa9gAi0P1+1QszyZHlExG7Of+jX3sqBjIWsOtEvidMZfL0I3KwAi3qs+ARsyuWwDJIEq2ijm9Z+8/tPU8AnjZmrF8xY1nl9QWNq3uPHhoh2CVyyimTX/Uuu8X26Z6kZxXZoefHWnZpxTfl/JLvuiexCss11vhnhyZMShoQ5tme8Lc9UuwEUBCCCGUmok4BiURgPMUcDbq/vu20f4Hxch85YBg7Ihdbx9WTKvsBIhmM3EzdaEin5IvO3rPxdRQ==|920
+}//uErJJfzwOJFh+i8J6UmDBXjoz8cU/rYy0XXyOTh5fblAtZ8FVdEI29NSmspQxZrvF3NuzSrSByvv5EFCqujhqj3S5wElQ3m6jxHBS+4efB29xXdlwSB0nsm4uOoqmBy+Mr3EmrAGIrmITW3bbYcnbDkmqO18ZXb7gUGyQw6i5YjiCO8ucWNC+T5QX3sTuEVvFWNF8H048OBFMDFJL4XPP189m14mtvYLFSQVbpNq8wPeAUT82Mi6zYwdovRM1rEH8ihzyxTDnhhwQo6SQ0Vm39IRHuHlsWn72SM0sEouhpd5K4zvaLxiQLaHru5fKSB7D0VwXnbRfpeDM3mXcCUTSHeduDVWrnRAFVctGYd9MZ7VNkn04BizHuALbykzqpM1QBiGUqp22KbQ8cnvSBYixFSS0Yq+Ty2tBto/MXGr+QsJtgs3UuBBzwzoU5R5BBM5FiKphQIrGy4z1Y7HxK8igWyOjiJBqknSr8nQE3CGXG1nK1EGyoy+uHp69hAjrqt4u6/hNtSZGRUtjOLuipyUppes4ELntIXh9f9R04NqjKDQqQ/MBKU0VVaZInhLypMOKg7v6/KlHTb8ST8RDIGAbOLoLFnsXocr/HZXhii/nRUd/fV8m3fpgQByAXPej47cv0pZ9bTcUIWnqjmpe6uqCkULK5uj9bRjs7yfH9gerIGB6+l7aw8IEWLeiXH9oKeEpBnakGQOFswF8KQhumFNOsNQzHLMoM9iMJnrvKz+WaM7Q52mVrN91E1Us2QKhonFK0mQfCsQz/xdRy8bGIoObsgsDzdPk+jXkwcEm3jJesDazpljxQmWuDtQR0nWzegD90fs6u/99t08VT0SRsMktbcE92Px6q0rWMcaLcU4VCHc21b2p4c4p15pUZHRcTyntuZCth2ORHkTHJtQDKnlJg==|920
