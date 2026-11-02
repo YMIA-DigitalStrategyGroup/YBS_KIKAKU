@@ -536,5 +536,15 @@
       "Pages\\褒賞処理\\褒賞フロー_承認処理.json",
       "Pages\\褒賞処理\\褒賞フロー_承認処理.rd"
     ]
+  },
+  {
+    "ModuleName": "PCPage/褒賞コメント表示",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-11-02T10:07:12.089576+09:00",
+    "ModuleType": 1
   }
 ]
