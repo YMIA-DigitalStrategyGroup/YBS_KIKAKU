@@ -502,7 +502,7 @@
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-11-06T13:15:51.7810361+09:00",
+    "LockDateTime": "2026-11-06T13:18:52.2138445+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\褒賞処理\\YBS一覧_褒賞.json",
@@ -519,7 +519,16 @@
   },
   {
     "ModuleName": "Table/YBS褒賞",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-11-06T13:18:52.2140823+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\褒賞\\YBS褒賞.json"
+    ]
   },
   {
     "ModuleName": "Pages/褒賞処理",
