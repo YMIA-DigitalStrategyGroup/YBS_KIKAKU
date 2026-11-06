@@ -325,5 +325,13 @@
   "PrimaryKey": [
     "ID"
   ],
+  "Relations": [
+    {
+      "PrimaryTable": "YBS規格文書",
+      "PrimaryColumn": "ID",
+      "ForeignTable": "YBS褒賞",
+      "ForeignColumn": "規格文書ID"
+    }
+  ],
   "Indexes": []
 }
