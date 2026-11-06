@@ -524,7 +524,17 @@
   },
   {
     "ModuleName": "PCPage/褒賞一覧_承認待ち",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-11-06T13:39:22.5204394+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\褒賞処理\\褒賞一覧_承認待ち.json",
+      "Pages\\褒賞処理\\褒賞一覧_承認待ち.rd"
+    ]
   },
   {
     "ModuleName": "Table/YBS褒賞",
