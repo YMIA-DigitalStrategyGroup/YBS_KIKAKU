@@ -530,5 +530,15 @@
   {
     "ModuleName": "PCPage/褒賞コメント表示",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Table/TEST_YBS",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME009211",
+      "Email": "hiroshi_ogata@yanmar.com"
+    },
+    "LockDateTime": "2026-11-06T13:01:45.7967067+09:00",
+    "ModuleType": 7
   }
 ]
