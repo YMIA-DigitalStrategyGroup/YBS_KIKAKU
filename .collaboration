@@ -532,13 +532,13 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/管理者用説明",
+    "ModuleName": "PCPage/管理者用メモ",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME009211",
       "Email": "hiroshi_ogata@yanmar.com"
     },
-    "LockDateTime": "2026-11-09T10:23:22.7323256+09:00",
+    "LockDateTime": "2026-11-09T12:43:39.8777353+09:00",
     "ModuleType": 1
   }
 ]
