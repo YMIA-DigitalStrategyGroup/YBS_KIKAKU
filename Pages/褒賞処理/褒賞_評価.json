@@ -118,8 +118,8 @@
     "28,24": "IF(V29=1,4,0)",
     "29,24": "IF(V30=1,8,0)",
     "30,24": "SUM(Y27:AA30)+Y25",
-    "36,24": "IFS(G13=\"\",0,G13=\"制定\",Y22,G13=\"改正\",Y31,TRUE,Y34)",
-    "38,22": "IFS(Y37=0,\"未評価\",Y37>40,6,Y37>30,7,Y37>24,8,Y37>19,9,Y37>15,10,TRUE,11)",
+    "36,24": "IFS(G13=\"\",0,G13=\"制定\",Y22,G13=\"改正\",Y31,G13=\"対象外\",\"対象外\",TRUE,Y34)",
+    "38,22": "IFS(Y37=0,\"未評価\",Y37>40,6,Y37>30,7,Y37>24,8,Y37>19,9,Y37>15,10,Y37=15,11,TRUE,99)",
     "43,41": "ODATA(\"YBS権限マスタ?$select=ユーザーID&$filter=権限 eq '審議会'\")"
   },
   "AttachInfos": {
@@ -265,6 +265,10 @@
           {
             "Value": "廃止",
             "DisplayValue": "廃止"
+          },
+          {
+            "Value": "対象外",
+            "DisplayValue": "対象外"
           }
         ],
         "CommandList": [
@@ -322,7 +326,7 @@
                     ]
                   }
                 ],
-                "ID": "ccfcf620-3ea9-45f1-a5d1-5c18af5626f9"
+                "ID": "8b640ee6-f91e-4d01-a6f1-f337dae2a5da"
               },
               {
                 "Condition": {
@@ -375,9 +379,21 @@
                     ]
                   }
                 ],
-                "ID": "e0e070cf-0348-4416-8ec1-aa9509543185"
+                "ID": "d57ae1c2-74d0-4c78-ba6f-cca950f12572"
               },
               {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=褒賞_評価!G13"
+                      }
+                    ]
+                  },
+                  "value": "廃止"
+                },
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
@@ -404,7 +420,24 @@
                     ]
                   }
                 ],
-                "ID": "29695dfb-5858-4ad5-ab08-c5f2f854e568"
+                "ID": "ace4f42b-4994-4784-817d-ed813ca77efe"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=褒賞_評価!15:36"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  }
+                ],
+                "ID": "eb103530-055d-4c91-a2b5-1e806d77e7f3"
               }
             ]
           }
@@ -698,7 +731,7 @@
                     "MessageFormula": "次のいずれかが未入力です。\r\n・評価者の選択\r\n・評価日の選択\r\n・褒賞分類及び評価\r\n　　褒賞分類を選択して、加算点を判定のうえ、「提出」をお願いします。"
                   }
                 ],
-                "ID": "52bad971-05d1-4fe9-b87b-ec4857186ff3"
+                "ID": "7f362b9e-5785-48f4-aa02-21d604946d44"
               },
               {
                 "CommandList": [
@@ -726,7 +759,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "72d84730-722c-471d-ad1c-b7d45f0f76ed"
+                "ID": "a4607a42-8c94-4e63-922f-f0ac45431c15"
               }
             ]
           }
@@ -2561,4 +2594,4 @@
       "Size": "48.99999999999994,23"
     }
   ]
-}//uErJJfzwOJFh+i8J6UmDBXjoz8cU/rYy0XXyOTh5fblAtZ8FVdEI29NSmspQxZrvF3NuzSrSByvv5EFCqujhqj3S5wElQ3m6jxHBS+4efB29xXdlwSB0nsm4uOoqmBy+Mr3EmrAGIrmITW3bbYcnbDkmqO18ZXb7gUGyQw6i5YjiCO8ucWNC+T5QX3sTuEVvFWNF8H048OBFMDFJL4XPP189m14mtvYLFSQVbpNq8wPeAUT82Mi6zYwdovRM1rEH8ihzyxTDnhhwQo6SQ0Vm39IRHuHlsWn72SM0sEouhpd5K4zvaLxiQLaHru5fKSB7D0VwXnbRfpeDM3mXcCUTSHeduDVWrnRAFVctGYd9MZ7VNkn04BizHuALbykzqpM1QBiGUqp22KbQ8cnvSBYixFSS0Yq+Ty2tBto/MXGr+QsJtgs3UuBBzwzoU5R5BBM5FiKphQIrGy4z1Y7HxK8igWyOjiJBqknSr8nQE3CGXG1nK1EGyoy+uHp69hAjrqt4u6/hNtSZGRUtjOLuipyUppes4ELntIXh9f9R04NqjKDQqQ/MBKU0VVaZInhLypMOKg7v6/KlHTb8ST8RDIGAbOLoLFnsXocr/HZXhii/nRUd/fV8m3fpgQByAXPej47cv0pZ9bTcUIWnqjmpe6uqCkULK5uj9bRjs7yfH9gerIGB6+l7aw8IEWLeiXH9oKeEpBnakGQOFswF8KQhumFNOsNQzHLMoM9iMJnrvKz+WaM7Q52mVrN91E1Us2QKhonFK0mQfCsQz/xdRy8bGIoObsgsDzdPk+jXkwcEm3jJesDazpljxQmWuDtQR0nWzegD90fs6u/99t08VT0SRsMktbcE92Px6q0rWMcaLcU4VCHc21b2p4c4p15pUZHRcTyntuZCth2ORHkTHJtQDKnlJg==|920
+}//cLuysLtq60cE+F+xDKlPOrYgZLUsVolp6sa1nOEJcQiczVZFMx9Ob+AjGI2u5xOzeETFUhAWCQ/sD42usyPRtcciLY/s02IjseQjE0doxkLYRpeNLgG1jTUdqABcZAjAzgxcx1YE4fy25J4aE3+onqD+8+JslwrHLmzI0/1Kn/DtpzIOmh4lXRApbMBqQ+wTgjDfhSnKXDQFafa1m8YUW47V6EK/RaDvKCcaJp2uL9991Tl60M585jJWq7gWIvowkE796iJLicZ4hWbMW/7QC3ZMkL/pFb4B0WX2JR9F/ZXvZ9Jo7rzKR90fbK3gq3yJ0HLTZeVtCbcWvnUk2zWZzEio2GeKl29MkQJOCQzDKvy8CSoOz9y3p10HzDB11G3vn7pxPO89PaCgbWWpN8rTmJ7ZIb8tQsDNuvf7cqKQJWPPv5EACOstpALwZ2LYpESp+eO3Dd1n/oqPZ/sh7RohOJPA9dLMXOVBB8hO0whS6PL3fAGdclGcVwfHL+WzDyx/yLbfbvkhWsh+d4vxNNlHXhbqlS7E+15P23KOFQFO7lnYKBDRGwugIZZ7MtnOA92mkqUdeHfX2rsOmBiJ55c7xozH1diVrdKM64GcLiMpjhRXjtiTfADOgqv27VKcbbScm6fIiEelntGU9IvXF1yyjce2/TMTgGubpkkvqSCVfrt3pFU63KvESXJnnE033wvIsvU+9jN19s8L7896SCPsVjr/3yguEiJ5aMT7eKPe4/zGhI0yYmEDTM7V3DvKo9TA8Y8c2ZDvoWDs5qs+8Zl+v0t7iBsKOThBKrQkxT8Tv9N64WHnSou8evesQB97tROgOuziQNXUobksPif0kSRbQ3LU4LSAbCTzRuXu5UciOkPA/mHh82+Rk98VmrZnJb5zNxytiJiYUk71xlK71c/4vw==|920

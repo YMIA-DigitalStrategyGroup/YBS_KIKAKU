@@ -257,7 +257,7 @@
                     "MessageFormula": "すでに登録されています。"
                   }
                 ],
-                "ID": "be0b0d4a-7872-420e-9ae8-15112fc05298"
+                "ID": "048396a4-696f-40e3-a619-feaf3d5fe4df"
               },
               {
                 "CommandList": [
@@ -282,7 +282,7 @@
                     ]
                   }
                 ],
-                "ID": "cfe2cac2-2171-4143-a50b-1e81b7d6372a"
+                "ID": "da01cb1c-977b-4b31-aaa2-7c1c39d7b2a7"
               }
             ]
           }
@@ -555,7 +555,7 @@
                     "MessageFormula": "申請済みのため、再評価できません。"
                   }
                 ],
-                "ID": "c2ea6ca9-3c80-4d3b-b5a1-f1b6c13637c7"
+                "ID": "5e4497b2-5e5e-458f-8dee-e02c84755515"
               },
               {
                 "CommandList": [
@@ -585,7 +585,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "03ccc5ea-c5a8-40a5-b5b3-a4a49d08f320"
+                "ID": "361281f8-5a08-436d-b0b2-23bcbd92e28a"
               }
             ]
           }
@@ -706,6 +706,15 @@
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null,
+        "ShrinkToFit": true
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
         "BorderRight": null
       },
       {
@@ -718,7 +727,15 @@
       },
       {
         "FontFamily": 0,
-        "HorizontalAlignment": 5
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 6
       }
     ],
     "Types": {
@@ -728,6 +745,7 @@
         "[AUTO]General",
         "Accent 5 40",
         "Accent 2 -25",
+        "yyyy/MM/dd",
         "Center"
       ]
     },
@@ -838,21 +856,21 @@
       "22,32": 11,
       "22,33": 8,
       "22,34": 8,
-      "22,35": 11,
-      "22,38": 12,
+      "22,35": 12,
+      "22,38": 13,
       "22,39": 8,
       "22,40": 8,
-      "22,41": 13,
-      "23,1": 14,
+      "22,41": 14,
+      "23,1": 15,
       "23,6": 9,
       "23,8": 9,
       "23,12": 9,
       "23,14": 9,
       "23,21": 9,
       "23,29": 0,
-      "23,32": 0,
+      "23,32": 16,
       "23,35": 0,
-      "23,38": 15,
+      "23,38": 17,
       "23,41": 9,
       "23,48": 0,
       "23,49": 0,
@@ -1047,12 +1065,12 @@
     "22,29,1,3",
     "23,32,1,3",
     "22,32,1,3",
-    "23,35,1,3",
-    "22,35,1,3",
     "22,38,1,3",
     "23,38,1,3",
     "22,41,1,4",
-    "23,41,1,4"
+    "23,41,1,4",
+    "22,35,1,3",
+    "23,35,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1080,4 +1098,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//X2d1bDoHXTZtaMWyiosmMAJfRSAhQHdUsX5GaeaVqGyhepg/yS7HwcOS4+rKzu5RdWu7tXka6BFh1UMfLju9t7HxuQ6HE0+YHH1Ewfhn2M1MOF+hExqgkcqw7nMqhuftsHZc3EYxfOZ2SOrQQM8711lNxGgGAZPeBvfADvpo8aJazrR+2PjHc9ouQIkLjUdYslLCgUAIFJypkKa+jtt6Xaevf1bbvZMREnwNzSexpEkmGd1/TLW5dgdrYVcuz697je5SbGqkjr3PnmLxTGMW8P2eDvNKKYYfX+wQiXVFiUCMdmWi8u9KA2UGZ2G6xPL9/k4q8EoFNBAyzPGAm+QWxSf8dp7GN2ryLF3mjsabCbTEVl9kCbzYARNsw8KyXFmo+Scq5Txau3X8xYp17CRLEhp/EtUfrNJN1KW2PdsNY6yfkZTBvhIb46R2b1Em/GyFVXo2rNsAvtzZ+ht+hI433F+xZPSCGEzDRkSVPznW294lPAzCPJlyHmkexq/ftZTurvIsYHAnmqhtSwXdDop0OEL5jh6xH9bM3MXY3twNj48WQB5h2031ADs3bpcqtPql3zwzlYgXLcG96Iszc/QU2NBc5ZHthVhURVt1aZUoerQR1C2/3RYqDwnVJ2S/BZoAkdxKIKGGi+UfnudNQbIHhjzidvcs0pIISf1wlUVKNYMEmecsRQKfxXYpK4gWXdU05LYhm4sABTLMe4jnZRyrPwwy+OGqFhCWvjm+SLCEpmz93YWv0iRs84dqNv+qubXltBmH1k5AA0vG6m1+FPmp09ktyd0qQAX0NikHUi5aeuYoUMjUoJZdon9MjaXfn/52A7q2oxbwtwiYvvbSGvjkzYVWR8xlMFGDNFbgkU3deSBjgwwnsu97XwE7CvVWQEpiRecZNtfSohV+nYZ1w7y6zQ==|920
+}//2C8pfCBwvDmtrfbXRbISxGIZVgMuINAD1N8Al0X+zlbAOmDBvHfCMGl3gEswli36LRPfn93gpadoMqwp8mYHneSbIS7omUCo6ol8W5JDVziMhr8WugA+yVAno35TbzzOzZzw+BdMoTKbPrDZpqhIyoRmGxOzQeGfoIbAudwUMVah5WvI0yv1xBwrD8twkHtKuxELl9FxOrMTAVfS53HULeK784KhnRYJsJAQyw9rzJQRNNg8y6H7ir8NHvQYJt9Rd3Onz5LpzZbVWpP4GUxktwsu9RpcY2VV1i7yLfwXCOywMdEIqVXWrP4prRh3dSgc131UyI+7S4HzqqDqXld2/LjoN212ReT3r2Aa6OIFkKlqy3xSjyg2qmVTPbvvDZuaXStH7ORCc+lZNF47eMQYlidvf8j0iGUd250Y5YohW5S+zZDxpvwZOAu5YEHfLTEaBwt6DmdVP07fKEHP+gS8EKnwwL4/xx63xfmi7EBk0zVnorJ/48+EB9f5sfPFPA+UhuzlF1+v5DLrQqLqLBkDRwBPfwI5uqwdpYSnnjF7ZN6M9SjMfszRTLPBaOy6xn3GRUMo8OSDipxpZjq9X2lA4sJHZ1sM5RI2oXRAviCsnOyWK0TvKkYvvYdKMJEUE3TUjfYvyfX/ybzkU4S0329+AuMZgsUZVGCkpApiZSoZtvm+j3QPxKfmTYdywkkszMzSNxVEaO9o5YLZyTKUoGmkHS85pnse7/3ZbN8GHQJ9OGnNBGH2n3LLBUkfszTZDhNLgG5kTc8Iu8rTnC7AOxltMnuJAJZ4TwR84ddQjv4IPxT74ysLlb8FT5zBAmQyrd9OK6dGAEhTVaLo26XjrEqWIv64Ugr6kMfute6VM28GMaV/j6O0ilF52qhx/dmQjRZuZoYJjckjuIHV/uXi+WyClw==|920
