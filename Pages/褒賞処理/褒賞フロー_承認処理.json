@@ -23,6 +23,7 @@
       34,
       35,
       36,
+      46,
       47,
       48,
       49,
@@ -99,19 +100,22 @@
     "34,23": 15,
     "37,18": "合計点",
     "40,19": "等級",
+    "43,3": "(承認/確認者)",
     "43,42": "委員長",
-    "44,3": "(承認/確認者)",
-    "45,2": "承認/確認",
-    "45,26": "担当者が見つかりませんのメッセージでエラー出る",
-    "46,42": "事務局",
-    "47,6": "部門承認者",
-    "47,18": "申請者が確認処理する場合は、",
-    "48,18": "自部門長必須選択です。",
+    "44,2": "承認/確認",
+    "44,26": "担当者が見つかりませんのメッセージでエラー出る",
+    "45,42": "事務局",
+    "46,6": "部門承認者",
+    "46,18": "申請者が確認処理する場合は、",
+    "47,18": "部門承認者必須選択です。",
     "49,2": "差戻",
     "49,42": "承認",
     "52,2": "ワークフローでのコメント確認",
     "52,42": "権限マスタ",
     "55,7": "氏名",
+    "55,11": "処理日",
+    "55,16": "アクション",
+    "55,20": "コメント",
     "58,35": "確認"
   },
   "Formulas": {
@@ -123,7 +127,7 @@
     "8,9": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AV9),\"null\",\"'\"&AV9&\"'\"))",
     "9,9": "ODATA(\"v_YBS規格文書_ワークフロー?$select=When&$filter=WorkflowState eq '承認済み' and YBSコード eq \"&IF(ISBLANK(F7),\"null\",\"'\"&F7&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J7),\"null\",J7))",
     "8,47": "ODATA(\"YBS規格文書?$select=申請者&$filter=ID eq \"&IF(ISBLANK(Y4),\"null\",Y4))",
-    "43,45": "ODATA(\"YBS権限マスタ?$select=名前&$filter=権限 eq '委員長'\")",
+    "56,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E57),\"null\",\"'\"&E57&\"'\"))",
     "18,23": "IF(AN19=1,5,0)",
     "19,23": "IF(AN20=1,5,0)",
     "20,23": "IF(AN21=1,5,0)",
@@ -134,9 +138,9 @@
     "29,23": "IF(AN30=1,4,0)",
     "30,23": "IF(AN31=1,8,0)",
     "31,23": "SUM(X28:Z31)+X26",
-    "37,23": "IFS(G14=\"\",0,G14=\"制定\",X23,G14=\"改正\",X32,TRUE,X35)",
+    "37,23": "IFS(F14=\"\",\"未評価\",F14=\"制定\",X23,F14=\"改正\",X32,F14=\"対象外\",\"対象外\",TRUE,X35)",
     "4,43": "ODATA(\"YBS規格文書?$select=分類コード&$filter=ID eq \"&IF(ISBLANK(Y4),\"null\",Y4))",
-    "56,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E57),\"null\",\"'\"&E57&\"'\"))"
+    "43,45": "ODATA(\"YBS権限マスタ?$select=名前&$filter=権限 eq '委員長'\")"
   },
   "AttachInfos": {
     "3,24": {
@@ -171,7 +175,7 @@
           "ColumnBindingInfo": {
             "TableName": "YBS規格文書",
             "ColumnName": "ID",
-            "GUID": "31ee0519-c94b-463e-b0b2-459e636d8b3d"
+            "GUID": "506647f4-b06f-4758-b414-a03e87862ee0"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -200,7 +204,7 @@
           "ColumnBindingInfo": {
             "TableName": "YBS規格文書",
             "ColumnName": "ID",
-            "GUID": "8896eebf-db91-4877-b38e-f4b46ddc7bf0"
+            "GUID": "b58ba4a0-d2df-4b2b-ba3b-77778822f74d"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -326,7 +330,7 @@
                     ]
                   }
                 ],
-                "ID": "227c6a85-61d9-4fcf-8741-a501108afe86"
+                "ID": "21e331db-33c0-4be2-95fc-e2e5086b5664"
               },
               {
                 "Condition": {
@@ -379,7 +383,7 @@
                     ]
                   }
                 ],
-                "ID": "f8bae101-4b05-49d8-8def-25297fc116de"
+                "ID": "80a0986c-237d-4699-afed-9e87fe1eee4a"
               },
               {
                 "CommandList": [
@@ -408,7 +412,7 @@
                     ]
                   }
                 ],
-                "ID": "2f9072b7-4763-4225-8cf0-c4f648a677c7"
+                "ID": "713e223e-40be-4c95-be6a-44f623c2f028"
               }
             ]
           }
@@ -483,7 +487,7 @@
                     ]
                   }
                 ],
-                "ID": "17e7707a-9f81-4a76-8891-64d3a76177cc"
+                "ID": "dd72e219-c432-4b2e-bb99-68b9be73423d"
               },
               {
                 "Condition": {
@@ -536,7 +540,7 @@
                     ]
                   }
                 ],
-                "ID": "2b778b0f-07c9-41e3-847e-681df47caa6a"
+                "ID": "6583f642-beca-48ee-ac27-80658c67437a"
               },
               {
                 "CommandList": [
@@ -565,7 +569,7 @@
                     ]
                   }
                 ],
-                "ID": "e157ca12-b6eb-4b54-ae4c-9edd6ceb2336"
+                "ID": "a63cacc2-c1fb-41f6-b7ce-b670744fda90"
               }
             ],
             "Disabled": true
@@ -654,7 +658,7 @@
         "GUID": "c5cbead5-2ac3-483d-9197-c8f9c991e7dd"
       }
     },
-    "44,9": {
+    "43,9": {
       "CellType": {
         "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
         "CellCustomValue": "%CurrentUser%",
@@ -667,14 +671,14 @@
         }
       }
     },
-    "44,16": {
+    "43,16": {
       "BindingInfo": {
         "TableName": "YBS褒賞",
         "ColumnName": "FGC_State",
         "GUID": "b19d46eb-0468-4a1a-8133-f6aff121abd3"
       }
     },
-    "45,2": {
+    "44,2": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -735,7 +739,7 @@
                     "ActionName": "事務局確認",
                     "WorkflowComments": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                      "SerializeProperty": "=褒賞フロー_承認処理!G45"
                     }
                   },
                   {
@@ -747,7 +751,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "b8c3f6d3-316b-4fec-8cd5-e1a6c159dcc3"
+                "ID": "c0b7d61b-0f4a-4ac5-977b-6e23adfecfa2"
               },
               {
                 "Condition": {
@@ -770,7 +774,7 @@
                     "ActionName": "委員長承認",
                     "WorkflowComments": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                      "SerializeProperty": "=褒賞フロー_承認処理!G45"
                     }
                   },
                   {
@@ -781,7 +785,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "0b5c6e35-c6f0-4d33-a518-750f3e9205e4"
+                "ID": "368090fb-7989-4727-93a2-a70a105fa19c"
               },
               {
                 "Condition": {
@@ -807,7 +811,7 @@
                             "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                             "cellLocations": [
                               {
-                                "SerializeProperty": "=褒賞フロー_承認処理!L48"
+                                "SerializeProperty": "=褒賞フロー_承認処理!L47"
                               }
                             ]
                           },
@@ -819,7 +823,7 @@
                             "MessageFormula": "部門長を選択してください"
                           }
                         ],
-                        "ID": "d4e23d3c-0962-49f6-8c08-a104243331ff"
+                        "ID": "6da3c787-0927-4311-a936-38d7da5e9e3c"
                       },
                       {
                         "CommandList": [
@@ -830,7 +834,7 @@
                             "ActionName": "申請者確認",
                             "WorkflowComments": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                              "SerializeProperty": "=褒賞フロー_承認処理!G45"
                             }
                           },
                           {
@@ -841,12 +845,12 @@
                             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "eddf3eaa-04f2-4376-b5ec-fbe1d8c6f651"
+                        "ID": "8defe9f5-f5fd-4bc9-810b-55e1f536f866"
                       }
                     ]
                   }
                 ],
-                "ID": "1b12cd81-645d-420e-8b30-442c04af08a5"
+                "ID": "435ec84d-fc39-4d4a-bd0e-3c8b30a9951d"
               },
               {
                 "CommandList": [
@@ -857,7 +861,7 @@
                     "ActionName": "部門長承認",
                     "WorkflowComments": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                      "SerializeProperty": "=褒賞フロー_承認処理!G45"
                     }
                   },
                   {
@@ -868,7 +872,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "1cf44c27-a004-456a-a89d-96d86b06b9ab"
+                "ID": "a49b743b-ea3a-416a-acf6-3860a4c6b55f"
               }
             ]
           }
@@ -877,14 +881,14 @@
         "TemplateKey": "_RS_Normal_Style5"
       }
     },
-    "45,6": {
+    "44,6": {
       "CellType": {
         "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "WaterMark": "承認コメントを記載ください。"
       }
     },
-    "47,11": {
+    "46,11": {
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
@@ -945,7 +949,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "28a044ed-ea03-437e-98ca-36d1d151480e",
+                  "GUID": "9518b8aa-72d6-4418-b26b-98db49577aca",
                   "BindingInfo": {
                     "TableName": "YBS褒賞",
                     "ColumnName": "FGC_State",
@@ -967,103 +971,131 @@
                 }
               }
             },
-            "ID": "c58cd4ae59024377b3720975874e6aae"
+            "ID": "dce8f6c02fbc46eb9002e1b25f55bfc8"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
             "ConditionAndCommandPairList": [
               {
                 "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=褒賞フロー_承認処理!フローの状態"
-                      }
-                    ]
-                  },
-                  "value": "事務局確認待ち"
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=褒賞フロー_承認処理!フローの状態"
+                          }
+                        ]
+                      },
+                      "value": "事務局確認待ち"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=フローの状態"
+                          }
+                        ]
+                      },
+                      "value": "申請者確認待ち"
+                    }
+                  ],
+                  "RelationType": 1
                 },
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "事務局確認のみ差戻不可です",
+                    "MessageFormula": "「事務局」及び「申請者」は確認のみです。差戻できません。",
                     "Comments": ""
                   }
                 ],
-                "ID": "1292ef58-b0db-40f0-ba0f-4b46021cb7a2"
+                "ID": "94cc13e1-ca39-4e13-ac06-d01d372307c4"
               },
               {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
                       {
-                        "SerializeProperty": "=褒賞フロー_承認処理!フローの状態"
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=褒賞フロー_承認処理!G50"
+                              }
+                            ]
+                          },
+                          "value": "%Null%"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "差戻コメントが記載されていません。記載願います。"
+                          }
+                        ],
+                        "ID": "2455c3fc-75de-4ec0-a7a2-673929fcc7dd"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=フローの状態"
+                              }
+                            ]
+                          },
+                          "value": "委員長承認待ち"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "YBS褒賞",
+                            "NextState": "新規",
+                            "ActionName": "委員長差戻",
+                            "WorkflowComments": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞フロー_承認処理!G50"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "委員長差戻です。"
+                          }
+                        ],
+                        "ID": "8bf729ab-d409-4081-a279-d954c7c71cd4"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+                            "TableName": "YBS褒賞",
+                            "NextState": "新規",
+                            "ActionName": "部門長差戻",
+                            "WorkflowComments": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=褒賞フロー_承認処理!G50"
+                            }
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "部門長差戻となりました"
+                          }
+                        ],
+                        "ID": "52538c82-58ce-4d7b-adfa-72a705e01ecd"
                       }
                     ]
-                  },
-                  "value": "委員長承認待ち"
-                },
-                "CommandList": [
-                  {
-                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
-                    "TableName": "YBS褒賞",
-                    "NextState": "新規",
-                    "ActionName": "委員長差戻",
-                    "WorkflowComments": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=褒賞フロー_承認処理!G50"
-                    }
-                  },
-                  {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "委員長差戻となりました"
                   }
                 ],
-                "ID": "aee6775b-45aa-4851-8025-aa65009aab15"
-              },
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=褒賞フロー_承認処理!フローの状態"
-                      }
-                    ]
-                  },
-                  "value": "申請者確認待ち"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "申請者差戻は不可です"
-                  }
-                ],
-                "ID": "9000bbdd-20ed-4c7b-b6ca-cb56a935b7f2"
-              },
-              {
-                "CommandList": [
-                  {
-                    "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
-                    "TableName": "YBS褒賞",
-                    "NextState": "新規",
-                    "ActionName": "部門長差戻",
-                    "WorkflowComments": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=褒賞フロー_承認処理!G50"
-                    }
-                  },
-                  {
-                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "部門長差戻となりました"
-                  }
-                ],
-                "ID": "6f3fb49c-47e0-425a-840a-ee64a3229cfc"
+                "ID": "9efb40c2-4fd9-4c76-8a5f-6665ec34b025"
               }
             ]
           },
@@ -1201,7 +1233,7 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                        "SerializeProperty": "=褒賞フロー_承認処理!G45"
                       }
                     ]
                   },
@@ -1213,7 +1245,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメント入力後、「承認」ボタンを押してください。"
                   }
                 ],
-                "ID": "ba2b8e5e-9f5d-4709-b049-dc6c6957a924"
+                "ID": "3813a7f0-dc4d-4e7b-bf4c-12f09d035874"
               },
               {
                 "CommandList": [
@@ -1257,12 +1289,12 @@
                                     "NextState": "承認済み",
                                     "AssignTo": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                      "SerializeProperty": "=褒賞フロー_承認処理!F44"
+                                      "SerializeProperty": "=#REF!"
                                     },
                                     "ActionName": "部門長承認",
                                     "WorkflowComments": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                      "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                                      "SerializeProperty": "=褒賞フロー_承認処理!G45"
                                     }
                                   },
                                   {
@@ -1348,7 +1380,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "fe4ee526-9826-463e-9ee6-e0cf895822d8"
+                                        "ID": "4265a161-36b6-41be-9e82-74cd0ab8a2ec"
                                       },
                                       {
                                         "Condition": {
@@ -1436,7 +1468,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "64984c20-0361-4552-b68f-1ce82b89199b"
+                                        "ID": "f674cca9-ddb0-4861-b5ab-8fe97c4612eb"
                                       },
                                       {
                                         "Condition": {
@@ -1511,7 +1543,7 @@
                                             ]
                                           }
                                         ],
-                                        "ID": "85e45571-1b0e-4816-ac60-b5311231f550"
+                                        "ID": "c4d9ab7e-537e-455b-80bc-4cd07638d7f1"
                                       }
                                     ]
                                   },
@@ -1520,7 +1552,7 @@
                                     "MessageFormula": "【部内審議】 部門長が承認しました。"
                                   }
                                 ],
-                                "ID": "3d985825-7b38-4ed0-9df5-d17f64bbfb8f"
+                                "ID": "191424fc-11be-4604-85df-6592c19d114b"
                               },
                               {
                                 "Condition": {
@@ -1543,12 +1575,12 @@
                                     "NextState": "審議会承認待ち",
                                     "AssignTo": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                      "SerializeProperty": "=褒賞フロー_承認処理!F44"
+                                      "SerializeProperty": "=#REF!"
                                     },
                                     "ActionName": "部門長承認",
                                     "WorkflowComments": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                      "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                                      "SerializeProperty": "=褒賞フロー_承認処理!G45"
                                     }
                                   },
                                   {
@@ -1664,12 +1696,12 @@
                                     "MessageFormula": "【審議会承認待ちへ】 部門長が承認しました。"
                                   }
                                 ],
-                                "ID": "f119b105-cddd-42ab-b05e-bac4ec74cf47"
+                                "ID": "d7e2409a-46f1-4201-9aae-57569954eb9b"
                               }
                             ]
                           }
                         ],
-                        "ID": "31a6c11b-6ee4-4437-a5f8-6c4e9cf1cf42"
+                        "ID": "270a830e-899c-4d44-999d-d4e6e3330c6f"
                       },
                       {
                         "Condition": {
@@ -1691,12 +1723,12 @@
                             "NextState": "委員長承認待ち",
                             "AssignTo": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=褒賞フロー_承認処理!F44"
+                              "SerializeProperty": "=#REF!"
                             },
                             "ActionName": "審議会承認",
                             "WorkflowComments": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                              "SerializeProperty": "=褒賞フロー_承認処理!G45"
                             }
                           },
                           {
@@ -1758,7 +1790,7 @@
                             "MessageFormula": "審議会メンバーが全員承認しました。"
                           }
                         ],
-                        "ID": "16b976e4-7bf9-4f07-8a73-121cbb33b323"
+                        "ID": "b48d34db-f255-4ab1-bb45-f227bd9f8f8c"
                       },
                       {
                         "Condition": {
@@ -1780,12 +1812,12 @@
                             "NextState": "承認済み",
                             "AssignTo": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=褒賞フロー_承認処理!F44"
+                              "SerializeProperty": "=#REF!"
                             },
                             "ActionName": "委員長承認",
                             "WorkflowComments": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "=褒賞フロー_承認処理!G46"
+                              "SerializeProperty": "=褒賞フロー_承認処理!G45"
                             }
                           },
                           {
@@ -1871,7 +1903,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "3de53d74-6c14-4441-87bd-95a1daceec7d"
+                                "ID": "ffb5d355-e81b-44bd-8586-c631c1569891"
                               },
                               {
                                 "Condition": {
@@ -1959,7 +1991,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "a4f0dbb0-f052-45a2-8c42-75666142bc71"
+                                "ID": "8128c8c3-bd56-4a86-8fb7-f2a7099c4fd5"
                               },
                               {
                                 "Condition": {
@@ -2034,7 +2066,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "c805d6f2-b496-4eb8-9a6e-716b13a91963"
+                                "ID": "ccb1492d-d746-4e2f-ab6f-53306145195d"
                               }
                             ]
                           },
@@ -2043,7 +2075,7 @@
                             "MessageFormula": "委員長が承認しました。"
                           }
                         ],
-                        "ID": "edc6f680-3091-4bc3-a005-3ea6a541dfa4"
+                        "ID": "ac0f6447-9080-48f9-ab21-e2241c414656"
                       }
                     ]
                   },
@@ -2052,7 +2084,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "2f89fd58-716d-4a6d-b0d8-f8e6626eeca7"
+                "ID": "17815ffd-4ef8-407e-b82f-d9724c4ccd17"
               }
             ]
           }
@@ -2123,14 +2155,14 @@
         "TableName": "v_YBS褒賞_ワークフロー",
         "RowIndex": 55,
         "ColumnIndex": 2,
-        "RowCount": 11,
-        "ColumnCount": 31,
+        "RowCount": 10,
+        "ColumnCount": 30,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
             "TableName": "v_YBS褒賞_ワークフロー",
             "ColumnName": "規格文書ID",
-            "GUID": "d7935750-0715-4c52-a0b4-af666a606659"
+            "GUID": "6784c243-a54e-445f-a34b-fe49a7bf6e34"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -2143,7 +2175,7 @@
               "ColumnBindingInfo": {
                 "TableName": "v_YBS褒賞_ワークフロー",
                 "ColumnName": "HistoryID",
-                "GUID": "31425940-c76b-450a-9615-e587638d9dad"
+                "GUID": "83347c10-0b67-492b-b21d-17c28a3984d7"
               },
               "Order": 0
             }
@@ -2159,11 +2191,11 @@
       }
     },
     "56,2": {
-      "NameUsedInJavaScript": "RecordId",
+      "NameUsedInJavaScript": "規格文書ID",
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
-        "ColumnName": "RecordId",
-        "GUID": "b9bd67b1-7721-4209-8763-6358aabefef7"
+        "ColumnName": "規格文書ID",
+        "GUID": "2719e9e4-3455-4e1d-8930-696008ed0eb1"
       }
     },
     "56,4": {
@@ -2178,23 +2210,23 @@
       "NameUsedInJavaScript": "氏名"
     },
     "56,11": {
-      "NameUsedInJavaScript": "When",
+      "NameUsedInJavaScript": "処理日",
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
         "ColumnName": "When",
         "GUID": "b7daeaf5-fdc9-41c7-98ec-07bcb8f40d2c"
       }
     },
-    "56,15": {
-      "NameUsedInJavaScript": "ActionName",
+    "56,16": {
+      "NameUsedInJavaScript": "アクション",
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
         "ColumnName": "ActionName",
         "GUID": "1e1f09f1-c4e7-49fb-8236-e5d07587abd2"
       }
     },
-    "56,19": {
-      "NameUsedInJavaScript": "Comments",
+    "56,20": {
+      "NameUsedInJavaScript": "コメント",
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
         "ColumnName": "Comments",
@@ -2332,7 +2364,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「差戻」ボタンを押してください。"
                   }
                 ],
-                "ID": "b4934e43-b92a-464f-b77a-f160e9ed1fc4"
+                "ID": "bf709bec-a43f-4733-8e8f-e2e574e8142d"
               },
               {
                 "CommandList": [
@@ -2442,7 +2474,7 @@
                                     "MessageFormula": "【部内審議】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "e9ed1d60-0b4e-42d4-b9fa-7f35aad09ebc"
+                                "ID": "daea0058-0340-4cf8-b72f-9508e0af92c6"
                               },
                               {
                                 "Condition": {
@@ -2531,12 +2563,12 @@
                                     "MessageFormula": "【審議会審議】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "2f830bbc-b727-4068-9423-7bd7e90e30fa"
+                                "ID": "28d9ebf7-9499-4e5a-a57b-53aa5711cc22"
                               }
                             ]
                           }
                         ],
-                        "ID": "0601e02e-9fe9-4fd7-a01a-a57643358f39"
+                        "ID": "dcab70a6-3794-4e4d-87fa-390f57606035"
                       },
                       {
                         "Condition": {
@@ -2624,7 +2656,7 @@
                             "MessageFormula": "審議会メンバーが差戻ました。"
                           }
                         ],
-                        "ID": "793829f8-1446-4701-b92e-ab589816cd6e"
+                        "ID": "99b7e1e0-8565-4d53-b530-85f87ae92a4f"
                       },
                       {
                         "Condition": {
@@ -2712,7 +2744,7 @@
                             "MessageFormula": "委員長が差戻ました。"
                           }
                         ],
-                        "ID": "96cec201-7c90-4e27-9efd-ba8e71fee2b9"
+                        "ID": "cf1e003e-122d-4e9f-952a-eb138da6f44f"
                       }
                     ]
                   },
@@ -2721,7 +2753,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "ebe7ea9a-f262-4d83-96c1-8cbef078361b"
+                "ID": "58519fec-618a-4e0c-bc63-45a2c17320c0"
               }
             ]
           }
@@ -3400,6 +3432,7 @@
         "BorderRight": null
       },
       {
+        "FontFamily": 3,
         "HorizontalAlignment": 7,
         "BorderBottom": 0,
         "BorderTop": null,
@@ -3449,9 +3482,6 @@
         "Foreground": 1
       },
       {
-        "FontFamily": 3
-      },
-      {
         "FontFamily": 3,
         "Formatter": 16,
         "VerticalAlignment": 17,
@@ -3475,6 +3505,9 @@
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
+      },
+      {
+        "FontFamily": 3
       },
       {
         "FontFamily": 3,
@@ -3542,6 +3575,16 @@
       },
       {
         "FontFamily": 3,
+        "Formatter": 6,
+        "HorizontalAlignment": 7,
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 3,
         "Formatter": 16,
         "VerticalAlignment": 17,
         "WordWrap": true,
@@ -3552,10 +3595,6 @@
         "FontFamily": 3,
         "BorderBottom": 0,
         "BorderLeft": 0
-      },
-      {
-        "FontFamily": 3,
-        "Formatter": 4
       },
       {
         "FontFamily": 3,
@@ -4738,8 +4777,8 @@
       "37,21": 47,
       "37,22": 47,
       "37,23": 83,
-      "37,24": 47,
-      "37,25": 47,
+      "37,24": 43,
+      "37,25": 43,
       "37,27": 4,
       "38,1": 3,
       "38,27": 4,
@@ -4786,35 +4825,17 @@
       "42,23": 88,
       "42,24": 88,
       "42,25": 88,
-      "43,1": 18,
-      "43,2": 18,
-      "43,3": 18,
-      "43,4": 18,
-      "43,5": 18,
-      "43,6": 18,
-      "43,7": 18,
-      "43,8": 18,
-      "43,9": 18,
-      "43,10": 18,
-      "43,11": 18,
-      "43,12": 18,
-      "43,13": 18,
-      "43,14": 18,
-      "43,15": 18,
-      "43,16": 18,
-      "43,17": 18,
-      "43,18": 18,
-      "43,19": 18,
-      "43,20": 18,
-      "43,21": 18,
-      "43,22": 18,
-      "43,23": 18,
-      "43,24": 18,
-      "43,25": 18,
-      "43,26": 18,
-      "43,27": 18,
-      "43,29": 18,
-      "43,30": 18,
+      "43,3": 11,
+      "43,4": 11,
+      "43,5": 11,
+      "43,9": 11,
+      "43,10": 11,
+      "43,11": 11,
+      "43,12": 11,
+      "43,13": 11,
+      "43,14": 11,
+      "43,15": 11,
+      "43,16": 89,
       "43,42": 11,
       "43,43": 11,
       "43,44": 11,
@@ -4823,93 +4844,98 @@
       "43,47": 11,
       "43,48": 11,
       "43,49": 11,
-      "44,3": 11,
-      "44,4": 11,
-      "44,5": 11,
-      "44,9": 11,
-      "44,10": 11,
-      "44,11": 11,
-      "44,12": 11,
-      "44,13": 11,
-      "44,14": 11,
-      "44,15": 11,
-      "44,16": 89,
-      "44,42": 90,
-      "44,43": 90,
-      "44,44": 90,
-      "44,45": 90,
-      "44,46": 90,
-      "44,47": 90,
-      "44,48": 90,
-      "44,49": 90,
-      "45,6": 91,
-      "45,7": 92,
-      "45,8": 92,
-      "45,9": 92,
-      "45,10": 92,
-      "45,11": 92,
-      "45,12": 92,
-      "45,13": 92,
-      "45,14": 92,
-      "45,15": 92,
-      "45,16": 92,
-      "45,17": 92,
-      "45,18": 92,
-      "45,19": 92,
-      "45,20": 92,
-      "45,21": 92,
-      "45,22": 92,
-      "45,23": 92,
-      "45,24": 92,
-      "45,25": 93,
-      "45,26": 94,
-      "45,39": 90,
-      "45,40": 90,
-      "46,6": 95,
-      "46,7": 95,
-      "46,8": 95,
-      "46,9": 95,
-      "46,10": 95,
-      "46,11": 95,
-      "46,12": 95,
-      "46,13": 95,
-      "46,14": 95,
-      "46,15": 95,
-      "46,16": 95,
-      "46,17": 95,
-      "46,18": 95,
-      "46,19": 95,
-      "46,20": 95,
-      "46,21": 95,
-      "46,22": 95,
-      "46,23": 95,
-      "46,24": 95,
-      "46,25": 96,
-      "46,39": 90,
-      "46,40": 90,
-      "46,42": 11,
-      "46,43": 11,
-      "46,44": 11,
-      "46,45": 11,
-      "46,46": 11,
-      "46,47": 11,
-      "46,48": 11,
-      "46,49": 11,
+      "44,6": 90,
+      "44,7": 91,
+      "44,8": 91,
+      "44,9": 91,
+      "44,10": 91,
+      "44,11": 91,
+      "44,12": 91,
+      "44,13": 91,
+      "44,14": 91,
+      "44,15": 91,
+      "44,16": 91,
+      "44,17": 91,
+      "44,18": 91,
+      "44,19": 91,
+      "44,20": 91,
+      "44,21": 91,
+      "44,22": 91,
+      "44,23": 91,
+      "44,24": 91,
+      "44,25": 92,
+      "44,26": 93,
+      "44,39": 94,
+      "44,40": 94,
+      "45,6": 95,
+      "45,7": 95,
+      "45,8": 95,
+      "45,9": 95,
+      "45,10": 95,
+      "45,11": 95,
+      "45,12": 95,
+      "45,13": 95,
+      "45,14": 95,
+      "45,15": 95,
+      "45,16": 95,
+      "45,17": 95,
+      "45,18": 95,
+      "45,19": 95,
+      "45,20": 95,
+      "45,21": 95,
+      "45,22": 95,
+      "45,23": 95,
+      "45,24": 95,
+      "45,25": 96,
+      "45,39": 94,
+      "45,40": 94,
+      "45,42": 11,
+      "45,43": 11,
+      "45,44": 11,
+      "45,45": 11,
+      "45,46": 11,
+      "45,47": 11,
+      "45,48": 11,
+      "45,49": 11,
+      "46,2": 97,
+      "46,3": 97,
+      "46,4": 97,
+      "46,5": 97,
+      "46,6": 98,
+      "46,7": 99,
+      "46,8": 99,
+      "46,9": 99,
+      "46,10": 100,
+      "46,11": 101,
+      "46,12": 11,
+      "46,13": 11,
+      "46,14": 11,
+      "46,15": 11,
+      "46,16": 14,
+      "46,17": 102,
+      "46,18": 23,
+      "46,19": 102,
+      "46,20": 102,
+      "46,21": 102,
+      "46,22": 102,
+      "46,23": 102,
+      "46,24": 102,
+      "46,25": 102,
       "47,2": 97,
       "47,3": 97,
       "47,4": 97,
       "47,5": 97,
-      "47,6": 98,
-      "47,7": 99,
-      "47,8": 99,
-      "47,9": 99,
-      "47,10": 100,
-      "47,11": 101,
-      "47,12": 11,
-      "47,13": 11,
-      "47,14": 11,
-      "47,15": 11,
-      "47,16": 11,
+      "47,6": 103,
+      "47,7": 103,
+      "47,8": 103,
+      "47,9": 103,
+      "47,10": 104,
+      "47,11": 43,
+      "47,12": 43,
+      "47,13": 43,
+      "47,14": 43,
+      "47,15": 43,
+      "47,16": 44,
       "47,17": 102,
       "47,18": 23,
       "47,19": 102,
@@ -4923,19 +4949,19 @@
       "48,3": 97,
       "48,4": 97,
       "48,5": 97,
-      "48,6": 103,
-      "48,7": 103,
-      "48,8": 103,
-      "48,9": 103,
-      "48,10": 104,
-      "48,11": 11,
-      "48,12": 11,
-      "48,13": 11,
-      "48,14": 11,
-      "48,15": 11,
-      "48,16": 11,
+      "48,6": 105,
+      "48,7": 97,
+      "48,8": 97,
+      "48,9": 97,
+      "48,10": 97,
+      "48,11": 102,
+      "48,12": 102,
+      "48,13": 102,
+      "48,14": 102,
+      "48,15": 102,
+      "48,16": 102,
       "48,17": 102,
-      "48,18": 23,
+      "48,18": 106,
       "48,19": 102,
       "48,20": 102,
       "48,21": 102,
@@ -4947,35 +4973,35 @@
       "49,3": 11,
       "49,4": 11,
       "49,5": 11,
-      "49,6": 105,
-      "49,7": 92,
-      "49,8": 92,
-      "49,9": 92,
-      "49,10": 92,
-      "49,11": 92,
-      "49,12": 92,
-      "49,13": 92,
-      "49,14": 92,
-      "49,15": 92,
-      "49,16": 92,
-      "49,17": 92,
-      "49,18": 92,
-      "49,19": 92,
-      "49,20": 92,
-      "49,21": 92,
-      "49,22": 92,
-      "49,23": 92,
-      "49,24": 92,
-      "49,25": 93,
+      "49,6": 107,
+      "49,7": 91,
+      "49,8": 91,
+      "49,9": 91,
+      "49,10": 91,
+      "49,11": 91,
+      "49,12": 91,
+      "49,13": 91,
+      "49,14": 91,
+      "49,15": 91,
+      "49,16": 91,
+      "49,17": 91,
+      "49,18": 91,
+      "49,19": 91,
+      "49,20": 91,
+      "49,21": 91,
+      "49,22": 91,
+      "49,23": 91,
+      "49,24": 91,
+      "49,25": 92,
       "49,42": 97,
-      "49,43": 90,
-      "49,44": 90,
-      "49,45": 90,
+      "49,43": 94,
+      "49,44": 94,
+      "49,45": 94,
       "50,2": 11,
       "50,3": 11,
       "50,4": 11,
       "50,5": 11,
-      "50,6": 106,
+      "50,6": 108,
       "50,7": 95,
       "50,8": 95,
       "50,9": 95,
@@ -4995,11 +5021,11 @@
       "50,23": 95,
       "50,24": 95,
       "50,25": 96,
-      "50,42": 90,
-      "50,43": 90,
-      "50,44": 90,
-      "50,45": 90,
-      "52,2": 107,
+      "50,42": 94,
+      "50,43": 94,
+      "50,44": 94,
+      "50,45": 94,
+      "52,2": 106,
       "53,42": 11,
       "53,43": 11,
       "53,44": 11,
@@ -5032,28 +5058,29 @@
       "54,55": 11,
       "54,56": 11,
       "54,57": 11,
-      "55,2": 108,
-      "55,3": 109,
-      "55,4": 108,
-      "55,5": 109,
-      "55,6": 109,
-      "55,7": 90,
-      "55,11": 90,
-      "55,15": 90,
-      "55,19": 108,
+      "55,2": 109,
+      "55,3": 110,
+      "55,4": 109,
+      "55,5": 110,
+      "55,6": 110,
+      "55,7": 94,
+      "55,11": 109,
+      "55,12": 110,
+      "55,13": 110,
+      "55,14": 110,
+      "55,15": 110,
+      "55,16": 94,
       "55,20": 109,
-      "55,21": 109,
-      "55,22": 109,
-      "55,23": 109,
-      "55,24": 109,
-      "55,25": 109,
-      "55,26": 109,
-      "55,27": 109,
-      "55,28": 18,
-      "55,29": 18,
-      "55,30": 18,
+      "55,21": 110,
+      "55,22": 110,
+      "55,23": 110,
+      "55,24": 110,
+      "55,25": 110,
+      "55,26": 110,
+      "55,27": 110,
+      "55,28": 110,
+      "55,29": 110,
       "55,31": 18,
-      "55,32": 18,
       "55,42": 11,
       "55,43": 11,
       "55,44": 11,
@@ -5070,22 +5097,18 @@
       "55,55": 11,
       "55,56": 11,
       "55,57": 11,
-      "56,2": 90,
-      "56,4": 90,
-      "56,7": 90,
-      "56,11": 90,
-      "56,15": 90,
-      "56,19": 90,
-      "56,28": 18,
-      "56,29": 18,
-      "56,30": 18,
+      "56,2": 94,
+      "56,4": 94,
+      "56,7": 94,
+      "56,11": 94,
+      "56,16": 94,
+      "56,20": 94,
       "56,31": 18,
-      "56,32": 18,
-      "58,35": 110,
+      "58,35": 111,
       "58,36": 11,
       "58,37": 11,
       "58,38": 14,
-      "58,39": 111,
+      "58,39": 112,
       "58,40": 6,
       "58,41": 6,
       "58,42": 6,
@@ -5229,7 +5252,6 @@
     }
   },
   "Spans": [
-    "0,1,1,6",
     "3,24,1,3",
     "3,29,2,3",
     "4,5,1,9",
@@ -5265,56 +5287,58 @@
     "30,39,1,2",
     "31,23,1,3",
     "34,23,1,3",
-    "37,23,1,3",
     "39,23,2,3",
-    "45,6,2,20",
+    "44,6,2,20",
     "49,6,2,20",
-    "45,2,2,4",
+    "44,2,2,4",
     "62,42,5,18",
-    "43,45,1,5",
-    "46,45,1,5",
+    "45,45,1,5",
     "4,43,1,3",
     "8,47,1,5",
     "49,42,2,4",
-    "44,9,1,6",
-    "44,16,1,6",
+    "43,9,1,6",
+    "43,16,1,6",
     "49,2,2,4",
     "52,2,2,11",
-    "47,6,2,5",
-    "47,11,2,6",
+    "46,6,2,5",
+    "46,11,2,6",
     "53,42,1,4",
     "54,42,1,4",
     "53,46,1,3",
     "54,46,1,3",
-    "55,42,1,16",
     "3,20,1,4",
-    "7,39,1,9",
     "6,40,1,4",
     "5,40,1,4",
     "6,44,1,3",
     "5,44,1,3",
     "5,20,1,4",
     "6,20,1,4",
-    "7,20,1,6",
     "6,34,1,4",
     "58,35,2,4",
     "58,39,2,20",
-    "57,2,9,31",
     "56,2,1,2",
     "55,2,1,2",
     "56,4,1,3",
     "55,4,1,3",
     "56,7,1,4",
     "55,7,1,4",
-    "56,11,1,4",
-    "55,11,1,4",
-    "56,15,1,4",
-    "55,15,1,4",
-    "56,19,1,9",
-    "55,19,1,9"
+    "55,11,1,5",
+    "56,11,1,5",
+    "55,16,1,4",
+    "56,16,1,4",
+    "55,20,1,10",
+    "56,20,1,10",
+    "37,23,1,3",
+    "43,45,1,5",
+    "7,20,1,6",
+    "7,39,1,9",
+    "55,42,1,16",
+    "57,2,8,30",
+    "0,1,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "YBS褒賞承認処理",
     "PageLoadedCommandList": [
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -5350,7 +5374,7 @@
                 "MessageFormula": "制定を表示します。"
               }
             ],
-            "ID": "af3c4f6b-3e57-4660-818f-2ae0b3784c02"
+            "ID": "a8d67d36-8057-4dd1-8c87-5f3dcbafb2b3"
           },
           {
             "Condition": {
@@ -5379,7 +5403,7 @@
                 ]
               }
             ],
-            "ID": "f37081c9-58a4-444f-9b77-8bd6abfc184d"
+            "ID": "77836782-46b0-4d4a-963c-506d1641e03f"
           },
           {
             "CommandList": [
@@ -5396,7 +5420,7 @@
                 ]
               }
             ],
-            "ID": "c7c4a020-49d3-47f4-ae8d-0609d39fe8ed"
+            "ID": "4ed78b3f-fcee-49a3-9e9f-26c2441f1262"
           }
         ]
       },
@@ -5409,7 +5433,7 @@
           "TableValueType": 0,
           "BindingInfos": [
             {
-              "GUID": "6ab61647-1ad6-4a9e-a64d-1b022605c148",
+              "GUID": "c8457e58-3c4c-471d-a138-d80e2f9fe815",
               "BindingInfo": {
                 "TableName": "YBS褒賞",
                 "ColumnName": "FGC_State",
@@ -5431,7 +5455,7 @@
             }
           }
         },
-        "ID": "384401bee8bf4447b360056abac3bb56"
+        "ID": "8857577f43d64f75ab630b0b195e08d6"
       },
       {
         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -5474,14 +5498,14 @@
                   {
                     "Location": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=褒賞フロー_承認処理!50:51"
+                      "SerializeProperty": "=褒賞フロー_承認処理!49:51"
                     },
                     "Value": true
                   }
                 ]
               }
             ],
-            "ID": "49ab0cb8-e341-4821-bfa9-566a81503e2a"
+            "ID": "fcfc413c-a97a-4036-a8fd-3ba69b033588"
           },
           {
             "Condition": {
@@ -5503,14 +5527,14 @@
                   {
                     "Location": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=褒賞フロー_承認処理!48:49"
+                      "SerializeProperty": "=褒賞フロー_承認処理!47:49"
                     },
                     "Value": true
                   }
                 ]
               }
             ],
-            "ID": "80343c92-4441-4f53-b2f8-be279b89228e"
+            "ID": "0308f19c-f750-4c2e-8881-b57dc63fe834"
           },
           {
             "CommandList": [
@@ -5519,7 +5543,7 @@
                 "MessageFormula": "承認処理のページです"
               }
             ],
-            "ID": "bd13a076-5a84-4f15-ae58-f8e89aea0b96"
+            "ID": "a7494040-4523-4ab1-8d38-35cbaa578549"
           }
         ]
       }
@@ -5556,4 +5580,4 @@
       "Size": "49,21"
     }
   ]
-}//i00/dhSTE3RBV2Sa9JNAMsVVnauq/LxyjgPOqjN6D2MsGnCq8nUlsPa0xhegh5Y5n7G54DnR/rUJn7RIKZlFzx+5+51Y8Jq0GdrBgEAeffVep6ift6MuJTIWLDs9eq2QX1lE2Nw3un6QTwMCJH+uaHJChdOHZBD5495KUkh7ztGYKS1fj5K+yjFqZXTU83yHaZ7gU6Qjk4/On2fNq11LP/qzjHxMyO9fvHw5/7xcvrp/jwmcd3eLhAAT/FIiZ1i7wcnG0UNAdJSUdChXDOuAKeh473KmB991ntR37LWuD9VLK1u9+uRDB3PzGokbXQzxkyPfUx2VA6JtvRJxU1KrX8OMfiICETfHBMqxLnGnwbnSpx1rnn0s5dR2oQhwUMnh5olqTJfSXyISXvVQTt4NVy0C+Pn03AvGgsPRi4oA5VPuyjP6IkD/sS6fDjydlsbpqpcS/x9wrfDFBcaQkfepYM3vzayKtI1d88bMmaY4orFysfCFvvNx09aucQMP/kDGnQ6ektchvbuzyzN5+rPEe6ff8jymlyuyGbes9I9EVqBy5AFHTymi+b7TxLDAdxCpepEqnoEikONmER9BY+T/gJVxQvpqdmBFBBnVEqor/SCd6KfkqmTCy9V8LyEK73fIKN/Z0JsF9mw8E136x7Z/iQVYUaDjTs1UW4ePNbezcghnX/HCKzf5EzXVxh6lusYn/xEP4e5Fo7DiuKse5eq9RSMuEiBHI4qQuMdc2/wZv2dN+EiLgajIw4n0txNuYUDF8rYi2D11QqUTE2uE0eXMu/BAT2A6goLkIdFpcj9WGHpM4xAT9Gm30GAw1wWewG3JY88mEm3ncsSplTRM0LKK3jfK2KJk/t4BJ1e8U6fJCRlLAs6K0L94MAGzslSlbwbEOc3O5BwpYlf/tJTQUDYhWA==|920
+}//SwoGg3TpkM2DFaJ42ZcKc7hP3kmNQUhNSe+M4M3mEMCwON58MTK/khTL83lZXVlJCqZhtWMx1rvrOVO4a2ljF4m3re+pOny9ZTPQggaZMA81IqZExjODCe4AjIPLF5jETfW3mfLbsIYyVDnlC5ENxLJKeR/hOTEgq12kMSHXtXt/EtSjqjOZq3GXhghhjeWiatqdScAeUZP3wcg9ZuA8GM+/xEdH9Mm3WkcEnhGG8FeGmyP+eaMm9sqLTyKd0zGgH2DzNc/abEdit1ZD+RJQ4k+2woEoPmlISvycN+EjouYtvfjlEOle3y1c+LCmNALZIvsyJYHzYXJeGDEBgY3NpdnecF1xuAdXejlJViQX+ftFuwFMo1ixd0pkniJm/1qbEGYchn9kpk29CqaVsWGT/Y6LAoCJZVHEq4ZUxkhV9i1U8eC7BQprHOsCtx0Fd6l8ZkQonBZvQqWR/Pq37NdwXO5GwlCWgD5wxpwQAtXhwSotxIEdcVnOlSEoc2Pi5MhxsbJg04rXsWylARl5z7G6wyoo1gnfo/yQcwSJm2Zw4rw8z9uqFdbS3hAB6MgpKQqCo+8rPH2fj96iuzS7MPAGoESv9R6o8Q8sau04iyDGI+6v+wBaFfxBMdikdfT24tZ3+OATbq/mb8dc6kF4KtaQwwBu+e1es/ZciodWbM1LoFV6utUx1NwKplxdr2NSX0Z/mOmTVRcYxoE/pzmvQbkOMa5tkUJujg93rEuvjyyVOBxhyqEQ1WahCe+NRpxW8BQhG3ki3nevLFgoeAV1SHDxopiG1LZSHU5YfPlUUFGuLeVzJAx7fMBKbnRLShAltSbY2kWncdwMRjqubNep13JxB604x8hbk9Ej6qdRbQ00EsT5A1924OhMfvcT7nRN/hGzUF3RVGX0OIHK2B2kVtXrHw==|920

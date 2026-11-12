@@ -11,7 +11,7 @@
     "8,9": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(AV9),\"null\",\"'\"&AV9&\"'\"))",
     "9,9": "ODATA(\"v_YBS規格文書_ワークフロー?$select=When&$filter=WorkflowState eq '承認済み' and YBSコード eq \"&IF(ISBLANK(F7),\"null\",\"'\"&F7&\"'\")&\" and 改正コード eq \"&IF(ISBLANK(J7),\"null\",J7))",
     "8,47": "ODATA(\"YBS規格文書?$select=申請者&$filter=ID eq \"&IF(ISBLANK(Y4),\"null\",Y4))",
-    "43,45": "ODATA(\"YBS権限マスタ?$select=名前&$filter=権限 eq '委員長'\")",
+    "56,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E57),\"null\",\"'\"&E57&\"'\"))",
     "18,23": "IF(AN19=1,5,0)",
     "19,23": "IF(AN20=1,5,0)",
     "20,23": "IF(AN21=1,5,0)",
@@ -22,8 +22,8 @@
     "29,23": "IF(AN30=1,4,0)",
     "30,23": "IF(AN31=1,8,0)",
     "31,23": "SUM(X28:Z31)+X26",
-    "37,23": "IFS(G14=\"\",0,G14=\"制定\",X23,G14=\"改正\",X32,TRUE,X35)",
+    "37,23": "IFS(F14=\"\",\"未評価\",F14=\"制定\",X23,F14=\"改正\",X32,F14=\"対象外\",\"対象外\",TRUE,X35)",
     "4,43": "ODATA(\"YBS規格文書?$select=分類コード&$filter=ID eq \"&IF(ISBLANK(Y4),\"null\",Y4))",
-    "56,7": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(E57),\"null\",\"'\"&E57&\"'\"))"
+    "43,45": "ODATA(\"YBS権限マスタ?$select=名前&$filter=権限 eq '委員長'\")"
   }
 }
