@@ -1,6 +1,6 @@
 {
   "Rows": {
-    "Count": 44
+    "Count": 35
   },
   "Cols": {
     "Count": 60
@@ -13,18 +13,18 @@
     "3,26": "規格名称",
     "3,33": "承認/確認",
     "4,33": "処理",
-    "15,2": "ログインユーザーの権限確認",
-    "21,2": "アクション＆コメント",
-    "22,5": "氏名ID",
-    "22,8": "氏名",
-    "22,13": "アクション",
-    "22,18": "コメント",
-    "22,32": "コメント日時",
-    "22,46": "規格文書ID"
+    "15,2": "アクション＆コメント",
+    "16,5": "氏名ID",
+    "16,8": "氏名",
+    "16,13": "アクション",
+    "16,18": "コメント",
+    "16,32": "コメント日時",
+    "16,46": "規格文書ID",
+    "30,2": "ログインユーザーの権限確認"
   },
   "Formulas": {
     "4,26": "ODATA(\"YBS規格文書?$select=規格名称&$filter=ID eq \"&IF(ISBLANK(I5),\"null\",I5))",
-    "23,8": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(F24),\"null\",\"'\"&F24&\"'\"))"
+    "17,8": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(F18),\"null\",\"'\"&F18&\"'\"))"
   },
   "AttachInfos": {
     "1,29": {
@@ -123,8 +123,92 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "褒賞フロー_承認処理"
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "フロー状態",
+            "TableValue": {
+              "TableName": "YBS褒賞",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "3905f7d2-0519-43f4-ab27-6f98823a991b",
+                  "BindingInfo": {
+                    "TableName": "YBS褒賞",
+                    "ColumnName": "FGC_State",
+                    "GUID": "d8f72e1f-91d0-4b31-b9ed-d01f13dd50ec"
+                  },
+                  "ColumnName": "FGC_State"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "YBS褒賞",
+                  "ColumnName": "規格文書ID",
+                  "GUID": "e1354b9c-cc93-4bb1-a2f8-8afa8230cd6d"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=褒賞一覧_承認待ち!I5"
+                }
+              }
+            },
+            "ID": "7f4cc538273d47e9b0f1f399396d41e5"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=フロー状態"
+                          }
+                        ]
+                      },
+                      "value": "新規",
+                      "LeftBracket": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=フロー状態"
+                          }
+                        ]
+                      },
+                      "value": "承認済み",
+                      "RightBracket": 1
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "「新規」または、「承認済み」のため、処理できません。"
+                  }
+                ],
+                "ID": "2790dbc4-f638-45d0-92e4-891ea540263f"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "褒賞フロー_承認処理"
+                  }
+                ],
+                "ID": "188390ea-c342-427e-9f18-1051847b481c"
+              }
+            ]
           }
         ],
         "Text": "処理",
@@ -133,64 +217,11 @@
     },
     "16,2": {
       "ListViewInfo": {
-        "Name": "リストビュー3",
-        "TableName": "YBS権限マスタ",
-        "RowIndex": 16,
-        "ColumnIndex": 2,
-        "RowCount": 4,
-        "ColumnCount": 24,
-        "SqlCondition": {
-          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-          "ColumnBindingInfo": {
-            "TableName": "YBS権限マスタ",
-            "ColumnName": "ユーザーID",
-            "GUID": "c3974300-0930-4630-bcc3-0f4da1e02f96"
-          },
-          "Value": "%CurrentUser%"
-        },
-        "TopCondition": null,
-        "ListViewStyleName": "_RS_Medium2",
-        "ShowColumnHeaderInDesigner": true,
-        "ShowEditStatusIcon": true,
-        "UseSimpleBar": true,
-        "ColumnOperation": 2
-      }
-    },
-    "17,2": {
-      "BindingInfo": {
-        "TableName": "YBS権限マスタ",
-        "ColumnName": "権限",
-        "GUID": "76a68e96-1cec-46fb-b009-8cec2efbc59c"
-      }
-    },
-    "17,6": {
-      "BindingInfo": {
-        "TableName": "YBS権限マスタ",
-        "ColumnName": "名前",
-        "GUID": "93138e9d-ee42-41ac-9d5c-f5070c3d6209"
-      }
-    },
-    "17,12": {
-      "BindingInfo": {
-        "TableName": "YBS権限マスタ",
-        "ColumnName": "アドレス",
-        "GUID": "070c5f66-f089-4483-b90d-8c8f9571087d"
-      }
-    },
-    "17,17": {
-      "BindingInfo": {
-        "TableName": "YBS権限マスタ",
-        "ColumnName": "ユーザーID",
-        "GUID": "3fa93c2f-55a1-4e52-a44c-a08372b41baa"
-      }
-    },
-    "22,2": {
-      "ListViewInfo": {
         "Name": "リストビュー4",
         "TableName": "v_YBS褒賞_ワークフロー",
-        "RowIndex": 22,
+        "RowIndex": 16,
         "ColumnIndex": 2,
-        "RowCount": 16,
+        "RowCount": 13,
         "ColumnCount": 38,
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -201,7 +232,7 @@
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=褒賞一覧_承認待ち!AZ23"
+            "SerializeProperty": "=褒賞一覧_承認待ち!AZ17"
           }
         },
         "OrderByCondition": {
@@ -225,46 +256,100 @@
         "CommitType": 1
       }
     },
-    "22,51": {
+    "16,51": {
       "BindingInfo": {
         "TableName": "YBS褒賞",
         "ColumnName": "規格文書ID",
         "GUID": "60804904-e73a-4784-9bc6-f6fa9712365f"
       }
     },
-    "23,2": {
+    "17,2": {
+      "NameUsedInJavaScript": "規格文書ID",
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
-        "ColumnName": "RecordId",
-        "GUID": "fe52e666-bfc9-40af-b77b-1c2177d0ef84"
+        "ColumnName": "規格文書ID",
+        "GUID": "53b0e3dd-4a5f-4589-919d-1baeca1e6f7d"
       }
     },
-    "23,5": {
+    "17,5": {
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
         "ColumnName": "Who",
         "GUID": "8351dbba-92aa-44da-8e59-79998b5473c4"
       }
     },
-    "23,13": {
+    "17,13": {
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
         "ColumnName": "ActionName",
         "GUID": "0a6d1942-97b3-4798-84b9-9f90495ff0c1"
       }
     },
-    "23,18": {
+    "17,18": {
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
         "ColumnName": "Comments",
         "GUID": "16d9d68a-3f72-4725-8e75-db5ad549570c"
       }
     },
-    "23,32": {
+    "17,32": {
       "BindingInfo": {
         "TableName": "v_YBS褒賞_ワークフロー",
         "ColumnName": "When",
         "GUID": "140e73b2-a79c-4fe8-b1a8-90594784d6da"
+      }
+    },
+    "31,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー3",
+        "TableName": "YBS権限マスタ",
+        "RowIndex": 31,
+        "ColumnIndex": 2,
+        "RowCount": 3,
+        "ColumnCount": 24,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "YBS権限マスタ",
+            "ColumnName": "ユーザーID",
+            "GUID": "c3974300-0930-4630-bcc3-0f4da1e02f96"
+          },
+          "Value": "%CurrentUser%"
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "32,2": {
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "権限",
+        "GUID": "76a68e96-1cec-46fb-b009-8cec2efbc59c"
+      }
+    },
+    "32,6": {
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "名前",
+        "GUID": "93138e9d-ee42-41ac-9d5c-f5070c3d6209"
+      }
+    },
+    "32,12": {
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "アドレス",
+        "GUID": "070c5f66-f089-4483-b90d-8c8f9571087d"
+      }
+    },
+    "32,17": {
+      "BindingInfo": {
+        "TableName": "YBS権限マスタ",
+        "ColumnName": "ユーザーID",
+        "GUID": "3fa93c2f-55a1-4e52-a44c-a08372b41baa"
       }
     }
   },
@@ -305,15 +390,15 @@
         "HorizontalAlignment": 2
       },
       {
+        "Background": 3
+      },
+      {
         "FontFamily": 1,
-        "Formatter": 3,
+        "Formatter": 4,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
-      },
-      {
-        "Background": 4
       }
     ],
     "Types": {
@@ -321,8 +406,8 @@
         "#FFFF0000",
         "Body",
         "Center",
-        "[AUTO]General",
-        "#FFFFFF00"
+        "#FFFFFF00",
+        "[AUTO]General"
       ]
     },
     "CellStyles": {
@@ -366,30 +451,6 @@
       "4,39": 5,
       "4,40": 5,
       "4,41": 5,
-      "15,2": 1,
-      "15,3": 7,
-      "15,4": 7,
-      "15,5": 7,
-      "15,6": 7,
-      "15,7": 1,
-      "15,8": 1,
-      "15,9": 1,
-      "15,10": 1,
-      "15,11": 1,
-      "15,12": 1,
-      "15,13": 1,
-      "15,14": 1,
-      "15,15": 1,
-      "15,16": 1,
-      "15,17": 1,
-      "15,18": 1,
-      "15,19": 1,
-      "15,20": 1,
-      "15,21": 1,
-      "15,22": 1,
-      "15,23": 1,
-      "15,24": 1,
-      "15,25": 1,
       "16,2": 1,
       "16,3": 1,
       "16,4": 1,
@@ -414,6 +475,21 @@
       "16,23": 1,
       "16,24": 1,
       "16,25": 1,
+      "16,26": 1,
+      "16,27": 1,
+      "16,28": 1,
+      "16,29": 1,
+      "16,30": 1,
+      "16,31": 1,
+      "16,32": 1,
+      "16,33": 1,
+      "16,34": 1,
+      "16,35": 1,
+      "16,36": 1,
+      "16,37": 1,
+      "16,38": 1,
+      "16,39": 5,
+      "16,51": 7,
       "17,2": 1,
       "17,3": 1,
       "17,4": 1,
@@ -438,6 +514,20 @@
       "17,23": 1,
       "17,24": 1,
       "17,25": 1,
+      "17,26": 1,
+      "17,27": 1,
+      "17,28": 1,
+      "17,29": 1,
+      "17,30": 1,
+      "17,31": 1,
+      "17,32": 8,
+      "17,33": 1,
+      "17,34": 1,
+      "17,35": 1,
+      "17,36": 1,
+      "17,37": 1,
+      "17,38": 1,
+      "17,39": 5,
       "18,2": 1,
       "18,3": 1,
       "18,4": 1,
@@ -462,6 +552,20 @@
       "18,23": 1,
       "18,24": 1,
       "18,25": 1,
+      "18,26": 1,
+      "18,27": 1,
+      "18,28": 1,
+      "18,29": 1,
+      "18,30": 1,
+      "18,31": 1,
+      "18,32": 1,
+      "18,33": 1,
+      "18,34": 1,
+      "18,35": 1,
+      "18,36": 1,
+      "18,37": 1,
+      "18,38": 1,
+      "18,39": 1,
       "19,2": 1,
       "19,3": 1,
       "19,4": 1,
@@ -486,6 +590,96 @@
       "19,23": 1,
       "19,24": 1,
       "19,25": 1,
+      "19,26": 1,
+      "19,27": 1,
+      "19,28": 1,
+      "19,29": 1,
+      "19,30": 1,
+      "19,31": 1,
+      "19,32": 1,
+      "19,33": 1,
+      "19,34": 1,
+      "19,35": 1,
+      "19,36": 1,
+      "19,37": 1,
+      "19,38": 1,
+      "19,39": 1,
+      "20,2": 1,
+      "20,3": 1,
+      "20,4": 1,
+      "20,5": 1,
+      "20,6": 1,
+      "20,7": 1,
+      "20,8": 1,
+      "20,9": 1,
+      "20,10": 1,
+      "20,11": 1,
+      "20,12": 1,
+      "20,13": 1,
+      "20,14": 1,
+      "20,15": 1,
+      "20,16": 1,
+      "20,17": 1,
+      "20,18": 1,
+      "20,19": 1,
+      "20,20": 1,
+      "20,21": 1,
+      "20,22": 1,
+      "20,23": 1,
+      "20,24": 1,
+      "20,25": 1,
+      "20,26": 1,
+      "20,27": 1,
+      "20,28": 1,
+      "20,29": 1,
+      "20,30": 1,
+      "20,31": 1,
+      "20,32": 1,
+      "20,33": 1,
+      "20,34": 1,
+      "20,35": 1,
+      "20,36": 1,
+      "20,37": 1,
+      "20,38": 1,
+      "20,39": 1,
+      "21,2": 1,
+      "21,3": 1,
+      "21,4": 1,
+      "21,5": 1,
+      "21,6": 1,
+      "21,7": 1,
+      "21,8": 1,
+      "21,9": 1,
+      "21,10": 1,
+      "21,11": 1,
+      "21,12": 1,
+      "21,13": 1,
+      "21,14": 1,
+      "21,15": 1,
+      "21,16": 1,
+      "21,17": 1,
+      "21,18": 1,
+      "21,19": 1,
+      "21,20": 1,
+      "21,21": 1,
+      "21,22": 1,
+      "21,23": 1,
+      "21,24": 1,
+      "21,25": 1,
+      "21,26": 1,
+      "21,27": 1,
+      "21,28": 1,
+      "21,29": 1,
+      "21,30": 1,
+      "21,31": 1,
+      "21,32": 1,
+      "21,33": 1,
+      "21,34": 1,
+      "21,35": 1,
+      "21,36": 1,
+      "21,37": 1,
+      "21,38": 1,
+      "21,39": 1,
       "22,2": 1,
       "22,3": 1,
       "22,4": 1,
@@ -523,8 +717,7 @@
       "22,36": 1,
       "22,37": 1,
       "22,38": 1,
-      "22,39": 5,
-      "22,51": 8,
+      "22,39": 1,
       "23,2": 1,
       "23,3": 1,
       "23,4": 1,
@@ -555,14 +748,14 @@
       "23,29": 1,
       "23,30": 1,
       "23,31": 1,
-      "23,32": 7,
+      "23,32": 1,
       "23,33": 1,
       "23,34": 1,
       "23,35": 1,
       "23,36": 1,
       "23,37": 1,
       "23,38": 1,
-      "23,39": 5,
+      "23,39": 1,
       "24,2": 1,
       "24,3": 1,
       "24,4": 1,
@@ -753,49 +946,11 @@
       "28,37": 1,
       "28,38": 1,
       "28,39": 1,
-      "29,2": 1,
-      "29,3": 1,
-      "29,4": 1,
-      "29,5": 1,
-      "29,6": 1,
-      "29,7": 1,
-      "29,8": 1,
-      "29,9": 1,
-      "29,10": 1,
-      "29,11": 1,
-      "29,12": 1,
-      "29,13": 1,
-      "29,14": 1,
-      "29,15": 1,
-      "29,16": 1,
-      "29,17": 1,
-      "29,18": 1,
-      "29,19": 1,
-      "29,20": 1,
-      "29,21": 1,
-      "29,22": 1,
-      "29,23": 1,
-      "29,24": 1,
-      "29,25": 1,
-      "29,26": 1,
-      "29,27": 1,
-      "29,28": 1,
-      "29,29": 1,
-      "29,30": 1,
-      "29,31": 1,
-      "29,32": 1,
-      "29,33": 1,
-      "29,34": 1,
-      "29,35": 1,
-      "29,36": 1,
-      "29,37": 1,
-      "29,38": 1,
-      "29,39": 1,
       "30,2": 1,
-      "30,3": 1,
-      "30,4": 1,
-      "30,5": 1,
-      "30,6": 1,
+      "30,3": 8,
+      "30,4": 8,
+      "30,5": 8,
+      "30,6": 8,
       "30,7": 1,
       "30,8": 1,
       "30,9": 1,
@@ -815,20 +970,6 @@
       "30,23": 1,
       "30,24": 1,
       "30,25": 1,
-      "30,26": 1,
-      "30,27": 1,
-      "30,28": 1,
-      "30,29": 1,
-      "30,30": 1,
-      "30,31": 1,
-      "30,32": 1,
-      "30,33": 1,
-      "30,34": 1,
-      "30,35": 1,
-      "30,36": 1,
-      "30,37": 1,
-      "30,38": 1,
-      "30,39": 1,
       "31,2": 1,
       "31,3": 1,
       "31,4": 1,
@@ -853,20 +994,6 @@
       "31,23": 1,
       "31,24": 1,
       "31,25": 1,
-      "31,26": 1,
-      "31,27": 1,
-      "31,28": 1,
-      "31,29": 1,
-      "31,30": 1,
-      "31,31": 1,
-      "31,32": 1,
-      "31,33": 1,
-      "31,34": 1,
-      "31,35": 1,
-      "31,36": 1,
-      "31,37": 1,
-      "31,38": 1,
-      "31,39": 1,
       "32,2": 1,
       "32,3": 1,
       "32,4": 1,
@@ -891,20 +1018,6 @@
       "32,23": 1,
       "32,24": 1,
       "32,25": 1,
-      "32,26": 1,
-      "32,27": 1,
-      "32,28": 1,
-      "32,29": 1,
-      "32,30": 1,
-      "32,31": 1,
-      "32,32": 1,
-      "32,33": 1,
-      "32,34": 1,
-      "32,35": 1,
-      "32,36": 1,
-      "32,37": 1,
-      "32,38": 1,
-      "32,39": 1,
       "33,2": 1,
       "33,3": 1,
       "33,4": 1,
@@ -928,173 +1041,7 @@
       "33,22": 1,
       "33,23": 1,
       "33,24": 1,
-      "33,25": 1,
-      "33,26": 1,
-      "33,27": 1,
-      "33,28": 1,
-      "33,29": 1,
-      "33,30": 1,
-      "33,31": 1,
-      "33,32": 1,
-      "33,33": 1,
-      "33,34": 1,
-      "33,35": 1,
-      "33,36": 1,
-      "33,37": 1,
-      "33,38": 1,
-      "33,39": 1,
-      "34,2": 1,
-      "34,3": 1,
-      "34,4": 1,
-      "34,5": 1,
-      "34,6": 1,
-      "34,7": 1,
-      "34,8": 1,
-      "34,9": 1,
-      "34,10": 1,
-      "34,11": 1,
-      "34,12": 1,
-      "34,13": 1,
-      "34,14": 1,
-      "34,15": 1,
-      "34,16": 1,
-      "34,17": 1,
-      "34,18": 1,
-      "34,19": 1,
-      "34,20": 1,
-      "34,21": 1,
-      "34,22": 1,
-      "34,23": 1,
-      "34,24": 1,
-      "34,25": 1,
-      "34,26": 1,
-      "34,27": 1,
-      "34,28": 1,
-      "34,29": 1,
-      "34,30": 1,
-      "34,31": 1,
-      "34,32": 1,
-      "34,33": 1,
-      "34,34": 1,
-      "34,35": 1,
-      "34,36": 1,
-      "34,37": 1,
-      "34,38": 1,
-      "34,39": 1,
-      "35,2": 1,
-      "35,3": 1,
-      "35,4": 1,
-      "35,5": 1,
-      "35,6": 1,
-      "35,7": 1,
-      "35,8": 1,
-      "35,9": 1,
-      "35,10": 1,
-      "35,11": 1,
-      "35,12": 1,
-      "35,13": 1,
-      "35,14": 1,
-      "35,15": 1,
-      "35,16": 1,
-      "35,17": 1,
-      "35,18": 1,
-      "35,19": 1,
-      "35,20": 1,
-      "35,21": 1,
-      "35,22": 1,
-      "35,23": 1,
-      "35,24": 1,
-      "35,25": 1,
-      "35,26": 1,
-      "35,27": 1,
-      "35,28": 1,
-      "35,29": 1,
-      "35,30": 1,
-      "35,31": 1,
-      "35,32": 1,
-      "35,33": 1,
-      "35,34": 1,
-      "35,35": 1,
-      "35,36": 1,
-      "35,37": 1,
-      "35,38": 1,
-      "35,39": 1,
-      "36,2": 1,
-      "36,3": 1,
-      "36,4": 1,
-      "36,5": 1,
-      "36,6": 1,
-      "36,7": 1,
-      "36,8": 1,
-      "36,9": 1,
-      "36,10": 1,
-      "36,11": 1,
-      "36,12": 1,
-      "36,13": 1,
-      "36,14": 1,
-      "36,15": 1,
-      "36,16": 1,
-      "36,17": 1,
-      "36,18": 1,
-      "36,19": 1,
-      "36,20": 1,
-      "36,21": 1,
-      "36,22": 1,
-      "36,23": 1,
-      "36,24": 1,
-      "36,25": 1,
-      "36,26": 1,
-      "36,27": 1,
-      "36,28": 1,
-      "36,29": 1,
-      "36,30": 1,
-      "36,31": 1,
-      "36,32": 1,
-      "36,33": 1,
-      "36,34": 1,
-      "36,35": 1,
-      "36,36": 1,
-      "36,37": 1,
-      "36,38": 1,
-      "36,39": 1,
-      "37,2": 1,
-      "37,3": 1,
-      "37,4": 1,
-      "37,5": 1,
-      "37,6": 1,
-      "37,7": 1,
-      "37,8": 1,
-      "37,9": 1,
-      "37,10": 1,
-      "37,11": 1,
-      "37,12": 1,
-      "37,13": 1,
-      "37,14": 1,
-      "37,15": 1,
-      "37,16": 1,
-      "37,17": 1,
-      "37,18": 1,
-      "37,19": 1,
-      "37,20": 1,
-      "37,21": 1,
-      "37,22": 1,
-      "37,23": 1,
-      "37,24": 1,
-      "37,25": 1,
-      "37,26": 1,
-      "37,27": 1,
-      "37,28": 1,
-      "37,29": 1,
-      "37,30": 1,
-      "37,31": 1,
-      "37,32": 1,
-      "37,33": 1,
-      "37,34": 1,
-      "37,35": 1,
-      "37,36": 1,
-      "37,37": 1,
-      "37,38": 1,
-      "37,39": 1
+      "33,25": 1
     },
     "SheetStyle": {
       "FontFamily": 1,
@@ -1108,30 +1055,7 @@
     "0,1,1,8",
     "2,48,2,4",
     "1,29,2,5",
-    "17,2,1,4",
-    "16,2,1,4",
-    "17,6,1,6",
-    "16,6,1,6",
-    "17,12,1,5",
-    "16,12,1,5",
-    "17,17,1,6",
-    "16,17,1,6",
-    "22,51,1,4",
-    "23,2,1,3",
-    "22,2,1,3",
-    "23,5,1,3",
-    "22,5,1,3",
-    "23,8,1,5",
-    "22,8,1,5",
-    "23,13,1,5",
-    "22,13,1,5",
-    "23,18,1,14",
-    "22,18,1,14",
-    "23,32,1,7",
-    "22,32,1,7",
-    "5,2,9,40",
-    "24,2,14,38",
-    "18,2,2,24",
+    "16,51,1,4",
     "4,2,1,6",
     "3,2,1,6",
     "4,8,1,3",
@@ -1147,7 +1071,30 @@
     "4,26,1,7",
     "3,26,1,7",
     "4,33,1,4",
-    "3,33,1,4"
+    "3,33,1,4",
+    "32,2,1,4",
+    "31,2,1,4",
+    "32,6,1,6",
+    "31,6,1,6",
+    "32,12,1,5",
+    "31,12,1,5",
+    "32,17,1,6",
+    "31,17,1,6",
+    "5,2,9,40",
+    "18,2,11,38",
+    "17,2,1,3",
+    "16,2,1,3",
+    "17,5,1,3",
+    "16,5,1,3",
+    "17,8,1,5",
+    "16,8,1,5",
+    "17,13,1,5",
+    "16,13,1,5",
+    "17,18,1,14",
+    "16,18,1,14",
+    "17,32,1,7",
+    "16,32,1,7",
+    "33,2,1,24"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1174,4 +1121,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//irEb5V995GiTR+r3qVGiGhSBGtcEjSTBjPdkUOo/NxZDITdv/4Zi4wmGFWAT3Qab/KDSpVxT2vDwnAbG6lsjgOqbBHffuQfPVJHmAxEQmXatxdGEPG/Ee5m5VylpINFnoQrffu8A5jYBVVCwbilOBzMPy48j3D7OXgv/40vAbDZtWzZp/7jP6C1Wkb9y+2IdbrPvCVoqIyWniql1kFROumNc7BWk5UQkYAzr4TyakXKCZmtdoqeu6n2FprsCP2UMCS/KBqOUfdI7sXb47J4BBUbB2u3zKIdaMhJfgF9SPPfiluu0u1n4E83+pQFEwXSf5QArcuriJRh7sHCffubh3CRmanHJOgt5LGFJwu/J2j0hLuHfifXYZD4QO+DdyQ+GDsxLdDDjCwktnwrHLHZC/NT8s6KGvwnR7P6HQa9Ya0MLg2CUxu6jt8EvGk1Qm6zbBPQcZT4oTQoS8aAwrbK9yfMsfWUNsFxHBGb59IGSd/7KWQaWmJ+GZHhxH1EzQaG4co/gjvVXwELi+ZM8vrxrpKLDI22I2itvXQD5NCcY77/Ry8rgpY91hIoJGVjjBVtjTS76rTkD9PuXDW/1ckU1rlvmguXk4KA5eqZ4WqU1JUbJJWv1mm4XVuvvODWkJbQZnbFz0a6LXCR6rBPCD9L+u1kD217N6Rg5OCLxAO4K5cMgwKxpl7OU84Kjri4frjC4vha/XKadXnTUHWfjWPT7vPND6JOc5O/zW/HoHo8BQIfZx+zZUM07UIqEQn5G/6P9k1irLQW0Crm3dSp0sM90bTt3klBlmhm9iCdlpfBWfNObUfem8MeVgx0YJf9sJBFB5fKVp5d26MhCqdfiePUxslfIhI8S4nVKyw+Gk4cILeBz091To27qrLktnKrdJXewEDHBZWVPq6JVMtIgl+Djjw==|920
+}//Q5+jxebdURRfTaskRzgBHyLR/MdnmChDEXnfDZPirmmhIy0owVIWJBAn5YdugaSdhLWwDecWaTYiVi7+H6SaeFh5dAPNooexXmWHYC0NyBP6ZkF90D750Vz5uWNeP5QtfuEaomkA9uPpxvJKiBwntjt7YGDyN/GwG3DVO7/e5S1izze8/rkGLxm/3R3aiyc0lISmrzbMVY9UHmLeNJ/LGFPPUFVqVaezRvgObRQsogKuzRR/x0f95vU2i8l9xBTI31CkbssqDM2ZKIGVpZULz+5qKuiKq4UeCpVtTkcLlY4CMdS0imNLapivv8P30x5gEq2ftbbgkovXPiDJg7CrdAG0rlwZd0fv1IeA2dH7DyAgSOJLhHp/5x+VsexninW9dFjvGq0lqj29cw3oTQEmvj2QxC0ygUMyDZgJbjdfKhED3LsEvEsGqyZ+lkeZeYU47yUocAITsG62cx8MaFJiJuzOyzOuh+ghlHwKb9Alf8NuIsOTOgcR4Te8u1foNuUY05JknIx3Q+dzzFzRXYqL8nMAlaWB0Nl5tw6oc3frHDAljvz1ojK2Jv5RNg31WmF1P+20QCNAhFfzkIh7SFhfQkKNcxPxrkmQ0PH0B5lnE2sUDmMB3yMWrAnMwpeiN7yvq2reaCacH2i2iPuP/jWbQK6lF6uxicp6WgTBXudSkxrqrj8AdHKpnQIzgXNQqJp4YOOw6NkieJUFv9EEW5FqgPxXXBYQqagiBrLwJi+U6/vh7Y1T2pnQ38MrnL2i5tMO9QiEX8OL2OWJ424f8Y+IoB1KuCgX7vUz03csNu2+oosz3GfF3vLjnVZqXX3BZpmbBB0Jv2buKmWY00B2YF7qD2UReAumNCJ2phHorROKPEPmO+IXbMMZVpZDfaEPfH7ZiLiRiDDHOiUPurx/sri7WQ==|920
