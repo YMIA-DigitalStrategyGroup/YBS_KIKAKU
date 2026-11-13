@@ -1,6 +1,6 @@
 {
   "PageType": 0,
-  "ColumnCount": 60,
+  "ColumnCount": 55,
   "RowCount": 71,
   "Formulas": {
     "4,5": "ODATA(\"YBS分類コード?$select=分類名称&$filter=分類コード eq \"&IF(ISBLANK(AR5),\"null\",\"'\"&AR5&\"'\"))",
