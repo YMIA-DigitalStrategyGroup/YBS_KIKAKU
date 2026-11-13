@@ -533,16 +533,6 @@
   },
   {
     "ModuleName": "PCPage/管理者用メモ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-11-13T14:24:35.9301468+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\YBS管理者\\管理者用メモ.json",
-      "Pages\\YBS管理者\\管理者用メモ.rd"
-    ]
+    "ModuleType": 1
   }
 ]
