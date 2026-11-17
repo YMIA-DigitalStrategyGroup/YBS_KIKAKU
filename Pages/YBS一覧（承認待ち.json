@@ -20,6 +20,8 @@
   "Values": {
     "0,1": "＜承認待ち　文書一覧＞",
     "2,1": "承認待ち　切替",
+    "2,12": "（現在の承認待ち件数）",
+    "3,15": "件",
     "5,2": "委員コメント",
     "5,10": "改正",
     "5,34": "区分",
@@ -31,7 +33,8 @@
     "17,5": "ログインユーザーの権限確認"
   },
   "Formulas": {
-    "6,42": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(BF7),\"null\",\"'\"&BF7&\"'\"))"
+    "6,42": "ODATA(\"ユーザー情報ビュー?$select=氏名&$filter=ユーザー名 eq \"&IF(ISBLANK(BF7),\"null\",\"'\"&BF7&\"'\"))",
+    "3,12": "ODATA(\"YBS規格文書/$count?$filter=状態 eq '部門長承認待ち' or 状態 eq '審議会承認待ち' or 状態 eq '委員長承認待ち'\")"
   },
   "AttachInfos": {
     "2,31": {
@@ -112,7 +115,7 @@
                     }
                   }
                 ],
-                "ID": "5ab9afe1-c14a-4f90-9572-74b05d87d3ff"
+                "ID": "2fbdcf52-3348-44af-b99b-cb1ea4df7af7"
               },
               {
                 "CommandList": [
@@ -128,7 +131,7 @@
                     }
                   }
                 ],
-                "ID": "0391141f-0a3d-4628-9e01-dec96d645b15"
+                "ID": "3439a561-12f3-4d36-90c2-c3b18a358697"
               }
             ]
           }
@@ -244,7 +247,7 @@
                     "MessageFormula": "YBS委員ではないので、登録できません。"
                   }
                 ],
-                "ID": "c06eedaf-f1ba-440c-834f-6782dc89d7c8"
+                "ID": "8ea9a37d-6b9a-4609-b90c-22de9e03521f"
               },
               {
                 "CommandList": [
@@ -253,7 +256,7 @@
                     "PageName": "フロー_委員コメント"
                   }
                 ],
-                "ID": "02429db9-6530-4f85-8f77-f7ca792409fb"
+                "ID": "35e6cf56-2fab-4ba7-b5e4-0cb1f2cc40d1"
               }
             ]
           }
@@ -321,7 +324,7 @@
       "BindingInfo": {
         "TableName": "YBS規格文書",
         "ColumnName": "FGC_AssignTo",
-        "GUID": "1338fa91-912a-4e84-889f-a6e005983d0c"
+        "GUID": "ef0dc831-155b-41d1-a6ba-b110561a579d"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -408,7 +411,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "dfddc14b-6785-4461-85e1-934be85fc799"
+                "ID": "040658ea-c2f2-4e6f-9e30-ccd8acc07610"
               },
               {
                 "Condition": {
@@ -451,7 +454,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "8d981a93-c79f-4beb-ae83-2649bf314b6d"
+                "ID": "11cec024-6776-4caf-bb50-070481067fde"
               },
               {
                 "Condition": {
@@ -494,7 +497,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "18770d03-c4a3-46ea-bc00-69dd03554d25"
+                "ID": "1435fbd7-9d34-4eff-acf6-9fadf177a84e"
               },
               {
                 "CommandList": [
@@ -503,7 +506,7 @@
                     "MessageFormula": "承認者ではないので、処理できません。"
                   }
                 ],
-                "ID": "214a191d-7664-49f7-be35-a45250e544d7"
+                "ID": "73c1f429-f78f-4b7f-bc06-4f497278ebdc"
               }
             ]
           }
@@ -553,7 +556,7 @@
         "GUID": "7067279f-5d7d-4699-adce-0a93f28ec983"
       }
     },
-    "19,9": {
+    "19,10": {
       "NameUsedInJavaScript": "名前",
       "BindingInfo": {
         "TableName": "YBS権限マスタ",
@@ -561,7 +564,7 @@
         "GUID": "3b864bb9-7a31-48b3-abbc-921647761459"
       }
     },
-    "19,15": {
+    "19,16": {
       "NameUsedInJavaScript": "アドレス",
       "BindingInfo": {
         "TableName": "YBS権限マスタ",
@@ -569,7 +572,7 @@
         "GUID": "36fefc14-3f88-41ca-9cd7-613a515a6320"
       }
     },
-    "19,20": {
+    "19,21": {
       "NameUsedInJavaScript": "ユーザーID",
       "BindingInfo": {
         "TableName": "YBS権限マスタ",
@@ -636,8 +639,9 @@
         "BorderRight": null
       },
       {
-        "BorderBottom": null,
-        "BorderLeft": null
+        "FontFamily": 0,
+        "Foreground": 6,
+        "HorizontalAlignment": 4
       },
       {
         "Foreground": 6
@@ -752,8 +756,7 @@
       "3,9": 9,
       "3,10": 10,
       "3,11": 10,
-      "3,12": 10,
-      "3,13": 11,
+      "3,12": 11,
       "3,44": 6,
       "3,45": 6,
       "3,46": 6,
@@ -859,17 +862,18 @@
       "18,6": 14,
       "18,7": 14,
       "18,8": 14,
-      "18,9": 6,
-      "18,15": 6,
-      "18,20": 6,
+      "18,9": 14,
+      "18,10": 6,
+      "18,16": 6,
+      "18,21": 6,
       "19,1": 18,
       "19,2": 18,
       "19,3": 18,
       "19,4": 18,
       "19,5": 6,
-      "19,9": 6,
-      "19,15": 6,
-      "19,20": 6,
+      "19,10": 6,
+      "19,16": 6,
+      "19,21": 6,
       "19,37": 19,
       "19,38": 19,
       "19,39": 19,
@@ -1047,14 +1051,6 @@
     "2,31,2,13",
     "7,1,8,63",
     "20,5,3,24",
-    "19,5,1,4",
-    "18,5,1,4",
-    "19,9,1,6",
-    "18,9,1,6",
-    "19,15,1,5",
-    "18,15,1,5",
-    "19,20,1,6",
-    "18,20,1,6",
     "6,2,1,4",
     "5,2,1,4",
     "6,6,1,4",
@@ -1078,7 +1074,16 @@
     "6,53,1,4",
     "5,53,1,4",
     "6,57,1,4",
-    "5,57,1,4"
+    "5,57,1,4",
+    "3,12,1,3",
+    "18,5,1,5",
+    "19,5,1,5",
+    "18,10,1,6",
+    "19,10,1,6",
+    "18,16,1,5",
+    "19,16,1,5",
+    "18,21,1,6",
+    "19,21,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1105,4 +1110,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//S/iCI5XRisV0FAz3HsRWnWT8M0Zg1lk1X9dLlfsdungbvcYC6YefYtRFsRtYP+A+T+gghNW0Irat3XAfowiAtltfM6Hjn7f1tBGVHz9/aVXKd5ulekdJZGaA7lp+sdwQkcRnBQO+ElaSHkP6vblNNUBfhG0aNRwiBr5sgtjsBi4ir8mQKw20Nn1x0MY8uYqyAoGGhxFVX6Bw1i2GbcXjUKlBM/Pso6L7MfY3PZ78L06KTJgVCGB59/BV3UwsgUUQuEK2T/e4jKrHt7PMRhCFEToMNVSbwRM/Ce8MvSt7hSiv9/N1O9wKkJHt38hJhXjWcJRtybvLoWIr9wHQqzam4M3CdSclg3ZQZPrtbt/LafykSsVkQ1avW/2FlGgPh7xLKgGQW71DhmskCkXF42RSuw+itiEy2n3jAf4vY55fYAuV9eGXcGO37jLK92A+UU7UxNcIFf3KcqGn5070crppn4OY0BQ2jVFybPj2iVJ/H+1tEwgR+M/0bhpmyFmpkZeiplTK9jz0pprGvP5SQC5threH08GrZGg6/M2lVOdeu6tE24GyCPJjKrD3MSY9vTVWKGU2cAhhs+OV3eg3e+uozvNh1TGs8e+/dk5JpC4n29F+GMj58u4rQIFJHt3ae5+QNAHN7qdGLeZG4gUcn5NoYwfw6laLDHtPsguym4SuVp55j3nSS0x0A6uz5qMdqu+nEG+deMMHfzFX/QEzi1te7OA8nV0mibs1jhC4asZwp9YZrwGXPZWNOmY1Iz1GEAD5xRkQ6zA9h5BPjjSZL2D+zcErFNyEhqKPqkf3XnPrrRqZ4VDZC7iCcwhomOneDGz5Efb/J7frR1e5L/Q+QX0vEcfSHYqXlbpDURrk5JvK4yBf3/m6LBqcSZm0b5jfKsUNdhkLQwiTYhHkYrDDLnG1VQ==|920
+}//EV92hhJvJfNDElSbyYy4AgkhrLGhxE8xsHQJhr+6WZ76/idTqeiLPwkWuUmTdChPJ9bTps+rsjUvhi+p0TGZphH4ObgsZejquBrsb0w/wKfaRIxaJAuY6aHXMe+J1Wze/0RFQoAuHzzoMil0kKp98G4W+C9uPha0yK7eJAKZQkt/ubzaZktN/nrSlFoAbV0cjl4W3uL8Nxs1ibKH5UPkDXReH58PC3ATINo7iEQA0DASgXhz8LrXhntaYcbmlDomreCqT8ZL6syqrVFV2YxEGaP+dDZUP+q66uoqvhviNzbRbnILZQLl6e2LRvf7/lMNgLu6k05HAZFO+LCj4RZKs9Z8ym18zjRU6V7Y6ZfWih4dce8jMuRsCGOGosiHt9XKafVOsfopX+vNktENDtslFXFhrSb2jjnzdECxuAQu6JBkhLBfYY2USlgLFv94SmDUKEOtpFaQ6r6S2FEUk8w21vQd2RS3P+tgkKuZSwAMwD3V4QbBbqYyMmdI/y0DUClbuA9oFzyZzTKV6XmWO2Z438uZ2BlE9nz3SbRePmp+x90pEzcRJ9j41373PRzHr2V+2rwFIV96OCs7YQ8ixa3LiBycBZf8bDbdk1gSyiiE3r52Dlag00x88SfEmbK3hv1pSdg8AAQYUZh5CmbjWiI/Kb75tHROEu9tzJySzop0ICq/n/wmabklHD6TL5i4w4LabYDZr6DOm3qxFyBubYS77R4z+gCuE1KI7sjHRJoRlFKCCFh8BzaqwLZMxHaa6JvbbFczAUQHd821JNCcM1RfTFV8VmihSRQuw1cgN+Q6+1cjwfFtXcjhtESKmYDjCaByKIMb9laFg57Q9H1iKUzAmKzQep3puk9Va9vMO9qTmBadh+QG9m8440b+9MmSFufCQeF+QofiJGiKY8R+LEvySw==|920
