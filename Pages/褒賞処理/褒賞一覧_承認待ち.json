@@ -15,6 +15,7 @@
     "3,31": "規格名称",
     "3,37": "承認/確認",
     "4,37": "処理",
+    "8,46": "承認済み印刷",
     "15,2": "ワークフローのアクション＆コメント",
     "15,17": "クエリー結果の重複が不明",
     "16,2": "文書ID",
@@ -72,7 +73,7 @@
               "ColumnBindingInfo": {
                 "TableName": "YBS褒賞",
                 "ColumnName": "規格文書ID",
-                "GUID": "3d7aa96c-94d7-43cf-bc09-6416a326f200",
+                "GUID": "07b0da7b-a61f-43d8-b845-76ff093d27d0",
                 "RelationBinding": {
                   "RelatedTable": "YBS規格文書",
                   "RelatedColumn": "ID",
@@ -221,7 +222,7 @@
                     "MessageFormula": "「新規」または、「承認済み」のため、処理できません。"
                   }
                 ],
-                "ID": "e028e4b1-1fbb-4858-bddd-805d26236f13"
+                "ID": "e14a9e76-0eaa-4b7f-b42c-fc9a289c1663"
               },
               {
                 "CommandList": [
@@ -230,12 +231,90 @@
                     "PageName": "褒賞フロー_承認処理"
                   }
                 ],
-                "ID": "9eaefebb-781b-472a-a304-5b1ab0ee831f"
+                "ID": "b03687a4-c805-463f-8c6c-a9f5be4ad829"
               }
             ]
           }
         ],
         "Text": "処理",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "8,46": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "フロー状態",
+            "TableValue": {
+              "TableName": "YBS褒賞",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "807e2fe4-ad8f-40b6-85de-4a430565e003",
+                  "BindingInfo": {
+                    "TableName": "YBS褒賞",
+                    "ColumnName": "FGC_State",
+                    "GUID": "b63400a2-6288-4443-be3a-575841eb4e12"
+                  },
+                  "ColumnName": "FGC_State"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "YBS褒賞",
+                  "ColumnName": "規格文書ID",
+                  "GUID": "0eef972c-df4c-4d25-b8a7-ff093823ba78"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=#REF!"
+                }
+              }
+            },
+            "ID": "f1e57b6181214c38a37851b8d2b66798"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=褒賞一覧_承認待ち!フロー状態"
+                      }
+                    ]
+                  },
+                  "value": "承認済み",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "「承認済み」ではないので、印刷できません。"
+                  }
+                ],
+                "ID": "7360cb36-ed1f-4419-a7bb-16e0686d6963"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "褒賞評価票"
+                  }
+                ],
+                "ID": "557fe67f-ed9b-4226-aebd-9c94b28435b1"
+              }
+            ]
+          }
+        ],
+        "Text": "承認済み印刷",
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -255,7 +334,7 @@
               "ColumnBindingInfo": {
                 "TableName": "v_YBS褒賞_ワークフロー",
                 "ColumnName": "規格文書ID",
-                "GUID": "94891a6d-1c9f-4a3d-9585-0cbc9ba747f1"
+                "GUID": "74f932e5-0860-4644-a068-d036ca6602b4"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -268,7 +347,7 @@
               "ColumnBindingInfo": {
                 "TableName": "v_YBS褒賞_ワークフロー",
                 "ColumnName": "ActionName",
-                "GUID": "2ac0bc81-e042-42e6-87dc-e6f15377e3d3"
+                "GUID": "466b5f65-bd59-4e15-9a3a-86ddd0951296"
               },
               "Value": "作成"
             }
@@ -280,7 +359,7 @@
               "ColumnBindingInfo": {
                 "TableName": "v_YBS褒賞_ワークフロー",
                 "ColumnName": "HistoryID",
-                "GUID": "44c670dd-6214-4627-be49-858ee4708aff"
+                "GUID": "a54527f2-c0c2-48a9-a7ab-19a025e4a5f5"
               },
               "Order": 0
             }
@@ -354,7 +433,7 @@
           "ColumnBindingInfo": {
             "TableName": "YBS権限マスタ",
             "ColumnName": "ユーザーID",
-            "GUID": "c3974300-0930-4630-bcc3-0f4da1e02f96"
+            "GUID": "b419c865-89e7-4377-9bcf-2086bf5b11f6"
           },
           "Value": "%CurrentUser%"
         },
@@ -511,6 +590,12 @@
       "4,37": 4,
       "4,40": 6,
       "4,41": 6,
+      "8,46": 1,
+      "8,47": 1,
+      "8,48": 1,
+      "8,49": 1,
+      "8,50": 1,
+      "8,51": 1,
       "15,17": 0,
       "16,3": 1,
       "16,4": 1,
@@ -1038,7 +1123,8 @@
     "16,32,1,6",
     "5,2,9,40",
     "18,2,8,38",
-    "30,2,1,24"
+    "30,2,1,24",
+    "8,46,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1079,4 +1165,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//hM3W7LRwNeytmVGVeV9b5LJ2Ngddl2IJjO2toE/gamxXKlWzdWxCiwYmcijKs4dRRSRxzikDkI7s/zWiPqRXquo3A0O2q7HBOba6hQcN4h/v3m7ueuQXZhEp5Yx4sW9R/npG9XE8mv1ACANWu+2rIxb3mX+ui3wwg/3RDyJahs6vQn20s+u2JJ8IkCpe4ZoJNwPddI8S9hEN5H+d31Rlf6KnJ4jyUiwWT+8MfKlhhc7vwkAaYiTRYng2r2z0swUyvInGnpi5UfTcKOhPZuTAeQ5ErE/+RdU/pV43SJdkXxk0WT3/OWJdVzZXQF75OpNFb8MsFn15cOhvLbsUd2YpEKIovzg3M2CPaPXvii7rpnEQuN/lB7Pn8eSGXWyQRjCi30n4eZji2CP4d84IizxMA2GLAXnM1/zQJ/1Qf5MMEFnlOIHW/+PA/NtRJuSFhUez25oV8N7KeKMhrjmebrQb7/BiQa3pynvrlIXuYO/66TwudLCU+vRNEtGA3/xAJdiAzsvBbl17ILMOrczr8dIYmN21rxFNtimpPOhzBWGuD74OTsyDXZRuxpbi9p21+jrAeIalZrmJ51cbka0Ykd8V0BLp/S8R52IbqDNJy953T6voUYqv7GkLcyBXVVhNT0wt8Ja1Aii7XTaHSceFDVOCgEWXY3haN6PDR+iilqFEcrNY86Y+f2kCQrrL7j1OP0XJTWKoPUnaXp864apF2kgCAGgivzihWY5/3LR375cl4HHo9VM62PsGtLrMdUu1v4t+KUXb/wNYOCAaicRY2Ywv2Ddth5GXpjogc4WgyYG8TOQYWkE72sc2dCoAG/pflef8q7we0+uWpmdXwm5vGkOjWUhvHsrDC8excymmJyI2qI98/1YzDtHg8LfaBJKkzCsSECV66J0fFYUtm5H8jLSB1w==|920
+}//M4UY+JO3Sk2wER/CKwW1jsk+O64IQjE7cxQEXBcjXx1vj/7uzPFIDsg/hvPsFajvlyfZGhCPM1gP4lQYnb+u2RlF0srNdysQ/LHjMRZnLJYyWusxrbLiujV/W9vcfo80eiMxIqMTb5yVgoldrpEEN0AhGxPZGbRbw0XPZKm/lezWZ7wRnW5GzzIgIaNQYwkNsJyTFYPpxOAyUojvo1b+I/r6xEGrm1mhsbJPxiLurgQ0jGYi1eG51RefIzu5cfplxUm2EA3WXtOhxMczmTd3yRZHxFUfeJGtJaUOf90lVF5ASu3jGtl7++ANisChjgaQJbFy2gj1wh81i/n3/ZCdPqMpymLYqdNLtxMdxspzb9kp8Z3Yan9Ws4QiHjle4sjGeJg7StBH0bzi6QeY+Ev09GHf9i0pcxkHy2SdbjQq9DX7dci1DuXLO0s1Cq68fdvE0RF/p54k/IXM+J5GH5OQ9/hGoAEIHBS7PE17TpxIYZJgMCBdpGRaWvEvdX8NjCGERNHAWlQMdoLHL1NulFwJfDeZTGqoetl+wE88nPGMlHc2ClVTPQvu5ZO++MXV82WzoTnMwUCsB/wKaFKqu1uzf3/ca1UQrngYfbRVkzGwNplY26m57+VpFSeeemVMTkjLedcnXX97ctsXnSjda66288qzGJcFSTjx1z8n6T9iJBeolrDnAQs664VTvS/NCjtNnDBzrY/VdjcYqXxk08KpVPoEK4c6RxL2fjk7Fxepoj1RPnG3iVwqhxXc9zy71w895J6n5Imud8iQh2z9MiUtedyeWfFaBsKJqaBnf/igX3D3fuCF+3xFFwX5wxue7QnoS3ILH6xAdfTPu3I5x63QubTL5jJvcwq0XLrl/MJmsawMjgYBVLl1gTd+WyYQl6noIsLvz5dEII/MRd6GIKg6CA==|920
