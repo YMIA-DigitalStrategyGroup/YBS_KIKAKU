@@ -121,7 +121,7 @@
     "29,24": "IF(V30=1,8,0)",
     "30,24": "SUM(Y27:AA30)+Y25",
     "36,24": "IFS(G13=\"\",\"未評価\",G13=\"制定\",Y22,G13=\"改正\",Y31,G13=\"対象外\",\"対象外\",TRUE,Y34)",
-    "38,22": "IFS(Y37=\"対象外\",\"対象外\",Y37>40,6,Y37>30,7,Y37>24,8,Y37>19,9,Y37>15,10,TRUE,11)",
+    "38,22": "IFS(Y37=\"対象外\",0,Y37>40,6,Y37>30,7,Y37>24,8,Y37>19,9,Y37>15,10,TRUE,11)",
     "13,36": "NOW()"
   },
   "AttachInfos": {
@@ -318,7 +318,7 @@
                     ]
                   }
                 ],
-                "ID": "67d68128-4f1f-480a-8a2a-0b915fc3f57f"
+                "ID": "1e5cca83-0289-4835-8873-2826dc29e204"
               },
               {
                 "Condition": {
@@ -371,7 +371,7 @@
                     ]
                   }
                 ],
-                "ID": "f1c4bcd6-2011-41f1-bbb1-a18ceef191af"
+                "ID": "fe22b0f0-ea74-419b-8292-3129b9bf7d7a"
               },
               {
                 "Condition": {
@@ -412,7 +412,7 @@
                     ]
                   }
                 ],
-                "ID": "d140a988-df71-4700-9cf8-fb67994b94c9"
+                "ID": "58751c76-6335-4d67-8ad8-cf8048f0e789"
               },
               {
                 "CommandList": [
@@ -429,7 +429,7 @@
                     ]
                   }
                 ],
-                "ID": "6ad74cda-4a49-4160-b3f7-28da6d0f57aa"
+                "ID": "5d6c6e0c-82d8-4c0f-ab76-e093aee05982"
               }
             ]
           }
@@ -723,7 +723,7 @@
                     "MessageFormula": "次のいずれかが未入力です。\r\n・評価者の選択\r\n・評価日の選択\r\n・褒賞分類及び評価\r\n　　褒賞分類を選択して、加算点を判定のうえ、「提出」をお願いします。"
                   }
                 ],
-                "ID": "e8e89c89-1d51-4add-a40e-fb23ed27b11e"
+                "ID": "d55f7ce8-b2cb-41dc-abe0-374d07dc85d4"
               },
               {
                 "CommandList": [
@@ -751,7 +751,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "7a1f40b3-a41e-4d5e-b5cd-18e462e08edb"
+                "ID": "efffae9b-717a-4024-a5de-0376cd5e06ef"
               }
             ]
           }
@@ -2703,4 +2703,4 @@
       "Size": "32.19999999999999,23"
     }
   ]
-}//UZkIZQ/HEZSAIWUJNrG+zMYh6exfSO8PNyMyJcyFB+ZGDnl2p6VaHxgpVarwZtv8H8nZeN3sySAKGgTObyWuj2WbazzrqA1uWldMBPA6LlJ94+mUry7A2wxNrlVVizMoamQxHb8vVbEIXJR/l+p6WH3iWnMib/VRTgsfwRR81yquJ5jebOhTR4vwRVIj1XGbq16X3kjQBkqOmO7E0/wpx6wKTywPoVSK2YxTbWdUzhLMiIzlZwlW4tGWUNOk/ZvBnQWkd3NgYO5EVvJd3pAUQhuAyR0PZr1MYMSk+oirgzorWM5+WjMdzBROkdVf7JNDISWIKUoKitQEdQDGjT209olN4FxKPQgr6jAC+dwEsbVlmgwulBoWHoORvQvVo6To5BV/l/wWNo1RyrkbEu0C+Us1rIJoSjww12P+kihl72SGSnc4bvHfrvglCxYfDkdlart2LmqJnENC/g+grBlJNE4snmwWvnr0gr5zqJ3+gGJkjbrA2ve39ohc01nkwRVBtGmjT/tUTpwPjLUd9vC+HverjPpd00AcIb1VIa11r3XG3ckZKDCgFM/A9jWUUYJdpHdMRWqcNOJKo0Rs3LMJ6j/fVpbJ0Aj2R11IIns12pm45YxUAQA716kk+0j6wqRkaW9zkwLblIpEw9jgv3HeTqiV0gY6OoaOm3yMB+RQwcOK/XD5FvyAupcVr+GwC8nFN8UG3h0rOlkFneALy+YLB3wB8spH90MyD9JB0T/HMHgvC1KrIl61zsuE+NoEltHzFhqfiC06pk99kpK3bs9Htfi+nH2Q5cO/2KL4OLEk+oh8RHlfDoF90rj8EP7+h/Ocv29k+oaXyqm/eAeLOoolz/ToBf0Nz2/S0g8JP0Y810tBKLQfWZmJHpAzmvqp/o0w5Zn674fCjMk4eKpJnQzrBQ==|920
+}//ZfruxMHF3/7U6X4Nrn6H58MNY1grnl8aCMjk/ZUxCrphMCyqekm/7PFazJR/CGsCwV+d3E0EZ3PyUqxduBXFjPWOqWnN0+V+5xyznf8tn3adTBFMJm1a8G8fpIpdwJzUUkorsYdApM231woRD2Pgq3je6vTJBoxh0bnRe2nP3Z9uqis6eaXa7158MSSnLlEJFT/yznHhicmBWnROXpGA1wWwZ5ViMZYNjuigonX5NSsxea5MNGxSEVAfwUlUeKP5Z0XVE7XkRL3Op0PMStZlmSKCctoJOLcfQt7lupyUIzuuWHG5Lwa/NsS4Zg3TN20kmg2GU2S1lOA/8w72B1fdH0Islj7yhc/nedvh8QACTaNUYX5ofAicFvHAj069+cui7fytnslvvpTOxw8L7e9/Ju1KtP/Lg0Ltf3l2hjcovIMx//+42VynBwKmAnnSMSrx3pSwA151cjpelbFXJkK2SZdS+SuD62pzrya1s7u5CWckjwbolkwWzrQJM10h6OYoKM3t7b2R+a+kpHTuQCkbpVxnErL1R0DqN5IIonsXptD3xNxcWhw+uwLdfC9P963ry+BkEqmwkjNH9TdOLW8wZmBkkXDTXd5YUu0ON6fHM5V0kklKd5Yw/fgQvTsjkun2g7EhTSfKzntKDzHPD2OjVVzJ/Fss2LBxvgwlXB6zlQPWJrgLpAousiYgZSiQ2y5N5+ZQ9AtHCHP1GLdHT+X0gKPB2tzR3FY5tAz29yqrPLay2UD2rI6dp5ntiQ3EWxnLkDLZClIBv3BGbMFAp3Jv67jiQtAkrUQAEFQsZpFMzWs3V9qqgbQiw1Ie5iCvK/1YfHOHn13Cbw95KEsK86cCzwlcE53AFpgpwAd2mAMDlJLi0IWsrIrnJfQQhHNbQVHcIo9vaDFJERYQ/LNMnYA/Ow==|920

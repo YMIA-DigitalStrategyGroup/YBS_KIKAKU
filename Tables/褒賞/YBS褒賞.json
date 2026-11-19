@@ -331,6 +331,12 @@
       "PrimaryColumn": "ID",
       "ForeignTable": "YBS褒賞",
       "ForeignColumn": "規格文書ID"
+    },
+    {
+      "PrimaryTable": "ユーザー情報ビュー",
+      "PrimaryColumn": "氏名",
+      "ForeignTable": "YBS褒賞",
+      "ForeignColumn": "評価者"
     }
   ],
   "Indexes": []
