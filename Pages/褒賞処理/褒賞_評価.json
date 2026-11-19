@@ -213,6 +213,12 @@
         "TableName": "YBS規格文書",
         "ColumnName": "規格PDF",
         "GUID": "9e1d7b1a-ce0f-4b4c-9b80-f2ea32f6e917"
+      },
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf"
+        }
       }
     },
     "5,36": {
@@ -359,7 +365,7 @@
                     ]
                   }
                 ],
-                "ID": "29cfd72b-e007-4872-80cd-d6302cd58a5d"
+                "ID": "9eae2da8-1fb8-4188-9d66-8d4759db74a6"
               },
               {
                 "Condition": {
@@ -412,7 +418,7 @@
                     ]
                   }
                 ],
-                "ID": "1dabcff3-32a4-4685-a157-7396f83ebeec"
+                "ID": "189b67ab-740e-4f5b-b849-072f8d9670d1"
               },
               {
                 "Condition": {
@@ -453,7 +459,7 @@
                     ]
                   }
                 ],
-                "ID": "1b2a13fb-84dc-45b3-bf84-585c53fe6a26"
+                "ID": "cf96cdb6-6e38-4324-b766-85e85eb4a3dd"
               },
               {
                 "CommandList": [
@@ -470,7 +476,7 @@
                     ]
                   }
                 ],
-                "ID": "5709d5fd-33de-4d40-8b76-8f709dcc1944"
+                "ID": "5d932636-738c-4400-966f-084bc8a4cc77"
               }
             ]
           }
@@ -764,7 +770,7 @@
                     "MessageFormula": "次のいずれかが未入力です。\r\n・評価者の選択\r\n・評価日の選択\r\n・褒賞分類及び評価\r\n　　褒賞分類を選択して、加算点を判定のうえ、「提出」をお願いします。"
                   }
                 ],
-                "ID": "de5c4d28-15bb-4249-bf49-5d629ec63c0b"
+                "ID": "a13c1c4b-69d4-4f01-a6a3-99ae818bcaa7"
               },
               {
                 "CommandList": [
@@ -792,7 +798,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "b51869ab-b111-4019-8a94-478f17292d61"
+                "ID": "7b07b72c-d42d-494b-9b4f-c9a137707d3e"
               }
             ]
           }
@@ -951,10 +957,7 @@
         "BorderRight": null
       },
       {
-        "FontFamily": 0,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderRight": null
+        "FontFamily": 0
       },
       {
         "BorderBottom": null,
@@ -996,7 +999,8 @@
       },
       {
         "FontFamily": 0,
-        "Foreground": 5
+        "Foreground": 9,
+        "Underline": true
       },
       {
         "Foreground": 5,
@@ -1027,7 +1031,7 @@
         "BorderRight": null
       },
       {
-        "Background": 9,
+        "Background": 10,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1061,21 +1065,21 @@
         "BorderRight": null
       },
       {
-        "Formatter": 10,
+        "Formatter": 11,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 9,
+        "Background": 10,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1083,14 +1087,14 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "Foreground": 5,
         "BorderBottom": null,
@@ -1099,7 +1103,7 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": 0,
@@ -1107,7 +1111,7 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": 0,
@@ -1115,14 +1119,14 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "BorderBottom": null,
         "BorderTop": 0,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderBottom": null,
@@ -1131,7 +1135,7 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderTop": 0,
@@ -1139,15 +1143,15 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "BorderTop": 0,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
-        "FontWeight": 12,
+        "FontWeight": 13,
         "HorizontalAlignment": 3,
         "BorderBottom": null,
         "BorderTop": 0,
@@ -1161,21 +1165,21 @@
         "BorderRight": 0
       },
       {
-        "Background": 11,
+        "Background": 12,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": 0,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "BorderBottom": 0,
         "BorderTop": null,
@@ -1183,7 +1187,7 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1191,7 +1195,7 @@
         "BorderRight": 0
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderBottom": null,
@@ -1200,16 +1204,16 @@
         "BorderRight": null
       },
       {
-        "Background": 11
+        "Background": 12
       },
       {
-        "Background": 11,
+        "Background": 12,
         "BorderBottom": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "HorizontalAlignment": 3,
         "BorderBottom": null,
@@ -1232,7 +1236,7 @@
         "BorderRight": 0
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderBottom": null,
@@ -1241,7 +1245,7 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "HorizontalAlignment": 3,
         "BorderBottom": null,
@@ -1257,14 +1261,14 @@
         "BorderRight": 0
       },
       {
-        "Background": 11,
+        "Background": 12,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": 0,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderBottom": 0,
@@ -1273,7 +1277,7 @@
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "HorizontalAlignment": 3,
         "BorderBottom": 0,
@@ -1296,7 +1300,7 @@
         "BorderRight": 0
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "Foreground": 1,
         "HorizontalAlignment": 3,
@@ -1314,7 +1318,7 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderBottom": null,
@@ -1323,14 +1327,14 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 11,
+        "Background": 12,
         "FontFamily": 0,
         "Foreground": 5,
         "Formatter": 4,
@@ -1340,7 +1344,7 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "HorizontalAlignment": 7,
         "BorderBottom": null,
@@ -1349,7 +1353,7 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": 0,
@@ -1357,7 +1361,7 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": 0,
@@ -1365,14 +1369,14 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "BorderBottom": null,
         "BorderTop": 0,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderBottom": null,
@@ -1381,15 +1385,15 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "BorderTop": 0,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
-        "FontWeight": 12,
+        "FontWeight": 13,
         "HorizontalAlignment": 3,
         "BorderBottom": null,
         "BorderTop": 0,
@@ -1397,14 +1401,14 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": 0,
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1412,7 +1416,7 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "BorderBottom": 0,
         "BorderTop": null,
@@ -1420,10 +1424,10 @@
         "BorderRight": null
       },
       {
-        "Background": 13
+        "Background": 14
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": null,
@@ -1431,7 +1435,7 @@
         "BorderRight": 0
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderBottom": null,
@@ -1440,14 +1444,14 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "BorderBottom": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "HorizontalAlignment": 3,
         "BorderBottom": null,
@@ -1456,7 +1460,7 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "HorizontalAlignment": 3,
         "BorderBottom": null,
@@ -1465,21 +1469,21 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": 0,
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "BorderBottom": 0,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "Formatter": 4,
         "BorderBottom": 0,
@@ -1488,7 +1492,7 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "HorizontalAlignment": 3,
         "BorderBottom": 0,
@@ -1497,135 +1501,10 @@
         "BorderRight": null
       },
       {
-        "Background": 13,
+        "Background": 14,
         "FontFamily": 0,
         "Foreground": 1,
         "HorizontalAlignment": 3,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 0,
-        "Formatter": 4,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 0,
-        "BorderBottom": null,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 0,
-        "BorderBottom": null,
-        "BorderTop": 0,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "BorderBottom": null,
-        "BorderTop": 0,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 0,
-        "Formatter": 4,
-        "BorderBottom": null,
-        "BorderTop": 0,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 0,
-        "FontWeight": 12,
-        "HorizontalAlignment": 3,
-        "BorderBottom": null,
-        "BorderTop": 0,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 0,
-        "Formatter": 4,
-        "BorderBottom": 0,
-        "BorderTop": null,
-        "BorderLeft": 0,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 0,
-        "BorderBottom": 0,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 0,
-        "Formatter": 4,
-        "BorderBottom": 0,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "BorderBottom": 0,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "Background": 14,
-        "BorderBottom": 0,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 0,
-        "HorizontalAlignment": 3,
-        "BorderBottom": 0,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 21.333333333333332,
-        "FontWeight": 12,
-        "HorizontalAlignment": 3,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 0,
-        "Foreground": 5,
-        "Formatter": 4,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1634,8 +1513,133 @@
       {
         "Background": 15,
         "FontFamily": 0,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "FontFamily": 0,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "FontFamily": 0,
+        "FontWeight": 13,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "FontFamily": 0,
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "FontFamily": 0,
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 15,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
         "FontSize": 21.333333333333332,
-        "FontWeight": 12,
+        "FontWeight": 13,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 5,
+        "Formatter": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 16,
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 13,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -1653,6 +1657,7 @@
         "Accent 4 0",
         "Right",
         "Left",
+        "Blue",
         "#FFFFFF00",
         "@",
         "Accent 4 80",
@@ -1773,9 +1778,6 @@
       "3,19": 0,
       "3,20": 15,
       "3,21": 16,
-      "3,22": 15,
-      "3,23": 15,
-      "3,24": 15,
       "3,27": 17,
       "3,32": 0,
       "3,33": 0,
@@ -2733,8 +2735,6 @@
     "45,41,2,4",
     "5,20,1,6",
     "44,3,3,4",
-    "3,21,1,4",
-    "4,21,1,4",
     "7,36,1,7",
     "5,36,1,4",
     "2,32,3,14",
@@ -2743,7 +2743,9 @@
     "0,36,1,4",
     "1,36,1,4",
     "0,40,1,4",
-    "1,40,1,4"
+    "1,40,1,4",
+    "4,21,1,4",
+    "3,21,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -2818,4 +2820,4 @@
       "Size": "32.19999999999999,23"
     }
   ]
-}//H1hha2Zkj9mEz+6g9J0fCWziK46wBBHfxYSaelz/DJHZyHu0mpTik9LF/d9YHW8OSWvkzQOTgKJqLhwRxuKhucPqZzQArZKLTSo5s2u14VBL9VfGgZ/JOT0K5mFEKS6UHZ/cicj9U415AlDo+OQmhQ6rhwlmxARiGAcRqtMCfAM5efp1eu9TP8Jwr2gyjzSj54zXMGBiGAxjl0ZWbfwCQVGvWMZJkrJJbppHb3a63dhAGMlWoGuRipDPIW99pFOjRLCm748nHVvD2EPgqXChKQWS5nFe1+2FpQMHlqzhGcsL2JHg7eOew2Z9l9gMyOUG9W3hbsc0Hu3Wxm5oJT0JCIkylapJ/bTvbL711NN7cQM0tFUBkewai5CU634QuFCeqdSDp/iHHA8++1BJLxJ+CiW3k6ia2oUelK8olvj6SnXA3Uuio7o6eTgQy4Gx8ykdhbb/W472a6dfm1qk7LuhIBZPqJU0nV90QBDDM64C3lUpW7ey7AFe42fe8HuPRSX8VLPjIacYuXi07u9GpO8vEpMUmybJXD0xGfUptSO0/JUAj8/Iu5Z6u3RzK/5uv0mPneDdR3UDY7OtuUpBtT2mVIEMoKzuPO0NIeV80ugHgr7b/KqXUmRLor3PztvE5+cmVotWFLkW3ULwPLfzJIL9XdFtiFjaFuLGykMEKEZs92REntvB6K2OLI7Hprj8fzwjqPQfaagh/LwZ7RZ+IRwkHDej10F/Zhau11ymNttIayw1pUpJ9sWJp5wBQ8z5toQSXmFA242MBgvYCTe1PrrKEJNZNZZHmh1Wj3LAPnJTxvIexW+gT5RBgvDR0zhXHaOX9WazeBANQ4VxJVWy+g2V1GrE6/b6J5NI2gNXbSv449KOG5O3D4z7brrp/uVVgT5I/35vEYMlneiSp58nahshPA==|920
+}//VlrDXctWkZr4VNoWHiC+6AkL7x2wvcAjgMkuw6VpvfJ/aB+c6vP6NPY85zD2IfI87LIlHLCiBJf0tmdoyGG87RyWy6KSzFmS0qIJ/Avhc62MIa6ZKn+ohLS2VyrDzlvM/kReo3ZdDR+QT5BYXXiaOe0bWEMpKO7hcCbUbxbC//3RVUeygEw4fxlyq5uVU1R82eXeusj4xcx7+sW0mcR3hXpvzDsmb9hlpRwJKgzU303I0AKuneVRt1jx9l77oKQC2qbyS6gJtAE5ZrQ5EW5MN7BiZKI2yRO0SR+O65297AS4r6rShR2Mn2Q0mk5LnJWlVwAk9jtByH52OVjmeqalJqt++iGIVM6rXb36zXK3x06KLHyq+rhSjWem2zShmQmwCFa11PND1q+n3M/1CRkaWZ+SkDSHwYLlRlhU15i+spFaHqedzOPjJu8JskhulAXv+/PRvHBhNDotlst3V8QuGS6RO5EVrThnvxyO+yzvYdnGFRkhhcGxjwMravTWJKocfAUNvXIA2GyRvt4VGX7EJYnwzENYhW3JkZoT8GwYcky7PksGBHWCWKQVAb251hr9Ifua6O3Yhe6D/wcVGFNmyqZVf5BeM3rAY5TMnLk/Yc/O7XHt6pErEVGeogmDGk5iXlDLUO270QMPiLU2JCRdNotUu1KYLPUIpfGdoaSbEvIZVb/+amQXmEdhwr1i1xx09pvRZqQWyxflc9Aynw0WP3o5bIsv37WZzpXVkeKrciocNZmUFGGTPPyQuRxLg0VrKCaB5JYTTmHpXohWIm8cWJSVOJLhT/RHO9j+/+TmyEsrCWRAUNfXWOwBS/wtax9F0uZ3jaleGJU/P3J+BmUR0+0Cnz34PXuZ5/tOQVC0L+vCGAuIFKvPVwHn9mcSZOR1F2eThdbG+0m1gGhw3FIV8g==|920
