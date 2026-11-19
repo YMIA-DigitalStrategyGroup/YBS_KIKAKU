@@ -15,7 +15,7 @@
     "3,31": "規格名称",
     "3,37": "承認/確認",
     "4,37": "処理",
-    "8,46": "承認済み印刷",
+    "8,43": "承認済み\r\n印刷",
     "15,2": "ワークフローのアクション＆コメント",
     "15,17": "クエリー結果の重複が不明",
     "16,2": "文書ID",
@@ -222,7 +222,7 @@
                     "MessageFormula": "「新規」または、「承認済み」のため、処理できません。"
                   }
                 ],
-                "ID": "e14a9e76-0eaa-4b7f-b42c-fc9a289c1663"
+                "ID": "cf80a784-4a89-4c4e-9a91-edcd1801c8b0"
               },
               {
                 "CommandList": [
@@ -231,7 +231,7 @@
                     "PageName": "褒賞フロー_承認処理"
                   }
                 ],
-                "ID": "b03687a4-c805-463f-8c6c-a9f5be4ad829"
+                "ID": "ae01e545-a0e1-4305-8eb9-fdb289199ad0"
               }
             ]
           }
@@ -240,7 +240,7 @@
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "8,46": {
+    "8,43": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -253,7 +253,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "807e2fe4-ad8f-40b6-85de-4a430565e003",
+                  "GUID": "61af147e-3bca-4194-a945-0ceda25b6700",
                   "BindingInfo": {
                     "TableName": "YBS褒賞",
                     "ColumnName": "FGC_State",
@@ -271,11 +271,11 @@
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=#REF!"
+                  "SerializeProperty": "=褒賞一覧_承認待ち!I5"
                 }
               }
             },
-            "ID": "f1e57b6181214c38a37851b8d2b66798"
+            "ID": "af35072f071d45268f2edf95f3dbd0f8"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -300,7 +300,7 @@
                     "MessageFormula": "「承認済み」ではないので、印刷できません。"
                   }
                 ],
-                "ID": "7360cb36-ed1f-4419-a7bb-16e0686d6963"
+                "ID": "0854df86-ecdd-46e5-b60b-dda7cc51fb14"
               },
               {
                 "CommandList": [
@@ -309,12 +309,12 @@
                     "PageName": "褒賞評価票"
                   }
                 ],
-                "ID": "557fe67f-ed9b-4226-aebd-9c94b28435b1"
+                "ID": "a776ed1f-d78b-4af2-b7cb-a4315447c93e"
               }
             ]
           }
         ],
-        "Text": "承認済み印刷",
+        "Text": "承認済み\r\n印刷",
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -371,7 +371,7 @@
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "ColumnOperation": 2,
-        "CommitType": 1
+        "DoNotLoadDataWhenLoadPage": true
       }
     },
     "16,51": {
@@ -590,12 +590,9 @@
       "4,37": 4,
       "4,40": 6,
       "4,41": 6,
-      "8,46": 1,
+      "8,43": 4,
       "8,47": 1,
       "8,48": 1,
-      "8,49": 1,
-      "8,50": 1,
-      "8,51": 1,
       "15,17": 0,
       "16,3": 1,
       "16,4": 1,
@@ -1124,7 +1121,7 @@
     "5,2,9,40",
     "18,2,8,38",
     "30,2,1,24",
-    "8,46,1,6"
+    "8,43,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1165,4 +1162,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//M4UY+JO3Sk2wER/CKwW1jsk+O64IQjE7cxQEXBcjXx1vj/7uzPFIDsg/hvPsFajvlyfZGhCPM1gP4lQYnb+u2RlF0srNdysQ/LHjMRZnLJYyWusxrbLiujV/W9vcfo80eiMxIqMTb5yVgoldrpEEN0AhGxPZGbRbw0XPZKm/lezWZ7wRnW5GzzIgIaNQYwkNsJyTFYPpxOAyUojvo1b+I/r6xEGrm1mhsbJPxiLurgQ0jGYi1eG51RefIzu5cfplxUm2EA3WXtOhxMczmTd3yRZHxFUfeJGtJaUOf90lVF5ASu3jGtl7++ANisChjgaQJbFy2gj1wh81i/n3/ZCdPqMpymLYqdNLtxMdxspzb9kp8Z3Yan9Ws4QiHjle4sjGeJg7StBH0bzi6QeY+Ev09GHf9i0pcxkHy2SdbjQq9DX7dci1DuXLO0s1Cq68fdvE0RF/p54k/IXM+J5GH5OQ9/hGoAEIHBS7PE17TpxIYZJgMCBdpGRaWvEvdX8NjCGERNHAWlQMdoLHL1NulFwJfDeZTGqoetl+wE88nPGMlHc2ClVTPQvu5ZO++MXV82WzoTnMwUCsB/wKaFKqu1uzf3/ca1UQrngYfbRVkzGwNplY26m57+VpFSeeemVMTkjLedcnXX97ctsXnSjda66288qzGJcFSTjx1z8n6T9iJBeolrDnAQs664VTvS/NCjtNnDBzrY/VdjcYqXxk08KpVPoEK4c6RxL2fjk7Fxepoj1RPnG3iVwqhxXc9zy71w895J6n5Imud8iQh2z9MiUtedyeWfFaBsKJqaBnf/igX3D3fuCF+3xFFwX5wxue7QnoS3ILH6xAdfTPu3I5x63QubTL5jJvcwq0XLrl/MJmsawMjgYBVLl1gTd+WyYQl6noIsLvz5dEII/MRd6GIKg6CA==|920
+}//Ba+IlY/oIHAd7Ub7jiZS1LNY5fkuhRo+hYxltWtIUliJZxoT8imiXTSEfT5nMu6UuU2YQoKyGOqky2zf5ciDaMzHJ92UQHnXGaGaLZggYdYY2QHCj24XesU1X1l46v2mqEflKIIt0dX5XPzbLqJSeBUUtnn/p98vSoITOAnngwXzE/wq3d197sGZv+qWtKTeFsrIqQBZxR14GEjMnDxOlzJdHUyMDoP5ziMZW3TM4KfKTG2KJyB1zFfAikCxA1fsjHil4I5Db9qitTU27fae+AFMGtQeIVkngzXB/xMlxK7DN2qjQ5126wCo8enFwEOoHS0oU+BvnT1k6ZGLJ2TbW+K96OGcU2hvwyU1B+SSoASNAATTeh7ejTLTRF4dPnDVoDXKLDDB0de17oMmYWNpvjKG66qQm1Ub61Wpw8Sm5jj9hVT8Yodaint7DtmTnpz09ma3PFr/rPbtT8TKwlzh6+GkK1oHJspACAHdRqnbwBETwRstyZQkoZjWu3cB5aZuMg1z1aDWmEU1NhVlNQIFiyqki9poslEMRQKl39QCfKgcRJS0Brn2njXB/6eCLsO433t37TOOh7y4+F9qSKpSCcLQjslbYgQsUxk9JkXMZD/cltKzCL159N/FSk8ApMtPoxUhxtc4nknc3bG2UIetgnbybYNlXLahnr8s27XT0O3GkJnuH469+BGwx6eZrfyh1FQLv4xuaKJfc0FJSYaGupwxwp8wK3KR/emnQvevxmC8YICjfFqweOpEnHZ1wdIA/FrAGB2VbFkWg2kFgJfCNmgQGJQLtU2Jc90Me4gBzz9mEDx6EM6qT8rT2Hd20KobpMdT+ZWbFtjxgzoxe+Pw4cfgTN1tNSuJIrdMscdYJNsn3TklUVMeZOwvhlW5T0nM31eDBa6jY/IxlGhOFuznbQ==|920
