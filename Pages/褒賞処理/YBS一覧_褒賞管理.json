@@ -1,0 +1,1465 @@
+{
+  "Rows": {
+    "Count": 30
+  },
+  "Cols": {
+    "Count": 62
+  },
+  "Values": {
+    "0,1": "%PageTitle%",
+    "2,1": "テーブル：YBS褒賞",
+    "2,54": "戻る",
+    "3,1": "＜評価待ち一覧＞YBS委員は、自部門の規格を評価し、申請願います。差し戻された規格も「新規」で表示されるので再評価願います。",
+    "4,6": "規格ID",
+    "4,8": "コード",
+    "4,12": "改正",
+    "4,14": "規格名称",
+    "4,19": "申請者",
+    "4,38": "評価/再評価",
+    "4,42": "承認/確認",
+    "5,38": "評価",
+    "5,42": "処理",
+    "5,54": "褒賞評価",
+    "10,54": "提出",
+    "14,54": "承認済み印刷",
+    "15,54": "会社提出用",
+    "16,35": "規格文書テーブルにフィールド追加して管理",
+    "17,1": "登録：YBS規格文書テーブルに登録します。",
+    "17,35": "褒賞：開始・褒賞承認・完了",
+    "18,15": "改正",
+    "18,25": "文書区分",
+    "18,36": "ID登録",
+    "18,54": "コピー",
+    "19,36": "登録"
+  },
+  "Formulas": {
+    "5,23": "ODATA(\"YBS規格文書?$select=分類コード&$filter=ID eq \"&IF(ISBLANK(G6),\"null\",G6))",
+    "5,12": "ODATA(\"YBS規格文書?$select=改正コード&$filter=ID eq \"&IF(ISBLANK(G6),\"null\",G6))",
+    "5,8": "ODATA(\"YBS規格文書?$select=YBSコード&$filter=ID eq \"&IF(ISBLANK(G6),\"null\",G6))",
+    "5,14": "ODATA(\"YBS規格文書?$select=規格名称&$filter=ID eq \"&IF(ISBLANK(G6),\"null\",G6))",
+    "5,19": "ODATA(\"YBS規格文書?$select=申請者&$filter=ID eq \"&IF(ISBLANK(G6),\"null\",G6))"
+  },
+  "AttachInfos": {
+    "1,20": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "2,54": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "YBS一覧（最新"
+          }
+        ],
+        "Text": "戻る",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "YBS褒賞",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 9,
+        "ColumnCount": 45,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "YBS褒賞",
+                "ColumnName": "規格文書ID",
+                "GUID": "9da66b58-5b46-42f3-9f98-8671253e4c17"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium5",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "IsAutoReload": true
+      }
+    },
+    "5,1": {
+      "NameUsedInJavaScript": "状態",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "FGC_State",
+        "GUID": "b0fd335c-b9d9-4d89-a98d-5f93e02c7c84"
+      },
+      "RulesGuidList": [
+        "ec5ca6a1-3741-4b6c-8b88-123a731c0efc"
+      ]
+    },
+    "5,6": {
+      "NameUsedInJavaScript": "規格ID",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "規格文書ID",
+        "GUID": "5c9be79d-d45f-42c9-b7a6-c6035b484ff9"
+      }
+    },
+    "5,8": {
+      "NameUsedInJavaScript": "コード"
+    },
+    "5,12": {
+      "NameUsedInJavaScript": "_改正"
+    },
+    "5,14": {
+      "NameUsedInJavaScript": "規格名称"
+    },
+    "5,19": {
+      "NameUsedInJavaScript": "申請者"
+    },
+    "5,23": {
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "規格文書ID",
+        "GUID": "9bba2b5b-d499-4635-9178-f0c2f5d2c5a0",
+        "RelationBinding": {
+          "RelatedTable": "YBS規格文書",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "分類コード",
+          "NextRelationBinding": {
+            "RelatedTable": "YBS分類コード",
+            "RelatedColumn": "分類コード",
+            "DisplayColumn": "主幹部門"
+          }
+        }
+      }
+    },
+    "5,26": {
+      "NameUsedInJavaScript": "評価者",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "評価者",
+        "GUID": "7f46197e-f1fb-483b-a7e8-e066e9f6b47c"
+      }
+    },
+    "5,29": {
+      "NameUsedInJavaScript": "評価日",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "評価日",
+        "GUID": "955d3a92-7cff-4350-927a-e5e2d9654271"
+      }
+    },
+    "5,32": {
+      "NameUsedInJavaScript": "分類",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "評価分類",
+        "GUID": "1c9c38c3-1983-4483-a0bb-e54ecc4996cf"
+      }
+    },
+    "5,35": {
+      "NameUsedInJavaScript": "等級",
+      "BindingInfo": {
+        "TableName": "YBS褒賞",
+        "ColumnName": "等級",
+        "GUID": "3db7d131-7c7a-4560-b3a5-db5ebb05c7ae"
+      }
+    },
+    "5,38": {
+      "NameUsedInJavaScript": "評価_再評価",
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "褒賞_評価"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=YBS一覧_褒賞管理!B6"
+                      }
+                    ]
+                  },
+                  "value": "新規",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "申請済みのため、再評価できません。"
+                  }
+                ],
+                "ID": "4c9d4527-bd6d-431c-861e-bdc82c34fee0"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "褒賞_評価",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=YBS一覧_褒賞管理!U2"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=褒賞_評価!AK11"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=TODAY()"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=褒賞_評価!T11"
+                        }
+                      }
+                    ],
+                    "DeleteCachedQuery": true,
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "3fb962d6-e286-4088-b71d-ae8595a765c8"
+              }
+            ],
+            "Disabled": true
+          }
+        ],
+        "Text": "評価",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "5,42": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "褒賞フロー_承認処理"
+          }
+        ],
+        "Text": "処理",
+        "TemplateKey": "_RS_Normal_Style5"
+      }
+    },
+    "5,54": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "褒賞評価",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "10,54": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "WorkflowCommand.WorkflowCommand, WorkflowCommand",
+            "TableName": "YBS褒賞",
+            "NextState": "事務局確認待ち",
+            "ActionName": "提出"
+          },
+          {
+            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+            "MessageFormula": "事務局に提出しましたよ。"
+          }
+        ],
+        "Text": "提出",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "14,54": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "フロー状態",
+            "TableValue": {
+              "TableName": "YBS褒賞",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "bc603656-71ef-4e39-9915-9365f7b992ab",
+                  "BindingInfo": {
+                    "TableName": "YBS褒賞",
+                    "ColumnName": "FGC_State",
+                    "GUID": "1a4043c8-362e-4792-98e4-5a042fbabeac"
+                  },
+                  "ColumnName": "FGC_State"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "YBS褒賞",
+                  "ColumnName": "規格文書ID",
+                  "GUID": "7e3a6845-2b8f-4231-b82d-80ef9fd06097"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧_褒賞管理!G6"
+                }
+              }
+            },
+            "ID": "fb72de4531824bbbb8645edc81e43b00"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=フロー状態"
+                      }
+                    ]
+                  },
+                  "value": "承認済み",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "「承認済み」ではないので、印刷できません。"
+                  }
+                ],
+                "ID": "66e062eb-40dd-451b-88ea-016b5565fdd1"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "褒賞評価票"
+                  }
+                ],
+                "ID": "58e02578-cae1-4c00-94f2-c9cd93e2fa94"
+              }
+            ]
+          }
+        ],
+        "Text": "承認済み印刷",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "18,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "YBS規格文書",
+        "RowIndex": 18,
+        "ColumnIndex": 1,
+        "RowCount": 8,
+        "ColumnCount": 44,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "CompareType": 1,
+          "ColumnBindingInfo": {
+            "TableName": "YBS規格文書",
+            "ColumnName": "現行_旧版",
+            "GUID": "95385f86-8129-46a9-bee0-ca53c0a986e5"
+          },
+          "Value": "旧版"
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "YBS規格文書",
+                "ColumnName": "YBSコード",
+                "GUID": "1e7db523-9b3f-486d-ad51-b38d15a00622"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "YBS規格文書",
+                "ColumnName": "改正コード",
+                "GUID": "58853289-07e6-42e9-b2aa-a08fc32f9f29"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium3",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "18,54": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+            "PassRowMode": 2,
+            "PassValueItems": [
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧_褒賞管理!L20"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧_褒賞管理!I6"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧_褒賞管理!P20"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧_褒賞管理!M6"
+                }
+              }
+            ],
+            "Source": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=YBS一覧_褒賞管理!B21"
+            },
+            "Target": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=YBS一覧_褒賞管理!B7"
+            }
+          }
+        ],
+        "Text": "コピー",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "19,1": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "ID",
+        "GUID": "0c9bdffe-75f5-4196-8189-ff01e57b673e"
+      }
+    },
+    "19,3": {
+      "NameUsedInJavaScript": "申請者",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "申請者",
+        "GUID": "9d67ab41-d858-4473-8a32-c34d654e5ea4"
+      }
+    },
+    "19,7": {
+      "NameUsedInJavaScript": "申請日",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "申請日",
+        "GUID": "037b0cf8-1dc8-445a-a4c8-cc0b835d6a9e"
+      }
+    },
+    "19,11": {
+      "NameUsedInJavaScript": "YBSコード",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "YBSコード",
+        "GUID": "8e6a1d3d-6822-42b9-ac40-60f3d6bc85fa"
+      }
+    },
+    "19,15": {
+      "NameUsedInJavaScript": "改正",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "改正コード",
+        "GUID": "0bbf2d0e-1086-468f-95b1-e9be2c9cabdc"
+      }
+    },
+    "19,17": {
+      "NameUsedInJavaScript": "規格名称",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "規格名称",
+        "GUID": "f65ac89a-cb10-4eb8-9e95-ae6057143f91"
+      }
+    },
+    "19,25": {
+      "NameUsedInJavaScript": "文書区分",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "現行_旧版",
+        "GUID": "28d0909b-0958-4cfd-bb71-0336a1941764"
+      }
+    },
+    "19,28": {
+      "NameUsedInJavaScript": "主幹部門",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "分類コード",
+        "GUID": "19f25be4-d166-4dbd-8a94-a91a439dcc5b",
+        "RelationBinding": {
+          "RelatedTable": "YBS分類コード",
+          "RelatedColumn": "分類コード",
+          "DisplayColumn": "主幹部門"
+        }
+      }
+    },
+    "19,32": {
+      "NameUsedInJavaScript": "状態",
+      "BindingInfo": {
+        "TableName": "YBS規格文書",
+        "ColumnName": "FGC_State",
+        "GUID": "18e03d1b-dfb2-4de5-9c20-b35cc7c036eb"
+      }
+    },
+    "19,36": {
+      "NameUsedInJavaScript": "ID登録",
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "IDレコード数",
+            "TableValue": {
+              "TableName": "YBS褒賞",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "YBS褒賞",
+                  "ColumnName": "規格文書ID",
+                  "GUID": "1c5aa588-8bbd-4f4b-8d58-c4508788bc86"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YBS一覧_褒賞管理!B20"
+                }
+              }
+            },
+            "ID": "1a7766adc16a4bb9b55ed8b2b974e9bc"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=IDレコード数"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "すでに登録されています。"
+                  }
+                ],
+                "ID": "7033fa23-6dc9-426d-a0fd-f85bde919840"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "YBS褒賞",
+                    "UpdateType": "add",
+                    "ShowConfirm": true,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "YBS褒賞",
+                          "ColumnName": "規格文書ID",
+                          "GUID": "d1c5a318-42c9-40bd-9fc6-341f764842e3"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=YBS一覧_褒賞管理!B20"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e3c4683c-e03e-4a92-901a-9c2d4ea5fe32"
+              }
+            ]
+          }
+        ],
+        "Text": "登録",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": 1
+      },
+      {
+        "Background": 2,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null,
+        "ShrinkToFit": true
+      },
+      {
+        "Background": 2,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 5,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 10,
+        "FontFamily": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFF0000",
+        "Accent 5 40",
+        "Accent 2 -25",
+        "Accent 4",
+        "General",
+        "yyyy/MM/dd",
+        "Center",
+        "[AUTO]General",
+        "black",
+        "Accent 2"
+      ],
+      "Borders": [
+        {
+          "Style": 8,
+          "Color": 9
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "1,11": 0,
+      "2,11": 2,
+      "2,54": 1,
+      "2,55": 1,
+      "2,56": 1,
+      "2,57": 1,
+      "3,1": 1,
+      "3,11": 2,
+      "3,54": 1,
+      "3,55": 1,
+      "3,56": 1,
+      "3,57": 1,
+      "4,1": 3,
+      "4,2": 4,
+      "4,3": 4,
+      "4,4": 4,
+      "4,5": 4,
+      "4,6": 5,
+      "4,8": 5,
+      "4,12": 5,
+      "4,14": 6,
+      "4,15": 4,
+      "4,16": 4,
+      "4,17": 4,
+      "4,18": 4,
+      "4,19": 5,
+      "4,23": 6,
+      "4,24": 4,
+      "4,25": 4,
+      "4,26": 7,
+      "4,29": 7,
+      "4,32": 8,
+      "4,35": 7,
+      "4,38": 7,
+      "4,42": 9,
+      "4,43": 4,
+      "4,44": 4,
+      "5,1": 10,
+      "5,6": 5,
+      "5,8": 5,
+      "5,12": 5,
+      "5,14": 5,
+      "5,19": 5,
+      "5,23": 5,
+      "5,26": 5,
+      "5,29": 11,
+      "5,32": 5,
+      "5,35": 12,
+      "5,38": 5,
+      "5,42": 5,
+      "5,48": 1,
+      "5,54": 1,
+      "5,55": 1,
+      "5,56": 1,
+      "6,1": 1,
+      "6,2": 1,
+      "6,3": 1,
+      "6,4": 1,
+      "6,5": 1,
+      "6,6": 1,
+      "6,7": 1,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,16": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 1,
+      "6,23": 1,
+      "6,24": 1,
+      "6,25": 1,
+      "6,26": 1,
+      "6,27": 1,
+      "6,28": 1,
+      "6,29": 1,
+      "6,54": 1,
+      "6,55": 1,
+      "6,56": 1,
+      "7,1": 1,
+      "7,2": 1,
+      "7,3": 1,
+      "7,4": 1,
+      "7,5": 1,
+      "7,6": 1,
+      "7,7": 1,
+      "7,8": 1,
+      "7,9": 1,
+      "7,10": 1,
+      "7,11": 1,
+      "7,12": 1,
+      "7,13": 1,
+      "7,14": 1,
+      "7,15": 1,
+      "7,16": 1,
+      "7,17": 1,
+      "7,18": 1,
+      "7,19": 1,
+      "7,20": 1,
+      "7,21": 1,
+      "7,22": 1,
+      "7,23": 1,
+      "7,24": 1,
+      "7,25": 1,
+      "7,26": 1,
+      "7,27": 1,
+      "7,28": 1,
+      "7,29": 1,
+      "8,1": 1,
+      "8,2": 1,
+      "8,3": 1,
+      "8,4": 1,
+      "8,5": 1,
+      "8,6": 1,
+      "8,7": 1,
+      "8,8": 1,
+      "8,9": 1,
+      "8,10": 1,
+      "8,11": 1,
+      "8,12": 1,
+      "8,13": 1,
+      "8,14": 1,
+      "8,15": 1,
+      "8,16": 1,
+      "8,17": 1,
+      "8,18": 1,
+      "8,19": 1,
+      "8,20": 1,
+      "8,21": 1,
+      "8,22": 1,
+      "8,23": 1,
+      "8,24": 1,
+      "8,25": 1,
+      "8,26": 1,
+      "8,27": 1,
+      "8,28": 1,
+      "8,29": 1,
+      "9,1": 1,
+      "9,2": 1,
+      "9,3": 1,
+      "9,4": 1,
+      "9,5": 1,
+      "9,6": 1,
+      "9,7": 1,
+      "9,8": 1,
+      "9,9": 1,
+      "9,10": 1,
+      "9,11": 1,
+      "9,12": 1,
+      "9,13": 1,
+      "9,14": 1,
+      "9,15": 1,
+      "9,16": 1,
+      "9,17": 1,
+      "9,18": 1,
+      "9,19": 1,
+      "9,20": 1,
+      "9,21": 1,
+      "9,22": 1,
+      "9,23": 1,
+      "9,24": 1,
+      "9,25": 1,
+      "9,26": 1,
+      "9,27": 1,
+      "9,28": 1,
+      "9,29": 1,
+      "10,54": 1,
+      "10,55": 1,
+      "10,56": 1,
+      "10,57": 1,
+      "11,54": 1,
+      "11,55": 1,
+      "11,56": 1,
+      "11,57": 1,
+      "14,54": 1,
+      "14,55": 1,
+      "14,56": 1,
+      "14,57": 1,
+      "14,58": 1,
+      "14,59": 1,
+      "15,2": 5,
+      "15,3": 5,
+      "15,4": 5,
+      "15,5": 5,
+      "15,54": 13,
+      "16,1": 14,
+      "16,2": 15,
+      "16,3": 15,
+      "16,4": 15,
+      "16,5": 15,
+      "16,6": 14,
+      "16,7": 14,
+      "16,8": 14,
+      "16,9": 14,
+      "16,10": 14,
+      "16,11": 14,
+      "16,12": 14,
+      "16,13": 14,
+      "16,14": 14,
+      "16,15": 14,
+      "16,16": 14,
+      "16,17": 14,
+      "16,18": 14,
+      "16,19": 14,
+      "16,20": 14,
+      "16,21": 14,
+      "16,22": 14,
+      "16,23": 14,
+      "16,24": 14,
+      "16,25": 14,
+      "16,26": 14,
+      "16,27": 14,
+      "16,28": 14,
+      "16,29": 14,
+      "16,30": 14,
+      "16,31": 14,
+      "16,32": 14,
+      "16,33": 14,
+      "16,34": 14,
+      "16,35": 16,
+      "16,36": 14,
+      "16,37": 14,
+      "16,38": 14,
+      "16,39": 14,
+      "16,40": 14,
+      "16,41": 14,
+      "16,42": 14,
+      "16,43": 14,
+      "16,44": 14,
+      "16,45": 14,
+      "17,1": 1,
+      "17,2": 1,
+      "17,3": 1,
+      "17,4": 1,
+      "17,5": 1,
+      "17,6": 1,
+      "17,7": 1,
+      "17,8": 1,
+      "17,9": 1,
+      "17,10": 1,
+      "17,11": 17,
+      "17,12": 1,
+      "17,13": 1,
+      "17,14": 17,
+      "17,15": 1,
+      "17,16": 1,
+      "17,17": 1,
+      "17,18": 1,
+      "17,19": 1,
+      "17,20": 1,
+      "17,21": 1,
+      "17,22": 1,
+      "17,23": 1,
+      "17,24": 1,
+      "17,25": 1,
+      "17,26": 1,
+      "17,27": 1,
+      "17,28": 1,
+      "17,29": 1,
+      "17,30": 1,
+      "17,31": 1,
+      "17,32": 1,
+      "17,33": 1,
+      "17,34": 1,
+      "17,35": 0,
+      "17,36": 1,
+      "17,37": 1,
+      "17,38": 1,
+      "17,39": 1,
+      "17,40": 1,
+      "17,41": 1,
+      "17,42": 1,
+      "17,43": 1,
+      "17,44": 1,
+      "18,1": 6,
+      "18,2": 4,
+      "18,3": 6,
+      "18,4": 4,
+      "18,5": 4,
+      "18,6": 4,
+      "18,7": 5,
+      "18,11": 5,
+      "18,15": 5,
+      "18,17": 5,
+      "18,25": 18,
+      "18,28": 5,
+      "18,32": 6,
+      "18,33": 4,
+      "18,34": 4,
+      "18,35": 4,
+      "18,36": 5,
+      "18,41": 19,
+      "18,42": 19,
+      "18,43": 19,
+      "18,44": 19,
+      "18,54": 1,
+      "18,55": 1,
+      "18,56": 1,
+      "19,1": 5,
+      "19,3": 5,
+      "19,7": 5,
+      "19,11": 5,
+      "19,15": 5,
+      "19,17": 5,
+      "19,25": 5,
+      "19,28": 5,
+      "19,32": 5,
+      "19,36": 5,
+      "19,41": 19,
+      "19,42": 19,
+      "19,43": 19,
+      "19,44": 19,
+      "20,1": 1,
+      "20,2": 1,
+      "20,3": 1,
+      "20,4": 1,
+      "20,5": 1,
+      "20,6": 1,
+      "20,7": 1,
+      "20,8": 1,
+      "20,9": 1,
+      "20,10": 1,
+      "20,11": 1,
+      "20,12": 1,
+      "20,13": 1,
+      "20,14": 1,
+      "20,15": 1,
+      "20,16": 1,
+      "20,17": 1,
+      "20,18": 1,
+      "20,19": 1,
+      "20,20": 1,
+      "20,21": 1,
+      "20,22": 1,
+      "20,23": 1,
+      "20,24": 1,
+      "20,25": 1,
+      "20,26": 1,
+      "20,27": 1,
+      "20,28": 1,
+      "20,29": 1,
+      "20,30": 1,
+      "20,31": 1,
+      "20,32": 1,
+      "20,33": 1,
+      "20,34": 1,
+      "20,35": 1,
+      "20,36": 1,
+      "20,37": 20,
+      "20,38": 20,
+      "20,39": 20,
+      "20,40": 20,
+      "20,41": 1,
+      "20,42": 1,
+      "20,43": 1,
+      "20,44": 1,
+      "21,1": 1,
+      "21,2": 1,
+      "21,3": 1,
+      "21,4": 1,
+      "21,5": 1,
+      "21,6": 1,
+      "21,7": 1,
+      "21,8": 1,
+      "21,9": 1,
+      "21,10": 1,
+      "21,11": 1,
+      "21,12": 1,
+      "21,13": 1,
+      "21,14": 1,
+      "21,15": 1,
+      "21,16": 1,
+      "21,17": 1,
+      "21,18": 1,
+      "21,19": 1,
+      "21,20": 1,
+      "21,21": 1,
+      "21,22": 1,
+      "21,23": 1,
+      "21,24": 1,
+      "21,25": 1,
+      "21,26": 1,
+      "21,27": 1,
+      "21,28": 1,
+      "21,29": 1,
+      "21,30": 1,
+      "21,31": 1,
+      "21,32": 1,
+      "21,33": 1,
+      "21,34": 1,
+      "21,35": 1,
+      "21,36": 1,
+      "21,37": 1,
+      "21,38": 1,
+      "21,39": 1,
+      "21,40": 1,
+      "21,41": 1,
+      "21,42": 1,
+      "21,43": 1,
+      "21,44": 1,
+      "22,1": 1,
+      "22,2": 1,
+      "22,3": 1,
+      "22,4": 1,
+      "22,5": 1,
+      "22,6": 1,
+      "22,7": 1,
+      "22,8": 1,
+      "22,9": 1,
+      "22,10": 1,
+      "22,11": 1,
+      "22,12": 1,
+      "22,13": 1,
+      "22,14": 1,
+      "22,15": 1,
+      "22,16": 1,
+      "22,17": 1,
+      "22,18": 1,
+      "22,19": 1,
+      "22,20": 1,
+      "22,21": 1,
+      "22,22": 1,
+      "22,23": 1,
+      "22,24": 1,
+      "22,25": 1,
+      "22,26": 1,
+      "22,27": 1,
+      "22,28": 1,
+      "22,29": 1,
+      "22,30": 1,
+      "22,31": 1,
+      "22,32": 1,
+      "22,33": 1,
+      "22,34": 1,
+      "22,35": 1,
+      "22,36": 1,
+      "22,37": 1,
+      "22,38": 1,
+      "22,39": 1,
+      "22,40": 1,
+      "22,41": 1,
+      "22,42": 1,
+      "22,43": 1,
+      "22,44": 1,
+      "23,1": 1,
+      "23,2": 1,
+      "23,3": 1,
+      "23,4": 1,
+      "23,5": 1,
+      "23,6": 1,
+      "23,7": 1,
+      "23,8": 1,
+      "23,9": 1,
+      "23,10": 1,
+      "23,11": 1,
+      "23,12": 1,
+      "23,13": 1,
+      "23,14": 1,
+      "23,15": 1,
+      "23,16": 1,
+      "23,17": 1,
+      "23,18": 1,
+      "23,19": 1,
+      "23,20": 1,
+      "23,21": 1,
+      "23,22": 1,
+      "23,23": 1,
+      "23,24": 1,
+      "23,25": 1,
+      "23,26": 1,
+      "23,27": 1,
+      "23,28": 1,
+      "23,29": 1,
+      "23,30": 1,
+      "23,31": 1,
+      "23,32": 1,
+      "23,33": 1,
+      "23,34": 1,
+      "23,35": 1,
+      "23,36": 1,
+      "23,37": 1,
+      "23,38": 1,
+      "23,39": 1,
+      "23,40": 1,
+      "23,41": 1,
+      "23,42": 1,
+      "23,43": 1,
+      "23,44": 1,
+      "24,1": 1,
+      "24,2": 1,
+      "24,3": 1,
+      "24,4": 1,
+      "24,5": 1,
+      "24,6": 1,
+      "24,7": 1,
+      "24,8": 1,
+      "24,9": 1,
+      "24,10": 1,
+      "24,11": 1,
+      "24,12": 1,
+      "24,13": 1,
+      "24,14": 1,
+      "24,15": 1,
+      "24,16": 1,
+      "24,17": 1,
+      "24,18": 1,
+      "24,19": 1,
+      "24,20": 1,
+      "24,21": 1,
+      "24,22": 1,
+      "24,23": 1,
+      "24,24": 1,
+      "24,25": 1,
+      "24,26": 1,
+      "24,27": 1,
+      "24,28": 1,
+      "24,29": 1,
+      "24,30": 1,
+      "24,31": 1,
+      "24,32": 1,
+      "24,33": 1,
+      "24,34": 1,
+      "24,35": 1,
+      "24,36": 1,
+      "24,37": 1,
+      "24,38": 1,
+      "24,39": 1,
+      "24,40": 1,
+      "24,41": 1,
+      "24,42": 1,
+      "24,43": 1,
+      "24,44": 1,
+      "25,1": 1,
+      "25,2": 1,
+      "25,3": 1,
+      "25,4": 1,
+      "25,5": 1,
+      "25,6": 1,
+      "25,7": 1,
+      "25,8": 1,
+      "25,9": 1,
+      "25,10": 1,
+      "25,11": 1,
+      "25,12": 1,
+      "25,13": 1,
+      "25,14": 1,
+      "25,15": 1,
+      "25,16": 1,
+      "25,17": 1,
+      "25,18": 1,
+      "25,19": 1,
+      "25,20": 1,
+      "25,21": 1,
+      "25,22": 1,
+      "25,23": 1,
+      "25,24": 1,
+      "25,25": 1,
+      "25,26": 1,
+      "25,27": 1,
+      "25,28": 1,
+      "25,29": 1,
+      "25,30": 1,
+      "25,31": 1,
+      "25,32": 1,
+      "25,33": 1,
+      "25,34": 1,
+      "25,35": 1,
+      "25,36": 1,
+      "25,37": 1,
+      "25,38": 1,
+      "25,39": 1,
+      "25,40": 1,
+      "25,41": 1,
+      "25,42": 1,
+      "25,43": 1,
+      "25,44": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "0,1,1,7",
+    "1,20,1,6",
+    "2,54,2,4",
+    "4,1,1,5",
+    "5,1,1,5",
+    "4,6,1,2",
+    "5,6,1,2",
+    "4,8,1,4",
+    "5,8,1,4",
+    "4,12,1,2",
+    "5,12,1,2",
+    "4,14,1,5",
+    "5,14,1,5",
+    "4,19,1,4",
+    "5,19,1,4",
+    "4,23,1,3",
+    "5,23,1,3",
+    "4,26,1,3",
+    "5,26,1,3",
+    "4,29,1,3",
+    "5,29,1,3",
+    "4,32,1,3",
+    "5,32,1,3",
+    "4,35,1,3",
+    "5,35,1,3",
+    "4,38,1,4",
+    "5,38,1,4",
+    "4,42,1,3",
+    "5,42,1,3",
+    "5,54,2,3",
+    "10,54,2,4",
+    "14,54,1,6",
+    "18,1,1,2",
+    "19,1,1,2",
+    "18,3,1,4",
+    "19,3,1,4",
+    "18,7,1,4",
+    "19,7,1,4",
+    "18,11,1,4",
+    "19,11,1,4",
+    "18,15,1,2",
+    "19,15,1,2",
+    "18,17,1,8",
+    "19,17,1,8",
+    "18,25,1,3",
+    "19,25,1,3",
+    "18,28,1,4",
+    "19,28,1,4",
+    "18,32,1,4",
+    "19,32,1,4",
+    "18,36,1,4",
+    "19,36,1,4",
+    "18,54,1,3",
+    "6,1,7,45",
+    "20,1,6,44"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "YBSメニュー",
+    "Title": "管理者用_YBS褒賞処理",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "YBS規格文書",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 3,
+          "Value1": "=\"承認済み\"",
+          "GUID": "ec5ca6a1-3741-4b6c-8b88-123a731c0efc",
+          "StyleInfo": {
+            "Background": "Accent 4 60",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//3EHhTCTBa9x83aZgMmxmKwSUf9Tmd1jeFHleyuXE0P11Lo5jRYRsRm3NpHoVs/RRf8sAwPVXZhlq9tJrLQVp9hV4JRl/82htAhLyTK3GMdjwfyXJmALlJSTQC7a0wsyzxNmGaI/y/2aFxHrfTLlG098VdmVC4oXZ+jN0+TQCKx2Y/slTxZGdpZtPWGl9NA4DaRIC/aVkbmrh/zAdshTJhKWcadHP7O/mJPnp23Ch85ucqcnwSOBpa+CU6ObfqCxao1TEz2doSJBUUbSz4vkls3Ez5US0s7yh0y85cwA9auKgvsHubYDb7Tp2PIRVWcAjoSwaVjpsCtyXWwsfmn7H/6HQUpK1iUBF8QVz6LqNrtma/4g+qdVD8A+y8eSq8r3LNgRE4K/30PnyeXGwV5W9wl6mFff4XcXSxqNumF0XWEVeZqfRMgD76XvMU+KfkuuGEc+CCRK1dFN1dGWsj5TwFKXL7H5lui2nj3gklKa4GdI24DxUCj6qLDHhH/D1Yug4XNqHL+++EdufEVfgtaXSbJNEdPiRG4W8Qc275xowJbaEc3agMMibFrM+ezg1wkXDft51F/ifMUtc+yCGJhg8EMtKeIkXViLK8X8e8cAhQNKDcWBCqSo0sa+PP+6jfXV+FeTcnT/H1dFMeiG8mrRpWMh4siMuXrJbL616Z34qd3Q4biGknz0No9fByl3/sukL+MjiJi4Fd9rGwqf9yqpUrfrZItnLT/EGLvxMUXQZgQ9Bjqpcw3K0QyoDpTRtJ1aT13DybNftV1LzmiNGFdxjWEiMQ6q+h/25dBF4SbO6N+qOuAuEk3lwU5CpPg1GOI1P7+O35VCLGG8DjznDnrOCs4sWNT2VPzB24WkFVy2GVngx9qimABvxdgJ20f49lQeNI/zIC7cfYZBtx+xKUryeNA==|920

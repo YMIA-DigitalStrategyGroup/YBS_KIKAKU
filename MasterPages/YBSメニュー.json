@@ -249,6 +249,23 @@
                 ]
               },
               {
+                "Value": "管理用_ＹＢＳ褒賞",
+                "Text": "管理用_ＹＢＳ褒賞",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "YBS一覧_褒賞管理"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
                 "Value": "YBS分類コードメンテ",
                 "Text": "YBS分類コードメンテ",
                 "SelectedIconColor": "Background 1",
@@ -470,4 +487,4 @@
       "Size": "1280,104"
     }
   ]
-}//5f7uEMZzBnN2h18XoZm2Ldw9ko6zIjzL753S0lgco3MOynHQL1SP8JHAzzqUiZOQiMX1jJYDjsIB0mqLSDJpv+0nDaFjH1oGM23n4Ehf4knb+umyHWl+L1ZgzH5lHLZXebByY5AxQQc8AhQZkTg95TMGFOWruNnxArMSF2G5BlHcAGkKEcYX1eciAWuiIaSmBTm5nBQRcWw3zTYbTdVRfxgqbLkIbhgnzdx/Db4Ln2qwOTPSJV7ofRJm5xlDhp1+TPak+X/Q8PwsgOBI3xwPxyerJshWsNHOpEwspYNo9B+6ZSa5+5Oz6GTJk7vqwtFfvHAxnv2QM9FLsaHh+R8OsLpL70GL081miewIvjHvQ+p9QfTQI+W1ZaRAUP37xNbAEpJdzEFjvsyuqo7TSbtkmleoWYFQcJu9hdKTxmXuS9ggk0WQtDGorjTljP/oUCGnjeztY3DKztPo++uGvgQ6v57tyCnAH84XJJXdshQjmyZWZCr2VXX+FSs9/blFnk/jd6dj672qauJd/xaYrU7kK+/rjz/s5tkHMCb/MxD4Uoi2s2XiAJXggr7xiKhGVVMHy03iTfnaWtmcNTpPrXJOr4uoySq8F/XHkzw2y8jaTgHvQdE4d8xeRl1ZDqz6fPoaYoL/tpvXSeeFJeCrJ3w7jKGYLmJvvCAqx55FgOVp8gdbFjfEg9CfI1iTsSJuKWolhn2GkeKbvpWUHxC9Waxj/KQ1nLI0bDT3IO35j3geGN0rcZ5XtjEKk8CODCH5l4XLVQZqYnve/PcH8bMdvQa7ijIFMISZEDeidWHZdV2f1pZjdnlnqin/YUfQoQqbk4ZonAKDBFYOpt7d+I/8PcRTt2qj8EosOS23+TIO+qqb+t6yIIwUjqSWrvz4T77620yuscOWaLxTwWh8FkCIkf6+sg==|920
+}//ySFb8e5mzbaAV8LENcl2A4UqPbgoB5VNys/dDvYyFg5k6XYM0pRVZhExggg252OAvOpn5cfGYqI5g1suVj67MpM00HyUPWf56XWFmdFg7YEYd2AZTGYsGCw5sNxPQxmSt9pCSY7vXhS+FpnDKt/P2Cb2dJ3/8DJWIIZ4GMGa1gLWhUc7DmHCZdVhdo2N7Dgz5zZN0RMFdJIiOdBxt5WOA4bWSLcXJMc3ALPBxhKq73hLuIig8brelNPpJsCD55oTh03hlydRq4qa+5Q6ohLuaKl62Ev/9Nv5QOc6sQItUjTwB1jSFgRQqHXgOzMYw7R7lMuqWC9FkPfdRlbWNnLfDutkIivKpaNiuab4xKBVyoL/AKl05t7hrtEXYNwZ6Rsg0tVxy/XGfsih7K+zINJApGtQGKtFwTliYmVfJSPIPRSKFsl8QpS09o49zq0T4jnMmsjEo86utc0RTxXPU2ajFaK3mxbWhMdHHfhAsDJZHUKSYaaT07It/cI3RCaWBnV/XQBTMmw0FE7E7SjFwA0hdpfv81WaEPrHowUoYIrtiX6H9FWnqBRvjsyHsYey8kZ5gdFo8srz8lHqfUUuyc4Y9l7N2FI04DK4fwbaz27wUF8xbktWQscyLu0DLUHK9sXdKELrxqftotxFO/VtVXgKmMaZs8ehYav2K5cnVdsFuyh4wjf3Nbdv5wuKXkppy5TKqRKf5SJ+pHonYQL+yWdfHNmebXsW9Rj5zUxW/o0LWaCkMp6fY8TWEHTCavKF5lk6CMrgiGV7eqtnHoCh4sMr1f3G4AzSdr2V1bVoVzwdUBAQPoia/JXd+4xxDU8MlCceX6gKrfa6ajUMKSdgsoyBrCB6MUV5LAfawQo1GAo5gBcxdlTxBt/KB+XU6eZ952E/CM+nMSVA0np9dTRmwPMiiA==|920
