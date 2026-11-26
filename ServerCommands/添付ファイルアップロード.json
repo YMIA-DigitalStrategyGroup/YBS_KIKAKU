@@ -68,7 +68,7 @@
               "ID": "f996c45bd81d49ee8c83e89c4802b048"
             }
           ],
-          "ID": "17231173-cdd2-4efe-aec9-138fc5507c6a"
+          "ID": "18f782d8-4b79-4267-ac82-4af0f2e79a9a"
         },
         {
           "CommandList": [
@@ -82,7 +82,7 @@
               "ID": "b26c35785aaa42388d3912c0b53139d4"
             }
           ],
-          "ID": "4447a7a6-a008-402e-87b8-e006c8bc8380"
+          "ID": "84148f8c-fcaf-4c31-8393-7e8f22b1408b"
         }
       ]
     },
@@ -115,8 +115,8 @@
             {
               "BindingInfo": {
                 "TableName": "テスト_YBS規格文書",
-                "ColumnName": "添付ファイル",
-                "GUID": "6b810d45-4f22-4593-b888-70676942b0e8"
+                "ColumnName": "付表添付",
+                "GUID": "f1e8998d-9252-4a90-846d-157203106181"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -127,7 +127,7 @@
               "BindingInfo": {
                 "TableName": "テスト_YBS規格文書",
                 "ColumnName": "YBSコード",
-                "GUID": "b3ca0ea6-cf79-482d-8a41-1a9be5718909"
+                "GUID": "cd4ef9cd-ed07-4de9-a03b-484da94321d5"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
