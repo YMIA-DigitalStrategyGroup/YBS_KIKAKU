@@ -486,17 +486,7 @@
   },
   {
     "ModuleName": "PCPage/褒賞一覧_承認待ち",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-11-27T11:05:15.1008016+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\褒賞処理\\褒賞一覧_承認待ち.json",
-      "Pages\\褒賞処理\\褒賞一覧_承認待ち.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Table/YBS褒賞",
@@ -516,17 +506,7 @@
   },
   {
     "ModuleName": "PCPage/褒賞フロー_承認処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME009211",
-      "Email": "hiroshi_ogata@yanmar.com"
-    },
-    "LockDateTime": "2026-11-27T11:20:22.2510941+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\褒賞処理\\褒賞フロー_承認処理.json",
-      "Pages\\褒賞処理\\褒賞フロー_承認処理.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/褒賞コメント表示",

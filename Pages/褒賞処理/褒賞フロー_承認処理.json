@@ -291,7 +291,7 @@
                     ]
                   }
                 ],
-                "ID": "05ad3cf9-3046-4de7-a713-050e04f7158d"
+                "ID": "aa240786-d78e-4c12-b14c-c624a5bfec6a"
               },
               {
                 "Condition": {
@@ -344,7 +344,7 @@
                     ]
                   }
                 ],
-                "ID": "7a3a36a6-9ae6-40be-96ff-fa65473c0000"
+                "ID": "d9121483-7ebd-472d-9b2b-c5d7425a78ca"
               },
               {
                 "CommandList": [
@@ -373,7 +373,7 @@
                     ]
                   }
                 ],
-                "ID": "f1a0c0b4-8d5a-41b6-bcb2-bc7111090a56"
+                "ID": "c56b506a-7c35-4f6c-ae4b-f044630c0bc8"
               }
             ]
           }
@@ -448,7 +448,7 @@
                     ]
                   }
                 ],
-                "ID": "98847680-515d-47f5-a3bf-2fc46c4583c2"
+                "ID": "3405b048-135d-444d-a1ac-60cbb12f3dae"
               },
               {
                 "Condition": {
@@ -501,7 +501,7 @@
                     ]
                   }
                 ],
-                "ID": "bb73bfbe-2884-45e7-ac18-ff58d29fb0dc"
+                "ID": "a3deff4e-22f2-49bf-8325-3baf8eed4672"
               },
               {
                 "CommandList": [
@@ -530,7 +530,7 @@
                     ]
                   }
                 ],
-                "ID": "86a594e2-efc5-494f-b3f1-0e939e0b16d9"
+                "ID": "6e6cac1b-dfd8-4d7e-8949-0c1b1f8c5534"
               }
             ],
             "Disabled": true
@@ -712,7 +712,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "23504ef4-cdd5-4ecb-b6b5-2aea9ff7fcbe"
+                "ID": "bf4f0899-8587-4484-aee8-2a175681e9a5"
               },
               {
                 "Condition": {
@@ -746,7 +746,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "8975865f-f670-4d79-b0a6-19d0c978f04b"
+                "ID": "8ab40b69-e730-4dae-9fd2-198e594b1298"
               },
               {
                 "Condition": {
@@ -784,7 +784,7 @@
                             "MessageFormula": "部門長を選択してください"
                           }
                         ],
-                        "ID": "c3c889e4-fd35-4c3f-bebd-2e8353a470a9"
+                        "ID": "660a12a4-8faf-4308-96f4-e7fc3fac1e6d"
                       },
                       {
                         "CommandList": [
@@ -806,12 +806,12 @@
                             "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                           }
                         ],
-                        "ID": "b97160cd-4cfd-4165-b52d-0960484a9502"
+                        "ID": "26459273-f688-47cb-9332-a9d98e96c785"
                       }
                     ]
                   }
                 ],
-                "ID": "175299a9-cd5b-45b4-95a2-019349621651"
+                "ID": "ce1fde2c-d5da-4c70-befb-aa9de158b606"
               },
               {
                 "CommandList": [
@@ -833,7 +833,7 @@
                     "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "c86078db-bad9-4b10-9a02-52ac84bb2d15"
+                "ID": "f88a4e36-7335-4b01-a9a2-a4ab5d28f1b0"
               }
             ]
           }
@@ -975,7 +975,7 @@
                     "Comments": ""
                   }
                 ],
-                "ID": "a74ee39f-4e32-4d13-bddf-ed0b05c60b7b"
+                "ID": "5e6f0272-b554-46a0-a24a-8374652567d3"
               },
               {
                 "CommandList": [
@@ -1001,7 +1001,7 @@
                             "MessageFormula": "差戻コメントが記載されていません。記載願います。"
                           }
                         ],
-                        "ID": "e56ca639-7a5c-4e69-a822-48672013e365"
+                        "ID": "8eca2dc7-cdbd-482d-9b87-41059fffd3a9"
                       },
                       {
                         "Condition": {
@@ -1032,7 +1032,7 @@
                             "MessageFormula": "委員長差戻です。"
                           }
                         ],
-                        "ID": "f6df230f-1181-4380-9990-81e4d4bd93c4"
+                        "ID": "0ed6a088-abea-4fb4-8fdd-91da2e0c59e2"
                       },
                       {
                         "CommandList": [
@@ -1051,12 +1051,12 @@
                             "MessageFormula": "部門長差戻となりました"
                           }
                         ],
-                        "ID": "c77c6411-3d7d-48c6-867f-a4468c994bc5"
+                        "ID": "8ca3d2d5-bbb3-4059-b1ff-525b76bdf07e"
                       }
                     ]
                   }
                 ],
-                "ID": "de58caae-e610-4d39-bf60-3cb79aa8070a"
+                "ID": "da57b937-981d-48b7-a6b2-6eb239697a3a"
               }
             ]
           },
@@ -1337,7 +1337,7 @@
                     "MessageFormula": "コメントが未入力です。\r\nコメントを入力後、「差戻」ボタンを押してください。"
                   }
                 ],
-                "ID": "bec6373b-1e77-4944-b7d0-e8c192ac30d2"
+                "ID": "6323a4dc-bb96-45c5-a85e-7201aa0c8c1d"
               },
               {
                 "CommandList": [
@@ -1447,7 +1447,7 @@
                                     "MessageFormula": "【部内審議】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "163030c6-21b1-4c6d-9943-f82aa7ab47d4"
+                                "ID": "19a9adf4-b605-4841-a413-bcad3529f1fa"
                               },
                               {
                                 "Condition": {
@@ -1536,12 +1536,12 @@
                                     "MessageFormula": "【審議会審議】 部門長が差戻ました。"
                                   }
                                 ],
-                                "ID": "c68e8743-3828-410a-9ce5-cdf05aa51014"
+                                "ID": "c2d0c124-f51b-4aa6-ad77-7982196a7ed5"
                               }
                             ]
                           }
                         ],
-                        "ID": "c44536a2-a0c7-4eab-9942-49600c298a8b"
+                        "ID": "85c73caf-3df7-48d2-9983-b8fd217cec15"
                       },
                       {
                         "Condition": {
@@ -1629,7 +1629,7 @@
                             "MessageFormula": "審議会メンバーが差戻ました。"
                           }
                         ],
-                        "ID": "76d22a46-ecb4-48ae-ac6e-b1415b1ba7ed"
+                        "ID": "50edc04f-edfc-468e-9b26-ce09acf724fc"
                       },
                       {
                         "Condition": {
@@ -1717,7 +1717,7 @@
                             "MessageFormula": "委員長が差戻ました。"
                           }
                         ],
-                        "ID": "5a383658-0100-4661-a2c2-d8493c5262cc"
+                        "ID": "accf85f3-35d5-4ceb-8c35-212cbb2ea290"
                       }
                     ]
                   },
@@ -1726,7 +1726,7 @@
                     "ReloadData": true
                   }
                 ],
-                "ID": "aa2c2ac3-4b8c-46ab-8caa-2d5f566b56e6"
+                "ID": "cba0eb5d-0560-4fb9-8605-171a59eb7d1a"
               }
             ]
           }
@@ -4594,7 +4594,7 @@
                 "MessageFormula": "制定を表示します。"
               }
             ],
-            "ID": "8c9c3dbe-06f9-48b9-965a-8be2fe9edaf6"
+            "ID": "db7f374f-1bcb-4c04-8855-98ba014fc5eb"
           },
           {
             "Condition": {
@@ -4623,7 +4623,7 @@
                 ]
               }
             ],
-            "ID": "37e56a76-371b-42c7-8520-97c7c6ba2e04"
+            "ID": "8cc7c11d-c988-488a-9940-314a9bdc4af1"
           },
           {
             "Condition": {
@@ -4652,7 +4652,7 @@
                 ]
               }
             ],
-            "ID": "431b350f-fa4c-41bf-91cf-b974a2095d34"
+            "ID": "a2cff145-e55b-466e-b945-58d7a9879191"
           },
           {
             "CommandList": [
@@ -4669,7 +4669,7 @@
                 ]
               }
             ],
-            "ID": "c002a5a0-9003-43d8-80c0-3f5e0f68d67d"
+            "ID": "5620e9da-ba6e-485e-9293-dac5d3e3f4db"
           }
         ]
       },
@@ -4752,9 +4752,13 @@
                     "Value": true
                   }
                 ]
+              },
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": "「承認」または「差戻」の処理をお願いします。\r\n「差戻」はコメント必須です。"
               }
             ],
-            "ID": "071404fb-8d1b-4b92-b8ec-d1bf1d5e90ca"
+            "ID": "0e4b894b-f341-4097-b9dc-9d6387aac418"
           },
           {
             "Condition": {
@@ -4781,9 +4785,13 @@
                     "Value": true
                   }
                 ]
+              },
+              {
+                "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                "MessageFormula": "申請者として、評価内容を確認してください。\r\n「確認」すると、上長（部門長）に承認依頼が連絡されます。"
               }
             ],
-            "ID": "604239bf-d3c7-4f4b-93d3-b1d69ec3ad96"
+            "ID": "ef508b94-5a29-4b2d-b71b-0e311d6ca238"
           },
           {
             "CommandList": [
@@ -4792,7 +4800,7 @@
                 "MessageFormula": "事務局確認待ちです。\r\n処理（確認）をお願いします。"
               }
             ],
-            "ID": "781f28d5-164d-49cd-8c5b-c9f2b0777aa5"
+            "ID": "dd6c5c24-e27e-490d-9866-72ce7d89eaf2"
           }
         ]
       }
@@ -4868,4 +4876,4 @@
       "Size": "49,21"
     }
   ]
-}//c1St0mKsaWrtBp9P0KJCuPssZyE5tOn+cnr+SmGxyKGoLHIsry+ATYyRaSDv6y1+QFDr/HyMEULDEuyzv1yA0yqraMXgJ8oL+yRjIV63BwniiHwMFDj2K2GL2183hTHxHavs/BB3YZDDdKg5tWU+292CIKndaLjzCDMsY9Jk4Cnn9NIezeJiQGQfAjFACup38taql2FvaaBCxtjXTD/1XiZJx2ULea64rv+M1U+1VQJ0p+ltuhDw2cKqtLiknwOdBcDrf9hTOtR393dhQeZF8jcirton9x2N3Eq7iNCFGIV9+Mri1yv3UaFMq0joj0Mm9wQvviyqjtLItU6H8JHv4pASVdjYebNRXPFAtmxsie9ky4XD8zonXPB7/cUJNUj0I011wDNhkQvhUQ2FfZRmfgjPWIdgBdDKTX4MOevx1OKiFxlYywibdsLZK/5AefDWr81ppruAOmUgaF488QQq2RoDU8ffY/22FkfOcc3lHbuSwt971LxgIf+bPeS6L/g5XHMvFiqwdezxn3W5riClxEHMCBzfxfGjMeibq2VodAHS7wW1nGGhQTQRjZ+r3V4rW/x1951THyUa2hGUIO8zx78F3uWPYHsVOkM79h/TkT1N5PaHOQp4nZO0rD+St0g9AoerfmWmWQRKF88pDpW8s9NLRQAaLdlz9+Tjrjx5dYQ7uVGeBkBYpi9EAnEbf0AO9KdOpKVEE5l4H7Q+8vYlwiSUVCGF7o7cKu3zT3pBnmI1SgNbkcsAbSXGy0gfL03nl2u3J3o0VG7GF7XTK0PBKTTnAYgvm6ydp15Rc7Yi255pesjUi9nbDfNox5dp8NiJBtA1E/lyKv93OozPs2RV8ZUuaDkGfUaS9FJGq3GRAfRUN/TiTygzb5yttStmw49FGVWa94RFcxsbkI0OuHVbLQ==|920
+}//AhXx86Zzt8/d5lj+QLaBOjmsUYcndqz8Fd5lajga8hSuVSFtDw0iUkrogRGosYR65OecU0cDQMFaxltwi85gK2YKC784YcBEpT7Q7X1Bz3EH4uzW1GgziMhrXw7VGP+WB42CBHlsr2RnRDgwb2CAqcsqJS2FXsYIFa7y/IDbztYb3GaCrDot1PWBFy6T7ijZU/Le5aEm/L2GExUyrFtGFRGxQ/6S+3NNpxbQnq3hPslXKELuY6Yceq4D/cpyXkAKbee3P0RgzffeL40b1stCIdwb9PNUNliU7bZJBiUhaUDkP91suIaqPOfqu9/gcj7tpBrGrT0Qk0hSQBEllNknjnpuStNW21rvmOXmUSEvGIGfyE6j19UVvNAkd6OSsZtJ+gus+8mS6guXjVeBnpkCXc1Qp3j1P3U59Rgse1EP5cpbW9uhI4j+tOR+Au3sfDgZ1NZ3wi3XWZimZ4LrGnMILUNS8MRuCdwbI6SG649b0PJA9NVQ1ckqN3vxb3oQe0to7vUvd4i7DQHSUoakHNKSzNAPvwkmvTfTdgtdY20ym9cewU8N8SS6w+VvF2CvTP/PRnzRvyerTQ88mu+7163IfSZhFLNCncOtKtxx0V3NX3gcuaJvD3kxQ7n74YiMk9ZvrqQjl6EmbcmZOUF8TnyH1shNWKm2yP45w6e/8uPEzg7bamc3RBb8SHrNtKviIElLTgisEkz8YQrs5mCmkAowp2tLbYPH/zPCgLCOB3jaQ6WSASfubOOffVC62IeM7RsI07/xGyBnKEdjblmB0yMpbve9Yt5VdV3H0oTNRGOMaEGCBoE7iq+UU0ttGMPahtFEDwKLunu7RJiUrMFwTr2zljs6xry6yhT17SiMobflpWoXuqSG2r6vFwnCeuCWyi9mpvYknVONNvcad1rHFeRQYA==|920
