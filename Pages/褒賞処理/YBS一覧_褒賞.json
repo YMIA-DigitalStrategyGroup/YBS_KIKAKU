@@ -33,7 +33,10 @@
     "19,25": "文書区分",
     "19,36": "ID登録",
     "19,54": "コピー",
-    "20,36": "登録"
+    "20,36": "登録",
+    "28,17": "WFのメール通知設定",
+    "29,17": "権限設定：YBS委員会で周知後実施",
+    "30,17": "規格文書テーブルにフィールド追加し　承認待ち/評価待ち・・・を選択表示の形にする"
   },
   "Formulas": {
     "5,23": "ODATA(\"YBS規格文書?$select=分類コード&$filter=ID eq \"&IF(ISBLANK(G6),\"null\",G6))",
@@ -74,6 +77,15 @@
         "ColumnIndex": 1,
         "RowCount": 9,
         "ColumnCount": 45,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "YBS褒賞",
+            "ColumnName": "FGC_State",
+            "GUID": "5113262a-94b0-4430-802e-af96fd0fe736"
+          },
+          "Value": "評価待ち"
+        },
         "OrderByCondition": {
           "OrderByColumns": [
             {
@@ -205,7 +217,7 @@
                     "MessageFormula": "申請済みのため、再評価できません。"
                   }
                 ],
-                "ID": "394863d8-bd2a-4852-969d-d78c555536ad"
+                "ID": "152b4448-8e66-4f97-ba7d-9e38919c1b7b"
               },
               {
                 "CommandList": [
@@ -236,7 +248,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "538dbb68-96ec-4dfb-85ad-243d8a59162a"
+                "ID": "41c009d3-57a6-42b1-8a40-cb96b16d11d1"
               }
             ]
           }
@@ -338,7 +350,7 @@
                     "MessageFormula": "「承認済み」ではないので、印刷できません。"
                   }
                 ],
-                "ID": "092fe12b-3e91-47b3-ac18-55d42f317590"
+                "ID": "51832175-db0c-4577-b3ff-17e1df39d002"
               },
               {
                 "CommandList": [
@@ -347,7 +359,7 @@
                     "PageName": "褒賞評価票"
                   }
                 ],
-                "ID": "cb811cb1-9d89-40c8-8035-a5f8ff9f4c4c"
+                "ID": "ef8ba593-80ae-40e3-b7b6-b80156699f53"
               }
             ]
           }
@@ -571,7 +583,7 @@
                     "MessageFormula": "すでに登録されています。"
                   }
                 ],
-                "ID": "0a6cbb0a-8cc4-4391-af4d-42a91209b61f"
+                "ID": "6ee3a1f2-d75f-4df3-af9c-ea5f06b70526"
               },
               {
                 "CommandList": [
@@ -596,7 +608,7 @@
                     ]
                   }
                 ],
-                "ID": "7695f599-0b1f-4d7e-9104-8808ebb3c605"
+                "ID": "c2417dd9-7850-4470-95e1-8a8af9759bac"
               }
             ]
           }
@@ -1423,4 +1435,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//DmmoUWFxPxZv97EJEhJpXMqqha+guBSm7DHpksMV7hDRIKBPApVrm1THZZC9Z8woSPOFiuh4l7wW3sRQqZAf6Y3BIrnXYbjdBsl68ev1WjD7FC7zKBrJOMfSvAxYTXNPaV8DnfhR8m+fcDu2B1Z1e193xJfm+LbZ0jXe6NKvMhDaTZIaBULB+cXPobk5iL60hBoclKrCgCNv5Xi9+wHPQEFeGAFS7tQayJPgjs+Sy6W4tkw4ZIxSQovldkj98PTOscviwKg7q4g+ZKlCX6sLVyVmC1bwAdfh6rwCVx2tMDy5LB6HXDP+Ebm2j1uwNNMlSREBPJ8qLAe0g48OVaG+vv2/Bt9JmPRL3du8CY5RRV3khQULOtaQJFy/ECXx+oQtbmrZbnBIeY3S9grV4fdgiL7ZgsJMPwIhKa2ac6N8NAzn0S5SknD6FyEuwZGAMtoJgOjIraJIfBQxVd9hl2AeMJJoTZlGhxcLx+CfB1OZxP3edDXLI/4e3msszhTiH78afWp8H9upi/JMaxVANurIzRcjGvbLWM9O6V5pnjocILTydHSxhDag/VdugZpgf7DINTX2h3kHYD0ZK47um5pzj84xf60TlB4e+zrSgTYLbh8E3NUgvwtx930j7kUWkrejoB+1uJRNH20LY35oKbNjs2gB6Y8KFe6Bu40R0Q4Qz/Z4UytcEf/ojMIYuHHeo8198AJexBqBkbr4MRZGw7hSIgXdYtIz2/LsXVewgcaalqpcxbFzQJsv4sh294ED/UuLLsypDHTurJZUGbWmIjkxU7fmCnrqd301EQpAl+tuLQlpBdcsjLBp2Jva2U/7rviF/F96jlFt4Nq2G5zlAsEv3VM9yjfUcmSpFuxuPKpMLT8EO5r0rUFL2d9IGzCe6ndp94SpG5SKfTH+qK0AEHbhkg==|920
+}//dmOvv1D2immTjv+6nm1ioSW3C3ReC4OwWtLogSJAQLFwZ2GFfri8PtD1OMVL5q/WUXpIhaQUKpo3AaDlWbO2vmGzo1WBSAj5dWKGPrXpib8SH1K7XIQYJRAJ+KfU1J+sjLDMumhMAjjnwY5+PiXlRbB9+/9+7WCvA6SOyZ5Qc/jAOQRC9bTiwsnRZd9LTkgCWZC3uP+VgUnoJKMknWejuK0+PL2D/cdadtuxe+dLXsyqyhWACA0ahT4bCQLRfcvSUFJBGDBM6qQZZa3RE3P3DVGnaMfSl2GBi5xL9w+KcJQJAESOQH329I0HA4WbmZyKpGXW5M+mCTS/sFNnvfmsDo5Le7OwtcbL7mi3JXNw9UlnHtLP+QwnbxFfgwBE4FGk5tk6LVN/WGnFZwghJG7vbGAYTx6YSJ3m1QlMB22Ik936/ZQkRFrGdqIWj07KycxLSyMelqr9y4gXiqaNL0J59YB2MsPLhIk9k62hDNkugOV7rsxji5VFqXozyYzo9SfbSeglOYbBkq9rlycPDMS2099FSkCX4ttQyMvb0LQdVCkRDrUNcPWKh3MCbXViVveXx3GwAlNo2nc575/ABMx15vMiazr4B2RNp6b5sOdgHZsNPWwKAknI/EY9vtwAFEXmPhq75+eQOO2ZVunIEclcepJ7PFvvx2JDNAlTVlXhhteU29Df2A5zR/p8/qNhHl4y/qbEWrSdVfs3fRmAvMPI0N0itWXMaCG333czEfh5lVR7ZLLYAuNlMWMfs2p/wngHBmdTTm4b9KeQbpEJJVypgOv6bylFgW98OjcDNLkzApomj33mC9Avz7DPcor1zyQGrrB5pa5IUnAkSCZGw9rcB6nC5qW8ufTRFvHdTpc5UAGZNQCpztCdd3jBl3h2IdHOLW2Q2MHdvxuTxFIMU7n9iQ==|920
