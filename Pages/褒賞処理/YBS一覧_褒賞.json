@@ -9,7 +9,7 @@
     "0,1": "%PageTitle%",
     "1,11": "*評価権限：YBS委員",
     "2,1": "テーブル：YBS褒賞",
-    "2,11": "*最終：「新規」「承認済み」のみ表示",
+    "2,11": "*最終：「評価待ち」のみ表示",
     "2,54": "戻る",
     "3,1": "＜評価待ち一覧＞YBS委員は、自部門の規格を評価し、申請願います。差し戻された規格も「新規」で表示されるので再評価願います。",
     "4,6": "規格ID",
@@ -196,7 +196,7 @@
                       }
                     ]
                   },
-                  "value": "新規",
+                  "value": "評価待ち",
                   "compareType": 1
                 },
                 "CommandList": [
@@ -205,7 +205,7 @@
                     "MessageFormula": "申請済みのため、再評価できません。"
                   }
                 ],
-                "ID": "15877547-b40a-4ec6-9f40-ce7dd7772ad3"
+                "ID": "394863d8-bd2a-4852-969d-d78c555536ad"
               },
               {
                 "CommandList": [
@@ -236,7 +236,7 @@
                     "LoadBindingDataOption": 1
                   }
                 ],
-                "ID": "6b051bdc-13a4-46fb-8b61-94e5ca4b3e60"
+                "ID": "538dbb68-96ec-4dfb-85ad-243d8a59162a"
               }
             ]
           }
@@ -338,7 +338,7 @@
                     "MessageFormula": "「承認済み」ではないので、印刷できません。"
                   }
                 ],
-                "ID": "307b530b-7604-477b-b140-580f25d21d7f"
+                "ID": "092fe12b-3e91-47b3-ac18-55d42f317590"
               },
               {
                 "CommandList": [
@@ -347,7 +347,7 @@
                     "PageName": "褒賞評価票"
                   }
                 ],
-                "ID": "13aa36db-441e-44b0-a6ec-c44956dce9ac"
+                "ID": "cb811cb1-9d89-40c8-8035-a5f8ff9f4c4c"
               }
             ]
           }
@@ -571,7 +571,7 @@
                     "MessageFormula": "すでに登録されています。"
                   }
                 ],
-                "ID": "d7fc96db-aca8-4c60-a95c-b268fe689e09"
+                "ID": "0a6cbb0a-8cc4-4391-af4d-42a91209b61f"
               },
               {
                 "CommandList": [
@@ -596,7 +596,7 @@
                     ]
                   }
                 ],
-                "ID": "1afac5cc-8844-484b-866b-0588e39032f3"
+                "ID": "7695f599-0b1f-4d7e-9104-8808ebb3c605"
               }
             ]
           }
@@ -1423,4 +1423,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//h/yBDRwxK8anMOsrPJzqv0odS1oYayTu1H3MK0s1mh4cwgnMjNs5/bRYbys/DZQ0FX259oUbTrDjmNEeNxj42tkuSgfA4jwov7Hw4S4q/wHRLgNaE5OBP6r+Ii3q/vlFZOs1AoUDHP5JT0J6m2j5BfljI8onPADH7ED3gxGwnoVfWEiVuGz6iPvp195nirA4U+fjlcFZmmnae7CaBI5qwpx6o5Jr/5VVtXX4v8NP76TExAIUOHE7R+NFacol4WaoU8KwKFAldeOQtwTNAhAiOpLJl79+plIY6TvHgcFYi+R1UQnXwzB1Bf0aDQNJK+Y339zRYlAJWvHJExeoF5uNWp8k7OW/LuGF8g9Aurh9PaVe4Xi4zBc0ixsHkTuWCFMvgYVqmHvPnPLRi8kYClRm6BXzg+glmPHt+zWtwLk3oZ4moyJEjoU5tDnDCC1X/BwlREw2plP1XAJJxqyghCm0pgA+czTKVpQ6SYTj6m0NVbkv8mpUOn1Aq7VwODD3bYSjAaVDK6aq7j86GwWNsePqKlA4/Uviy9kEbIvvHeJKSrvYg1DZbI0p8b4MKnkloXHgUXYOeIbahCvEfrGxwsIf0Zy6/WURwaIZOYxLJPTifv8t6Qt90Dorwwmdikp6QqXh4xGcnbCInBclgBThOCJI1/LDQHTcg6WqdgNynsapKPGHHC/BK4xTDI52+6D2C8I+X/sZ6STMazBqfJMMhLhn1RUDV+LTIeKsKQNPTSwOlL1VbfqDrnxq1EMid6vlnamBHBV64uBHUjfMoFgbkmxoG4MhSNgLXm2eJ6dEJzV54VK6Ma56p9VYKq4KzIcXNNhN98iSaJbtoyWW1XZwOZYM/pwt097ZABaoyNhadEzdj7cBeFeF999fqJbrWEuk1JqpmkRU01qCjeGH5U1zbvO6Sw==|920
+}//DmmoUWFxPxZv97EJEhJpXMqqha+guBSm7DHpksMV7hDRIKBPApVrm1THZZC9Z8woSPOFiuh4l7wW3sRQqZAf6Y3BIrnXYbjdBsl68ev1WjD7FC7zKBrJOMfSvAxYTXNPaV8DnfhR8m+fcDu2B1Z1e193xJfm+LbZ0jXe6NKvMhDaTZIaBULB+cXPobk5iL60hBoclKrCgCNv5Xi9+wHPQEFeGAFS7tQayJPgjs+Sy6W4tkw4ZIxSQovldkj98PTOscviwKg7q4g+ZKlCX6sLVyVmC1bwAdfh6rwCVx2tMDy5LB6HXDP+Ebm2j1uwNNMlSREBPJ8qLAe0g48OVaG+vv2/Bt9JmPRL3du8CY5RRV3khQULOtaQJFy/ECXx+oQtbmrZbnBIeY3S9grV4fdgiL7ZgsJMPwIhKa2ac6N8NAzn0S5SknD6FyEuwZGAMtoJgOjIraJIfBQxVd9hl2AeMJJoTZlGhxcLx+CfB1OZxP3edDXLI/4e3msszhTiH78afWp8H9upi/JMaxVANurIzRcjGvbLWM9O6V5pnjocILTydHSxhDag/VdugZpgf7DINTX2h3kHYD0ZK47um5pzj84xf60TlB4e+zrSgTYLbh8E3NUgvwtx930j7kUWkrejoB+1uJRNH20LY35oKbNjs2gB6Y8KFe6Bu40R0Q4Qz/Z4UytcEf/ojMIYuHHeo8198AJexBqBkbr4MRZGw7hSIgXdYtIz2/LsXVewgcaalqpcxbFzQJsv4sh294ED/UuLLsypDHTurJZUGbWmIjkxU7fmCnrqd301EQpAl+tuLQlpBdcsjLBp2Jva2U/7rviF/F96jlFt4Nq2G5zlAsEv3VM9yjfUcmSpFuxuPKpMLT8EO5r0rUFL2d9IGzCe6ndp94SpG5SKfTH+qK0AEHbhkg==|920

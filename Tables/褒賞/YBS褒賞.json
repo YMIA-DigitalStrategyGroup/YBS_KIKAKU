@@ -5,7 +5,7 @@
     "FlowStates": [
       {
         "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",
-        "StateName": "新規"
+        "StateName": "評価待ち"
       },
       {
         "Id": "37653c16-9b92-4279-b18f-6934e5ebf259",
@@ -32,7 +32,7 @@
       {
         "StartState": {
           "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",
-          "StateName": "新規"
+          "StateName": "評価待ち"
         },
         "Action": {
           "ActionName": "提出",
@@ -103,7 +103,7 @@
         },
         "ToState": {
           "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",
-          "StateName": "新規"
+          "StateName": "評価待ち"
         },
         "Assignees": [
           {
@@ -166,7 +166,7 @@
         },
         "ToState": {
           "Id": "45d1b8da-afdb-4cf4-811c-1af4efeffec7",
-          "StateName": "新規"
+          "StateName": "評価待ち"
         },
         "Assignees": [
           {
