@@ -18,8 +18,8 @@
     "4,38": "処理",
     "8,43": "承認済み\r\n印刷",
     "10,43": "会社提出用",
-    "15,2": "ワークフローのアクション＆コメント",
-    "15,17": "クエリー結果の重複が不明",
+    "15,2": "ワークフローのアクション＆コメント：委員→事務局→委員長→申請者→部門長",
+    "15,32": "クエリー結果の重複が不明",
     "16,2": "文書ID",
     "16,5": "氏名ID",
     "16,8": "氏名",
@@ -231,7 +231,7 @@
                     "MessageFormula": "「新規」または、「承認済み」のため、処理できません。"
                   }
                 ],
-                "ID": "615422ca-e819-44ff-8d7c-90946d23554b"
+                "ID": "804579e8-5375-4aa8-999e-221b43b5f981"
               },
               {
                 "CommandList": [
@@ -240,7 +240,7 @@
                     "PageName": "褒賞フロー_承認処理"
                   }
                 ],
-                "ID": "9fbcdc96-6fb3-4bf6-8a9f-599dbaa20598"
+                "ID": "3e14d1c0-fd85-4352-82a8-c51c1c63ca28"
               }
             ]
           }
@@ -309,7 +309,7 @@
                     "MessageFormula": "「承認済み」ではないので、印刷できません。"
                   }
                 ],
-                "ID": "14c4fbf9-7cf4-4de8-baa8-bdc218deac82"
+                "ID": "75e4bea1-01c6-48b0-a261-1fff003e6b3e"
               },
               {
                 "CommandList": [
@@ -318,7 +318,7 @@
                     "PageName": "褒賞評価票"
                   }
                 ],
-                "ID": "5445a8d8-e16b-4202-9205-d9e5b9be0d42"
+                "ID": "c40e2eaf-9bf8-42b0-be65-3d5d5cac71f5"
               }
             ]
           }
@@ -380,7 +380,8 @@
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "ColumnOperation": 2,
-        "DoNotLoadDataWhenLoadPage": true
+        "DoNotLoadDataWhenLoadPage": true,
+        "IsAutoReload": true
       }
     },
     "16,54": {
@@ -527,6 +528,14 @@
         "BorderRight": null
       },
       {
+        "FontFamily": 1,
+        "Foreground": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
@@ -611,7 +620,7 @@
       "8,47": 1,
       "8,48": 1,
       "10,43": 7,
-      "15,17": 0,
+      "15,32": 8,
       "16,3": 1,
       "16,4": 1,
       "16,5": 1,
@@ -647,14 +656,14 @@
       "16,35": 3,
       "16,36": 3,
       "16,37": 3,
-      "16,38": 8,
-      "16,39": 9,
+      "16,38": 9,
+      "16,39": 10,
       "16,49": 1,
       "16,50": 1,
       "16,51": 1,
       "16,52": 1,
       "16,53": 1,
-      "16,54": 10,
+      "16,54": 11,
       "16,55": 1,
       "16,56": 1,
       "16,57": 1,
@@ -687,9 +696,9 @@
       "17,29": 1,
       "17,30": 1,
       "17,31": 1,
-      "17,32": 11,
-      "17,38": 8,
-      "17,39": 9,
+      "17,32": 12,
+      "17,38": 9,
+      "17,39": 10,
       "17,49": 1,
       "17,50": 1,
       "17,51": 1,
@@ -1212,4 +1221,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//Ov8zvm5ptJIgM/YeXmdKaq3sxVCjXe+pyJly+RHyL4uOjgPZltOSmGgUe94CvzkGl0N7T7GJ/s+/J9uXoGXvtEjeDvr75VDLYhzi5nSWG+K9HavEEFAueJXTejWufHxZWt6MVRVDK9M0EZLM9olmhQFTpvVkjkPYRjjvLgMM7nX0A6pWbbq4lKFkFo6nKpgNX3SFMQG1SqNF+B9uN9U6aRWUi58YOJI7Y3/pUPLtu5DdiIH55qvNhl0pM79E/mh05mL5GlBjogL5HnxfFrGSGJZ1LMItFQwURd5/AgFPXFRcpW946wUY0vuj024qA6+YAailTqVQy9YEn6N6/1uxqj4jmsxc4dXCcVY52+I/4q+9WWbWxHQhVoIEohlSQKlQ1YDuKRxRLFDMg6Lz7vB5m1lf7Fi8JmJ1uDlWWyx4OugTz02js/Mfa90H6S/t39L7wqcJTO6ofBspHgaXAB6P5YG0BBuhYEfMO4EzRFQN5RpAo5Nf1D6WrMohw3y2FNzX0Q6zsoAyV+A0dCRg9s4s7dl3cDImPcYBbf4AfoMt/69afKS18hitcST4T5vYIR/9sobc+d4FRf6eVqEYR4YW9Wcwhf7FXeePUbazOICmSothSbWK9Po+zFmnSAhYs2CuXX0gReXNOPzl6Abw0gT5seASu/f/dmtFbejaBpllwDsZpB3msEBhlt2K4mhI3WOWi1/xfHKM9TE6n8PaJBGF3c79rLFK6zwfgafNpddt3oB8dPdg3JocqwUX6IojPFttivwBiALyMzjvsZAdC/63b4x0Vh8viiNNugcSpXxqU/msdnORDKYDYreD9PgnhfjV0P4Dfl7h8loA1V1yi07CpPTrwMysxS7nxy+rHkSxDbW8XahdfOtqVORzzPMcImM1LOnAhhBpoCjbKFi/giKWNw==|920
+}//fehNw0YkHodXZU5619D2evmKzuAC/T6XM5Q22zHccXJqBfA6qETkBoGWushwRTcwseSkcAM81dOviF0gkHgY3Pe0ZEsz1BBLBJDdioa6KNY4Lp4nIfLtXBjn7UFfKM/ZOZDHztl+94W35zrtyyQ9BsaenR4ulUjINR5LZKSULcQGEBeuRQ9Zqr4bh6QGe1bsQEvdlAF3zvrwadrQJEnMongEvaKXZqiB+T+fzEsIw5CzTBOKWuLaUc8NpKyWyK17nnQeOLqvXfva3llfq88lg4s8SETr1fVk9cnpKH5XqFBmg/F2bLN4q25ASNpqUK9vR1DMdunGLFv553brp8eajdO6D86TIhPqyX1jD9Sx9iFW2v2ombdadLO4c8TK6/apzPutppSfd5Z26149NNMf5+RBipIjr9zZpJBW7QA8UTUjlCOtYr2/UO/0UsF8htsKDvlZEcNzgjM27PZVjLiRLruZobdjM/bVjsMor8niBZI2FHSCICbZmeWrrwtH4afz1F3EQevZk6tWy1A9Jb14MF2Z+kLsCHjTk10d0zFMGaL9Xc9Wf/G1JKMRfYYV1gdqWE8DUp47gdPso+2+eXJXgsnE80J5POytBhXQBMAmQVf5UoAQ65Tkz86TV6OnK4wfXvbGzii/KUQ0vQM4EHr0fE6iObmDT0WdiwIQ6aFgjwN2m0RfukuOm49cQJwGp1XePTWRfljN6O8fXW8BRWcp5jneniZxYM18PaVJ7MUAfpW0gLIbubHGq5z84+d7T78k/QD5JM8+bli9SgANV/l8D+q7heuq5J541kdWQQ/zSdG9G5gRKOfDbZAWJ4lrIcF8svsiIHWCqgt2Z3Vl0S7xxzi3YQCDN7fP22JbKoBI7vHA1xgloRwGU8PnStjdVt/j4dn/GBc/nkg/Mdd6X9+enA==|920
